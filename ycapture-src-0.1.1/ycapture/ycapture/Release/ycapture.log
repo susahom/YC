@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  CaptureSource.cpp
+  EventReceiver.cpp
+  NullReceiver.cpp
+  ycapture.cpp
+  dllmain.cpp
+     ライブラリ C:\Users\0000011161522\Desktop\ycapture-src-0.1.1\ycapture\Release\ycapture.lib とオブジェクト C:\Users\0000011161522\Desktop\ycapture-src-0.1.1\ycapture\Release\ycapture.exp を作成中
+  コード生成しています。
+  Previous IPDB not found, fall back to full compilation.
+  All 94 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  コード生成が終了しました。
+  ycapture.vcxproj -> C:\Users\0000011161522\Desktop\ycapture-src-0.1.1\ycapture\Release\ycapture.dll

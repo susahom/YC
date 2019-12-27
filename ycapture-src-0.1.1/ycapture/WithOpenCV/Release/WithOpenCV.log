@@ -1,0 +1,8 @@
+﻿  WithOpenCV.cpp
+  コード生成しています。
+  Previous IPDB not found, fall back to full compilation.
+  All 739 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  コード生成が終了しました。
+ycaptureclient.lib(CaptureSender.obj) : warning LNK4099: PDB 'ycaptureclient.pdb' が 'ycaptureclient.lib(CaptureSender.obj)' で、または 'C:\Users\0000011161522\Desktop\ycapture-src-0.1.1\ycapture\Release\ycaptureclient.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+ycaptureclient.lib(stdafx.obj) : warning LNK4099: PDB 'ycaptureclient.pdb' が 'ycaptureclient.lib(stdafx.obj)' で、または 'C:\Users\0000011161522\Desktop\ycapture-src-0.1.1\ycapture\Release\ycaptureclient.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+  WithOpenCV.vcxproj -> C:\Users\0000011161522\Desktop\ycapture-src-0.1.1\ycapture\Release\WithOpenCV.exe

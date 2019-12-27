@@ -1,0 +1,5 @@
+﻿  cl : コマンド ライン warning D9035 : オプション 'Gm' の使用は現在推奨されていません。今後のバージョンからは削除されます。
+  stdafx.cpp
+  cl : コマンド ライン warning D9035 : オプション 'Gm' の使用は現在推奨されていません。今後のバージョンからは削除されます。
+  CaptureSender.cpp
+  ycaptureclient.vcxproj -> C:\Users\0000011161522\Desktop\ycapture-src-0.1.1\ycapture\Debug\ycaptureclient.lib

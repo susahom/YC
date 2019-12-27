@@ -1,0 +1,13 @@
+﻿  cl : コマンド ライン warning D9035 : オプション 'Gm' の使用は現在推奨されていません。今後のバージョンからは削除されます。
+  stdafx.cpp
+  cl : コマンド ライン warning D9035 : オプション 'Gm' の使用は現在推奨されていません。今後のバージョンからは削除されます。
+  ycapture.cpp
+  NullReceiver.cpp
+  EventReceiver.cpp
+  CaptureSource.cpp
+  コードを生成中...
+  cl : コマンド ライン warning D9035 : オプション 'Gm' の使用は現在推奨されていません。今後のバージョンからは削除されます。
+  dllmain.cpp
+CaptureSource.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
+     ライブラリ C:\Users\0000011161522\Desktop\ycapture-src-0.1.1\ycapture\Debug\ycapture.lib とオブジェクト C:\Users\0000011161522\Desktop\ycapture-src-0.1.1\ycapture\Debug\ycapture.exp を作成中
+strmbasd.lib(dllentry.obj) : fatal error LNK1112: モジュールのコンピューターの種類 'x64' は対象コンピューターの種類 'x86' と競合しています。
