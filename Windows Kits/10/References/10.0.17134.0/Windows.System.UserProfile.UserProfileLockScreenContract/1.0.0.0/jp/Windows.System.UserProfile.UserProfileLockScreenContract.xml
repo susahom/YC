@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.UserProfile.UserProfileLockScreenContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.UserProfile.LockScreen">
+      <summary>ロック画面の背景として使用される全画面イメージを管理するためのプロパティとメソッドを提供します。</summary>
+    </member>
+    <member name="P:Windows.System.UserProfile.LockScreen.OriginalImageFile">
+      <summary>現在のロック画面イメージを取得します。</summary>
+      <returns>ロック画面イメージの URI (Uniform Resource Identifier)。</returns>
+    </member>
+    <member name="M:Windows.System.UserProfile.LockScreen.GetImageStream">
+      <summary>データ ストリームとして現在のロック画面イメージを取得します。</summary>
+      <returns>ロック画面イメージ データを格納しているストリーム。</returns>
+    </member>
+    <member name="M:Windows.System.UserProfile.LockScreen.RequestSetImageFeedAsync(Windows.Foundation.Uri)">
+      <summary>ロック画面のスライドショーとして使用される RSS イメージ フィードを登録します。 (Windows 8.1 のみ)</summary>
+      <param name="syndicationFeedUri">RSS イメージ フィードの URI (Uniform Resource Identifier)。</param>
+      <returns>SetImageFeedResult 値のいずれか。</returns>
+    </member>
+    <member name="M:Windows.System.UserProfile.LockScreen.SetImageFileAsync(Windows.Storage.IStorageFile)">
+      <summary>StorageFile オブジェクトからのロック画面イメージを設定します。</summary>
+      <param name="value">ロック画面の新しいイメージを含む StorageFile オブジェクト。</param>
+      <returns>ロック画面のイメージを設定するために使用するオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.System.UserProfile.LockScreen.SetImageStreamAsync(Windows.Storage.Streams.IRandomAccessStream)">
+      <summary>データ ストリームからのロック画面イメージを設定します。</summary>
+      <param name="value">画像データを格納しているストリーム。</param>
+      <returns>ロック画面イメージを設定するために使用するオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.System.UserProfile.LockScreen.TryRemoveImageFeed">
+      <summary>ロック画面のスライド ショーで使用されているイメージ フィードの登録を解除し、スライド ショーを停止します。 (Windows 8.1 のみ)</summary>
+      <returns>イメージ フィードが無効にされた場合は **true**。それ以外の場合は **false**。</returns>
+    </member>
+    <member name="T:Windows.System.UserProfile.UserProfileLockScreenContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

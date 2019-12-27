@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.AlarmAccessStatus">
+      <summary>Указывает, дал ли пользователь приложению разрешение на установку будильников.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithoutWakeupCapability">
+      <summary>Пользователь дал разрешение приложению на настройку оповещений, однако эти оповещения не могут выводить компьютер из ждущего режима.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithWakeupCapability">
+      <summary>Пользователь дал разрешение приложению на настройку оповещений, и эти оповещения могут выводить компьютер из ждущего режима.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Denied">
+      <summary>Пользователь не дал приложению разрешения на настройку оповещений.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Unspecified">
+      <summary>Пользователь не ответил на запрос разрешения приложению устанавливать оповещения.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.AlarmApplicationManager">
+      <summary>Запрашивает у пользователя разрешение на установку будильников и извлекает состояние разрешения пользователя на установку будильников приложением.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.GetAccessStatus">
+      <summary>Извлекает состояние разрешения на установку будильников, выданного пользователем приложению.</summary>
+      <returns>Указывает, дал ли пользователь разрешение на установку будильников.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.RequestAccessAsync">
+      <summary>Запрашивает у пользователя разрешение на установку будильников.</summary>
+      <returns>Этот метод возвращает значение AlarmAccessStatus после завершения.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

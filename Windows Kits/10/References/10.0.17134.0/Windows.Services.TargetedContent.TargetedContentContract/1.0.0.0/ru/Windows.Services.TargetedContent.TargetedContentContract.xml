@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.TargetedContent.TargetedContentContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAction">
+      <summary>Представляет свойство TargetedContentValue действия TargetedContentValueKind.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentAction.InvokeAsync">
+      <summary>Вызывает действие.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAppInstallationState">
+      <summary>Перечисление, определяющее все значения, которые может принимать TargetedContentAppInstallState: NotApplicable, NotInstalled и Installed.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.Installed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.NotApplicable">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.NotInstalled">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAvailability">
+      <summary>Перечисление, определяющее все значения, которые может принимать TargetedContentAvailability: All, Partial и None.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.All">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.None">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.Partial">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAvailabilityChangedEventArgs">
+      <summary>Представляет аргументы события изменения доступности.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentAvailabilityChangedEventArgs.GetDeferral">
+      <summary>Представляет аргументы события изменения доступности.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentChangedEventArgs">
+      <summary>Представляет аргументы события изменения содержимого.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentChangedEventArgs.HasPreviousContentExpired">
+      <summary>Получает логическое значение, указывающее, истек ли срок действия предыдущего содержимого TargetedContentChangedEventArgs.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentChangedEventArgs.GetDeferral">
+      <summary>Получает отсрочку. Требуется для асинхронных обработчиков. Вызывающая сторона отвечает за вызов метода Complete при обработке события.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentCollection">
+      <summary>Представляет коллекцию элементов или дочерних коллекций в объекте TargetedContentContainer.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Collections">
+      <summary>Возвращает объект TargetedContentCollection в объекте TargetedContentContainer.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Id">
+      <summary>Получает идентификатор коллекции.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Items">
+      <summary>Возвращает коллекцию объектов TargetedContentItem в объекте TargetedContentCollection.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Path">
+      <summary>Возвращает путь к объекту TargetedContentCollection.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Properties">
+      <summary>Возвращает коллекцию, содержащую имена свойств в качестве ключей и свойства TargetedContentValue в качестве значений в объекте TargetedContentCollection.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentCollection.ReportCustomInteraction(System.String)">
+      <summary>Сообщает о пользовательском взаимодействии для объекта TargetedContentCollection.</summary>
+      <param name="customInteractionName">
+      </param>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentCollection.ReportInteraction(Windows.Services.TargetedContent.TargetedContentInteraction)">
+      <summary>Сообщает о взаимодействии для объекта TargetedContentCollection.</summary>
+      <param name="interaction">
+      </param>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentContainer">
+      <summary>Представляет контейнер для всего содержимого объекта TargetedContentSubscription.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Availability">
+      <summary>Получает значение TargetedContentAvailability для объекта TargetedContentContainer.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Content">
+      <summary>Возвращает объект TargetedContentCollection для объекта TargetedContentContainer.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Id">
+      <summary>Возвращает идентификатор объекта TargetedContainerContainer.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Timestamp">
+      <summary>Время последнего обновления содержимого.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentContainer.GetAsync(System.String)">
+      <summary>Возвращает объект TargetedContainerContainer для указанного идентификатора ContentId.</summary>
+      <param name="contentId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentContainer.SelectSingleObject(System.String)">
+      <summary>Возвращает объект TargetedContentObject в объекте TargetedContentContainer.</summary>
+      <param name="path">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentFile">
+      <summary>Представляет свойство TargetedContentValue файла TargetedContentValueKind.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentFile.OpenReadAsync">
+      <summary>Открывает поток для произвольного доступа только для чтения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentImage">
+      <summary>Представляет свойство TargetedContentValue изображения TargetedContentValueKind.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentImage.Height">
+      <summary>Возвращает значение, указывающее высоту объекта TargetedContentImage.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentImage.Width">
+      <summary>Возвращает значение, указывающее ширину объекта TargetedContentImage.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentImage.OpenReadAsync">
+      <summary>Открывает поток для произвольного доступа только для чтения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentInteraction">
+      <summary>Перечисление, определяющее все значения, которые может принимать TargetedContentInteraction.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Accept">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Canceled">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.ClickThrough">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Conversion">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Decline">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Defer">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Dislike">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Dismiss">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Hover">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Impression">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Ineligible">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Like">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Opportunity">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentItem">
+      <summary>Представляет элемент объекта TargetedContentCollection.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Collections">
+      <summary>Возвращает объект TargetedContentCollection в объекте TargetedContentItem.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Path">
+      <summary>Возвращает строку пути к объекту TargetedContentItem.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Properties">
+      <summary>Возвращает коллекцию, содержащую имена свойств в качестве ключей и значения TargetedContentValue в объекте TargetedContentItem.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.State">
+      <summary>Возвращает TargetedContentItemState для элемента.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentItem.ReportCustomInteraction(System.String)">
+      <summary>Сообщает о пользовательских взаимодействиях для элемента.</summary>
+      <param name="customInteractionName">
+      </param>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentItem.ReportInteraction(Windows.Services.TargetedContent.TargetedContentInteraction)">
+      <summary>Сообщает о TargetedContentInteraction для элемента.</summary>
+      <param name="interaction">
+      </param>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentItemState">
+      <summary>Представляет состояние объекта TargetedContentItem: AppInstallationState, ShouldDisplay.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItemState.AppInstallationState">
+      <summary>Возвращает TargetedContentAppInstallationState для элемента.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItemState.ShouldDisplay">
+      <summary>Возвращает логическое значение состояния ShouldDisplay для элемента.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentObject">
+      <summary>Представляет один объект в объекте TargetedContentContainer.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Collection">
+      <summary>Возвращает объект TargetedContentCollection в объекте TargetedContentObject.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Item">
+      <summary>Возвращает объект TargetedContentItem в объекте TargetedContentObject.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.ObjectKind">
+      <summary>Возвращает объект TargetedContentObjectKind для объекта TargetedContentObject.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Value">
+      <summary>Возвращает объект TargetedContentValue для объекта TargetedContentObject.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentObjectKind">
+      <summary>Перечисление, определяющее все типы значений, которые может принимать объект TargetedContentObject.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Collection">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Item">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Value">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentStateChangedEventArgs">
+      <summary>Представляет аргументы события изменения состояния.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentStateChangedEventArgs.GetDeferral">
+      <summary>Получает отсрочку. Требуется для асинхронных обработчиков. Вызывающая сторона отвечает за вызов метода Complete при обработке события.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentSubscription">
+      <summary>Представляет объект Subscription.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscription.Id">
+      <summary>Возвращает идентификатор подписки.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.AvailabilityChanged">
+      <summary>Событие, вызываемое при изменении доступности объекта TargetedContentSubscription.</summary>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.ContentChanged">
+      <summary>Событие, вызываемое при изменении содержимого объекта TargetedContentSubscription.</summary>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.StateChanged">
+      <summary>Событие, вызываемое при изменении состояния объекта TargetedContentSubscription.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetAsync(System.String)">
+      <summary>Возвращает объект TargetedContentContainer по значению subscriptionID.</summary>
+      <param name="subscriptionId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetContentContainerAsync">
+      <summary>Возвращает объект TargetedContentContainer для объекта TargetedContentSubscription.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetOptions(System.String)">
+      <summary>Возвращает объект в TargetedContentSubscriptionOptions для определенной подписки.</summary>
+      <param name="subscriptionId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions">
+      <summary>Представляет параметры подписки в форме параметров CloudQuery, локальных фильтров и частичной доступности содержимого.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.AllowPartialContentAvailability">
+      <summary>Получает или задает частичную доступность содержимого для объекта TargetedContentSubscription.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.CloudQueryParameters">
+      <summary>Получает коллекцию параметров облачных запросов для объекта TargetedContentSubscription.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.LocalFilters">
+      <summary>Получает коллекцию локальных фильтров для объекта TargetedContentSubscription.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.SubscriptionId">
+      <summary>Возвращает идентификатор подписки.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.Update">
+      <summary>Обновляет объект TargetedContentSubscriptionOptions для подписки.</summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentValue">
+      <summary>Представляет объект значения содержимого для подписки.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Action">
+      <summary>Возвращает объект TargetedContentAction в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Actions">
+      <summary>Получает массив объектов TargetedContentAction в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Boolean">
+      <summary>Получает логическое значение в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Booleans">
+      <summary>Получает массив логических значений в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.File">
+      <summary>Возвращает объект TargetedContentFile в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Files">
+      <summary>Получает массив объектов TargetedContentFile в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ImageFile">
+      <summary>Возвращает объект TargetedContentImage в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ImageFiles">
+      <summary>Получает массив объектов TargetedContentImage в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Number">
+      <summary>Получает двойное число с плавающей точкой в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Numbers">
+      <summary>Получает массив двойных значений с плавающей точкой в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Path">
+      <summary>Возвращает строку пути к объекту TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.String">
+      <summary>Получает строку в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Strings">
+      <summary>Получает массив строк в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Uri">
+      <summary>Возвращает объект Uri в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Uris">
+      <summary>Получает массив объектов Uri в объекте TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ValueKind">
+      <summary>Возвращает объект TargetedContentValueKind для объекта TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentValueKind">
+      <summary>Определяет все типы значений, которые может принимать объект TargetedContentContainer.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Action">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Actions">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Boolean">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Booleans">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.File">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Files">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.ImageFile">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.ImageFiles">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Number">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Numbers">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.String">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Strings">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Uri">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Uris">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

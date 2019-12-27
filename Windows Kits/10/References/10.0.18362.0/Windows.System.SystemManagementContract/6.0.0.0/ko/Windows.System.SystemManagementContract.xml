@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.SystemManagementContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Cortana.CortanaSettings">
+      <summary>Cortana 설정에 대한 액세스를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Cortana.CortanaSettings.HasUserConsentToVoiceActivation">
+      <summary>사용자가 음성 활성화에 동의했는지 여부를 가져옵니다.</summary>
+      <returns>사용자가 동의한 경우 **true**입니다. 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Cortana.CortanaSettings.IsVoiceActivationEnabled">
+      <summary>음성 활성화가 설정되었는지 여부를 가져오거나 설정합니다.</summary>
+      <returns>음성 활성화가 사용하도록 설정된 경우 **true**입니다. 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Cortana.CortanaSettings.GetDefault">
+      <summary>현재 사용자의 Cortana 설정을 검색합니다.</summary>
+      <returns>CortanaSettings 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Cortana.CortanaSettings.IsSupported">
+      <summary>Cortana 설정이 지원되는지 여부를 검색합니다.</summary>
+      <returns>Cortana 설정과 지원되는 경우 **true**입니다. 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="T:Windows.System.AutoUpdateTimeZoneStatus">
+      <summary>자동 표준 시간대 요청의 상태입니다.</summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.Attempted">
+      <summary>표준 시간대 감지가 시도되었습니다. </summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.Failed">
+      <summary>하드웨어 지원 부족 또는 치명적인 오류로 인해 표준 시간대를 감지할 수 없습니다.</summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.TimedOut">
+      <summary>요청이 시간 초과되었습니다. </summary>
+    </member>
+    <member name="T:Windows.System.DateTimeSettings">
+      <summary>시스템 날짜 및 시간을 설정합니다.</summary>
+    </member>
+    <member name="M:Windows.System.DateTimeSettings.SetSystemDateTime(Windows.Foundation.DateTime)">
+      <summary>시스템 날짜 및 시간을 설정합니다.</summary>
+      <param name="utcDateTime">시스템 시계를 설정할 날짜 및 시간 값(UTC(협정 세계시))입니다.</param>
+    </member>
+    <member name="T:Windows.System.PowerState">
+      <summary>고정 용도 장치의 전원 상태를 나타냅니다.</summary>
+    </member>
+    <member name="F:Windows.System.PowerState.ConnectedStandby">
+      <summary>연결된 대기 상태를 나타냅니다.</summary>
+    </member>
+    <member name="F:Windows.System.PowerState.SleepS3">
+      <summary>절전 S3를 상태를 나타냅니다.</summary>
+    </member>
+    <member name="T:Windows.System.ProcessLauncher">
+      <summary>있는 경우 관련된 인수를 사용하여 지정 된 프로세스를 시작합니다.</summary>
+    </member>
+    <member name="M:Windows.System.ProcessLauncher.RunToCompletionAsync(System.String,System.String)">
+      <summary>새 프로세스를 시작합니다. 이 비동기 함수는 실행된 프로세스가 종료되면 완료됩니다.</summary>
+      <param name="fileName">시작할 프로세스의 이름입니다.</param>
+      <param name="args">프로세스를 실행하기 위한 인수입니다.</param>
+      <returns>비동기 작업이 완료되면 시작된 프로세스의 종료 코드가 포함되어 있습니다.</returns>
+    </member>
+    <member name="M:Windows.System.ProcessLauncher.RunToCompletionAsync(System.String,System.String,Windows.System.ProcessLauncherOptions)">
+      <summary>지정된 옵션을 포함하여 새 프로세스를 시작합니다. 이 비동기 함수는 실행된 프로세스가 종료되면 완료됩니다.</summary>
+      <param name="fileName">시작할 프로세스의 파일 이름입니다.</param>
+      <param name="args">지정된 프로세스를 위한 인수입니다.</param>
+      <param name="options">프로세스 실행과 관련된 옵션입니다.</param>
+      <returns>비동기 작업이 완료되면 시작된 프로세스의 종료 코드가 포함되어 있습니다.</returns>
+    </member>
+    <member name="T:Windows.System.ProcessLauncherOptions">
+      <summary>지정된 프로세스를 실행하는 데 사용되는 옵션을 지정합니다.</summary>
+    </member>
+    <member name="M:Windows.System.ProcessLauncherOptions.#ctor">
+      <summary>프로세스 시작 옵션 개체의 새 인스턴스를 만들어 초기화합니다.</summary>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardError">
+      <summary>표준 오류가 전송되는 위치를 지정합니다.</summary>
+      <returns>표준 오류를 보낼 스트림입니다.</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardInput">
+      <summary>표준 입력을 가져오는 위치를 지정합니다.</summary>
+      <returns>표준 입력을 위한 입력 스트림입니다.</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardOutput">
+      <summary>표준 출력이 전송되는 위치를 지정합니다.</summary>
+      <returns>표준 출력이 전송되는 스트림입니다.</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.WorkingDirectory">
+      <summary>프로세스 실행 프로그램에서 작동하는 디렉터리를 가져오거나 설정합니다.</summary>
+      <returns>작업 디렉터리입니다.</returns>
+    </member>
+    <member name="T:Windows.System.ProcessLauncherResult">
+      <summary>시작된 프로세스의 반환을 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherResult.ExitCode">
+      <summary>ProcessLauncher에서 실행된 프로세스의 종료 코드를 나타냅니다.</summary>
+      <returns>종료 코드입니다.</returns>
+    </member>
+    <member name="T:Windows.System.ShutdownKind">
+      <summary>고정 용도 모드로 실행되는 장치에 대해 수행할 수 있는 시스템 종료 유형을 설명합니다.</summary>
+    </member>
+    <member name="F:Windows.System.ShutdownKind.Restart">
+      <summary>고정 용도 장치를 종료하고 나서 해당 장치를 다시 시작합니다.</summary>
+    </member>
+    <member name="F:Windows.System.ShutdownKind.Shutdown">
+      <summary>장치를 다시 시작하지 않고 고정 용도 장치를 종료합니다.</summary>
+    </member>
+    <member name="T:Windows.System.ShutdownManager">
+      <summary>고정 용도 모드에서 실행되는 장치의 시스템 종료를 관리합니다.</summary>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.BeginShutdown(Windows.System.ShutdownKind,Windows.Foundation.TimeSpan)">
+      <summary>고정 용도 모드에서 실행되는 장치를 종료하고 지정된 시간(초)이 경과된 후 해당 장치를 다시 시작합니다(선택 사항).</summary>
+      <param name="shutdownKind">수행할 시스템 종료 유형(장치를 다시 시작하거나 다시 시작하지 않음)입니다.</param>
+      <param name="timeout">*shutdownKind*가 **ShutdownKind.Restart**인 경우 장치를 다시 시작하기 전에 기다려야 할 시간(초)입니다.</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.CancelShutdown">
+      <summary>이미 진행 중인 고정 용도 장치의 시스템 종료를 취소합니다.</summary>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.EnterPowerState(Windows.System.PowerState)">
+      <summary>고정 용도 장치에 지정된 전원 상태를 입력할 것을 지시합니다.</summary>
+      <param name="powerState">입력할 전원 상태입니다.</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.EnterPowerState(Windows.System.PowerState,Windows.Foundation.TimeSpan)">
+      <summary>고정 용도 장치에 지정된 전원 상태를 입력한 후 지정된 기간 이후 절전 모드를 해지할 것을 지시합니다.</summary>
+      <param name="powerState">입력할 전원 상태입니다.</param>
+      <param name="wakeUpAfter">지정한 전력 상태를 유지하는 기간입니다. 이 시간이 경과한 후 장치의 절전 모드가 해제됩니다.</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.IsPowerStateSupported(Windows.System.PowerState)">
+      <summary>고정 용도 장치에 지정된 전원 상태가 지원되는지 여부를 가져옵니다.</summary>
+      <param name="powerState">검사할 전원 상태입니다.</param>
+      <returns>지정된 장치에서 전원 상태를 지원하면 이 메서드는 TRUE를 반환하고, 그렇지 않으면 FALSE를 반환합니다.</returns>
+    </member>
+    <member name="T:Windows.System.SystemManagementContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.TimeZoneSettings">
+      <summary>표준 시간대와 상호 작용하기 위한 메서드와 속성을 포함합니다.</summary>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.CanChangeTimeZone">
+      <summary>표준 시간대를 변경할 수 있는지 여부를 가져옵니다.</summary>
+      <returns>표준 시간대를 변경할 수 있으면 True이고, 그렇지 않으면 False입니다.</returns>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.CurrentTimeZoneDisplayName">
+      <summary>현재 표준 시간대의 표시 이름을 가져옵니다.</summary>
+      <returns>현재 표준 시간대의 표시 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.SupportedTimeZoneDisplayNames">
+      <summary>지원되는 모든 표준 시간대의 표시 이름을 가져옵니다.</summary>
+      <returns>지원되는 모든 표준 시간대의 표시 이름입니다.</returns>
+    </member>
+    <member name="M:Windows.System.TimeZoneSettings.AutoUpdateTimeZoneAsync(Windows.Foundation.TimeSpan)">
+      <summary>포함 모드 장치에 대한 표준 시간대를 자동으로 확인하고 설정하려고 시도합니다.</summary>
+      <param name="timeout">제한 시간 기간이 초과된 경우, 이 메서드는 AutoUpdateTimeZoneStatus에 대해 **TimedOut** 값을 반환합니다.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.TimeZoneSettings.ChangeTimeZoneByDisplayName(System.String)">
+      <summary>표시 이름을 사용하여 표준 시간대를 변경합니다.</summary>
+      <param name="timeZoneDisplayName">변경할 표준 시간대의 표시 이름입니다.</param>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateAttentionRequiredReason">
+      <summary>사용자의 확인이 필요한 이유입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.InsufficientBattery">
+      <summary>시스템 업데이트를 시작하기 위한 배터리 전원이 부족합니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.InsufficientDiskSpace">
+      <summary>업데이트를 다운로드할 디스크 공간이 부족합니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.NetworkRequired">
+      <summary>네트워크 연결을 확인해야 합니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.None">
+      <summary>필요한 확인이 없습니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.UpdateBlocked">
+      <summary>업데이트를 진행할 수 없습니다.</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateItem">
+      <summary>업데이트 번들의 속성 및 상태를 설명합니다.</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Description">
+      <summary>SystemUpdateItem의 내용을 설명합니다.</summary>
+      <returns>시스템 업데이트 패키지의 내용에 대한 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.DownloadProgress">
+      <summary>다운로드 진행률 %입니다.</summary>
+      <returns>다운로드 진행률 %입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.ExtendedError">
+      <summary>사용 가능한 경우 자세한 오류 정보입니다.</summary>
+      <returns>사용 가능한 경우 자세한 오류 정보입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Id">
+      <summary>이 업데이트 항목을 식별하는 고유 식별자입니다.</summary>
+      <returns>이 업데이트 항목을 식별하는 고유 식별자입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.InstallProgress">
+      <summary>설치 진행률 %입니다.</summary>
+      <returns>설치 진행률 %입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Revision">
+      <summary>업데이트 번들의 수정 번호입니다.  1에서 시작하여 원본 업데이트 번들이 수정되면 숫자가 증가합니다.</summary>
+      <returns>업데이트 번들의 수정 번호입니다.  1에서 시작하여 원본 업데이트 번들이 수정되면 숫자가 증가합니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.State">
+      <summary>현재 업데이트 항목의 상태입니다.</summary>
+      <returns>현재 업데이트 항목의 상태입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Title">
+      <summary>업데이트 항목의 제목입니다.</summary>
+      <returns>업데이트 항목의 제목입니다.</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateItemState">
+      <summary>SystemUpdateItem의 상태입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Calculating">
+      <summary>업데이트 항목 작업을 계산 중입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Completed">
+      <summary>업데이트가 완료되었습니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Downloading">
+      <summary>업데이트 항목을 다운로드하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Error">
+      <summary>업데이트를 시도할 때 오류가 발생했습니다. ExtendedError를 참조하십시오.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Initializing">
+      <summary>업데이트 항목을 초기화하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Installing">
+      <summary>업데이트 항목을 설치하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.NotStarted">
+      <summary>업데이트가 시작되지 않았습니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Preparing">
+      <summary>업데이트 항목을 준비하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.RebootRequired">
+      <summary>재부팅이 필요합니다.</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateLastErrorInfo">
+      <summary>마지막으로 실패한 시스템 업데이트에 대한 정보입니다.</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.ExtendedError">
+      <summary>자세한 오류 설명입니다.</summary>
+      <returns>자세한 오류 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.IsInteractive">
+      <summary>마지막 업데이트 오류가 대화형 업데이트 중에 발생했는지 지정합니다.</summary>
+      <returns>오류가 대화형 업데이트 중에 발생했으면 **True**입니다. 자동 업데이트였으면 **False**입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.State">
+      <summary>마지막 오류가 발생했을 때 **SystemUpdateManager** 상태입니다.</summary>
+      <returns>마지막 오류가 발생했을 때 **SystemUpdateManager** 상태입니다.</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateManager">
+      <summary>**SystemUpdateManager**를 사용하여 시스템 업데이트를 대화형으로 제어할 수 있습니다.</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.AttentionRequiredReason">
+      <summary>사용자의 확인이 필요한 이유입니다.</summary>
+      <returns>마지막 오류가 발생했을 때 **SystemUpdateManager** 상태입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.DownloadProgress">
+      <summary>다운로드 진행률 %입니다.</summary>
+      <returns>다운로드 진행률 %입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.ExtendedError">
+      <summary>사용 가능한 경우 자세한 오류 정보입니다.</summary>
+      <returns>사용 가능한 경우 자세한 오류 정보입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.InstallProgress">
+      <summary>설치 진행률 %입니다.</summary>
+      <returns>설치 진행률 %입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastErrorInfo">
+      <summary>마지막으로 실패한 시스템 업데이트에 대한 정보입니다.</summary>
+      <returns>마지막으로 실패한 시스템 업데이트에 대한 정보입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastUpdateCheckTime">
+      <summary>마지막으로 업데이트를 확인한 시간입니다.</summary>
+      <returns>마지막으로 업데이트를 확인한 시간입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastUpdateInstallTime">
+      <summary>마지막으로 업데이트를 설치한 시간입니다.</summary>
+      <returns>마지막으로 업데이트를 설치한 시간입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.State">
+      <summary>**SystemUpdateManager**의 현재 상태입니다.</summary>
+      <returns>**SystemUpdateManager**의 현재 상태입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursEnd">
+      <summary>사용자의 사용 종료 시간 값을 가져옵니다.</summary>
+      <returns>사용자의 사용 종료 시간 값을 가져옵니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursMax">
+      <summary>**UserActiveHoursStart**와 **UserActiveHoursEnd** 사이의 최대 허용 간격(시간)을 가져옵니다.</summary>
+      <returns>**UserActiveHoursStart**와 **UserActiveHoursEnd** 사이의 최대 허용 간격(시간)을 가져옵니다.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursStart">
+      <summary>사용자의 사용 시작 시간 값을 가져옵니다.</summary>
+      <returns>사용자의 사용 시작 시간 값을 가져옵니다.</returns>
+    </member>
+    <member name="E:Windows.System.Update.SystemUpdateManager.StateChanged">
+      <summary>상태 속성 변경 알림 이벤트입니다.</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.BlockAutomaticRebootAsync(System.String)">
+      <summary>UnblockAutomaticRebootAsync가 호출되거나 시스템 정책에 의해 재부팅이 시행될 때까지 업데이트를 위한 자동 재부팅을 차단합니다.</summary>
+      <param name="lockId">A~Z, a~z, 0~9로 이루어진 식별자입니다.  Guid.NewGuid.ToString()를 사용하여 새 임의 ID를 생성합니다.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetAutomaticRebootBlockIds">
+      <summary>자동 재부팅 차단 요청의 ID를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetFlightRing">
+      <summary>플라이트 링을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetUpdateItems">
+      <summary>보류 중인 업데이트 항목의 목록을 가져옵니다.</summary>
+      <returns>SystemUpdateItem의 목록</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.IsSupported">
+      <summary>이 API가 이 장치에서 지원되는지 여부를 나타냅니다.</summary>
+      <returns>API가 지원되면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.RebootToCompleteInstall">
+      <summary>재부팅이 필요할 경우 설치 완료를 위해 장치를 재부팅합니다.</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.SetFlightRing(System.String)">
+      <summary>플라이트 링을 설정합니다.</summary>
+      <param name="flightRing">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.StartCancelUpdates">
+      <summary>진행 중인 업데이트가 있을 경우 업데이트 취소를 시작합니다.</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.StartInstall(Windows.System.Update.SystemUpdateStartInstallAction)">
+      <summary>보류 중인 업데이트의 검색, 다운로드, 설치를 시작합니다.</summary>
+      <param name="action">SystemUpdateStartInstallAction 참조</param>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.TrySetUserActiveHours(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)">
+      <summary>업데이트를 위한 자동 재부팅이 허용되지 않는 사용자가 정의한 사용 시간을 설정하려고 시도합니다.</summary>
+      <param name="start">사용 시간의 시작 시간입니다.</param>
+      <param name="end">사용 시간의 종료 시간입니다.</param>
+      <returns>사용 시간이 설정된 경우 true를 반환합니다. 그렇지 않으면 false를 반환합니다.</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.UnblockAutomaticRebootAsync(System.String)">
+      <summary>자동 업데이트 재부팅이 차단된 경우, 차단을 해제합니다.</summary>
+      <param name="lockId">A~Z, a~z, 0~9로 이루어진 식별자입니다.  Guid.NewGuid.ToString()를 사용하여 새 임의 ID를 생성합니다. BlockAutomaticRebootAsync에 전달된 값과 일치해야 합니다.</param>
+      <returns>자동 재부팅 차단이 없으면 true를 반환합니다.</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateManagerState">
+      <summary>시스템 업데이트의 현재 상태를 나타내는 열거형입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.AttentionRequired">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Completed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Detecting">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Downloading">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Error">
+      <summary>오류가 발생했습니다. ExtendedError를 확인하세요.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Finalizing">
+      <summary>시스템 업데이트를 마무리하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Idle">
+      <summary>SystemUpdateManager가 유휴 상태입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Installing">
+      <summary>시스템 업데이트를 설치하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToDownload">
+      <summary>시스템 업데이트를 다운로드할 준비가 되었습니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToFinalize">
+      <summary>시스템 업데이트를 마무리할 준비가 되었습니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToInstall">
+      <summary>시스템 업데이트를 설치할 준비가 되었습니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.RebootRequired">
+      <summary>설치를 완료하려면 재부팅이 필요합니다.</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateStartInstallAction">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateStartInstallAction.AllowReboot">
+      <summary>다운로드하여 설치합니다.  재부팅이 필요할 경우 필요한 순간에 자동으로 재부팅합니다.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateStartInstallAction.UpToReboot">
+      <summary>다운로드하여 설치합니다.  재부팅이 필요할 경우 대화형 재부팅 메시지를 표시하거나 자동 재부팅 기간을 기다립니다.</summary>
+    </member>
+  </members>
+</doc>

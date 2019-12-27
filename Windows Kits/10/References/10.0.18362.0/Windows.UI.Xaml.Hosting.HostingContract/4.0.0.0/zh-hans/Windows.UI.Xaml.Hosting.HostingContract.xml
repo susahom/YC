@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.Xaml.Hosting.HostingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppExitedEventArgs">
+      <summary>提供 DesignerAppManager.DesignerAppExited 事件的事件数据。</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppExitedEventArgs.ExitCode">
+      <summary>获取应用使用其退出的退出代码。</summary>
+      <returns>应用使用其退出的退出代码。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppManager">
+      <summary>在常规 UWP 上下文中运行的 XAML design surface 中管理应用程序，与使用 XamlUIPresenter 并在 Win32 进程中运行的传统设计器对比。 此进程需要使用 .APPX 指定 NoUIEntryPoints-DesignModeV2 DisplayName 属性，以为了能在此模式中成功激活。 启动的应用程序不会显示在任务栏或任务视图切换程序中。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.#ctor(System.String)">
+      <summary>初始化 DesignerAppManager 类的新实例。</summary>
+      <param name="appUserModelId">应用用户模型的标识符。</param>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppManager.AppUserModelId">
+      <summary>获取应用用户模型的标识符。</summary>
+      <returns>应用用户模型的标识符。</returns>
+    </member>
+    <member name="E:Windows.UI.Xaml.Hosting.DesignerAppManager.DesignerAppExited">
+      <summary>当设计器中的应用已退出时发生。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.Close">
+      <summary>关闭应用管理器。 这会关闭由 DesignerAppManager 激活的进程并等待进程终止。 如果进程挂起，此方法有可能阻止无限的时间。 手动关闭时**不会**触发 DesignerAppExited 事件。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.CreateNewViewAsync(Windows.UI.Xaml.Hosting.DesignerAppViewState,Windows.Foundation.Size)">
+      <summary>创建一个新的 DesignerAppView。</summary>
+      <param name="initialViewState">视图的初始状态。</param>
+      <param name="initialViewSize">视图的初始大小。</param>
+      <returns>创建的 DesignerAppView。</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.LoadObjectIntoAppAsync(System.String,System.Guid,System.String)">
+      <summary>将指定对象加载到应用中。</summary>
+      <param name="dllName">DLL 的名称。</param>
+      <param name="classId">类的标识符。</param>
+      <param name="initializationData">初始化对象的数据。</param>
+      <returns>操作的异步结果。 使用此项确定异步调用何时完成。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppView">
+      <summary>表示 XAML 设计图面中的应用视图。</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.ApplicationViewId">
+      <summary>获取应用视图的标识符。</summary>
+      <returns>应用视图的标识符。</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.AppUserModelId">
+      <summary>获取应用用户模型的标识符。</summary>
+      <returns>应用用户模型的标识符。</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.ViewSize">
+      <summary>获取设计器中应用视图的大小。</summary>
+      <returns>设计器中应用视图的大小。</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.ViewState">
+      <summary>获取指示视图是可见还是隐藏的值。</summary>
+      <returns>指示视图是 **Visible** 还是 **Hidden** 的值。</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppView.Close">
+      <summary>关闭设计器中的应用视图。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppView.UpdateViewAsync(Windows.UI.Xaml.Hosting.DesignerAppViewState,Windows.Foundation.Size)">
+      <summary>更新设计器中的应用视图。</summary>
+      <param name="viewState">应用视图的状态。</param>
+      <param name="viewSize">应用视图的大小。</param>
+      <returns>操作的异步结果。 使用此项确定异步调用何时完成。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppViewState">
+      <summary>定义指定应用是可见还是隐藏的常量。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.DesignerAppViewState.Hidden">
+      <summary>应用视图隐藏。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.DesignerAppViewState.Visible">
+      <summary>应用视图可见。</summary>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource">
+      <summary>启用非 UWP 桌面应用程序（例如，WPF 或 Windows 窗体应用程序），以在与窗口句柄 (HWND) 关联的任何 UI 元素中托管 UWP 控件。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.#ctor">
+      <summary>初始化 DesktopWindowXamlSource 类的新实例。</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.Content">
+      <summary>获取或设置你想要在桌面应用程序中托管的 Windows.UI.Xaml.UIElement 对象。</summary>
+      <returns>你想要在桌面应用程序中托管的对象。</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.HasFocus">
+      <summary>获取指示 DesktopWindowXamlSource 当前是否在桌面应用程序中有焦点的值。</summary>
+      <returns>如果 **DesktopWindowXamlSource** 当前在桌面应用程序中有焦点则为 True；否则为 false。</returns>
+    </member>
+    <member name="E:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.GotFocus">
+      <summary>当 DesktopWindowXamlSource 在桌面应用程序中获得焦点时发生（例如，在焦点位于 **DesktopWindowXamlSource** 前面的元素上时用户按 **Tab** 键）。</summary>
+    </member>
+    <member name="E:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.TakeFocusRequested">
+      <summary>当托管桌面应用程序收到从 DesktopWindowXamlSource 对象重新获得焦点的请求时发生（例如，用户位于 **DesktopWindowXamlSource** 中的最后一个可聚焦元素并按 **Tab**）。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.Close">
+      <summary>关闭并释放此 DesktopWindowXamlSource 使用的所有资源。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.NavigateFocus(Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest)">
+      <summary>尝试以编程方式将焦点给予桌面应用程序中的 DesktopWindowXamlSource。</summary>
+      <param name="request">为焦点导航指定原因和其他可选信息的对象。</param>
+      <returns>为焦点导航请求提供数据的对象。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesktopWindowXamlSourceGotFocusEventArgs">
+      <summary>为 GotFocus 事件提供事件数据。</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesktopWindowXamlSourceGotFocusEventArgs.Request">
+      <summary>获取为焦点导航指定原因和其他信息的 XamlSourceFocusNavigationRequest 对象。</summary>
+      <returns>为焦点导航指定原因和其他信息的对象。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesktopWindowXamlSourceTakeFocusRequestedEventArgs">
+      <summary>为 TakeFocusRequested 事件提供事件数据。</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesktopWindowXamlSourceTakeFocusRequestedEventArgs.Request">
+      <summary>获取为焦点导航指定原因和其他信息的 XamlSourceFocusNavigationRequest 对象。</summary>
+      <returns>为焦点导航指定原因和其他信息的对象。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.HostingContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost">
+      <summary>表示解析应用程序中资源的服务。 此接口用于设计工具承载的情况，不供常规使用。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost.ResolveFileResource(System.String)">
+      <summary>解析由路径指定的资源并返回字符串文件名。</summary>
+      <param name="path">要解决的本地路径。</param>
+      <returns>解析的文件名。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost2">
+      <summary>扩展 IXamlUIPresenterHost 以添加 GetGenericXamlFilePath。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost2.GetGenericXamlFilePath">
+      <summary>在设计时向呈现器主机中加载替代 generic.xaml 文件。</summary>
+      <returns>替代 generic.xaml 文件的位置的本地路径。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost3">
+      <summary>扩展 IXamlUIPresenterHost 以添加 ResolveDictionaryResource。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost3.ResolveDictionaryResource(Windows.UI.Xaml.ResourceDictionary,System.Object,System.Object)">
+      <summary>解决由字典和键指定的资源。</summary>
+      <param name="dictionary">包含资源的字典。</param>
+      <param name="dictionaryKey">资源键。</param>
+      <param name="suggestedValue">建议的值。</param>
+      <returns>资源对象。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.WindowsXamlManager">
+      <summary>表示托管 UWP 控件的非 UWP 桌面应用程序（例如，WPF 或 Windows 窗体应用程序）中的 UWP XAML 框架。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.WindowsXamlManager.Close">
+      <summary>关闭并释放此 WindowsXamlManager 使用的所有资源。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.WindowsXamlManager.InitializeForCurrentThread">
+      <summary>初始化当前线程上非 UWP 桌面应用程序（例如，WPF 或 Windows 窗体应用程序）中的 UWP XAML 框架。</summary>
+      <returns>包含 UWP XAML 框架引用的对象。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason">
+      <summary>定义表示 Windows.UI.Xaml.UIElement 在使用 DesktopWindowXamlSource 对象来托管基于 XAML 的 UI 的桌面应用程序中获得焦点的原因的值。 XamlSourceFocusNavigationRequest.Reason 属性返回这些值之一。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Down">
+      <summary>焦点为响应用户使用 4 向导航体验向下导航而设置。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.First">
+      <summary>焦点为响应用户使用双向导航体验导航到下一个元素而设置（例如，通过按 **Tab**）。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Last">
+      <summary>焦点为响应用户使用双向导航体验导航到前一个元素而设置（例如，通过按 **Shift-Tab**）。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Left">
+      <summary>焦点为响应用户使用 4 向导航体验向左导航而设置。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Programmatic">
+      <summary>已以编程方式设置焦点。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Restore">
+      <summary>焦点在任务切换后还原，如按 **Alt** + **Tab**。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Right">
+      <summary>焦点为响应用户使用 4 向导航体验向右导航而设置。</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Up">
+      <summary>焦点为响应用户使用 4 向导航体验向上导航而设置。</summary>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest">
+      <summary>提供有关给予 DesktopWindowXamlSource 对象焦点的请求的信息。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.#ctor(Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason)">
+      <summary>初始化具有导航请求原因的 XamlSourceFocusNavigationRequest 类的新实例。</summary>
+      <param name="reason">指示导航请求的原因的值。</param>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.#ctor(Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason,Windows.Foundation.Rect)">
+      <summary>初始化具有导航请求原因以及将接收导航焦点的边框的 XamlSourceFocusNavigationRequest 类的新实例。</summary>
+      <param name="reason">指示导航请求的原因的值。</param>
+      <param name="hintRect">正在失去焦点（即，在 DesktopWindowXamlSource 收到焦点之前获得焦点的元素）的桌面应用程序中的元素的边框。 此参数用于在用户使用 4 向导航体验（例如，通过使用键盘箭头键）输入 **DesktopWindowXamlSource** 时向 UWP XAML 框架提供上下文。 有关详细信息，请参阅备注。</param>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.#ctor(Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason,Windows.Foundation.Rect,System.Guid)">
+      <summary>初始化具有导航请求原因、将接收导航焦点的边框以及请求的唯一相关 ID 的 XamlSourceFocusNavigationRequest 类的新实例。</summary>
+      <param name="reason">指示导航请求的原因的值。</param>
+      <param name="hintRect">正在失去焦点（即，在 DesktopWindowXamlSource 收到焦点之前获得焦点的元素）的桌面应用程序中的元素的边框。 此参数用于在用户使用 4 向导航体验（例如，通过使用键盘箭头键）输入 **DesktopWindowXamlSource** 时向 UWP XAML 框架提供上下文。 有关详细信息，请参阅备注。</param>
+      <param name="correlationId">导航请求的唯一标识符。 你可以将此参数用于记录目的，或者如果你有来自已在进行的焦点移动的现有相关 ID，并且你想要将该焦点移动与当前导航请求连接，也可以使用。</param>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.CorrelationId">
+      <summary>获取导航请求的唯一标识符。 你可以将此值用于记录目的，或者如果你有来自已在进行的焦点移动的现有相关 ID，并且你想要将该焦点移动与新导航请求连接，也可以使用。</summary>
+      <returns>导航请求的唯一标识符。</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.HintRect">
+      <summary>获取正在失去焦点（即，在 DesktopWindowXamlSource 收到焦点之前获得焦点的元素）的桌面应用程序中的元素的边框。</summary>
+      <returns>正在失去焦点的边框。</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.Reason">
+      <summary>获取指示导航请求原因的 XamlSourceFocusNavigationReason 值。</summary>
+      <returns>指示导航请求的原因的值。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationResult">
+      <summary>使用 NavigateFocus 方法为将焦点导航到 DesktopWindowXamlSource 对象的请求提供数据。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationResult.#ctor(System.Boolean)">
+      <summary>初始化 XamlSourceFocusNavigationResult 类的新实例。</summary>
+      <param name="focusMoved">如果焦点成功移动到 DesktopWindowXamlSource 对象，则为 true；否则为 false。</param>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationResult.WasFocusMoved">
+      <summary>获取指示焦点是否成功移至 DesktopWindowXamlSource 对象的值。</summary>
+      <returns>如果焦点成功移动到 DesktopWindowXamlSource 对象，则为 true；否则为 false。</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.XamlUIPresenter">
+      <summary>在 Microsoft Direct3D 图面上显示的可视化树。 此类型用于设计工具承载的情况，不供常规使用。</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.CompleteTimelinesAutomatically">
+      <summary>获取或设置确定宿主是否要时间线始终运行到结束的值。</summary>
+      <returns>时间线一直运行到结束时为 **true**。 否则为 **false**。</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.RootElement">
+      <summary>获取或设置要绘制到图面的可视化元素的根。</summary>
+      <returns>要绘制的元素。</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.ThemeKey">
+      <summary>从 ThemeResourcesXaml 获取或设置标识要使用的主题集的字符串键。</summary>
+      <returns>字符串键。</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.ThemeResourcesXaml">
+      <summary>获取或设置指定资源字典的 XAML。 资源字典包含应解决并应用于内容的宿主的主题。</summary>
+      <returns>以字符串形式指定的 XAML 资源字典。</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.GetFlyoutPlacement(Windows.Foundation.Rect,Windows.Foundation.Size,Windows.Foundation.Size,Windows.Foundation.Rect,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode,System.Boolean,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode@)">
+      <summary>使用将显示放置目标及其浮出控件的控件的建议大小调用 FlyoutBase 放置逻辑。 返回正在运行的放置逻辑的结果边界。</summary>
+      <param name="placementTargetBounds">放置目标元素的边界，这些边界将传递给 FlyoutBase 呈现器逻辑。</param>
+      <param name="controlSize">应显示浮出控件的所需控件尺寸。</param>
+      <param name="minControlSize">应显示浮出控件的最小控件尺寸。</param>
+      <param name="containerRect">放置目标和浮出控件周围的区域边界。</param>
+      <param name="targetPreferredPlacement">要用于 FlyoutBase 位置逻辑的所需位置模式。</param>
+      <param name="allowFallbacks">如果回退可用于放置模式，则为 **true**。 如果无法使用回退，则为 **false**。</param>
+      <param name="chosenPlacement">由调用的 FlyoutBase 的放置逻辑使用的实际放置模式。</param>
+      <returns>由 FlyoutBase 放置逻辑计算得到的边界。</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.GetFlyoutPlacementTargetInfo(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode@,System.Boolean@)">
+      <summary>返回计算得到的放置目标的边界，此边界还用于在主机中显示浮出控件。 其他 **out** 参数提供有关如何计算边界的更多信息。</summary>
+      <param name="placementTarget">应相对于其放置 Flyout 的放置目标元素。</param>
+      <param name="preferredPlacement">一个枚举值，用于声明主机的 Flyout 相对于目标的首选位置。 </param>
+      <param name="targetPreferredPlacement">声明 Flyout 的首选位置的枚举值。</param>
+      <param name="allowFallbacks">如果 Flyout 位置逻辑允许回退位置，则为 **true**。 如果只应考虑 *targetPreferredPlacement* 值，则为 **false**。</param>
+      <returns>计算得到的放置目标边界。</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.NotifyWindowSizeChanged">
+      <summary>对 Window.Current 调用 SizeChanged 事件。 由主机用来将大小更改从主机设置传播到用户代码，以便可以将设计模式交互与运行时交互区分开。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.Present">
+      <summary>以同步调用显示主机的图面。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.Render">
+      <summary>呈现图面。 用于通过计时器进行异步调用。</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.SetHost(Windows.UI.Xaml.Hosting.IXamlUIPresenterHost)">
+      <summary>指定 IXamlUIPresenterHost 服务实现用于应用程序资源解决方案。</summary>
+      <param name="host">服务实现。</param>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.SetSize(System.Int32,System.Int32)">
+      <summary>指定图面的宽度和高度。</summary>
+      <param name="width">宽度（以像素为单位）。</param>
+      <param name="height">高度（以像素为单位）。</param>
+    </member>
+  </members>
+</doc>

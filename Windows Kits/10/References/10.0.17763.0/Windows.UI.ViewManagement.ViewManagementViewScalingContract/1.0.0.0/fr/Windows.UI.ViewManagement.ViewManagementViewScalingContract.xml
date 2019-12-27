@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.ViewManagement.ViewManagementViewScalingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.ViewManagement.ApplicationViewScaling">
+      <summary>Fournit des méthodes et des propriétés pour contrôler la mise à l'échelle de la disposition.</summary>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.ApplicationViewScaling.DisableLayoutScaling">
+      <summary>Obtient une valeur qui indique si la mise à l'échelle de la disposition est désactivée.</summary>
+      <returns>**true** si la mise à l'échelle de la disposition est désactivée ; sinon, **false**.</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.ApplicationViewScaling.TrySetDisableLayoutScaling(System.Boolean)">
+      <summary>Tente de définir la propriété DisableLayoutScaling à la valeur spécifiée.</summary>
+      <param name="disableLayoutScaling">**true** pour désactiver la mise à l'échelle de la disposition ; **false** pour l'activer.</param>
+      <returns>**True** si la propriété a été définie avec succès ; sinon, **False**.</returns>
+    </member>
+    <member name="T:Windows.UI.ViewManagement.ViewManagementViewScalingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

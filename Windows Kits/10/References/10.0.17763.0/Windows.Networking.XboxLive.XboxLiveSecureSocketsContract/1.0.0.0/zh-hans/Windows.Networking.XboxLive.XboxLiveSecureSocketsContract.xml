@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.XboxLive.XboxLiveSecureSocketsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveDeviceAddress">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsLocal">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsValid">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.MaxSnapshotBytesSize">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.NetworkAccessKind">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveDeviceAddress.SnapshotChanged">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.Compare(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="otherDeviceAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBase64(System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="base64">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBuffer(Windows.Storage.Streams.IBuffer)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="buffer">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBytes(System.Byte[])">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="buffer">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetLocal">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBase64">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBuffer">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBytes(System.Byte[],System.UInt32@)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="buffer">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="bytesWritten">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPair">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalHostName">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalPort">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteDeviceAddress">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteHostName">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemotePort">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.State">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.Template">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPair.StateChanged">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.DeleteAsync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairByHostNamesAndPorts(Windows.Networking.HostName,System.String,Windows.Networking.HostName,System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="localHostName">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="localPort">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="remoteHostName">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="remotePort">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairBySocketAddressBytes(System.Byte[],System.Byte[])">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="localSocketAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="remoteSocketAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetLocalSocketAddressBytes(System.Byte[])">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="socketAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetRemoteSocketAddressBytes(System.Byte[])">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="socketAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.None">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.ReevaluatePath">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.DeviceAddress">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.EndpointPair">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.IsExistingPathEvaluation">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.Status">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Canceled">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.LocalSystemNotAuthorized">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoCompatibleNetworkPaths">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoLocalNetworks">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RefusedDueToConfiguration">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RemoteSystemNotAuthorized">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Succeeded">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.TimedOut">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.UnexpectedInternalError">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairState">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingInbound">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingOutbound">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Deleted">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.DeletingLocally">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Invalid">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Ready">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.RemoteEndpointTerminating">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.NewState">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.OldState">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeLower">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeUpper">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.EndpointPairs">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeLower">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeUpper">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Name">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.SocketKind">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Templates">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InboundEndpointPairCreated">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="deviceAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="deviceAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="behaviors">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="deviceAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="initiatorPort">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="acceptorPort">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="deviceAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="initiatorPort">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="acceptorPort">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="behaviors">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.GetTemplateByName(System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="name">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs.EndpointPair">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Moderate">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Open">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Strict">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.#ctor">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.DeviceAddresses">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemInboundBandwidthConstrained">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemOutboundBandwidthConstrained">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxPrivatePayloadSize">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxSimultaneousProbeConnections">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MetricResults">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.Metrics">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfProbesToAttempt">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfResultsPending">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PrivatePayloadResults">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishedPrivatePayload">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ShouldRequestPrivatePayloads">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.TimeoutInMilliseconds">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ClearPrivatePayload">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="deviceAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="metric">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForDevice(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="deviceAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForMetric(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="metric">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetPrivatePayloadResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="deviceAddress">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MeasureAsync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishPrivatePayloadBytes(System.Byte[])">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="payload">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Canceled">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgress">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgressWithProvisionalResults">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.LocalSystemNotAuthorized">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoCompatibleNetworkPaths">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoLocalNetworks">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NotStarted">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RefusedDueToConfiguration">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RemoteSystemNotAuthorized">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Succeeded">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.TimedOut">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.UnexpectedInternalError">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageInboundBitsPerSecond">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageLatencyInMilliseconds">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageOutboundBitsPerSecond">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxInboundBitsPerSecond">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxLatencyInMilliseconds">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxOutboundBitsPerSecond">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinInboundBitsPerSecond">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinLatencyInMilliseconds">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinOutboundBitsPerSecond">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.DeviceAddress">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Metric">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Status">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Value">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.DeviceAddress">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Status">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Value">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSecureSocketsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSocketKind">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Datagram">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.None">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Stream">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+  </members>
+</doc>

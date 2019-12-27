@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.Preview.GamesEnumerationContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.Preview.GamesEnumerationContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.Preview.GamesEnumeration.GameList">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="E:Windows.Gaming.Preview.GamesEnumeration.GameList.GameAdded">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="E:Windows.Gaming.Preview.GamesEnumeration.GameList.GameRemoved">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="E:Windows.Gaming.Preview.GamesEnumeration.GameList.GameUpdated">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameList.FindAllAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameList.FindAllAsync(System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="packageFamilyName">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameList.MergeEntriesAsync(Windows.Gaming.Preview.GamesEnumeration.GameListEntry,Windows.Gaming.Preview.GamesEnumeration.GameListEntry)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="left">
+      </param>
+      <param name="right">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameList.UnmergeEntryAsync(Windows.Gaming.Preview.GamesEnumeration.GameListEntry)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="mergedEntry">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Gaming.Preview.GamesEnumeration.GameListCategory">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.Preview.GamesEnumeration.GameListCategory.Candidate">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Gaming.Preview.GamesEnumeration.GameListCategory.ConfirmedBySystem">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Gaming.Preview.GamesEnumeration.GameListCategory.ConfirmedByUser">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.Preview.GamesEnumeration.GameListChangedEventHandler">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="game">
+      </param>
+    </member>
+    <member name="T:Windows.Gaming.Preview.GamesEnumeration.GameListEntry">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.Category">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.DisplayInfo">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.GameModeConfiguration">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.LaunchableState">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.LauncherExecutable">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.LaunchParameters">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.Properties">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.TitleId">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.LaunchAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.SetCategoryAsync(Windows.Gaming.Preview.GamesEnumeration.GameListCategory)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="value">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.SetLauncherExecutableFileAsync(Windows.Storage.IStorageFile)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="executableFile">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.SetLauncherExecutableFileAsync(Windows.Storage.IStorageFile,System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="executableFile">
+      </param>
+      <param name="launchParams">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameListEntry.SetTitleIdAsync(System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="id">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Gaming.Preview.GamesEnumeration.GameListEntryLaunchableState">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.Preview.GamesEnumeration.GameListEntryLaunchableState.ByLastRunningFullPath">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Gaming.Preview.GamesEnumeration.GameListEntryLaunchableState.ByTile">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Gaming.Preview.GamesEnumeration.GameListEntryLaunchableState.ByUserProvidedPath">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Gaming.Preview.GamesEnumeration.GameListEntryLaunchableState.NotLaunchable">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.Preview.GamesEnumeration.GameListRemovedEventHandler">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="identifier">
+      </param>
+    </member>
+    <member name="T:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.AffinitizeToExclusiveCpus">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.CpuExclusivityMaskHigh">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.CpuExclusivityMaskLow">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.IsEnabled">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.MaxCpuCount">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.PercentGpuMemoryAllocatedToGame">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.PercentGpuMemoryAllocatedToSystemCompositor">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.PercentGpuTimeAllocatedToGame">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.RelatedProcessNames">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration.SaveAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Gaming.Preview.GamesEnumeration.GameModeUserConfiguration">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.GameModeUserConfiguration.GamingRelatedProcessNames">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameModeUserConfiguration.GetDefault">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.GameModeUserConfiguration.SaveAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Gaming.Preview.GamesEnumeration.IGameListEntry">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.IGameListEntry.Category">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.IGameListEntry.DisplayInfo">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Gaming.Preview.GamesEnumeration.IGameListEntry.Properties">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.IGameListEntry.LaunchAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Gaming.Preview.GamesEnumeration.IGameListEntry.SetCategoryAsync(Windows.Gaming.Preview.GamesEnumeration.GameListCategory)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="value">
+      </param>
+      <returns>
+      </returns>
+    </member>
+  </members>
+</doc>

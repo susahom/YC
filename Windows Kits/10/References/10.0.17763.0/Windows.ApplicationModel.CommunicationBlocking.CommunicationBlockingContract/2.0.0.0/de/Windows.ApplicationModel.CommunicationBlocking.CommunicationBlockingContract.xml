@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger">
+      <summary>Stellt einen Trigger dar, um eine Anwendung zum Blockieren der Kommunikation zu aktivieren, wenn diese als bevorzugte Blockier-App festgelegt ist.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger.#ctor">
+      <summary>Initialisiert eine neue Instanz der CommunicationBlockingAppSetAsActiveTrigger.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager">
+      <summary>Der Manager, der zuständig für das Verfolgen von blockierten Nummern und das Anzeigen der entsprechenden Blockierbenutzeroberflächen ist.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockingActive">
+      <summary>Ruft ab, ob die Blockierung aktuell aktiviert ist.</summary>
+      <returns>Bestimmt, ob das Blockieren aktiviert ist.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockedNumberAsync(System.String)">
+      <summary>Ein asynchroner Vorgang, der zurückgibt, ob eine Nummer auf der Blockierliste ist.</summary>
+      <param name="number">Die zu überprüfende Nummer.</param>
+      <returns>Gibt asynchron zurück, ob die Nummer blockiert ist.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedCallsUI">
+      <summary>Zeigt die Liste der blockierten Anrufe an.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedMessagesUI">
+      <summary>Zeigt die Liste der blockierten Nachrichten an.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Startet eine UI zum Blockieren von Nummern, wenn es eine aktive Blockier-App gibt.</summary>
+      <param name="phoneNumbers">Die Liste von Nummern, die zur Blockierliste hinzugefügt werden sollen.</param>
+      <returns>Gibt **true** zurück, wenn die aktive Blockier-App gestartet wird; andernfalls wird **false** zurückgegeben.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowUnblockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Startet die Anwendung zum Entsperren von Nummern, wenn es eine aktive Blockier-App gibt.</summary>
+      <param name="phoneNumbers">Die Liste von Nummern, die aus der Blockierliste entfernt werden sollen.</param>
+      <returns>Gibt **true** zurück, wenn die aktive Blockier-App gestartet wird; andernfalls wird **false** zurückgegeben.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager">
+      <summary>Bestimmt die Anwendung, die als Blockieranwendung verwendet werden soll.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.IsCurrentAppActiveBlockingApp">
+      <summary>Gibt an, ob die aktuelle Anwendung die aktive Blockieranwendung ist.</summary>
+      <returns>Ein Wert, der angibt, ob die aktuelle Anwendung die aktive Blockier-App ist.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.RequestSetAsActiveBlockingAppAsync">
+      <summary>Ruft ein Dialogfeld auf, um die aktuelle Anwendung als Standard-Anrufkommunikations-Sperranwendung festzulegen.</summary>
+      <returns>Zeigt an, ob die Anwendung als Standardanrufursprungsanwendung festgelegt wurde.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.ShowCommunicationBlockingSettingsUI">
+      <summary>Zeigt die Benutzeroberfläche, um die derzeit aktive Blockieranwendung auszuwählen.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

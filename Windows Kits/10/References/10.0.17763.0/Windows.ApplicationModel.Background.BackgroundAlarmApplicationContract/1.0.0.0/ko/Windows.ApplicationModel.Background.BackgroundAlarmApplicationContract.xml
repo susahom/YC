@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.AlarmAccessStatus">
+      <summary>사용자에게 응용 프로그램에 대한 경보 설정 권한이 부여되어 있는지 여부를 나타냅니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithoutWakeupCapability">
+      <summary>사용자가 앱에 경보를 설정할 권한을 부여했지만 경보는 대기 모드에서 컴퓨터를 깨울 수 없습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithWakeupCapability">
+      <summary>사용자가 앱에 경보를 설정할 권한을 부여했으며 경보는 대기 모드에서 컴퓨터를 깨울 수 있습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Denied">
+      <summary>사용자가 앱에서 경보를 설정할 수 있는 권한을 거부했습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Unspecified">
+      <summary>사용자가 앱에서 경보를 설정할 수 있는 권한 요청에 대해 응답하지 않았습니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.AlarmApplicationManager">
+      <summary>사용자로부터 경보를 설정할 수 있는 권한을 요청하고 앱에서 경보를 설정하기 위한 사용자 권한 상태를 검색합니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.GetAccessStatus">
+      <summary>앱에서 경보를 설정할 수 있는 사용자 권한 상태를 검색합니다.</summary>
+      <returns>사용자에게 경보 설정 권한이 부여되어 있는지 여부를 나타냅니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.RequestAccessAsync">
+      <summary>사용자로부터 경보 설정 권한을 요청합니다.</summary>
+      <returns>완료되면 이 메서드는 AlarmAccessStatus 값을 반환합니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

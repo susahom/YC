@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.XboxLive.XboxLiveSecureSocketsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveDeviceAddress">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsLocal">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsValid">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.MaxSnapshotBytesSize">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.NetworkAccessKind">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveDeviceAddress.SnapshotChanged">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.Compare(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="otherDeviceAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBase64(System.String)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="base64">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBuffer(Windows.Storage.Streams.IBuffer)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="buffer">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBytes(System.Byte[])">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="buffer">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetLocal">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBase64">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBuffer">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBytes(System.Byte[],System.UInt32@)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="buffer">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="bytesWritten">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPair">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalHostName">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalPort">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteDeviceAddress">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteHostName">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemotePort">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.State">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.Template">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPair.StateChanged">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.DeleteAsync">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairByHostNamesAndPorts(Windows.Networking.HostName,System.String,Windows.Networking.HostName,System.String)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="localHostName">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="localPort">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="remoteHostName">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="remotePort">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairBySocketAddressBytes(System.Byte[],System.Byte[])">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="localSocketAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="remoteSocketAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetLocalSocketAddressBytes(System.Byte[])">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="socketAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetRemoteSocketAddressBytes(System.Byte[])">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="socketAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.None">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.ReevaluatePath">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.DeviceAddress">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.EndpointPair">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.IsExistingPathEvaluation">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.Status">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Canceled">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.LocalSystemNotAuthorized">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoCompatibleNetworkPaths">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoLocalNetworks">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RefusedDueToConfiguration">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RemoteSystemNotAuthorized">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Succeeded">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.TimedOut">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.UnexpectedInternalError">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairState">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingInbound">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingOutbound">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Deleted">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.DeletingLocally">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Invalid">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Ready">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.RemoteEndpointTerminating">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.NewState">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.OldState">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeLower">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeUpper">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.EndpointPairs">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeLower">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeUpper">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Name">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.SocketKind">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Templates">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InboundEndpointPairCreated">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="deviceAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="deviceAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="behaviors">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="deviceAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="initiatorPort">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="acceptorPort">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="deviceAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="initiatorPort">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="acceptorPort">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="behaviors">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.GetTemplateByName(System.String)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="name">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs.EndpointPair">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Moderate">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Open">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Strict">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.#ctor">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.DeviceAddresses">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemInboundBandwidthConstrained">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemOutboundBandwidthConstrained">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxPrivatePayloadSize">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxSimultaneousProbeConnections">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MetricResults">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.Metrics">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfProbesToAttempt">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfResultsPending">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PrivatePayloadResults">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishedPrivatePayload">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ShouldRequestPrivatePayloads">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.TimeoutInMilliseconds">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ClearPrivatePayload">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="deviceAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <param name="metric">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForDevice(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="deviceAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForMetric(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="metric">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetPrivatePayloadResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="deviceAddress">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MeasureAsync">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishPrivatePayloadBytes(System.Byte[])">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <param name="payload">Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Canceled">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgress">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgressWithProvisionalResults">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.LocalSystemNotAuthorized">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoCompatibleNetworkPaths">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoLocalNetworks">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NotStarted">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RefusedDueToConfiguration">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RemoteSystemNotAuthorized">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Succeeded">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.TimedOut">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.UnexpectedInternalError">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageInboundBitsPerSecond">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageLatencyInMilliseconds">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageOutboundBitsPerSecond">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxInboundBitsPerSecond">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxLatencyInMilliseconds">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxOutboundBitsPerSecond">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinInboundBitsPerSecond">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinLatencyInMilliseconds">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinOutboundBitsPerSecond">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.DeviceAddress">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Metric">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Status">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Value">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.DeviceAddress">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Status">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Value">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+      <returns>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSecureSocketsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSocketKind">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Datagram">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.None">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Stream">
+      <summary>Questa API non è disponibile per tutte le app. A meno che l'account sviluppatore in uso non sia appositamente fornito da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.</summary>
+    </member>
+  </members>
+</doc>

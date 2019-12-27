@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.AlarmAccessStatus">
+      <summary>表示使用者是否已提供應用程式權限進行警示設定。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithoutWakeupCapability">
+      <summary>使用者已授與用來設定警示之應用程式的權限，但警示無法將電腦從待命狀態喚醒。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithWakeupCapability">
+      <summary>使用者已授與用來設定警示之應用程式的權限，且警示可將電腦從待命狀態喚醒。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Denied">
+      <summary>使用者已拒絶用來設定警示之應用程式的權限。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Unspecified">
+      <summary>使用者尚未回應應用程式設定警示的權限要求。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.AlarmApplicationManager">
+      <summary>要求使用者的權限以設定警示，並針對應用程式擷取使用者權限的狀態以設定警示。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.GetAccessStatus">
+      <summary>擷取使用者在該應用程式的權限狀態，以設定警示。</summary>
+      <returns>表示使用者是否已授與權限進行警示設定。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.RequestAccessAsync">
+      <summary>要求使用者的權限以設定警示。</summary>
+      <returns>這個方法會在完成時傳回 AlarmAccessStatus 值。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

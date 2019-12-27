@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Resources.Management.ResourceIndexerContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate">
+      <summary>Rappresenta un singolo valore possibile per una risorsa specificata, e i qualificatori associati a tale risorsa.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Metadata">
+      <summary>Ottiene l'elenco di coppie nome/valore dei metadati.</summary>
+      <returns>Elenco di coppie di stringhe, ciascuna contenente il nome di IndexedResourceQualifier e il relativo valore.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Qualifiers">
+      <summary>Ottiene l'elenco di IndexedResourceQualifiers.</summary>
+      <returns>Un elenco di IndexedResourceQualifiers.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Type">
+      <summary>Ottiene la proprietà di tipo che determina se la risorsa è un file o una stringa.</summary>
+      <returns>Valore dell'enumerazione IndexedResourceType.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Uri">
+      <summary>Ottiene l'URI della risorsa denominata.</summary>
+      <returns>URI della risorsa denominata.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.ValueAsString">
+      <summary>Ottiene il valore del candidato come stringa.</summary>
+      <returns>Se il candidato è un file, il valore è un percorso di file, ad esempio "images\logo.scale-100.png", relativo alla radice del progetto passata al costruttore ResourceIndexer. Se il candidato è una stringa, il valore è la stringa effettiva, (ad esempio "Hello World").</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.GetQualifierValue(System.String)">
+      <summary>Restituisce il valore di un qualificatore in base al nome.</summary>
+      <param name="qualifierName">Nome del qualificatore.</param>
+      <returns>Valore del qualificatore.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier">
+      <summary>Rappresenta un oggetto che dichiara in quale contesto una risorsa sia appropriata.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier.QualifierName">
+      <summary>Ottiene il nome del qualificatore.</summary>
+      <returns>Nome del qualificatore, ad esempio "lingua", "contrasto" oppure "scala".</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier.QualifierValue">
+      <summary>Ottiene il valore del qualificatore.</summary>
+      <returns>Valore del qualificatore. La distinzione tra maiuscole e minuscole del valore del qualificatore deve essere conservata dalla prima istanza del qualificatore individuato durante l'indicizzazione.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceType">
+      <summary>Specifica se un IndexedResourceCandidate è un file o una stringa.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.EmbeddedData">
+      <summary>Riservato.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.Path">
+      <summary>IndexedResourceCandidate è un file.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.String">
+      <summary>IndexedResourceCandidate è una stringa.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.ResourceIndexer">
+      <summary>Indicizza file o contenitori di risorse di origine e genera candidati di risorse denominate utilizzando determinate convenzioni di denominazione di file e cartelle.</summary>
+      <deprecated type="deprecate">Utilizza CreateResourceIndexer in mrmsupport.dll anziché ResourceIndexer.  Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.#ctor(Windows.Foundation.Uri)">
+      <summary>Crea un nuovo oggetto ResourceIndexer specificando la radice dei file di progetto.</summary>
+      <deprecated type="deprecate">Utilizza CreateResourceIndexer in mrmsupport.dll anziché IResourceIndexerFactory.  Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <param name="projectRoot">La cartella root del progetto (file:// URI).</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.#ctor(Windows.Foundation.Uri,Windows.Foundation.Uri)">
+      <summary>Crea un nuovo oggetto ResourceIndexer specificando la radice dei file di progetto e una DLL di estensione.</summary>
+      <deprecated type="deprecate">Utilizza CreateResourceIndexer in mrmsupport.dll anziché IResourceIndexerFactory2.  Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <param name="projectRoot">La cartella root del progetto (file:// URI).</param>
+      <param name="extensionDllPath">Percorso DLL di estensione (file:// URI).</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.IndexFileContentsAsync(Windows.Foundation.Uri)">
+      <summary>Indicizza un percorso di file dump ResW, ResJSON, PRI o PRI XML per le convenzioni di denominazione di file e cartelle e applica i qualificatori alle risorse individuate nel contenuto del file.</summary>
+      <deprecated type="deprecate">Utilizza IndexFilePath in mrmsupport.dll anziché IResourceIndexer.  Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <param name="file">Il file da indicizzare (file:// URI). Il percorso deve essere un percorso assoluto con la lettera dell'unità specificata. L'URI può inoltre fornire a un'autorità vuota che costituisca il file system locale. I percorsi di file lunghi non sono supportati.</param>
+      <returns>Elenco di oggetti IndexedResourceCandidate trovati nel *file*. È un elenco vuoto se non viene trovato niente.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.IndexFilePath(Windows.Foundation.Uri)">
+      <summary>Indicizza un percorso di file per le convenzioni di denominazione di file e cartelle.</summary>
+      <deprecated type="deprecate">Utilizza IndexFilePath in mrmsupport.dll anziché IResourceIndexer.  Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <param name="filePath">Il file da indicizzare (file:// URI). Il percorso deve essere un percorso assoluto con la lettera dell'unità specificata. L'URI può inoltre fornire a un'autorità vuota che costituisca il file system locale. I percorsi di file lunghi non sono supportati.</param>
+      <returns>Oggetto IndexedResourceCandidate che rappresenta la risorsa del file indicizzato.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.ResourceIndexerContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

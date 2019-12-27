@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.XboxLive.XboxLiveSecureSocketsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveDeviceAddress">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsLocal">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsValid">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.MaxSnapshotBytesSize">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.NetworkAccessKind">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveDeviceAddress.SnapshotChanged">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.Compare(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="otherDeviceAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBase64(System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="base64">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBuffer(Windows.Storage.Streams.IBuffer)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="buffer">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBytes(System.Byte[])">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="buffer">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetLocal">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBase64">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBuffer">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBytes(System.Byte[],System.UInt32@)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="buffer">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="bytesWritten">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPair">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalHostName">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalPort">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteDeviceAddress">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteHostName">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemotePort">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.State">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.Template">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPair.StateChanged">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.DeleteAsync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairByHostNamesAndPorts(Windows.Networking.HostName,System.String,Windows.Networking.HostName,System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="localHostName">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="localPort">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="remoteHostName">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="remotePort">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairBySocketAddressBytes(System.Byte[],System.Byte[])">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="localSocketAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="remoteSocketAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetLocalSocketAddressBytes(System.Byte[])">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="socketAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetRemoteSocketAddressBytes(System.Byte[])">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="socketAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.None">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.ReevaluatePath">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.DeviceAddress">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.EndpointPair">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.IsExistingPathEvaluation">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.Status">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Canceled">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.LocalSystemNotAuthorized">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoCompatibleNetworkPaths">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoLocalNetworks">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RefusedDueToConfiguration">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RemoteSystemNotAuthorized">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Succeeded">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.TimedOut">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.UnexpectedInternalError">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairState">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingInbound">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingOutbound">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Deleted">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.DeletingLocally">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Invalid">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Ready">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.RemoteEndpointTerminating">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.NewState">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.OldState">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeLower">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeUpper">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.EndpointPairs">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeLower">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeUpper">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Name">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.SocketKind">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Templates">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InboundEndpointPairCreated">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="deviceAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="deviceAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="behaviors">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="deviceAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="initiatorPort">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="acceptorPort">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="deviceAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="initiatorPort">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="acceptorPort">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="behaviors">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.GetTemplateByName(System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="name">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs.EndpointPair">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Moderate">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Open">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Strict">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.#ctor">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.DeviceAddresses">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemInboundBandwidthConstrained">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemOutboundBandwidthConstrained">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxPrivatePayloadSize">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxSimultaneousProbeConnections">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MetricResults">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.Metrics">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfProbesToAttempt">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfResultsPending">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PrivatePayloadResults">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishedPrivatePayload">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ShouldRequestPrivatePayloads">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.TimeoutInMilliseconds">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ClearPrivatePayload">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="deviceAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="metric">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForDevice(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="deviceAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForMetric(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="metric">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetPrivatePayloadResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="deviceAddress">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MeasureAsync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishPrivatePayloadBytes(System.Byte[])">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="payload">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Canceled">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgress">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgressWithProvisionalResults">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.LocalSystemNotAuthorized">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoCompatibleNetworkPaths">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoLocalNetworks">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NotStarted">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RefusedDueToConfiguration">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RemoteSystemNotAuthorized">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Succeeded">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.TimedOut">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.UnexpectedInternalError">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageInboundBitsPerSecond">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageLatencyInMilliseconds">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageOutboundBitsPerSecond">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxInboundBitsPerSecond">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxLatencyInMilliseconds">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxOutboundBitsPerSecond">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinInboundBitsPerSecond">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinLatencyInMilliseconds">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinOutboundBitsPerSecond">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.DeviceAddress">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Metric">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Status">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Value">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.DeviceAddress">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Status">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Value">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSecureSocketsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSocketKind">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Datagram">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.None">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Stream">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.AlarmAccessStatus">
+      <summary>Indique si l'utilisateur a fourni l'autorisation pour que l'application définisse des alarmes.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithoutWakeupCapability">
+      <summary>L'utilisateur a autorisé l'application à définir des alarmes, mais les alarmes ne peuvent pas sortir l'ordinateur du mode veille.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithWakeupCapability">
+      <summary>L'utilisateur a autorisé l'application à définir des alarmes, et les alarmes peuvent sortir l'ordinateur du mode veille.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Denied">
+      <summary>L'utilisateur n'a pas autorisé l'application à définir des alarmes.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Unspecified">
+      <summary>L'utilisateur n'a pas répondu à une demande d'autorisation de l'application pour définir les alarmes.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.AlarmApplicationManager">
+      <summary>Demande l'autorisation de l'utilisateur de définir des alarmes et récupère l'état de l'autorisation utilisateur permettant à l'application de définir des alarmes.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.GetAccessStatus">
+      <summary>Récupère l'état de l'autorisation utilisateur permettant à l'application de définir des alarmes.</summary>
+      <returns>Indique si l'utilisateur a accordé l'autorisation de définir des alarmes.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.RequestAccessAsync">
+      <summary>Demande l'autorisation de l'utilisateur de définir des alarmes.</summary>
+      <returns>Cette méthode retourne une valeur AlarmAccessStatus lorsqu'elle se termine.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

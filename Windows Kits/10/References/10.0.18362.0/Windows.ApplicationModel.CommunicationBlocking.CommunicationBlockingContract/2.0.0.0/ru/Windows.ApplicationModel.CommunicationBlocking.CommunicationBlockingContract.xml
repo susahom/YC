@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger">
+      <summary>Представляет триггер для активации приложения, блокирующего коммуникации при его выборе в качестве предпочитаемого приложения для блокировки.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger.#ctor">
+      <summary>Инициализирует новый экземпляр CommunicationBlockingAppSetAsActiveTrigger.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager">
+      <summary>Диспетчер, ответственный за отслеживание заблокированных номеров и отображение соответствующих блокирующих интерфейсов пользователя.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockingActive">
+      <summary>Возвращает сведения о том, включена ли в настоящий момент блокировка.</summary>
+      <returns>Определяет, включена ли блокировка.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockedNumberAsync(System.String)">
+      <summary>Асинхронная операция, которая возвращает сведения о том, находится ли номер в списке блокировки.</summary>
+      <param name="number">Номер для проверки.</param>
+      <returns>Асинхронно возвращает сведения о том, блокирован ли номер.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedCallsUI">
+      <summary>Отображает список заблокированных звонков.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedMessagesUI">
+      <summary>Отображает список заблокированных сообщений.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Запускает интерфейс для блокировки номеров при наличии активного приложения блокировки.</summary>
+      <param name="phoneNumbers">Список номеров для добавления в список блокировки.</param>
+      <returns>Возвращает **true**, если запущено активное приложение блокировки, иначе возвращается **false**.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowUnblockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Запускает приложение для отмены блокировки номеров, если имеется активное приложение блокировки.</summary>
+      <param name="phoneNumbers">Список номеров для удаления из списка блокировки.</param>
+      <returns>Возвращает **true**, если запущено активное приложение блокировки, иначе возвращается **false**.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager">
+      <summary>Определяет приложение для использования в качестве приложения для блокировки.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.IsCurrentAppActiveBlockingApp">
+      <summary>Указывает, является ли текущее приложение активным блокирующим приложением.</summary>
+      <returns>Значение, которое сообщает, является ли текущее приложение активным приложением блокировки.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.RequestSetAsActiveBlockingAppAsync">
+      <summary>Вызывает диалоговое окно для установки текущего приложения приложением блокировки телефонной связи по умолчанию.</summary>
+      <returns>Указывает, задано ли приложение по умолчанию как приложение телефона.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.ShowCommunicationBlockingSettingsUI">
+      <summary>Отображает пользовательский интерфейс для выбора активного приложения блокировки.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

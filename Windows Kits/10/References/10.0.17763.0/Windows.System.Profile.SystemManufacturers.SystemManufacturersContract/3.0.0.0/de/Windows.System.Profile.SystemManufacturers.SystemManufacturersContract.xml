@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.Profile.SystemManufacturers.SystemManufacturersContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.Profile.SystemManufacturers.OemSupportInfo">
+      <summary>Stellt Supportinformationen über den Hersteller für das Gerät bereit. Dazu gehören der Name des OEMs, Websiteadresse und andere Supportdetails.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportAppLink">
+      <summary>Ruft den Handler-Protokolllink für die OEM-integrierte Unterstützungs-Apps ab, die anstelle der Web-URL gestartet wird.</summary>
+      <returns>Die Handler-Protokolllink für die OEM-integrierte Unterstützungs-App.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportLink">
+      <summary>Ruft den Uniform Resource Identifier (URI) für die Support-Website des Original Equipment Manufacturers (OEM) ab.</summary>
+      <returns>Die URI für die OEM-Support-Website.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportProvider">
+      <summary>Ruft den Namen des Support-Anbieters für das Gerät ab.</summary>
+      <returns>Der Name des Support-Anbieters für das Gerät.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SmbiosInformation">
+      <summary>Ermöglicht den Zugriff auf Eigenschaften aus dem SMBIOS für das System.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SmbiosInformation.SerialNumber">
+      <summary>Ruft die SMBIOS-Seriennummer des Systems ab.</summary>
+      <returns>Seriennummer</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemManufacturersContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.FriendlyName">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.OperatingSystem">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemFirmwareVersion">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemHardwareVersion">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemManufacturer">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemProductName">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemSku">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportInfo">
+      <summary>Bietet Support-Informationen über das Gerät. Dazu gehören die lokale Systemedition und OEM-Supportinformationen.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalDeviceInfo">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalSystemEdition">
+      <summary>Ruft eine Zeichenfolge mit der lokalen Systemedition des Geräts ab.</summary>
+      <returns>Eine Zeichenfolge mit der lokalen Systemedition des Geräts.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.OemSupportInfo">
+      <summary>Ruft die OEM-Supportinformationen für das System ab.</summary>
+      <returns>Die OEM-Supportinformationen für das System.</returns>
+    </member>
+  </members>
+</doc>

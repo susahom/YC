@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.TargetedContent.TargetedContentContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAction">
+      <summary>Rappresenta l'oggetto TargetedContentValue dell'azione TargetedContentValueKind.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentAction.InvokeAsync">
+      <summary>Richiama l'azione.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAppInstallationState">
+      <summary>Enumerazione che definisce tutti i valori che TargetedContentAppInstallState può contenere: NotApplicable, NotInstalled o Installed.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.Installed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.NotApplicable">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.NotInstalled">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAvailability">
+      <summary>Enumerazione che definisce tutti i valori che TargetedContentAvailability può contenere: All, Partial o None.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.All">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.None">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.Partial">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAvailabilityChangedEventArgs">
+      <summary>Rappresenta gli argomenti per l'evento i dati per l'evento Availability Changed.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentAvailabilityChangedEventArgs.GetDeferral">
+      <summary>Rappresenta gli argomenti per l'evento i dati per l'evento Availability Changed.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentChangedEventArgs">
+      <summary>Rappresenta gli argomenti per l'evento i dati per l'evento Content Changed.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentChangedEventArgs.HasPreviousContentExpired">
+      <summary>Ottiene un valore booleano che indica se il contenuto precedente per TargetedContentChangedEventArgs è scaduto.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentChangedEventArgs.GetDeferral">
+      <summary>Ottiene il rinvio. Obbligatorio per i gestori asincroni. Il chiamante è responsabile della chiamata Complete quando viene gestito l'evento.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentCollection">
+      <summary>Rappresenta una raccolta di elementi o sottoraccolte TargetedContentContainer.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Collections">
+      <summary>Recupera l'oggetto TargetedContentCollection in un oggetto TargetedContentContainer.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Id">
+      <summary>Ottiene l'ID della raccolta.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Items">
+      <summary>Ottiene una raccolta di TargetedContentItems in un oggetto TargetedContentCollection.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Path">
+      <summary>Ottiene il percorso dell'oggetto TargetedContentCollection.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Properties">
+      <summary>Ottiene una raccolta che contiene nomi di proprietà come chiavi e TargetedContentValues come valori nell'oggetto TargetedContentCollection.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentCollection.ReportCustomInteraction(System.String)">
+      <summary>Indica l'interazione personalizzata per un oggetto TargetedContentCollection.</summary>
+      <param name="customInteractionName">
+      </param>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentCollection.ReportInteraction(Windows.Services.TargetedContent.TargetedContentInteraction)">
+      <summary>Indica l'interazione per un oggetto TargetedContentCollection.</summary>
+      <param name="interaction">
+      </param>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentContainer">
+      <summary>Rappresenta un contenitore per tutto il contenuto in un oggetto TargetedContentSubscription.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Availability">
+      <summary>Ottiene un oggetto TargetedContentAvailability per un oggetto TargetedContentContainer.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Content">
+      <summary>Ottiene un oggetto TargetedContentCollection per un oggetto TargetedContentContainer.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Id">
+      <summary>Ottiene l'ID per l'oggetto TargetedContainerContainer.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Timestamp">
+      <summary>L'ultima volta che il contenuto è stato aggiornato.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentContainer.GetAsync(System.String)">
+      <summary>Restituisce un oggetto TargetedContainerContainer per ContentId specificato.</summary>
+      <param name="contentId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentContainer.SelectSingleObject(System.String)">
+      <summary>Ottiene l'oggetto TargetedContentObject nell'oggetto TargetedContentContainer.</summary>
+      <param name="path">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentFile">
+      <summary>Rappresenta l'oggetto TargetedContentValue del file TargetedContentValueKind.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentFile.OpenReadAsync">
+      <summary>Apre un flusso per l'accesso casuale in sola lettura.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentImage">
+      <summary>Rappresenta l'oggetto TargetedContentValue dell'immagine TargetedContentValueKind.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentImage.Height">
+      <summary>Ottiene un valore che indica l'altezza dell'oggetto TargetedContentImage.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentImage.Width">
+      <summary>Ottiene un valore che indica la larghezza dell'oggetto TargetedContentImage.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentImage.OpenReadAsync">
+      <summary>Apre un flusso per l'accesso casuale in sola lettura.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentInteraction">
+      <summary>Enumerazione che definisce tutti i valori che TargetedContentInteraction può contenere.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Accept">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Canceled">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.ClickThrough">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Conversion">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Decline">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Defer">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Dislike">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Dismiss">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Hover">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Impression">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Ineligible">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Like">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Opportunity">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentItem">
+      <summary>Rappresenta un elemento con TargetedContentCollection.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Collections">
+      <summary>Ottiene un oggetto TargetedContentCollection nell'oggetto TargetedContentItem.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Path">
+      <summary>Ottiene il percorso della stringa dell'oggetto TargetedContentItem.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Properties">
+      <summary>Ottiene una raccolta che contiene nomi di proprietà come chiavi e TargetedContentValues nell'oggetto TargetedContentItem.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.State">
+      <summary>Ottiene l'oggetto TargetedContentItemState per l'elemento.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentItem.ReportCustomInteraction(System.String)">
+      <summary>Indica l'interazione personalizzata per l'elemento.</summary>
+      <param name="customInteractionName">
+      </param>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentItem.ReportInteraction(Windows.Services.TargetedContent.TargetedContentInteraction)">
+      <summary>Indica TargetedContentInteraction per l'elemento.</summary>
+      <param name="interaction">
+      </param>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentItemState">
+      <summary>Rappresenta uno stato di un oggetto TargetedContentItem object: AppInstallationState, ShouldDisplay.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItemState.AppInstallationState">
+      <summary>Ottiene TargetedContentAppInstallationState per l'elemento.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItemState.ShouldDisplay">
+      <summary>Ottiene il valore booleano per lo stato ShouldDisplay per l'elemento.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentObject">
+      <summary>Rappresenta un singolo oggetto all'interno di TargetedContentContainer.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Collection">
+      <summary>Ottiene un oggetto TargetedContentCollection nell'oggetto TargetedContentObject.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Item">
+      <summary>Ottiene un oggetto TargetedContentItem nell'oggetto TargetedContentObject.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.ObjectKind">
+      <summary>Ottiene l'oggetto TargetedContentObjectKind per l'oggetto TargetedContentObject.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Value">
+      <summary>Ottiene l'oggetto TargetedContentValue per l'oggetto TargetedContentObject.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentObjectKind">
+      <summary>Enumerazione che definisce tutti i tipi di valori che l'oggetto TargetedContentObject può avere.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Collection">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Item">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Value">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentStateChangedEventArgs">
+      <summary>Rappresenta gli argomenti per l'evento State Changed.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentStateChangedEventArgs.GetDeferral">
+      <summary>Ottiene il rinvio. Obbligatorio per i gestori asincroni. Il chiamante è responsabile della chiamata Complete quando viene gestito l'evento.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentSubscription">
+      <summary>Rappresenta un oggetto sottoscrizione.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscription.Id">
+      <summary>Ottiene l'ID di una sottoscrizione.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.AvailabilityChanged">
+      <summary>Evento richiamato quando viene modificata la disponibilità di TargetedContentSubscription.</summary>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.ContentChanged">
+      <summary>Evento richiamato quando viene modificato il contenuto di TargetedContentSubscription.</summary>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.StateChanged">
+      <summary>Evento richiamato quando viene modificato lo stato di TargetedContentSubscription.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetAsync(System.String)">
+      <summary>Restituisce un oggetto TargetedContentContainer per un subscriptionID.</summary>
+      <param name="subscriptionId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetContentContainerAsync">
+      <summary>Restituisce un oggetto TargetedContentContainer per un TargetedContentSubscription.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetOptions(System.String)">
+      <summary>Ottiene un oggetto su TargetedContentSubscriptionOptions per una determinata sottoscrizione.</summary>
+      <param name="subscriptionId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions">
+      <summary>Rappresenta le opzioni per una sottoscrizione in forma di CloudQuery Parameters, Local Filters e Partial Content Availability.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.AllowPartialContentAvailability">
+      <summary>Ottiene o imposta la disponibilità parziale del contenuto per l'oggetto TargetedContentSubscription.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.CloudQueryParameters">
+      <summary>Ottiene una raccolta di parametri Cloud Query per l'oggetto TargetedContentSubscription.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.LocalFilters">
+      <summary>Ottiene una raccolta di filtri locali per l'oggetto TargetedContentSubscription.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.SubscriptionId">
+      <summary>Ottiene l'ID di una sottoscrizione.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.Update">
+      <summary>Aggiorna l'oggetto TargetedContentSubscriptionOptions per una sottoscrizione.</summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentValue">
+      <summary>Rappresenta l'oggetto valore del contenuto per una sottoscrizione.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Action">
+      <summary>Ottiene un oggetto TargetedContentAction in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Actions">
+      <summary>Ottiene una matrice di oggetti TargetedContentAction in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Boolean">
+      <summary>Ottiene un valore booleano in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Booleans">
+      <summary>Ottiene una matrice di valori booleani in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.File">
+      <summary>Ottiene un oggetto TargetedContentFile in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Files">
+      <summary>Ottiene una matrice di oggetti TargetedContentFile in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ImageFile">
+      <summary>Ottiene un oggetto TargetedContentImage in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ImageFiles">
+      <summary>Ottiene una matrice di oggetti TargetedContentImage in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Number">
+      <summary>Ottiene un doppio in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Numbers">
+      <summary>Ottiene una matrice di doppi in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Path">
+      <summary>Ottiene il percorso della stringa per l'oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.String">
+      <summary>Ottiene una stringa in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Strings">
+      <summary>Ottiene una matrice di stringhe in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Uri">
+      <summary>Ottiene un oggetto URI in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Uris">
+      <summary>Ottiene una matrice di oggetti URI in un oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ValueKind">
+      <summary>Ottiene l'oggetto TargetedContentValueKind per l'oggetto TargetedContentValue.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentValueKind">
+      <summary>Definisce tutti i tipi di valori che il contenuto all'interno di un TargetedContentContainer può avere.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Action">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Actions">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Boolean">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Booleans">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.File">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Files">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.ImageFile">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.ImageFiles">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Number">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Numbers">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.String">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Strings">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Uri">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Uris">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

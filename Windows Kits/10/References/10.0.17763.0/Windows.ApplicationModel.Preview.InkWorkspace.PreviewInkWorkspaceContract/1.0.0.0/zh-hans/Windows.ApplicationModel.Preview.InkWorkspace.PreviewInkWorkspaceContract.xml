@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Preview.InkWorkspace.InkWorkspaceHostedAppManager">
+      <summary>表示在 Windws Ink 工作区中托管的应用的管理器。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.InkWorkspace.InkWorkspaceHostedAppManager.GetForCurrentApp">
+      <summary>检索对此应用的 Ink 工作区管理器的引用。</summary>
+      <returns>Ink 工作区引用。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.InkWorkspace.InkWorkspaceHostedAppManager.SetThumbnailAsync(Windows.Graphics.Imaging.SoftwareBitmap)">
+      <summary>异步设置 Ink 工作区应用的缩略图。</summary>
+      <param name="bitmap">未压缩的位图。</param>
+      <returns>一个异步操作，它不返回任何内容。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Preview.InkWorkspace.PreviewInkWorkspaceContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

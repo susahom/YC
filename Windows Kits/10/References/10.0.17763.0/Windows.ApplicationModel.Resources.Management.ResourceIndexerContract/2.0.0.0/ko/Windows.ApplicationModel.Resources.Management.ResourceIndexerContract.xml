@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Resources.Management.ResourceIndexerContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate">
+      <summary>주어진 리소스에 대한 단일의 가능한 값과 해당 리소스와 관련된 한정자를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Metadata">
+      <summary>메타데이터 이름 값 쌍의 목록을 가져옵니다.</summary>
+      <returns>각각 IndexedResourceQualifier의 이름과 해당 값을 포함하는 문자열 쌍의 목록입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Qualifiers">
+      <summary>IndexedResourceQualifier의 목록을 가져옵니다.</summary>
+      <returns>IndexedResourceQualifier의 목록입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Type">
+      <summary>리소스가 파일 또는 문자열인지 여부를 확인하는 형식 속성을 가져옵니다.</summary>
+      <returns>IndexedResourceType 열거형의 값입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Uri">
+      <summary>명명된 리소스 Uri를 가져옵니다.</summary>
+      <returns>명명된 리소스 Uri입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.ValueAsString">
+      <summary>문자열로 후보의 값을 가져옵니다.</summary>
+      <returns>후보가 파일인 경우 값은 ResourceIndexer 생성자로 전달된 프로젝트 루트에 대한 파일 경로(예: "images\logo.scale-100.png")입니다. 후보가 문자열인 경우 값은 실제 문자열(예: "Hello World")입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.GetQualifierValue(System.String)">
+      <summary>이름이 지정된 한정자의 값을 반환합니다.</summary>
+      <param name="qualifierName">한정자의 이름입니다.</param>
+      <returns>한정자의 값입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier">
+      <summary>리소스에 적합한 컨텍스트가 무엇인지 선언하는 개체를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier.QualifierName">
+      <summary>한정자의 이름을 가져옵니다.</summary>
+      <returns>"언어", "대비" 또는 "배율" 같은 한정자의 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier.QualifierValue">
+      <summary>한정자의 값을 가져옵니다.</summary>
+      <returns>한정자의 값입니다. 한정자 값의 경우는 인덱싱 시 발견된 한정자의 첫 번째 인스턴스에서 유지되어야 합니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceType">
+      <summary>IndexedResourceCandidate가 파일 또는 문자열인지 여부를 지정합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.EmbeddedData">
+      <summary>예약됨.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.Path">
+      <summary>IndexedResourceCandidate는 파일입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.String">
+      <summary>IndexedResourceCandidate는 문자열입니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.ResourceIndexer">
+      <summary>원본 리소스 파일이나 컨테이너를 인덱싱하고 특정 파일 및 폴더 명명 규칙을 사용하여 명명된 리소스 후보를 생성합니다.</summary>
+      <deprecated type="deprecate">ResourceIndexer 대신 mrmsupport.dll의 CreateResourceIndexer를 사용합니다.  자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.#ctor(Windows.Foundation.Uri)">
+      <summary>프로젝트 파일의 루트를 지정하는 새 ResourceIndexer를 만듭니다.</summary>
+      <deprecated type="deprecate">IResourceIndexerFactory 대신 mrmsupport.dll의 CreateResourceIndexer를 사용합니다.  자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <param name="projectRoot">프로젝트 루트 폴더입니다(file:// URI).</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.#ctor(Windows.Foundation.Uri,Windows.Foundation.Uri)">
+      <summary>프로젝트 파일 및 확장 DLL의 루트를 지정하는 새 ResourceIndexer를 만듭니다.</summary>
+      <deprecated type="deprecate">IResourceIndexerFactory2 대신 mrmsupport.dll의 CreateResourceIndexer를 사용합니다.  자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <param name="projectRoot">프로젝트 루트 폴더입니다(file:// URI).</param>
+      <param name="extensionDllPath">확장 DLL 경로(file:// URI)입니다.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.IndexFileContentsAsync(Windows.Foundation.Uri)">
+      <summary>파일 및 폴더 명명 규칙에 대한 ResW, ResJSON, PRI 또는 PRI XML 덤프 파일 경로를 인덱싱하고 한정자를 파일 내용 안에 있는 리소스에 적용합니다.</summary>
+      <deprecated type="deprecate">IResourceIndexer 대신 mrmsupport.dll의 IndexFilePath를 사용합니다.  자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <param name="file">인덱싱되는 파일입니다(file:// URI). 경로는 드라이브 문자가 지정된 절대 경로여야 합니다. Uri는 로컬 파일 시스템으로 간주되는 빈 권한을 제공할 수도 있습니다. 로그 파일 경로는 지원되지 않습니다.</param>
+      <returns>*파일* 안에 있는 IndexedResourceCandidate 개체 목록입니다. 아무 것도 없는 경우 이 값은 빈 항목이 됩니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.IndexFilePath(Windows.Foundation.Uri)">
+      <summary>파일 및 폴더 명명 규칙에 대한 파일 경로를 인덱싱합니다.</summary>
+      <deprecated type="deprecate">IResourceIndexer 대신 mrmsupport.dll의 IndexFilePath를 사용합니다.  자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <param name="filePath">인덱싱되는 파일입니다(file:// URI). 경로는 드라이브 문자가 지정된 절대 경로여야 합니다. Uri는 로컬 파일 시스템으로 간주되는 빈 권한을 제공할 수도 있습니다. 로그 파일 경로는 지원되지 않습니다.</param>
+      <returns>인덱싱된 파일 리소스를 나타내는 IndexedResourceCandidate 개체입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.ResourceIndexerContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.AlarmAccessStatus">
+      <summary>Indica se l'utente ha dato l'autorizzazione per impostare gli allarmi nell'applicazione.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithoutWakeupCapability">
+      <summary>L'utente ha concesso l'autorizzazione all'app per l'impostazione degli allarmi, ma gli allarmi non possono riattivare il computer dalla modalità standby.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithWakeupCapability">
+      <summary>L'utente ha concesso l'autorizzazione all'app per l'impostazione degli allarmi e gli allarmi possono riattivare il computer dalla modalità standby.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Denied">
+      <summary>L'utente ha negato l'autorizzazione all'app per l'impostazione degli allarmi.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Unspecified">
+      <summary>L'utente non risponde a una richiesta di autorizzazione per l'app per l'impostazione degli allarmi.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.AlarmApplicationManager">
+      <summary>Richiede l'autorizzazione all'utente per impostare allarmi e recupera lo stato dell'autorizzazione utente per l'app per impostare gli allarmi.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.GetAccessStatus">
+      <summary>Recupera lo stato dell'autorizzazione utente per l'app per impostare gli allarmi.</summary>
+      <returns>Indica se l'utente ha concesso l'autorizzazione per impostare gli allarmi.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.RequestAccessAsync">
+      <summary>Richiede l'autorizzazione all'utente per impostare gli allarmi.</summary>
+      <returns>Quando questo metodo viene completato correttamente, restituisce un valore dell'enumerazione AlarmAccessStatus.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

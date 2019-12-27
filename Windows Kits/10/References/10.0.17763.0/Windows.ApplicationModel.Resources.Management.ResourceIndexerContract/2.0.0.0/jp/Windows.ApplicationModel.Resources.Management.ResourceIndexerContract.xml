@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Resources.Management.ResourceIndexerContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate">
+      <summary>特定のリソースの単一の有効値、およびそのリソースに関連付けられている修飾子を表します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Metadata">
+      <summary>メタデータ名の値のペアのリストを取得します。</summary>
+      <returns>それぞれが IndexedResourceQualifier の名前とその値を含む文字列ペアのリスト。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Qualifiers">
+      <summary>IndexedResourceQualifier のリストを取得します。</summary>
+      <returns>IndexedResourceQualifier のリスト。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Type">
+      <summary>リソースがファイルか文字列かを判断する型のプロパティを取得します。</summary>
+      <returns>IndexedResourceType 列挙体からの値。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Uri">
+      <summary>名前付きリソースの URI を取得します。</summary>
+      <returns>名前付きリソースの URI。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.ValueAsString">
+      <summary>String としての候補の値を取得します。</summary>
+      <returns>候補がファイルの場合、値は、ResourceIndexer コンストラクターに渡されるプロジェクト ルートに対する相対ファイル パス ("images\logo.scale-100.png" など) です。 候補が文字列の場合、値は実際の文字列 ("Hello World" など) です。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.GetQualifierValue(System.String)">
+      <summary>名前を指定した修飾子の値を返します。</summary>
+      <param name="qualifierName">修飾子の名前。</param>
+      <returns>修飾子の値。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier">
+      <summary>リソースが適切であるコンテキストを宣言するオブジェクトを表します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier.QualifierName">
+      <summary>修飾子の名前を取得します。</summary>
+      <returns>"language"、"contrast"、"scale" などの修飾子の名前。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier.QualifierValue">
+      <summary>修飾子の値を取得します。</summary>
+      <returns>修飾子の値。 修飾子の値のケースは、インデックス作成中に最初に検出された修飾子のインスタンスから保持する必要があります。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceType">
+      <summary>IndexedResourceCandidate がファイルか文字列かを指定します。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.EmbeddedData">
+      <summary>予約されています。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.Path">
+      <summary>IndexedResourceCandidate はファイルです。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.String">
+      <summary>IndexedResourceCandidate は文字列です。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.ResourceIndexer">
+      <summary>ソース リソース ファイルまたはコンテナーのインデックスを作成し、特定のファイルおよびフォルダーの名前付け規則を使用して名前付きリソース候補を生成します。</summary>
+      <deprecated type="deprecate">ResourceIndexer ではなく mrmsupport.dll CreateResourceIndexer を使用します。  詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.#ctor(Windows.Foundation.Uri)">
+      <summary>プロジェクト ファイルのルートを指定する新しい ResourceIndexer を作成します。</summary>
+      <deprecated type="deprecate">IResourceIndexerFactory ではなく mrmsupport.dll の CreateResourceIndexer を使用します。  詳しくは、MSDN をご覧ください。</deprecated>
+      <param name="projectRoot">プロジェクト ルート フォルダー (file:// URI)。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.#ctor(Windows.Foundation.Uri,Windows.Foundation.Uri)">
+      <summary>プロジェクト ファイルおよび拡張 DLL のルートを指定する新しい ResourceIndexer を作成します。</summary>
+      <deprecated type="deprecate">IResourceIndexerFactory2 ではなく mrmsupport.dll の CreateResourceIndexer を使用します。  詳しくは、MSDN をご覧ください。</deprecated>
+      <param name="projectRoot">プロジェクト ルート フォルダー (file:// URI)。</param>
+      <param name="extensionDllPath">拡張 DLL パス (file:// URI).</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.IndexFileContentsAsync(Windows.Foundation.Uri)">
+      <summary>ファイルおよびフォルダーの名前付け規則のために ResW、ResJSON、PRI、または PRI XML の各ダンプ ファイルのパスのインデックスを作成し、ファイルのコンテンツ内で見つかったリソースに修飾子を適用します。</summary>
+      <deprecated type="deprecate">IResourceIndexer ではなく mrmsupport.dll の IndexFilePath を使用します。  詳しくは、MSDN をご覧ください。</deprecated>
+      <param name="file">インデックス対象のファイル (file:// URI)。 パスは指定されたドライブ文字を含む絶対パスである必要があります。 URI は、ローカル ファイル システムと仮定される空の証明書を提供できます。 長いファイル パスはサポートされません。</param>
+      <returns>*file* 内で見つかった IndexedResourceCandidate オブジェクトのリスト。 何も見つからない場合は、これは空のリストになります。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.IndexFilePath(Windows.Foundation.Uri)">
+      <summary>ファイルおよびフォルダーの名前付け規則のためにファイル パスのインデックスを作成します。</summary>
+      <deprecated type="deprecate">IResourceIndexer ではなく mrmsupport.dll の IndexFilePath を使用します。  詳しくは、MSDN をご覧ください。</deprecated>
+      <param name="filePath">インデックス対象のファイル (file:// URI)。 パスは指定されたドライブ文字を含む絶対パスである必要があります。 URI は、ローカル ファイル システムと仮定される空の証明書を提供できます。 長いファイル パスはサポートされません。</param>
+      <returns>インデックス付きファイル リソースを表す IndexedResourceCandidate オブジェクト。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.ResourceIndexerContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

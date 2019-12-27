@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.XboxLive.XboxLiveSecureSocketsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveDeviceAddress">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsLocal">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsValid">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.MaxSnapshotBytesSize">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.NetworkAccessKind">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveDeviceAddress.SnapshotChanged">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.Compare(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="otherDeviceAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBase64(System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="base64">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBuffer(Windows.Storage.Streams.IBuffer)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="buffer">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBytes(System.Byte[])">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="buffer">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetLocal">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBase64">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBuffer">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBytes(System.Byte[],System.UInt32@)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="buffer">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="bytesWritten">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPair">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalHostName">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalPort">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteDeviceAddress">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteHostName">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemotePort">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.State">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.Template">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPair.StateChanged">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.DeleteAsync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairByHostNamesAndPorts(Windows.Networking.HostName,System.String,Windows.Networking.HostName,System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="localHostName">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="localPort">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="remoteHostName">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="remotePort">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairBySocketAddressBytes(System.Byte[],System.Byte[])">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="localSocketAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="remoteSocketAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetLocalSocketAddressBytes(System.Byte[])">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="socketAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetRemoteSocketAddressBytes(System.Byte[])">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="socketAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.None">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.ReevaluatePath">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.DeviceAddress">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.EndpointPair">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.IsExistingPathEvaluation">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.Status">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Canceled">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.LocalSystemNotAuthorized">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoCompatibleNetworkPaths">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoLocalNetworks">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RefusedDueToConfiguration">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RemoteSystemNotAuthorized">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Succeeded">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.TimedOut">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.UnexpectedInternalError">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairState">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingInbound">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingOutbound">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Deleted">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.DeletingLocally">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Invalid">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Ready">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.RemoteEndpointTerminating">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.NewState">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.OldState">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeLower">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeUpper">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.EndpointPairs">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeLower">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeUpper">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Name">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.SocketKind">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Templates">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InboundEndpointPairCreated">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="deviceAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="deviceAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="behaviors">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="deviceAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="initiatorPort">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="acceptorPort">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="deviceAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="initiatorPort">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="acceptorPort">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="behaviors">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.GetTemplateByName(System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="name">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs.EndpointPair">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Moderate">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Open">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Strict">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.#ctor">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.DeviceAddresses">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemInboundBandwidthConstrained">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemOutboundBandwidthConstrained">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxPrivatePayloadSize">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxSimultaneousProbeConnections">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MetricResults">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.Metrics">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfProbesToAttempt">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfResultsPending">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PrivatePayloadResults">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishedPrivatePayload">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ShouldRequestPrivatePayloads">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.TimeoutInMilliseconds">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ClearPrivatePayload">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="deviceAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="metric">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForDevice(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="deviceAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForMetric(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="metric">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetPrivatePayloadResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="deviceAddress">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MeasureAsync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishPrivatePayloadBytes(System.Byte[])">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="payload">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Canceled">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgress">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgressWithProvisionalResults">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.LocalSystemNotAuthorized">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoCompatibleNetworkPaths">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoLocalNetworks">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NotStarted">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RefusedDueToConfiguration">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RemoteSystemNotAuthorized">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Succeeded">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.TimedOut">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.UnexpectedInternalError">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageInboundBitsPerSecond">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageLatencyInMilliseconds">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageOutboundBitsPerSecond">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxInboundBitsPerSecond">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxLatencyInMilliseconds">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxOutboundBitsPerSecond">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinInboundBitsPerSecond">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinLatencyInMilliseconds">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinOutboundBitsPerSecond">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.DeviceAddress">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Metric">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Status">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Value">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.DeviceAddress">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Status">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Value">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSecureSocketsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSocketKind">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Datagram">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.None">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Stream">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+  </members>
+</doc>

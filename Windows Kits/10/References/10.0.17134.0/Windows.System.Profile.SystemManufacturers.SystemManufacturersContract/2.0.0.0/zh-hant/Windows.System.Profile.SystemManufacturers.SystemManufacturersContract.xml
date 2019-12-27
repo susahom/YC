@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.Profile.SystemManufacturers.SystemManufacturersContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.Profile.SystemManufacturers.OemSupportInfo">
+      <summary>提供裝置製造商的支援資訊。 這包括 OEM 的名稱、網站位址及其他支援詳細資料。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportAppLink">
+      <summary>取得將啟動之 OEM 建置支援應用程式的通訊協定處理常式連結，而不是取得網址。</summary>
+      <returns>OEM 建置支援應用程式的通訊協定處理常式連結。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportLink">
+      <summary>取得原始設備製造商 (OEM) 支援網站的統一資源識別元 (URI)。</summary>
+      <returns>OEM 支援網站的 URI。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportProvider">
+      <summary>取得裝置支援提供者的名稱。</summary>
+      <returns>裝置支援提供者的名稱。</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SmbiosInformation">
+      <summary>於系統的 SMBIOS 啟用屬性存取。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SmbiosInformation.SerialNumber">
+      <summary>從系統的 SMBIOS 取得序號。</summary>
+      <returns>序號。</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemManufacturersContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportInfo">
+      <summary>提供裝置的支援資訊。 這包括本機系統版本和 OEM 支援資訊。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalSystemEdition">
+      <summary>取得包含裝置本機系統版本的字串。</summary>
+      <returns>包含裝置本機系統版本的字串。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.OemSupportInfo">
+      <summary>取得系統的 OEM 支援資訊。</summary>
+      <returns>系統的 OEM 支援資訊。</returns>
+    </member>
+  </members>
+</doc>

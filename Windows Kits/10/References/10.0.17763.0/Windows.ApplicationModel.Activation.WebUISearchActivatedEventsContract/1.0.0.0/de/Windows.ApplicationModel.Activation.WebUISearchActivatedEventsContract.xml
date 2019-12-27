@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.UI.WebUI.WebUISearchActivatedEventArgs">
+      <summary>Stellt Informationen über das Activated-Ereignis bereit, das ausgelöst wird, wenn der Benutzer die App mit dem Charm "Suche" durchsucht und die App nicht die Haupt-App auf dem Bildschirm ist.</summary>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.ActivatedOperation">
+      <summary>Ruft den durch die App aktivierten Vorgang ab.</summary>
+      <returns>Der Aktivierungsvorgang.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.CurrentlyShownApplicationViewId">
+      <summary>Ruft den Bezeichner für die aktuell angezeigte App-Ansicht ab.</summary>
+      <returns>Der Bezeichner für die aktuell angezeigte App-Ansicht.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Kind">
+      <summary>Ruft den Aktivierungstyp ab.</summary>
+      <returns>Der activationKind.search-Enumerationswert.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Language">
+      <summary>Ruft das IETF (Internet Engineering Task Force)-Sprachtag (BCP 47-Standard) ab, das die Sprache identifiziert, die derzeit dem Texteingabegerät des Benutzers zugeordnet ist.</summary>
+      <returns>Das BCP 47-Standard-Sprachtag der IETF (Internet Engineering Task Force).</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.LinguisticDetails">
+      <summary>Ruft ein SearchPaneQueryLinguisticDetails-Objekt ab, das Informationen über Abfragetext enthält, den der Benutzer durch einen Eingabemethoden-Editor (IME) eingibt.</summary>
+      <returns>Das Objekt, das Informationen über den Abfragetext bereitstellt.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.PreviousExecutionState">
+      <summary>Ruft den Ausführungsstatus der App vor ihrer Aktivierung ab.</summary>
+      <returns>Einer der Enumerationswerte.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.QueryText">
+      <summary>Ruft den Text auf, den die App für den Benutzer suchen soll. Der Benutzer hat den Text in das Suchfeld des Suchbereichs eingegeben.</summary>
+      <returns>Der zu suchende Text.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.SplashScreen">
+      <summary>Ruft das Begrüßungsbildschirm-Objekt ab, das Informationen über den Übergang vom Begrüßungsbildschirm zur aktivierten App bereitstellt.</summary>
+      <returns>Das Objekt, das Informationen für den Begrüßungsbildschirm bereitstellt.</returns>
+    </member>
+  </members>
+</doc>

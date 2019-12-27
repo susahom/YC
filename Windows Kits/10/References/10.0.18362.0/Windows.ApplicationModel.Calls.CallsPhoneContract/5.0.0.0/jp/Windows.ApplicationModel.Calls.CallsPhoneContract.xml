@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Calls.CallsPhoneContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Calls.CallsPhoneContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.CellularDtmfMode">
+      <summary>携帯電話で使用されるデュアル トーン多重周波数 (DTMF) の種類を示します。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.CellularDtmfMode.Burst">
+      <summary>トーンはバースト方式で送信されます。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.CellularDtmfMode.Continuous">
+      <summary>トーンは連続的に送信されます。つまり、トーンはボタンが離されたときにのみ停止します。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint">
+      <summary>電話をかけるために使用できるオーディオ エンドポイント。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Bluetooth">
+      <summary>Bluetooth 接続。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Default">
+      <summary>電話用の既定のオーディオ エンドポイント。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Speakerphone">
+      <summary>スピーカー フォン。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallBlocking">
+      <summary>電話番号の受信時に電話番号のブロックを制御します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallBlocking.BlockPrivateNumbers">
+      <summary>PhoneCallBlocking インスタンスを取得するか、このインスタンスがプライベート番号をブロックする必要があるかどうかを設定します。</summary>
+      <returns>PhoneCallBlocking インスタンスがプライベート番号をブロックする必要がある場合は **True**、それ以外の場合は **false**。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallBlocking.BlockUnknownNumbers">
+      <summary>PhoneCallBlocking インスタンスを取得するか、このインスタンスが不明な番号をブロックする必要があるかどうかを設定します。</summary>
+      <returns>PhoneCallBlocking インスタンスが不明な番号をブロックする必要がある場合は **True**、それ以外の場合は **false**。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallBlocking.SetCallBlockingListAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>ブロックする必要のある番号の一覧を設定します。</summary>
+      <param name="phoneNumberList">ブロックする必要のある番号の一覧。</param>
+      <returns>操作が正常に完了した場合は **true**。それ以外の場合は **false**。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallManager">
+      <summary>通話ステータスを問い合わせ、通話を開始する機能を提供します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallManager.IsCallActive">
+      <summary>アクティブな通話がデバイスで進行中かどうかを示す値を取得します。</summary>
+      <returns>アクティブな通話がデバイスで進行中の場合は True、それ以外の場合は False。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallManager.IsCallIncoming">
+      <summary>通話がデバイスに着信中であるかどうかを示す値を取得します。</summary>
+      <returns>通話がデバイスに着信中の場合は True、それ以外の場合は False。</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneCallManager.CallStateChanged">
+      <summary>デバイスの基本的な通話状態が変化したときに発生します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.RequestStoreAsync">
+      <summary>PhoneCallStore を受け取ります。</summary>
+      <returns>デバイスで使用できる電話回線についての情報を格納している PhoneCallStore オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallSettingsUI">
+      <summary>呼び出し設定 UI を起動します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallUI(System.String,System.String)">
+      <summary>指定された電話番号や表示名を使って、組み込みの通話 UI を起動します。</summary>
+      <param name="phoneNumber">電話番号。</param>
+      <param name="displayName">表示名。</param>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallMedia">
+      <summary>通話で使用できるメディアの種類。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.Audio">
+      <summary>通話は音声のみをサポートします。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.AudioAndRealTimeText">
+      <summary>通話は音声とリアルタイム テキストをサポートします。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.AudioAndVideo">
+      <summary>通話は音声とビデオをサポートします。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallStore">
+      <summary>デバイスで使用できる電話回線に関する情報のコレクションを表します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.GetDefaultLineAsync">
+      <summary>現在の既定の電話回線の回線 ID を取得します。</summary>
+      <returns>正常な完了時に回線 ID を返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.IsEmergencyPhoneNumberAsync(System.String)">
+      <summary>電話番号が既知の緊急サービス プロバイダーに接続するかどうかを確認します。</summary>
+      <param name="number">既知の緊急番号であるかどうかを確認する電話番号。</param>
+      <returns>正常な完了時にブール値を返す非同期操作。 True は、電話番号が既知の緊急サービス プロバイダーに接続することを示します。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.RequestLineWatcher">
+      <summary>デバイスの PhoneLineWatcher クラスのインスタンスを取得します。</summary>
+      <returns>デバイスの PhoneLineWatcher クラスのインスタンス。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilities">
+      <summary>PhoneLine インスタンスのビデオ通話機能へのアクセスを提供します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilities.IsVideoCallingCapable">
+      <summary>この PhoneLine インスタンスでビデオ通話がサポートされるかどうかを取得します。</summary>
+      <returns>PhoneLine インスタンスがビデオ通話をサポートする場合は **True**。サポートしない場合は **false**。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilitiesManager">
+      <summary>アプリケーションが PhoneLine インスタンスの PhoneCallVideoCapabilities を取得できるようにします。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilitiesManager.GetCapabilitiesAsync(System.String)">
+      <summary>PhoneLine インスタンスのビデオ機能を非同期に取得します。</summary>
+      <param name="phoneNumber">問い合わせる PhoneLine インスタンス。</param>
+      <returns>PhoneLine インスタンスの PhoneCallVideoCapabilities が問い合わせされます。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneDialOptions">
+      <summary>電話をかけるためのオプションを表します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneDialOptions.#ctor">
+      <summary>クラスの新しいインスタンスを作成します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.AudioEndpoint">
+      <summary>ダイヤルするように要求された音声エンドポイントを取得または設定します。</summary>
+      <returns>ダイヤルするように要求された音声エンドポイント。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Contact">
+      <summary>ダイヤル要求に関連付けられたアドレス帳の連絡先を取得または設定します。</summary>
+      <returns>ダイヤル要求に関連付けられたアドレス帳の連絡先。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.ContactPhone">
+      <summary>ダイヤル要求に関連付けられたアドレス帳の連絡先の電話番号プロパティを取得または設定します。</summary>
+      <returns>ダイヤル要求に関連付けられたアドレス帳の連絡先の電話番号プロパティ。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.DisplayName">
+      <summary>ダイヤル先の名前を取得または設定します。 この値は、ユーザーのアドレス帳の中に、ダイヤルする番号と一致する番号を持つ名前がない場合に表示されます。</summary>
+      <returns>ダイヤル先の名前。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Media">
+      <summary>ダイヤルすることを要求されたメディアの種類を取得または設定します。</summary>
+      <returns>ダイヤルすることを要求されたメディアの種類。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Number">
+      <summary>ダイヤルする電話番号を取得または設定します。</summary>
+      <returns>ダイヤルする電話番号。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLine">
+      <summary>電話回線を表します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.CanDial">
+      <summary>電話回線を使用して発信できるかどうかを示すブール値を取得します。</summary>
+      <returns>電話回線で発信できる場合は True、それ以外の場合は False。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.CellularDetails">
+      <summary>PhoneLine インスタンスの携帯電話コンポーネントの特定のコンポーネントの詳細を取得します。 このプロパティは、VoIP 通話以外では null になります。</summary>
+      <returns>PhoneLine インスタンスの詳細。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.DisplayColor">
+      <summary>電話回線の推奨される表示色を取得します。</summary>
+      <returns>電話回線の推奨される表示色。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.DisplayName">
+      <summary>電話回線に対してユーザーが割り当てたフレンドリ名を取得します。</summary>
+      <returns>電話回線に対してユーザーが割り当てたフレンドリ名。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Id">
+      <summary>電話回線の ID を取得します。 ID はデバイス間で不変であり、再起動後も変わりません。</summary>
+      <returns>電話回線の ID。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.LineConfiguration">
+      <summary>この PhoneLine インスタンスについての追加の構成情報を取得します。</summary>
+      <returns>この電話回線の追加情報。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.NetworkName">
+      <summary>電話回線によって使用されている現在のネットワークの名前を取得します。</summary>
+      <returns>電話回線によって使用されている現在のネットワークの名前。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.NetworkState">
+      <summary>通話回線の現在のネットワーク状態を取得します。</summary>
+      <returns>通話回線の現在のネットワーク状態。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.SupportsTile">
+      <summary>電話回線がライブ タイルとしてピン留めされることをサポートしているかどうかを示す値を取得します。</summary>
+      <returns>電話回線がライブ タイルとしてピン留めされることをサポートしている場合は True、それ以外の場合は False.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Transport">
+      <summary>電話回線のトランスポートを取得します。</summary>
+      <returns>電話回線のトランスポート。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.TransportDeviceId">
+      <summary>PhoneLine に関連付けられている PhoneLineTransportDevice のデバイス ID。 トランスポート デバイスがない場合は null。</summary>
+      <returns>デバイス ID を表す文字列。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.VideoCallingCapabilities">
+      <summary>この電話回線でビデオ通話がサポートされるかどうかを取得します。</summary>
+      <returns>ビデオ通話がサポートされる場合は **true**。それ以外の場合は **false**。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Voicemail">
+      <summary>PhoneLine インスタンスに関連付けられたボイス メール データを取得します。</summary>
+      <returns>ボイス メール データ。</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLine.LineChanged">
+      <summary>関連付けられた PhoneLine インスタンスのプロパティが変更されたときに発生します。 これは、ボイス メール数、ネットワーク状態、または携帯電話の詳細などのメタ データが変更されると発生します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.Dial(System.String,System.String)">
+      <summary>電話回線で電話をかけます。 呼び出し元は、フォアグラウンドにいる必要があります。</summary>
+      <param name="number">ダイヤルする番号。</param>
+      <param name="displayName">電話をかける相手の表示名。 このパラメーターは省略可能です。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.DialWithOptions(Windows.ApplicationModel.Calls.PhoneDialOptions)">
+      <summary>電話回線で電話をかけます。呼び出し元は追加のダイヤル オプションを指定できます。 呼び出し元は、フォアグラウンドにいる必要があります。</summary>
+      <param name="options">通話に対する追加のダイヤル オプション。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.EnableTextReply(System.Boolean)">
+      <summary>この回線の SMS 返信機能がサポートされていることをプラットフォームに通知します。</summary>
+      <param name="value">SMS 返信機能を有効にする場合は true。それ以外の場合は false。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.FromIdAsync(System.Guid)">
+      <summary>この静的メソッドは、回線 ID に基づいてデバイス上の特定の電話回線を表す PhoneLine オブジェクトを非同期に取得します。</summary>
+      <param name="lineId">取得する電話回線の回線 ID。</param>
+      <returns>回線 ID に基づいてデバイス上の特定の電話回線を表す PhoneLine オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.IsImmediateDialNumberAsync(System.String)">
+      <summary>ユーザーが呼び出しボタンを押さなくても、ダイヤラーから番号をすぐにダイヤルする必要があるかどうかを確認します。</summary>
+      <param name="number">即時ダイヤルするかどうかを確認する電話番号。</param>
+      <returns>非同期のブール値での応答。 電話番号をすぐにダイヤルする必要がある場合は True。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineCellularDetails">
+      <summary>電話回線の携帯電話コンポーネントとの詳細な対話を提供します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.IsModemOn">
+      <summary>この電話回線用のモデムがオンであることを示します。</summary>
+      <returns>モデムがオンの場合は True。それ以外の場合は False。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.RegistrationRejectCode">
+      <summary>電話回線の登録拒否コードを取得します。</summary>
+      <returns>電話回線の登録拒否コード。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.SimSlotIndex">
+      <summary>携帯電話回線に関連付けられた SIM カードのスロット インデックスを取得します。</summary>
+      <returns>携帯電話回線に関連付けられた SIM カードのスロット インデックス。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.SimState">
+      <summary>携帯電話回線に関連付けられた SIM カードの状態を取得します。</summary>
+      <returns>携帯電話回線に関連付けられた SIM カードの状態。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.GetNetworkOperatorDisplayText(Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation)">
+      <summary>ユーザーに表示する適切な接続文字列を取得します。</summary>
+      <param name="location">テキスト文字列が必要な場所。 これは、返される文字列の書式に影響します。</param>
+      <returns>指定した場所に表示するテキスト文字列。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineConfiguration">
+      <summary>電話回線についての情報を提供するプロパティのコレクション。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineConfiguration.ExtendedProperties">
+      <summary>この電話回線の拡張プロパティを取得します。</summary>
+      <returns>電話回線の拡張プロパティを格納するキーと値のペアのマップ。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineConfiguration.IsVideoCallingEnabled">
+      <summary>この電話回線でビデオ通話が有効かどうかを取得します。</summary>
+      <returns>ビデオ通話がサポートされる場合は **true**、それ以外の場合は **false**。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation">
+      <summary>ネットワーク オペレーター情報をユーザーに表示できる場所。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Default">
+      <summary>既定値。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Dialer">
+      <summary>ダイヤラー UI。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.InCallUI">
+      <summary>ユーザーが通話でアクティブな場合は UI。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Tile">
+      <summary>電話タイル。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineTransport">
+      <summary>特定の電話回線で使用されるトランスポート。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.Bluetooth">
+      <summary>電話回線は Bluetoothトランスポートを使用します。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.Cellular">
+      <summary>電話回線は携帯電話トランスポートを使用します。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.VoipApp">
+      <summary>電話回線は VoIP トランスポートを使用します。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineTransportDevice">
+      <summary>PhoneLine に関連付けられたハードウェア デバイスを表します。 現在 Bluetooth デバイスの使用だけがサポートされています。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.DeviceId">
+      <summary>PhoneLineTransportDevice に関連付けられているハードウェア デバイスの DeviceID を取得します。</summary>
+      <returns>DeviceID を表す文字列。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.Transport">
+      <summary>PhoneLineTransportDevice の PhoneLineTransport を取得します。</summary>
+      <returns>PhoneLineTransport。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.Connect">
+      <summary>デバイスで接続の確立を試みます。</summary>
+      <returns>操作が完了した際の接続状態。 接続されている場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.ConnectAsync">
+      <summary>デバイスで非同期的に接続の確立を試みます。</summary>
+      <returns>IAsyncOperationは、操作が完了する際の接続状態を表します。 接続されている場合は true、それ以外の場合は false を含みます。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.FromId(System.String)">
+      <summary>特定の DeviceId から PhoneLineTransportDevice を取得します。</summary>
+      <param name="id">DeviceId。</param>
+      <returns>DeviceId が既存のデバイスに対応していない場合は PhoneLineTransportDevice または null。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.GetDeviceSelector">
+      <summary>PhoneLineTransportDevices を検索するためにアプリケーションが DeviceInformation.FindAllAsync に渡す高度なクエリ構文 (AQS) の文字列を取得します。</summary>
+      <returns>AQS クエリとして書式設定された文字列。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.GetDeviceSelector(Windows.ApplicationModel.Calls.PhoneLineTransport)">
+      <summary>特定の種類の PhoneLineTransportDevices を検索するためにアプリケーションが DeviceInformation.FindAllAsync に渡すことができる高度なクエリ構文 (AQS) の文字列を取得します。</summary>
+      <param name="transport">PhoneLineTransportDevice の目的の種類を指定する PhoneLineTransport。</param>
+      <returns>AQS クエリとして書式設定された文字列。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.IsRegistered">
+      <summary>アクティブ ユーザー向けアプリの登録状態を返します。</summary>
+      <returns>登録されている場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RegisterApp">
+      <summary>関連付けられている PhoneLineTransportDevice の Windows にアプリを登録します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RegisterAppForUser(Windows.System.User)">
+      <summary>関連付けられている PhoneLineTransportDevice の Windows にアプリを登録します。</summary>
+      <param name="user">登録されるユーザー。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RequestAccessAsync">
+      <summary>PhoneLineTransportDevice への明示的なアクセスを要求するために使用されます。</summary>
+      <returns>非同期操作の完了後、DeviceAccessStatus 列挙値を返します。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.UnregisterApp">
+      <summary>関連付けられている PhoneLineTransportDevice の Windows からアプリを登録解除します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.UnregisterAppForUser(Windows.System.User)">
+      <summary>関連付けられている PhoneLineTransportDevice の Windows からアプリを登録解除します。</summary>
+      <param name="user">登録解除するユーザー。</param>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcher">
+      <summary>新規、削除、または更新された電話回線をデバイス上でモニターし、変更についてリスナーに通知するクラスを表します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineWatcher.Status">
+      <summary>PhoneLineWatcher インスタンスの現在の状態を取得します。</summary>
+      <returns>PhoneLineWatcher の現在の状態。</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.EnumerationCompleted">
+      <summary>PhoneLineWatcher インスタンスがデバイスのすべての電話回線の列挙を完了したときに発生します。</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineAdded">
+      <summary>PhoneLineWatcher インスタンスが、デバイスで新しい電話回線を検出したときに発生します。</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineRemoved">
+      <summary>PhoneLineWatcher インスタンスが、デバイスから電話回線が削除されていることを検出したときに発生します。</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineUpdated">
+      <summary>PhoneLineWatcher インスタンスが、デバイスで電話回線が更新されていることを検出したときに発生します。</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.Stopped">
+      <summary>PhoneLineWatcher インスタンスが電話回線に対する変更に関するデバイスのモニタリングを停止したときに発生します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineWatcher.Start">
+      <summary>デバイスの電話回線に対する変更のリスニングを開始します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineWatcher.Stop">
+      <summary>デバイスの電話回線に対する変更のリスニングを停止します。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcherEventArgs">
+      <summary>追加、削除、または更新された電話回線についての情報を含むクラスを表します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineWatcherEventArgs.LineId">
+      <summary>LineAdded、LineRemoved、または LineUpdated イベントをトリガーした電話回線の ID を取得します。</summary>
+      <returns>LineAdded、LineRemoved、または LineUpdated イベントをトリガーした電話回線の ID。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus">
+      <summary>PhoneLineWatcher の現在の状態。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Created">
+      <summary>電話回線ウォッチャー クラスが作成されます。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.EnumerationCompleted">
+      <summary>電話回線ウォッチャー クラスはデバイスの電話回線の列挙を完了しました。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Started">
+      <summary>電話回線ウォッチャー クラスが開始されます。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Stopped">
+      <summary>電話回線ウォッチャー クラスが停止されます。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneNetworkState">
+      <summary>電話回線のネットワーク登録状態を記述します。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Denied">
+      <summary>使用できるネットワークに電話回線を登録できませんでした。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Deregistered">
+      <summary>電話回線は登録解除されています。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Home">
+      <summary>電話回線が登録され、通信事業者のホーム ネットワークに接続されています。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.NoSignal">
+      <summary>電話回線のシグナルを検出できませんでした。または、電話回線は緊急通話のみに限定されています。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.RoamingDomestic">
+      <summary>電話回線が登録され、別の通信事業者のネットワークに国内ローミングしています。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.RoamingInternational">
+      <summary>電話回線が登録され、別の通信事業者のネットワークに国際ローミングしています。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Searching">
+      <summary>電話回線のネットワークを検索します。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Unknown">
+      <summary>電話回線の登録状態は不明です。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneSimState">
+      <summary>携帯電話回線用の SIM カードの現在の状態。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Disabled">
+      <summary>SIM カードは無効です。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Invalid">
+      <summary>SIM カードが無効です。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.NotInserted">
+      <summary>SIM カードが電話に挿入されていません。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinLocked">
+      <summary>SIM カードはロックされています。ロック解除するには PIN コードが必要です。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinNotRequired">
+      <summary>SIM カードでは PIN コードは不要です。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinUnlocked">
+      <summary>SIM カードはロック解除されていますが、ロックされた場合に再びロック解除するには PIN コードが必要です。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PukLocked">
+      <summary>SIM カードは PIN の間違った入力が多すぎたためにロックされています。ロック解除するには個人のロックを解除するキー (PUK) が必要です。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Unknown">
+      <summary>SIM カードの状態は不明です。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneVoicemail">
+      <summary>PhoneLine インスタンスに関連付けられたボイス メール データを表します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.MessageCount">
+      <summary>PhoneLine インスタンスに関連付けられたボイス メール メッセージの現在の数を取得します。 値 -1 は "不確定な" メッセージ数を示します。</summary>
+      <returns>ボイス メール メッセージの現在の数。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.Number">
+      <summary>PhoneLine インスタンスに関連付けられたボイス メールのアクセス数を取得します。 電話ユーザーは、アクセス番号をダイヤルしてボイス メール アカウントにアクセスできます。</summary>
+      <returns>アクセス数。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.Type">
+      <summary>PhoneLine インスタンスに関連付けられたボイス メールの種類を取得します。</summary>
+      <returns>ボイス メール アカウントの種類。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneVoicemail.DialVoicemailAsync">
+      <summary>ボイス メール アクセス番号をダイヤルします。</summary>
+      <returns>非同期ダイアル操作。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneVoicemailType">
+      <summary>PhoneLine インスタンスに関連付けられたボイス メールの種類。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.None">
+      <summary>電話回線にはボイス メールがありません。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.Traditional">
+      <summary>電話回線には従来のボイス メールがあります。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.Visual">
+      <summary>電話回線にはビジュアル ボイス メールがあります。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin">
+      <summary>通話の発信元についての情報のコレクション。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.#ctor">
+      <summary>新しい PhoneCallOrigin オブジェクトを作成します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.Category">
+      <summary>呼び出し元のカテゴリを取得または設定します。</summary>
+      <returns>呼び出し元のカテゴリ。 例としては、「不動産」や「金融サービス」などがあります。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.CategoryDescription">
+      <summary>呼び出し元の Category の説明を取得または設定します。</summary>
+      <returns>呼び出し元の特定の Category の説明。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.DisplayName">
+      <summary>PhoneCallOriginManager オブジェクトの表示名を取得または設定します。</summary>
+      <returns>呼び出し元マネージャーの表示名。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.DisplayPicture">
+      <summary>PhoneCallOriginManager オブジェクトの表示画像を取得または設定します。</summary>
+      <returns>呼び出し元の表示画像。 この加増は、着信呼び出し UI に表示されます。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.Location">
+      <summary>呼び出し元の場所を取得または設定します。</summary>
+      <returns>呼び出し元の場所。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager">
+      <summary>着信呼び出しの発信元を特定して PhoneCallOrigin 情報を設定するアプリケーションを制御します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.IsCurrentAppActiveCallOriginApp">
+      <summary>現在のアプリケーションが既定の発信元アプリケーションとして設定されているかどうかを確認します。</summary>
+      <returns>現在のアプリケーションが既定の発信元アプリケーションである場合は **true**。それ以外の場合は **false**。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.IsSupported">
+      <summary>PhoneCallOriginManager API がサポートされている場合は true を、サポートされていない場合は false を返します。</summary>
+      <returns>PhoneCallOriginManager API がサポートされているかどうかどうかを表すブール値。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.RequestSetAsActiveCallOriginAppAsync">
+      <summary>ダイアログを呼び出して、既定の通話呼び出し元アプリケーションとして現在のアプリケーションを設定します。</summary>
+      <returns>アプリケーションが既定の通話呼び出し元アプリケーションとして設定されたかどうかを示します。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.SetCallOrigin(System.Guid,Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin)">
+      <summary>通話の着信時の発信元を設定します。</summary>
+      <param name="requestId">この通話の一意の識別子。 これは、PhoneCallOriginDataRequestTriggerDetails の *targetId* から取得されます。</param>
+      <param name="callOrigin">着信呼び出しの呼び出し情報。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.ShowPhoneCallOriginSettingsUI">
+      <summary>発信元アプリケーションをユーザーが選択できるようにするインターフェイスを開きます。</summary>
+    </member>
+  </members>
+</doc>

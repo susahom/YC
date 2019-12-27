@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.SocialInfo.SocialInfoContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem">
+      <summary>SocialFeedItem의 자식 항목을 나타냅니다.</summary>
+      <deprecated type="deprecate">SocialFeedChildItem은 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.#ctor">
+      <summary>SocialFeedChildItem 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Author">
+      <summary>자식 항목의 만든 이를 가져옵니다.</summary>
+      <returns>자식 항목의 작성자입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.PrimaryContent">
+      <summary>자식 항목과 연결된 기본 SocialFeedContent 개체를 가져옵니다.</summary>
+      <returns>자식 항목과 연결된 기본 SocialFeedContent 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SecondaryContent">
+      <summary>자식 항목과 연결된 보조 SocialFeedContent 개체를 가져옵니다.</summary>
+      <returns>자식 항목과 연결된 보조 SocialFeedContent 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SharedItem">
+      <summary>서비스의 다른 사용자가 사용자와 공유한 소셜 미디어 항목을 가져옵니다.</summary>
+      <returns>사용자와 공유하는 소셜 미디어 항목입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.TargetUri">
+      <summary>이 자식 항목과 연결된 대상 항목에 대한 URI(Uniform Resource Identifier)를 가져오거나 설정합니다.</summary>
+      <returns>하위 항목과 연결된 URI(Uniform Resource Identifier)입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Thumbnails">
+      <summary>자식 항목과 연결된 미리 보기 이미지의 목록을 가져옵니다.</summary>
+      <returns>자식 항목과 연결된 미리 보기 이미지의 목록입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Timestamp">
+      <summary>자식 항목의 타임스탬프를 가져오거나 설정합니다.</summary>
+      <returns>자식 항목의 타임스탬프입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedContent">
+      <summary>소셜 미디어 메시지를 나타냅니다.</summary>
+      <deprecated type="deprecate">SocialFeedContent는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Message">
+      <summary>소셜 미디어 메시지를 가져오거나 설정합니다.</summary>
+      <returns>소셜 미디어 메시지입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.TargetUri">
+      <summary>콘텐츠의 대상에 대한 URI(Uniform Resource Identifier)를 가져오거나 설정합니다.</summary>
+      <returns>내용의 URI(Uniform Resource Identifier)입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Title">
+      <summary>콘텐츠의 제목을 가져오거나 설정합니다.</summary>
+      <returns>콘텐츠의 제목입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItem">
+      <summary>소셜 미디어 피드 항목을 나타냅니다.</summary>
+      <deprecated type="deprecate">SocialFeedItem은 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedItem.#ctor">
+      <summary>SocialFeedItem 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Author">
+      <summary>소셜 미디어 피드 항목의 만든 이를 가져옵니다.</summary>
+      <returns>소셜 미디어 피드 항목의 만든 이입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeCountValue">
+      <summary>앱 배지에 표시된 미확인 항목 수를 가져오거나 설정합니다.</summary>
+      <returns>앱 배지에 표시된 미확인 항목 수입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeStyle">
+      <summary>앱의 배지 스타일을 가져오거나 설정합니다.</summary>
+      <returns>앱의 배지 스타일입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.ChildItem">
+      <summary>이 소셜 피드 항목과 연결된 자식 항목을 가져오거나 설정합니다.</summary>
+      <returns>이 소셜 피드 항목과 연결된 자식 항목입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.PrimaryContent">
+      <summary>항목과 연결된 기본 SocialFeedContent 개체를 가져옵니다.</summary>
+      <returns>항목과 연결된 기본 SocialFeedContent 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.RemoteId">
+      <summary>공급자의 시스템에서 이 항목을 식별하는 데 사용되는 값을 가져오거나 설정합니다.</summary>
+      <returns>공급자의 시스템에서 이 항목을 식별하는 데 사용되는 값입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SecondaryContent">
+      <summary>이 항목과 연결된 보조 SocialFeedContent 개체를 가져옵니다.</summary>
+      <returns>이 항목과 연결된 보조 SocialFeedContent 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SharedItem">
+      <summary>서비스의 다른 사용자가 사용자와 공유한 소셜 미디어 항목을 가져옵니다.</summary>
+      <returns>서비스의 다른 사용자가 사용자와 공유한 소셜 미디어 항목입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Style">
+      <summary>사진 또는 기본값과 같은 이 항목의 스타일을 가져오거나 설정합니다.</summary>
+      <returns>이 항목의 스타일입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.TargetUri">
+      <summary>이 항목과 연결된 대상 항목에 대한 URI(Uniform Resource Identifier)를 가져오거나 설정합니다.</summary>
+      <returns>이 항목과 연결된 URI(Uniform Resource Identifier)입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Thumbnails">
+      <summary>이 항목과 연결된 미리 보기 이미지의 목록을 가져옵니다.</summary>
+      <returns>이 항목과 연결된 미리 보기 이미지의 목록입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Timestamp">
+      <summary>이 항목의 타임스탬프를 가져오거나 설정합니다.</summary>
+      <returns>이 항목의 타임스탬프입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle">
+      <summary>소셜 미디어 피드 항목의 유형을 정의합니다.</summary>
+      <deprecated type="deprecate">SocialFeedItemStyle은 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Default">
+      <summary>기본값</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Photo">
+      <summary>사진 항목</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedKind">
+      <summary>소셜 미디어 피드의 유형을 정의 합니다.</summary>
+      <deprecated type="deprecate">SocialFeedKind는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.ContactFeed">
+      <summary>연락처 피드</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.Dashboard">
+      <summary>대시보드 피드</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.HomeFeed">
+      <summary>홈 피드</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem">
+      <summary>서비스의 다른 사용자가 사용자와 공유한 소셜 미디어 항목을 나타냅니다.</summary>
+      <deprecated type="deprecate">SocialFeedSharedItem은 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.#ctor">
+      <summary>SocialFeedSharedItem 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Content">
+      <summary>공유 항목과 연결된 SocialFeedContent 개체를 가져옵니다.</summary>
+      <returns>공유 항목과 연결된 SocialFeedContent 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.OriginalSource">
+      <summary>공유 항목의 원래 URI(Uniform Resource Identifier)를 가져오거나 설정합니다.</summary>
+      <returns>공유 항목의 원래 URI(Uniform Resource Identifier)입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.TargetUri">
+      <summary>이 공유 항목과 연결된 대상 항목에 대한 URI(Uniform Resource Identifier)를 가져오거나 설정합니다.</summary>
+      <returns>공유 항목과 연결된 URI(Uniform Resource Identifier)입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Thumbnail">
+      <summary>이 공유 항목과 연결된 미리 보기 이미지를 가져오거나 설정합니다.</summary>
+      <returns>이 공유 항목과 연결된 미리 보기 이미지입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Timestamp">
+      <summary>이 공유 항목의 타임스탬프를 가져오거나 설정합니다.</summary>
+      <returns>이 공유 항목의 타임스탬프입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode">
+      <summary>소셜 미디어 피드를 업데이트하기 위한 모드를 정의합니다.</summary>
+      <deprecated type="deprecate">SocialFeedUpdateMode는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Append">
+      <summary>추가 모드</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Replace">
+      <summary>바꾸기 모드</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialInfoContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle">
+      <summary>앱 배지 유형을 정의합니다.</summary>
+      <deprecated type="deprecate">SocialItemBadgeStyle은 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Hidden">
+      <summary>숨겨진 배지</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Visible">
+      <summary>표시된 배지</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.VisibleWithCount">
+      <summary>미확인 항목 수가 표시되어 있는 표시된 배지</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail">
+      <summary>소셜 미디어 피드 항목과 연결된 미리 보기 이미지를 나타냅니다.</summary>
+      <deprecated type="deprecate">SocialItemThumbnail은 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.#ctor">
+      <summary>SocialItemThumbnail 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.BitmapSize">
+      <summary>미리 보기 비트맵 이미지의 크기를 가져오거나 설정합니다.</summary>
+      <returns>미리 보기 비트맵 이미지의 크기입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.ImageUri">
+      <summary>이 미리 보기의 이미지 파일에 대한 URI(Uniform Resource Identifier)를 가져오거나 설정합니다.</summary>
+      <returns>이 미리 보기의 이미지 파일에 대한 URI(Uniform Resource Identifier)입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.TargetUri">
+      <summary>이 미리 보기와 연결된 대상 항목에 대한 URI(Uniform Resource Identifier)를 가져오거나 설정합니다.</summary>
+      <returns>이 미리 보기와 연결된 대상 항목에 대한 URI(Uniform Resource Identifier)입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.SetImageAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>로컬 스트림에서 이 미리 보기의 이미지를 비동기적으로 설정합니다.</summary>
+      <deprecated type="deprecate">ISocialItemThumbnail은 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <param name="image">이미지 스트림입니다.</param>
+      <returns>작업이 완료되었음을 나타내는 비동기 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialUserInfo">
+      <summary>소셜 미디어 공급자 서비스의 사용자를 나타냅니다.</summary>
+      <deprecated type="deprecate">SocialUserInfo는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.DisplayName">
+      <summary>표시에 적합한 소셜 미디어 사용자의 이름을 가져오거나 설정합니다.</summary>
+      <returns>표시에 적합한 소셜 미디어 사용자의 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.RemoteId">
+      <summary>소셜 미디어 서비스 사용자를 식별하는 값을 가져오거나 설정합니다.</summary>
+      <returns>소셜 미디어 서비스에서 사용자를 식별하는 값입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.TargetUri">
+      <summary>소셜 미디어 시스템에 있는 사용자에 대한 URI(Uniform Resource Identifier)을 가져오거나 설정합니다.</summary>
+      <returns>소셜 미디어 시스템에 있는 사용자에 대한 URI(Uniform Resource Identifier)입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.UserName">
+      <summary>소셜 미디어 서비스에 있는 사용자의 사용자 이름을 가져오거나 설정합니다.</summary>
+      <returns>소셜 미디어 서비스에 있는 사용자의 사용자 이름입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater">
+      <summary>대시보드 항목을 업데이트할 수 있는 작업을 나타냅니다.</summary>
+      <deprecated type="deprecate">SocialDashboardItemUpdater는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Content">
+      <summary>업데이트할 수 있는 SocialFeedContent 개체를 가져옵니다.</summary>
+      <returns>업데이트할 수 있는 SocialFeedContent 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.OwnerRemoteId">
+      <summary>공급자의 시스템에서 사용자를 식별하는 ID를 가져옵니다.</summary>
+      <returns>공급자의 시스템에서 사용자를 식별하는 ID입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.TargetUri">
+      <summary>사용자가 누를 때 탐색되는 URI(Uniform Resource Identifier)를 가져오거나 설정합니다.</summary>
+      <returns>사용자가 항목을 누를 때 탐색되는 URI입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Thumbnail">
+      <summary>대시보드 항목의 미리 보기 이미지를 가져오거나 설정합니다.</summary>
+      <returns>대시보드 항목의 미리 보기 이미지입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Timestamp">
+      <summary>업데이트의 타임스탬프를 가져오거나 설정합니다.</summary>
+      <returns>업데이트의 타임스탬프입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.CommitAsync">
+      <summary>모든 속성을 설정한 후 업데이트를 비동기적으로 제출합니다.</summary>
+      <deprecated type="deprecate">ISocialDashboardItemUpdater는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <returns>작업이 완료되었음을 나타내는 비동기 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater">
+      <summary>소셜 미디어 피드를 업데이트하는 데 사용할 수 있는 작업을 나타냅니다.</summary>
+      <deprecated type="deprecate">SocialFeedUpdater는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Items">
+      <summary>소셜 미디어 피드 항목의 목록을 가져옵니다.</summary>
+      <returns>소셜 미디어 피드 항목의 목록입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Kind">
+      <summary>소셜 미디어 피드의 유형을 가져옵니다.</summary>
+      <returns>소셜 미디어 피드의 유형입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.OwnerRemoteId">
+      <summary>공급자의 시스템에서 사용자를 식별하는 ID를 가져옵니다.</summary>
+      <returns>공급자의 시스템에서 사용자를 식별하는 ID입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.CommitAsync">
+      <summary>모든 속성을 설정한 후 업데이트를 비동기적으로 제출합니다.</summary>
+      <deprecated type="deprecate">ISocialFeedUpdater는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <returns>작업이 완료되었음을 나타내는 비동기 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager">
+      <summary>소셜 미디어 확장성을 사용할 수 있는 기능을 앱에 제공합니다.</summary>
+      <deprecated type="deprecate">SocialInfoProviderManager는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateDashboardItemUpdaterAsync(System.String)">
+      <summary>작업으로 사용할 수 있는 새 SocialDashboardItemUpdater 개체를 만듭니다.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <param name="ownerRemoteId">공급자의 시스템에서 사용자를 식별하는 ID입니다.</param>
+      <returns>새로 만든 SocialDashboardItemUpdater 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateSocialFeedUpdaterAsync(Windows.ApplicationModel.SocialInfo.SocialFeedKind,Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode,System.String)">
+      <summary>작업으로 사용할 수 있는 새 SocialFeedUpdater 개체를 만듭니다.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <param name="kind">만들려는 소셜 미디어 피드의 유형입니다.</param>
+      <param name="mode">추가 또는 바꾸기 모드를 지정합니다.</param>
+      <param name="ownerRemoteId">공급자의 시스템에서 사용자를 식별하는 ID입니다.</param>
+      <returns>새로 만든 SocialFeedUpdater 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.DeprovisionAsync">
+      <summary>앱의 프로비전을 해제하여 소셜 미디어 확장성을 사용하지 못하도록 합니다.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <returns>작업이 완료되었음을 나타내는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ProvisionAsync">
+      <summary>소셜 미디어 확장성을 사용할 수 있도록 앱을 프로비전합니다.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <returns>작업이 성공했는지 여부를 나타내는 부울 값입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ReportNewContentAvailable(System.String,Windows.ApplicationModel.SocialInfo.SocialFeedKind)">
+      <summary>이 앱에서 새 소셜 미디어 콘텐츠를 사용할 수 있음을 시스템에 경고합니다.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <param name="contactRemoteId">공급자의 시스템에서 사용자를 식별하는 ID입니다.</param>
+      <param name="kind">소셜 미디어 피드의 유형입니다.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.UpdateBadgeCountValue(System.String,System.Int32)">
+      <summary>잠금 화면 배지의 개수 값을 업데이트합니다.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics는 더 이상 사용되지 않으며 모든 플랫폼에서 작동하지 않을 수 있습니다. 자세한 내용은 MSDN을 참조하십시오.</deprecated>
+      <param name="itemRemoteId">공급자의 시스템에서 연락처를 식별합니다.</param>
+      <param name="newCount">배지에 표시할 새 개수 값입니다.</param>
+    </member>
+  </members>
+</doc>

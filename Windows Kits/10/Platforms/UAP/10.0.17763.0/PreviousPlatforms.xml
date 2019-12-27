@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreviousPlatforms xmlns="http://microsoft.com/schemas/Windows/SDK/PreviousPlatforms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://microsoft.com/schemas/Windows/SDK/PreviousPlatforms ./PreviousPlatformsXmlSchema.xsd">
+	<!-- The idea here is to use this entry to represent the current platform version. 
+         Once current version is released, we add a new entry with the locked version number while retaining this.
+         Ensure that the friendlyName is in sync with Platform.xml -->
+	<ApplicationPlatform name="UAP" friendlyName="Windows 10, version 1809" version="10.0.17763.0">
+		<VersionedContent>true</VersionedContent>
+		<ContainedApiContracts xmlns="http://microsoft.com/schemas/Windows/SDK/PreviousPlatforms">
+			<ApiContract xmlns="" name="Windows.AI.MachineLearning.MachineLearningContract" version="1.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract" version="2.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.ApplicationModel.Calls.Background.CallsBackgroundContract" version="1.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.ApplicationModel.Calls.CallsPhoneContract" version="4.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.ApplicationModel.Calls.CallsVoipContract" version="4.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract" version="2.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.ApplicationModel.SocialInfo.SocialInfoContract" version="2.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.ApplicationModel.StartupTaskContract" version="3.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Devices.Custom.CustomDeviceContract" version="1.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Devices.DevicesLowLevelContract" version="3.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Devices.Printers.PrintersContract" version="1.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract" version="3.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Devices.SmartCards.SmartCardEmulatorContract" version="6.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Foundation.FoundationContract" version="3.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Foundation.UniversalApiContract" version="7.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Gaming.XboxLive.StorageApiContract" version="1.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Graphics.Printing3D.Printing3DContract" version="4.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Networking.Connectivity.WwanContract" version="2.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Networking.Sockets.ControlChannelTriggerContract" version="3.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Services.Maps.GuidanceContract" version="3.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Services.Maps.LocalSearchContract" version="4.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Services.Store.StoreContract" version="4.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.Services.TargetedContent.TargetedContentContract" version="1.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.System.Profile.ProfileHardwareTokenContract" version="1.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.System.Profile.ProfileSharedModeContract" version="2.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.System.Profile.SystemManufacturers.SystemManufacturersContract" version="3.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.System.SystemManagementContract" version="6.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.UI.ViewManagement.ViewManagementViewScalingContract" version="1.0.0.0"/>
+			<ApiContract xmlns="" name="Windows.UI.Xaml.Core.Direct.XamlDirectContract" version="1.0.0.0"/>
+		</ContainedApiContracts>
+	</ApplicationPlatform>
+	<ApplicationPlatform name="UAP" friendlyName="Windows 10, version 1803" version="10.0.17134.0">
+		<VersionedContent>true</VersionedContent>
+		<ContainedApiContracts>
+			<ApiContract name="Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.ApplicationModel.Calls.CallsVoipContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.ApplicationModel.SocialInfo.SocialInfoContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.ApplicationModel.StartupTaskContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Devices.Custom.CustomDeviceContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Devices.DevicesLowLevelContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Devices.Printers.PrintersContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Devices.SmartCards.SmartCardEmulatorContract" version="5.0.0.0"/>
+			<ApiContract name="Windows.Foundation.FoundationContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Foundation.UniversalApiContract" version="6.0.0.0"/>
+			<ApiContract name="Windows.Foundation.VelocityIntegration.VelocityIntegrationContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Gaming.XboxLive.StorageApiContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Graphics.Printing3D.Printing3DContract" version="4.0.0.0"/>
+			<ApiContract name="Windows.Networking.Connectivity.WwanContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Services.Store.StoreContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Services.TargetedContent.TargetedContentContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.System.Profile.ProfileHardwareTokenContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.System.Profile.ProfileSharedModeContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.UI.ViewManagement.ViewManagementViewScalingContract" version="1.0.0.0"/>
+		</ContainedApiContracts>
+	</ApplicationPlatform>
+	<ApplicationPlatform name="UAP" friendlyName="Windows 10 Fall Creators Update" version="10.0.16299.0">
+		<VersionedContent>true</VersionedContent>
+		<ContainedApiContracts>
+			<ApiContract name="Windows.ApplicationModel.Calls.CallsVoipContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.ApplicationModel.SocialInfo.SocialInfoContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.ApplicationModel.StartupTaskContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Devices.Custom.CustomDeviceContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Devices.DevicesLowLevelContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Devices.Printers.PrintersContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Devices.SmartCards.SmartCardBackgroundTriggerContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Devices.SmartCards.SmartCardEmulatorContract" version="5.0.0.0"/>
+			<ApiContract name="Windows.Foundation.FoundationContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Foundation.UniversalApiContract" version="5.0.0.0"/>
+			<ApiContract name="Windows.Gaming.XboxLive.StorageApiContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Graphics.Printing3D.Printing3DContract" version="4.0.0.0"/>
+			<ApiContract name="Windows.Networking.Connectivity.WwanContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Services.Store.StoreContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Services.TargetedContent.TargetedContentContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.System.Profile.ProfileHardwareTokenContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.System.Profile.ProfileSharedModeContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.UI.ViewManagement.ViewManagementViewScalingContract" version="1.0.0.0"/>
+		</ContainedApiContracts>
+	</ApplicationPlatform>
+	<ApplicationPlatform name="UAP" friendlyName="Windows 10 Creators Update" version="10.0.15063.0" IsDefaultFallback="True">
+		<VersionedContent>true</VersionedContent>
+		<ContainedApiContracts>
+			<ApiContract name="Windows.ApplicationModel.Calls.CallsVoipContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.ApplicationModel.SocialInfo.SocialInfoContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Devices.DevicesLowLevelContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Devices.Printers.PrintersContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Foundation.FoundationContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Foundation.UniversalApiContract" version="4.0.0.0"/>
+			<ApiContract name="Windows.Graphics.Printing3D.Printing3DContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Networking.Connectivity.WwanContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Services.Store.StoreContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Services.TargetedContent.TargetedContentContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.System.Profile.ProfileHardwareTokenContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.System.Profile.ProfileSharedModeContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.UI.ViewManagement.ViewManagementViewScalingContract" version="1.0.0.0"/>
+		</ContainedApiContracts>
+	</ApplicationPlatform>
+	<ApplicationPlatform name="UAP" friendlyName="Windows 10 Anniversary Update" version="10.0.14393.0">
+		<VersionedContent>false</VersionedContent>
+		<ContainedApiContracts>
+			<ApiContract name="Windows.ApplicationModel.Calls.CallsVoipContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.ApplicationModel.SocialInfo.SocialInfoContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Devices.DevicesLowLevelContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Devices.Printers.PrintersContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Foundation.FoundationContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Foundation.UniversalApiContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Graphics.Printing3D.Printing3DContract" version="3.0.0.0"/>
+			<ApiContract name="Windows.Networking.Connectivity.WwanContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Services.Store.StoreContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.System.Profile.ProfileHardwareTokenContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.System.Profile.ProfileSharedModeContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.UI.ViewManagement.ViewManagementViewScalingContract" version="1.0.0.0"/>
+		</ContainedApiContracts>
+	</ApplicationPlatform>
+	<ApplicationPlatform name="UAP" friendlyName="Windows 10 November Update" version="10.0.10586.0">
+		<VersionedContent>false</VersionedContent>
+		<ContainedApiContracts>
+			<ApiContract name="Windows.ApplicationModel.Calls.CallsVoipContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Devices.Printers.PrintersContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Foundation.FoundationContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Foundation.UniversalApiContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Graphics.Printing3D.Printing3DContract" version="2.0.0.0"/>
+			<ApiContract name="Windows.Networking.Connectivity.WwanContract" version="1.0.0.0"/>
+		</ContainedApiContracts>
+	</ApplicationPlatform>
+	<ApplicationPlatform name="UAP" friendlyName="Windows 10" version="10.0.10240.0">
+		<VersionedContent>false</VersionedContent>
+		<ContainedApiContracts>
+			<ApiContract name="Windows.Foundation.FoundationContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Foundation.UniversalApiContract" version="1.0.0.0"/>
+			<ApiContract name="Windows.Networking.Connectivity.WwanContract" version="1.0.0.0"/>
+		</ContainedApiContracts>
+	</ApplicationPlatform>
+</PreviousPlatforms>

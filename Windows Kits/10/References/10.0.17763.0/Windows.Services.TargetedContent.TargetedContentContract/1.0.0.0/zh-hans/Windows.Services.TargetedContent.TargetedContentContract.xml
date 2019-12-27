@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.TargetedContent.TargetedContentContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAction">
+      <summary>表示 TargetedContentValueKind 操作的 TargetedContentValue。</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentAction.InvokeAsync">
+      <summary>调用此操作。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAppInstallationState">
+      <summary>定义 TargetedContentAppInstallState 能够保持的所有值的枚举：NotApplicable、NotInstalled 或 Installed。</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.Installed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.NotApplicable">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.NotInstalled">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAvailability">
+      <summary>定义 TargetedContentAvailability 能够保持的所有值的枚举：All、Partial 或 None。</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.All">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.None">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.Partial">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAvailabilityChangedEventArgs">
+      <summary>表示 Availability Changed 事件的参数。</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentAvailabilityChangedEventArgs.GetDeferral">
+      <summary>表示 Availability Changed 事件的参数。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentChangedEventArgs">
+      <summary>表示 Content Changed 事件的参数。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentChangedEventArgs.HasPreviousContentExpired">
+      <summary>获取指示 TargetedContentChangedEventArgs 的先前内容是否已过期的布尔值。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentChangedEventArgs.GetDeferral">
+      <summary>获取延迟。 异步处理程序必需。 调用方负责在处理该事件时调用 Complete。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentCollection">
+      <summary>表示 TargetedContentContainer 对象中项目或子集的集合。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Collections">
+      <summary>获取 TargetedContentContainer 对象中的 TargetedContentCollection 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Id">
+      <summary>获取该集合的 ID。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Items">
+      <summary>获取 TargetedContentCollection 对象中的 TargetedContentItems 集合。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Path">
+      <summary>获取 TargetedContentCollection 对象的路径。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Properties">
+      <summary>获取包含作为键的属性名称以及作为 TargetedContentCollection 对象中的值的 TargetedContentValues 的集合。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentCollection.ReportCustomInteraction(System.String)">
+      <summary>报告 TargetedContentCollection 对象的自定义交互。</summary>
+      <param name="customInteractionName">
+      </param>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentCollection.ReportInteraction(Windows.Services.TargetedContent.TargetedContentInteraction)">
+      <summary>报告 TargetedContentCollection 对象的交互。</summary>
+      <param name="interaction">
+      </param>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentContainer">
+      <summary>表示用于 TargetedContentSubscription 对象中所有内容的容器。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Availability">
+      <summary>获取 TargetedContentContainer 对象的 TargetedContentAvailability。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Content">
+      <summary>获取 TargetedContentContainer 对象的 TargetedContentCollection 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Id">
+      <summary>获取 TargetedContainerContainer 对象的 ID。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Timestamp">
+      <summary>上次更新此内容的时间。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentContainer.GetAsync(System.String)">
+      <summary>返回指定 ContentId 的 TargetedContainerContainer 对象。</summary>
+      <param name="contentId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentContainer.SelectSingleObject(System.String)">
+      <summary>获取 TargetedContentContainer 对象中的 TargetedContentObject 对象。</summary>
+      <param name="path">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentFile">
+      <summary>表示 TargetedContentValueKind 文件的 TargetedContentValue。</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentFile.OpenReadAsync">
+      <summary>打开一个进行只读随机访问的流。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentImage">
+      <summary>表示 TargetedContentValueKind 图像的 TargetedContentValue。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentImage.Height">
+      <summary>获取指示 TargetedContentImage 对象的高度的值。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentImage.Width">
+      <summary>获取指示 TargetedContentImage 对象的宽度的值。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentImage.OpenReadAsync">
+      <summary>打开一个进行只读随机访问的流。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentInteraction">
+      <summary>定义 TargetedContentInteraction 能够保持的所有值的枚举。</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Accept">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Canceled">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.ClickThrough">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Conversion">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Decline">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Defer">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Dislike">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Dismiss">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Hover">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Impression">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Ineligible">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Like">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Opportunity">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentItem">
+      <summary>表示具有 TargetedContentCollection 的项目。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Collections">
+      <summary>获取 TargetedContentItem 对象中的 TargetedContentCollection 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Path">
+      <summary>获取 TargetedContentItem 对象的字符串路径。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Properties">
+      <summary>获取包含作为键的属性名称以及作为 TargetedContentItem 对象中的值的 TargetedContentValues 的集合。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.State">
+      <summary>获取该项目的 TargetedContentItemState。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentItem.ReportCustomInteraction(System.String)">
+      <summary>报告该项目的自定义交互。</summary>
+      <param name="customInteractionName">
+      </param>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentItem.ReportInteraction(Windows.Services.TargetedContent.TargetedContentInteraction)">
+      <summary>报告该项目的 TargetedContentInteraction。</summary>
+      <param name="interaction">
+      </param>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentItemState">
+      <summary>表示 TargetedContentItem 对象的状态：AppInstallationState、ShouldDisplay。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItemState.AppInstallationState">
+      <summary>获取该对象的 TargetedContentAppInstallationState。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItemState.ShouldDisplay">
+      <summary>获取该对象的 ShouldDisplay 状态的布尔值。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentObject">
+      <summary>表示 TargetedContentContainer 中的单个对象。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Collection">
+      <summary>获取 TargetedContentObject 对象中的 TargetedContentCollection 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Item">
+      <summary>获取 TargetedContentObject 对象中的 TargetedContentItem 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.ObjectKind">
+      <summary>获取 TargetedContentObject 对象的 TargetedContentObjectKind 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Value">
+      <summary>获取 TargetedContentObject 对象的 TargetedContentValue 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentObjectKind">
+      <summary>定义 TargetedContentObject 对象能够具有的所有值类型的枚举。</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Collection">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Item">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Value">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentStateChangedEventArgs">
+      <summary>表示 State Changed 事件的参数。</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentStateChangedEventArgs.GetDeferral">
+      <summary>获取延迟。 异步处理程序必需。 调用方负责在处理该事件时调用 Complete。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentSubscription">
+      <summary>表示订阅对象。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscription.Id">
+      <summary>获取订阅的 ID。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.AvailabilityChanged">
+      <summary>当 TargetedContentSubscription 可用性已更改时调用的事件。</summary>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.ContentChanged">
+      <summary>当 TargetedContentSubscription 内容已更改时调用的事件。</summary>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.StateChanged">
+      <summary>当 TargetedContentSubscription 状态已更改时调用的事件。</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetAsync(System.String)">
+      <summary>返回 subscriptionID 的 TargetedContentContainer 对象。</summary>
+      <param name="subscriptionId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetContentContainerAsync">
+      <summary>返回 TargetedContentSubscription 的 TargetedContentContainer 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetOptions(System.String)">
+      <summary>获取到 TargetedContentSubscriptionOptions 以获得给定订阅的对象。</summary>
+      <param name="subscriptionId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions">
+      <summary>表示采用 CloudQuery 参数、本地筛选器或部分内容可用性形式的订阅的选项。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.AllowPartialContentAvailability">
+      <summary>获取或设置 TargetedContentSubscription 对象的部分内容可用性。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.CloudQueryParameters">
+      <summary>获取 TargetedContentSubscription 对象的云查询参数集合。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.LocalFilters">
+      <summary>获取 TargetedContentSubscription 对象的本地筛选器集合。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.SubscriptionId">
+      <summary>获取订阅的 ID。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.Update">
+      <summary>更新订阅的 TargetedContentSubscriptionOptions。</summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentValue">
+      <summary>表示某个订阅的内容值对象。</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Action">
+      <summary>获取 TargetedContentValue 对象中的 TargetedContentAction 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Actions">
+      <summary>获取在 TargetedContentValue 对象中的一系列 TargetedContentAction 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Boolean">
+      <summary>获取 TargetedContentValue 对象中的布尔值。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Booleans">
+      <summary>获取 TargetedContentValue 对象中的一系列布尔值。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.File">
+      <summary>获取 TargetedContentValue 对象中的 TargetedContentFile 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Files">
+      <summary>获取在 TargetedContentValue 对象中的一系列 TargetedContentFile 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ImageFile">
+      <summary>获取 TargetedContentValue 对象中的 TargetedContentImage 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ImageFiles">
+      <summary>获取在 TargetedContentValue 对象中的一系列 TargetedContentImage 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Number">
+      <summary>获取 TargetedContentValue 对象中的双数。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Numbers">
+      <summary>获取 TargetedContentValue 对象中的一系列双数。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Path">
+      <summary>获取 TargetedContentValue 对象的字符串路径。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.String">
+      <summary>获取 TargetedContentValue 对象中的字符串。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Strings">
+      <summary>获取 TargetedContentValue 对象中的一系列字符串。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Uri">
+      <summary>获取 TargetedContentValue 对象中的 Uri 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Uris">
+      <summary>获取在 TargetedContentValue 对象中的一系列 Uri 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ValueKind">
+      <summary>获取 TargetedContentValue 对象的 TargetedContentValueKind 对象。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentValueKind">
+      <summary>定义 TargetedContentContainer 中能够具有的值内容的所有类型。</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Action">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Actions">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Boolean">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Booleans">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.File">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Files">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.ImageFile">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.ImageFiles">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Number">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Numbers">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.String">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Strings">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Uri">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Uris">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

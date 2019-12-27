@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.SystemManagementContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Cortana.CortanaSettings">
+      <summary>提供 Cortana 設定的存取。</summary>
+    </member>
+    <member name="P:Windows.Services.Cortana.CortanaSettings.HasUserConsentToVoiceActivation">
+      <summary>取得使用者是否已同意語音啟用。</summary>
+      <returns>如果使用者已同意則為 **true**。 否則為 **false**。</returns>
+    </member>
+    <member name="P:Windows.Services.Cortana.CortanaSettings.IsVoiceActivationEnabled">
+      <summary>取得或設定是否啟用語音啟用。</summary>
+      <returns>如果啟用語音啟用則為 **true**。 否則為 **false**。</returns>
+    </member>
+    <member name="M:Windows.Services.Cortana.CortanaSettings.GetDefault">
+      <summary>擷取目前使用者的 Cortana 設定。</summary>
+      <returns>CortanaSettings 物件。</returns>
+    </member>
+    <member name="M:Windows.Services.Cortana.CortanaSettings.IsSupported">
+      <summary>擷取是否支援 Cortana 設定。</summary>
+      <returns>如果支援 Cortana 設定則為 **true**。 否則為 **false**。</returns>
+    </member>
+    <member name="T:Windows.System.AutoUpdateTimeZoneStatus">
+      <summary>自動時區要求的狀態。</summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.Attempted">
+      <summary>嘗試偵測時區。 </summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.Failed">
+      <summary>無法偵測時區，因為缺乏硬體支援或發生嚴重失敗。</summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.TimedOut">
+      <summary>要求逾時。 </summary>
+    </member>
+    <member name="T:Windows.System.DateTimeSettings">
+      <summary>設定系統日期和時間。</summary>
+    </member>
+    <member name="M:Windows.System.DateTimeSettings.SetSystemDateTime(Windows.Foundation.DateTime)">
+      <summary>設定系統日期和時間。</summary>
+      <param name="utcDateTime">設定系統時鐘值的日期和時間值，以國際標準時間 (UTC) 表示。</param>
+    </member>
+    <member name="T:Windows.System.PowerState">
+      <summary>代表固定目的裝置的電源狀態。</summary>
+    </member>
+    <member name="F:Windows.System.PowerState.ConnectedStandby">
+      <summary>代表連線待命狀態。</summary>
+    </member>
+    <member name="F:Windows.System.PowerState.SleepS3">
+      <summary>代表睡眠 S3 狀態。</summary>
+    </member>
+    <member name="T:Windows.System.ProcessLauncher">
+      <summary>使用相關聯的引數啟動指定的處理序 (如果有的話)。</summary>
+    </member>
+    <member name="M:Windows.System.ProcessLauncher.RunToCompletionAsync(System.String,System.String)">
+      <summary>啟動新的處理序。 當啟動的處理程序終止時，這項非同步功能會完成。</summary>
+      <param name="fileName">要啟動的處理序名稱。</param>
+      <param name="args">執行處理序的引數。</param>
+      <returns>當非同步作業完成時，它包含啟動處理程序的結束代碼。</returns>
+    </member>
+    <member name="M:Windows.System.ProcessLauncher.RunToCompletionAsync(System.String,System.String,Windows.System.ProcessLauncherOptions)">
+      <summary>啟動新的處理序，包括指定的選項。 當啟動的處理程序終止時，這項非同步功能會完成。</summary>
+      <param name="fileName">要啟動之處理序的檔案名稱。</param>
+      <param name="args">所指定處理序的引數。</param>
+      <param name="options">執行處理序的相關選項。</param>
+      <returns>當非同步作業完成時，它包含啟動處理程序的結束代碼。</returns>
+    </member>
+    <member name="T:Windows.System.ProcessLauncherOptions">
+      <summary>指定選項，用來啟動指定的處理序。</summary>
+    </member>
+    <member name="M:Windows.System.ProcessLauncherOptions.#ctor">
+      <summary>建立並初始化處理序啟動器選項物件的新執行個體。</summary>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardError">
+      <summary>指定標準錯誤指向的位置。</summary>
+      <returns>標準錯誤指向的資料流。</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardInput">
+      <summary>指定標準輸入的來源。</summary>
+      <returns>標準輸入的輸入資料流。</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardOutput">
+      <summary>指定標準輸出指向的位置。</summary>
+      <returns>標準輸出導向的資料流。</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.WorkingDirectory">
+      <summary>取得或設定處理序啟動器將運作的目錄。</summary>
+      <returns>工作目錄。</returns>
+    </member>
+    <member name="T:Windows.System.ProcessLauncherResult">
+      <summary>表示傳回啟動的處理序。</summary>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherResult.ExitCode">
+      <summary>表示從 ProcessLauncher 執行的處理序結束代碼。</summary>
+      <returns>結束代碼。</returns>
+    </member>
+    <member name="T:Windows.System.ShutdownKind">
+      <summary>描述您可以對在固定目的模式執行之裝置執行的關閉類型。</summary>
+    </member>
+    <member name="F:Windows.System.ShutdownKind.Restart">
+      <summary>關閉固定目的裝置，然後重新啟動裝置。</summary>
+    </member>
+    <member name="F:Windows.System.ShutdownKind.Shutdown">
+      <summary>關閉固定目的裝置，但不重新啟動裝置。</summary>
+    </member>
+    <member name="T:Windows.System.ShutdownManager">
+      <summary>管理在固定目的模式執行之裝置的關閉。</summary>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.BeginShutdown(Windows.System.ShutdownKind,Windows.Foundation.TimeSpan)">
+      <summary>關閉在固定目的模式執行的裝置，並選擇地在指定的秒數之後重新啟動裝置。</summary>
+      <param name="shutdownKind">要執行的關閉類型，要或不要重新啟動裝置。</param>
+      <param name="timeout">在重新啟動裝置 (如果 *shutdownKind* 為 **ShutdownKind.Restart**) 之前等待的秒數。</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.CancelShutdown">
+      <summary>取消固定目的裝置已經在進行中的關閉。</summary>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.EnterPowerState(Windows.System.PowerState)">
+      <summary>指示固定目的裝置進入特定的電源狀態。</summary>
+      <param name="powerState">要進入的電源狀態。</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.EnterPowerState(Windows.System.PowerState,Windows.Foundation.TimeSpan)">
+      <summary>指示固定目的裝置進入特定的電源狀態，然後在一段時間後喚醒。</summary>
+      <param name="powerState">要進入的電源狀態。</param>
+      <param name="wakeUpAfter">維持在指定的電源狀態中的時段。 經過這段時間之後，裝置將會喚醒。</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.IsPowerStateSupported(Windows.System.PowerState)">
+      <summary>取得固定目的裝置是否支援特定的電源狀態。</summary>
+      <param name="powerState">要檢查的電源狀態。</param>
+      <returns>如果指定的裝置上支援電源狀態，這個方法會傳回 TRUE，否則為 FALSE。</returns>
+    </member>
+    <member name="T:Windows.System.SystemManagementContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.TimeZoneSettings">
+      <summary>包含與時區互動的方法和屬性。</summary>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.CanChangeTimeZone">
+      <summary>取得時區是否可變更。</summary>
+      <returns>如果時區可以變更，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.CurrentTimeZoneDisplayName">
+      <summary>取得目前時區的顯示名稱。</summary>
+      <returns>目前時區的顯示名稱。</returns>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.SupportedTimeZoneDisplayNames">
+      <summary>取得所有支援時區的顯示名稱。</summary>
+      <returns>所有支援時區的顯示名稱。</returns>
+    </member>
+    <member name="M:Windows.System.TimeZoneSettings.AutoUpdateTimeZoneAsync(Windows.Foundation.TimeSpan)">
+      <summary>嘗試為內嵌模式裝置自動判斷並設定時區。</summary>
+      <param name="timeout">如果超過逾時期間，此方法會為 AutoUpdateTimeZoneStatus 傳回 **TimedOut** 值。</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.TimeZoneSettings.ChangeTimeZoneByDisplayName(System.String)">
+      <summary>使用顯示名稱變更時區。</summary>
+      <param name="timeZoneDisplayName">時區要變更成的顯示名稱。</param>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateAttentionRequiredReason">
+      <summary>需要使用者注意的的原因。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.InsufficientBattery">
+      <summary>電池電力不足，無法開始更新系統。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.InsufficientDiskSpace">
+      <summary>磁碟空間不足，無法下載更新。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.NetworkRequired">
+      <summary>需要注意網路連線。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.None">
+      <summary>不需要注意。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.UpdateBlocked">
+      <summary>無法繼續進行更新。</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateItem">
+      <summary>說明更新配套的屬性和狀態。</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Description">
+      <summary>說明 SystemUpdateItem 的內容。</summary>
+      <returns>系統更新套件的內容描述。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.DownloadProgress">
+      <summary>下載進度百分比。</summary>
+      <returns>下載進度百分比。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.ExtendedError">
+      <summary>延伸的錯誤資訊 (如果有的話)。</summary>
+      <returns>延伸的錯誤資訊 (如果有的話)。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Id">
+      <summary>唯一識別碼，識別這個更新項目。</summary>
+      <returns>唯一識別碼，識別這個更新項目。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.InstallProgress">
+      <summary>安裝進度百分比。</summary>
+      <returns>安裝進度百分比。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Revision">
+      <summary>更新配套的修訂編號。  從 1 開始，如果對原始更新配套進行更新則會增加。</summary>
+      <returns>更新配套的修訂編號。  從 1 開始，如果對原始更新配套進行更新則會增加。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.State">
+      <summary>目前更新項目的狀態。</summary>
+      <returns>目前更新項目的狀態。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Title">
+      <summary>更新項目的標題。</summary>
+      <returns>更新項目的標題。</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateItemState">
+      <summary>SystemUpdateItem 的狀態。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Calculating">
+      <summary>計算更新項目動作。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Completed">
+      <summary>更新已完成。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Downloading">
+      <summary>更新項目下載中。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Error">
+      <summary>嘗試更新時發生錯誤—請參閱 ExtendedError</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Initializing">
+      <summary>更新項目初始化中。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Installing">
+      <summary>更新項目安裝中。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.NotStarted">
+      <summary>更新未開始。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Preparing">
+      <summary>正在準備更新項目。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.RebootRequired">
+      <summary>需要重新開機。</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateLastErrorInfo">
+      <summary>上次系統更新失敗的相關資訊。</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.ExtendedError">
+      <summary>延伸錯誤描述。</summary>
+      <returns>延伸錯誤描述。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.IsInteractive">
+      <summary>指定上次更新錯誤是否發生在互動式更新期間。</summary>
+      <returns>如果錯誤發生在互動式更新期間，則為 **true**。 如果更新是自動更新，則為 **false**。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.State">
+      <summary>發生上次錯誤時的 **SystemUpdateManager** 狀態。</summary>
+      <returns>發生上次錯誤時的 **SystemUpdateManager** 狀態。</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateManager">
+      <summary>**SystemUpdateManager** 允許系統更新的互動式控制。</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.AttentionRequiredReason">
+      <summary>需要使用者注意的的原因。</summary>
+      <returns>發生上次錯誤時的 **SystemUpdateManager** 狀態。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.DownloadProgress">
+      <summary>下載進度百分比。</summary>
+      <returns>下載進度百分比。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.ExtendedError">
+      <summary>延伸錯誤資訊 (如果有的話)。</summary>
+      <returns>延伸錯誤資訊 (如果有的話)。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.InstallProgress">
+      <summary>安裝進度百分比。</summary>
+      <returns>安裝進度百分比。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastErrorInfo">
+      <summary>上次系統更新失敗的相關資訊。</summary>
+      <returns>上次系統更新失敗的相關資訊。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastUpdateCheckTime">
+      <summary>上次檢查更新的時間。</summary>
+      <returns>上次檢查更新的時間。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastUpdateInstallTime">
+      <summary>上次更新的安裝時間。</summary>
+      <returns>上次更新的安裝時間。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.State">
+      <summary>**SystemUpdateManager** 的目前狀態。</summary>
+      <returns>**SystemUpdateManager** 的目前狀態。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursEnd">
+      <summary>取得使用者使用時間的結束時間值。</summary>
+      <returns>取得使用者使用時間的結束時間值。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursMax">
+      <summary>取得 **UserActiveHoursStart** 和 **UserActiveHoursEnd** 之間允許的最大時間間隔，以小時為單位。</summary>
+      <returns>取得 **UserActiveHoursStart** 和 **UserActiveHoursEnd** 之間允許的最大時間間隔，以小時為單位。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursStart">
+      <summary>取得使用者使用時間的開始時間值。</summary>
+      <returns>取得使用者使用時間的開始時間值。</returns>
+    </member>
+    <member name="E:Windows.System.Update.SystemUpdateManager.StateChanged">
+      <summary>State 屬性變更通知事件。</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.BlockAutomaticRebootAsync(System.String)">
+      <summary>封鎖更新的自動重新開機，直到呼叫 UnblockAutomaticRebootAsync 或直到系統原則強制重新開機。</summary>
+      <param name="lockId">識別碼由 A-Z、a-z、0-9 組成。  使用 Guid.NewGuid.ToString() 產生新的隨機識別碼。</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetAutomaticRebootBlockIds">
+      <summary>取得自動重新開機封鎖要求的識別碼。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetFlightRing">
+      <summary>取得正式發行前小眾測試版更新通道。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetUpdateItems">
+      <summary>取得擱置中更新項目的清單。</summary>
+      <returns>SystemUpdateItem 的清單</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.IsSupported">
+      <summary>指出此裝置是否支援此 API。</summary>
+      <returns>如果支援 API 則為 **true**，否則為 **false**。</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.RebootToCompleteInstall">
+      <summary>如果需要重新開機，請重新開機裝置以完成安裝。</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.SetFlightRing(System.String)">
+      <summary>設定正式發行前小眾測試版更新通道。</summary>
+      <param name="flightRing">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.StartCancelUpdates">
+      <summary>如果有任何進行中的更新，開始取消更新。</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.StartInstall(Windows.System.Update.SystemUpdateStartInstallAction)">
+      <summary>開始偵測、下載及安裝擱置中的更新。</summary>
+      <param name="action">請參閱 SystemUpdateStartInstallAction</param>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.TrySetUserActiveHours(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)">
+      <summary>嘗試將使用者定義的使用時間設定在不允許進行更新之自動重新開機的期間。</summary>
+      <param name="start">使用時間的開始時間。</param>
+      <param name="end">使用時間的結束時間。</param>
+      <returns>如果設定使用時間則傳回 true。 否則傳回 false。</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.UnblockAutomaticRebootAsync(System.String)">
+      <summary>解除封鎖自動更新重新開機 (如果已封鎖)。</summary>
+      <param name="lockId">識別碼由 A-Z、a-z、0-9 組成。  使用 Guid.NewGuid.ToString() 產生新的隨機識別碼。 必須符合傳遞至 BlockAutomaticRebootAsync 的值。</param>
+      <returns>如果自動重新開機沒有其餘封鎖，傳回 true。</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateManagerState">
+      <summary>列舉，說明系統更新的目前狀態。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.AttentionRequired">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Completed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Detecting">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Downloading">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Error">
+      <summary>發生錯誤。 檢查 ExtendedError。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Finalizing">
+      <summary>系統更新正在完成。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Idle">
+      <summary>SystemUpdateManager 閒置中。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Installing">
+      <summary>系統更新正在安裝。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToDownload">
+      <summary>系統更新已準備好下載。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToFinalize">
+      <summary>系統更新已準備好完成。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToInstall">
+      <summary>系統更新已準備好安裝。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.RebootRequired">
+      <summary>需要重新開機，才能完成安裝。</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateStartInstallAction">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateStartInstallAction.AllowReboot">
+      <summary>下載和安裝。  如果需要重新開機，在需要時立即自動重新開機</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateStartInstallAction.UpToReboot">
+      <summary>下載和安裝。  如果需要重新開機，等候安裝的互動式重新開機或自動重新開機視窗。</summary>
+    </member>
+  </members>
+</doc>

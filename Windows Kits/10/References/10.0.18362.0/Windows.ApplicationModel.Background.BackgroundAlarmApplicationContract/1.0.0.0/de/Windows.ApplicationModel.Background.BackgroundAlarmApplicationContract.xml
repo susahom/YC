@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.AlarmAccessStatus">
+      <summary>Gibt an, ob der Benutzer der App Berechtigungen zum Festlegen von Warnsignalen erteilt hat.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithoutWakeupCapability">
+      <summary>Der Benutzer hat der App die Berechtigung zum Festlegen von Warnsignalen gewährt, aber die Warnsignale können den Computer nicht aus dem Standby aktivieren.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithWakeupCapability">
+      <summary>Der Benutzer hat der App die Berechtigung zum Festlegen von Warnsignalen gewährt, und Warnsignale können den Computer aus dem Standby aktivieren.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Denied">
+      <summary>Der Benutzer hat der App die Berechtigung zum Festlegen von Warnsignalen verweigert.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Unspecified">
+      <summary>Der Benutzer reagiert nicht auf die Anforderung, der App die Berechtigung zum Festlegen von Warnsignalen zu gewähren.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.AlarmApplicationManager">
+      <summary>Fordert Berechtigung vom Benutzer an, Warnsignale festzulegen, und ruft den Status der Benutzerberechtigung für die App ab, damit Warnsignale festgelegt werden können.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.GetAccessStatus">
+      <summary>Ruft den Status der Benutzerberechtigung für die App zum Festlegen von Warnsignalen ab.</summary>
+      <returns>Gibt an, ob der Benutzer die Berechtigung erteilt hat, Warnsignale festzulegen.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.RequestAccessAsync">
+      <summary>Fordert Berechtigung vom Benutzer an, Warnsignale festzulegen.</summary>
+      <returns>Diese Methode gibt einen AlarmAccessStatus-Wert zurück, wenn sie abgeschlossen ist.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

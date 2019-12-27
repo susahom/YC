@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Preview.Notes.PreviewNotesContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.NotePlacementChangedPreviewEventArgs">
+      <summary>Stellt Informationen zum NotePlacementChanged-Ereignis dar.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NotePlacementChangedPreviewEventArgs.ViewId">
+      <summary>Die eindeutige Kennung des Hinweises, für den das NotePlacementChanged-Ereignis ausgelöst wurde.</summary>
+      <returns>Die Hinweis-ID.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview">
+      <summary>Diese Klasse besitzt einen Großteil der Funktionalität des **Preview Notes**-Anwendungsfeatures (vgl. die Anmerkungen).</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.IsScreenLocked">
+      <summary>Ruft einen Wert ab, der anzeigt, ob der Bildschirm des Geräts derzeit gesperrt ist.</summary>
+      <returns>**true**, wenn der Bildschirm gesperrt ist, **false**, wenn er nicht gesperrt ist.</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.NotePlacementChanged">
+      <summary>Zeigt an, dass sich eine Hinweisplatzierung (Abmessungen und Speicherort) geändert hat.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.NoteVisibilityChanged">
+      <summary>Zeigt an, dass sich der Sichtbarkeitszustand eines Hinweises geändert hat.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SystemLockStateChanged">
+      <summary>Zeigt an, dass sich der Bildschirmsperrzustand des Geräts geändert hat.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.GetForCurrentApp">
+      <summary>Gibt eine Instanz des NotesWindowManagerPreview zurück, die für die Mehrzahl der Preview Notes-Vorgänge verwendet werden kann, die eine App ausführen kann.</summary>
+      <returns>Die designierte Instanz der App von NotesWindowManagerPreview.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.GetNotePlacement(System.Int32)">
+      <summary>Ruft die Ansichtsplatzierung eines Hinweises ab; dieser wird im Programmspeicher oder auf der Festplatte gespeichert und kann später von der Anwendung wiederhergestellt werden.</summary>
+      <param name="noteViewId">Die eindeutige Kennung des Hinweises, dessen Platzierung abgerufen werden soll.</param>
+      <returns>Ein Bytearray, das Hinweisplatzierungsdaten enthält.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.HideNote(System.Int32)">
+      <summary>Legt die Anzeige einer Notiz auf unsichtbar fest und verschiebt den Fokus auf die nächste sichtbare Notiz-Ansicht (Fenster) oder den Windows Ink-Arbeitsbereich (siehe Hinweise). Die Ansichten werden in zyklischer, vom System festgelegter Reihenfolge ausgewählt.</summary>
+      <param name="noteViewId">Die eindeutige Kennung des auszublendenden Hinweises.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SetFocusToNextView">
+      <summary>Wechselt den Fokus auf die nächste sichtbaren Hinweis-Ansicht (Fenster) oder den Windows Ink-Arbeitsbereich (siehe Hinweise). Die Ansichten werden in zyklischer, vom System festgelegter Reihenfolge ausgewählt.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SetFocusToPreviousView">
+      <summary>Wechselt den Fokus auf die vorherige sichtbaren Hinweis-Ansicht (Fenster) oder den Windows Ink-Arbeitsbereich (siehe Hinweise). Die Ansichten werden in zyklischer, vom System festgelegter Reihenfolge ausgewählt.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SetNotesThumbnailAsync(Windows.Storage.Streams.IBuffer)">
+      <summary>Legt die Miniaturansicht für diese Anwendung fest, wie sie im Windows Ink-Arbeitsbereich, im ALT+TAB-Aufgabenschalter oder beim Zeigen in der Taskleiste angezeigt wird.</summary>
+      <param name="thumbnail">Ein Bytearray, das die Miniaturansicht und die Verwendung beschreibt (siehe Hinweise).</param>
+      <returns>Diese Methode gibt keinen Wert zurück.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SetThumbnailImageForTaskSwitcherAsync(Windows.Graphics.Imaging.SoftwareBitmap)">
+      <summary>Legt das Miniaturbild für diese Anwendung asynchron fest, wie es in der Aufgabenumschaltfunktion Alt + TAB angezeigt wird.</summary>
+      <param name="bitmap">Eine Bitmap der Miniaturansicht.</param>
+      <returns>Gibt eine **IAsyncAction** zurück, die angibt, wann die Aktion abgeschlossen wurde.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNote(System.Int32)">
+      <summary>Macht einen Hinweis auf dem Gerätebildschirm sichtbar.</summary>
+      <param name="noteViewId">Die eindeutige Kennung des anzuzeigenden Hinweises.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNoteRelativeTo(System.Int32,System.Int32)">
+      <summary>Macht einen Hinweis sichtbar und platziert ihn neben einer angegebenen "Anker"-Ansicht.</summary>
+      <param name="noteViewId">Die eindeutige Kennung des anzuzeigenden Hinweises.</param>
+      <param name="anchorNoteViewId">Die ID der "Anker"-Ansicht. Wenn dieser Wert 0 (nicht einer anderen Ansicht zugewiesen) ist, wird der Hinweis in der Mitte des Bildschirms angezeigt.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNoteRelativeTo(System.Int32,System.Int32,Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions)">
+      <summary>Macht einen Hinweis sichtbar und platziert ihn neben einer angegebenen "Anker"-Ansicht.</summary>
+      <param name="noteViewId">Die eindeutige Kennung des anzuzeigenden Hinweises.</param>
+      <param name="anchorNoteViewId">Die ID der "Anker"-Ansicht. Wenn dieser Wert 0 (nicht einer anderen Ansicht zugewiesen) ist, wird der Hinweis in der Mitte des Bildschirms angezeigt.</param>
+      <param name="options">Optionen für die Anzeige der Notiz, die durch den *noteViewId*-Parameter angegeben werden. Z. B. die Notiz mit dem Fokus anzeigen.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNoteWithPlacement(System.Int32,Windows.Storage.Streams.IBuffer)">
+      <summary>Macht einen Hinweis sichtbar und legt seine Platzierungsdaten (Abmessungen und Speicherort) wie angegeben fest.</summary>
+      <param name="noteViewId">Die eindeutige Kennung des anzuzeigenden Hinweises.</param>
+      <param name="data">Ein Bytearray, das Hinweisplatzierungsdaten enthält.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNoteWithPlacement(System.Int32,Windows.Storage.Streams.IBuffer,Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions)">
+      <summary>Macht einen Hinweis sichtbar und legt seine Platzierungsdaten (Abmessungen und Speicherort) wie angegeben fest.</summary>
+      <param name="noteViewId">Die eindeutige Kennung des anzuzeigenden Hinweises.</param>
+      <param name="data">Ein Bytearray, das Hinweisplatzierungsdaten enthält.</param>
+      <param name="options">Optionen für die Anzeige der Notiz, die durch den *noteViewId*-Parameter angegeben werden. Z. B. die Notiz mit dem Fokus anzeigen.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.TrySetNoteSize(System.Int32,Windows.Foundation.Size)">
+      <summary>Ändert den angegebenen Hinweis zu den gewünschten Abmessungen. Wenn die angegebene Größe aufgrund von Bildschirm-/Platzproblemen nicht empfohlen wird, wird die Größe des Hinweises nicht geändert.</summary>
+      <param name="noteViewId">Die eindeutige Kennung des anzupassenden Hinweises.</param>
+      <param name="size">Die gewünschten Dimensionen der Notiz (mit unformatierten Pixel beim Erstellen).</param>
+      <returns>**true**, wenn die Größe des Hinweises geändert wurde, **false**, wenn dies aufgrund von Bildschirmeinschränkungen nicht geschah.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions">
+      <summary>Enthält Optionen zum Anzeigen einer Notiz.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions.#ctor">
+      <summary>Erstellt eine neue Instanz der NotesWindowManagerPreviewShowNoteOptions-Klasse.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions.ShowWithFocus">
+      <summary>Ruft ab oder legt einen booleschen Wert fest, der angibt, ob die Notiz mit dem Fokus angezeigt werden sollen.</summary>
+      <returns>Wenn **true**, wird der Hinweis mit Fokus angezeigt,andernfalls **false**.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.NoteVisibilityChangedPreviewEventArgs">
+      <summary>Stellt Informationen zum NoteVisibilityChanged-Ereignis dar.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NoteVisibilityChangedPreviewEventArgs.IsVisible">
+      <summary>Zeigt an, ob der Hinweis (angegeben durch die ViewId-Eigenschaft) auf dem Gerätebildschirm sichtbar ist.</summary>
+      <returns>**true**, falls der Hinweis angezeigt wird, **false**, wenn der Hinweis ausgeblendet ist.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NoteVisibilityChangedPreviewEventArgs.ViewId">
+      <summary>Die eindeutige Kennung des Hinweises, für den das NoteVisibilityChanged-Ereignis ausgelöst wurde.</summary>
+      <returns>Die Hinweis-ID.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.PreviewNotesContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

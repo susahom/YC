@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Media.Capture.CameraCaptureUIContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Media.Capture.CameraCaptureUIContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Media.Capture.CameraOptionsUI">
+      <summary>UI を表示するメソッドを提供します。このメソッドによって、写真、オーディオ録音、ビデオのキャプチャ用オプションが UI に含まれます。</summary>
+    </member>
+    <member name="M:Windows.Media.Capture.CameraOptionsUI.Show(Windows.Media.Capture.MediaCapture)">
+      <summary>写真、オーディオ録音、およびビデオのキャプチャのためのオプションを含む UI を表示します。</summary>
+      <param name="mediaCapture">写真、オーディオ録音、およびビデオをキャプチャするメソッドを提供する MediaCapture オブジェクト。</param>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger">
+      <summary>기본 차단 앱으로 선택된 통신 차단 응용 프로그램을 활성화하는 트리거를 나타냅니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger.#ctor">
+      <summary>CommunicationBlockingAppSetAsActiveTrigger 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager">
+      <summary>차단된 번호를 추적하고 적절한 사용자 차단 인터페이스를 표시하는 담당 관리자입니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockingActive">
+      <summary>차단을 현재 사용할 수 있는지 여부를 가져옵니다.</summary>
+      <returns>차단을 사용할 수 있는지 여부를 결정합니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockedNumberAsync(System.String)">
+      <summary>번호가 차단 목록에 있는지 여부를 반환하는 비동기 작업입니다.</summary>
+      <param name="number">확인할 번호입니다.</param>
+      <returns>번호가 차단되는지 여부를 비동기적으로 반환합니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedCallsUI">
+      <summary>차단된 전화 목록이 표시됩니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedMessagesUI">
+      <summary>차단된 메시지 목록이 표시됩니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>활성 차단 앱이 있는 경우 번호를 차단할 UI를 시작합니다.</summary>
+      <param name="phoneNumbers">차단 목록에 추가할 번호 목록입니다.</param>
+      <returns>활성 차단 앱이 시작되면 **true**를 반환하고, 그렇지 않으면 **false**를 반환합니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowUnblockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>활성 차단 앱이 있는 경우 번호를 차단 해제할 앱을 시작합니다.</summary>
+      <param name="phoneNumbers">차단 목록에서 제거할 번호 목록입니다.</param>
+      <returns>활성 차단 앱이 시작되면 **true**를 반환하고, 그렇지 않으면 **false**를 반환합니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager">
+      <summary>차단 응용 프로그램으로 사용할 응용 프로그램을 결정합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.IsCurrentAppActiveBlockingApp">
+      <summary>현재 응용 프로그램이 활성 차단 응용 프로그램인지 여부를 나타냅니다.</summary>
+      <returns>현재 응용 프로그램이 활성 차단 앱인지 여부를 나타내는 값입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.RequestSetAsActiveBlockingAppAsync">
+      <summary>현재 앱을 설정하는 대화 상자를 기본 전화 통신 차단 응용 프로그램으로 호출합니다.</summary>
+      <returns>앱이 기본 전화 원본 앱으로 설정되었는지 여부를 나타냅니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.ShowCommunicationBlockingSettingsUI">
+      <summary>현재 활성인 차단 응용 프로그램을 선택하기 위한 UI를 표시합니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

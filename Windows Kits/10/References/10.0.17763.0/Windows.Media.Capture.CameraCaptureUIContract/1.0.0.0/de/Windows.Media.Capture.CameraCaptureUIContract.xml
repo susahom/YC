@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Media.Capture.CameraCaptureUIContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Media.Capture.CameraCaptureUIContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Media.Capture.CameraOptionsUI">
+      <summary>Erstellt eine Methode zum Anzeigen einer Benutzeroberfläche, die Optionen für die Aufzeichnung von Fotos, Audio und Video enthält.</summary>
+    </member>
+    <member name="M:Windows.Media.Capture.CameraOptionsUI.Show(Windows.Media.Capture.MediaCapture)">
+      <summary>Zeigt ein Benutzeroberflächenelement an, das Optionen für die Aufzeichnung von Fotos, Audioaufzeichnungen und Videos enthält.</summary>
+      <param name="mediaCapture">Das MediaCapture-Objekt, das Methoden für die Aufzeichnung von Fotos, Audioaufzeichnungen und Videos bereitstellt.</param>
+    </member>
+  </members>
+</doc>

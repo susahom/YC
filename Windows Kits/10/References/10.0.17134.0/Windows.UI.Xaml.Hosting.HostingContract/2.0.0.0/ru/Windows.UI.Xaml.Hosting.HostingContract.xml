@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.Xaml.Hosting.HostingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppExitedEventArgs">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppExitedEventArgs.ExitCode">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppManager">
+      <summary>Управляет приложением в области конструктора XAML.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса DesignerAppManager.</summary>
+      <param name="appUserModelId">Идентификатор модели пользователя приложения.</param>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppManager.AppUserModelId">
+      <summary>Получает идентификатор модели пользователя приложения.</summary>
+      <returns>Идентификатор модели пользователя приложения.</returns>
+    </member>
+    <member name="E:Windows.UI.Xaml.Hosting.DesignerAppManager.DesignerAppExited">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.Close">
+      <summary>Закрывает диспетчер приложений.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.CreateNewViewAsync(Windows.UI.Xaml.Hosting.DesignerAppViewState,Windows.Foundation.Size)">
+      <summary>Создает новый объект DesignerAppView.</summary>
+      <param name="initialViewState">Исходное состояние представления.</param>
+      <param name="initialViewSize">Исходный размер представления.</param>
+      <returns>Созданный объект DesignerAppView.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.LoadObjectIntoAppAsync(System.String,System.Guid,System.String)">
+      <summary>Загружает указанный объект в приложение.</summary>
+      <param name="dllName">Имя DLL.</param>
+      <param name="classId">Идентификатор для класса.</param>
+      <param name="initializationData">Данные для инициализации объекта.</param>
+      <returns>Асинхронные результаты операции. Используйте этот объект для определения времени завершения асинхронного вызова.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppView">
+      <summary>Представляет представление приложения в области конструктора XAML.</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.ApplicationViewId">
+      <summary>Получает идентификатор для представления приложения.</summary>
+      <returns>Идентификатор для представления приложения.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.AppUserModelId">
+      <summary>Получает идентификатор модели пользователя приложения.</summary>
+      <returns>Идентификатор модели пользователя приложения.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.ViewSize">
+      <summary>Получает размер представления приложения в конструкторе.</summary>
+      <returns>Размер представления приложения в конструкторе.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.ViewState">
+      <summary>Получает значение, указывающее, видимо или скрыто это представление.</summary>
+      <returns>Значение, указывающее состояние представления: **Visible** или **Hidden**.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppView.Close">
+      <summary>Закрывает представление приложения в конструкторе.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppView.UpdateViewAsync(Windows.UI.Xaml.Hosting.DesignerAppViewState,Windows.Foundation.Size)">
+      <summary>Обновляет представление приложения в конструкторе.</summary>
+      <param name="viewState">Состояние представления приложения.</param>
+      <param name="viewSize">Размер представления приложения.</param>
+      <returns>Асинхронные результаты операции. Используйте этот объект для определения времени завершения асинхронного вызова.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppViewState">
+      <summary>Определяет константы, указывающие, является ли представление приложения видимым или скрытым.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.DesignerAppViewState.Hidden">
+      <summary>Представление приложения скрыто.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.DesignerAppViewState.Visible">
+      <summary>Представление приложения видимо.</summary>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.HostingContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost">
+      <summary>Представляет службу, которая разрешает ресурсы из приложения. Этот интерфейс используется в сценариях размещения средства разработки и не предназначен для общего использования.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost.ResolveFileResource(System.String)">
+      <summary>Разрешает ресурс, который определяется при помощи пути и возвращает имя файла в виде строки.</summary>
+      <param name="path">Локальный путь для разрешения.</param>
+      <returns>Разрешенное имя файла.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost2">
+      <summary>Добавляет в IXamlUIPresenterHost объект GetGenericXamlFilePath.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost2.GetGenericXamlFilePath">
+      <summary>Загружает альтернативный файл generic.xaml в узел средства отображения во время разработки.</summary>
+      <returns>Локальный путь к расположению альтернативного файла generic.xaml.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost3">
+      <summary>Добавляет в IXamlUIPresenterHost объект ResolveDictionaryResource.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost3.ResolveDictionaryResource(Windows.UI.Xaml.ResourceDictionary,System.Object,System.Object)">
+      <summary>Разрешает ресурс, который определен словарем и ключом.</summary>
+      <param name="dictionary">Словарь, содержащий ресурс.</param>
+      <param name="dictionaryKey">Ключ ресурса.</param>
+      <param name="suggestedValue">Предлагаемое значение.</param>
+      <returns>Объект ресурса.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.XamlUIPresenter">
+      <summary>Обеспечивает представление визуального дерева на поверхности Microsoft Direct3D. Этот тип используется в сценариях размещения средства разработки и не предназначен для общего использования.</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.CompleteTimelinesAutomatically">
+      <summary>Получает или задает значение, определяющее, стремится ли узел всегда выполнять временные шкалы до конца.</summary>
+      <returns>Значение **true**, чтобы указать, что временные шкалы всегда должны выполняться до конца. В противном случае — значение **false**.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.RootElement">
+      <summary>Получает или задает корневой визуальный элемент, который рисуется на поверхности.</summary>
+      <returns>Элемент для рисования.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.ThemeKey">
+      <summary>Получает или задает строковый ключ, определяющий набор тем для использования из объекта ThemeResourcesXaml.</summary>
+      <returns>Строковый ключ.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.ThemeResourcesXaml">
+      <summary>Получает или задает XAML, определяющий словарь ресурсов. Словарь ресурсов содержит темы, которые должны быть разрешены хостом и применены к содержимому.</summary>
+      <returns>Словарь ресурсов XAML, указанный в форме строки.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.GetFlyoutPlacement(Windows.Foundation.Rect,Windows.Foundation.Size,Windows.Foundation.Size,Windows.Foundation.Rect,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode,System.Boolean,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode@)">
+      <summary>Вызывает логику размещения FlyoutBase, используя предложенный размер элемента управления, который будет отображать целевой объект размещения и его всплывающий элемент. Возвращает границы, которые являются результатом выполнения логики размещения.</summary>
+      <param name="placementTargetBounds">Границы целевого элемента размещения, которые передаются логике отображения FlyoutBase.</param>
+      <param name="controlSize">Желаемый размер элемента управления, который должен отображать всплывающее меню.</param>
+      <param name="minControlSize">Минимальный размер элемента управления, который должен отображать всплывающее меню.</param>
+      <param name="containerRect">Границы области, которая должна содержать целевой объект размещения и всплывающее меню.</param>
+      <param name="targetPreferredPlacement">Нужный режим размещения, используемый для логики размещения FlyoutBase.</param>
+      <param name="allowFallbacks">Значение **true**, если резервные элементы можно использовать в режиме размещения. Значение **false**, если невозможно использовать резервные варианты.</param>
+      <param name="chosenPlacement">Фактический режим размещения, используемый вызванной логикой размещения FlyoutBase.</param>
+      <returns>Границы вычисляемые логикой размещения FlyoutBase.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.GetFlyoutPlacementTargetInfo(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode@,System.Boolean@)">
+      <summary>Возвращает вычисленные границы целевого объекта размещения, который предназначен также для отображения всплывающего элемента в узле. Дополнительные параметры **out** предоставляют дополнительные сведения о том, как были вычислены границы.</summary>
+      <param name="placementTarget">Целевой элемент размещения, относительно которого должен размещаться объект Flyout.</param>
+      <param name="preferredPlacement">Значение перечисления, объявляющее предпочтительное размещение элемента Flyout узла относительно целевого объекта. </param>
+      <param name="targetPreferredPlacement">Значение перечисления, объявляющее предпочтительное размещение элемента Flyout.</param>
+      <param name="allowFallbacks">Значение **true**, если резервное размещение разрешено в логике размещения Flyout. Значение **false**, если необходимо рассматривать только значение *targetPreferredPlacement*.</param>
+      <returns>Вычисляемые границы целевого объекта размещения.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.NotifyWindowSizeChanged">
+      <summary>Вызывает событие SizeChanged для Window.Current. Используется узлами для распространения изменений размера от параметров узла к пользовательскому коду, чтобы взаимодействие в режиме конструктора можно было отличить от взаимодействия во время выполнения.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.Present">
+      <summary>Представляет поверхность как синхронный вызов узла.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.Render">
+      <summary>Отрисовывает поверхность. Предназначено для асинхронных вызовов через таймер.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.SetHost(Windows.UI.Xaml.Hosting.IXamlUIPresenterHost)">
+      <summary>Задает реализацию службы IXamlUIPresenterHost, используемую для разрешения ресурсов приложения.</summary>
+      <param name="host">Реализация службы.</param>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.SetSize(System.Int32,System.Int32)">
+      <summary>Указывает ширину и высоту поверхности.</summary>
+      <param name="width">Ширина в пикселях.</param>
+      <param name="height">Высота в пикселях.</param>
+    </member>
+  </members>
+</doc>

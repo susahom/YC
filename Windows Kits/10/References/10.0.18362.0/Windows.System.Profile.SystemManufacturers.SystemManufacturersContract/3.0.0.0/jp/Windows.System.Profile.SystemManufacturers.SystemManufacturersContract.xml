@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.Profile.SystemManufacturers.SystemManufacturersContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.Profile.SystemManufacturers.OemSupportInfo">
+      <summary>デバイスの製造元に関するサポート情報を提供します。 これには、OEM の名前、Web サイトのアドレス、およびその他のサポートに関する詳細が含まれます。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportAppLink">
+      <summary>Web URL の代わりに起動される OEM 製のサポート アプリへのプロトコル ハンドラー リンクを取得します。</summary>
+      <returns>OEM 製のサポート アプリへのプロトコル ハンドラー リンク。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportLink">
+      <summary>相手先ブランド供給 (OEM) サポート Web サイトの Uniform Resource Identifier (URI) を取得します。</summary>
+      <returns>OEM サポート Web サイトの URI。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportProvider">
+      <summary>デバイスのサポート プロバイダーの名前を取得します。</summary>
+      <returns>デバイスのサポート プロバイダーの名前。</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SmbiosInformation">
+      <summary>システムの SMBIOS からプロパティへのアクセスを有効にします。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SmbiosInformation.SerialNumber">
+      <summary>システムの SMBIOS からシリアル番号を取得します。</summary>
+      <returns>シリアル番号。</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemManufacturersContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo">
+      <summary>ローカル デバイスからデバイス情報を取得する機能をアプリケーションに提供します。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.FriendlyName">
+      <summary>ローカル デバイスのフレンドリ名を取得します。 この値は、NetBIOS コンピューター名から取得できます。</summary>
+      <returns>ローカル デバイスの表示名。 この値は 1,024 文字未満です。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.OperatingSystem">
+      <summary>ローカル デバイスのオペレーティング システムの名前を取得します。</summary>
+      <returns>ローカル デバイスのオペレーティング システムを含む文字列。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemFirmwareVersion">
+      <summary>ローカル デバイスのシステム ファームウェア バージョンを取得します。</summary>
+      <returns>ローカル デバイスのシステム ファームウェア バージョンを含む文字列。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemHardwareVersion">
+      <summary>ローカル デバイスのシステム ハードウェア バージョンを取得します。</summary>
+      <returns>ローカル デバイスのシステム ハードウェア バージョンを含む文字列。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemManufacturer">
+      <summary>ローカル デバイスのシステム製造元を取得します。 SystemSku の値が空である場合にのみ **SystemManufacturer** を使用します。</summary>
+      <returns>ローカル デバイスのシステム製造元を含む文字列。 この値は 1,024 文字未満です。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemProductName">
+      <summary>ローカル デバイスのシステム製品名を取得します。 SystemSku の値が空である場合にのみ **SystemProductName** を使用します。</summary>
+      <returns>ローカル デバイスのシステム製品名を含む文字列。 この値は 1,024 文字未満です。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemSku">
+      <summary>ローカル デバイスのシステム SKU を取得します。</summary>
+      <returns>ローカル デバイスのシステム SKU を含む文字列。</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportInfo">
+      <summary>デバイスに関するサポート情報を提供します。 これには、ローカル システムのエディションおよび OEM サポート情報が含まれます。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalDeviceInfo">
+      <summary>ローカル デバイスを取得します。</summary>
+      <returns>ローカル デバイスを表す SystemSupportDeviceInfo 値。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalSystemEdition">
+      <summary>デバイスのローカル システムのエディションを取得します。</summary>
+      <returns>デバイスのローカル システムのエディションを含む文字列。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.OemSupportInfo">
+      <summary>システムの OEM サポート情報を取得します。</summary>
+      <returns>システムの OEM サポート情報。</returns>
+    </member>
+  </members>
+</doc>

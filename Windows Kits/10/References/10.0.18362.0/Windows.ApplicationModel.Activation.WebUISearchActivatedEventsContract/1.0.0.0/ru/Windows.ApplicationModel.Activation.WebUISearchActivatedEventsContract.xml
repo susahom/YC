@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.UI.WebUI.WebUISearchActivatedEventArgs">
+      <summary>Предоставляет сведения об активированным событии, которое возникает, если пользователь ищет приложение с экспресс-кнопки "Поиск", а приложение не является главным приложением на экране.</summary>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.ActivatedOperation">
+      <summary>Получает операцию активации приложения.</summary>
+      <returns>Операция активации.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.CurrentlyShownApplicationViewId">
+      <summary>Получает идентификатор для отображаемого в настоящее время представления приложения.</summary>
+      <returns>Идентификатор для отображаемого в настоящее время представления приложения.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Kind">
+      <summary>Получает тип активации.</summary>
+      <returns>Значение перечисления activationKind.search.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Language">
+      <summary>Получает тег языка IETF (стандарт BCP 47), который указывает язык, в настоящее время связанный с устройством ввода текста пользователя.</summary>
+      <returns>Тег языка IETF (стандарт BCP 47).</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.LinguisticDetails">
+      <summary>Получает объект SearchPaneQueryLinguisticDetails, предоставляющий сведения о тексте запроса, который пользователь вводит с помощью редактора метода ввода (IME).</summary>
+      <returns>Объект, предоставляющий сведения о тексте запроса.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.PreviousExecutionState">
+      <summary>Получает состояние выполнения приложения перед его активацией.</summary>
+      <returns>Одно из значений перечисления.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.QueryText">
+      <summary>Получает текст, поиск по которому должно выполнить приложение. Пользователь ввел это текст в поле поиска на панели поиска.</summary>
+      <returns>Текст для поиска.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.SplashScreen">
+      <summary>Получает объект экрана-заставки, предоставляющий сведения о переходе от экрана-заставки к активированному приложению.</summary>
+      <returns>Объект, предоставляющий сведения об экране-заставке.</returns>
+    </member>
+  </members>
+</doc>

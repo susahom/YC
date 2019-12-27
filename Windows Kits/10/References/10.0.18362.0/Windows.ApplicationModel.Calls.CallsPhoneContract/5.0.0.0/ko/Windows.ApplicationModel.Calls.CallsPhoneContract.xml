@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Calls.CallsPhoneContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Calls.CallsPhoneContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.CellularDtmfMode">
+      <summary>휴대폰에 사용되는 DTMF(Dual Tone Multi-Frequency)의 형식을 나타냅니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.CellularDtmfMode.Burst">
+      <summary>신호음이 갑자기 전송됩니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.CellularDtmfMode.Continuous">
+      <summary>신호음이 지속적으로 전송됩니다. 즉, 신호음을 중지하려면 단추를 눌러야 합니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint">
+      <summary>전화를 거는 데 사용할 수 있는 오디오 끝점입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Bluetooth">
+      <summary>Bluetooth 연결입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Default">
+      <summary>전화에 대한 기본 오디오 끝점입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Speakerphone">
+      <summary>스피커폰입니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallBlocking">
+      <summary>수신되는 전화 번호의 차단을 제어합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallBlocking.BlockPrivateNumbers">
+      <summary>PhoneCallBlocking 인스턴스가 비공개 번호를 차단해야 하는지 여부를 가져오거나 설정합니다.</summary>
+      <returns>PhoneCallBlocking 인스턴스가 비공개 번호를 차단해야 하는 경우 **true**이고, 그렇지 않을 경우 **false**입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallBlocking.BlockUnknownNumbers">
+      <summary>PhoneCallBlocking 인스턴스가 알 수 없는 번호를 차단해야 하는지 여부를 가져오거나 설정합니다.</summary>
+      <returns>PhoneCallBlocking 인스턴스가 알 수 없는 번호를 차단해야 하는 경우 **true**이고, 그렇지 않을 경우 **false**입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallBlocking.SetCallBlockingListAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>차단해야 할 번호 목록을 설정합니다.</summary>
+      <param name="phoneNumberList">차단해야 할 번호 목록입니다.</param>
+      <returns>작업이 성공했으면 **True**이고, 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallManager">
+      <summary>호출 상태를 쿼리하고 전화 통화를 시작하는 기능을 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallManager.IsCallActive">
+      <summary>활성 호출이 장치에서 진행 중인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>활성 호출이 장치에서 진행 중이면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallManager.IsCallIncoming">
+      <summary>호출이 장치에 들어오고 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>호출이 장치에 들어오고 있으면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneCallManager.CallStateChanged">
+      <summary>장치의 기본 호출 상태가 변경될 때 발생합니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.RequestStoreAsync">
+      <summary>PhoneCallStore를 검색합니다.</summary>
+      <returns>장치에서 사용할 수 있는 전화선에 대한 정보를 포함하는 PhoneCallStore 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallSettingsUI">
+      <summary>호출 설정 UI를 시작합니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallUI(System.String,System.String)">
+      <summary>지정된 전화 번호와 표시 이름으로 기본 제공 전화 통화 UI를 시작합니다.</summary>
+      <param name="phoneNumber">전화 번호입니다.</param>
+      <param name="displayName">표시 이름입니다.</param>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallMedia">
+      <summary>전화 호출에 사용할 수 있는 미디어 형식입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.Audio">
+      <summary>전화 호출이 음성만 지원합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.AudioAndRealTimeText">
+      <summary>전화 호출이 음성과 실시간 텍스트를 지원합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.AudioAndVideo">
+      <summary>전화 호출이 음성과 화상을 지원합니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallStore">
+      <summary>장치에서 사용할 수 있는 전화선에 대한 정보의 컬렉션을 나타냅니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.GetDefaultLineAsync">
+      <summary>현재 기본 전화선의 회선 ID를 가져옵니다.</summary>
+      <returns>성공적으로 완료되면 회선 ID를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.IsEmergencyPhoneNumberAsync(System.String)">
+      <summary>전화 번호가 알려진 응급 서비스 공급자에 연결되는지 여부를 확인합니다.</summary>
+      <param name="number">알려진 응급 번호인지 확인하기 위한 전화 번호입니다.</param>
+      <returns>성공적으로 완료되면 부울 값을 반환하는 비동기 작업입니다. true는 전화 번호가 알려진 응급 서비스 공급자에 연결됨을 나타냅니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.RequestLineWatcher">
+      <summary>장치에 대한 PhoneLineWatcher 클래스의 인스턴스를 검색합니다.</summary>
+      <returns>장치에 대한 PhoneLineWatcher 클래스의 인스턴스입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilities">
+      <summary>PhoneLine 인스턴스의 화상 통화 기능에 대한 액세스 권한을 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilities.IsVideoCallingCapable">
+      <summary>PhoneLine 인스턴스에서 화상 통화를 지원하는지 여부를 가져옵니다.</summary>
+      <returns>PhoneLine 인스턴스가 화상 통화를 지원하면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilitiesManager">
+      <summary>응용 프로그램에서 PhoneLine 인스턴스에 대한 PhoneCallVideoCapabilities를 가져올 수 있습니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilitiesManager.GetCapabilitiesAsync(System.String)">
+      <summary>PhoneLine 인스턴스에 대해 비디오 기능을 비동기적으로 가져옵니다.</summary>
+      <param name="phoneNumber">쿼리할 PhoneLine 인스턴스입니다.</param>
+      <returns>쿼리한 PhoneLine 인스턴스에 대한 PhoneCallVideoCapabilities입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneDialOptions">
+      <summary>전화를 걸기 위한 옵션을 나타냅니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneDialOptions.#ctor">
+      <summary>클래스의 새 인스턴스 만들기</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.AudioEndpoint">
+      <summary>전화 걸기 위해 요청한 오디오 끝점을 가져오거나 설정합니다.</summary>
+      <returns>전화 걸기 위해 요청한 오디오 끝점입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Contact">
+      <summary>전화 걸기 요청과 연결된 주소록 연락처를 가져오거나 설정합니다.</summary>
+      <returns>전화 걸기 요청과 연결된 주소록 연락처입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.ContactPhone">
+      <summary>전화 걸기 요청과 연결된 주소록 연락처의 전화 번호 속성을 가져오거나 설정합니다.</summary>
+      <returns>전화 걸기 요청과 연결된 주소록 연락처의 전화 번호 속성입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.DisplayName">
+      <summary>전화를 거는 상대방의 이름을 가져오거나 설정합니다. 이 값은 주소록에 일치하는 번호의 이름이 없는 번호로 전화를 거는 경우에 표시됩니다.</summary>
+      <returns>전화를 거는 상대방의 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Media">
+      <summary>전화를 걸기 위해 요청한 미디어 형식을 가져오거나 설정합니다.</summary>
+      <returns>전화를 걸기 위해 요청한 미디어 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Number">
+      <summary>전화를 걸 전화 번호를 가져오거나 설정합니다.</summary>
+      <returns>전화를 걸 전화 번호입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLine">
+      <summary>전화선을 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.CanDial">
+      <summary>나가는 호출을 수행하는 데 전화선을 사용할 수 있는지 여부를 나타내는 부울 값을 가져옵니다.</summary>
+      <returns>전화선에서 나가는 호출을 수행할 수 있으면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.CellularDetails">
+      <summary>셀룰러 구성 요소 고유의 PhoneLine 인스턴스 구성 요소에 대한 세부 정보를 가져옵니다. VoIP 전화선의 경우 이 속성은 NULL입니다.</summary>
+      <returns>PhoneLine 인스턴스에 대한 세부 정보입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.DisplayColor">
+      <summary>전화선의 기본 표시 색을 가져옵니다.</summary>
+      <returns>전화선의 기본 표시 색입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.DisplayName">
+      <summary>사용자가 전화선에 지정한 표시 이름을 가져옵니다.</summary>
+      <returns>사용자가 전화선에 지정한 표시 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Id">
+      <summary>전화선의 ID를 가져옵니다. ID는 재부팅 후에도 장치 간에 지속적입니다.</summary>
+      <returns>전화선의 ID입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.LineConfiguration">
+      <summary>이 PhoneLine 인스턴스에 대한 추가 구성 정보를 가져옵니다.</summary>
+      <returns>이 전화선에 대한 추가 정보입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.NetworkName">
+      <summary>전화선에 사용되고 있는 현재 네트워크의 이름을 가져옵니다.</summary>
+      <returns>전화선에 사용되고 있는 현재 네트워크의 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.NetworkState">
+      <summary>전화선의 현재 네트워크 상태를 가져옵니다.</summary>
+      <returns>전화선의 현재 네트워크 상태입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.SupportsTile">
+      <summary>전화선을 라이브 타일로 고정할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>전화선을 라이브 타일로 고정할 수 있으면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Transport">
+      <summary>전화선에 대한 전송을 가져옵니다.</summary>
+      <returns>전화선에 대한 전송입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.TransportDeviceId">
+      <summary>이 전화 회선과 연결된 PhoneLineTransportDevice의 장치 ID입니다. 전송 장치가 없는 경우 null입니다.</summary>
+      <returns>장치 ID를 나타내는 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.VideoCallingCapabilities">
+      <summary>이 전화선을 통해 화상 통화가 지원되는지 여부를 가져옵니다.</summary>
+      <returns>화상 통화가 지원되면 **True**이고, 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Voicemail">
+      <summary>PhoneLine 인스턴스와 연결된 음성 메일 데이터를 가져옵니다.</summary>
+      <returns>음성 메일 데이터입니다.</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLine.LineChanged">
+      <summary>관련된 PhoneLine 인스턴스에 대한 속성이 변경할 때 발생합니다. 음성 메일 수, 네트워크 상태 또는 셀룰러 세부 정보 같은 메타 데이터가 변경될 때 발생할 수 있습니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.Dial(System.String,System.String)">
+      <summary>전화선에서 전화를 겁니다. 호출자가 전경에 있어야 합니다.</summary>
+      <param name="number">전화를 걸 번호입니다.</param>
+      <param name="displayName">전화 호출을 수신하는 상대방의 표시 이름입니다. 이 매개 변수는 선택 사항입니다.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.DialWithOptions(Windows.ApplicationModel.Calls.PhoneDialOptions)">
+      <summary>호출자가 추가 다이얼 옵션을 지정할 수 있도록 허용하면서 전화선에서 전화를 겁니다. 호출자가 전경에 있어야 합니다.</summary>
+      <param name="options">전화 호출에 대한 추가 다이얼 옵션입니다.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.EnableTextReply(System.Boolean)">
+      <summary>이 회선에 대해 문자 응답 기능이 지원되는지 여부를 플랫폼에 알립니다.</summary>
+      <param name="value">문자 응답 기능이 지원되면 true, 그렇지 않으면 false입니다.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.FromIdAsync(System.Guid)">
+      <summary>이 고정적인 메서드는 회선 ID를 기준으로 장치의 특정 전화선을 나타내는 PhoneLine 개체를 비동기식으로 검색합니다.</summary>
+      <param name="lineId">검색할 전화선의 회선 ID입니다.</param>
+      <returns>회선 ID를 기준으로 장치의 특정 전화선을 나타내는 PhoneLine 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.IsImmediateDialNumberAsync(System.String)">
+      <summary>사용자가 호출 단추를 누를 필요 없이 다이얼에서 번호에 즉시 전화를 걸어야 하는지 여부를 확인합니다.</summary>
+      <param name="number">즉시 전화 걸기를 확인하기 위한 전화 번호입니다.</param>
+      <returns>비동기 부울 응답입니다. true는 번호에 즉시 전화를 걸어야 함을 나타냅니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineCellularDetails">
+      <summary>전화선의 셀룰러 구성 요소와 세부적인 조작 방식을 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.IsModemOn">
+      <summary>이 전화선의 모뎀이 켜져 있는지를 나타냅니다.</summary>
+      <returns>모뎀이 켜져 있으면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.RegistrationRejectCode">
+      <summary>전화선의 등록 거부 코드를 가져옵니다.</summary>
+      <returns>전화선의 등록 거부 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.SimSlotIndex">
+      <summary>휴대폰 회선과 연결된 SIM 카드의 슬롯 인덱스를 가져옵니다.</summary>
+      <returns>휴대폰 회선과 연결된 SIM 카드의 슬롯 인덱스입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.SimState">
+      <summary>휴대폰 회선과 연결된 SIM 카드의 상태를 가져옵니다.</summary>
+      <returns>휴대폰 회선과 연결된 SIM 카드의 상태입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.GetNetworkOperatorDisplayText(Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation)">
+      <summary>사용자에게 표시할 적절한 연결 문자열을 검색합니다.</summary>
+      <param name="location">텍스트 문자열이 필요한 위치입니다. 이 설정은 반환되는 문자열의 형식에 영향을 미칩니다.</param>
+      <returns>지정된 위치에 표시할 텍스트 문자열입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineConfiguration">
+      <summary>전화선에 대한 정보를 제공하는 속성의 컬렉션입니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineConfiguration.ExtendedProperties">
+      <summary>이 전화선에 대해 확장된 속성을 가져옵니다.</summary>
+      <returns>전화선의 확장된 속성을 포함하는 키-값 쌍의 맵입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineConfiguration.IsVideoCallingEnabled">
+      <summary>이 전화선을 통해 화상 통화를 사용할 수 있는지 여부를 가져옵니다.</summary>
+      <returns>화상 통화가 지원되면 **True**이고, 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation">
+      <summary>네트워크 운영자 정보를 사용자에게 표시할 수 있는 위치입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Default">
+      <summary>기본값입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Dialer">
+      <summary>다이얼 UI입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.InCallUI">
+      <summary>사용자가 호출에서 적극적인 경우 UI입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Tile">
+      <summary>전화 타일입니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineTransport">
+      <summary>특정 전화선에서 사용하는 전송입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.Bluetooth">
+      <summary>전화 회선이 bluetooth 전송을 사용합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.Cellular">
+      <summary>전화선이 셀룰러 전송을 사용합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.VoipApp">
+      <summary>전화선이 VoIP(Voice over IP) 전송을 사용합니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineTransportDevice">
+      <summary>전화 회선과 연결된 하드웨어 장치를 나타냅니다. 현재는 bluetooth 장치에서만 사용을 지원합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.DeviceId">
+      <summary>PhoneLineTransportDevice와 연결된 하드웨어 장치의 DeviceID를 가져옵니다.</summary>
+      <returns>DeviceID를 나타내는 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.Transport">
+      <summary>PhoneLineTransportDevice에 대한 PhoneLineTransport를 가져옵니다.</summary>
+      <returns>PhoneLineTransport입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.Connect">
+      <summary>장치와 연결하려고 합니다.</summary>
+      <returns>작업이 완료된 후 연결 상태입니다. 연결되면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.ConnectAsync">
+      <summary>장치와 비동기적으로 연결하려고 합니다.</summary>
+      <returns>작업이 완료될 후 연결 상태를 나타내는 IAsyncOperation입니다. 연결되면 true를 포함하고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.FromId(System.String)">
+      <summary>지정한 DeviceId의 PhoneLineTransportDevice를 가져옵니다.</summary>
+      <param name="id">DeviceId입니다.</param>
+      <returns>PhoneLineTransportDevice이거나, DeviceId가 기존 장치에 해당하지 않는 경우 null입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.GetDeviceSelector">
+      <summary>PhoneLineTransportDevices를 찾기 위해 앱에서 DeviceInformation.FindAllAsync에 전달할 수 있는 AQS(고급 검색 구문) 문자열을 가져옵니다.</summary>
+      <returns>AQS 질의 형식의 문자열입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.GetDeviceSelector(Windows.ApplicationModel.Calls.PhoneLineTransport)">
+      <summary>앱에서 지정된 유형의 PhoneLineTransportDevices를 찾기 위해 DeviceInformation.FindAllAsync에 전달할 수 있는 AQS(고급 검색 구문)을 가져옵니다.</summary>
+      <param name="transport">원하는 유형의 PhoneLineTransportDevice를 지정하는 PhoneLineTransport입니다.</param>
+      <returns>AQS 질의 형식의 문자열입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.IsRegistered">
+      <summary>활성 사용자에 대한 앱의 등록 상태를 반환합니다.</summary>
+      <returns>등록된 경우 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RegisterApp">
+      <summary>연결된 PhoneLineTransportDevice에 대해 앱을 Windows에 등록합니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RegisterAppForUser(Windows.System.User)">
+      <summary>연결된 PhoneLineTransportDevice에 대해 앱을 Windows에 등록합니다.</summary>
+      <param name="user">등록되는 사용자입니다.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RequestAccessAsync">
+      <summary>PhoneLineTransportDevice 장치에 대한 명시적 액세스를 요청하는 데 사용됩니다.</summary>
+      <returns>비동기 작업을 완료한 후, DeviceAccessStatus 열거형 값을 반환합니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.UnregisterApp">
+      <summary>연결된 PhoneLineTransportDevice에 대해 앱을 Windows에 등록 해제합니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.UnregisterAppForUser(Windows.System.User)">
+      <summary>연결된 PhoneLineTransportDevice에 대해 앱을 Windows에 등록 해제합니다.</summary>
+      <param name="user">등록 해제하는 사용자입니다.</param>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcher">
+      <summary>장치에서 신규/제거된/업데이트된 전화선을 모니터링하고 수신기에 변경을 알리는 클래스를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineWatcher.Status">
+      <summary>PhoneLineWatcher 인스턴스의 현재 상태를 가져옵니다.</summary>
+      <returns>PhoneLineWatcher의 현재 상태입니다.</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.EnumerationCompleted">
+      <summary>PhoneLineWatcher 인스턴스가 장치에 있는 모든 전화선의 열거를 완료할 때 발생합니다.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineAdded">
+      <summary>PhoneLineWatcher 인스턴스가 장치에서 새 전화선을 감지할 때 발생합니다.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineRemoved">
+      <summary>PhoneLineWatcher 인스턴스가 전화선이 장치에서 제거되었음을 감지할 때 발생합니다.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineUpdated">
+      <summary>PhoneLineWatcher 인스턴스가 전화선이 장치에서 업데이트되었음을 감지할 때 발생합니다.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.Stopped">
+      <summary>PhoneLineWatcher 인스턴스가 장치에서 전화선 변경 사항에 대한 모니터링을 중지할 때 발생합니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineWatcher.Start">
+      <summary>장치의 전화선 변경 사항에 대한 수신을 시작합니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineWatcher.Stop">
+      <summary>장치의 전화선 변경 사항에 대한 수신을 중지합니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcherEventArgs">
+      <summary>어떤 전화선이 추가, 제거 또는 업데이트되었는지에 대한 정보를 포함하는 클래스를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineWatcherEventArgs.LineId">
+      <summary>LineAdded, LineRemoved 또는 LineUpdated 이벤트를 트리거하는 전화선의 ID를 가져옵니다.</summary>
+      <returns>LineAdded, LineRemoved 또는 LineUpdated 이벤트를 트리거하는 전화선의 ID입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus">
+      <summary>PhoneLineWatcher의 현재 상태입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Created">
+      <summary>전화선 감시자 클래스가 생성됩니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.EnumerationCompleted">
+      <summary>전화선 관찰자 클래스가 장치에 있는 전화선의 열거를 막 완료했습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Started">
+      <summary>전화선 관찰자 클래스가 시작됩니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Stopped">
+      <summary>전화선 감시자 클래스가 중지됩니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneNetworkState">
+      <summary>전화선의 네트워크 등록 상태를 설명합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Denied">
+      <summary>사용 가능한 네트워크를 사용하여 전화선을 등록하지 못했습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Deregistered">
+      <summary>전화선이 등록 취소되었습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Home">
+      <summary>전화선이 등록되어 있으며 통신 회사의 홈 네트워크에 있습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.NoSignal">
+      <summary>전화선에서 신호를 감지할 수 없거나 전화선이 긴급 통화로만 제한됩니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.RoamingDomestic">
+      <summary>전화선이 등록되어 있으며 다른 통신 회사 네트워크에서 국내 로밍 중입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.RoamingInternational">
+      <summary>전화선이 등록되어 있으며 다른 통신 회사 네트워크에서 국제 로밍 중입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Searching">
+      <summary>전화선의 네트워크를 검색합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Unknown">
+      <summary>전화선의 등록 상태를 알 수 없습니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneSimState">
+      <summary>휴대폰 회선에 대한 SIM 카드의 현재 상태입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Disabled">
+      <summary>SIM 카드가 사용되지 않습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Invalid">
+      <summary>SIM 카드가 유효하지 않습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.NotInserted">
+      <summary>SIM 카드가 전화기에 삽입되어 있지 않습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinLocked">
+      <summary>SIM 카드가 잠겨 있으며 잠금 해제하려면 PIN 코드가 필요합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinNotRequired">
+      <summary>SIM 카드에 PIN 코드가 필요하지 않습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinUnlocked">
+      <summary>SIM 카드가 잠금 해제되어 있지만, 카드가 잠기는 경우 다시 잠금 해제하려면 PIN 코드가 필요합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PukLocked">
+      <summary>잘못된 PIN 항목이 너무 많아서 SIM 카드가 잠겨 있으며, 잠금 해제하려면 PUK(개인 잠금 해제 키)가 필요합니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Unknown">
+      <summary>SIM 카드 상태를 알 수 없습니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneVoicemail">
+      <summary>PhoneLine 인스턴스와 연결된 음성 메일 데이터를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.MessageCount">
+      <summary>PhoneLine 인스턴스와 연결된 음성 메일 메시지의 현재 수를 가져옵니다. -1 값은 "비활성화 상태"의 메시지 수를 나타냅니다.</summary>
+      <returns>현재 음성 메일 메시지 수입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.Number">
+      <summary>PhoneLine 인스턴스와 연결된 음성 메일의 액세스 번호를 가져옵니다. 전화 사용자는 액세스 번호로 전화를 걸어서 음성 메일 계정에 액세스할 수 있습니다.</summary>
+      <returns>액세스 번호입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.Type">
+      <summary>PhoneLine 인스턴스와 연결된 음성 메일의 유형을 가져옵니다.</summary>
+      <returns>음성 메일 계정의 유형입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneVoicemail.DialVoicemailAsync">
+      <summary>음성 메일 액세스 번호로 건화를 겁니다.</summary>
+      <returns>비동기 다이얼 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneVoicemailType">
+      <summary>PhoneLine 인스턴스와 연결된 음성 메일의 유형입니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.None">
+      <summary>전화선에 음성 메일이 없습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.Traditional">
+      <summary>전화선에 전통적인 음성 메일이 있습니다.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.Visual">
+      <summary>전화선에 시각적 음성 메일이 있습니다.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin">
+      <summary>전화 통화의 원본에 대한 정보 컬렉션입니다.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.#ctor">
+      <summary>새 PhoneCallOrigin 개체를 만듭니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.Category">
+      <summary>호출자에 대한 범주를 가져오거나 설정합니다.</summary>
+      <returns>호출자의 범주입니다. 예를 들면 "부동산 중개소", "재정 서비스" 등이 있습니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.CategoryDescription">
+      <summary>호출자의 범주에 대한 설명을 가져오거나 설정합니다.</summary>
+      <returns>호출자의 특정 범주에 대한 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.DisplayName">
+      <summary>PhoneCallOriginManager 개체의 표시 이름을 가져오거나 설정합니다.</summary>
+      <returns>통화 원본의 표시 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.DisplayPicture">
+      <summary>PhoneCallOriginManager 개체의 표시 사진을 가져오거나 설정합니다.</summary>
+      <returns>호출자 출처에 대한 표시 사진입니다. 이 그림은 걸려오는 전화 UI에 표시됩니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.Location">
+      <summary>호출자의 위치를 가져오거나 설정합니다.</summary>
+      <returns>호출자의 위치입니다.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager">
+      <summary>수신 전화의 원본을 어떤 응용 프로그램에서 결정하는지 제어하고 PhoneCallOrigin 정보를 설정합니다.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.IsCurrentAppActiveCallOriginApp">
+      <summary>현재 응용 프로그램이 기본 통화 원본 응용 프로그램으로 설정되어 있는지 여부를 확인합니다.</summary>
+      <returns>현재 응용 프로그램이 기본 통화 원본 응용 프로그램이면 **True**이고, 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.IsSupported">
+      <summary>PhoneCallOriginManager API가 지원되면 true를 반환하며, 그렇지 않으면 false를 반환합니다.</summary>
+      <returns>PhoneCallOriginManager API가 지원되는지 여부를 나타내는 부울입니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.RequestSetAsActiveCallOriginAppAsync">
+      <summary>현재 앱을 설정하는 대화 상자를 기본 전화 원본 앱으로 호출 합니다.</summary>
+      <returns>앱이 기본 전화 원본 앱으로 설정되었는지 여부를 나타냅니다.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.SetCallOrigin(System.Guid,Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin)">
+      <summary>전화 통화가 수신될 때 통화 원본을 설정합니다.</summary>
+      <param name="requestId">이 전화 통화의 고유 식별자입니다. 이것은 PhoneCallOriginDataRequestTriggerDetails의 *targetId*에서 검색됩니다.</param>
+      <param name="callOrigin">수신 전화에 대한 통화 정보입니다.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.ShowPhoneCallOriginSettingsUI">
+      <summary>사용자가 통화 원본 응용 프로그램을 선택할 수 있는 인터페이스를 엽니다.</summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,1130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.Store.StoreContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Store.StoreAcquireLicenseResult">
+      <summary>提供有關要求取得目前應用程式之可下載內容 (DLC) 附加元件套件之授權的回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.ExtendedError">
+      <summary>取得要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.StorePackageLicense">
+      <summary>取得物件，代表目前應用程式之可下載內容 (DLC) 附加元件套件的授權。</summary>
+      <returns>代表可下載內容 (DLC) 套件授權的物件。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAppLicense">
+      <summary>提供目前 app 的授權資訊應用程式，包括 app 提供之產品的授權。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.AddOnLicenses">
+      <summary>取得使用者享有權益的耐久性附加元件授權集合。 這個屬性不包含消費性附加元件的授權。</summary>
+      <returns>金鑰值組對應，其中每個金鑰都是來自 Microsoft Store 目錄的附加元件 SKU 的 Store 識別碼，而每個值都是包含附加元件授權資訊的 StoreLicense 物件。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExpirationDate">
+      <summary>取得應用程式授權的到期日和時間。</summary>
+      <returns>相對於系統時鐘的應用程式授權到期日和時間。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExtendedJsonData">
+      <summary>取得 JSON 格式的完整授權資料。</summary>
+      <returns>包含完整授權資料的 JSON 格式字串。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsActive">
+      <summary>取得值，指出授權是否有效並提供讓目前使用者使用應用程式的權利。</summary>
+      <returns>如果授權有效並提供讓目前使用者使用應用程式的權利則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsDiscLicense">
+      <summary>取得值，表示目前授權是否從光碟安裝取得。</summary>
+      <returns>True 表示目前授權是從光碟安裝取得，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrial">
+      <summary>取得值，表示授權是否為試用版授權。</summary>
+      <returns>如果此授權是試用版授權，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrialOwnedByThisUser">
+      <summary>取得值，指出目前使用者是否有此 app 授權相關聯的使用限制試用版權利。</summary>
+      <returns>如果目前使用者享有試用版的權益，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.SkuStoreId">
+      <summary>從 Microsoft Store 目錄取得已授權應用程式 SKU 的 Store 識別碼。</summary>
+      <returns>Microsoft Store 目錄中已授權應用程式 SKU 的 Store 識別碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialTimeRemaining">
+      <summary>取得與這個 app 授權相關聯的使用限制試用版的剩餘時間。</summary>
+      <returns>與這個 app 授權相關聯的使用限制試用版的剩餘時間。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialUniqueId">
+      <summary>取得唯一識別碼，辨識目前的使用者和與此 app 授權相關聯之使用限制試用版的組合。</summary>
+      <returns>唯一識別碼，辨識目前的使用者和與此 app 授權相關聯之使用限制試用版的組合。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAvailability">
+      <summary>表示可以購買的產品 SKU 的特定執行個體。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.EndDate">
+      <summary>取得目前 SKU 可用性的結束日期。</summary>
+      <returns>目前 SKU 可用性的結束日期。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.ExtendedJsonData">
+      <summary>取得目前 SKU 在 Store 中可用性的 JSON 格式完整資料。</summary>
+      <returns>JSON 格式的字串，包含目前 SKU 在 Store 中可用性的完整資料。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.Price">
+      <summary>取得目前 SKU 可用性的價格資訊，包括基本價格、目前價格和銷售資訊。</summary>
+      <returns>包含目前 SKU 可用性之價格資訊的物件。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.StoreId">
+      <summary>從 Microsoft Store 目錄取得目前 SKU 可用性的 Store 識別碼。</summary>
+      <returns>來自 Microsoft Store 目錄的目前 SKU 可用性的 Store 識別碼。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync">
+      <summary>要求購買目前 SKU 可用性，並顯示用來透過 Microsoft Store 完成交易的 UI。</summary>
+      <returns>非同步作業，會在順利完成時傳回 StorePurchaseResult 物件，並提供有關購買的狀態與錯誤。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>要求購買目前 SKU 可用性，並顯示用來透過 Microsoft Store 完成交易的 UI。 這個方法提供選項指定 Microsoft Store 中單一清單所表示的產品大型目錄內特定優惠的詳細資料，包括購買期間對使用者顯示的產品名稱。</summary>
+      <param name="storePurchaseProperties">指定購買要求的其他資訊的物件，包括購買期間對使用者顯示的產品名稱。</param>
+      <returns>非同步作業，會在順利完成時傳回 StorePurchaseResult 物件，並提供有關購買的狀態與錯誤。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanAcquireLicenseResult">
+      <summary>提供有關要求判斷是否可取得可下載內容 (DLC) 附加元件套件之授權的回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.ExtendedError">
+      <summary>取得要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.LicensableSku">
+      <summary>取得可下載內容 (DLC) 附加元件的 SKU Store 識別碼，如果可以取得適用於目前使用者之附加元件的授權。</summary>
+      <returns>可下載內容 (DLC) 附加元件的 SKU Store 識別碼，如果可以取得適用於目前使用者之附加元件的授權。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.Status">
+      <summary>取得可下載內容 (DLC) 附加元件套件的授權狀態。</summary>
+      <returns>可下載內容 (DLC) 附加元件的授權狀態。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanLicenseStatus">
+      <summary>定義值，表示可下載內容 (DLC) 附加元件套件的授權狀態。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.Licensable">
+      <summary>產品可以授權給目前使用者。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.LicenseActionNotApplicableToProduct">
+      <summary>產品無法個別授權。 例如，如果您傳遞非 DLC 附加元件（也就是沒有套件的附加元件）的 Store 識別碼至 CanAcquireStoreLicenseAsync(String) 方法，便會發生這種情形。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NetworkError">
+      <summary>授權要求失敗，因為網路連線錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NotLicensableToUser">
+      <summary>使用者沒有權限取得產品的授權。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.ServerError">
+      <summary>授權要求失敗，因為 Microsoft Store 傳回伺服器錯誤。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCollectionData">
+      <summary>為使用者有使用權利的產品 SKU 提供其他資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.AcquiredDate">
+      <summary>取得產品 SKU 取得的日期。</summary>
+      <returns>產品 SKU 取得的日期。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.CampaignId">
+      <summary>取得與產品 SKU 相關聯的促銷行銷活動識別碼。</summary>
+      <returns>與產品 SKU 相關聯的促銷行銷活動識別碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.DeveloperOfferId">
+      <summary>取得與產品 SKU 相關聯的開發人員優惠識別碼。</summary>
+      <returns>與產品 SKU 相關聯的開發人員優惠識別碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.EndDate">
+      <summary>如果 SKU 是試用版或在設定期間後過期的耐久性附加元件，則取得產品 SKU 試用的結束日期。</summary>
+      <returns>如果 SKU 是試用版或在設定期間後過期的耐久性附加元件，則是產品 SKU 試用的結束日期。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.ExtendedJsonData">
+      <summary>取得 JSON 格式的產品 SKU 的完整集合資料。</summary>
+      <returns>JSON 格式的字串，包含產品 SKU 的完整集合資料。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.IsTrial">
+      <summary>取得值，表示產品 SKU 是否為試用版。</summary>
+      <returns>如果產品 SKU 是試用版，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.StartDate">
+      <summary>如果 SKU 是試用版或在設定期間後過期的耐久性附加元件，則取得產品 SKU 試用的開始日期。</summary>
+      <returns>如果 SKU 是試用版或在設定期間後過期的耐久性附加元件，則是產品 SKU 試用的開始日期。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.TrialTimeRemaining">
+      <summary>取得與這個產品 SKU 相關聯的使用限制試用版的剩餘試用時間。</summary>
+      <returns>與這個產品 SKU 相關聯的使用限制試用版的剩餘試用時間。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableResult">
+      <summary>為目前應用程式的消費性附加元件的要求提供回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.BalanceRemaining">
+      <summary>取得消費性附加元件的餘額。</summary>
+      <returns>消費性附加元件的餘額。 對於開發人員 (而非 Microsoft) 追蹤餘額的未受管理消費性附加元件，這個屬性傳回 1（使用者有附加元件的權利）或 0（使用者沒有附加元件的權利）。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.ExtendedError">
+      <summary>取得要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.Status">
+      <summary>取得要求的狀態。</summary>
+      <returns>要求的狀態。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.TrackingId">
+      <summary>取得隨 ReportConsumableFulfillmentAsync 要求送出的追蹤識別碼。</summary>
+      <returns>隨 ReportConsumableFulfillmentAsync 要求送出的追蹤識別碼。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableStatus">
+      <summary>定義值，表示與消費性附加元件相關的要求狀態。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.InsufficentQuantity">
+      <summary>要求失敗，因為消費性附加元件的餘額不足。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.NetworkError">
+      <summary>要求失敗，因為網路連接錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.ServerError">
+      <summary>要求失敗，因為 Microsoft Store 傳回伺服器錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.Succeeded">
+      <summary>要求成功。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContext">
+      <summary>提供成員，可用來存取和管理目前應用程式的 Microsoft Store 相關資料。 例如，您可以使用這個類別的成員取得目前應用程式的 Microsoft Store 清單和授權資訊、購買目前應用程式或應用程式提供的產品，或下載和安裝應用程式的套件更新。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.CanSilentlyDownloadStorePackageUpdates">
+      <summary>取得值，指出是否可以下載目前應用程式的套件更新，而不向使用者顯示通知 UI。</summary>
+      <returns>如果可以下載目前應用程式的套件更新，而不向使用者顯示通知 UI，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.User">
+      <summary>取得與多使用者應用程式中目前 StoreContext 物件相關聯使用者的資訊。</summary>
+      <returns>物件，可提供與多使用者應用程式中目前 StoreContext 物件相關聯使用者的資訊。</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreContext.OfflineLicensesChanged">
+      <summary>在應用程式的授權狀態變更時引發 (例如，試用期已過或使用者已購買完整版應用程式)。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.AcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>取得目前應用程式所指定的可下載內容 (DLC) 附加元件套件的授權。</summary>
+      <param name="optionalPackage">要取得其授權的 DLC 附加元件套件。</param>
+      <returns>非同步作業，會在順利完成時傳回包含授權的 StoreAcquireLicenseResult 物件。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseAsync(System.String)">
+      <summary>取得值，指出是否可為目前使用者的目前應用程式之指定可下載內容 (DLC) 附加元件取得授權。</summary>
+      <param name="productStoreId">要檢查的 DLC 附加元件 Store 識別碼。</param>
+      <returns>非同步作業，會在順利完成時傳回指出是否可取得授權的 StoreCanAcquireLicenseResult 物件。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>取得值，指出是否可為目前使用者的目前應用程式之指定可下載內容 (DLC) 套件取得授權。</summary>
+      <param name="optionalPackage">要檢查的 DLC 套件。</param>
+      <returns>非同步作業，會在順利完成時傳回指出是否可取得授權的 StoreCanAcquireLicenseResult 物件。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.DownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>從 Microsoft Store 下載並安裝目前應用程式的指定可下載內容 (DLC) 套件，而不向使用者顯示通知 UI 對話方塊。</summary>
+      <param name="storeIds">附加元件的 Store 識別碼，對應至要為目前應用程式安裝的 DLC 套件。</param>
+      <returns>物件，呼叫端可以觀察以追蹤作業進度和完成。 成功完成後，結果是 StorePackageUpdateResult 物件，提供套件更新的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.FindStoreProductForPackageAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.ApplicationModel.Package)">
+      <summary>取得與指定套件相關聯的 app 或附加元件的 Store 產品詳細資料。</summary>
+      <param name="productKinds">字串陣列，指定可能與套件相關聯的 Store 產品類型。 如需支援的字串值清單，請參閱 ProductKind 屬性。</param>
+      <param name="package">Package，代表您要取得對應 Store 產品詳細資料的套件。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreProductResult 物件。 使用此物件的 Product 屬性存取 StoreProduct，其中包含指定套件的 Store 產品詳細資料。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppAndOptionalStorePackageUpdatesAsync">
+      <summary>取得有更新可供從 Microsoft Store 下載的目前應用程式的套件集合，包括應用程式的選擇性套件。</summary>
+      <returns>非同步作業，會在順利完成時傳回 StorePackageUpdate 物件集合，表示有可用更新的套件。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppLicenseAsync">
+      <summary>取得目前應用程式的授權資訊，包括目前應用程式的附加元件的授權。</summary>
+      <returns>非同步作業，會在順利完成時傳回 StoreAppLicense 物件，包含目前應用程式的授權資訊，包括附加元件授權。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>取得可以從目前應用程式中購買之指定產品的 Microsoft Store 清單資訊。</summary>
+      <param name="productKinds">字串陣列，指定您想要取得的產品類型。 如需支援的字串值清單，請參閱 ProductKind 屬性。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreProductQueryResult，可讓您存取相關產品和相關的錯誤資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>取得可以從目前應用程式中購買之指定產品的 Microsoft Store 清單資訊。 這個方法支援分頁傳回結果。</summary>
+      <param name="productKinds">字串陣列，指定您想要取得的產品類型。 如需支援的字串值清單，請參閱 ProductKind 屬性。</param>
+      <param name="maxItemsToRetrievePerPage">每頁結果中要傳回的產品數目上限。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreProductPagedQueryResult，可讓您存取相關產品、相關的錯誤資訊，以及下一頁的結果。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreQueueItemsAsync">
+      <summary>取得目前應用程式正處於下載和安裝佇列中所有全新或更新套件的相關資訊。</summary>
+      <returns>非同步作業，會在順利完成時傳回 StoreQueueItem 物件集合，提供處於佇列中的應用程式套件相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetConsumableBalanceRemainingAsync(System.String)">
+      <summary>取得目前應用程式的所指定的消費性附加元件的餘額。</summary>
+      <param name="productStoreId">附加元件的 Store 識別碼 (如代表附加元件的 StoreProduct 的 StoreId 屬性所提供)。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreConsumableResult，提供餘額以及其他資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerCollectionsIdAsync(System.String,System.String)">
+      <summary>擷取 Microsoft Store 識別碼索引鍵，可用來查詢產品權益或使用由目前使用者所擁有的產品權益。</summary>
+      <param name="serviceTicket">Azure Active Directory 存取權杖，識別目前應用程式的發行者。 如需產生此權杖的詳細資訊，請參閱〈管理服務的產品權利〉。</param>
+      <param name="publisherUserId">匿名識別碼，識別您在服務內容所管理的目前使用者為目前應用程式的發行者。 如果您在您的服務內容中維護使用者識別碼，您可以使用此參數來與您目前的使用者的來電顯示與新的 Microsoft Store 識別碼索引鍵產生關聯（將使用者識別碼嵌入索引鍵）。 或者，如果您不需要使用者識別碼與 Microsoft Store 識別碼索引鍵，您可以傳遞任何字串值。</param>
+      <returns>非同步作業，會在順利完成時傳回目前使用者的集合識別碼金鑰。 這個索引鍵的有效期是 90 天。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerPurchaseIdAsync(System.String,System.String)">
+      <summary>擷取 Microsoft Store 識別碼索引鍵，可用來代表目前使用者授與免費產品的權益。</summary>
+      <param name="serviceTicket">Azure Active Directory 存取權杖，識別目前應用程式的發行者。 如需產生此權杖的詳細資訊，請參閱〈管理服務的產品權利〉。</param>
+      <param name="publisherUserId">匿名識別碼，識別您在服務內容所管理的目前使用者為目前應用程式的發行者。 如果您在您的服務內容中維護使用者識別碼，您可以使用此參數來與您目前的使用者的來電顯示與新的 Microsoft Store 識別碼索引鍵產生關聯（將使用者識別碼嵌入索引鍵）。 或者，如果您不需要使用者識別碼與 Microsoft Store 識別碼索引鍵，您可以傳遞任何字串值。</param>
+      <returns>非同步作業，會在順利完成時傳回目前使用者的購買識別碼金鑰。 這個索引鍵的有效期是 90 天。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetDefault">
+      <summary>取得 StoreContext 物件，可在目前應用程式的內容中用來存取和管理目前使用者的 Microsoft Store 相關資料。</summary>
+      <returns>物件，可用來存取和管理目前使用者的 Microsoft Store 相關資料。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetForUser(Windows.System.User)">
+      <summary>取得 StoreContext 物件，可在目前應用程式的內容中用來存取和管理所指定使用者的 Microsoft Store 相關資料。</summary>
+      <param name="user">物件，可識別您要存取和管理其 Microsoft Store 相關資料的使用者。</param>
+      <returns>物件，可用來存取和管理所指定使用者的 Microsoft Store 相關資料。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductForCurrentAppAsync">
+      <summary>取得目前應用程式的 Microsoft Store 清單資訊，並提供方法讓您用來為目前使用者購買應用程式。</summary>
+      <returns>非同步作業，會在順利完成時傳回 StoreProductResult 物件，包含目前應用程式的 Microsoft Store 清單資訊和任何相關錯誤資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>取得與目前應用程式相關聯之指定產品的 Microsoft Store 清單資訊。</summary>
+      <param name="productKinds">字串陣列，指定您想要擷取清單資訊的產品類型。 如需支援的字串值清單，請參閱 ProductKind 屬性。</param>
+      <param name="storeIds">Store 識別碼字串陣列，表示您想要擷取清單資訊的產品。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreProductQueryResult 物件，包含指定產品的 Microsoft Store 清單資訊和任何相關錯誤資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StoreProductOptions)">
+      <summary>取得與目前應用程式相關聯之指定產品的 Microsoft Store 清單資訊，具備可使用查詢篩選器的選項。</summary>
+      <param name="productKinds">字串陣列，指定您想要擷取清單資訊的產品類型。 如需支援的字串值清單，請參閱 ProductKind 屬性。</param>
+      <param name="storeIds">Store 識別碼字串陣列，表示您想要擷取清單資訊的產品。</param>
+      <param name="storeProductOptions">包含將用於查詢之篩選器的物件。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreProductQueryResult 物件，包含指定產品的 Microsoft Store 清單資訊和任何相關錯誤資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>取得目前應用程式正處於下載和安裝佇列中指定之全新或更新套件的相關資訊。</summary>
+      <param name="storeIds">Store 識別碼字串陣列，對應至您想要取得下載和安裝佇列資訊的套件。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreQueueItem 物件集合，提供處於佇列中的指定套件相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>取得使用者已購買之目前應用程式附加元件的 Microsoft Store 資訊。</summary>
+      <param name="productKinds">字串陣列，指定您想要擷取資訊的附加元件類型。 如需支援的字串值清單，請參閱 ProductKind 屬性。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreProductQueryResult 物件，包含使用者已購買之目前應用程式附加元件的 Microsoft Store 清單資訊及其相關錯誤資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>取得使用者已購買之目前應用程式附加元件的 Microsoft Store 資訊。 這個方法支援分頁傳回結果。</summary>
+      <param name="productKinds">字串陣列，指定您想要擷取資訊的附加元件類型。 如需支援的字串值清單，請參閱 ProductKind 屬性。</param>
+      <param name="maxItemsToRetrievePerPage">每頁結果中要傳回的附加元件數目上限。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreProductPagedQueryResult 物件，讓您存取使用者已購買之目前應用程式附加元件的 Microsoft Store 清單資訊及其相關錯誤資訊，以及下一頁結果。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.ReportConsumableFulfillmentAsync(System.String,System.UInt32,System.Guid)">
+      <summary>在 Microsoft Store 中報告目前應用程式的消費性附加元件為已完成。</summary>
+      <param name="productStoreId">您想要回報為已完成之消費性附加元件的 Store 識別碼。</param>
+      <param name="quantity">您要報告為已完成的消費性附加元件的單位數。 對於 Store 管理的消費性產品（也就是 Microsoft 追蹤餘額的消費性產品），指定已取用的單位數。 對於開發人員管理的消費性產品（也就是開發人員追蹤餘額的消費性產品），指定 1。</param>
+      <param name="trackingId">開發人員提供的 GUID，可基於追蹤目的用來識別與完成操作相關聯的特定交易。 如需詳細資訊，請參閱「備註」。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreConsumableResult 物件，包含履行作業的相關資訊，例如附加元件單位的餘額。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>嘗試從 Microsoft Store 下載並安裝目前應用程式的指定可下載內容 (DLC) 套件。 這個方法也會顯示 UI 對話方塊，要求作業的權限。</summary>
+      <param name="storeIds">要安裝的 DLC 附加元件套件的 Store 識別碼。</param>
+      <returns>物件，呼叫端可以觀察以追蹤作業進度和完成。 成功完成後，結果是 StorePackageUpdateResult 物件，提供套件更新的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StorePackageInstallOptions)">
+      <summary>嘗試從 Microsoft Store 下載並安裝目前應用程式的指定可下載內容 (DLC) 套件，並具備指定的安裝選項。 這個方法也會顯示 UI 對話方塊，要求作業的權限。</summary>
+      <param name="storeIds">要安裝的 DLC 附加元件套件的 Store 識別碼。</param>
+      <param name="storePackageInstallOptions">指定作業安裝選項的物件。</param>
+      <returns>物件，呼叫端可以觀察以追蹤作業進度和完成。 成功完成後，結果是 StorePackageUpdateResult 物件，提供套件更新的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>嘗試從 Microsoft Store 下載並安裝目前應用程式的指定套件更新。 這個方法也會顯示 UI 對話方塊，要求作業的權限。</summary>
+      <param name="storePackageUpdates">StorePackageUpdate 物件集合，表示要下載並安裝的更新套件。</param>
+      <returns>物件，呼叫端可以觀察以追蹤作業進度和完成。 成功完成後，結果是 StorePackageUpdateResult 物件，提供套件更新的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>嘗試從 Microsoft Store 下載並安裝目前應用程式的指定套件更新。 這個方法也會顯示 UI 對話方塊，要求作業的權限。</summary>
+      <param name="storePackageUpdates">StorePackageUpdate 物件集合，表示要下載的更新套件。</param>
+      <returns>物件，呼叫端可以觀察以追蹤作業進度和完成。 成功完成後，結果是 StorePackageUpdateResult 物件，提供套件更新的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String)">
+      <summary>要求購買指定的應用程式或附加元件，並顯示用來透過 Microsoft Store 完成交易的 UI。</summary>
+      <param name="storeId">您要為目前使用者購買的應用程式或附加元件的 Store 識別碼。</param>
+      <returns>非同步作業，會在順利完成時傳回 StorePurchaseResult 物件，並提供有關購買的狀態與錯誤。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String,Windows.Services.Store.StorePurchaseProperties)">
+      <summary>要求購買指定的應用程式或附加元件，並顯示用來透過 Microsoft Store 完成交易的 UI。 這個方法提供選項指定 Microsoft Store 中單一清單所表示的產品大型目錄內特定優惠的詳細資料，包括購買期間對使用者顯示的產品名稱。</summary>
+      <param name="storeId">您要為目前使用者購買的應用程式或附加元件的 Store 識別碼。</param>
+      <param name="storePurchaseProperties">指定購買要求的其他資訊的物件，包括購買期間對使用者顯示的產品名稱。</param>
+      <returns>非同步作業，會在順利完成時傳回 StorePurchaseResult 物件，並提供有關購買的狀態與錯誤。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestRateAndReviewAppAsync">
+      <summary>要求使用者評分並評論應用程式。 這個方法會顯示 UI 給使用者，以選取產品的 Microsoft Store 評分並新增選用的 Microsoft Store 評論。</summary>
+      <returns>非同步作業，會在順利完成時傳回 StoreRateAndReviewResult 物件，並提供狀態與錯誤資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>嘗試解除安裝目前應用程式的指定選用套件。 這個方法也會顯示 UI 對話方塊，要求作業的權限。</summary>
+      <param name="package">要為目前應用程式解除安裝的選用套件。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreUninstallStorePackageResult 物件，提供有關解除安裝作業的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>嘗試解除安裝目前應用程式的指定可下載內容 (DLC) 套件。 這個方法也會顯示 UI 對話方塊，要求作業的權限。</summary>
+      <param name="storeId">附加元件的 Store 識別碼，對應至要為目前應用程式解除安裝的可下載內容 (DLC) 套件。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreUninstallStorePackageResult 物件，提供有關解除安裝作業的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.SetInstallOrderForAssociatedStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StoreQueueItem})">
+      <summary>設定目前應用程式之所指定套件在下載和安裝佇列中的安裝順序。</summary>
+      <param name="items">StoreQueueItem 物件清單，代表安裝佇列中的套件，依照您想要安裝套件的順序列出。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreQueueItem 物件清單，依照對應套件在佇列中的設定安裝順序列出。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>嘗試從 Microsoft Store 下載並安裝目前應用程式的指定套件更新，而不向使用者顯示通知 UI。</summary>
+      <param name="storePackageUpdates">StorePackageUpdate 物件集合，表示要下載並安裝的更新套件。</param>
+      <returns>物件，呼叫端可以觀察以追蹤作業進度和完成。 成功完成後，結果是 StorePackageUpdateResult 物件，提供套件更新的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>嘗試從 Microsoft Store 下載目前應用程式的指定套件更新，而不向使用者顯示通知 UI。</summary>
+      <param name="storePackageUpdates">StorePackageUpdate 物件集合，表示要下載的更新套件。</param>
+      <returns>物件，呼叫端可以觀察以追蹤作業進度和完成。 成功完成後，結果是 StorePackageUpdateResult 物件，提供套件更新的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>解除安裝目前應用程式的指定選用套件，而不向使用者顯示通知 UI 對話方塊。</summary>
+      <param name="package">要為目前應用程式解除安裝的選用套件。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreUninstallStorePackageResult 物件，提供有關解除安裝作業的相關資訊。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>解除安裝目前應用程式的指定可下載內容 (DLC) 套件，而不向使用者顯示通知 UI 對話方塊。</summary>
+      <param name="storeId">附加元件的 Store 識別碼，對應至要為目前應用程式解除安裝的 DLC 套件。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreUninstallStorePackageResult 物件，提供有關解除安裝作業的相關資訊。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreDurationUnit">
+      <summary>定義值，表示試用期間的單位或訂閱的計費期間。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Day">
+      <summary>期間是以天數為單位定義。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Hour">
+      <summary>期間是以小時為單位定義。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Minute">
+      <summary>期間是以分鐘為單位定義。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Month">
+      <summary>期間是以月為單位定義。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Week">
+      <summary>期間是以週為單位定義。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Year">
+      <summary>期間是以年為單位定義。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreImage">
+      <summary>表示與 Microsoft Store 中產品清單相關聯的影像。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Caption">
+      <summary>取得影像的標題。</summary>
+      <returns>影像的標題。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Height">
+      <summary>取得影像的高度 (以像素為單位)。</summary>
+      <returns>影像的高度。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.ImagePurposeTag">
+      <summary>取得影像的標籤。</summary>
+      <returns>影像的標籤。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Uri">
+      <summary>取得影像的 URI。</summary>
+      <returns>影像的 URI。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Width">
+      <summary>取得影像的寬度 (以像素為單位)。</summary>
+      <returns>影像的寬度。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreLicense">
+      <summary>提供與目前應用程式相關聯的耐久性附加元件的授權資訊。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExpirationDate">
+      <summary>取得附加元件授權的到期日和時間。</summary>
+      <returns>附加元件授權的到期日和時間。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExtendedJsonData">
+      <summary>取得 JSON 格式的完整授權資料。</summary>
+      <returns>JSON 格式的完整授權資料。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.InAppOfferToken">
+      <summary>取得附加元件的產品識別碼。</summary>
+      <returns>附加元件的應用程式內優惠 Token (如果 Token 存在)。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.IsActive">
+      <summary>這個屬性保留供未來使用，不適合在目前版本中使用。 目前，一定會傳回 true。</summary>
+      <returns>所有情況下都是 true。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.SkuStoreId">
+      <summary>從 Microsoft Store 目錄取得已授權附加元件 SKU 的存放區識別碼。</summary>
+      <returns>Microsoft Store 目錄中已授權附加元件 SKU 的存放區識別碼。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageInstallOptions">
+      <summary>表示當使用 RequestDownloadAndInstallStorePackagesAsync 方法來下載並安裝目前應用程式的可下載內容 (DLC) 套件時，可以指定的選項。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageInstallOptions.#ctor">
+      <summary>建立 StorePackageInstallOptions 類別的新執行個體。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageInstallOptions.AllowForcedAppRestart">
+      <summary>取得或設定值，指出作業系統是否可以在使用 RequestDownloadAndInstallStorePackagesAsync 方法安裝目前應用程式的可下載內容 (DLC) 套件後，強制應用程式重新啟動。</summary>
+      <returns>如果作業系統可以在安裝 DLC 套件後強制應用程式重新啟動則為 true，否則為 false。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageLicense">
+      <summary>提供目前應用程式的可下載內容 (DLC) 套件的授權資訊。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.IsValid">
+      <summary>取得值，表示授權是否有效。</summary>
+      <returns>如果授權有效則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.Package">
+      <summary>取得與授權相關聯的可下載內容 (DLC) 套件。</summary>
+      <returns>物件，表示與授權相關聯的 DLC 套件。</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StorePackageLicense.LicenseLost">
+      <summary>使用者在目前裝置上不再有授權權限時引發（例如，使用者已在不同的裝置上取得授權）。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.Close">
+      <summary>關閉並釋放這個 StorePackageLicense 使用的所有資源。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.ReleaseLicense">
+      <summary>釋放可下載內容 (DLC) 套件的授權。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdate">
+      <summary>提供有關在 Microsoft Store 中有更新可下載的目前應用程式的套件的資訊。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Mandatory">
+      <summary>取得值，指出在 Microsoft Store 中有可下載更新的套件是否為必要套件，由開發人員在合作夥伴中心指定。</summary>
+      <returns>如果套件為必要套件，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Package">
+      <summary>取得在 Microsoft Store 中有更新可下載的套件。</summary>
+      <returns>物件，代表有更新可用的套件。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateResult">
+      <summary>為要求下載並安裝目前應用程式之套件的要求提供回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.OverallState">
+      <summary>取得已完成套件更新要求的狀態。</summary>
+      <returns>值，表示已完成套件更新要求的狀態。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StorePackageUpdateStatuses">
+      <summary>取得與已完成要求相關的每一個套件更新狀態的相關資訊。</summary>
+      <returns>StorePackageUpdateStatus 物件集合，提供與已完成要求相關的每一個套件更新狀態的相關資訊。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StoreQueueItems">
+      <summary>取得與已完成要求相關的每一個套件更新的安裝佇列資訊。</summary>
+      <returns>StoreQueueItem 物件集合，提供與已完成要求相關的每一個套件更新的安裝佇列資訊。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateState">
+      <summary>定義值，表示套件下載或安裝要求的狀態。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Canceled">
+      <summary>套件更新的下載或安裝已取消。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Completed">
+      <summary>套件更新已完成下載或安裝。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Deploying">
+      <summary>套件更新正在部署到裝置。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Downloading">
+      <summary>套件更新正在下載。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorLowBattery">
+      <summary>套件更新下載或安裝失敗，因為裝置的電池電力不足。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRecommended">
+      <summary>下載失敗，因為建議使用 Wi-Fi 連線下載套件更新。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRequired">
+      <summary>下載失敗，因為必須使用 Wi-Fi 連線下載套件更新。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.OtherError">
+      <summary>發生未知的錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Pending">
+      <summary>套件更新未開始下載。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateStatus">
+      <summary>提供與下載或安裝要求相關聯的套件的狀態資訊。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageBytesDownloaded">
+      <summary>已下載的位元組數目。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadProgress">
+      <summary>目前套件的下載 (或下載與安裝) 進度，由 0.0 到 1.0 的值表示。 當您使用 RequestDownloadStorePackageUpdatesAsync 下載套件時，這個值會在每一個套件下載期間從 0.0 增加到 1.0。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadSizeInBytes">
+      <summary>正在下載的套件大小，以位元組為單位。 這是估計值，可能會在下載程序時變更。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageFamilyName">
+      <summary>正在下載或安裝的套件系列名稱。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageUpdateState">
+      <summary>StorePackageUpdateState 值，表示正在下載或安裝的套件狀態。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.TotalDownloadProgress">
+      <summary>要求中所有套件下載的目前進度，由 0.0 到 1.0 的值表示。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePrice">
+      <summary>包含 Microsoft Store 中產品清單的定價資訊。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.CurrencyCode">
+      <summary>取得目前使用者所屬市場的 ISO 4217 貨幣代碼。</summary>
+      <returns>目前使用者所屬市場的 ISO 4217 貨幣代碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedBasePrice">
+      <summary>取得適用於目前使用者所屬市場的產品基本價格 (具有適當的格式)。</summary>
+      <returns>適用於目前使用者所屬市場的產品基本價格 (具有適當的格式)。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedPrice">
+      <summary>取得適用於目前使用者所屬市場的產品購買價格 (具有適當的格式)。</summary>
+      <returns>適用於目前使用者所屬市場的產品購買價格 (具有適當的格式)。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedRecurrencePrice">
+      <summary>如果為本產品啟用週期性帳單，為目前使用者所屬市場取得產品的週期性價格 (具有適當格式)。</summary>
+      <returns>適用於目前使用者所屬市場的產品週期性價格 (具有適當的格式)。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.IsOnSale">
+      <summary>取得值，這個值表示產品是否有特價。</summary>
+      <returns>如果產品有特價則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.SaleEndDate">
+      <summary>如果產品有特價，取得產品特價期間的結束日期。</summary>
+      <returns>產品特價期間的結束日期。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProduct">
+      <summary>代表可在 Microsoft Store 中取得的產品。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Description">
+      <summary>從 Microsoft Store 清單取得產品描述。</summary>
+      <returns>產品描述。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ExtendedJsonData">
+      <summary>以 JSON 格式取得 Store 中產品的完整資料。</summary>
+      <returns>JSON 格式的字串，包含 Store 中產品的 JSON 格式完整資料。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.HasDigitalDownload">
+      <summary>取得值，指出產品是否有選擇性的可下載內容 (DLC)。</summary>
+      <returns>如果產品有選擇性的可下載內容，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Images">
+      <summary>從產品的 Microsoft Store 清單取得影像。</summary>
+      <returns>StoreImage 物件集合，代表從產品的 Windows 市集清單取得的影像。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.InAppOfferToken">
+      <summary>取得此產品的產品識別碼，如果目前 StoreProduct 代表附加元件。</summary>
+      <returns>此產品的產品識別碼，如果目前 StoreProduct 代表附加元件。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.IsInUserCollection">
+      <summary>取得值，指出目前使用者是否有使用產品預設 SKU 的權利。</summary>
+      <returns>目前使用者有使用產品預設 SKU 的權利，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Keywords">
+      <summary>取得合作夥伴中心中產品相關聯的關鍵字。 此屬性僅適用於表示附加元件的 **StoreProduct** 物件。 這些字串對應至合作夥伴中心中附加元件屬性頁的 **\[關鍵字\]** 欄位值。</summary>
+      <returns>字串集合，包含合作夥伴中心中產品相關聯的關鍵字。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Language">
+      <summary>取得產品的 Microsoft Store 清單資料的語言。</summary>
+      <returns>Microsoft Store 清單中產品資料的語言。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.LinkUri">
+      <summary>取得此產品的 Microsoft Store 清單 URI。</summary>
+      <returns>此產品的 Microsoft Store 清單 URI。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Price">
+      <summary>取得產品的預設 SKU 和可用性的價格。</summary>
+      <returns>產品的預設 SKU 和可用性的價格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ProductKind">
+      <summary>取得產品的類型。 目前支援這些值：**Application**、**Game**、**Consumable**、**UnmanagedConsumable** 和 **Durable**。</summary>
+      <returns>產品的類型。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Skus">
+      <summary>取得產品的可用 SKU 的清單。</summary>
+      <returns>StoreSku 物件集合，代表產品的可用 SKU。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.StoreId">
+      <summary>取得此產品的 Store 識別碼。</summary>
+      <returns>此產品的 Store 識別碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Title">
+      <summary>從 Microsoft Store 清單取得產品標題。</summary>
+      <returns>來自 Microsoft Store 清單的產品標題。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Videos">
+      <summary>從產品的 Microsoft Store 清單取得影片。</summary>
+      <returns>StoreVideo 物件集合，代表從產品的 Microsoft Store 清單取得的影片。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.GetIsAnySkuInstalledAsync">
+      <summary>指出這個產品的任何 SKU 是否已經安裝在目前裝置上。 這個方法適用於有可下載內容 (DLC) 的產品。</summary>
+      <returns>非同步作業，會在順利完成，而且如果此產品的 SKU 已經安裝在目前裝置上時傳回 true，否則為 false。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync">
+      <summary>要求購買產品的預設 SKU 和可用性，並顯示用來透過 Microsoft Store 完成交易的 UI。</summary>
+      <returns>非同步作業，會在順利完成時傳回 StorePurchaseResult 物件，並提供有關購買的狀態與錯誤。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>要求購買產品的預設 SKU 和可用性，並顯示用來透過 Microsoft Store 完成交易的 UI。 這個方法提供選項指定 Microsoft Store 中單一清單所表示的產品大型目錄內特定優惠的詳細資料，包括購買期間對使用者顯示的產品名稱。</summary>
+      <param name="storePurchaseProperties">指定購買要求的其他資訊的物件，包括購買期間對使用者顯示的產品名稱。</param>
+      <returns>非同步作業，會在順利完成時傳回 StorePurchaseResult 物件，並提供有關購買的狀態與錯誤。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductOptions">
+      <summary>包含篩選字串集合，您可以搭配 GetStoreProductsAsync 方法使用以取得與目前應用程式相關之指定產品的資訊。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductOptions.#ctor">
+      <summary>建立 StoreProductOptions 類別的新執行個體。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductOptions.ActionFilters">
+      <summary>取得篩選字串集合，您可以搭配 GetStoreProductsAsync 方法使用以取得與目前應用程式相關之指定產品的資訊。 此集合目前僅支援一個篩選字串 ```Purchase```。</summary>
+      <returns>篩選字串集合，您可以搭配 GetStoreProductsAsync 方法使用以取得與目前應用程式相關之指定產品的資訊。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductPagedQueryResult">
+      <summary>為擷取可從目前應用程式中購買的產品的相關詳細資料的分頁要求，提供回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.ExtendedError">
+      <summary>取得要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.HasMoreResults">
+      <summary>取得值，指出是否有其他頁面的結果。 若要取得結果的下一個頁面，請使用 GetNextAsync 方法。</summary>
+      <returns>如果有其他頁面的結果，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.Products">
+      <summary>取得要求傳回的產品集合。</summary>
+      <returns>索引鍵/值組的字典，其中每個索引鍵都是產品的 Store 識別碼，而值是 StoreProduct 物件，表示該附加元件。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductPagedQueryResult.GetNextAsync">
+      <summary>傳回下一頁結果。 若要判斷是否有更多結果頁面，請使用 HasMoreResults 屬性。</summary>
+      <returns>非同步作業，會在順利完成時傳回 StoreProductPagedQueryResult 物件，提供結果的下一個頁面。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductQueryResult">
+      <summary>為擷取可從目前應用程式中購買的產品的相關詳細資料的要求，提供回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.ExtendedError">
+      <summary>取得要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.Products">
+      <summary>取得要求傳回的產品集合。</summary>
+      <returns>索引鍵/值組的字典，其中每個索引鍵都是附加元件的 Store 識別碼，而值是 StoreProduct 物件，表示該附加元件。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductResult">
+      <summary>為取得目前 app 的詳細資料的要求，提供回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.ExtendedError">
+      <summary>取得要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.Product">
+      <summary>取得目前 app 的相關資訊。</summary>
+      <returns>提供目前 app 相關資訊的物件。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseProperties">
+      <summary>包含您可以傳送至產品購買要求的其他詳細資料，包括購買期間對使用者顯示的產品名稱。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor">
+      <summary>初始化 StorePurchaseProperties 類別的新執行個體。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor(System.String)">
+      <summary>初始化 StorePurchaseProperties 類別的新執行個體。 這個多載提供指定購買期間對使用者顯示的產品名稱的選項。</summary>
+      <param name="name">購買期間對使用者顯示的產品名稱。</param>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.ExtendedJsonData">
+      <summary>取得或包含 JSON 格式字串，包含隨購買要求傳遞至 Microsoft Store 的延伸資料。</summary>
+      <returns>JSON 格式字串，包含隨購買要求傳遞至 Microsoft Store 的延伸資料。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.Name">
+      <summary>取得或設定在購買期間顯示給使用者的產品名稱。 指定的名稱會出現在購買 UI 的標題列。</summary>
+      <returns>購買期間對使用者顯示的產品名稱。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseResult">
+      <summary>為購買 app 或 app 提供之產品的要求，提供回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.ExtendedError">
+      <summary>取得購買要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>購買要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.Status">
+      <summary>取得購買要求的狀態。</summary>
+      <returns>購買要求的狀態。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseStatus">
+      <summary>定義值，表示購買 app 或附加元件要求的狀態。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.AlreadyPurchased">
+      <summary>目前的使用者已購買指定的 app 或附加元件。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NetworkError">
+      <summary>購買要求失敗，因為網路連接錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NotPurchased">
+      <summary>購買要求未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.ServerError">
+      <summary>購買要求失敗，因為 Microsoft Store 傳回伺服器錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.Succeeded">
+      <summary>購買要求成功。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItem">
+      <summary>代表目前應用程式正處於下載和安裝佇列中全新或更新套件的相關資訊。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.InstallKind">
+      <summary>取得值，描述將對下載和安裝佇列中目前套件執行的作業。</summary>
+      <returns>值，描述將對下載和安裝佇列中目前套件執行的作業。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.PackageFamilyName">
+      <summary>取得佇列中目前套件的套件系列名稱。</summary>
+      <returns>佇列中目前套件的套件系列名稱。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.ProductId">
+      <summary>取得佇列中目前套件的附加元件產品識別碼 (如果套件對應至附加元件)。</summary>
+      <returns>佇列中目前套件的附加元件產品識別碼。</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.Completed">
+      <summary>當佇列中目前套件的下載和安裝完成時引發。</summary>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.StatusChanged">
+      <summary>當佇列中目前套件的狀態變更時引發。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.CancelInstallAsync">
+      <summary>取消佇列中目前套件的安裝。</summary>
+      <returns>用於控制非同步作業的物件。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.GetCurrentStatus">
+      <summary>傳回佇列中目前套件的狀態。</summary>
+      <returns>物件，代表佇列中目前套件的狀態。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.PauseInstallAsync">
+      <summary>暫停佇列中目前套件的安裝。</summary>
+      <returns>用於控制非同步作業的物件。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.ResumeInstallAsync">
+      <summary>繼續佇列中目前套件的安裝。</summary>
+      <returns>用於控制非同步作業的物件。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemCompletedEventArgs">
+      <summary>為 StoreQueueItem 類別的 Completed 事件提供資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemCompletedEventArgs.Status">
+      <summary>取得下載和安裝佇列中已完成項目的狀態。</summary>
+      <returns>佇列中已完成項目的狀態。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemExtendedState">
+      <summary>定義值，代表目前應用程式正處於下載和安裝佇列中之全新或更新套件的延伸狀態資訊。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveAcquiringLicense">
+      <summary>套件正在取得授權。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveDownloading">
+      <summary>正在下載套件。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveInstalling">
+      <summary>正在安裝套件。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActivePending">
+      <summary>套件的下載和安裝擱置中。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveRestoringData">
+      <summary>套件正在還原資料。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveStarting">
+      <summary>套件的下載和安裝正在開始。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Canceled">
+      <summary>套件的下載或安裝已取消。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Completed">
+      <summary>套件的下載和安裝已完成。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Error">
+      <summary>套件的下載或安裝遇到錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Paused">
+      <summary>套件的下載或安裝已暫停。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedLowBattery">
+      <summary>套件的下載或安裝已暫停，因為電池電力不足。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedPackagesInUse">
+      <summary>套件的安裝已暫停，因為應用程式已使用相關的套件。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedReadyToInstall">
+      <summary>套件已暫停，但已準備就緒可以安裝。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRecommended">
+      <summary>套件的下載已暫停，因為建議使用 Wi-Fi 連線。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRequired">
+      <summary>套件的下載已暫停，因為它需要 Wi-Fi 連線。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemKind">
+      <summary>定義值，描述將對下載和安裝佇列中目前套件執行的作業。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Install">
+      <summary>正在首次安裝此項目。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Repair">
+      <summary>正在修復此項目。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Update">
+      <summary>正在更新此項目。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemState">
+      <summary>定義值，指定目前應用程式正處於下載和安裝佇列中之全新或更新套件的狀態。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Active">
+      <summary>套件的下載或安裝正在進行中。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Canceled">
+      <summary>套件的下載或安裝已取消。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Completed">
+      <summary>套件的下載和安裝已完成。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Error">
+      <summary>套件的下載或安裝遇到錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Paused">
+      <summary>套件的下載或安裝已暫停。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemStatus">
+      <summary>提供目前應用程式正處於下載和安裝佇列中之全新或更新套件的相關狀態資訊。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.ExtendedError">
+      <summary>取得下載和安裝要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallExtendedState">
+      <summary>取得值，指定目前應用程式正處於下載和安裝佇列中之套件的狀態其他資訊。</summary>
+      <returns>值，指定佇列中套件的狀態其他資訊。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallState">
+      <summary>取得值，指定目前應用程式正處於下載和安裝佇列中之套件的整體狀態。</summary>
+      <returns>值，指定佇列中套件的整體狀態。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.UpdateStatus">
+      <summary>取得值，指定目前應用程式正處於下載和安裝佇列中之套件的更新狀態。</summary>
+      <returns>值，指定佇列中套件的更新狀態。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewResult">
+      <summary>提供評分並評論產品之要求的回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedError">
+      <summary>取得要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedJsonData">
+      <summary>取得 JSON 格式之評分並評論要求的完整結果資料。 其中包括資訊，用以判斷使用者是否中止對話方塊以及如果呼叫不成功的錯誤詳細資料。</summary>
+      <returns>包含來自評分並評論要求之結果的 JSON 格式字串。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.Status">
+      <summary>取得產品之評分並評論要求的狀態。</summary>
+      <returns>產品之評分並評論要求的狀態。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.WasUpdated">
+      <summary>取得值，指出評分並評論的要求是否有成功更新。</summary>
+      <returns>如果對產品的評分並評論要求有做出成功更新則為 True，否則為 false。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewStatus">
+      <summary>取得產品之評分並評論要求的結果狀態。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.CanceledByUser">
+      <summary>使用者已取消要求。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Error">
+      <summary>要求發生錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.NetworkError">
+      <summary>要求發生網路錯誤。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Succeeded">
+      <summary>要求成功。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRequestHelper">
+      <summary>提供協助程式方法，可用來針對 Windows SDK 中沒有對應 API 的作業，將要求傳送給 Microsoft Store。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreRequestHelper.SendRequestAsync(Windows.Services.Store.StoreContext,System.UInt32,System.String)">
+      <summary>以提供的內容和參數傳送指定的要求至 Microsoft Store。</summary>
+      <param name="context">物件，指定要對其執行此作業的使用者。 如果您的應用程式是單一使用者應用程式 (亦即它僅在啟動應用程式的使用者內容中執行)，使用 StoreContext.GetDefault 方法以取得您可以用來傳送在使用者內容中操作之要求的 StoreContext 物件。</param>
+      <param name="requestKind">值，辨識您想要提供給 Microsoft Store 的要求。</param>
+      <param name="parametersAsJson">JSON 格式化字串，包含要傳送給要求的引數。</param>
+      <returns>非同步作業，會在順利完成時傳回 StoreSendRequestResult 物件，提供有關要求的狀態和錯誤資訊。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSendRequestResult">
+      <summary>為傳送到 Microsoft Store 的要求，提供回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.ExtendedError">
+      <summary>取得要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼，如果操作發生錯誤。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.HttpStatusCode">
+      <summary>取得要求的 HTTP 狀態碼。</summary>
+      <returns>要求的 HTTP 狀態碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.Response">
+      <summary>取得要求的回應資料。</summary>
+      <returns>要求的回應資料。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSku">
+      <summary>提供 Microsoft Store 中產品的庫存單位 (SKU) 資訊。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Availabilities">
+      <summary>取得目前產品 SKU 的可用性。 每個產品 SKU 可以有一或多個不同價格的可用性。</summary>
+      <returns>StoreAvailability 物件集合，代表目前產品 SKU 的可用性。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.BundledSkus">
+      <summary>取得與此產品 SKU 搭售之 app 或附加元件的 Store 識別碼清單。</summary>
+      <returns>與此產品 SKU 搭售之 app 或附加元件的 Store 識別碼清單。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CollectionData">
+      <summary>如果使用者有使用 SKU 的權利，則取得目前產品 SKU 的其他資料。</summary>
+      <returns>物件，如果使用者有使用 SKU 的權利，會提供目前產品 SKU 的其他資料。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CustomDeveloperData">
+      <summary>取得自訂開發人員資料字串 (也稱為「標記」)，其中包含有關此產品 SKU 所表示之附加元件的自訂資訊。 這個字串會對應至合作夥伴中心的屬性頁中的 **\[自訂開發人員資料\]** 欄位值。</summary>
+      <returns>附加元件的自訂開發人員資料。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Description">
+      <summary>從 Microsoft Store 清單取得產品 SKU 描述。</summary>
+      <returns>來自 Microsoft Store 清單的產品 SKU 描述。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.ExtendedJsonData">
+      <summary>取得 Store 中目前產品 SKU 的 JSON 格式完整資料。</summary>
+      <returns>JSON 格式的字串，包含 Store 中目前產品 SKU 的完整資料。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Images">
+      <summary>從產品 SKU 的 Microsoft Store 清單取得影像。</summary>
+      <returns>StoreImage 物件集合，代表從產品 SKU 的 Microsoft Store 清單取得的影像。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsInUserCollection">
+      <summary>取得值，指出目前使用者是否有使用目前產品 SKU 的權利。</summary>
+      <returns>目前使用者有使用目前產品 SKU 的權利，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsSubscription">
+      <summary>取得值，表示目前產品 SKU 是否為有週期性帳單的訂閱。 如需訂閱的詳細資訊，請參閱 SubscriptionInfo 屬性。</summary>
+      <returns>如果目前產品 SKU 是週期性帳單的訂閱，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsTrial">
+      <summary>取得值，表示目前產品 SKU 是否為試用版 SKU。</summary>
+      <returns>如果目前產品 SKU 是試用版 SKU，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Language">
+      <summary>取得產品 SKU 的 Microsoft Store 清單資料的語言。</summary>
+      <returns>產品 SKU 的 Microsoft Store 清單資料。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Price">
+      <summary>取得這個產品 SKU 預設可用性的價格。</summary>
+      <returns>這個產品 SKU 預設可用性的價格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.StoreId">
+      <summary>取得此產品 SKU 的 Store 識別碼。</summary>
+      <returns>此產品 SKU 的 Store 識別碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.SubscriptionInfo">
+      <summary>取得這個產品 SKU 的訂閱資訊，如果這個產品 SKU 是有週期性帳單的訂閱。 若要判斷這個產品 SKU 是否為訂閱，請使用 IsSubscription 屬性。</summary>
+      <returns>物件，包含此產品 SKU 的訂閱資訊。 如果這個產品 SKU 不是週期性帳單的訂閱，這個屬性會傳回 **null**。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Title">
+      <summary>從 Microsoft Store 清單取得產品 SKU 標題。</summary>
+      <returns>來自 Microsoft Store 清單的產品 SKU 標題。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Videos">
+      <summary>從產品 SKU 的 Microsoft Store 清單取得影片。</summary>
+      <returns>StoreVideo 物件集合，代表從產品 SKU 的 Microsoft Store 清單取得的影片。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.GetIsInstalledAsync">
+      <summary>指出這個產品 SKU 是否已經安裝在目前裝置上。</summary>
+      <returns>非同步作業，會在順利完成，而且如果此產品 SKU 已經安裝在目前裝置上時傳回 true，否則為 false。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync">
+      <summary>要求購買此產品 SKU，並顯示用來透過 Microsoft Store 完成交易的 UI。</summary>
+      <returns>非同步作業，會在順利完成時傳回 StorePurchaseResult 物件，並提供有關購買的狀態與錯誤。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>要求購買此產品 SKU，並顯示用來透過 Microsoft Store 完成交易的 UI。 這個方法提供選項指定 Microsoft Store 中單一清單所表示的產品大型目錄內特定優惠的詳細資料，包括購買期間對使用者顯示的產品名稱。</summary>
+      <param name="storePurchaseProperties">指定購買要求的其他資訊的物件，包括購買期間對使用者顯示的產品名稱。</param>
+      <returns>非同步作業，會在順利完成時傳回 StorePurchaseResult 物件，並提供有關購買的狀態與錯誤。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSubscriptionInfo">
+      <summary>提供產品 SKU 訂閱資訊，表示有週期性帳單的訂閱。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriod">
+      <summary>取得訂閱的帳單持續時間，以 BillingPeriodUnit 屬性指定的單位表示。</summary>
+      <returns>帳單期間的持續時間，以 BillingPeriodUnit 屬性指定的單位表示。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriodUnit">
+      <summary>取得訂閱帳單期間的單位。</summary>
+      <returns>值，指定訂閱帳單期間的單位。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.HasTrialPeriod">
+      <summary>取得值，表示訂閱是否包含試用期。</summary>
+      <returns>如果訂閱包含試用期，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriod">
+      <summary>取得訂閱的試用期間，以 TrialPeriodUnit 屬性指定的單位表示。 若要判斷訂閱是否有試用期，請使用 HasTrialPeriod 屬性。</summary>
+      <returns>試用期間的持續時間，以 TrialPeriodUnit 屬性指定的單位表示。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriodUnit">
+      <summary>取得訂閱試用期的單位。</summary>
+      <returns>值，指定訂閱試用期的單位。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageResult">
+      <summary>為要求解除安裝目前應用程式之套件的要求提供回應資料。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.ExtendedError">
+      <summary>取得要求的錯誤碼，如果操作發生錯誤。</summary>
+      <returns>要求的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.Status">
+      <summary>取得套件解除安裝要求的狀態。</summary>
+      <returns>套件解除安裝要求的狀態。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageStatus">
+      <summary>定義值，表示套件解除安裝要求的狀態。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.CanceledByUser">
+      <summary>使用者已取消解除安裝作業。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Error">
+      <summary>因為發生不明錯誤，解除安裝作業不成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.NetworkError">
+      <summary>因為網路連線錯誤，解除安裝作業不成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Succeeded">
+      <summary>解除安裝作業成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.UninstallNotApplicable">
+      <summary>解除安裝作業不適用於指定的套件。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreVideo">
+      <summary>表示與 Microsoft Store 中產品清單相關聯的影片。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Caption">
+      <summary>取得影片的標題。</summary>
+      <returns>影片的標題。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Height">
+      <summary>取得影片的高度，以像素為單位。</summary>
+      <returns>影片的高度。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.PreviewImage">
+      <summary>取得為影片顯示的預覽影像。</summary>
+      <returns>為影片顯示的預覽影像。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Uri">
+      <summary>取得影片的 URI。</summary>
+      <returns>影片的 URI。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.VideoPurposeTag">
+      <summary>取得影片的標籤。</summary>
+      <returns>影片的標籤。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Width">
+      <summary>取得影片的寬度，以像素為單位。</summary>
+      <returns>視訊的寬度，以像素為單位。</returns>
+    </member>
+  </members>
+</doc>

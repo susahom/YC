@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.XboxLive.StorageApiContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.XboxLive.StorageApiContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Status">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Value">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Name">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Size">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Status">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Value">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync(System.UInt32,System.UInt32)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="startIndex">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="maxNumberOfItems">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetItemCountAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainer">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Name">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Provider">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.CreateBlobInfoQuery(System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="blobNamePrefix">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.GetAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="blobsToRead">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.ReadAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer})">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="blobsToRead">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync(Windows.Foundation.Collections.IPropertySet,Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="blobsToWrite">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="blobsToDelete">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="displayName">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitUpdatesAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer},Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="blobsToWrite">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="blobsToDelete">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="displayName">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.DisplayName">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.Name">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.NeedsSync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Status">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Value">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync(System.UInt32,System.UInt32)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="startIndex">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="maxNumberOfItems">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetItemCountAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Abort">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.BlobNotFound">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerNotInSync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerSyncFailed">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.InvalidContainerName">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoAccess">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoXboxLiveInfo">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ObjectExpired">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Ok">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.OutOfLocalStorage">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ProvidedBufferTooSmall">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.QuotaExceeded">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UpdateTooBig">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserCanceled">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserHasNoXboxLiveInfo">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult.Status">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProvider">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.ContainersChangedSinceLastSync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.User">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainer(System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="name">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery(System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="containerNamePrefix">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.DeleteContainerAsync(System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="name">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync(Windows.System.User,System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="user">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="serviceConfigId">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetRemainingBytesInQuotaAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetSyncOnDemandForUserAsync(Windows.System.User,System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="user">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="serviceConfigId">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Status">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Value">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+  </members>
+</doc>

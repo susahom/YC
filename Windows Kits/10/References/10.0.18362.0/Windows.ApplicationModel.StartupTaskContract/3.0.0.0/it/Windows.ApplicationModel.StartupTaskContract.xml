@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.StartupTaskContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.StartupTask">
+      <summary>Rappresenta un'app UWP o un'attività in background dell'applicazione desktop che viene eseguita all'avvio del sistema o quando l'utente accede al proprio dispositivo.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.StartupTask.State">
+      <summary>Ottiene lo stato (abilitato, disabilitato o disabilitato dall'utente) dell'attività di avvio.</summary>
+      <returns>Lo stato dell'attività di avvio.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.StartupTask.TaskId">
+      <summary>Ottiene l'ID dell'attività di avvio.</summary>
+      <returns>L'ID dell'attività di avvio.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.StartupTask.Disable">
+      <summary>Disabilita l'attività di avvio.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.StartupTask.GetAsync(System.String)">
+      <summary>Ottiene un'attività di avvio dall'ID.</summary>
+      <param name="taskId">L'ID dell'attività di avvio da ottenere.</param>
+      <returns>Al termine, questo metodo restituisce l'attività di avvio con l'ID specificato.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.StartupTask.GetForCurrentPackageAsync">
+      <summary>Ottiene tutte le attività di avvio per il pacchetto dell'app corrente.</summary>
+      <returns>Al termine, questo metodo restituisce tutte le attività di avvio per il pacchetto dell'app corrente.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.StartupTask.RequestEnableAsync">
+      <summary>Richiede che l'attività di avvio sia attivata. Se l'attività è stata disattivata dall'utente usando Gestione attività, questo metodo non esegue l'override della scelta e l'utente deve abilitare nuovamente l'attività manualmente.</summary>
+      <returns>Al termine, questo metodo restituisce lo stato dell'attività di avvio.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.StartupTaskContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.StartupTaskState">
+      <summary>Rappresenta lo stato (abilitato, disabilitato o disabilitato dall'utente) di un'attività di avvio.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.Disabled">
+      <summary>L'attività è disabilitata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.DisabledByPolicy">
+      <summary>L'attività è stata disabilitata dall'amministratore o da criteri di gruppo. Le piattaforme che non supportano le attività di avvio segnalano anche **DisabledByPolicy**.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.DisabledByUser">
+      <summary>L'attività è stata disabilitata dall'utente. Puoi essere abilitata nuovamente solo dall'utente.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.Enabled">
+      <summary>L'attività è abilitata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.EnabledByPolicy">
+      <summary>L'attività è stata abilitata dall'amministratore o da criteri di gruppo.</summary>
+    </member>
+  </members>
+</doc>

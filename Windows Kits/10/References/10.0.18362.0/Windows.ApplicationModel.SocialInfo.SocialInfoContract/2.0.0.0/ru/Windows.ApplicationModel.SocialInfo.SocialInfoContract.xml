@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.SocialInfo.SocialInfoContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem">
+      <summary>Представляет дочерний элемент SocialFeedItem.</summary>
+      <deprecated type="deprecate">Объект SocialFeedChildItem устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.#ctor">
+      <summary>Инициализирует новый экземпляр класса SocialFeedChildItem.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Author">
+      <summary>Возвращает автора дочернего элемента.</summary>
+      <returns>Автор дочернего элемента.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.PrimaryContent">
+      <summary>Возвращает основной объект SocialFeedContent, связанный с дочерним элементом.</summary>
+      <returns>Основной объект SocialFeedContent, связанный с дочерним элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SecondaryContent">
+      <summary>Возвращает вторичный объект SocialFeedContent, связанный с дочерним элементом.</summary>
+      <returns>Вторичный объект SocialFeedContent, связанный с дочерним элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SharedItem">
+      <summary>Возвращает элемент социальных сетей, который был передан пользователю другим пользователем службы.</summary>
+      <returns>Элемент социальной сети, который был передан пользователю.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.TargetUri">
+      <summary>Возвращает или задает универсальный код ресурса (URI) на целевом объекте, связанный с этим дочерним элементом.</summary>
+      <returns>Универсальный код ресурса (URI), связанный с дочерним элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Thumbnails">
+      <summary>Возвращает список изображений эскизов, связанный с этим дочерним элементом.</summary>
+      <returns>Список эскизов, связанный с этим дочерним элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Timestamp">
+      <summary>Возвращает или задает метку времени для этого дочернего элемента.</summary>
+      <returns>Метка времени для этого дочернего элемента.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedContent">
+      <summary>Представляет сообщение социальных сетей.</summary>
+      <deprecated type="deprecate">Объект SocialFeedContent устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Message">
+      <summary>Возвращает или задает сообщение социальных сетей.</summary>
+      <returns>Сообщение социальных сетей.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.TargetUri">
+      <summary>Возвращает или задает универсальный код ресурса (URI) для цели содержимого.</summary>
+      <returns>Универсальный код ресурса (URI) содержимого.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Title">
+      <summary>Возвращает или задает заголовок содержимого.</summary>
+      <returns>Заголовок содержимого.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItem">
+      <summary>Представляет элемент потока социальной сети.</summary>
+      <deprecated type="deprecate">Объект SocialFeedItem устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedItem.#ctor">
+      <summary>Инициализирует новый экземпляр класса SocialFeedItem.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Author">
+      <summary>Возвращает автора потока элемента социальной сети.</summary>
+      <returns>Автор потока элемента социальной сети.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeCountValue">
+      <summary>Возвращает или задает количество непросмотренных элементов на панели приложений.</summary>
+      <returns>Количество непросмотренных элементов на панели приложений.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeStyle">
+      <summary>Возвращает или задает стиль плитки приложения.</summary>
+      <returns>Стиль эмблемы приложения.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.ChildItem">
+      <summary>Возвращает или задает дочерний элемент, связанный с этим элементом потока социальных сетей.</summary>
+      <returns>Дочерний элемент, связанный с этим элементом потока социальных сетей.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.PrimaryContent">
+      <summary>Возвращает основной объект SocialFeedContent, связанный с элементом.</summary>
+      <returns>Основной объект SocialFeedContent, связанный с элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.RemoteId">
+      <summary>Возвращает или задает значение, которой используется для определения этого элемента в системе поставщика.</summary>
+      <returns>Значение, которой используется для определения этого элемента в системе поставщика.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SecondaryContent">
+      <summary>Возвращает вторичный объект SocialFeedContent, связанный с этим элементом.</summary>
+      <returns>Вторичный объект SocialFeedContent, связанный с этим элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SharedItem">
+      <summary>Возвращает элемент социальных сетей, который был передан пользователю другим пользователем службы.</summary>
+      <returns>Элемент социальных сетей, который был передан пользователю другим пользователем службы.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Style">
+      <summary>Возвращает или задает стиль этого элемента, например фотографию или изображение по умолчанию.</summary>
+      <returns>Стиль этого элемента.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.TargetUri">
+      <summary>Возвращает или задает универсальный код ресурса (URI) на целевом объекте, связанный с этим элементом.</summary>
+      <returns>Универсальный код ресурса (URI), связанный с этим элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Thumbnails">
+      <summary>Возвращает список эскизов, связанный с этим элементом.</summary>
+      <returns>Список эскизов, связанный с этим элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Timestamp">
+      <summary>Возвращает или задает метку времени для этого элемента.</summary>
+      <returns>Метка времени для этого элемента.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle">
+      <summary>Определяет типы элементов потока социальной сети.</summary>
+      <deprecated type="deprecate">Объект SocialFeedItemStyle устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Default">
+      <summary>Значение по умолчанию</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Photo">
+      <summary>Фотографический элемент</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedKind">
+      <summary>Определяет типы потоков социальных сетей.</summary>
+      <deprecated type="deprecate">Объект SocialFeedKind устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.ContactFeed">
+      <summary>Поток контакта.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.Dashboard">
+      <summary>Поток панели мониторинга</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.HomeFeed">
+      <summary>Домашний поток</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem">
+      <summary>Представляет элемент социальных сетей, который был передан пользователю другим пользователем службы.</summary>
+      <deprecated type="deprecate">Объект SocialFeedSharedItem устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.#ctor">
+      <summary>Инициализирует новый экземпляр класса SocialFeedSharedItem.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Content">
+      <summary>Возвращает объект SocialFeedContent, связанный с этим совместно используемым элементом.</summary>
+      <returns>Объект SocialFeedContent, связанный с этим совместно используемым элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.OriginalSource">
+      <summary>Возвращает или задает первоначальный универсальный код ресурса (URI) совместно используемого элемента.</summary>
+      <returns>Первоначальный универсальный код ресурса (URI) совместно используемого элемента.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.TargetUri">
+      <summary>Возвращает или задает универсальный код ресурса (URI) на целевом объекте, связанный с этим совместно используемым элементом.</summary>
+      <returns>Универсальный код ресурса (URI), связанный с общим элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Thumbnail">
+      <summary>Возвращает или задает эскиз, связанный с этим совместно используемым элементом.</summary>
+      <returns>Эскиз, связанный с этим совместно используемым элементом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Timestamp">
+      <summary>Возвращает или задает метку времени для этого совместно используемого элемента.</summary>
+      <returns>Метка времени для этого совместно используемого элемента.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode">
+      <summary>Указывает режимы обновления потока социальной сети.</summary>
+      <deprecated type="deprecate">Объект SocialFeedUpdateMode устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Append">
+      <summary>Режим Append</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Replace">
+      <summary>Режим Replace</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialInfoContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle">
+      <summary>Определяет типы эмблемы.</summary>
+      <deprecated type="deprecate">Объект SocialItemBadgeStyle устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Hidden">
+      <summary>Скрытая эмблема</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Visible">
+      <summary>Видимая эмблема</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.VisibleWithCount">
+      <summary>Видимая эмблема с отображаемым счетчиком непросмотренных элементов</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail">
+      <summary>Представляет изображение, связанное с элементом потока социальных сетей.</summary>
+      <deprecated type="deprecate">Объект SocialItemThumbnail устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.#ctor">
+      <summary>Инициализирует новый экземпляр класса SocialItemThumbnail.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.BitmapSize">
+      <summary>Возвращает или задает размер растрового изображения эскиза.</summary>
+      <returns>Размер растрового изображения эскиза.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.ImageUri">
+      <summary>Возвращает или задает универсальный код ресурса (URI) в файл изображения для этого эскиза.</summary>
+      <returns>Универсальный код ресурса (URI) в файл изображения для этого эскиза.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.TargetUri">
+      <summary>Возвращает или задает универсальный код ресурса (URI) на целевом объекте, связанный с этим эскизом.</summary>
+      <returns>Универсальный код ресурса (URI) на целевом объекте, связанный с этим эскизом.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.SetImageAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>Асинхронно задает изображение для этого эскиза из локального потока.</summary>
+      <deprecated type="deprecate">Объект ISocialItemThumbnail устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+      <param name="image">Поток изображения.</param>
+      <returns>Асинхронное действие, указывающее, что операция завершена.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialUserInfo">
+      <summary>Представляет пользователя службы поставщика услуг социальных сетей.</summary>
+      <deprecated type="deprecate">Объект SocialUserInfo устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.DisplayName">
+      <summary>Возвращает или задает имя пользователя социальной сети, подходящее для отображения.</summary>
+      <returns>Имя пользователя социальной сети, подходящее для отображения.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.RemoteId">
+      <summary>Возвращает или задает значение, определяющее пользователя службы социальной сети.</summary>
+      <returns>Значение, определяющее пользователя службы социальной сети.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.TargetUri">
+      <summary>Возвращает или задает уникальный код ресурса (URI) пользователя системы социальной сети.</summary>
+      <returns>Уникальный код ресурса (URI) пользователя системы социальной сети.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.UserName">
+      <summary>Возвращает или задает имя пользователя службы социальной сети.</summary>
+      <returns>Имя пользователя службы социальной сети.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater">
+      <summary>Представляет задачу, которая может обновлять элементы панели мониторинга.</summary>
+      <deprecated type="deprecate">Объект SocialDashboardItemUpdater устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Content">
+      <summary>Возвращает объект SocialFeedContent, который может быть обновлен.</summary>
+      <returns>Объект SocialFeedContent, который может быть обновлен.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.OwnerRemoteId">
+      <summary>Возвращает идентификатор, который определяет пользователя в системе поставщика.</summary>
+      <returns>Идентификатор, который определяет пользователя в системе поставщика.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.TargetUri">
+      <summary>Получает или задает универсальный код ресурса (URI), к которому нужно перейти, когда пользователь выбирает элемент.</summary>
+      <returns>URI, к которому нужно перейти, когда пользователь выбирает элемент/</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Thumbnail">
+      <summary>Возвращает или задает изображение эскиза для элемента панели мониторинга.</summary>
+      <returns>Изображение эскиза для элемента панели мониторинга.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Timestamp">
+      <summary>Возвращает или задает метку времени для этого обновления.</summary>
+      <returns>Метка времени для обновления.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.CommitAsync">
+      <summary>Асинхронно отправляет обновление после установки всех свойств.</summary>
+      <deprecated type="deprecate">Объект ISocialDashboardItemUpdater устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+      <returns>Асинхронное действие, указывающее, что операция завершена.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater">
+      <summary>Представляет задачу, которая может использоваться для обновления потока социальной сети.</summary>
+      <deprecated type="deprecate">Объект SocialFeedUpdater устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Items">
+      <summary>Возвращает список элементов потока социальной сети.</summary>
+      <returns>Список элементов потока социальной сети.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Kind">
+      <summary>Возвращает тип потока социальной сети.</summary>
+      <returns>Тип потока социальной сети.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.OwnerRemoteId">
+      <summary>Возвращает идентификатор, который определяет пользователя в системе поставщика.</summary>
+      <returns>Идентификатор, который определяет пользователя в системе поставщика.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.CommitAsync">
+      <summary>Асинхронно отправляет обновление после установки всех свойств.</summary>
+      <deprecated type="deprecate">Объект ISocialFeedUpdater устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+      <returns>Асинхронное действие, указывающее, что операция завершена.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager">
+      <summary>Предоставляет функцию приложения, позволяющую ему использовать расширенные функции социальной сети.</summary>
+      <deprecated type="deprecate">Объект SocialInfoProviderManager устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateDashboardItemUpdaterAsync(System.String)">
+      <summary>Создает новый объект SocialDashboardItemUpdater, который можно использовать в качестве задачи.</summary>
+      <deprecated type="deprecate">Объект ISocialInfoProviderManagerStatics устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+      <param name="ownerRemoteId">Идентификатор, который определяет пользователя в системе поставщика.</param>
+      <returns>Недавно созданный объект SocialDashboardItemUpdater, который представляет ошибку.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateSocialFeedUpdaterAsync(Windows.ApplicationModel.SocialInfo.SocialFeedKind,Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode,System.String)">
+      <summary>Создает новый объект SocialFeedUpdater, который можно использовать в качестве задачи.</summary>
+      <deprecated type="deprecate">Объект ISocialInfoProviderManagerStatics устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+      <param name="kind">Тип потока социальной сети, который требуется создать.</param>
+      <param name="mode">Указывает режим append или replace.</param>
+      <param name="ownerRemoteId">Идентификатор, который определяет пользователя в системе поставщика.</param>
+      <returns>Созданный объект SocialFeedUpdater.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.DeprovisionAsync">
+      <summary>Отзывает приложение от использования расширений социальной сети.</summary>
+      <deprecated type="deprecate">Объект ISocialInfoProviderManagerStatics устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+      <returns>Асинхронное действие, указывающее, что операция завершена.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ProvisionAsync">
+      <summary>Подготавливает приложение, которое будет использовать расширения социальной сети.</summary>
+      <deprecated type="deprecate">Объект ISocialInfoProviderManagerStatics устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+      <returns>Логическое значение, указывающее, выполнена ли операция успешно.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ReportNewContentAvailable(System.String,Windows.ApplicationModel.SocialInfo.SocialFeedKind)">
+      <summary>Уведомляет систему о том, что в этом приложении доступно новое содержимое мультимедиа социальной сети.</summary>
+      <deprecated type="deprecate">Объект ISocialInfoProviderManagerStatics устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+      <param name="contactRemoteId">Идентификатор, который определяет пользователя в системе поставщика.</param>
+      <param name="kind">Тип потока социальной сети.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.UpdateBadgeCountValue(System.String,System.Int32)">
+      <summary>Обновляет значение счетчика эмблемы на экране блокировки.</summary>
+      <deprecated type="deprecate">Объект ISocialInfoProviderManagerStatics устарел и может не работать на всех платформах. Подробнее см. в MSDN.</deprecated>
+      <param name="itemRemoteId">Определяет контакт в системе поставщика.</param>
+      <param name="newCount">Новое значение счетчика для отображения на эмблеме.</param>
+    </member>
+  </members>
+</doc>

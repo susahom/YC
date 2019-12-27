@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Security.EnterpriseData.EnterpriseDataContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Security.EnterpriseData.BufferProtectUnprotectResult">
+      <summary>Содержит сведения о результатах защиты или снятия защиты буфера с корпоративной защитой.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.BufferProtectUnprotectResult.Buffer">
+      <summary>Возвращает буфер с корпоративной защитой, который был защищен или с которого была снята защита.</summary>
+      <returns>Буфер с корпоративной защитой.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.BufferProtectUnprotectResult.ProtectionInfo">
+      <summary>Возвращает объект DataProtectionInfo, связанный с буфером с корпоративной защитой, который был защищен или с которого была снята защита.</summary>
+      <returns>Объект, связанный с буфером с корпоративной защитой.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.DataProtectionInfo">
+      <summary>Содержит сведения о потоке или буфере с корпоративной защитой.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.DataProtectionInfo.Identity">
+      <summary>Корпоративное удостоверение потока или буфера с корпоративной защитой.</summary>
+      <returns>Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.DataProtectionInfo.Status">
+      <summary>Состояние защиты для потока или буфера с корпоративной защитой.</summary>
+      <returns>Значение перечисления DataProtectionStatus.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.DataProtectionManager">
+      <summary>Обеспечивает доступ к операциям, которые управляют потоками и буферами, защищенными корпоративным удостоверением.</summary>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.DataProtectionManager.GetProtectionInfoAsync(Windows.Storage.Streams.IBuffer)">
+      <summary>Возвращает состояние буфера с корпоративной защитой.</summary>
+      <param name="protectedData">Буфер, для которого запрашивается состояние защиты.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект DataProtectionInfo, содержащий состояние буфера.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.DataProtectionManager.GetStreamProtectionInfoAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>Возвращает состояние потока с корпоративной защитой.</summary>
+      <param name="protectedStream">Поток, для которого запрашивается состояние защиты.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект DataProtectionInfo, содержащий состояние потока.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.DataProtectionManager.ProtectAsync(Windows.Storage.Streams.IBuffer,System.String)">
+      <summary>Защита данных в буфере корпоративным удостоверением.</summary>
+      <param name="data">Защищаемый буфер.</param>
+      <param name="identity">Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект BufferProtectUnprotectResult, содержащий состояние только что защищенного буфера.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.DataProtectionManager.ProtectStreamAsync(Windows.Storage.Streams.IInputStream,System.String,Windows.Storage.Streams.IOutputStream)">
+      <summary>Защита потока данных корпоративным удостоверением.</summary>
+      <param name="unprotectedStream">Входной незащищенный поток.</param>
+      <param name="identity">Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="protectedStream">Выходной защищенный поток.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект DataProtectionInfo, содержащий состояние защищенного потока.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.DataProtectionManager.UnprotectAsync(Windows.Storage.Streams.IBuffer)">
+      <summary>Снимает защиту буфера корпоративным удостоверением.</summary>
+      <param name="data">Буфер, с которого снимается защита.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект BufferProtectUnprotectResult, содержащий состояние только незащищенного буфера.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.DataProtectionManager.UnprotectStreamAsync(Windows.Storage.Streams.IInputStream,Windows.Storage.Streams.IOutputStream)">
+      <summary>Снимает защиту потока данных корпоративным удостоверением.</summary>
+      <param name="protectedStream">Входной защищенный поток.</param>
+      <param name="unprotectedStream">Выходной незащищенный поток.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект DataProtectionInfo, содержащий состояние незащищенного потока.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.DataProtectionStatus">
+      <summary>Описывает состояние защиты корпоративным удостоверением буфера или потока.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.DataProtectionStatus.AccessSuspended">
+      <summary>Ключи для доступа к защищенному элементу были удалены, а устройство заблокировано.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.DataProtectionStatus.LicenseExpired">
+      <summary>Срок действия лицензии RMS истек. Это значение в данный момент не поддерживается.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.DataProtectionStatus.Protected">
+      <summary>Элемент защищен.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.DataProtectionStatus.ProtectedToOtherIdentity">
+      <summary>Элемент защищен другим корпоративным удостоверением.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.DataProtectionStatus.Revoked">
+      <summary>Защита элемента была отозвана.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.DataProtectionStatus.Unprotected">
+      <summary>Элемент не защищен корпоративным удостоверением.</summary>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.EnforcementLevel">
+      <summary>Набор перечисленных значений, которые описывают уровни применения Windows Information Protection (WIP). Уровень применения WIP — это один аспект конфигурации политики управления мобильными устройствами (MDM).</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.EnforcementLevel.Block">
+      <summary>Политика требует заблокировать пользователя. В ответ на попытку действия, например на вставку данных в несанкционированное приложение, ваше приложение должно блокировать действие и провести его аудит.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.EnforcementLevel.NoProtection">
+      <summary>Политика не требует защиты. Ваше приложение должно отключить WIP, если данные защищены, и отменить защиту данных.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.EnforcementLevel.Override">
+      <summary>Политика требует разрешить пользователю переопределить предупреждение. В ответ на попытку действия, например на вставку данных в несанкционированное приложение, ваше приложение должно запросить разрешение у пользователя с помощью предупреждения, которое можно переопределить. Если пользователь переопределит предупреждение, приложение должно выполнить действие и провести его аудит.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.EnforcementLevel.Silent">
+      <summary>Политика требует автоматическую защиту. Ваше приложение не должно отображать запрос в ответ на попытку действия, например на вставку данных в несанкционированное приложение. Вместо этого приложение должно автоматически разрешить действие и провести его аудит.</summary>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.EnterpriseDataContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.FileProtectionInfo">
+      <summary>Содержит сведения о файле с корпоративной защитой.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.FileProtectionInfo.Identity">
+      <summary>Корпоративное удостоверение файла с корпоративной защитой.</summary>
+      <returns>Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.FileProtectionInfo.IsProtectWhileOpenSupported">
+      <summary>Определяет, может ли ваше приложение защитить файл, пока он открыт.</summary>
+      <returns>Значение **true**, если ваше приложение может защитить файл, пока он открыт, или **false**, если эта возможность не поддерживается на устройстве.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.FileProtectionInfo.IsRoamable">
+      <summary>Определяет, может ли файл с корпоративной защитой переноситься на другие устройства.</summary>
+      <returns>Значение **true**, если защиту файла можно переносить на другие устройства.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.FileProtectionInfo.Status">
+      <summary>Состояние защиты файла с корпоративной защитой.</summary>
+      <returns>Значение перечисления FileProtectionStatus.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.FileProtectionManager">
+      <summary>Обеспечивает доступ к операциям, которые управляют файлами, защищенными корпоративным удостоверением.</summary>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.CopyProtectionAsync(Windows.Storage.IStorageItem,Windows.Storage.IStorageItem)">
+      <summary>Реплицирует защиту с одного файла на другой.</summary>
+      <param name="source">Исходный файл, из которого копируется защита файлов.</param>
+      <param name="target">Целевой файл, в который копируется защита файлов.</param>
+      <returns>В результате успешного вызова этого метода возвращается значение **true**, если защита файлов была скопирована, или **false**, если произошла ошибка.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.CreateProtectedAndOpenAsync(Windows.Storage.IStorageFolder,System.String,System.String,Windows.Storage.CreationCollisionOption)">
+      <summary>Создает файл с корпоративной защитой.</summary>
+      <param name="parentFolder">Папка, в которой создается файл с корпоративной защитой.</param>
+      <param name="desiredName">Желаемое имя нового файла с корпоративной защитой.</param>
+      <param name="identity">Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="collisionOption">Значение CreationCollisionOption, указывающее, что делать, если папка с именем *desiredName* уже существует.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект ProtectedFileCreateResult, представляющий вновь созданный защищенный файл.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.GetProtectionInfoAsync(Windows.Storage.IStorageItem)">
+      <summary>Возвращает состояние файла с корпоративной защитой.</summary>
+      <param name="source">Файл или папка, для которой запрашивается состояние защиты.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект FileProtectionInfo, содержащий состояние файла.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.IsContainerAsync(Windows.Storage.IStorageFile)">
+      <summary>Используйте это свойство, чтобы определить, является ли файл хранилища контейнером с файлом, содержащимся в нем.</summary>
+      <param name="file">Файл, для которого необходимо определить, является ли он контейнером.</param>
+      <returns>Значение **true**, если файл хранилища является контейнером; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.LoadFileFromContainerAsync(Windows.Storage.IStorageFile)">
+      <summary>Создает файл с корпоративной защитой и загружает его из файла-контейнера.</summary>
+      <param name="containerFile">Файл с корпоративной защитой, который должен быть создан и загружен.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект ProtectedContainerImportResult, представляющий вновь созданный защищенный файл.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.LoadFileFromContainerAsync(Windows.Storage.IStorageFile,Windows.Storage.IStorageItem)">
+      <summary>Создает файл с корпоративной защитой в указанном элементе хранилища (например, папки) и загружает его из файла-контейнера.</summary>
+      <param name="containerFile">Файл с корпоративной защитой, который должен быть создан и загружен.</param>
+      <param name="target">Элемент хранилища, в котором создается файл с корпоративной защитой.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект ProtectedContainerImportResult, представляющий вновь созданный защищенный файл.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.LoadFileFromContainerAsync(Windows.Storage.IStorageFile,Windows.Storage.IStorageItem,Windows.Storage.NameCollisionOption)">
+      <summary>Создает файл с корпоративной защитой в указанном элементе хранилища (например, папки) и загружает его из файла-контейнера.</summary>
+      <param name="containerFile">Файл с корпоративной защитой, который должен быть создан и загружен.</param>
+      <param name="target">Элемент хранилища, в котором создается файл с корпоративной защитой.</param>
+      <param name="collisionOption">Значение перечисления, определяющее, как Windows реагирует, если имя созданного файла совпадает с именем существующего элемента в местоположении контейнера.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект ProtectedContainerImportResult, представляющий вновь созданный защищенный файл.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.ProtectAsync(Windows.Storage.IStorageItem,System.String)">
+      <summary>Защита данных в файле корпоративным удостоверением. Затем приложение может использовать стандартный API для чтения из файла или записи в него.</summary>
+      <param name="target">Защищаемый файл.</param>
+      <param name="identity">Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Используйте ProtectionPolicyManager.IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен является управляемым, перед использованием идентификатора для защиты файла.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект FileProtectionInfo, содержащий состояние только что защищенного файла.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.SaveFileAsContainerAsync(Windows.Storage.IStorageFile)">
+      <summary>Сохраняет файл с корпоративной защитой в виде контейнерной версии.</summary>
+      <param name="protectedFile">Копируемый защищенный файл источника.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект ProtectedContainerExportResult, представляющий вновь созданный файл-контейнер.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.SaveFileAsContainerAsync(Windows.Storage.IStorageFile,Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Сохраните файл с корпоративной защитой в виде контейнерной версии и поделитесь им с указанными пользователями.</summary>
+      <param name="protectedFile">Копируемый защищенный файл источника.</param>
+      <param name="sharedWithIdentities">Коллекция строк, представляющая удостоверения пользователей, которым будет предоставлен доступ к контейнерному файлу. Например, это могут быть получатели электронной почты.</param>
+      <returns>При успешном завершении вызова этого метода возвращается объект ProtectedContainerExportResult, представляющий вновь созданный файл-контейнер.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.UnprotectAsync(Windows.Storage.IStorageItem)">
+      <summary>Снимает защиту с файла с корпоративной защитой.</summary>
+      <param name="target">Файл, с которого требуется снять защиту.</param>
+      <returns>В результате успешного вызова этого метода возвращается объект FileProtectionInfo, предоставляющий сведения о состоянии защиты файла.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileProtectionManager.UnprotectAsync(Windows.Storage.IStorageItem,Windows.Security.EnterpriseData.FileUnprotectOptions)">
+      <summary>Снимает защиту с файла с корпоративной защитой.</summary>
+      <param name="target">Файл, с которого требуется снять защиту.</param>
+      <param name="options">Объект, указывающий, следует ли выполнять аудит этого действия.</param>
+      <returns>В результате успешного вызова этого метода возвращается объект FileProtectionInfo, предоставляющий сведения о состоянии защиты файла.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.FileProtectionStatus">
+      <summary>Описывает состояние корпоративной защиты файла или папки.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.AccessSuspended">
+      <summary>Ключи для доступа к защищенному элементу были удалены, а устройство заблокировано.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.FileInUse">
+      <summary>Элемент используется другим процессом. Корпоративную защиту можно применить, только если элемент станет исключительно доступным.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.LicenseExpired">
+      <summary>Срок действия лицензии RMS истек.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.NotProtectable">
+      <summary>Элемент зашифрован или является системным файлом, он не может быть защищен с помощью корпоративной защиты.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.Protected">
+      <summary>Элемент защищен с помощью корпоративной защиты, и ваше и приложение может открыть этот файл, поскольку он находится в списке разрешенных согласно политике.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.ProtectedByOtherUser">
+      <summary>Другой пользователь применил к этому элементу корпоративную защиту.</summary>
+      <deprecated type="deprecate">Элемент ProtectedByOtherUser может стать недоступным в выпусках, следующих за Windows 10. Используйте вместо него ProtectedToOtherIdentity.</deprecated>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.ProtectedToOtherEnterprise">
+      <summary>Элемент защищен с помощью корпоративной защиты для другого идентификатора предприятия.</summary>
+      <deprecated type="deprecate">Состояние ProtectedToOtherEnterprise может стать недоступным в выпусках, следующих за Windows 10. Используйте вместо него ProtectedToOtherIdentity.</deprecated>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.ProtectedToOtherIdentity">
+      <summary>Элемент защищен с помощью корпоративной защиты для другого идентификатора предприятия.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.Revoked">
+      <summary>Элемент был отозван с помощью корпоративной защиты.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.Undetermined">
+      <summary>Элемент является шифрующим или расшифровывающим, а состояние корпоративной защиты не может быть определено. Повторите проверку позже.</summary>
+      <deprecated type="deprecate">Элемент Undetermined может стать недоступным в выпусках, следующих за Windows 10. Взамен используйте Unknown.</deprecated>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.Unknown">
+      <summary>Элемент является шифрующим или расшифровывающим, а состояние корпоративной защиты не может быть определено. Повторите проверку позже.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.FileProtectionStatus.Unprotected">
+      <summary>Элемент не защищен с помощью корпоративной защиты.</summary>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.FileRevocationManager">
+      <summary>Предоставляет доступ к операциям выборочной очистки.</summary>
+      <deprecated type="deprecate">Элемент FileRevocationManager может стать недоступным в выпусках, следующих за Windows 10. Взамен используйте FileProtectionManager.</deprecated>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileRevocationManager.CopyProtectionAsync(Windows.Storage.IStorageItem,Windows.Storage.IStorageItem)">
+      <summary>Скопируйте состояние защиты файла или папки от селективного стирания в новый файл или папку.</summary>
+      <deprecated type="deprecate">Элемент FileRevocationManager может стать недоступным в выпусках, следующих за Windows 10. Взамен используйте FileProtectionManager.</deprecated>
+      <param name="sourceStorageItem">Исходный элемент, из которого копируется состояние защиты с помощью выборочной очистки.</param>
+      <param name="targetStorageItem">Целевой объект для копирования статуса защиты выборочного удаления.</param>
+      <returns>Значение true, если операция копирования выполнена успешно; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileRevocationManager.GetStatusAsync(Windows.Storage.IStorageItem)">
+      <summary>Получает статус защиты от выборочного удаления для файла или папки.</summary>
+      <deprecated type="deprecate">Элемент FileRevocationManager может стать недоступным в выпусках, следующих за Windows 10. Взамен используйте FileProtectionManager.</deprecated>
+      <param name="storageItem">Файл или папка, для которой необходимо получить состояние защиты с помощью выборочной очистки.</param>
+      <returns>Асинхронная операция, получающая состояние защиты от выборочной очистки для элемента *storageItem*.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileRevocationManager.ProtectAsync(Windows.Storage.IStorageItem,System.String)">
+      <summary>Защищает файл или папку на случай выборочной очистки.</summary>
+      <deprecated type="deprecate">Элемент FileRevocationManager может стать недоступным в выпусках, следующих за Windows 10. Взамен используйте FileProtectionManager.</deprecated>
+      <param name="storageItem">Файл или папку, защищаемые с помощью выборочной очистки.</param>
+      <param name="enterpriseIdentity">Идентификатор предприятия, для которого защищены файл или папка. Значение *enterpriseIdentity* должно быть отформатировано как международное доменное имя (IDN) и не должно содержать пробелов. Пример: **contoso.com**.</param>
+      <returns>Асинхронная операция, получающая состояние защиты от выборочной очистки для элемента *storageItem*.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileRevocationManager.Revoke(System.String)">
+      <summary>Отзывает все файлы и папки, защищенные на случай выборочной очистки, для указанного идентификатора предприятия.</summary>
+      <deprecated type="deprecate">Элемент FileRevocationManager может стать недоступным в выпусках, следующих за Windows 10. Взамен используйте FileProtectionManager.</deprecated>
+      <param name="enterpriseIdentity">Отозвать все файлы и папки, защищенные выборочной очисткой, для данного идентификатора предприятия. Значение *enterpriseIdentity* должно быть отформатировано как международное доменное имя (IDN) и не должно содержать пробелов. Пример: **contoso.com**.</param>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.FileUnprotectOptions">
+      <summary>Содержит параметры, применимые к снятию корпоративной защиты с файла.</summary>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.FileUnprotectOptions.#ctor(System.Boolean)">
+      <summary>Создает экземпляр класса FileUnprotectOptions.</summary>
+      <param name="audit">Указывает, будет ли это действие заноситься в журнал аудита.</param>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.FileUnprotectOptions.Audit">
+      <summary>Указывает, будет ли действие снятия защиты заноситься в журнал аудита.</summary>
+      <returns>Значение **true**, если снятие защиты с файла будет заноситься в журнал аудита; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectedAccessResumedEventArgs">
+      <summary>Предоставляет данные при возобновлении защиты содержимого.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedAccessResumedEventArgs.Identities">
+      <summary>Содержит идентификаторы предприятия, для которых возобновляется защита содержимого.</summary>
+      <returns>Идентификаторы предприятия, для которых возобновляется защита содержимого.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectedAccessSuspendingEventArgs">
+      <summary>Предоставляет данные при приостановке защиты содержимого.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedAccessSuspendingEventArgs.Deadline">
+      <summary>DateTime при приостановке защиты содержимого. Приложение может вычесть **DateTime.Now** из этого значения, чтобы определить, сколько времени осталось на обработку данных до приостановки.</summary>
+      <returns>DateTime при приостановке защиты содержимого.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedAccessSuspendingEventArgs.Identities">
+      <summary>Содержит идентификаторы предприятия, для которых приостанавливается защита содержимого.</summary>
+      <returns>Идентификаторы предприятия, для которых приостанавливается защита содержимого.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectedAccessSuspendingEventArgs.GetDeferral">
+      <summary>Возвращает объект Deferral, который управляет приостановкой защиты. Приложение должно вызвать метод **Deferral.Complete**, прежде чем возвращаться из обработчика событий.</summary>
+      <returns>Объект Deferral.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectedContainerExportResult">
+      <summary>Представляет результат файла с корпоративной защитой, который был экспортирован в файл-контейнер.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedContainerExportResult.File">
+      <summary>Файл-контейнер, который был экспортирован из файла с корпоративной защитой.</summary>
+      <returns>Файл-контейнер, который был экспортирован из файла с корпоративной защитой.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedContainerExportResult.Status">
+      <summary>Статус защиты после экспорта файла с корпоративной защитой в файл-контейнер.</summary>
+      <returns>Значение перечисления ProtectedImportExportStatus.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectedContainerImportResult">
+      <summary>Представляет результат файла с корпоративной защитой, который был импортирован из файла-контейнера.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedContainerImportResult.File">
+      <summary>Файл с корпоративной защитой, который был загружен из файла-контейнера.</summary>
+      <returns>Файл с корпоративной защитой, который был загружен из файла-контейнера.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedContainerImportResult.Status">
+      <summary>Статус защиты после импорта файла с корпоративной защитой из файла-контейнера.</summary>
+      <returns>Значение перечисления ProtectedImportExportStatus.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectedContentRevokedEventArgs">
+      <summary>Предоставляет данные при отзыве защиты содержимого.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedContentRevokedEventArgs.Identities">
+      <summary>Содержит идентификаторы предприятия, для которых отзывается защита содержимого.</summary>
+      <returns>Идентификаторы предприятия, для которых отзывается защита содержимого.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectedFileCreateResult">
+      <summary>Содержит сведения о только что созданном файле с корпоративной защитой.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedFileCreateResult.File">
+      <summary>Только что созданный файл с корпоративной защитой.</summary>
+      <returns>Только что созданный файл с корпоративной защитой.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedFileCreateResult.ProtectionInfo">
+      <summary>Сведения о файле с корпоративной защитой.</summary>
+      <returns>Сведения о файле с корпоративной защитой.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectedFileCreateResult.Stream">
+      <summary>Поточный произвольный доступ к только что созданному файлу с корпоративной защитой.</summary>
+      <returns>Поточный произвольный доступ к только что созданному файлу с корпоративной защитой.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectedImportExportStatus">
+      <summary>Возможные значения состояния для файла с корпоративной защитой, который был импортирован из файла-контейнера или экспортирован в него.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectedImportExportStatus.AccessSuspended">
+      <summary>Ключи для доступа к защищенному файлу были удалены, а устройство заблокировано.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectedImportExportStatus.LicenseExpired">
+      <summary>Срок действия лицензии RMS файла истек.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectedImportExportStatus.NotRoamable">
+      <summary>Файл не может быть перенесен на другое устройство.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectedImportExportStatus.Ok">
+      <summary>Защита файла в исправном состоянии.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectedImportExportStatus.ProtectedToOtherIdentity">
+      <summary>Файл недоступен, поскольку защищен другим идентификатором предприятия.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectedImportExportStatus.Revoked">
+      <summary>Защита файла была отозвана, и он недоступен.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectedImportExportStatus.Undetermined">
+      <summary>Защиту файла невозможно определить.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectedImportExportStatus.Unprotected">
+      <summary>Файл не защищен.</summary>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectionPolicyAuditAction">
+      <summary>Определяет константы, задающие действие аудита.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectionPolicyAuditAction.CopyToLocation">
+      <summary>Указывает, что данные копируются.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectionPolicyAuditAction.Decrypt">
+      <summary>Указывает действие расшифровки.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectionPolicyAuditAction.Other">
+      <summary>Указывает другое действие.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectionPolicyAuditAction.SendToRecipient">
+      <summary>Указывает, что данные передаются получателю.</summary>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo">
+      <summary>Представляет сведения, необходимые для аудита.</summary>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo.#ctor(Windows.Security.EnterpriseData.ProtectionPolicyAuditAction,System.String)">
+      <summary>Инициализирует новый экземпляр класса.</summary>
+      <param name="action">Действие аудита.</param>
+      <param name="dataDescription">Описание данных, для которых проводится аудит.</param>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo.#ctor(Windows.Security.EnterpriseData.ProtectionPolicyAuditAction,System.String,System.String,System.String)">
+      <summary>Инициализирует новый экземпляр класса.</summary>
+      <param name="action">Действие аудита.</param>
+      <param name="dataDescription">Описание данных, для которых проводится аудит.</param>
+      <param name="sourceDescription">Описание источника данных.</param>
+      <param name="targetDescription">Описание цели данных.</param>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo.Action">
+      <summary>Действие аудита.</summary>
+      <returns>Действие аудита.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo.DataDescription">
+      <summary>Описание данных, для которых проводится аудит.</summary>
+      <returns>Описание данных, для которых проводится аудит.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo.SourceDescription">
+      <summary>Описание источника данных.</summary>
+      <returns>Описание источника данных.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo.TargetDescription">
+      <summary>Описание цели данных.</summary>
+      <returns>Описание цели данных.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectionPolicyManager">
+      <summary>Управляет политикой корпоративной защиты для защищенного содержимого.</summary>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectionPolicyManager.Identity">
+      <summary>Возвращает или задает идентификатор предприятия.</summary>
+      <returns>Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectionPolicyManager.IsProtectionEnabled">
+      <summary>Используйте это свойство, чтобы определить, включена ли функция Windows Information Protection (WIP) на устройстве.</summary>
+      <returns>Значение **true**, если защита WIP включена; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectionPolicyManager.PrimaryManagedIdentity">
+      <summary>Возвращает идентификатор основного предприятия.</summary>
+      <returns>Идентификатор основного предприятия. Это адрес электронной почты или управляемый домен. Если с объектом ProtectionPolicyManager не связано ни одного управляемого удостоверения, это свойство возвращает значение **null**.</returns>
+    </member>
+    <member name="P:Windows.Security.EnterpriseData.ProtectionPolicyManager.ShowEnterpriseIndicator">
+      <summary>Значение, указывающее, должна ли оболочка оформить окно так, чтобы указать, что это корпоративное окно.</summary>
+      <returns>Значение **true**, если оболочка должна оформить окно как корпоративное; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="E:Windows.Security.EnterpriseData.ProtectionPolicyManager.PolicyChanged">
+      <summary>Событие, которое вызывается в ответ на изменения в политике Windows Information Protection (WIP), управляемой поставщиком служб шифрования политики.</summary>
+    </member>
+    <member name="E:Windows.Security.EnterpriseData.ProtectionPolicyManager.ProtectedAccessResumed">
+      <summary>Событие для получения уведомления о возобновлении защиты, при котором регистрируется приложение.</summary>
+    </member>
+    <member name="E:Windows.Security.EnterpriseData.ProtectionPolicyManager.ProtectedAccessSuspending">
+      <summary>Событие для получения уведомления о приостановке защиты, при котором регистрируется приложение.</summary>
+    </member>
+    <member name="E:Windows.Security.EnterpriseData.ProtectionPolicyManager.ProtectedContentRevoked">
+      <summary>Событие для получения уведомления об отзыве защиты, при котором регистрируется приложение. Когда приложение получает это событие, оно должно определить через ProtectedContentRevokedEventArgs.Identities, у каких корпоративных сущностей отозвана защита, и вызвать RevokeContent, а также удалить все метаданные, связанные с идентификатором. Это событие не возникает, когда ваше приложение вызывает RevokeContent для отзыва собственного доступа.</summary>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.CheckAccess(System.String,System.String)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для идентификатора.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия источника приложения. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="targetIdentity">Идентификатор предприятия, который необходимо проверить, имеет доступ к защищенному содержимому.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.CheckAccessForApp(System.String,System.String)">
+      <summary>Выполнить оценку политики корпоративной защиты для передачи данных между приложением и определенным целевым приложением.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия источника приложения. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="appPackageFamilyName">Имя семейства пакетов приложения, для которого необходимо проверить доступ к защищенному содержимому.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.ClearProcessUIPolicy">
+      <summary>Отменяет обеспечение политики пользовательского интерфейса для идентификатора предприятия. Приложение вызывает этот метод, прежде чем отображать содержимое без корпоративной защиты.</summary>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.CreateCurrentThreadNetworkContext(System.String)">
+      <summary>Создает ThreadNetworkContext, защищенный для корпоративного удостоверения. Создание контекста помечает идентификатором все сетевые подключения, налаженные впоследствии в текущем потоке, и обеспечивает доступ к корпоративным ресурсам, доступом к которым управляет политика предприятия.</summary>
+      <param name="identity">Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Это значение может быть возвращено GetPrimaryManagedIdentityForNetworkEndpoint; в противном случае приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен является управляемым.</param>
+      <returns>Защищенный контекст сети. Приложение должно вызывать метод ThreadNetworkContext.Close после завершения доступа к ресурсу.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.GetEnforcementLevel(System.String)">
+      <summary>Этот метод можно использовать для определения текущего уровня применения функции Windows Information Protection (WIP). Уровень применения WIP — это один аспект конфигурации политики управления мобильными устройствами (MDM).</summary>
+      <param name="identity">Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <returns>Значение перечисления EnforcementLevel.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.GetForCurrentView">
+      <summary>Возвращает объект ProtectionPolicyManager, связанный с текущим окном приложения.</summary>
+      <returns>Объект ProtectionPolicyManager, связанный с текущим окном приложения.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.GetPrimaryManagedIdentityForIdentity(System.String)">
+      <summary>Получает родительное или основное удостоверение определенного дочернего или вспомогательного удостоверения.</summary>
+      <param name="identity">Дочернее или вспомогательное удостоверение, для которого требуется получить родительское или основное удостоверение.</param>
+      <returns>Родительское или основное удостоверение.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.GetPrimaryManagedIdentityForNetworkEndpointAsync(Windows.Networking.HostName)">
+      <summary>Возвращает идентификатор предприятия сетевого ресурса, если ресурс находится на конечной точке, управляемой корпоративной политикой.</summary>
+      <param name="endpointHost">Имя узла или IP-адрес сетевого ресурса.</param>
+      <returns>Корпоративное удостоверение.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.HasContentBeenRevokedSince(System.String,Windows.Foundation.DateTime)">
+      <summary>Используйте этот метод, чтобы проверить (для известного идентификатора, который является или являлся управляемым), был ли доступ к защищенным данным отозван после указанных даты и времени или он по-прежнему активен. Обратите внимание, что этот API возвращает значение true для неизвестного удостоверения (то есть, удостоверения, которое никогда не было управляемым и не является им сейчас). Это сделано для того, чтобы приложение могло удалить данные, связанные с удостоверением, сведения о котором отсутствуют. Дополнительные сведения см. в разделе "Примечания".</summary>
+      <param name="identity">Корпоративное удостоверение, защищающее данные. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="since">Дата и время, период после которых требуется включить в проверку.</param>
+      <returns>Значение **true**, если доступ был отозван с указанных даты и времени; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.IsFileProtectionRequiredAsync(Windows.Storage.IStorageItem,System.String)">
+      <summary>Указывает, следует ли защитить файл корпоративным удостоверением.</summary>
+      <param name="target">Файл, для которого требуется узнать необходимость защиты.</param>
+      <param name="identity">Корпоративное удостоверение.</param>
+      <returns>Значение **true**, если файл следует защитить; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.IsFileProtectionRequiredForNewFileAsync(Windows.Storage.IStorageFolder,System.String,System.String)">
+      <summary>Указывает, следует ли защитить файл корпоративным удостоверением.</summary>
+      <param name="parentFolder">Папка, содержащая файлы, для которых требуется узнать необходимость защиты.</param>
+      <param name="identity">Корпоративное удостоверение.</param>
+      <param name="desiredName">Имя, которое вы хотите присвоить файлу.</param>
+      <returns>Значение **true**, если файлы в этой папке следует защитить; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.IsIdentityManaged(System.String)">
+      <summary>Определяет, управляется ли сущность предприятия корпоративной политикой.</summary>
+      <param name="identity">Корпоративное удостоверение. Это адрес электронной почты или домен.</param>
+      <returns>Значение **true**, если идентификатор предприятия является управляемым; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.IsProtectionUnderLockRequired(System.String)">
+      <summary>Используйте это свойство, чтобы определить значение ProtectionUnderLockConfigRequired политики WIP.</summary>
+      <param name="identity">Для идентификатора предприятия, который необходимо проверить, задана политика ProtectionUnderLockConfigRequired.</param>
+      <returns>Значение **true**, если для идентификатора задана политика ProtectionUnderLockConfigRequired; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.IsRoamableProtectionEnabled(System.String)">
+      <summary>Определяет, настроена ли политика для защиты файлов, которые копируются на съемные диски с помощью Azure Information Protection.</summary>
+      <param name="identity">Корпоративное удостоверение.</param>
+      <returns>Значение **true**, если файлы будут защищены с помощью ключей RMS; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.IsUserDecryptionAllowed(System.String)">
+      <summary>Используйте это свойство, чтобы определить, разрешена ли расшифровка файлов, защищенных с помощью Windows Information Protection WIP.</summary>
+      <param name="identity">Идентификатор предприятия, который необходимо проверить, имеет доступ к защищенному содержимому.</param>
+      <returns>Значение **true**, если расшифровка файлов, защищенных WIP, разрешена; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.LogAuditEvent(System.String,System.String,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo)">
+      <summary>Вызывает запись события аудита в журнал.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия объекта, для которого защищено содержимое. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="targetIdentity">Идентификатор предприятия, для которого раскрывается содержимое. Это адрес электронной почты или домен.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessAsync(System.String,System.String)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для идентификатора.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия объекта, для которого защищено содержимое. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="targetIdentity">Идентификатор предприятия, для которого раскрывается содержимое. Это адрес электронной почты или домен.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessAsync(System.String,System.String,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для идентификатора.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия объекта, для которого защищено содержимое. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="targetIdentity">Идентификатор предприятия, для которого раскрывается содержимое. Это адрес электронной почты или домен.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessAsync(System.String,System.String,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo,System.String)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для идентификатора.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия объекта, для которого защищено содержимое. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="targetIdentity">Идентификатор предприятия, для которого раскрывается содержимое. Это адрес электронной почты или домен.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <param name="messageFromApp">Сообщение, которое будет отображаться в диалоговом окне подтверждения, чтобы пользователь мог принять решение.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessAsync(System.String,System.String,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo,System.String,Windows.Security.EnterpriseData.ProtectionPolicyRequestAccessBehavior)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для удостоверения.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия объекта, для которого защищено содержимое.</param>
+      <param name="targetIdentity">Идентификатор предприятия, для которого раскрывается содержимое. Это адрес электронной почты или домен.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <param name="messageFromApp">Сообщение, которое будет отображаться в диалоговом окне подтверждения, чтобы пользователь мог принять решение.</param>
+      <param name="behavior">Константа, определяющая, как вы хотите переопределить поведение политики по умолчанию.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessForAppAsync(System.String,System.String)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для заданного целевого приложения.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия объекта, для которого защищено содержимое. Это адрес электронной почты или управляемый домен. Приложение может использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="appPackageFamilyName">Описание имени семейства пакетов приложения.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessForAppAsync(System.String,System.String,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для заданного целевого приложения.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия объекта, для которого защищено содержимое. Это адрес электронной почты или управляемый домен. Приложение может использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="appPackageFamilyName">Описание имени семейства пакетов приложения.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessForAppAsync(System.String,System.String,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo,System.String)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для заданного целевого приложения.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия объекта, для которого защищено содержимое. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <param name="appPackageFamilyName">Идентификатор предприятия, для которого раскрывается содержимое. Это адрес электронной почты или домен.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <param name="messageFromApp">Сообщение, которое будет отображаться в диалоговом окне подтверждения, чтобы пользователь мог принять решение.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessForAppAsync(System.String,System.String,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo,System.String,Windows.Security.EnterpriseData.ProtectionPolicyRequestAccessBehavior)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для заданного целевого приложения.</summary>
+      <param name="sourceIdentity">Идентификатор предприятия объекта, для которого защищено содержимое. Это адрес электронной почты или управляемый домен.</param>
+      <param name="appPackageFamilyName">Идентификатор предприятия, для которого раскрывается содержимое. Это адрес электронной почты или домен.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <param name="messageFromApp">Сообщение, которое будет отображаться в диалоговом окне подтверждения, чтобы пользователь мог принять решение.</param>
+      <param name="behavior">Константа, определяющая, как вы хотите переопределить поведение политики по умолчанию.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessToFilesForAppAsync(Windows.Foundation.Collections.IIterable{Windows.Storage.IStorageItem},System.String,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для заданного приложения.</summary>
+      <param name="sourceItemList">Массив файлов, к которым требуется предоставить доступ.</param>
+      <param name="appPackageFamilyName">Имя пакета приложения, для которого требуется предоставить разрешение.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessToFilesForAppAsync(Windows.Foundation.Collections.IIterable{Windows.Storage.IStorageItem},System.String,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo,System.String,Windows.Security.EnterpriseData.ProtectionPolicyRequestAccessBehavior)">
+      <summary>Запрашивает возможность доступа к содержимому с корпоративной защитой для заданного приложения.</summary>
+      <param name="sourceItemList">Массив файлов, к которым требуется предоставить доступ.</param>
+      <param name="appPackageFamilyName">Имя пакета приложения, для которого требуется предоставить разрешение.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <param name="messageFromApp">Сообщение, которое будет отображаться в диалоговом окне подтверждения, чтобы пользователь мог принять решение.</param>
+      <param name="behavior">Константа, определяющая, как вы хотите переопределить поведение политики по умолчанию.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessToFilesForProcessAsync(Windows.Foundation.Collections.IIterable{Windows.Storage.IStorageItem},System.UInt32,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo)">
+      <summary>Запрашивает доступ к содержимому с корпоративной защитой для процесса приложения.</summary>
+      <param name="sourceItemList">Массив файлов, к которым требуется предоставить доступ.</param>
+      <param name="processId">Идентификатор процесса, для которого требуется предоставить разрешение.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RequestAccessToFilesForProcessAsync(Windows.Foundation.Collections.IIterable{Windows.Storage.IStorageItem},System.UInt32,Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo,System.String,Windows.Security.EnterpriseData.ProtectionPolicyRequestAccessBehavior)">
+      <summary>Запрашивает доступ к содержимому с корпоративной защитой для процесса приложения.</summary>
+      <param name="sourceItemList">Массив файлов, к которым требуется предоставить доступ.</param>
+      <param name="processId">Идентификатор процесса, для которого требуется предоставить разрешение.</param>
+      <param name="auditInfo">Объект данных аудита; экземпляр ProtectionPolicyAuditInfo.</param>
+      <param name="messageFromApp">Сообщение, которое будет отображаться в диалоговом окне подтверждения, чтобы пользователь мог принять решение.</param>
+      <param name="behavior">Константа, определяющая, как вы хотите переопределить поведение политики по умолчанию.</param>
+      <returns>Значение перечисления ProtectionPolicyEvaluationResult, являющееся результатом запроса.</returns>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.RevokeContent(System.String)">
+      <summary>Отзывает ключи, необходимые для получения доступа ко всему содержимому, защищенному заданным идентификатором предприятия.</summary>
+      <param name="identity">Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ProtectionPolicyManager.TryApplyProcessUIPolicy(System.String)">
+      <summary>Включает обеспечение политики пользовательского интерфейса для идентификатора предприятия. Когда приложение готово отобразить защищенный файл (например, формат PDF) или ресурс (буфер или поток) в своем пользовательском интерфейсе, оно должно включить обеспечение политики пользовательского интерфейса на основе идентификатора, которым защищен файл. Вызов к TryApplyProcessUIPolicy гарантирует, что операционная система знает о текущем контексте приложения.</summary>
+      <param name="identity">Корпоративное удостоверение. Это адрес электронной почты или управляемый домен. Приложение должно использовать IsIdentityManaged, чтобы убедиться, что адрес электронной почты или домен управляемые.</param>
+      <returns>Значение **true**, если идентификатор управляется корпоративной политикой; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ProtectionPolicyRequestAccessBehavior">
+      <summary>Определяет константы, с помощью которых можно переопределить поведение по умолчанию при перегрузке запросов доступа для класса ProtectionPolicyManager.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectionPolicyRequestAccessBehavior.Decrypt">
+      <summary>Указывает, что действие переопределения выполняется ожидаемым образом.</summary>
+    </member>
+    <member name="F:Windows.Security.EnterpriseData.ProtectionPolicyRequestAccessBehavior.TreatOverridePolicyAsBlock">
+      <summary>Указывает, что действие переопределения выполняется как действие блокировки.</summary>
+    </member>
+    <member name="T:Windows.Security.EnterpriseData.ThreadNetworkContext">
+      <summary>Защищенный контекст сети для идентификатора предприятия. Создание контекста помечает идентификатором все сетевые подключения, налаженные впоследствии в текущем потоке, и обеспечивает доступ к корпоративным ресурсам, доступом к которым управляет политика предприятия.</summary>
+    </member>
+    <member name="M:Windows.Security.EnterpriseData.ThreadNetworkContext.Close">
+      <summary>Закрывает защищенный контекст сети. Во избежание соперничества с другими задачами приложение должно вызывать метод Close, когда инициируется доступ к защищенному ресурсу.</summary>
+    </member>
+  </members>
+</doc>

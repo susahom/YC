@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.TargetedContent.TargetedContentContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAction">
+      <summary>TargetedContentValueKind 작업의 TargetedContentValue를 나타냅니다.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentAction.InvokeAsync">
+      <summary>작업을 호출합니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAppInstallationState">
+      <summary>TargetedContentAppInstallState가 보유할 수 있는 모든 값을 정의하는 Enum(NotApplicable, NotInstalled 또는 Installed)입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.Installed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.NotApplicable">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAppInstallationState.NotInstalled">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAvailability">
+      <summary>TargetedContentAvailability가 보유할 수 있는 모든 값을 정의하는 Enum(All, Partial 또는 None)입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.All">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.None">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentAvailability.Partial">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentAvailabilityChangedEventArgs">
+      <summary>가용성 변경됨 이벤트에 대한 인수를 나타냅니다.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentAvailabilityChangedEventArgs.GetDeferral">
+      <summary>가용성 변경됨 이벤트에 대한 인수를 나타냅니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentChangedEventArgs">
+      <summary>콘텐츠 변경됨 이벤트에 대한 인수를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentChangedEventArgs.HasPreviousContentExpired">
+      <summary>TargetedContentChangedEventArgs의 이전 콘텐츠가 만료되었는지 나타내는 부울 값을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentChangedEventArgs.GetDeferral">
+      <summary>지연을 가져옵니다. 비동기 처리기가 필요합니다. 이벤트가 처리될 때 호출자가 Complete를 호출해야 합니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentCollection">
+      <summary>TargetedContentContainer 개체에 있는 항목 컬렉션 또는 하위 컬렉션을 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Collections">
+      <summary>TargetedContentContainer 개체에 있는 TargetedContentCollection 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Id">
+      <summary>컬렉션의 ID를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Items">
+      <summary>TargetedContentCollection 개체에 있는 TargetedContentItems 컬렉션을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Path">
+      <summary>TargetedContentCollection 개체의 경로를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentCollection.Properties">
+      <summary>속성 이름이 키이고 TargetedContentValues가 TargetedContentCollection 개체에 있는 값인 컬렉션을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentCollection.ReportCustomInteraction(System.String)">
+      <summary>TargetedContentCollection 개체에 대한 사용자 지정 상호 작용을 보고합니다.</summary>
+      <param name="customInteractionName">
+      </param>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentCollection.ReportInteraction(Windows.Services.TargetedContent.TargetedContentInteraction)">
+      <summary>TargetedContentCollection 개체에 대한 상호 작용을 보고합니다.</summary>
+      <param name="interaction">
+      </param>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentContainer">
+      <summary>TargetedContentSubscription 개체에 있는 모든 콘텐츠에 대한 컨테이너를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Availability">
+      <summary>TargetedContentContainer 개체에 대한 TargetedContentAvailability를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Content">
+      <summary>TargetedContentContainer 개체에 대한 TargetedContentCollection 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Id">
+      <summary>TargetedContainerContainer 개체의 ID를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentContainer.Timestamp">
+      <summary>콘텐츠가 마지막으로 업데이트된 시간입니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentContainer.GetAsync(System.String)">
+      <summary>지정된 ContentId에 대한 TargetedContainerContainer 개체를 반환합니다.</summary>
+      <param name="contentId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentContainer.SelectSingleObject(System.String)">
+      <summary>TargetedContentContainer 개체에 있는 TargetedContentObject 개체를 가져옵니다.</summary>
+      <param name="path">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentFile">
+      <summary>TargetedContentValueKind 파일의 TargetedContentValue를 나타냅니다.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentFile.OpenReadAsync">
+      <summary>읽기 전용 임의 액세스를 위한 스트림을 엽니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentImage">
+      <summary>TargetedContentValueKind 이미지의 TargetedContentValue를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentImage.Height">
+      <summary>TargetedContentImage 개체의 높이를 나타내는 값을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentImage.Width">
+      <summary>TargetedContentImage 개체의 너비를 나타내는 값을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentImage.OpenReadAsync">
+      <summary>읽기 전용 임의 액세스를 위한 스트림을 엽니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentInteraction">
+      <summary>TargetedContentInteraction이 보유할 수 있는 모든 값을 정의하는 Enum입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Accept">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Canceled">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.ClickThrough">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Conversion">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Decline">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Defer">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Dislike">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Dismiss">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Hover">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Impression">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Ineligible">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Like">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentInteraction.Opportunity">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentItem">
+      <summary>TargetedContentCollection으로 항목을 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Collections">
+      <summary>TargetedContentItem 개체에 있는 TargetedContentCollection 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Path">
+      <summary>TargetedContentItem 개체의 문자열 경로를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.Properties">
+      <summary>TargetedContentItem 개체에 속성 이름을 키와 TargetedContentValues로 포함하는 컬렉션을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItem.State">
+      <summary>항목에 대한 TargetedContentItemState를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentItem.ReportCustomInteraction(System.String)">
+      <summary>항목에 대한 사용자 지정 상호 작용을 보고합니다.</summary>
+      <param name="customInteractionName">
+      </param>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentItem.ReportInteraction(Windows.Services.TargetedContent.TargetedContentInteraction)">
+      <summary>항목에 대한 TargetedContentInteraction을 보고합니다.</summary>
+      <param name="interaction">
+      </param>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentItemState">
+      <summary>TargetedContentItem 개체의 상태를 AppInstallationState, ShouldDisplay로 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItemState.AppInstallationState">
+      <summary>항목에 대한 TargetedContentAppInstallationState를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentItemState.ShouldDisplay">
+      <summary>항목의 ShouldDisplay 상태에 대한 부울을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentObject">
+      <summary>TargetedContentContainer 내에서 단일 개체를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Collection">
+      <summary>TargetedContentObject 개체에 있는 TargetedContentCollection 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Item">
+      <summary>TargetedContentObject 개체에 있는 TargetedContentItem 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.ObjectKind">
+      <summary>TargetedContentObject 개체에 대한 TargetedContentObjectKind 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentObject.Value">
+      <summary>TargetedContentObject 개체에 대한 TargetedContentValue 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentObjectKind">
+      <summary>TargetedContentObject 개체가 보유할 수 있는 모든 유형의 값을 정의하는 Enum입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Collection">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Item">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentObjectKind.Value">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentStateChangedEventArgs">
+      <summary>상태 변경됨 이벤트에 대한 인수를 나타냅니다.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentStateChangedEventArgs.GetDeferral">
+      <summary>지연을 가져옵니다. 비동기 처리기가 필요합니다. 이벤트가 처리될 때 호출자가 Complete를 호출해야 합니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentSubscription">
+      <summary>구독 개체를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscription.Id">
+      <summary>구독의 ID를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.AvailabilityChanged">
+      <summary>TargetedContentSubscription 가용성이 변경되었을 때 이벤트가 호출되었습니다.</summary>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.ContentChanged">
+      <summary>TargetedContentSubscription 콘텐츠가 변경되었을 때 이벤트가 호출되었습니다.</summary>
+    </member>
+    <member name="E:Windows.Services.TargetedContent.TargetedContentSubscription.StateChanged">
+      <summary>TargetedContentSubscription 상태가 변경되었을 때 이벤트가 호출되었습니다.</summary>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetAsync(System.String)">
+      <summary>subscriptionID에 대한 TargetedContentContainer 개체를 반환합니다.</summary>
+      <param name="subscriptionId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetContentContainerAsync">
+      <summary>TargetedContentSubscription에 대한 TargetedContentContainer 개체를 반환합니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscription.GetOptions(System.String)">
+      <summary>지정된 구독에 대한 TargetedContentSubscriptionOptions로 가져옵니다.</summary>
+      <param name="subscriptionId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions">
+      <summary>CloudQuery 매개 변수, 로컬 필터, 부분 콘텐츠 가용성 형태로 구독 옵션을 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.AllowPartialContentAvailability">
+      <summary>TargetedContentSubscription 개체에 대한 부분 콘텐츠 가용성을 가져오거나 설정합니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.CloudQueryParameters">
+      <summary>TargetedContentSubscription 개체에 대한 Cloud Query 매개 변수 컬렉션을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.LocalFilters">
+      <summary>TargetedContentSubscription 개체에 대한 로컬 필터 컬렉션을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.SubscriptionId">
+      <summary>구독의 ID를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Services.TargetedContent.TargetedContentSubscriptionOptions.Update">
+      <summary>구독을 위해 TargetedContentSubscriptionOptions 개체를 업데이트합니다.</summary>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentValue">
+      <summary>구독을 위한 콘텐츠 값 개체를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Action">
+      <summary>TargetedContentValue 개체에 있는 TargetedContentAction 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Actions">
+      <summary>TargetedContentValue 개체에 있는 TargetedContentAction 개체 배열을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Boolean">
+      <summary>TargetedContentValue 개체의 부울을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Booleans">
+      <summary>TargetedContentValue 개체의 부울 배열을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.File">
+      <summary>TargetedContentValue 개체에 있는 TargetedContentFile 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Files">
+      <summary>TargetedContentValue 개체에 있는 TargetedContentFile 개체 배열을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ImageFile">
+      <summary>TargetedContentValue 개체에 있는 TargetedContentImage 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ImageFiles">
+      <summary>TargetedContentValue 개체에 있는 TargetedContentImage 개체 배열을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Number">
+      <summary>TargetedContentValue 개체의 double을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Numbers">
+      <summary>TargetedContentValue 개체의 double 배열을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Path">
+      <summary>TargetedContentValue 개체의 문자열 경로를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.String">
+      <summary>TargetedContentValue 개체의 문자열을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Strings">
+      <summary>TargetedContentValue 개체의 문자열 배열을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Uri">
+      <summary>TargetedContentValue 개체에 있는 URI 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.Uris">
+      <summary>TargetedContentValue 개체에 있는 URI 개체 배열을 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Services.TargetedContent.TargetedContentValue.ValueKind">
+      <summary>TargetedContentValue 개체에 대한 TargetedContentValueKind 개체를 가져옵니다.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Services.TargetedContent.TargetedContentValueKind">
+      <summary>TargetedContentContainer 내에서 가능한 모든 값 콘텐츠의 유형을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Action">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Actions">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Boolean">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Booleans">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.File">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Files">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.ImageFile">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.ImageFiles">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Number">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Numbers">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.String">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Strings">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Uri">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Services.TargetedContent.TargetedContentValueKind.Uris">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

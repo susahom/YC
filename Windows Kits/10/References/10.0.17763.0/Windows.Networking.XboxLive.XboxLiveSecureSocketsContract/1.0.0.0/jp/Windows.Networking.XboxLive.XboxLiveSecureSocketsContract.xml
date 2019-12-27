@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.XboxLive.XboxLiveSecureSocketsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveDeviceAddress">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsLocal">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsValid">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.MaxSnapshotBytesSize">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.NetworkAccessKind">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveDeviceAddress.SnapshotChanged">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.Compare(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="otherDeviceAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBase64(System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="base64">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBuffer(Windows.Storage.Streams.IBuffer)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="buffer">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBytes(System.Byte[])">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="buffer">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetLocal">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBase64">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBuffer">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBytes(System.Byte[],System.UInt32@)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="buffer">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="bytesWritten">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPair">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalHostName">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalPort">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteDeviceAddress">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteHostName">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemotePort">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.State">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.Template">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPair.StateChanged">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.DeleteAsync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairByHostNamesAndPorts(Windows.Networking.HostName,System.String,Windows.Networking.HostName,System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="localHostName">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="localPort">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="remoteHostName">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="remotePort">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairBySocketAddressBytes(System.Byte[],System.Byte[])">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="localSocketAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="remoteSocketAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetLocalSocketAddressBytes(System.Byte[])">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="socketAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetRemoteSocketAddressBytes(System.Byte[])">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="socketAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.None">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.ReevaluatePath">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.DeviceAddress">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.EndpointPair">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.IsExistingPathEvaluation">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.Status">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Canceled">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.LocalSystemNotAuthorized">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoCompatibleNetworkPaths">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoLocalNetworks">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RefusedDueToConfiguration">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RemoteSystemNotAuthorized">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Succeeded">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.TimedOut">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.UnexpectedInternalError">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairState">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingInbound">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingOutbound">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Deleted">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.DeletingLocally">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Invalid">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Ready">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.RemoteEndpointTerminating">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.NewState">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.OldState">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeLower">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeUpper">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.EndpointPairs">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeLower">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeUpper">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Name">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.SocketKind">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Templates">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InboundEndpointPairCreated">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="deviceAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="deviceAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="behaviors">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="deviceAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="initiatorPort">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="acceptorPort">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="deviceAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="initiatorPort">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="acceptorPort">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="behaviors">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.GetTemplateByName(System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="name">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs.EndpointPair">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Moderate">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Open">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Strict">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.#ctor">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.DeviceAddresses">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemInboundBandwidthConstrained">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemOutboundBandwidthConstrained">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxPrivatePayloadSize">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxSimultaneousProbeConnections">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MetricResults">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.Metrics">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfProbesToAttempt">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfResultsPending">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PrivatePayloadResults">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishedPrivatePayload">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ShouldRequestPrivatePayloads">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.TimeoutInMilliseconds">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ClearPrivatePayload">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="deviceAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="metric">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForDevice(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="deviceAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForMetric(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="metric">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetPrivatePayloadResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="deviceAddress">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MeasureAsync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishPrivatePayloadBytes(System.Byte[])">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="payload">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Canceled">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgress">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgressWithProvisionalResults">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.LocalSystemNotAuthorized">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoCompatibleNetworkPaths">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoLocalNetworks">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NotStarted">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RefusedDueToConfiguration">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RemoteSystemNotAuthorized">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Succeeded">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.TimedOut">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.UnexpectedInternalError">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageInboundBitsPerSecond">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageLatencyInMilliseconds">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageOutboundBitsPerSecond">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxInboundBitsPerSecond">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxLatencyInMilliseconds">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxOutboundBitsPerSecond">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinInboundBitsPerSecond">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinLatencyInMilliseconds">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinOutboundBitsPerSecond">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.DeviceAddress">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Metric">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Status">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Value">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.DeviceAddress">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Status">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Value">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSecureSocketsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSocketKind">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Datagram">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.None">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Stream">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+  </members>
+</doc>

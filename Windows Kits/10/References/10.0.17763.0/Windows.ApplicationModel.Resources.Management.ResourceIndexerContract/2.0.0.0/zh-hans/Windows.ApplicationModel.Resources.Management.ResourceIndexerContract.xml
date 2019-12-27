@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Resources.Management.ResourceIndexerContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate">
+      <summary>表示给定资源以及与该资源相关联的限定符的单个可能值。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Metadata">
+      <summary>获取元数据名称值对的列表。</summary>
+      <returns>字符串对列表，每个字符串对都包含 IndexedResourceQualifier 的名称及其值。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Qualifiers">
+      <summary>获取 IndexedResourceQualifier s 的列表。</summary>
+      <returns>IndexedResourceQualifier s 的列表。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Type">
+      <summary>获取确定资源是文件还是字符串的类型属性。</summary>
+      <returns>IndexedResourceType 枚举中的一个值。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.Uri">
+      <summary>获取命名资源 Uri。</summary>
+      <returns>命名资源 Uri。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.ValueAsString">
+      <summary>获取作为 String 的候选项的值。</summary>
+      <returns>如果候选项是文件，则该值为相对于传递给 ResourceIndexer 构造函数的项目根的文件路径（例如“images\logo.scale-100.png”）。 如果候选项是字符串，则该值是实际字符串（例如 "Hello World"）。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate.GetQualifierValue(System.String)">
+      <summary>已知其名称，返回限定符的值。</summary>
+      <param name="qualifierName">限定符的名称。</param>
+      <returns>限定符的值。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier">
+      <summary>表示声明资源合适的上下文的对象。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier.QualifierName">
+      <summary>获取限定符的名称。</summary>
+      <returns>限定符的名称，如“语言”、“对比”或“缩放”。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier.QualifierValue">
+      <summary>获取限定符的值。</summary>
+      <returns>限定符的值。 应从建立索引期间发现的第一个限定符实例保留限定符值的情况。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.IndexedResourceType">
+      <summary>指定 IndexedResourceCandidate 是文件还是字符串。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.EmbeddedData">
+      <summary>保留。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.Path">
+      <summary>IndexedResourceCandidate 是文件。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Resources.Management.IndexedResourceType.String">
+      <summary>IndexedResourceCandidate 是字符串。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.ResourceIndexer">
+      <summary>索引源资源文件或容器，并使用特定文件和文件夹命名约定生成命名资源候选。</summary>
+      <deprecated type="deprecate">使用 mrmsupport.dll 中的 CreateResourceIndexer 而不是 ResourceIndexer。  有关更多信息，请参见 MSDN。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.#ctor(Windows.Foundation.Uri)">
+      <summary>创建指定项目文件的根的新 ResourceIndexer。</summary>
+      <deprecated type="deprecate">使用 mrmsupport.dll 中的 CreateResourceIndexer 而不是 IResourceIndexerFactory。  有关更多信息，请参见 MSDN。</deprecated>
+      <param name="projectRoot">项目根文件夹 (file:// URI)。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.#ctor(Windows.Foundation.Uri,Windows.Foundation.Uri)">
+      <summary>创建指定项目文件和扩展 DLL 的根的新 ResourceIndexer。</summary>
+      <deprecated type="deprecate">使用 mrmsupport.dll 中的 CreateResourceIndexer 而不是 IResourceIndexerFactory2。  有关更多信息，请参见 MSDN。</deprecated>
+      <param name="projectRoot">项目根文件夹 (file:// URI)。</param>
+      <param name="extensionDllPath">扩展 DLL 路径 (file:// URI)。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.IndexFileContentsAsync(Windows.Foundation.Uri)">
+      <summary>索引文件和文件夹命名约定的 ResW、ResJSON、PRI 或 PRI XML 转储文件路径，并将限定符应用于在文件的内容中找到的资源。</summary>
+      <deprecated type="deprecate">使用 mrmsupport.dll 中的 IndexFilePath 而不是 IResourceIndexer。  有关更多信息，请参见 MSDN。</deprecated>
+      <param name="file">要对其建立索引的文件 (file:// URI)。 路径必须是包含指定驱动器号的绝对路径。 Uri 还可提供假定为本地文件系统的空授权。 不支持长文件路径。</param>
+      <returns>*文件*内找到的 IndexedResourceCandidate 对象的列表。 如果未找到任何内容，则为空列表。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Resources.Management.ResourceIndexer.IndexFilePath(Windows.Foundation.Uri)">
+      <summary>索引文件和文件夹命名约定的文件路径。</summary>
+      <deprecated type="deprecate">使用 mrmsupport.dll 中的 IndexFilePath 而不是 IResourceIndexer。  有关更多信息，请参见 MSDN。</deprecated>
+      <param name="filePath">要对其建立索引的文件 (file:// URI)。 路径必须是包含指定驱动器号的绝对路径。 Uri 还可提供假定为本地文件系统的空授权。 不支持长文件路径。</param>
+      <returns>表示已建立索引的文件资源的 IndexedResourceCandidate 对象。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Resources.Management.ResourceIndexerContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.SocialInfo.SocialInfoContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem">
+      <summary>代表 SocialFeedItem 的子項目。</summary>
+      <deprecated type="deprecate">SocialFeedChildItem 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.#ctor">
+      <summary>初始化 SocialFeedChildItem 類別的新執行個體。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Author">
+      <summary>取得子項目的作者。</summary>
+      <returns>子項目的作者。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.PrimaryContent">
+      <summary>取得與子項目相關聯的主要 SocialFeedContent 物件。</summary>
+      <returns>與子項目相關聯的主要 SocialFeedContent 物件。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SecondaryContent">
+      <summary>取得與子項目相關聯的次要 SocialFeedContent 物件。</summary>
+      <returns>與子項目相關聯的次要 SocialFeedContent 物件。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SharedItem">
+      <summary>取得另一名服務使用者與此使用者共用的社交媒體項目。</summary>
+      <returns>與使用者共用的社交媒體項目。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.TargetUri">
+      <summary>取得或設定與這個子項目相關聯之目標項目的統一資源識別元 (URI)。</summary>
+      <returns>與子項目相關聯的統一資源識別元 (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Thumbnails">
+      <summary>取得與子項目相關聯的縮圖影像清單。</summary>
+      <returns>與子項目相關聯的縮圖影像清單。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Timestamp">
+      <summary>取得或設定子項目的時間戳記。</summary>
+      <returns>子項目的時間戳記。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedContent">
+      <summary>表示社交媒體訊息。</summary>
+      <deprecated type="deprecate">SocialFeedContent 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Message">
+      <summary>取得或設定社交媒體訊息。</summary>
+      <returns>社交媒體訊息。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.TargetUri">
+      <summary>取得或設定內容之目標的統一資源識別元 (URI)。</summary>
+      <returns>內容的統一資源識別元 (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Title">
+      <summary>取得或設定內容的標題。</summary>
+      <returns>內容的標題。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItem">
+      <summary>表示社交媒體摘要項目。</summary>
+      <deprecated type="deprecate">SocialFeedItem 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedItem.#ctor">
+      <summary>初始化 SocialFeedItem 類別的新執行個體。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Author">
+      <summary>取得社交媒體摘要項目的作者。</summary>
+      <returns>社交媒體摘要項目的作者。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeCountValue">
+      <summary>取得或設定應用程式徽章上顯示的未查看項目數。</summary>
+      <returns>應用程式徽章上顯示的未查看項目數。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeStyle">
+      <summary>取得或設定應用程式的徽章樣式。</summary>
+      <returns>應用程式的徽章樣式。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.ChildItem">
+      <summary>取得或設定與此社交摘要項目相關聯的子項目。</summary>
+      <returns>與此社交摘要項目相關聯的子項目。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.PrimaryContent">
+      <summary>取得與項目相關聯的主要 SocialFeedContent 物件。</summary>
+      <returns>與項目相關聯的主要 SocialFeedContent 物件。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.RemoteId">
+      <summary>取得或設定值，用來在提供者的系統上識別這個項目。</summary>
+      <returns>值，用來在提供者的系統上識別這個項目。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SecondaryContent">
+      <summary>取得與此項目相關聯的次要 SocialFeedContent 物件。</summary>
+      <returns>與此項目相關聯的次要 SocialFeedContent 物件。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SharedItem">
+      <summary>取得另一名服務使用者與此使用者共用的社交媒體項目。</summary>
+      <returns>另一名服務使用者與此使用者共用的社交媒體項目。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Style">
+      <summary>取得或設定這個項目的樣式，例如相片或預設。</summary>
+      <returns>這個項目的樣式。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.TargetUri">
+      <summary>取得或設定與這個項目相關聯之目標項目的統一資源識別元 (URI)。</summary>
+      <returns>與此項目相關聯的統一資源識別元 (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Thumbnails">
+      <summary>取得與此項目相關聯的縮圖影像清單。</summary>
+      <returns>與此項目相關聯的縮圖影像清單。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Timestamp">
+      <summary>取得或設定此項目的時間戳記。</summary>
+      <returns>此項目的時間戳記。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle">
+      <summary>定義社交媒體摘要項目的類型。</summary>
+      <deprecated type="deprecate">SocialFeedItemStyle 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Default">
+      <summary>預設值</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Photo">
+      <summary>相片項目。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedKind">
+      <summary>定義社交媒體摘要的類型。</summary>
+      <deprecated type="deprecate">SocialFeedKind 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.ContactFeed">
+      <summary>連絡人摘要</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.Dashboard">
+      <summary>儀表板摘要</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.HomeFeed">
+      <summary>首頁摘要</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem">
+      <summary>表示另一名服務使用者與此使用者共用的社交媒體項目。</summary>
+      <deprecated type="deprecate">SocialFeedSharedItem 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.#ctor">
+      <summary>初始化 SocialFeedSharedItem 類別的新執行個體。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Content">
+      <summary>取得與共用項目相關聯的 SocialFeedContent 物件。</summary>
+      <returns>與共用項目相關聯的 SocialFeedContent 物件。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.OriginalSource">
+      <summary>取得或設定共用項目的原始統一資源識別元 (URI)。</summary>
+      <returns>共用項目的原始統一資源識別元 (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.TargetUri">
+      <summary>取得或設定與這個共用項目相關聯之目標項目的統一資源識別元 (URI)。</summary>
+      <returns>與共用項目相關聯的統一資源識別元 (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Thumbnail">
+      <summary>取得或設定與此共用項目相關聯的縮圖影像。</summary>
+      <returns>與此共用項目相關聯的縮圖影像。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Timestamp">
+      <summary>取得或設定此共用項目的時間戳記。</summary>
+      <returns>此共用項目的時間戳記。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode">
+      <summary>定義更新社交媒體摘要的模式。</summary>
+      <deprecated type="deprecate">SocialFeedUpdateMode 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Append">
+      <summary>附加模式</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Replace">
+      <summary>取代模式</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialInfoContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle">
+      <summary>定義應用程式徽章的類型。</summary>
+      <deprecated type="deprecate">SocialItemBadgeStyle 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Hidden">
+      <summary>隱藏徽章</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Visible">
+      <summary>顯示徽章</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.VisibleWithCount">
+      <summary>顯示徽章與未查看項目計數</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail">
+      <summary>表示與社交媒體摘要項目相關聯的縮圖影像。</summary>
+      <deprecated type="deprecate">SocialItemThumbnail 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.#ctor">
+      <summary>初始化 SocialItemThumbnail 類別的新執行個體。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.BitmapSize">
+      <summary>取得或設定縮圖點陣圖影像的大小。</summary>
+      <returns>縮圖點陣圖影像的大小。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.ImageUri">
+      <summary>取得或設定此縮圖之影像檔的統一資源識別元 (URI)。</summary>
+      <returns>此縮圖之影像檔的統一資源識別元 (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.TargetUri">
+      <summary>取得或設定與這個縮圖相關聯之目標項目的統一資源識別元 (URI)。</summary>
+      <returns>與這個縮圖相關聯之目標項目的統一資源識別元 (URI)。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.SetImageAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>以非同步方式從本機資料流設定這個縮圖的影像。</summary>
+      <deprecated type="deprecate">ISocialItemThumbnail 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="image">影像資料流。</param>
+      <returns>表示作業已完成的非同步動作。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialUserInfo">
+      <summary>表示社交媒體提供者服務的使用者。</summary>
+      <deprecated type="deprecate">SocialUserInfo 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.DisplayName">
+      <summary>取得或設定社交媒體使用者適合顯示的名稱。</summary>
+      <returns>社交媒體使用者適合顯示的名稱。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.RemoteId">
+      <summary>取得或設定值，用於在社交媒體服務上識別使用者。</summary>
+      <returns>值，用於在社交媒體服務上識別使用者。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.TargetUri">
+      <summary>取得或設定社交媒體系統上使用者的統一資源識別元 (URI)。</summary>
+      <returns>社交媒體系統上使用者的統一資源識別元 (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.UserName">
+      <summary>取得或設定社交媒體服務上使用者的使用者名稱。</summary>
+      <returns>社交媒體服務上使用者的使用者名稱。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater">
+      <summary>表示可更新儀表板項目的工作。</summary>
+      <deprecated type="deprecate">SocialDashboardItemUpdater 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Content">
+      <summary>取得可以更新的 SocialFeedContent 物件。</summary>
+      <returns>可以更新的 SocialFeedContent 物件。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.OwnerRemoteId">
+      <summary>取得識別碼，用於識別提供者系統上的使用者。</summary>
+      <returns>ID，用於識別提供者系統上的使用者。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.TargetUri">
+      <summary>取得或設定使用者點選項目時要導覽的目標統一資源識別元 (URI)。</summary>
+      <returns>使用者點選項目時要瀏覽的目標 URI。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Thumbnail">
+      <summary>取得或設定儀表板項目的縮圖影像。</summary>
+      <returns>儀表板項目的縮圖影像。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Timestamp">
+      <summary>取得或設定更新的時間戳記。</summary>
+      <returns>更新的時間戳記。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.CommitAsync">
+      <summary>以非同步方式在所有屬性都已設定後送出更新。</summary>
+      <deprecated type="deprecate">ISocialDashboardItemUpdater 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+      <returns>表示作業已完成的非同步動作。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater">
+      <summary>表示可用來更新社交媒體摘要的工作。</summary>
+      <deprecated type="deprecate">SocialFeedUpdater 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Items">
+      <summary>取得社交媒體摘要項目的清單。</summary>
+      <returns>社交媒體摘要項目的清單。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Kind">
+      <summary>取得社交媒體摘要的類型。</summary>
+      <returns>社交媒體摘要的類型。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.OwnerRemoteId">
+      <summary>取得識別碼，用於識別提供者系統上的使用者。</summary>
+      <returns>ID，用於識別提供者系統上的使用者。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.CommitAsync">
+      <summary>以非同步方式在所有屬性都已設定後送出更新。</summary>
+      <deprecated type="deprecate">ISocialFeedUpdater 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+      <returns>表示作業已完成的非同步動作。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager">
+      <summary>提供功能，讓應用程式能夠使用社交媒體擴充性。</summary>
+      <deprecated type="deprecate">SocialInfoProviderManager 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateDashboardItemUpdaterAsync(System.String)">
+      <summary>建立可以做為工作使用的新 SocialDashboardItemUpdater 物件。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="ownerRemoteId">ID，用於識別提供者系統上的使用者。</param>
+      <returns>新建立的 SocialDashboardItemUpdater 物件。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateSocialFeedUpdaterAsync(Windows.ApplicationModel.SocialInfo.SocialFeedKind,Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode,System.String)">
+      <summary>建立可以做為工作使用的新 SocialFeedUpdater 物件。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="kind">要建立的社交媒體摘要類型。</param>
+      <param name="mode">指定附加或取代模式。</param>
+      <param name="ownerRemoteId">ID，用於識別提供者系統上的使用者。</param>
+      <returns>新建立的 SocialFeedUpdater 物件。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.DeprovisionAsync">
+      <summary>取消佈建應用程式，使其無法使用社交媒體擴充性。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+      <returns>表示作業已完成的非同步動作。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ProvisionAsync">
+      <summary>佈建應用程式，使其使用社交媒體擴充性。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+      <returns>表示作業是否成功的布林值。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ReportNewContentAvailable(System.String,Windows.ApplicationModel.SocialInfo.SocialFeedKind)">
+      <summary>警示系統，此應用程式有新的社交媒體內容可用。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="contactRemoteId">ID，用於識別提供者系統上的使用者。</param>
+      <param name="kind">社交媒體摘要的類型。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.UpdateBadgeCountValue(System.String,System.Int32)">
+      <summary>更新鎖定螢幕徽章上的計數值。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics 已被取代，因此可能無法在所有平台上運作。 如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="itemRemoteId">識別提供者系統上的連絡人。</param>
+      <param name="newCount">要在徽章上顯示的新計數值。</param>
+    </member>
+  </members>
+</doc>

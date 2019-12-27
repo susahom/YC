@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.UI.WebUI.WebUISearchActivatedEventArgs">
+      <summary>Proporciona información sobre el evento activado que se desencadena cuando el usuario busca la aplicación desde el botón de acceso Buscar y esta no es la aplicación principal en la pantalla.</summary>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.ActivatedOperation">
+      <summary>Obtiene la operación de aplicación activada.</summary>
+      <returns>La operación de activación.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.CurrentlyShownApplicationViewId">
+      <summary>Obtiene el identificador de la vista de la aplicación que se muestra actualmente.</summary>
+      <returns>Identificador de la vista de la aplicación que se muestra actualmente.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Kind">
+      <summary>Obtiene el tipo de activación.</summary>
+      <returns>Valor de la enumeración activationKind.search.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Language">
+      <summary>Obtiene la etiqueta de idioma (BCP47 estándar) del Grupo de trabajo de ingeniería de Internet (IETF) que identifica el idioma asociado al dispositivo de entrada de texto del usuario.</summary>
+      <returns>Etiqueta de idioma (BCP-47 estándar) del Grupo de trabajo de ingeniería de Internet (IETF).</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.LinguisticDetails">
+      <summary>Obtiene un objeto SearchPaneQueryLinguisticDetails que proporciona información sobre el texto de la consulta que el usuario escribe mediante un Editor de métodos de entrada (IME).</summary>
+      <returns>El objeto que proporciona información sobre el texto de la consulta.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.PreviousExecutionState">
+      <summary>Obtiene el estado de la ejecución de la aplicación antes su activación.</summary>
+      <returns>Uno de los valores de la enumeración.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.QueryText">
+      <summary>Obtiene el texto que el usuario desea que busque la aplicación. El usuario especificó este texto en el cuadro de búsqueda del panel de búsqueda.</summary>
+      <returns>Texto que se va a buscar.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.SplashScreen">
+      <summary>Obtiene el objeto de pantalla de presentación que proporciona información sobre la transición de la pantalla de presentación a la aplicación activada.</summary>
+      <returns>El objeto que proporciona información de la pantalla de presentación.</returns>
+    </member>
+  </members>
+</doc>

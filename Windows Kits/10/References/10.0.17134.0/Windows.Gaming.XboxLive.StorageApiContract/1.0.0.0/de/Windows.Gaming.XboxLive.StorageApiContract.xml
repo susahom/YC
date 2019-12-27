@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.XboxLive.StorageApiContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.XboxLive.StorageApiContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Status">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Value">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Name">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Size">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Status">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Value">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync(System.UInt32,System.UInt32)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="startIndex">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="maxNumberOfItems">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetItemCountAsync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainer">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Name">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Provider">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.CreateBlobInfoQuery(System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="blobNamePrefix">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.GetAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="blobsToRead">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.ReadAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer})">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="blobsToRead">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync(Windows.Foundation.Collections.IPropertySet,Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="blobsToWrite">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="blobsToDelete">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="displayName">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitUpdatesAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer},Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="blobsToWrite">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="blobsToDelete">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="displayName">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.DisplayName">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.Name">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.NeedsSync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Status">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Value">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync(System.UInt32,System.UInt32)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="startIndex">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="maxNumberOfItems">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetItemCountAsync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Abort">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.BlobNotFound">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerNotInSync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerSyncFailed">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.InvalidContainerName">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoAccess">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoXboxLiveInfo">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ObjectExpired">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Ok">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.OutOfLocalStorage">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ProvidedBufferTooSmall">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.QuotaExceeded">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UpdateTooBig">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserCanceled">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserHasNoXboxLiveInfo">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult.Status">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProvider">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.ContainersChangedSinceLastSync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.User">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainer(System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="name">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery(System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="containerNamePrefix">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.DeleteContainerAsync(System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="name">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync(Windows.System.User,System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="user">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="serviceConfigId">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetRemainingBytesInQuotaAsync">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetSyncOnDemandForUserAsync(Windows.System.User,System.String)">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <param name="user">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <param name="serviceConfigId">Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</param>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Status">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Value">
+      <summary>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</summary>
+      <returns>Diese API ist nicht für alle Apps verfügbar. Nur wenn Ihr Entwicklerkonto speziell von Microsoft bereitgestellt wird, schlagen Aufrufe dieser APIs zur Laufzeit nicht fehl.</returns>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.Sockets.ControlChannelTriggerContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTrigger">
+      <summary>为建立 TCP 连接并希望得到传入流量的通知的对象启用要在后台接收的实时通知。</summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.#ctor(System.String,System.UInt32)">
+      <summary>使用控制通道触发器 ID、服务器保持活动的间隔值创建新的 ControlChannelTrigger 对象。 </summary>
+      <param name="channelId">用于区分当地计算机上各种控件通道触发器的字符串。 此字符串允许的最大长度为 64 个字符。</param>
+      <param name="serverKeepAliveIntervalInMinutes">以分钟为单位的“保持活动状态”间隔，即向系统注册以指示应用程序和使用的网络连接应当唤醒的间隔。</param>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.#ctor(System.String,System.UInt32,Windows.Networking.Sockets.ControlChannelTriggerResourceType)">
+      <summary>使用控制通道触发器 ID、服务器保持活动的间隔值以及请求控制通道触发器的资源类型创建新的 ControlChannelTrigger 对象。 </summary>
+      <param name="channelId">用于区分当地计算机上各种控件通道触发器的字符串。 此字符串允许的最大长度为 64 个字符。</param>
+      <param name="serverKeepAliveIntervalInMinutes">以分钟为单位的“保持活动状态”间隔，即向系统注册以指示应用程序和使用的网络连接应当唤醒的间隔。</param>
+      <param name="resourceRequestType">控制通道触发器要求的资源类型。</param>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.ControlChannelTriggerId">
+      <summary>获取可用于区分本地计算机上的各种控制通道触发器的字符串。 </summary>
+      <returns>可用于区分各种控件通道触发器的字符串。</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.CurrentKeepAliveIntervalInMinutes">
+      <summary>获取网络保持活动状态间隔（以分钟为单位），该间隔通过基于当前网络条件的 TCP 堆栈中低级网络组件维护。 </summary>
+      <returns>网络保持活动状态间隔（以分钟为单位），由基于当前网络条件的 TCP 堆栈中的低级网络组件保留。</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.IsWakeFromLowPowerSupported">
+      <summary>获取指示是否支持从低功率状态唤醒的值。</summary>
+      <returns>如果为 **true**，则支持从低功率状态唤醒。</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.KeepAliveTrigger">
+      <summary>获取一个对象，该对象表示与应用程序绑定激活类与后台代理基础结构所用的 ControlChannelTrigger 对象关联的“保持活动状态”触发器。 </summary>
+      <returns>表示活动后台任务的启动类 ID 的字符串。</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.PushNotificationTrigger">
+      <summary>获取一个对象，该对象代表与应用程序绑定激活类与后台代理基础结构所用的 ControlChannelTrigger 对象关联的推送通知触发器。 </summary>
+      <returns>表示推进通知后台任务的启动类 ID 的字符串。</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.ServerKeepAliveIntervalInMinutes">
+      <summary>获取或设置已向系统注册的服务器“保持活动状态”间隔 (以分钟为单位)，指示应用程序和使用的关联网络连接应当唤醒的时间。 </summary>
+      <returns>以分钟为单位的服务器“保持活动状态”间隔，即向系统注册以指示应用程序和使用的关联网络连接应当唤醒的间隔。</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.TransportObject">
+      <summary>获取系统正在用于与 ControlChannelTrigger 对象关联的传输连接的传输对象。 </summary>
+      <returns>系统正在用于传输连接的传输对象。</returns>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.Close">
+      <summary>关闭 ControlChannelTrigger 对象。 </summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.DecreaseNetworkKeepAliveInterval">
+      <summary>为应用程序提供一种方法，该方法指示由具有要觉醒的网络中介的系统维护的网络保持活动状态间隔是否太长和是否应减少。 此方法适用于 Windows.Networking.Sockets 中的类元素和相关命名空间。 </summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.FlushTransport">
+      <summary>刷新与网络堆栈的 ControlChannelTrigger 关联的传输连接所用的任何网络数据。 </summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.UsingTransport(System.Object)">
+      <summary>通过 Windows.Networking.Sockets 中的类元素和相关命名空间，设置控制通道触发器要使用的传输连接。 </summary>
+      <param name="transport">表示网络传输的网络类的实例。</param>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.WaitForPushEnabled">
+      <summary>允许应用程序通知系统连接已建立且系统应完成控制通道触发器的内部配置。 </summary>
+      <returns>一个值，指示系统是否能够完成 ControlChannelTrigger 对象的配置。</returns>
+    </member>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTriggerContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTriggerResetReason">
+      <summary>重置 ControlChannelTrigger 的原因。 </summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.ApplicationRestart">
+      <summary>ControlChannelTrigger 因应用程序重新启动而被重置。</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.FastUserSwitched">
+      <summary>ControlChannelTrigger 因快速用户切换而被重置。</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.LowPowerExit">
+      <summary>ControlChannelTrigger 因低功率退出（Connected Standby 退出）而被重置。</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.QuietHoursExit">
+      <summary>ControlChannelTrigger 因设备上以小时为单位设置了安静时间且此时间已结束而被重置。</summary>
+    </member>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTriggerResourceType">
+      <summary>控制通道触发器使用的资源类型。 </summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResourceType.RequestHardwareSlot">
+      <summary>请求来自系统的硬件槽。</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResourceType.RequestSoftwareSlot">
+      <summary>请求来自系统的软件槽。</summary>
+    </member>
+    <member name="T:Windows.Networking.Sockets.IControlChannelTriggerEventDetails">
+      <summary>用于区分控制通道触发器的后台代理基础结构实例化的对象。 </summary>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerEventDetails.ControlChannelTrigger">
+      <summary>获取与 IControlChannelTriggerEventDetails 对象关联的 ControlChannelTrigger 对象。 </summary>
+      <returns>一个 ControlChannelTrigger 对象。</returns>
+    </member>
+    <member name="T:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails">
+      <summary>后台中转站基础结构针对 **ControlChannelReset** 事件实例化的对象，指示重置了 ControlChannelTrigger。 </summary>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails.HardwareSlotReset">
+      <summary>指示硬件槽是否受 ControlChannelTrigger 重置事件影响的值。 </summary>
+      <returns>指示硬件槽是否受 ControlChannelTrigger 重置事件影响的值。</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails.ResetReason">
+      <summary>指示重置 ControlChannelTrigger 的原因的值。 </summary>
+      <returns>指示重置 ControlChannelTrigger 的原因的值。</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails.SoftwareSlotReset">
+      <summary>指示软件槽是否受 ControlChannelTrigger 重置事件影响的值。 </summary>
+      <returns>指示软件槽是否受 ControlChannelTrigger 重置事件影响的值。</returns>
+    </member>
+  </members>
+</doc>

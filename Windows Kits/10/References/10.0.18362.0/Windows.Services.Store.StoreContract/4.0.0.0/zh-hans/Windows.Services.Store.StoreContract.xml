@@ -1,0 +1,1130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.Store.StoreContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Store.StoreAcquireLicenseResult">
+      <summary>为获得当前应用可下载内容 (DLC) 加载项包的许可证的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.ExtendedError">
+      <summary>获取请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.StorePackageLicense">
+      <summary>获取表示当前应用可下载内容 (DLC) 加载项包的许可证的对象。</summary>
+      <returns>表示可下载内容 (DLC) 包许可证的对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAppLicense">
+      <summary>为当前应用提供许可证信息，包括应用提供的产品的许可证。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.AddOnLicenses">
+      <summary>获取用户具有使用权限的持久型加载项的许可证的集合。 此属性不包括易耗型加载项的许可证。</summary>
+      <returns>键值对的映射，其中每个键是 Microsoft Store 中的加载项 SKU 的 Store ID，每个值是包含加载项的许可证信息的 StoreLicense 对象。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExpirationDate">
+      <summary>获取应用许可证的到期日期和时间。</summary>
+      <returns>应用许可证相对于系统时钟的到期日期和时间。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExtendedJsonData">
+      <summary>获取采用 JSON 格式的完整许可证数据。</summary>
+      <returns>包含完整许可证数据的 JSON 格式的字符串。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsActive">
+      <summary>获取指示许可证是否有效，并可为当前用户提供应用使用权限的值。</summary>
+      <returns>若许可证有效，并可为当前用户提供应用使用权限，则为“True”；否则则为“False”。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsDiscLicense">
+      <summary>获取指示当前许可证是否从基于光盘的安装获取的值。</summary>
+      <returns>如果当前许可证是从基于光盘的安装获取，则为 True；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrial">
+      <summary>获取指示许可证是否为试用许可证的值。</summary>
+      <returns>如果许可证是试用许可证，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrialOwnedByThisUser">
+      <summary>获取一个值，该值指示当前用户对与此应用许可证关联的使用受限试用拥有权利。</summary>
+      <returns>如果当前用户具有试用版的权限，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.SkuStoreId">
+      <summary>获取 Microsoft Store 目录中的许可应用 SKU 的 Store ID。</summary>
+      <returns>Microsoft Store 目录中的许可应用 SKU 的 Store ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialTimeRemaining">
+      <summary>获取与此应用许可证关联的使用受限试用的剩余时间。</summary>
+      <returns>与此应用许可证关联的使用受限试用的剩余时间。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialUniqueId">
+      <summary>获取一个唯一 ID，它标识当前用户和与此应用许可证关联的使用受限试用的组合。</summary>
+      <returns>一个唯一 ID，它标识当前用户和与此应用许可证关联的使用受限试用的组合。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAvailability">
+      <summary>表示可购买的产品 SKU 的特定实例。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.EndDate">
+      <summary>获取当前 SKU 可用性的结束日期。</summary>
+      <returns>当前 SKU 可用性的结束日期。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.ExtendedJsonData">
+      <summary>获取 Store 中的当前 SKU 可用性的完整数据（采用 JSON 格式）。</summary>
+      <returns>Store 中包含当前 SKU 可用性的完整数据的 JSON 格式的字符串。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.Price">
+      <summary>获取当前 SKU 可用性的价格信息，包括基本价格、当前价格和销售信息。</summary>
+      <returns>包含当前 SKU 可用性的价格信息的对象。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.StoreId">
+      <summary>获取 Microsoft Store 目录中的当前 SKU 可用性的 Store ID。</summary>
+      <returns>Microsoft Store 目录中的当前 SKU 可用性的 Store ID。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync">
+      <summary>请求购买当前 SKU 可用性并显示用于通过 Microsoft Store 完成交易的 UI。</summary>
+      <returns>一个异步操作，在成功完成后返回提供有关购买请求的状态和错误信息的 StorePurchaseResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>请求购买当前 SKU 可用性并显示用于通过 Microsoft Store 完成交易的 UI。 此方法提供为大型产品目录（其中的产品由 Microsoft Store 内的单个列表表示）中的特定产品指定其他详细信息（包括在购买过程中向用户显示的产品名称）的选项。</summary>
+      <param name="storePurchaseProperties">指定购买请求的附加信息（包括要在购买过程中向用户显示的产品名称）的对象。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关购买请求的状态和错误信息的 StorePurchaseResult 对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanAcquireLicenseResult">
+      <summary>为确定是否可以获得可下载内容 (DLC) 加载项包的许可证的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.ExtendedError">
+      <summary>获取请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.LicensableSku">
+      <summary>如果可以获取当前用户的加载项的许可证，则获取可下载内容 (DLC) 加载项的 SKU Store ID。</summary>
+      <returns>如果可以获取当前用户的加载项的许可证，则为可下载内容 (DLC) 加载项的 SKU Store ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.Status">
+      <summary>获取可下载内容 (DLC) 加载项包的许可证状态。</summary>
+      <returns>可下载内容 (DLC) 加载项包的许可证状态。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanLicenseStatus">
+      <summary>定义表示可下载内容 (DLC) 加载项包的许可证状态的值。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.Licensable">
+      <summary>该产品可许可当前用户使用。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.LicenseActionNotApplicableToProduct">
+      <summary>该产品并非单独授予许可。 例如，如果将 Store ID 传递到非 DLC 加载项（即无包的加载项）的 CanAcquireStoreLicenseAsync(String) 方法，这可能发生。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NetworkError">
+      <summary>由于网络连接错误，许可证请求未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NotLicensableToUser">
+      <summary>用户无权获得该产品的许可证。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.ServerError">
+      <summary>由于 Microsoft Store 返回的服务器错误，许可证请求未成功。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCollectionData">
+      <summary>为用户有权使用的产品 SKU 提供其他数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.AcquiredDate">
+      <summary>获取产品 SKU 的获取日期。</summary>
+      <returns>产品 SKU 的获取日期。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.CampaignId">
+      <summary>获取与产品 SKU 关联的促销活动 ID。</summary>
+      <returns>与产品 SKU 关联的促销活动 ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.DeveloperOfferId">
+      <summary>获取与产品 SKU 关联的开发人员产品 ID。</summary>
+      <returns>与产品 SKU 关联的开发人员产品 ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.EndDate">
+      <summary>获取产品 SKU 的试用结束日期（如果 SKU 是试用版或是在设置的持续时间之后过期的持久型加载项）。</summary>
+      <returns>产品 SKU 的试用结束日期（如果 SKU 是试用版或是在设置的持续时间之后过期的持久型加载项）。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.ExtendedJsonData">
+      <summary>获取产品 SKU 的完整集合数据（采用 JSON 格式）。</summary>
+      <returns>包含产品 SKU 的完整集合数据的 JSON 格式的字符串。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.IsTrial">
+      <summary>获取指示产品 SKU 是否为试用版的值。</summary>
+      <returns>如果产品 SKU 的许可证是试用版，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.StartDate">
+      <summary>获取产品 SKU 的试用开始日期（如果 SKU 是试用版或是在设置的持续时间之后过期的持久型加载项）。</summary>
+      <returns>产品 SKU 的试用开始日期（如果 SKU 是试用版或是在设置的持续时间之后过期的持久型加载项）。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.TrialTimeRemaining">
+      <summary>获取与此产品 SKU 关联的使用受限试用的剩余试用时间。</summary>
+      <returns>获取与此产品 SKU 关联的使用受限试用的剩余试用时间。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableResult">
+      <summary>为用于为当前应用调用易耗型加载项的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.BalanceRemaining">
+      <summary>获取易耗型加载项的剩余余额。</summary>
+      <returns>易耗型加载项的剩余余额。 对于由开发人员（而不是 Microsoft）跟踪余额的非托管易耗型加载项，此属性返回 1（用户对于加载项拥有权利）或 0（用户对于加载项没有权利）。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.ExtendedError">
+      <summary>获取请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.Status">
+      <summary>获取请求的状态。</summary>
+      <returns>请求的状态。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.TrackingId">
+      <summary>获取与 ReportConsumableFulfillmentAsync 请求一起提交的跟踪 ID。</summary>
+      <returns>与 ReportConsumableFulfillmentAsync 请求一起提交的跟踪 ID。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableStatus">
+      <summary>定义表示关联到易耗型加载项的请求状态的值。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.InsufficentQuantity">
+      <summary>由于易耗型加载项的剩余余额过低，请求未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.NetworkError">
+      <summary>由于网络连接错误，该请求未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.ServerError">
+      <summary>由于 Microsoft Store 返回的服务器错误，该请求未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.Succeeded">
+      <summary>该请求已成功。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContext">
+      <summary>提供可用于访问和管理当前应用的 Microsoft Store 相关数据的成员。 例如，可以使用此类的成员获取当前应用的 Microsoft Store 列表和许可证信息、购买当前应用或由该应用提供的产品或者下载并安装该应用的包更新。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.CanSilentlyDownloadStorePackageUpdates">
+      <summary>获取一个值，该值指示是否可以下载当前应用的程序包更新，而不向用户显示通知 UI。</summary>
+      <returns>如果可以下载当前应用的程序包更新，而不向用户显示通知 UI，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.User">
+      <summary>获取有关与多用户应用中当前 StoreContext 对象关联的用户的信息。</summary>
+      <returns>提供有关与多用户应用中当前 StoreContext 对象关联的用户的信息的对象。</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreContext.OfflineLicensesChanged">
+      <summary>在应用的许可证的状态更改（例如，试用期已结束或用户已购买完整版本的应用）时引发。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.AcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>获取当前应用的指定可下载内容 (DLC) 加载项包的许可证。</summary>
+      <param name="optionalPackage">要获取其许可证的 DLC 加载项包。</param>
+      <returns>一个异步操作，在成功完成后返回包含许可证的 StoreAcquireLicenseResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseAsync(System.String)">
+      <summary>获取一个值，该值指示是否可以为当前用户获得当前应用的指定可下载内容 (DLC) 加载项的许可证。</summary>
+      <param name="productStoreId">要检查的 DLC 加载项的 Store ID。</param>
+      <returns>一个异步操作，在成功完成后返回指示是否可以获得许可证的 StoreCanAcquireLicenseResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>获取一个值，该值指示是否可以为当前用户获得当前应用的指定可下载内容 (DLC) 程序包的许可证。</summary>
+      <param name="optionalPackage">要检查的 DLC 程序包。</param>
+      <returns>一个异步操作，在成功完成后返回指示是否可以获得许可证的 StoreCanAcquireLicenseResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.DownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>从 Microsoft Store 下载并安装当前应用的指定可下载内容 (DLC) 程序包，而不向用户显示通知 UI 对话框。</summary>
+      <param name="storeIds">加载项的 Store ID，该加载项与要安装的当前应用的 DLC 包对应。</param>
+      <returns>一个对象，调用方可对其进行观察以便跟踪操作的进度和完成情况。 成功完成后，结果是提供有关包更新的信息的 StorePackageUpdateResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.FindStoreProductForPackageAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.ApplicationModel.Package)">
+      <summary>获取与指定包关联的应用或加载项的 Store 产品详细信息。</summary>
+      <param name="productKinds">指定可能与包关联的 Store 产品类型的字符串数组。 有关受支持的字符串值列表，请参阅 ProductKind 属性。</param>
+      <param name="package">表示要为其获取对应 Store 产品详细信息的包的 Package。</param>
+      <returns>一个异步操作，它将在成功完成时返回 StoreProductResult object 对象。 使用此对象的 Product 属性可访问包含指定包的 Store 产品详细信息的 StoreProduct。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppAndOptionalStorePackageUpdatesAsync">
+      <summary>获取当前应用的具有可从 Microsoft Store 下载的更新的包集合，包括应用的可选包。</summary>
+      <returns>一个异步操作，在成功完成后返回表示有更新可用的包的 StorePackageUpdate 对象集合。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppLicenseAsync">
+      <summary>获取当前应用的许可证信息，包括当前应用的加载项的许可证。</summary>
+      <returns>一个异步操作，在成功完成后返回包含当前应用的许可证信息（包括加载项许可证）的 StoreAppLicense 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>获取可以在当前应用中购买的指定产品的 Microsoft Store 列表信息。</summary>
+      <param name="productKinds">指定要获取的产品类型的字符串数组。 有关受支持的字符串值列表，请参阅 ProductKind 属性。</param>
+      <returns>一个异步操作，在成功完成后返回可用于访问关联产品和相关错误信息的 StoreProductQueryResult。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>获取可以在当前应用中购买的指定产品的 Microsoft Store 列表信息。 此方法支持分页以返回结果。</summary>
+      <param name="productKinds">指定要获取的产品类型的字符串数组。 有关受支持的字符串值列表，请参阅 ProductKind 属性。</param>
+      <param name="maxItemsToRetrievePerPage">要在每页结果中返回的最大产品数。</param>
+      <returns>一个异步操作，在成功完成后返回可用于访问关联产品、相关错误信息和下一页结果的 StoreProductPagedQueryResult。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreQueueItemsAsync">
+      <summary>获取有关当前应用的下载和安装队列中所有新的或已更新的程序包的信息。</summary>
+      <returns>一个异步操作，在成功完成后返回提供有关队列中应用程序包的信息的 StoreQueueItem 对象集合。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetConsumableBalanceRemainingAsync(System.String)">
+      <summary>获取当前应用的指定易耗型加载项的剩余余额。</summary>
+      <param name="productStoreId">加载项的 Store ID（由表示加载项的 StoreProduct 的 StoreId 属性提供）。</param>
+      <returns>一个异步操作，在成功完成后返回提供剩余余额和其他信息的 StoreConsumableResult。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerCollectionsIdAsync(System.String,System.String)">
+      <summary>检索可用于查询产品权限或使用当前用户所拥有的产品权限的 Microsoft Store ID 密钥。</summary>
+      <param name="serviceTicket">标识当前应用发布者的 Azure Active Directory 访问令牌。 有关生成此令牌的详细信息，请参见“管理来自服务的产品授权”。</param>
+      <param name="publisherUserId">标识以当前应用发布者身份管理的服务的上下文中当前用户的匿名 ID。 如果在服务上下文中维护用户 ID，则可以使用此参数将当前用户的 ID 与新 Microsoft Store ID 密钥相关联（用户 ID 将嵌入到密钥中）。 否则，如果不需要将用户 ID 与 Microsoft Store ID 密钥相关联，则可以传递任何字符串值。</param>
+      <returns>一个异步操作，在成功完成后返回当前用户的集合 ID 键。 此密钥有效期为 90 天。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerPurchaseIdAsync(System.String,System.String)">
+      <summary>检索用于代表当前用户授予免费产品权限的 Microsoft Store ID 密钥。</summary>
+      <param name="serviceTicket">标识当前应用发布者的 Azure Active Directory 访问令牌。 有关生成此令牌的详细信息，请参见“管理来自服务的产品授权”。</param>
+      <param name="publisherUserId">标识以当前应用发布者身份管理的服务的上下文中当前用户的匿名 ID。 如果在服务上下文中维护用户 ID，则可以使用此参数将当前用户的 ID 与新 Microsoft Store ID 密钥相关联（用户 ID 将嵌入到密钥中）。 否则，如果不需要将用户 ID 与 Microsoft Store ID 密钥相关联，则可以传递任何字符串值。</param>
+      <returns>一个异步操作，在成功完成后返回当前用户的购买 ID 键。 此密钥有效期为 90 天。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetDefault">
+      <summary>获取可用于在当前应用的上下文中访问和管理当前用户的 Microsoft Store 相关数据的 StoreContext 对象。</summary>
+      <returns>可用于访问和管理当前用户的 Microsoft Store 相关数据的对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetForUser(Windows.System.User)">
+      <summary>获取可用于在当前应用的上下文中访问和管理指定用户的 Microsoft Store 相关数据的 StoreContext 对象。</summary>
+      <param name="user">一个对象，用于标识您要访问和管理其 Microsoft Store 相关数据的用户。</param>
+      <returns>可用于访问和管理指定用户的 Microsoft Store 相关数据的对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductForCurrentAppAsync">
+      <summary>获取当前应用的 Microsoft Store 列表信息并提供对可用于购买当前用户的应用的方法的访问权限。</summary>
+      <returns>一个异步操作，在成功完成后返回包含当前应用的 Microsoft Store 列表信息和任何相关错误信息的 StoreProductResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>获取与当前应用关联的指定产品的 Microsoft Store 列表信息。</summary>
+      <param name="productKinds">指定要为其检索列表信息的产品类型的字符串数组。 有关受支持的字符串值列表，请参阅 ProductKind 属性。</param>
+      <param name="storeIds">指定要为其检索列表信息的产品的 Store ID 字符串数组。</param>
+      <returns>一个异步操作，在成功完成后返回包含指定产品的列表信息和任何相关错误信息的 StoreProductQueryResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StoreProductOptions)">
+      <summary>获取与当前应用关联的指定产品的 Microsoft Store 列表信息，包含将筛选器用于查询的选项。</summary>
+      <param name="productKinds">指定要为其检索列表信息的产品类型的字符串数组。 有关受支持的字符串值列表，请参阅 ProductKind 属性。</param>
+      <param name="storeIds">指定要为其检索列表信息的产品的 Store ID 字符串数组。</param>
+      <param name="storeProductOptions">包含将用于查询的筛选器的对象。</param>
+      <returns>一个异步操作，在成功完成后返回包含指定产品的列表信息和任何相关错误信息的 StoreProductQueryResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>获取有关当前应用的下载和安装队列中指定的新的或已更新的程序包的信息。</summary>
+      <param name="storeIds">一组与程序包对应的 Store ID 字符串，你希望获取与这些程序包相关的下载和安装队列信息。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关队列中指定程序包的信息的 StoreQueueItem 对象集合。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>获取用户购买的当前应用加载项的 Microsoft Store 信息。</summary>
+      <param name="productKinds">指定要为其检索信息的加载项类型的字符串数组。 有关受支持的字符串值列表，请参阅 ProductKind 属性。</param>
+      <returns>一个异步操作，在成功完成后返回 StoreProductQueryResult 对象，其中包含用户已购买的当前应用加载项的 Microsoft Store 信息及相关错误信息。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>获取用户购买的当前应用加载项的 Microsoft Store 信息。 此方法支持分页以返回结果。</summary>
+      <param name="productKinds">指定要为其检索信息的加载项类型的字符串数组。 有关受支持的字符串值列表，请参阅 ProductKind 属性。</param>
+      <param name="maxItemsToRetrievePerPage">要在每页结果中返回的最大加载项数。</param>
+      <returns>一个异步操作，在成功完成后返回 StoreProductPagedQueryResult 对象，该对象可用于访问用户已购买的当前应用加载项的 Microsoft Store 信息及相关错误信息，以及下一页结果。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.ReportConsumableFulfillmentAsync(System.String,System.UInt32,System.Guid)">
+      <summary>将当前应用的易耗型加载项报告为已在 Microsoft Store 中履行交易。</summary>
+      <param name="productStoreId">要将其报告为已履行交易的易耗型加载项的 Store ID。</param>
+      <param name="quantity">要报告为已履行交易的易耗型加载项的单位数。 对于 Store 管理的易耗品（即，Microsoft 跟踪余额的易耗品），指定已消耗的单位数。 对于开发人员管理的易耗品（即，开发人员跟踪余额的易耗品），指定 1。</param>
+      <param name="trackingId">开发人员提供的 GUID，可标识履行操作与之相关联的特定交易以用于跟踪。 有关详细信息，请参阅备注。</param>
+      <returns>一个异步操作，在成功完成后返回包含有关履行操作的信息（如加载项单位的剩余余额）的 StoreConsumableResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>尝试从 Microsoft Store 下载并安装当前应用的指定可下载内容 (DLC) 程序包。 此方法也会显示请求允许执行该操作的 UI 对话框。</summary>
+      <param name="storeIds">要安装的 DLC 加载项包的 Store ID。</param>
+      <returns>一个对象，调用方可对其进行观察以便跟踪操作的进度和完成情况。 成功完成后，结果是提供有关包更新的信息的 StorePackageUpdateResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StorePackageInstallOptions)">
+      <summary>尝试从 Microsoft Store 下载并安装当前应用的指定可下载内容 (DLC) 程序包，包含指定的安装选项。 此方法也会显示请求允许执行该操作的 UI 对话框。</summary>
+      <param name="storeIds">要安装的 DLC 加载项包的 Store ID。</param>
+      <param name="storePackageInstallOptions">指定用于该操作的安装选项的对象。</param>
+      <returns>一个对象，调用方可对其进行观察以便跟踪操作的进度和完成情况。 成功完成后，结果是提供有关包更新的信息的 StorePackageUpdateResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>尝试从 Microsoft Store 下载并安装当前应用的指定程序包更新。 此方法也会显示请求允许执行该操作的 UI 对话框。</summary>
+      <param name="storePackageUpdates">表示要下载并安装的更新包的 StorePackageUpdate 对象集。</param>
+      <returns>一个对象，调用方可对其进行观察以便跟踪操作的进度和完成情况。 成功完成后，结果是提供有关包更新的信息的 StorePackageUpdateResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>尝试从 Microsoft Store 下载并安装当前应用的指定程序包更新。 此方法也会显示请求允许执行该操作的 UI 对话框。</summary>
+      <param name="storePackageUpdates">表示要下载的更新包的 StorePackageUpdate 对象集。</param>
+      <returns>一个对象，调用方可对其进行观察以便跟踪操作的进度和完成情况。 成功完成后，结果是提供有关包更新的信息的 StorePackageUpdateResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String)">
+      <summary>请求购买指定应用或加载项并显示用于通过 Microsoft Store 完成交易的 UI。</summary>
+      <param name="storeId">要为当前用户购买的应用或加载项的 Store ID。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关购买请求的状态和错误信息的 StorePurchaseResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String,Windows.Services.Store.StorePurchaseProperties)">
+      <summary>请求购买指定应用或加载项并显示用于通过 Microsoft Store 完成交易的 UI。 此方法提供为大型产品目录（其中的产品由 Microsoft Store 内的单个列表表示）中的特定产品指定其他详细信息（包括在购买过程中向用户显示的产品名称）的选项。</summary>
+      <param name="storeId">要为当前用户购买的应用或加载项的 Store ID。</param>
+      <param name="storePurchaseProperties">指定购买请求的附加信息（包括要在购买过程中向用户显示的产品名称）的对象。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关购买请求的状态和错误信息的 StorePurchaseResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestRateAndReviewAppAsync">
+      <summary>请求用户打分并评价应用。 此方法将为用户显示 UI 以选择 Microsoft Store 评分、为产品添加可选的 Microsoft Store 评价。</summary>
+      <returns>一个异步操作，在成功完成后返回提供状态和错误信息的 StoreRateAndReviewResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>尝试卸载当前应用的指定可选程序包。 此方法也会显示请求允许执行该操作的 UI 对话框。</summary>
+      <param name="package">要卸载的当前应用的可选程序包。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关卸载操作的信息的 StoreUninstallStorePackageResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>尝试卸载当前应用的指定可下载内容 (DLC) 包。 此方法也会显示请求允许执行该操作的 UI 对话框。</summary>
+      <param name="storeId">加载项的 Store ID，该加载项与要卸载的当前应用的可下载内容 (DLC) 包对应。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关卸载操作的信息的 StoreUninstallStorePackageResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.SetInstallOrderForAssociatedStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StoreQueueItem})">
+      <summary>设置安装在当前应用的下载和安装队列中指定的程序包的顺序。</summary>
+      <param name="items">表示安装队列中的包的 StoreQueueItem 对象的列表，以你希望的包安装顺序排列。</param>
+      <returns>一个异步操作，在成功完成后返回 StoreQueueItem 对象的列表，以队列中确定的对应包的安装顺序排列。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>尝试从 Microsoft Store 下载并安装当前应用的指定程序包更新，而不向用户显示通知 UI。</summary>
+      <param name="storePackageUpdates">表示要下载并安装的更新包的 StorePackageUpdate 对象集。</param>
+      <returns>一个对象，调用方可对其进行观察以便跟踪操作的进度和完成情况。 成功完成后，结果是提供有关包更新的信息的 StorePackageUpdateResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>尝试从 Microsoft Store 下载当前应用的指定程序包更新，而不向用户显示通知 UI。</summary>
+      <param name="storePackageUpdates">表示要下载的更新包的 StorePackageUpdate 对象集。</param>
+      <returns>一个对象，调用方可对其进行观察以便跟踪操作的进度和完成情况。 成功完成后，结果是提供有关包更新的信息的 StorePackageUpdateResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>卸载当前应用的指定可选程序包，而不向用户显示通知 UI 对话框。</summary>
+      <param name="package">要卸载的当前应用的可选程序包。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关卸载操作的信息的 StoreUninstallStorePackageResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>卸载当前应用的指定可下载内容 (DLC) 包，而不向用户显示通知 UI 对话框。</summary>
+      <param name="storeId">加载项的 Store ID，该加载项与要卸载的当前应用的 DLC 包对应。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关卸载操作的信息的 StoreUninstallStorePackageResult 对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreDurationUnit">
+      <summary>定义表示订阅的试用期或计费期的单位的值。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Day">
+      <summary>该期间以天为单位定义。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Hour">
+      <summary>该期间以小时为单位定义。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Minute">
+      <summary>该期间以分钟为单位定义。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Month">
+      <summary>该期间以月为单位定义。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Week">
+      <summary>该期间以周为单位定义。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Year">
+      <summary>该期间以年为单位定义。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreImage">
+      <summary>表示与 Microsoft Store 中的产品列表关联的图像。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Caption">
+      <summary>获取图像的标题。</summary>
+      <returns>图像的标题。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Height">
+      <summary>获取图像的高度（以像素为单位）。</summary>
+      <returns>图像的高度。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.ImagePurposeTag">
+      <summary>获取图像的标记。</summary>
+      <returns>图像的标记。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Uri">
+      <summary>获取图像的 URI。</summary>
+      <returns>图像的 URI。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Width">
+      <summary>获取图像的宽度（以像素为单位）。</summary>
+      <returns>图像的宽度。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreLicense">
+      <summary>提供与当前应用关联的持久型加载项的许可证信息。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExpirationDate">
+      <summary>获取加载项许可证的到期日期和时间。</summary>
+      <returns>加载项许可证的到期日期和时间。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExtendedJsonData">
+      <summary>获取采用 JSON 格式的完整许可证数据。</summary>
+      <returns>采用 JSON 格式的完整许可证数据。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.InAppOfferToken">
+      <summary>获取加载项的产品 ID。</summary>
+      <returns>令牌存在时加载项的应用程序内产品令牌。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.IsActive">
+      <summary>此属性保留供未来使用，不应在当前版本中使用。 当前，它始终返回“True”。</summary>
+      <returns>在所有情况下均为“True”。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.SkuStoreId">
+      <summary>获取 Microsoft Store 目录中的加载项应用 SKU 的 Store ID。</summary>
+      <returns>Microsoft Store 目录中的加载项应用 SKU 的 Store ID。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageInstallOptions">
+      <summary>表示使用当前应用的 RequestDownloadAndInstallStorePackagesAsync 方法下载和安装可下载内容 (DLC) 程序包时可指定的选项。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageInstallOptions.#ctor">
+      <summary>创建 StorePackageInstallOptions 类的新实例。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageInstallOptions.AllowForcedAppRestart">
+      <summary>获取或设置一个值，该值指示在使用 RequestDownloadAndInstallStorePackagesAsync 方法安装当前应用的可下载内容 (DLC) 程序包后，OS 是否可以强制重启该应用。</summary>
+      <returns>如果 OS 可以强制在安装 DLC 程序包后重启该应用，则为 true；否则为 false。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageLicense">
+      <summary>提供当前应用的可下载内容 (DLC) 包的许可证信息。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.IsValid">
+      <summary>获取指示许可证是否有效的值。</summary>
+      <returns>如果许可证有效，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.Package">
+      <summary>获取与许可证关联的可下载内容 (DLC) 包。</summary>
+      <returns>表示与许可证关联的 DLC 包的对象。</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StorePackageLicense.LicenseLost">
+      <summary>当用户在当前设备上对许可证不再拥有权限时（例如，用户在其他设备上获取了许可证）引发。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.Close">
+      <summary>关闭并释放此 StorePackageLicense 使用的所有资源。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.ReleaseLicense">
+      <summary>释放可下载内容 (DLC) 包的许可证。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdate">
+      <summary>提供的信息与具有可从 Microsoft Store 下载的更新的当前应用的包有关。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Mandatory">
+      <summary>获取一个值，该值指示具有可从 Microsoft Store 下载的更新的包是否为必需包（由开发人员在合作伙伴中心中指定）。</summary>
+      <returns>如果该包为必要的包，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Package">
+      <summary>获取具有可从 Microsoft Store 下载的更新的包。</summary>
+      <returns>表示具有可用更新的包的对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateResult">
+      <summary>为下载并安装当前应用的程序包的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.OverallState">
+      <summary>获取已完成包更新请求的状态。</summary>
+      <returns>指示已完成包更新请求的状态的值。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StorePackageUpdateStatuses">
+      <summary>获取与已完成请求关联的每个包更新的状态的相关信息。</summary>
+      <returns>StorePackageUpdateStatus 对象的集合，该对象提供了与已完成请求关联的每个包更新的状态的相关信息。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StoreQueueItems">
+      <summary>获取与已完成请求关联的每个程序包更新有个的安装队列信息。</summary>
+      <returns>StoreQueueItem 对象的集合，这些对象提供与已完成请求关联的每个程序包更新有关的安装队列信息。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateState">
+      <summary>定义表示包下载或安装请求的状态的值。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Canceled">
+      <summary>包更新的下载或安装已取消。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Completed">
+      <summary>包更新已完成下载或安装。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Deploying">
+      <summary>包更新正在部署到设备。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Downloading">
+      <summary>包更新正在下载。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorLowBattery">
+      <summary>包更新的下载或安装未成功，因为设备没有足够的电池电量。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRecommended">
+      <summary>下载未成功，因为建议使用 Wi-Fi 连接来下载包更新。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRequired">
+      <summary>下载未成功，因为需要使用 Wi-Fi 连接来下载包更新。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.OtherError">
+      <summary>发生未知错误。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Pending">
+      <summary>包更新的下载未启动。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateStatus">
+      <summary>为与下载或安装请求关联的包提供状态信息。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageBytesDownloaded">
+      <summary>已下载的字节数。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadProgress">
+      <summary>当前包的下载（或下载和安装）进度，由 0.0 到 1.0 之间的值表示。 当你使用 RequestDownloadStorePackageUpdatesAsync 下载包时，在下载每个包的过程中，此值将从 0.0 增加到 1.0。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadSizeInBytes">
+      <summary>正在下载的包的大小（以字节为单位）。 这是估计值，在下载过程中可能会更改。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageFamilyName">
+      <summary>正在下载或安装的包的系列名称。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageUpdateState">
+      <summary>指示正在下载或安装的包的状态的 StorePackageUpdateState 值。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.TotalDownloadProgress">
+      <summary>请求中的所有包下载的当前进度，由 0.0 到 1.0 之间的值表示。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePrice">
+      <summary>包含 Microsoft Store 中的产品列表的定价信息。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.CurrencyCode">
+      <summary>获取当前用户的市场的 ISO 4217 货币代码。</summary>
+      <returns>当前用户的市场的 ISO 4217 货币代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedBasePrice">
+      <summary>获取适用于当前用户的市场的格式的产品的基本价格。</summary>
+      <returns>适用于当前用户的市场的格式的产品的基本价格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedPrice">
+      <summary>获取适用于当前用户的市场的格式的产品的采购价格。</summary>
+      <returns>适用于当前用户的市场的格式的产品的采购价格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedRecurrencePrice">
+      <summary>当为适用于当前用户的市场的格式的产品启用了重复计费时，获取此产品的重复价格。</summary>
+      <returns>适用于当前用户的市场的格式的产品的重复价格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.IsOnSale">
+      <summary>获取指示产品是否要出售的值。</summary>
+      <returns>如果产品要出售，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.SaleEndDate">
+      <summary>当产品要出售时，获取产品的销售期间的结束日期。</summary>
+      <returns>产品的销售期的结束日期。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProduct">
+      <summary>表示 Microsoft Store 中提供的产品。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Description">
+      <summary>从 Microsoft Store 列表获取产品说明。</summary>
+      <returns>产品说明。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ExtendedJsonData">
+      <summary>获取 Store 中的完整产品数据（采用 JSON 格式）。</summary>
+      <returns>包含 Store 中完整的产品数据的 JSON 格式的字符串。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.HasDigitalDownload">
+      <summary>获取一个值，该值指示产品是否具有可选可下载内容 (DLC)。</summary>
+      <returns>如果产品具有可选可下载内容，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Images">
+      <summary>从产品的 Microsoft Store 列表获取图像。</summary>
+      <returns>表示来自产品 Microsoft Store 列表的图像的 StoreImage 对象集合。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.InAppOfferToken">
+      <summary>获取此产品的产品 ID（如果当前 StoreProduct 表示加载项）。</summary>
+      <returns>此产品的产品 ID（如果当前 StoreProduct 表示加载项）。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.IsInUserCollection">
+      <summary>获取一个值，该值指示当前用户是否有权使用产品的默认 SKU 产品。</summary>
+      <returns>如果当前用户有权使用产品的默认 SKU，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Keywords">
+      <summary>获取与合作伙伴中心中的产品关联的关键字。 此属性仅适用于表示加载项的**StoreProduct**对象。 这些字符串对应于合作伙伴中心中加载项属性页中的**关键字**字段的值。</summary>
+      <returns>字符串集合，这些字符串包含与合作伙伴中心中的产品关联的关键字。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Language">
+      <summary>获取产品 Microsoft Store 列表中的数据的语言。</summary>
+      <returns>产品 Microsoft Store 列表中的数据的语言。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.LinkUri">
+      <summary>获取产品的 Microsoft Store 列表的 URI。</summary>
+      <returns>产品的 Microsoft Store 列表的 URI。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Price">
+      <summary>获取产品的默认 SKU 和可用性的价格。</summary>
+      <returns>产品的默认 SKU 和可用性的价格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ProductKind">
+      <summary>获取产品的类型。 当前支持以下这些值：**Application**、**Game**、**Consumable**、**UnmanagedConsumable** 和 **Durable**。</summary>
+      <returns>产品的类型。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Skus">
+      <summary>获取产品的可用 SKU 的列表。</summary>
+      <returns>表示产品的可用 SKU 的 StoreSku 对象集合。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.StoreId">
+      <summary>获取此产品的 Store ID。</summary>
+      <returns>此产品的 Store ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Title">
+      <summary>从 Microsoft Store 列表获取产品标题。</summary>
+      <returns>来自 Microsoft Store 列表的产品标题。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Videos">
+      <summary>从产品的 Microsfot Store 列表获取视频。</summary>
+      <returns>表示来自产品 Microsoft Store 列表的视频的 StoreVideo 对象集合。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.GetIsAnySkuInstalledAsync">
+      <summary>指示是否在当前设备上安装了此产品的任何 SKU。 此方法旨在用于具有可下载内容 (DLC) 的产品。</summary>
+      <returns>一个异步操作，在成功完成后，如果在当前设备上安装了此产品的 SKU，则返回 true；否则返回 false。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync">
+      <summary>请求购买产品的默认 SKU 和可用性并显示用于通过 Microsoft Store 完成交易的 UI。</summary>
+      <returns>一个异步操作，在成功完成后返回提供有关购买请求的状态和错误信息的 StorePurchaseResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>请求购买产品的默认 SKU 和可用性并显示用于通过 Microsoft Store 完成交易的 UI。 此方法提供为大型产品目录（其中的产品由 Microsoft Store 内的单个列表表示）中的特定产品指定其他详细信息（包括在购买过程中向用户显示的产品名称）的选项。</summary>
+      <param name="storePurchaseProperties">指定购买请求的附加信息（包括要在购买过程中向用户显示的产品名称）的对象。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关购买请求的状态和错误信息的 StorePurchaseResult 对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductOptions">
+      <summary>包含筛选器字符串的集合，这些字符串可用于 GetStoreProductsAsync 方法，以获取与当前应用关联的指定产品的信息。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductOptions.#ctor">
+      <summary>创建 StoreProductOptions 类的新实例。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductOptions.ActionFilters">
+      <summary>获取筛选器字符串的集合，这些字符串可用于 GetStoreProductsAsync 方法，以获取与当前应用关联的指定产品的信息。 目前，此集合仅支持一个筛选器字符串“Purchase”。</summary>
+      <returns>筛选器字符串的集合，这些字符串可用于 GetStoreProductsAsync 方法，以获取与当前应用关联的指定产品的信息。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductPagedQueryResult">
+      <summary>为用于检索有关可以在当前应用中购买的产品的详细信息的分页请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.ExtendedError">
+      <summary>获取请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.HasMoreResults">
+      <summary>获取一个值，该值指示是否更多页的结果。 若要获取下一页结果，请使用 GetNextAsync 方法。</summary>
+      <returns>如果有更多页的结果，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.Products">
+      <summary>获取请求返回的产品的集合。</summary>
+      <returns>键值对的字典，其中每个键是产品的 Store ID，值是表示加载项的 StoreProduct 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductPagedQueryResult.GetNextAsync">
+      <summary>返回下一页结果。 若要确定是否有更多页的结果，请使用 HasMoreResults 属性。</summary>
+      <returns>一个异步操作，在成功完成后返回提供下一页结果的 StoreProductPagedQueryResult 对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductQueryResult">
+      <summary>为用于检索有关可以在当前应用中购买的产品的详细信息的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.ExtendedError">
+      <summary>获取请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.Products">
+      <summary>获取请求返回的产品的集合。</summary>
+      <returns>键值对的字典，其中每个键是加载项的 Store ID，值是表示加载项的 StoreProduct 对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductResult">
+      <summary>为用于检索有关当前应用的详细信息的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.ExtendedError">
+      <summary>获取请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.Product">
+      <summary>获取有关当前应用的信息。</summary>
+      <returns>提供有关当前应用的信息的对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseProperties">
+      <summary>包含可以传递给产品购买请求的其他详细信息（包括要在购买过程中向用户显示的产品名称）。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor">
+      <summary>初始化 CStorePurchaseProperties 类的新实例。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor(System.String)">
+      <summary>初始化 CStorePurchaseProperties 类的新实例。 此重载提供用于指定在购买过程中向用户显示的产品名称的选项。</summary>
+      <param name="name">在购买过程中向用户显示的产品名称。</param>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.ExtendedJsonData">
+      <summary>获取或设置一个 JSON 格式的字符串，它包含要随购买请求一起传递给 Microsoft Store 的扩展数据。</summary>
+      <returns>一个 JSON 格式的字符串，它包含要随购买请求一起传递给 Microsoft Store 的扩展数据。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.Name">
+      <summary>获取或设置在购买过程中向用户显示的产品名称。 指定名称会出现在购买 UI 的标题栏中。</summary>
+      <returns>在购买过程中向用户显示的产品名称。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseResult">
+      <summary>为用于购买应用或应用提供的产品的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.ExtendedError">
+      <summary>获取购买请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>购买请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.Status">
+      <summary>获取购买请求的状态。</summary>
+      <returns>购买请求的状态。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseStatus">
+      <summary>定义值，它们表示用于购买应用或加载项的请求的状态。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.AlreadyPurchased">
+      <summary>当前用户已购买指定应用或加载项。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NetworkError">
+      <summary>由于网络连接错误，购买请求未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NotPurchased">
+      <summary>购买请求未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.ServerError">
+      <summary>由于 Microsoft Store 返回的服务器错误，购买请求未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.Succeeded">
+      <summary>购买请求已成功。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItem">
+      <summary>表示有关当前应用的下载和安装队列中新的或已更新程序包的信息。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.InstallKind">
+      <summary>获取一个值，该值描述正在为下载和安装队列中的当前程序包执行的操作。</summary>
+      <returns>描述正在为下载和安装队列中的当前程序包执行的操作的值。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.PackageFamilyName">
+      <summary>获取队列中的当前程序包的程序包系列名称。</summary>
+      <returns>队列中的当前程序包的程序包系列名称。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.ProductId">
+      <summary>获取队列中的当前程序包的加载项产品 ID（如果该程序包对应于某个加载项）。</summary>
+      <returns>队列中的当前程序包的加载项产品 ID。</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.Completed">
+      <summary>在完成下载并安装队列中的当前程序包时引发。</summary>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.StatusChanged">
+      <summary>在队列中的当前程序包状态更改时引发。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.CancelInstallAsync">
+      <summary>取消安装队列中的当前程序包。</summary>
+      <returns>用于控制异步操作的对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.GetCurrentStatus">
+      <summary>返回队列中的当前程序包的状态。</summary>
+      <returns>表示队列中的当前程序包状态的对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.PauseInstallAsync">
+      <summary>暂停安装队列中的当前程序包。</summary>
+      <returns>用于控制异步操作的对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.ResumeInstallAsync">
+      <summary>恢复安装队列中的当前程序包。</summary>
+      <returns>用于控制异步操作的对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemCompletedEventArgs">
+      <summary>为 StoreQueueItem 类的 Completed 事件提供数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemCompletedEventArgs.Status">
+      <summary>获取下载和安装队列中的已完成项目的状态。</summary>
+      <returns>队列中的已完成项目的状态。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemExtendedState">
+      <summary>定义表示当前应用的下载和安装队列中新的或已更新程序包的扩展状态信息的值。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveAcquiringLicense">
+      <summary>程序包正在获得许可证。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveDownloading">
+      <summary>正在下载程序包。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveInstalling">
+      <summary>正在安装程序包。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActivePending">
+      <summary>下载并安装程序包正在挂起。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveRestoringData">
+      <summary>程序包正在还原数据。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveStarting">
+      <summary>正在开始下载并安装程序包。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Canceled">
+      <summary>下载或安装程序包已取消。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Completed">
+      <summary>下载并安装程序包已完成。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Error">
+      <summary>下载或安装程序包遇到错误。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Paused">
+      <summary>下载或安装程序包已暂停。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedLowBattery">
+      <summary>由于电池电量不足，下载或安装程序包已暂停。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedPackagesInUse">
+      <summary>由于该应用已在使用相关程序包，安装该程序包已暂停。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedReadyToInstall">
+      <summary>程序包已暂停，但准备进行安装。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRecommended">
+      <summary>由于推荐使用 WLAN 连接，下载程序包已暂停。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRequired">
+      <summary>由于需要 WLAN 连接，下载程序包已暂停。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemKind">
+      <summary>定义描述正在为下载和安装队列中的当前程序包执行的操作的值。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Install">
+      <summary>正在首次安装该项目。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Repair">
+      <summary>正在修复该项目。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Update">
+      <summary>正在更新该项目。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemState">
+      <summary>定义指定当前应用的下载和安装队列中新的或已更新程序包的状态的值。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Active">
+      <summary>下载或安装程序包正在进行中。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Canceled">
+      <summary>下载或安装程序包已取消。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Completed">
+      <summary>下载并安装程序包已完成。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Error">
+      <summary>下载或安装程序包遇到错误。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Paused">
+      <summary>下载或安装程序包已暂停。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemStatus">
+      <summary>提供有关当前应用的下载和安装队列中新的或已更新程序包的状态信息。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.ExtendedError">
+      <summary>获取下载和安装请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallExtendedState">
+      <summary>获取一个值，该值指定有关当前应用的下载和安装队列中的程序包状态的其他信息。</summary>
+      <returns>指定有关当前应用的下载和安装队列中的程序包状态的其他信息的值。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallState">
+      <summary>获取一个值，该值指定当前应用的队列中的程序包的整体状态。</summary>
+      <returns>指定队列中的程序包的整体状态的值。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.UpdateStatus">
+      <summary>获取一个值，该值指定当前应用的队列中的程序包的更新状态。</summary>
+      <returns>指定队列中的程序包的更新状态的值。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewResult">
+      <summary>为打分并评价产品的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedError">
+      <summary>获取请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedJsonData">
+      <summary>以 JSON 格式获取打分并评价请求的完整结果数据。 这包括用以确定用户是否中止对话的信息，以及调用未成功时的错误详细信息。</summary>
+      <returns>包含打分并评价请求的结果的 JSON 格式的字符串。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.Status">
+      <summary>获取产品的打分并评价请求的状态。</summary>
+      <returns>产品的打分并评价请求的状态。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.WasUpdated">
+      <summary>获取指示打分并评价请求是否已成功更新的值。</summary>
+      <returns>如果请求对产品的评分或评价成功更新则为 True，否则为 false。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewStatus">
+      <summary>获取产品的打分并评价请求的结果状态。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.CanceledByUser">
+      <summary>请求已被用户取消。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Error">
+      <summary>请求遇到错误。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.NetworkError">
+      <summary>请求遇到网络错误。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Succeeded">
+      <summary>请求已成功。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRequestHelper">
+      <summary>提供一个帮助程序方法，可以用于为尚未在 Windows SDK 中具有可用的对应 API 的操作向 Microsoft Store 发送请求。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreRequestHelper.SendRequestAsync(Windows.Services.Store.StoreContext,System.UInt32,System.String)">
+      <summary>使用提供的上下文和参数向 Microsoft Store 发送指定请求。</summary>
+      <param name="context">指定为其执行操作的用户的对象。 如果应用是单用户应用（即，它只在启动应用的用户的上下文中运行），则使用 StoreContext.GetDefault 方法可获取 StoreContext 对象，它可以用于发送在用户上下文中进行操作的请求。</param>
+      <param name="requestKind">标识要向 Microsoft Store 发送的请求的值。</param>
+      <param name="parametersAsJson">包含要传递给请求的参数的 JSON 格式字符串。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关请求的状态和错误信息的 StoreSendRequestResult 对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSendRequestResult">
+      <summary>为发送到 Microsoft Store 的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.ExtendedError">
+      <summary>获取请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码（如果操作遇到错误）。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.HttpStatusCode">
+      <summary>获取请求的 HTTP 状态代码。</summary>
+      <returns>请求的 HTTP 状态代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.Response">
+      <summary>获取请求的响应数据。</summary>
+      <returns>请求的响应数据。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSku">
+      <summary>提供 Microsoft Store 中产品的库存单位 (SKU) 的信息。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Availabilities">
+      <summary>获取当前产品 SKU 的可用性。 每个产品 SKU 都具有不同价格的一项或多项可用性。</summary>
+      <returns>表示当前产品 SKU 可用性的 StoreAvailability 对象集合。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.BundledSkus">
+      <summary>获取与此产品 SKU 捆绑的应用或加载项的 Store ID 列表。</summary>
+      <returns>与此产品 SKU 捆绑的应用或加载项的 Store ID 列表。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CollectionData">
+      <summary>获取当前产品 SKU 的其他数据（如果用户有权使用该 SKU）。</summary>
+      <returns>为当前产品 SKU 提供其他数据（如果用户有权使用该 SKU）的对象。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CustomDeveloperData">
+      <summary>获取自定义开发人员数据字符串（也称为标记），该字符串包含与此产品 SKU 表示的加载项相关的自定义信息。 该字符串对应于合作伙伴中心中加载项属性页中的**自定义开发人员数据**字段的值。</summary>
+      <returns>加载项的自定义开发人员数据。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Description">
+      <summary>从 Microsoft Store 列表获取产品 SKU 说明。</summary>
+      <returns>来自 Microsoft Store 列表的产品 SKU 说明。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.ExtendedJsonData">
+      <summary>获取 Store 中的当前产品 SKU 的完整数据（采用 JSON 格式）。</summary>
+      <returns>Store 中包含当前产品 SKU 完整数据的 JSON 格式的字符串。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Images">
+      <summary>从产品 SKU 的 Microsoft Store 列表获取图像。</summary>
+      <returns>表示来自产品 SKU 的 Microsoft Store 列表的图像的 StoreImage 对象集合。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsInUserCollection">
+      <summary>获取一个值，该值指示当前用户是否有权使用当前产品 SKU。</summary>
+      <returns>如果当前用户有权使用当前产品 SKU，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsSubscription">
+      <summary>获取一个值，该值指示当前产品 SKU 是否为具有重复计费的订阅。 有关订阅的详细信息，请参阅 SubscriptionInfo 属性。</summary>
+      <returns>如果当前产品 SKU 是重复计费订阅，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsTrial">
+      <summary>获取一个值，该值指示当前产品 SKU 是否为试用 SKU。</summary>
+      <returns>如果当前产品 SKU 是一种试用 SKU，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Language">
+      <summary>获取产品 SKU Microsoft Store 列表中的数据的语言。</summary>
+      <returns>产品 SKU 的 Microsoft Store 列表的数据。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Price">
+      <summary>获取此产品 SKU 的默认可用性的价格。</summary>
+      <returns>此产品 SKU 的默认可用性的价格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.StoreId">
+      <summary>获取此产品 SKU 的 Store ID。</summary>
+      <returns>此产品 SKU 的 Store ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.SubscriptionInfo">
+      <summary>获取此产品 SKU 的订阅信息（如果此产品 SKU 是具有重复计费的订阅）。 若要确定此产品 SKU 是否为订阅，请使用 IsSubscription 属性。</summary>
+      <returns>包含此产品 SKU 的订阅信息的对象。 如果此产品 SKU 不是重复计费订阅，则此属性返回 **null**。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Title">
+      <summary>从 Microsoft Store 列表获取产品 SKU 标题。</summary>
+      <returns>来自 Microsoft Store 列表的产品 SKU 标题。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Videos">
+      <summary>从产品 SKU 的 Microsoft Store 列表获取视频。</summary>
+      <returns>表示来自产品 SKU 的 Microsoft Store 列表的视频的 StoreVideo 对象集合。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.GetIsInstalledAsync">
+      <summary>指示是否在当前设备上安装了此产品 SKU。</summary>
+      <returns>一个异步操作，在成功完成后，如果在当前设备上安装了此产品 SKU，则返回 true；否则返回 false。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync">
+      <summary>请求购买产品 SKU 并显示用于通过 Microsoft Store 完成交易的 UI。</summary>
+      <returns>一个异步操作，在成功完成后返回提供有关购买请求的状态和错误信息的 StorePurchaseResult 对象。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>请求购买产品 SKU 并显示用于通过 Microsoft Store 完成交易的 UI。 此方法提供为大型产品目录（其中的产品由 Microsoft Store 内的单个列表表示）中的特定产品指定其他详细信息（包括在购买过程中向用户显示的产品名称）的选项。</summary>
+      <param name="storePurchaseProperties">指定购买请求的附加信息（包括要在购买过程中向用户显示的产品名称）的对象。</param>
+      <returns>一个异步操作，在成功完成后返回提供有关购买请求的状态和错误信息的 StorePurchaseResult 对象。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSubscriptionInfo">
+      <summary>为表示具有重复计费的订阅的产品 SKU 提供订阅信息。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriod">
+      <summary>获取订阅计费周期的持续时间（采用 BillingPeriodUnit 属性指定的单位）。</summary>
+      <returns>计费周期的持续时间（采用 BillingPeriodUnit 属性指定的单位）。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriodUnit">
+      <summary>获取订阅计费周期的单位。</summary>
+      <returns>指定订阅计费周期的单位的值。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.HasTrialPeriod">
+      <summary>获取一个值，该值指示订阅是否包含试用期。</summary>
+      <returns>如果此订阅包含试用期，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriod">
+      <summary>获取订阅试用期的持续时间（采用 TrialPeriodUnit 属性指定的单位）。 若要确定订阅是否具有试用期，请使用 HasTrialPeriod 属性。</summary>
+      <returns>试用期的持续时间（采用 TrialPeriodUnit 属性指定的单位）。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriodUnit">
+      <summary>获取订阅试用期的单位。</summary>
+      <returns>指定订阅试用期的单位的值。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageResult">
+      <summary>为卸载当前应用的程序包的请求提供响应数据。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.ExtendedError">
+      <summary>获取请求的错误代码（如果操作遇到错误）。</summary>
+      <returns>请求的错误代码。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.Status">
+      <summary>获取程序包卸载请求的状态。</summary>
+      <returns>程序包卸载请求的状态。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageStatus">
+      <summary>定义表示程序包卸载请求的状态的值。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.CanceledByUser">
+      <summary>卸载操作已被用户取消。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Error">
+      <summary>由于未知错误，卸载操作未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.NetworkError">
+      <summary>由于网络连接错误，卸载操作未成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Succeeded">
+      <summary>卸载操作成功。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.UninstallNotApplicable">
+      <summary>卸载操作不适用于指定的程序包。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreVideo">
+      <summary>表示与 Microsoft Store 中的产品列表关联的视频。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Caption">
+      <summary>获取视频的标题。</summary>
+      <returns>视频的标题。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Height">
+      <summary>获取视频的高度（以像素为单位）。</summary>
+      <returns>视频的高度。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.PreviewImage">
+      <summary>获取为视频显示的预览图像。</summary>
+      <returns>为视频显示的预览图像。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Uri">
+      <summary>获取视频的 URI。</summary>
+      <returns>视频的 URI。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.VideoPurposeTag">
+      <summary>获取视频的标记。</summary>
+      <returns>视频的标记。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Width">
+      <summary>获取视频的宽度（以像素为单位）。</summary>
+      <returns>视频的宽度（以像素为单位）。</returns>
+    </member>
+  </members>
+</doc>

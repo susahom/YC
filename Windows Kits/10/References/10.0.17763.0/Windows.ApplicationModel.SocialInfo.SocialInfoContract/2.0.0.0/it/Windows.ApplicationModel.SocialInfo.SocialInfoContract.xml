@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.SocialInfo.SocialInfoContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem">
+      <summary>Rappresenta l'elemento figlio di un SocialFeedItem.</summary>
+      <deprecated type="deprecate">SocialFeedChildItem è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.#ctor">
+      <summary>Inizializza una nuova istanza della classe SocialFeedChildItem.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Author">
+      <summary>Ottiene l'autore dell'elemento figlio.</summary>
+      <returns>Autore dell'elemento figlio.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.PrimaryContent">
+      <summary>Ottiene l'oggetto SocialFeedContent primario associato all'elemento figlio.</summary>
+      <returns>Oggetto SocialFeedContent primario associato all'elemento figlio.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SecondaryContent">
+      <summary>Ottiene l'oggetto SocialFeedContent secondario associato all'elemento figlio.</summary>
+      <returns>Oggetto SocialFeedContent secondario associato all'elemento figlio.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SharedItem">
+      <summary>Ottiene un elemento di social media che è stato condiviso con l'utente da un altro utente del servizio.</summary>
+      <returns>Elemento di social media che è stato condiviso con l'utente.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.TargetUri">
+      <summary>Ottiene o imposta l'URI (Uniform Resource Identifier) all'elemento di destinazione associato a questo elemento figlio.</summary>
+      <returns>Uniform Resource Identifier (URI) associato all'elemento figlio.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Thumbnails">
+      <summary>Ottiene un elenco di immagini di anteprima associate all'elemento figlio.</summary>
+      <returns>Elenco di immagini di anteprima associate all'elemento figlio.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Timestamp">
+      <summary>Ottiene o imposta il timestamp per l'elemento figlio.</summary>
+      <returns>Timestamp per l'elemento figlio.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedContent">
+      <summary>Rappresenta un messaggio di social media.</summary>
+      <deprecated type="deprecate">SocialFeedContent è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Message">
+      <summary>Ottiene o imposta il messaggio di social media.</summary>
+      <returns>Messaggio di social media.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.TargetUri">
+      <summary>Ottiene o imposta l'URI (Uniform Resource Identifier) alla destinazione del contenuto.</summary>
+      <returns>URI (Uniform Resource Identifier) del contenuto.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Title">
+      <summary>Ottiene o imposta il titolo del contenuto.</summary>
+      <returns>Titolo del contenuto.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItem">
+      <summary>Rappresenta un elemento feed di social media.</summary>
+      <deprecated type="deprecate">SocialFeedItem è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedItem.#ctor">
+      <summary>Inizializza una nuova istanza della classe SocialFeedItem.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Author">
+      <summary>Ottiene l'autore dell'elemento feed di social media.</summary>
+      <returns>Autore dell'elemento feed di social media.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeCountValue">
+      <summary>Ottiene o imposta il numero di elementi non visti visualizzati nel badge dell'app.</summary>
+      <returns>Numero di elementi non visti visualizzati nel badge dell'app.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeStyle">
+      <summary>Ottiene o imposta lo stile del badge per l'app.</summary>
+      <returns>Stile del badge per l'app.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.ChildItem">
+      <summary>Ottiene o imposta l'elemento figlio associato all'elemento feed social.</summary>
+      <returns>Elemento figlio associato all'elemento feed social.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.PrimaryContent">
+      <summary>Ottiene l'oggetto SocialFeedContent primario associato all'elemento.</summary>
+      <returns>Oggetto SocialFeedContent primario associato all'elemento.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.RemoteId">
+      <summary>Ottiene o imposta il valore utilizzato per identificare questo elemento nel sistema del provider.</summary>
+      <returns>Valore utilizzato per identificare questo elemento nel sistema del provider.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SecondaryContent">
+      <summary>Ottiene l'oggetto SocialFeedContent secondario associato all'elemento.</summary>
+      <returns>Oggetto SocialFeedContent secondario associato all'elemento.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SharedItem">
+      <summary>Ottiene un elemento di social media che è stato condiviso con l'utente da un altro utente del servizio.</summary>
+      <returns>Elemento di social media che è stato condiviso con l'utente da un altro utente del servizio.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Style">
+      <summary>Ottiene o imposta lo stile di questo elemento, come la foto o l'impostazione predefinita.</summary>
+      <returns>Stile di questo elemento.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.TargetUri">
+      <summary>Ottiene o imposta l'URI (Uniform Resource Identifier) all'elemento di destinazione associato a questo elemento.</summary>
+      <returns>Uniform Resource Identifier (URI) associato all'elemento.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Thumbnails">
+      <summary>Ottiene un elenco di immagini di anteprima associate a questo elemento.</summary>
+      <returns>Elenco di immagini di anteprima associate a questo elemento.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Timestamp">
+      <summary>Ottiene o imposta il timestamp per questo elemento.</summary>
+      <returns>Timestamp per questo elemento.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle">
+      <summary>Definisce i tipi di elementi feed di social media.</summary>
+      <deprecated type="deprecate">SocialFeedItemStyle è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Default">
+      <summary>Valore predefinito</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Photo">
+      <summary>Elemento foto.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedKind">
+      <summary>Definisce i tipi di feed di social media.</summary>
+      <deprecated type="deprecate">SocialFeedKind è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.ContactFeed">
+      <summary>Feed contatto</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.Dashboard">
+      <summary>Feed dashboard</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.HomeFeed">
+      <summary>Feed home</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem">
+      <summary>Rappresenta un elemento di social media che è stato condiviso con l'utente da un altro utente del servizio.</summary>
+      <deprecated type="deprecate">SocialFeedSharedItem è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.#ctor">
+      <summary>Inizializza una nuova istanza della classe SocialFeedSharedItem.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Content">
+      <summary>Ottiene l'oggetto SocialFeedContent associato all'elemento condiviso.</summary>
+      <returns>Oggetto SocialFeedContent associato all'elemento condiviso.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.OriginalSource">
+      <summary>Ottiene o imposta l'URI (Uniform Resource Identifier) originale dell'elemento condiviso.</summary>
+      <returns>URI (Uniform Resource Identifier) originale dell'elemento condiviso.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.TargetUri">
+      <summary>Ottiene o imposta l'URI (Uniform Resource Identifier) all'elemento di destinazione associato a questo elemento condiviso.</summary>
+      <returns>Uniform Resource Identifier (URI) associato all'elemento condiviso.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Thumbnail">
+      <summary>Ottiene o imposta un'immagine di anteprima associata a questo elemento condiviso.</summary>
+      <returns>Immagine di anteprima associata a questo elemento condiviso.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Timestamp">
+      <summary>Ottiene o imposta il timestamp per questo elemento condiviso.</summary>
+      <returns>Timestamp per questo elemento condiviso.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode">
+      <summary>Definisce le modalità per aggiornare un feed di social media.</summary>
+      <deprecated type="deprecate">SocialFeedUpdateMode è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Append">
+      <summary>Modalità Append</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Replace">
+      <summary>Modalità sostituzione</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialInfoContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle">
+      <summary>Definisce i tipi di badge dell'app.</summary>
+      <deprecated type="deprecate">SocialItemBadgeStyle è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Hidden">
+      <summary>Badge nascosto</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Visible">
+      <summary>Badge visibile</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.VisibleWithCount">
+      <summary>Badge visibile con conteggio degli elementi non visti visualizzato</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail">
+      <summary>Rappresenta un'immagine di anteprima associata a un elemento feed di social media.</summary>
+      <deprecated type="deprecate">SocialItemThumbnail è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.#ctor">
+      <summary>Inizializza una nuova istanza della classe SocialItemThumbnail.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.BitmapSize">
+      <summary>Ottiene o imposta le dimensioni dell'immagine bitmap di anteprima.</summary>
+      <returns>Dimensioni dell'immagine bitmap di anteprima.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.ImageUri">
+      <summary>Ottiene o imposta l'URI (Uniform Resource Identifier) al file immagine per questa anteprima.</summary>
+      <returns>URI (Uniform Resource Identifier) al file immagine per questa anteprima.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.TargetUri">
+      <summary>Ottiene o imposta l'URI (Uniform Resource Identifier) all'elemento di destinazione associato a questa anteprima.</summary>
+      <returns>URI (Uniform Resource Identifier) all'elemento di destinazione associato a questa anteprima.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.SetImageAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>Imposta in modo asincrono l'immagine per questa anteprima da un flusso locale.</summary>
+      <deprecated type="deprecate">ISocialItemThumbnail è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <param name="image">Flusso dell'immagine.</param>
+      <returns>Azione asincrona che indica che l'operazione è stata completata.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialUserInfo">
+      <summary>Rappresenta un utente di un servizio del provider di social media.</summary>
+      <deprecated type="deprecate">SocialUserInfo è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.DisplayName">
+      <summary>Ottiene o imposta il nome dell'utente di social media, adatto alla visualizzazione.</summary>
+      <returns>Nome dell'utente di social media, adatto alla visualizzazione.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.RemoteId">
+      <summary>Ottiene o imposta un valore che identifica l'utente nel servizio di social media.</summary>
+      <returns>Valore che identifica l'utente nel servizio di social media.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.TargetUri">
+      <summary>Ottiene o imposta l'URI (Uniform Resource Identifier) all'utente nel sistema di social media.</summary>
+      <returns>URI (Uniform Resource Identifier) all'utente nel sistema di social media.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.UserName">
+      <summary>Ottiene o imposta il nome utente per l'utente nel servizio di social media.</summary>
+      <returns>Nome utente per l'utente nel servizio di social media.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater">
+      <summary>Rappresenta un'attività che può aggiornare gli elementi dashboard.</summary>
+      <deprecated type="deprecate">SocialDashboardItemUpdater è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Content">
+      <summary>Ottiene un oggetto SocialFeedContent che può essere aggiornato.</summary>
+      <returns>Oggetto SocialFeedContent che può essere aggiornato.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.OwnerRemoteId">
+      <summary>Ottiene l'ID che identifica l'utente nel sistema del provider.</summary>
+      <returns>ID che identifica l'utente nel sistema del provider.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.TargetUri">
+      <summary>Ottiene o imposta l'URI (Uniform Resource Identifier) a cui passare quando l'utente tocca l'elemento.</summary>
+      <returns>URI a cui passare quando l'utente tocca l'elemento.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Thumbnail">
+      <summary>Ottiene o imposta l'immagine di anteprima per l'elemento dashboard.</summary>
+      <returns>Immagine di anteprima per l'elemento dashboard.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Timestamp">
+      <summary>Ottiene o imposta il timestamp per l'aggiornamento.</summary>
+      <returns>Timestamp per l'aggiornamento.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.CommitAsync">
+      <summary>Invia l'aggiornamento in modo asincrono dopo che tutte le proprietà sono state impostate.</summary>
+      <deprecated type="deprecate">ISocialDashboardItemUpdater è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <returns>Azione asincrona che indica che l'operazione è stata completata.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater">
+      <summary>Rappresenta un'attività può essere utilizzata per aggiornare un feed di social media.</summary>
+      <deprecated type="deprecate">SocialFeedUpdater è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Items">
+      <summary>Ottiene l'elenco di elementi feed di social media.</summary>
+      <returns>Elenco di elementi feed di social media.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Kind">
+      <summary>Ottiene il tipo di feed di social media.</summary>
+      <returns>Tipo di feed di social media.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.OwnerRemoteId">
+      <summary>Ottiene l'ID che identifica l'utente nel sistema del provider.</summary>
+      <returns>ID che identifica l'utente nel sistema del provider.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.CommitAsync">
+      <summary>Invia l'aggiornamento in modo asincrono dopo che tutte le proprietà sono state impostate.</summary>
+      <deprecated type="deprecate">ISocialFeedUpdater è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <returns>Azione asincrona che indica che l'operazione è stata completata.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager">
+      <summary>Fornisce la funzionalità per un'app per utilizzare l'estensibilità di social media.</summary>
+      <deprecated type="deprecate">SocialInfoProviderManager è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateDashboardItemUpdaterAsync(System.String)">
+      <summary>Crea un nuovo oggetto SocialDashboardItemUpdater che può essere utilizzato come attività.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <param name="ownerRemoteId">ID che identifica l'utente nel sistema del provider.</param>
+      <returns>L'oggetto SocialDashboardItemUpdater appena creato.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateSocialFeedUpdaterAsync(Windows.ApplicationModel.SocialInfo.SocialFeedKind,Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode,System.String)">
+      <summary>Crea un nuovo oggetto SocialFeedUpdater che può essere utilizzato come attività.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <param name="kind">Tipo di feed di social media da creare.</param>
+      <param name="mode">Specifica la modalità Append o sostituzione.</param>
+      <param name="ownerRemoteId">ID che identifica l'utente nel sistema del provider.</param>
+      <returns>Oggetto SocialFeedUpdater appena creato.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.DeprovisionAsync">
+      <summary>Esegue il deprovisioning di un'app dall'utilizzo dell'estensibilità di social media.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <returns>Azione asincrona che indica che l'operazione è stata completata.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ProvisionAsync">
+      <summary>Esegue il provisioning dell'app per utilizzare l'estensibilità di social media.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <returns>Valore booleano che indica se l'operazione è stata completata.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ReportNewContentAvailable(System.String,Windows.ApplicationModel.SocialInfo.SocialFeedKind)">
+      <summary>Avvisa il sistema che il nuovo contenuto di social media è disponibile dall'app.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <param name="contactRemoteId">ID che identifica l'utente nel sistema del provider.</param>
+      <param name="kind">Tipo di feed di social media.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.UpdateBadgeCountValue(System.String,System.Int32)">
+      <summary>Aggiorna il valore di conteggio sul badge della schermata di blocco.</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics è deprecato e potrebbe non funzionare su tutte le piattaforme. Per ulteriori informazioni, vedere MSDN.</deprecated>
+      <param name="itemRemoteId">Identifica il contatto nel sistema del provider.</param>
+      <param name="newCount">Nuovo valore di conteggio da visualizzare sul badge.</param>
+    </member>
+  </members>
+</doc>

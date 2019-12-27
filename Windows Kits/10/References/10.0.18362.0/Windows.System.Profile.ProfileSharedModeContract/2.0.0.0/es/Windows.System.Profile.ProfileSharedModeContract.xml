@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.Profile.ProfileSharedModeContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.Profile.ProfileSharedModeContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.Profile.SharedModeSettings">
+      <summary>Proporciona acceso a la configuración del modo compartido. Por ejemplo, los dispositivos con pantallas grandes pueden admitir aplicaciones compartidas comunales.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SharedModeSettings.IsEnabled">
+      <summary>Obtiene un valor booleano que indica si el modo compartido está habilitado.</summary>
+      <returns>Un valor booleano que indica si el modo compartido está habilitado.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SharedModeSettings.ShouldAvoidLocalStorage">
+      <summary>Obtiene un valor booleano que indica que la aplicación no debe almacenar archivos en la unidad de disco duro local.</summary>
+      <returns>Un valor booleano que indica que las aplicaciones no deben almacenar archivos en la unidad de disco duro local. En su lugar, los archivos se deben guardar en el almacenamiento en la nube.</returns>
+    </member>
+  </members>
+</doc>

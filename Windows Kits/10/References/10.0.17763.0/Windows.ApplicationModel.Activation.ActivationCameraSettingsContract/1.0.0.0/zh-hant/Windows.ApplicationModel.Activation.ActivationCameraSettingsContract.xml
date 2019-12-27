@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Activation.ActivationCameraSettingsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Activation.ActivationCameraSettingsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs">
+      <summary>讓攝影機設定應用程式處理應用程式的啟用參數。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.Kind">
+      <summary>取得啟用類型。</summary>
+      <returns>其中一個列舉值。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.PreviousExecutionState">
+      <summary>取得應用程式在啟動之前的執行狀態。</summary>
+      <returns>其中一個列舉值。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.SplashScreen">
+      <summary>取得啟動顯示畫面物件，這個物件會提供從啟動顯示畫面轉換為已啟動應用程式的相關資訊。</summary>
+      <returns>提供啟動顯示畫面資訊的物件。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.VideoDeviceController">
+      <summary>取得控制照相機上之裝置設定的物件。</summary>
+      <returns>控制照相機上之裝置設定的物件。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.VideoDeviceExtension">
+      <summary>取得實作其他攝影機擴充設定的物件。</summary>
+      <returns>實作照相機擴充設定的物件。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Activation.ICameraSettingsActivatedEventArgs">
+      <summary>讓攝影機設定應用程式處理應用程式的啟用參數。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.ICameraSettingsActivatedEventArgs.VideoDeviceController">
+      <summary>取得控制照相機上之裝置設定的物件。</summary>
+      <returns>控制照相機上之裝置設定的物件。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.ICameraSettingsActivatedEventArgs.VideoDeviceExtension">
+      <summary>取得實作其他攝影機擴充設定的物件。</summary>
+      <returns>實作照相機擴充設定的物件。</returns>
+    </member>
+    <member name="T:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs">
+      <summary>讓攝影機設定應用程式處理應用程式的啟用參數。</summary>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.ActivatedOperation">
+      <summary>取得應用程式啟動作業。</summary>
+      <returns>啟用作業。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.Kind">
+      <summary>取得啟用類型。</summary>
+      <returns>其中一個列舉值。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.PreviousExecutionState">
+      <summary>取得應用程式在啟動之前的執行狀態。</summary>
+      <returns>其中一個列舉值。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.SplashScreen">
+      <summary>取得啟動顯示畫面物件，這個物件會提供從啟動顯示畫面轉換為已啟動應用程式的相關資訊。</summary>
+      <returns>提供啟動顯示畫面資訊的物件。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.VideoDeviceController">
+      <summary>取得控制照相機上之裝置設定的物件。</summary>
+      <returns>控制照相機上之裝置設定的物件。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.VideoDeviceExtension">
+      <summary>取得實作其他攝影機擴充設定的物件。</summary>
+      <returns>實作照相機擴充設定的物件。</returns>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.StartupTaskContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.StartupTask">
+      <summary>表示在系统启动或用户登录到其设备时运行的 UWP 应用或桌面应用程序后台任务。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.StartupTask.State">
+      <summary>获取启动任务的状态（已启用、已禁用，或已被用户禁用）。</summary>
+      <returns>启动任务的状态。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.StartupTask.TaskId">
+      <summary>获取启动任务的 Id。</summary>
+      <returns>启动任务的 Id。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.StartupTask.Disable">
+      <summary>禁用启动任务。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.StartupTask.GetAsync(System.String)">
+      <summary>按 Id 获取启动任务。</summary>
+      <param name="taskId">要获取的启动任务的 Id。</param>
+      <returns>当此方法完成时，它返回具有给定 Id 的启动任务。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.StartupTask.GetForCurrentPackageAsync">
+      <summary>获取针对当前应用包的所有启动任务。</summary>
+      <returns>当此方法完成时，它返回针对当前应用包的所有启动任务。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.StartupTask.RequestEnableAsync">
+      <summary>启用启动任务的请求。 如果用户已使用任务管理器禁用了该任务，则此方法将不会替代他们的选择，用户必须重新手动启用任务。</summary>
+      <returns>当此方法完成时，它返回启动任务的状态。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.StartupTaskContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.StartupTaskState">
+      <summary>表示启动任务的状态（已启用、已禁用，或已被用户禁用）。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.Disabled">
+      <summary>此任务已禁用。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.DisabledByPolicy">
+      <summary>此任务由管理员或组策略禁用。 不支持启动任务的平台也会报告 **DisabledByPolicy**。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.DisabledByUser">
+      <summary>用户已禁用了此任务。 只能由用户重新启用此任务。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.Enabled">
+      <summary>此任务已启用。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.StartupTaskState.EnabledByPolicy">
+      <summary>该任务由管理员或组策略启用。</summary>
+    </member>
+  </members>
+</doc>

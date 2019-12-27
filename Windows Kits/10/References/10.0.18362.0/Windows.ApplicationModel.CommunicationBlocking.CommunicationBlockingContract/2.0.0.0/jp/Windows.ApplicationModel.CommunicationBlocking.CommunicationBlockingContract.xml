@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger">
+      <summary>優先するブロッキング アプリとして選択された通信ブロッキング アプリケーションをアクティブ化するためのトリガーを表します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger.#ctor">
+      <summary>CommunicationBlockingAppSetAsActiveTrigger の新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager">
+      <summary>ブロックされた番号を追跡し、適切なブロッキング ユーザー インターフェイスを表示するマネージャー。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockingActive">
+      <summary>ブロッキングが現在有効になっているかどうかを示す値を取得します。</summary>
+      <returns>ブロッキングが有効かどうかを判定します。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockedNumberAsync(System.String)">
+      <summary>番号がブロック リストに登録されているかどうかを示す非同期操作。</summary>
+      <param name="number">確認する番号。</param>
+      <returns>番号がブロック リストに登録されているかどうかを非同期的に返します。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedCallsUI">
+      <summary>ブロックされた呼び出しの一覧を表示します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedMessagesUI">
+      <summary>ブロックされたメッセージの一覧を表示します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>アクティブなブロッキング アプリがある場合に UI を起動して番号をブロックします。</summary>
+      <param name="phoneNumbers">ブロック リストに追加する番号のリスト。</param>
+      <returns>アクティブなブロッキング アプリが起動されている場合は **true** を返し、それ以外の場合は **false** を返します。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowUnblockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>アクティブなブロッキング アプリがある場合にアプリを起動して番号のブロックを解除します。</summary>
+      <param name="phoneNumbers">ブロック リストから削除する番号のリスト。</param>
+      <returns>アクティブなブロッキング アプリが起動されている場合は **true** を返し、それ以外の場合は **false** を返します。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager">
+      <summary>ブロッキング アプリケーションとして使用するアプリケーションを判定します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.IsCurrentAppActiveBlockingApp">
+      <summary>現在のアプリケーションがアクティブなブロッキング アプリケーションであるかどうかを示します。</summary>
+      <returns>現在のアプリケーションがアクティブなブロッキング アプリケーションであるかどうかを示す値。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.RequestSetAsActiveBlockingAppAsync">
+      <summary>ダイアログを呼び出して、既定の通話通信ブロッキング アプリケーションとして現在のアプリケーションを設定します。</summary>
+      <returns>アプリケーションが既定の通話呼び出し元アプリケーションとして設定されたかどうかを示します。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.ShowCommunicationBlockingSettingsUI">
+      <summary>現在アクティブなブロッキング アプリケーションを選択するための UI を表示します。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

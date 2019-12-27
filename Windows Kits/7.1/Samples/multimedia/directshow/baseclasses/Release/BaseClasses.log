@@ -1,0 +1,41 @@
+﻿  amextra.cpp
+  amfilter.cpp
+  amvideo.cpp
+  arithutil.cpp
+  combase.cpp
+  cprop.cpp
+  ctlutil.cpp
+  ddmm.cpp
+  dllentry.cpp
+D:\Windows Kits\7.1\Samples\multimedia\directshow\baseclasses\dllentry.cpp(314,1): warning C4996:  'GetVersionExW': が古い形式として宣言されました。
+  dllsetup.cpp
+  mtype.cpp
+  outputq.cpp
+  perflog.cpp
+  pstream.cpp
+  pullpin.cpp
+  refclock.cpp
+  renbase.cpp
+  schedule.cpp
+  seekpt.cpp
+  source.cpp
+  コードを生成中...
+  コンパイル中...
+  strmctl.cpp
+  sysclock.cpp
+  transfrm.cpp
+  transip.cpp
+  videoctl.cpp
+  vtrans.cpp
+  winctrl.cpp
+  winutil.cpp
+  wxdebug.cpp
+  wxlist.cpp
+  wxutil.cpp
+D:\Windows Kits\10\Include\10.0.18362.0\um\sysinfoapi.h(396): message :  'GetVersionExW' の宣言を確認してください
+D:\Windows Kits\7.1\Samples\multimedia\directshow\baseclasses\wxutil.cpp(755,1): warning C4996:  'GetVersionExW': が古い形式として宣言されました。
+  コードを生成中...
+D:\Windows Kits\10\Include\10.0.18362.0\um\sysinfoapi.h(396): message :  'GetVersionExW' の宣言を確認してください
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1445,5): warning MSB8012: TargetPath(D:\Windows Kits\7.1\Samples\multimedia\directshow\baseclasses\Release\BaseClasses.lib) does not match the Library's OutputFile property value (D:\Windows Kits\7.1\Samples\multimedia\directshow\baseclasses\Release\strmbase.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+D:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1447,5): warning MSB8012: TargetName(BaseClasses) does not match the Library's OutputFile property value (strmbase). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  BaseClasses.vcxproj -> D:\Windows Kits\7.1\Samples\multimedia\directshow\baseclasses\Release\BaseClasses.lib

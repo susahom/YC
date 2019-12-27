@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.Profile.SystemManufacturers.SystemManufacturersContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.Profile.SystemManufacturers.OemSupportInfo">
+      <summary>Stellt Supportinformationen über den Hersteller für das Gerät bereit. Dazu gehören der Name des OEMs, Websiteadresse und andere Supportdetails.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportAppLink">
+      <summary>Ruft den Handler-Protokolllink für die OEM-integrierte Unterstützungs-Apps ab, die anstelle der Web-URL gestartet wird.</summary>
+      <returns>Die Handler-Protokolllink für die OEM-integrierte Unterstützungs-App.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportLink">
+      <summary>Ruft den Uniform Resource Identifier (URI) für die Support-Website des Original Equipment Manufacturers (OEM) ab.</summary>
+      <returns>Die URI für die OEM-Support-Website.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportProvider">
+      <summary>Ruft den Namen des Support-Anbieters für das Gerät ab.</summary>
+      <returns>Der Name des Support-Anbieters für das Gerät.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SmbiosInformation">
+      <summary>Ermöglicht den Zugriff auf Eigenschaften aus dem SMBIOS für das System.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SmbiosInformation.SerialNumber">
+      <summary>Ruft die SMBIOS-Seriennummer des Systems ab.</summary>
+      <returns>Seriennummer</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemManufacturersContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo">
+      <summary>Ermöglicht der App, Geräteinformationen vom lokalen Gerät abzurufen.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.FriendlyName">
+      <summary>Ruft den Anzeigenamen des lokalen Geräts ab. Dieser Wert könnte aus einem NetBIOS-Computernamen stammen.</summary>
+      <returns>Der Anzeigename des lokalen Geräts. Der Wert ist weniger als 1024 Zeichen lang.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.OperatingSystem">
+      <summary>Ruft den Namen des Betriebssystems des lokalen Geräts ab.</summary>
+      <returns>Eine Zeichenfolge mit dem Betriebssystems des lokalen Geräts.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemFirmwareVersion">
+      <summary>Ruft die Systemfirmwareversion des lokalen Geräts ab.</summary>
+      <returns>Eine Zeichenfolge mit der Systemfirmwareversion des lokalen Geräts.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemHardwareVersion">
+      <summary>Ruft die Systemhardwareversion des lokalen Geräts ab.</summary>
+      <returns>Eine Zeichenfolge mit der Systemhardwareversion des lokalen Geräts.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemManufacturer">
+      <summary>Ruft den Systemhersteller des lokalen Geräts ab. Verwenden Sie **SystemManufacturer** nur, wenn der SystemSku-Wert leer ist.</summary>
+      <returns>Eine Zeichenfolge mit dem Systemhersteller des lokalen Geräts. Der Wert ist weniger als 1024 Zeichen lang.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemProductName">
+      <summary>Ruft den Systemproduktnamen des lokalen Geräts ab. Verwenden Sie **SystemProductName** nur, wenn der SystemSku-Wert leer ist.</summary>
+      <returns>Eine Zeichenfolge mit dem Systemproduktnamen des lokalen Geräts. Der Wert ist weniger als 1024 Zeichen lang.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemSku">
+      <summary>Ruft die System-SKU des lokalen Geräts ab.</summary>
+      <returns>Eine Zeichenfolge mit der System-SKU des lokalen Geräts.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportInfo">
+      <summary>Bietet Support-Informationen über das Gerät. Dazu gehören die lokale Systemedition und OEM-Supportinformationen.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalDeviceInfo">
+      <summary>Ruft das lokale Gerät ab.</summary>
+      <returns>Ein SystemSupportDeviceInfo-Wert, der das lokale Gerät darstellt.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalSystemEdition">
+      <summary>Ruft die lokale Systemedition des Geräts ab.</summary>
+      <returns>Eine Zeichenfolge mit der lokalen Systemedition des Geräts.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.OemSupportInfo">
+      <summary>Ruft die OEM-Supportinformationen für das System ab.</summary>
+      <returns>Die OEM-Supportinformationen für das System.</returns>
+    </member>
+  </members>
+</doc>

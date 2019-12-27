@@ -1,0 +1,1130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.Store.StoreContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Store.StoreAcquireLicenseResult">
+      <summary>Stellt Antwortdaten für eine Anforderung bereit, um die Lizenz für ein herunterladbares Inhalts- (DLC) Add-On-Paket für die aktuelle App erworben werden kann.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Anforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Anfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.StorePackageLicense">
+      <summary>Ruft ein Objekt ab, das die Lizenz für eine herunterladbares Inhalte (DLC) Add-On-Paket für die aktuelle App darstellt.</summary>
+      <returns>Ein Objekt, das die Paketlizenz der herunterladbaren Inhaltsvorlage (DLC) darstellt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAppLicense">
+      <summary>Stellt Lizenzinformationen für die aktuelle App bereit, einschließlich Lizenzen für Produkte, die von der App bereitgestellt werden.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.AddOnLicenses">
+      <summary>Ruft die Auflistung von Lizenzen für dauerhafte Add-ons ab, für die der Benutzer Nutzungsansprüche hat. Diese Eigenschaft enthält nicht die Lizenzen für konsumierbare Add-Ons.</summary>
+      <returns>Eine Zuordnung von Schlüssel- und Wert-Paaren, wobei jeder Schlüssel die Store-ID einer Add-Ons SKU vom Microsoft Store-Katalog und jeder Wert ist ein StoreLicense-Objekt ist, das Lizenzinformationen für die Option enthält.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExpirationDate">
+      <summary>Ruft das Ablaufdatum und die Ablaufzeit der Anwendungslizenz ab.</summary>
+      <returns>Das Ablaufdatum und -die Ablaufzeit der Anwendungslizenz relativ zur Systemzeit.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExtendedJsonData">
+      <summary>Ruft vollständige Lizenzdaten im JSON-Format ab.</summary>
+      <returns>Eine JSON-formatierte Zeichenfolge, die die vollständigen Lizenzdaten enthält.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsActive">
+      <summary>Ruft einen Wert ab, der angibt, ob die Lizenz gültig ist und der aktuelle Benutzer eine Berechtigung zur Verwendung der App hat.</summary>
+      <returns>Ture, wenn die Lizenz gültig ist und der aktuelle Benutzer eine Berechtigung zur Verwendung der App hat, sonst False.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsDiscLicense">
+      <summary>Ruft einen Wert, der angibt, ob die aktuelle Lizenz von einer CD-basierten Installation abgerufen wurde.</summary>
+      <returns>"True", wenn die aktuelle Lizenz von einer CD-basierten Installation erworben wurde. andernfalls "false".</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrial">
+      <summary>Ruft einen Wert ab, der angibt, ob die Lizenz eine Testlizenz ist.</summary>
+      <returns>True, wenn die Lizenz eine Testlizenz ist, sonst False.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrialOwnedByThisUser">
+      <summary>Ruft einen Wert ab, der angibt, ob der aktuelle Benutzer über eine Berechtigung für die Nutzung zeitlich begrenzte Testversion verfügt, die dieser App-Lizenz zugeordnet ist.</summary>
+      <returns>True, wenn der aktuelle Benutzer einen Rechtsanspruch für den Test hat; andernfalls False.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.SkuStoreId">
+      <summary>Ruft die Store-ID der lizenzierten App-SKU vom Microsoft Store-Katalog ab.</summary>
+      <returns>Die Store-ID der lizenzierten App-SKU vom Microsoft Store-Katalog.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialTimeRemaining">
+      <summary>Ruft die verbleibende Zeit für die Nutzung zeitlich begrenzter Testversion ab, der diese App-Lizenz zugeordnet ist.</summary>
+      <returns>Die verbleibende Zeit für die Nutzung zeitlich begrenzter Testversion , der diese App-Lizenz zugeordnet ist.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialUniqueId">
+      <summary>Ruft eine eindeutige ID ab, die die Kombination aus den aktuellen Benutzer und die Nutzung zeitlich begrenzte Testversion identifiziert, die dieser App-Lizenz zugeordnet ist.</summary>
+      <returns>Eine eindeutige ID, die die Kombination aus den aktuellen Benutzer und die Nutzung zeitlich begrenzte Testversion identifiziert, die dieser App-Lizenz zugeordnet ist.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAvailability">
+      <summary>Stellt eine bestimmte Instanz einer Produkt-SKU dar, die gekauft werden kann.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.EndDate">
+      <summary>Ruft das Enddatum der Verfügbarkeit der aktuellen SKU ab.</summary>
+      <returns>Das Enddatum der Verfügbarkeit der aktuellen SKU.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.ExtendedJsonData">
+      <summary>Ruft vollständige Daten für die Verfügbarkeit der aktuellen SKU aus dem Store im JSON-Format ab.</summary>
+      <returns>Eine Zeichenfolge, die vollständige JSON-formatierte Daten für die Verfügbarkeit der aktuellen SKU saus dem Store enthält.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.Price">
+      <summary>Ruft Preisinformationen für die Verfügbarkeit der aktuellen SKU, einschließlich des niedrigsten Preises, des aktuellen Preises und der Verkaufsinformationen, ab.</summary>
+      <returns>Ein Objekt, das Preisinformationen für die Verfügbarkeit der aktuellen SKU enthält.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.StoreId">
+      <summary>Ruft die Store-ID der aktuellen SKU-Verfügbarkeit vom Microsoft Store-Katalog ab.</summary>
+      <returns>Die Store-ID der aktuellen SKU-Verfügbarkeit vom Microsoft Store-Katalog.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync">
+      <summary>Fordert den Kauf der aktuellen SKU-Verfügbarkeit an und zeigt die UI an, die zum Abschluss der Transaktion über den Microsoft Store verwendet wird.</summary>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StorePurchaseResult-Objekt zurückgibt, das Informationen zur Status und Fehlern der Bestellanforderung bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>Fordert den Kauf der aktuellen SKU-Verfügbarkeit an und zeigt die UI an, die zum Abschluss der Transaktion über den Microsoft Store verwendet wird. Diese Methode bietet die Möglichkeit, weitere Details für ein bestimmtes Angebot in einem umfangreichen Katalog von Produkten anzugeben, die durch eine einzelne Auflistung in der Microsoft Store, z. B. den Namen des Produkts für den Benutzer während des Einkaufs angezeigt dargestellt werden.</summary>
+      <param name="storePurchaseProperties">Ein Objekt, das weitere Informationen für die Bestellanforderung angibt, einschließlich des dem Benutzer während des Kaufvorgangs anzuzeigenden Produktnamens.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StorePurchaseResult-Objekt zurückgibt, das Informationen zur Status und Fehlern der Bestellanforderung bereitstellt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanAcquireLicenseResult">
+      <summary>Stellt Antwortdaten für eine Anforderung bereit, um festzustellen, ob eine Lizenz für ein herunterladbares Inhalts- (DLC) Add-On-Paket erworben werden kann.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Anforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Anfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.LicensableSku">
+      <summary>Ruft die SKU Store-ID des herunterladbaren Inhalts (DLC)-Add-ons ab, wenn für das Add-On für den aktuellen Benutzer eine Lizenz erworben werden kann.</summary>
+      <returns>Die SKU Store-ID des herunterladbaren Inhalts (DLC)-Add-ons, wenn für das Add-On für den aktuellen Benutzer eine Lizenz erworben werden kann.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.Status">
+      <summary>Ruft den Lizenzstatus für das herunterladbare Inhalts- (DLC) Add-On-Paket ab.</summary>
+      <returns>Der Lizenzstatus für das herunterladbare Inhalts- (DLC) Add-On-Paket ab.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanLicenseStatus">
+      <summary>Definiert Werte, die den Lizenzstatus für ein herunterladbares Inhalts- (DLC) Add-On-Paket repräsentieren.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.Licensable">
+      <summary>Das Produkt kann für den aktuellen Nutzer lizenziert werden.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.LicenseActionNotApplicableToProduct">
+      <summary>Das Produkt kann nicht individuell lizenziert werden. Dies kann z. B. auftreten, wenn Sie eine Store-ID an die Methode CanAcquireStoreLicenseAsync(String) für ein nicht DLC Add-On (d. h. ein Add-On ohne ein Paket) übergeben.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NetworkError">
+      <summary>Die Lizenzanforderung war nicht erfolgreich aufgrund eines Netzwerkverbindungsfehlers.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NotLicensableToUser">
+      <summary>Der Benutzer ist nicht berechtigt, eine Lizenz für das Produkt zu erwerben.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.ServerError">
+      <summary>Die Lizenzanforderung war nicht erfolgreich aufgrund eines Serverfehlers, der durch den Microsoft Store zurückgegeben wurde.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCollectionData">
+      <summary>Enthält zusätzliche Daten für eine Produkt-SKU, die der Benutzer eine Berechtigung verwenden darf.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.AcquiredDate">
+      <summary>Ruft das Datum ab, an dem die Produkt-SKU abgerufen wurde.</summary>
+      <returns>Das Datum, an dem die Produkt-SKU abgerufen wurde.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.CampaignId">
+      <summary>Ruft die Werbekampagnen-ID des Produkts ab, dem diese Produkt-SKU zugeordnet ist.</summary>
+      <returns>Die Werbekampagnen-ID des Produkts, dem diese Produkt-SKU zugeordnet ist.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.DeveloperOfferId">
+      <summary>Ruft die Developer Offer-ID ab, die mit der Produkt-SKU verbunden ist.</summary>
+      <returns>Die Developer Offer-ID, die mit der Produkt-SKU verbunden ist.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.EndDate">
+      <summary>Ruft das Enddatum der Testversion für die Produkt-SKU ab, wenn die SKU eine Testversion oder ein dauerhaftes Add-On ist, das nach einer festgelegten Zeitspanne abläuft.</summary>
+      <returns>Das Enddatum der Testversion für die Produkt-SKU, wenn die SKU eine Testversion oder ein dauerhaftes Add-On ist, das nach einer festgelegten Zeitspanne abläuft.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.ExtendedJsonData">
+      <summary>Ruft vollständige Sammlungsdaten für die Produkt-SKU im JSON-Format ab.</summary>
+      <returns>Eine JSON-formatierte Zeichenfolge, die vollständige Sammlungsdaten zu der Produkt-SKU enthält.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.IsTrial">
+      <summary>Ruft einen Wert ab, der angibt, ob die Produkt-SKU eine Testversion ist.</summary>
+      <returns>True, wenn die Lizenz für die Produkt-SKU eine Testversion ist, sonst False.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.StartDate">
+      <summary>Ruft das Startdatum der Testversion für die Produkt-SKU ab, wenn die SKU eine Testversion oder ein dauerhaftes Add-On ist, das nach einer festgelegten Zeitspanne abläuft.</summary>
+      <returns>Das Startdatum der Testversion für die Produkt-SKU, wenn die SKU eine Testversion oder ein dauerhaftes Add-On ist, das nach einer festgelegten Zeitspanne abläuft.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.TrialTimeRemaining">
+      <summary>Ruft die verbleibende Testzeit für die Nutzung zeitlich begrenzter Testversion ab, der diese Produkt-SKU zugeordnet ist.</summary>
+      <returns>Die verbleibende Testzeit für die Nutzung zeitlich begrenzter Testversion, der diese Produkt-SKU zugeordnet ist.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableResult">
+      <summary>Stellt Antwortdaten zu einer Anforderung bereit, die ein verbrauchbares Add-on für die aktuelle Anwendung betrifft.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.BalanceRemaining">
+      <summary>Ruft den verbleibenden Saldo für das verbrauchbare Add-on ab.</summary>
+      <returns>Der verbleibende Saldo für das verbrauchbare Add-on. Für eine nicht verwaltetes Verbrauchsprodukt, in denen der Entwickler anstelle von Microsoft den Saldo überwacht, gibt diese Eigenschaft entweder 1 zurück (der Benutzer hat eine Berechtigung für das Add-On) oder 0 (der Benutzer besitzt keine Berechtigung für das Add-On).</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Anforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Anfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.Status">
+      <summary>Ruft den Status der Anforderung ab.</summary>
+      <returns>Der Status der Anforderung.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.TrackingId">
+      <summary>Ruft die Nachverfolgungs-ID ab, die mit der ReportConsumableFulfillmentAsync-Anforderung gesendet wurde.</summary>
+      <returns>Die Nachverfolgungs-ID, die mit der ReportConsumableFulfillmentAsync-Anforderung gesendet wurde.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableStatus">
+      <summary>Definiert Werte, die den Status einer Anforderung darstellen, die mit einem verbrauchbaren Add-on verknüpft sind.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.InsufficentQuantity">
+      <summary>Die Anforderung war nicht erfolgreich, da der verbleibende Saldo des verbrauchbaren Add-ons zu niedrig ist.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.NetworkError">
+      <summary>Die Anforderung war nicht erfolgreich aufgrund eines Netzwerkverbindungsfehlers.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.ServerError">
+      <summary>Die Anforderung war nicht erfolgreich aufgrund eines Serverfehlers, der durch den Microsoft Store zurückgegeben wurde.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.Succeeded">
+      <summary>Die Anforderung war erfolgreich.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContext">
+      <summary>Stellt Member bereit, die Sie verwenden können, um auf Microsoft Store-bezogene Daten zugreifen und diese verwalten zu können. Beispielsweise können Sie Member dieser Klasse verwenden, um Microsoft Store-Listen- und -Lizenzinformationen für die aktuelle Anwendung oder Produkte abzurufen, aktuelle Apps oder Add-ons zu kaufen, die von der App angeboten werden oder Paketupdates für die App zu installieren.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.CanSilentlyDownloadStorePackageUpdates">
+      <summary>Ruft einen Wert ab, der angibt, ob Paketupdates für die aktuelle App heruntergeladen werden können, ohne dass dem Nutzer eine Benachrichtigungs-UI angezeigt wird.</summary>
+      <returns>„True“, wenn Paketupdates für die aktuelle App heruntergeladen werden können, ohne dass dem Nutzer eine Benachrichtigungs-UI angezeigt wird, andernfalls „false“.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.User">
+      <summary>Ruft Informationen über den Benutzer ab, dem das aktuelle StoreContext-Objekt in einer Mehrbenutzer-App zugeordnet ist.</summary>
+      <returns>Ein Objekt, das Informationen über den Benutzer bereitstellt, dem das aktuelle StoreContext-Objekt in einer Mehrbenutzer-App zugeordnet ist.</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreContext.OfflineLicensesChanged">
+      <summary>Wird ausgelöst, wenn sich der Status der Lizenz der App ändert (beispielsweise, wenn der Testzeitraum abgelaufen ist oder der Benutzer die Vollversion der App gekauft hat).</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.AcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>Ruft eine Lizenz für das angegebene herunterladbare Add-On-Inhaltspaket (DLC) für die aktuelle Anwendung ab.</summary>
+      <param name="optionalPackage">Das DLC-Add-On-Paket, für das eine Lizenz erworben werden soll.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreAcquireLicenseResult-Objekt zurückgibt, das die Lizenz enthält.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseAsync(System.String)">
+      <summary>Ruft einen Wert ab, der angibt, ob für das angegebene herunterladbare Inhalts- (DLC) Add-On der aktuellen App für den aktuellen Nutzer eine Lizenz erworben werden kann.</summary>
+      <param name="productStoreId">Die Store-ID des zu prüfenden DLC-Add-Ons.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreCanAcquireLicenseResult-Objekt zurückgibt, das angibt, ob die Lizenz erworben werden kann.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>Ruft einen Wert ab, der angibt, ob für das angegebene herunterladbare Inhalts- (DLC) Paket der aktuellen App für den aktuellen Nutzer eine Lizenz erworben werden kann.</summary>
+      <param name="optionalPackage">Das zu prüfende DLC-Paket.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreCanAcquireLicenseResult-Objekt zurückgibt, das angibt, ob die Lizenz erworben werden kann.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.DownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Lädt und installiert die angegebenen herunterladbaren Inhalts- (DLC) Pakete für die aktuelle App aus dem Microsoft Store, ohne dem Nutzer einen Benachrichtigungs-UI-Dialog anzuzeigen.</summary>
+      <param name="storeIds">Die Store-ID des Add-Ons, die den DLC-Paketen entspricht, die für die aktuelle App installiert werden sollen.</param>
+      <returns>Ein Objekt, das der Aufrufer überprüfen kann, um Fortschritt und Abschluss des Vorgangs zu verfolgen. Nach erfolgreichem Abschluss ist das Ergebnis ein StorePackageUpdateResult-Objekt, das Informationen über die Paketupdates bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.FindStoreProductForPackageAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.ApplicationModel.Package)">
+      <summary>Ruft Store-Produktinformationen für die Anwendung bzw. das Add-On ab, das dem angegebene Paket zugeordnet ist.</summary>
+      <param name="productKinds">Ein Array von Zeichenfolgen, das die Store-Produkte angibt, die dem Paket zugeordnet werden können. Eine Liste der unterstützten Zeichenfolgenwerte finden Sie in der ProductKind-Eigenschaft.</param>
+      <param name="package">Eine Package, die das Paket darstellt, für das Sie die entsprechenden Store-Produktinformationen erhalten möchten.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreProductResult-Objekt zurückgibt. Verwenden Sie die StoreProductResult.Product-Eigenschaft dieses Objekts, um auf ein StoreProduct zuzugreifen, das die Store-Produktinformationen für das angegebene Paket enthält.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppAndOptionalStorePackageUpdatesAsync">
+      <summary>Ruft die Auflistung der Pakete für die aktuelle App ab, für die aus dem Microsoft Store, einschließlich der optionalen Pakete für die App Updates zum Download zur Verfügung zu haben.</summary>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss eine Sammlung von StorePackageUpdate-Objekten zurückgibt, die die Pakete darstellen, für die Updates verfügbar sind.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppLicenseAsync">
+      <summary>Ruft Lizenzinformationen für die aktuelle Anwendung, einschließlich Lizenzen für Add-Ons für die aktuelle App, ab.</summary>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein Store.StoreAppLicense-Objekt zurückgibt, das die Lizenz für die aktuelle App enthält, einschließlich der Add-On-Lizenzen.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Ruft die Microsoft Store-Produktinformationen für die angegebenen Produkte ab, die von der aktuellen App erworben werden können.</summary>
+      <param name="productKinds">Ein Array von Zeichenfolgen, die die Typen von Produkten angeben, die Sie abrufen möchten. Eine Liste der unterstützten Zeichenfolgenwerte finden Sie in der ProductKind-Eigenschaft.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreProductQueryResult zurückgibt, das Zugriff auf die zugehörige Produkte und die entsprechenden Fehlermeldungen bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>Ruft die Microsoft Store-Produktinformationen für die angegebenen Produkte ab, die von der aktuellen App erworben werden können. Diese Methode unterstützt Auslagerung, um die Ergebnisse zurückzugeben.</summary>
+      <param name="productKinds">Ein Array von Zeichenfolgen, die die Typen von Produkten angeben, die Sie abrufen möchten. Eine Liste der unterstützten Zeichenfolgenwerte finden Sie in der ProductKind-Eigenschaft.</param>
+      <param name="maxItemsToRetrievePerPage">Die maximale Anzahl von Produkten, die auf jeder Seite der Ergebnisse zurückgegeben werden.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreProductPagedQueryResult zurückgibt, das Zugriff auf die zugehörige Produkte, die entsprechenden Fehlermeldungen und die nächste Ergebnisseite bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreQueueItemsAsync">
+      <summary>Ruft Informationen zu allen neuen oder aktualisierten Paketen ab, die sich in der Download- und Installationswarteschlange für die aktuelle App befinden.</summary>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss die Sammlung der StoreQueueItem Objekte zurückgibt, die Informationen über die App-Pakete bereitstellen, die sich in der Warteschlange befinden.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetConsumableBalanceRemainingAsync(System.String)">
+      <summary>Ruft den verbleibenden Saldo für das angegebene verbrauchbare Add-on für die aktuelle Anwendung ab.</summary>
+      <param name="productStoreId">Die Store-ID für das Add-on (wie von der StoreId-Eigenschaft des StoreProducts, das das Add-on darstellt, bereitgestellt).</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss einer StoreConsumableResult zurückgibt, die den verbleibenden Betrag und andere Informationen bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerCollectionsIdAsync(System.String,System.String)">
+      <summary>Ruft einen Microsoft Store-ID-Schlüssel ab, der zum Abfragen von Produktberechtigungen oder zum Nutzen von Produktberechtigungen des aktuellen Benutzers verwendet werden kann.</summary>
+      <param name="serviceTicket">Ein Azure Active Directory-Zugriffstoken, das den Verleger der aktuellen App identifiziert. Weitere Informationen über das Generieren dieses Tokens finden Sie unter Verwalten von Produkten und Ansprüchen aus einem Dienst.</param>
+      <param name="publisherUserId">Eine anonyme ID, die den aktuellen Benutzer im Kontext der Dienste identifiziert, die Sie als Herausgeber der aktuellen App verwalten. Wenn Sie Benutzer-IDs im Kontext Ihrer Dienste verwalten, können Sie diesen Parameter verwenden, um Ihre ID für den aktuellen Benutzer mit dem neuen Microsoft Store-ID-Schlüssel zuzuordnen (die Benutzer-ID wird in den Schlüssel eingebettet). Wenn Sie keine Benutzer-ID mit dem Microsoft Store-ID-Schlüssel zuordnen müssen, können Sie andernfalls einen beliebigen Zeichenfolgenwert übergeben.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss die Sammlungen-ID-Schlüssel für den aktuellen Benutzer zurückgibt. Dieser Schlüssel ist 90 Tage gültig.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerPurchaseIdAsync(System.String,System.String)">
+      <summary>Ruft einen Microsoft Store-ID-Schlüssel ab, der verwendet werden kann, um Berechtigungen für kostenlose Produkte im Namen des aktuellen Benutzers zu gewähren.</summary>
+      <param name="serviceTicket">Ein Azure Active Directory-Zugriffstoken, das den Verleger der aktuellen App identifiziert. Weitere Informationen über das Generieren dieses Tokens finden Sie unter Verwalten von Produkten und Ansprüchen aus einem Dienst.</param>
+      <param name="publisherUserId">Eine anonyme ID, die den aktuellen Benutzer im Kontext der Dienste identifiziert, die Sie als Herausgeber der aktuellen App verwalten. Wenn Sie Benutzer-IDs im Kontext Ihrer Dienste verwalten, können Sie diesen Parameter verwenden, um Ihre ID für den aktuellen Benutzer mit dem neuen Microsoft Store-ID-Schlüssel zuzuordnen (die Benutzer-ID wird in den Schlüssel eingebettet). Wenn Sie keine Benutzer-ID mit dem Microsoft Store-ID-Schlüssel zuordnen müssen, können Sie andernfalls einen beliebigen Zeichenfolgenwert übergeben.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss die Kauf-ID-Schlüssel für den aktuellen Benutzer zurückgibt. Dieser Schlüssel ist 90 Tage gültig.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetDefault">
+      <summary>Ruft ein StoreContext-Objekt ab, das verwendet werden kann, um auf Microsoft Store-Daten für den aktuellen Benutzer im Kontext der aktuellen Anwendung zuzugreifen und diese zu verwalten.</summary>
+      <returns>Ein Objekt, das Sie verwenden können, um auf Microsoft Store-Daten für den aktuellen Benutzer zuzugreifen und diese zu verwalten.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetForUser(Windows.System.User)">
+      <summary>Ruft ein StoreContext-Objekt ab, das verwendet werden kann, um auf Microsoft Store-Daten für den angegebenen Benutzer im Kontext der aktuellen Anwendung zuzugreifen und diese zu verwalten.</summary>
+      <param name="user">Ein Objekt, das den Benutzer identifiziert, auf dessen Microsoft Store-bezogene Daten Sie zugreifen und die Sie verwalten wollen.</param>
+      <returns>Ein Objekt, das Sie verwenden können, um auf Microsoft Store-Daten für den angegebenen Benutzer zuzugreifen und diese zu verwalten.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductForCurrentAppAsync">
+      <summary>Ruft Microsoft Store-Listeninformationen für die aktuelle Anwendung ab und ermöglicht den Zugriff auf eine Methode, die Sie verwenden können, um die App für den aktuellen Benutzer erwerben.</summary>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein Objekts StoreProductResult zurückgibt, das Microsoft Store-Eintrag Informationen für die aktuelle App und den entsprechenden Fehlermeldungen enthält.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Ruft die Microsoft Store-Produktinformationen für die angegebenen Produkte ab, die der aktuellen App zugeordnet sind.</summary>
+      <param name="productKinds">Ein Array von Zeichenfolgen, die die Typen von Produkten angeben, für die Eintragsinformationen abgerufen werden sollen. Eine Liste der unterstützten Zeichenfolgenwerte finden Sie in der ProductKind-Eigenschaft.</param>
+      <param name="storeIds">Ein Array von Store-ID-Zeichenfolgen für die Produkte, für die Eintragsinformationen abgerufen werden sollen.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreProductQueryResult-Objekt zurückgibt, das Microsoft Store-Eintrag Informationen für die angegebenen Produkte und die entsprechenden Fehlermeldungen enthält.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StoreProductOptions)">
+      <summary>Ruft die Microsoft Store-Eintragsinformationen für die angegebenen Produkte ab, die zu der aktuellen App gehören, mit der Option zur Verwendung eines Filters für die Abfrage.</summary>
+      <param name="productKinds">Ein Array von Zeichenfolgen, die die Typen von Produkten angeben, für die Eintragsinformationen abgerufen werden sollen. Eine Liste der unterstützten Zeichenfolgenwerte finden Sie in der ProductKind-Eigenschaft.</param>
+      <param name="storeIds">Ein Array von Store-ID-Zeichenfolgen für die Produkte, für die Eintragsinformationen abgerufen werden sollen.</param>
+      <param name="storeProductOptions">Ein Objekt, das einen Filter enthält, der für die Abfrage verwendet wird.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreProductQueryResult-Objekt zurückgibt, das Microsoft Store-Eintrag Informationen für die angegebenen Produkte und die entsprechenden Fehlermeldungen enthält.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Ruft Informationen zu den angegebenen neuen oder aktualisierten Paketen ab, die sich in der Download- und Installationswarteschlange für die aktuelle App befinden.</summary>
+      <param name="storeIds">Ein Array von Store-ID-Zeichenfolgen, die den Paketen entsprechen, für die Sie Informationen zur Download- und Installationswarteschlange abrufen möchten.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss die Sammlung der StoreQueueItem Objekte zurückgibt, die Informationen über die angegebenen-Pakete bereitstellen, die sich in der Warteschlange befinden.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Ruft Informationen für Microsoft Store für die Add-Ons der aktuellen App, die der Benutzer gekauft hat, ab.</summary>
+      <param name="productKinds">Ein Array von Zeichenfolgen, die die Typen von Add-ons angeben, für die Informationen abgerufen werden sollen. Eine Liste der unterstützten Zeichenfolgenwerte finden Sie in der ProductKind-Eigenschaft.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreProductQueryResult-Objekt zurückgibt, das Microsoft Store-Produktinformationen für die Add-Ons der aktuellen App enthält, die der Benutzer erworben hat, und relevante Fehlerinformationen.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>Ruft Informationen für Microsoft Store für die Add-Ons der aktuellen App, die der Benutzer gekauft hat, ab. Diese Methode unterstützt Auslagerung, um die Ergebnisse zurückzugeben.</summary>
+      <param name="productKinds">Ein Array von Zeichenfolgen, die die Typen von Add-ons angeben, für die Informationen abgerufen werden sollen. Eine Liste der unterstützten Zeichenfolgenwerte finden Sie in der ProductKind-Eigenschaft.</param>
+      <param name="maxItemsToRetrievePerPage">Die maximale Anzahl von Add-ons, die auf jeder Seite der Ergebnisse zurückgegeben werden.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreProductPagedQueryResult-Objekt zurückgibt, das den Zugriff auf die Microsoft Store-Produktinformationen für die Add-Ons der aktuellen App ermöglicht, die der Benutzer erworben hat und relevante Fehlerinformationen, sowie die nächste Seite der Ergebnisse.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.ReportConsumableFulfillmentAsync(System.String,System.UInt32,System.Guid)">
+      <summary>Meldet ein verbrauchbares Add-on für die aktuelle Anwendung im Microsoft Store.</summary>
+      <param name="productStoreId">Die Store ID des verbrauchbaren Add-ons, das Sie als erfüllt melden möchten.</param>
+      <param name="quantity">Die Anzahl der Einheiten der verbrauchbaren Add-ons, die Sie als erfüllt melden möchten. Geben Sie für ein Store-verwaltetes Verbrauchsprodukt (d. h., ein Verbrauchsprodukt, bei dem Microsoft die Balance überwacht) die Anzahl der Einheiten an, die verbraucht wurden. Geben Sie für ein vom Entwickler verwaltetes Verbrauchsprodukt (d. h., ein Verbrauchsprodukt, bei dem der Entwickler die balance überwacht) 1 an.</param>
+      <param name="trackingId">Eine vom Entwickler angegebene GUID, welche die spezielle Transaktion identifiziert, mit der der Erfüllungsvorgang verknüpft ist, für Nachverfolgungszwecke. Weitere Informationen finden Sie in den Hinweisen.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreConsumableResult-Objekt zurückgibt, das Informationen über den Erfüllungsvorgang, z. B. der verbleibende Betrag der Add-On-Einheiten enthält.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Versucht, die angegebenen herunterladbaren Inhalts- (DLC)-Pakete für die aktuelle App aus dem Microsoft Store herunterzuladen und zu installieren. Diese Methode zeigt dazu einen UI-Dialog an, der die Erlaubnis für diesen Vorgang einholt.</summary>
+      <param name="storeIds">Die Store-IDs der zu installierenden DLC-Add-on-Pakete.</param>
+      <returns>Ein Objekt, das der Aufrufer überprüfen kann, um Fortschritt und Abschluss des Vorgangs zu verfolgen. Nach erfolgreichem Abschluss ist das Ergebnis ein StorePackageUpdateResult-Objekt, das Informationen über die Paketupdates bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StorePackageInstallOptions)">
+      <summary>Versucht, die angegebenen herunterladbaren Inhalts (DLC)-Pakete für die aktuelle App aus dem Microsoft Store herunterzuladen und mit den angegebenen Installationsoptionen zu installieren. Diese Methode zeigt dazu einen UI-Dialog an, der die Erlaubnis für diesen Vorgang einholt.</summary>
+      <param name="storeIds">Die Store-IDs der zu installierenden DLC-Add-on-Pakete.</param>
+      <param name="storePackageInstallOptions">Ein Objekt, das die Installationsoptionen für den Vorgang angibt.</param>
+      <returns>Ein Objekt, das der Aufrufer überprüfen kann, um Fortschritt und Abschluss des Vorgangs zu verfolgen. Nach erfolgreichem Abschluss ist das Ergebnis ein StorePackageUpdateResult-Objekt, das Informationen über die Paketupdates bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Versucht, die angegebenen Paketupdates für die aktuelle App aus dem Microsoft Store herunterzuladen und zu installieren. Diese Methode zeigt dazu einen UI-Dialog an, der die Erlaubnis für diesen Vorgang einholt.</summary>
+      <param name="storePackageUpdates">Der Satz von StorePackageUpdate-Objekten, die die aktualisierten Pakete zum Herunterladen und Installieren darstellen.</param>
+      <returns>Ein Objekt, das der Aufrufer überprüfen kann, um Fortschritt und Abschluss des Vorgangs zu verfolgen. Nach erfolgreichem Abschluss ist das Ergebnis ein StorePackageUpdateResult-Objekt, das Informationen über die Paketupdates bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Versucht, die angegebenen Paketupdates für die aktuelle App aus dem Microsoft Store herunterzuladen. Diese Methode zeigt dazu einen UI-Dialog an, der die Erlaubnis für diesen Vorgang einholt.</summary>
+      <param name="storePackageUpdates">Der Satz von StorePackageUpdate-Objekten, die die aktualisierten Pakete zum Herunterladen darstellen.</param>
+      <returns>Ein Objekt, das der Aufrufer überprüfen kann, um Fortschritt und Abschluss des Vorgangs zu verfolgen. Nach erfolgreichem Abschluss ist das Ergebnis ein StorePackageUpdateResult-Objekt, das Informationen über die Paketupdates bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String)">
+      <summary>Fordert den Kauf für die angegebene Anwendung oder das Add-on und zeigt die UI an, die für den Abschluss der Transaktion über den Microsoft Store verwendet wird.</summary>
+      <param name="storeId">Die Store-ID der App oder die des Add-ons, die/das Sie für den aktuellen Benutzer kaufen möchten.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StorePurchaseResult-Objekt zurückgibt, das Informationen zur Status und Fehlern der Bestellanforderung bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String,Windows.Services.Store.StorePurchaseProperties)">
+      <summary>Fordert den Kauf für die angegebene Anwendung oder das Add-on und zeigt die UI an, die für den Abschluss der Transaktion über den Microsoft Store verwendet wird. Diese Methode bietet die Möglichkeit, weitere Details für ein bestimmtes Angebot in einem umfangreichen Katalog von Produkten anzugeben, die durch eine einzelne Auflistung in der Microsoft Store, z. B. den Namen des Produkts für den Benutzer während des Einkaufs angezeigt dargestellt werden.</summary>
+      <param name="storeId">Die Store-ID der App oder die des Add-ons, die/das Sie für den aktuellen Benutzer kaufen möchten.</param>
+      <param name="storePurchaseProperties">Ein Objekt, das weitere Informationen für die Bestellanforderung angibt, einschließlich des dem Benutzer während des Kaufvorgangs anzuzeigenden Produktnamens.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StorePurchaseResult-Objekt zurückgibt, das Informationen zur Status und Fehlern der Bestellanforderung bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestRateAndReviewAppAsync">
+      <summary>Fordert den Benutzer auf, die App zu bewerten und eine Kritik zu schreiben. Diese Methode zeigt die Benutzeroberfläche für den Benutzer an, um eine Store-Bewertung auszuwählen und eine optionale Store-Bewertung für das Produkt hinzuzufügen.</summary>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StoreRateAndReviewResult-Objekt zurückgibt, das Informationen zur Status und Fehlern bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>Versucht, das angegebene optionale Paket für die aktuelle App zu deinstallieren. Diese Methode zeigt dazu einen UI-Dialog an, der die Erlaubnis für diesen Vorgang einholt.</summary>
+      <param name="package">Das für die aktuelle App zu deinstallierende optionale Paket.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StoreUninstallStorePackageResult-Objekt zurückgibt, das Informationen zu dem Deinstallationsvorgang bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>Versucht, das angegebene herunterladbare Inhaltspaket (DLC) für die aktuelle App zu deinstallieren. Diese Methode zeigt dazu einen UI-Dialog an, der die Erlaubnis für diesen Vorgang einholt.</summary>
+      <param name="storeId">Die Store-ID des Add-Ons, die dem herunterladbaren Inhaltspaket (DLC) entspricht, das für die aktuelle App deinstalliert werden soll.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StoreUninstallStorePackageResult-Objekt zurückgibt, das Informationen zu dem Deinstallationsvorgang bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.SetInstallOrderForAssociatedStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StoreQueueItem})">
+      <summary>Legt die Reihenfolge fest, in der die angegebenen Pakete in der Download- und Installationswarteschlange für die aktuelle App installiert werden sollen.</summary>
+      <param name="items">Eine Liste der StoreQueueItem-Objekte, die die Pakete in der Installationswarteschlange darstellen, in der Reihenfolge, in der die Pakete installiert werden sollen.</param>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss die Liste der StoreQueueItem-Objekte in der festgelegten Reihenfolge zurückgibt, in der die entsprechenden Pakete in der Warteschlange installiert werden sollen.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Versucht, die angegebenen Paketupdates für die aktuelle App aus dem Microsoft Store herunterzuladen und zu installieren, ohne dem Nutzer einen Benachrichtigungs-UI-Dialog anzuzeigen.</summary>
+      <param name="storePackageUpdates">Der Satz von StorePackageUpdate-Objekten, die die aktualisierten Pakete zum Herunterladen und Installieren darstellen.</param>
+      <returns>Ein Objekt, das der Aufrufer überprüfen kann, um Fortschritt und Abschluss des Vorgangs zu verfolgen. Nach erfolgreichem Abschluss ist das Ergebnis ein StorePackageUpdateResult-Objekt, das Informationen über die Paketupdates bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Versucht, die angegebenen Paketupdates für die aktuelle App aus dem Microsoft Store herunterzuladen, ohne dem Nutzer einen Benachrichtigungs-UI-Dialog anzuzeigen.</summary>
+      <param name="storePackageUpdates">Der Satz von StorePackageUpdate-Objekten, die die aktualisierten Pakete zum Herunterladen darstellen.</param>
+      <returns>Ein Objekt, das der Aufrufer überprüfen kann, um Fortschritt und Abschluss des Vorgangs zu verfolgen. Nach erfolgreichem Abschluss ist das Ergebnis ein StorePackageUpdateResult-Objekt, das Informationen über die Paketupdates bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>Deinstalliert das angegebene optionale Paket für die aktuelle App, ohne dem Benutzer einen Benachrichtigungsdialog anzuzeigen.</summary>
+      <param name="package">Das für die aktuelle App zu deinstallierende optionale Paket.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StoreUninstallStorePackageResult-Objekt zurückgibt, das Informationen zu dem Deinstallationsvorgang bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>Deinstalliert das angegebene herunterladbare Inhaltspaket (DLC) für die aktuelle App, ohne dem Benutzer einen Benachrichtigungsdialog anzuzeigen.</summary>
+      <param name="storeId">Die Store-ID des Add-Ons, die dem DLC-Paket entspricht, das für die aktuelle App deinstalliert werden soll.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StoreUninstallStorePackageResult-Objekt zurückgibt, das Informationen zu dem Deinstallationsvorgang bereitstellt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreDurationUnit">
+      <summary>Definiert Werte, die Einheiten eines Testzeitraums oder Rechnungszeitraums für ein Abonnement repräsentieren.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Day">
+      <summary>Der Zeitraum wird in Tagen definiert.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Hour">
+      <summary>Der Zeitraum wird in Stunden definiert.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Minute">
+      <summary>Der Zeitraum wird in Minuten definiert.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Month">
+      <summary>Der Zeitraum wird in Monaten definiert.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Week">
+      <summary>Der Zeitraum wird in Wochen definiert.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Year">
+      <summary>Der Zeitraum wird in Jahren definiert.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreImage">
+      <summary>Repräsentiert ein Bild, das mit einer Produktauflistung im Windows Store verbunden ist.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Caption">
+      <summary>Ruft die Beschriftung für das Bild ab.</summary>
+      <returns>Die Beschriftung für das Bild.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Height">
+      <summary>Ruft die Höhe des Bildes in Pixeln ab.</summary>
+      <returns>Die Höhe des Bilds.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.ImagePurposeTag">
+      <summary>Ruft das Tag für das Bild ab.</summary>
+      <returns>Das Tag für das Bild.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Uri">
+      <summary>Ruft die URI des Bildes ab.</summary>
+      <returns>Die URI des Bildes.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Width">
+      <summary>Ruft die Breite des Bildes in Pixeln ab.</summary>
+      <returns>Die Breite des Bilds.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreLicense">
+      <summary>Stellt Lizenzinformationen für ein dauerhaftes Add-on bereit, das mit der aktuellen App verbunden ist.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExpirationDate">
+      <summary>Ruft das Ablaufdatum und die Ablaufzeit der Add-on-Lizenz ab.</summary>
+      <returns>Das Ablaufdatum und die Ablaufzeit der Add-on-Lizenz.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExtendedJsonData">
+      <summary>Ruft vollständige Lizenzdaten im JSON-Format ab.</summary>
+      <returns>Vollständige Lizenzdaten im JSON-Format ab.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.InAppOfferToken">
+      <summary>Ruft die Produkt-ID für das Add-on ab.</summary>
+      <returns>Das In-App-Token für das Add-on, falls vorhanden.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.IsActive">
+      <summary>Diese Eigenschaft ist für die zukünftige Verwendung reserviert und nicht zur Nutzung in der aktuellen Version gedacht. Derzeit wird immer True zurückgegeben.</summary>
+      <returns>True in allen Fällen.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.SkuStoreId">
+      <summary>Ruft die Store-ID der lizenzierten Add-on-SKU vom Microsoft Store-Katalog ab.</summary>
+      <returns>Die Store-ID der lizenzierten Add-on-SKU vom Microsoft Store-Katalog.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageInstallOptions">
+      <summary>Repräsentiert Optionen, die angegeben werden können, wenn die Methode RequestDownloadAndInstallStorePackagesAsync zum Herunterladen und Installieren herunterladbarer Inhalte (DHC)-Pakete für die aktuelle App verwendet wird.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageInstallOptions.#ctor">
+      <summary>Erstellt eine neue Instanz der StorePackageInstallOptions-Klasse.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageInstallOptions.AllowForcedAppRestart">
+      <summary>Ruft einen Wert ab, der angibt, ob das Betriebssystem die App nach der Installation der herunterladbaren Inhalts (DLC)-Pakete für die aktuelle App mithilfe der Methode RequestDownloadAndInstallStorePackagesAsync zum Neustart zwingen kann, oder legt ihn fest.</summary>
+      <returns>„True“, wenn das Betriebssystem die App nach der Installation der DLC-Pakete zum Neustart zwingen kann, andernfalls „false“.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageLicense">
+      <summary>Stellt Lizenzinformationen für ein herunterladbares Inhalt (DLC)- Paket für die aktuelle Anwendung bereit.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.IsValid">
+      <summary>Ruft einen Wert ab, der angibt, ob die Lizenz gültig ist.</summary>
+      <returns>True, wenn die Lizenz gültig ist, andernfalls False.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.Package">
+      <summary>Ruft das herunterladbare Inhaltsvorlage (DLC)- Paket ab, das der Lizenz zugeordnet ist.</summary>
+      <returns>Ein Objekt, das das DLC-Paket darstellt, das der Lizenz zugeordnet ist.</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StorePackageLicense.LicenseLost">
+      <summary>Wird ausgelöst, wenn der Benutzer nicht mehr über die Lizenz auf dem aktuellen Gerät verfügt (z. B. der Benutzer hat die Lizenz auf einem anderen Gerät erworben).</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.Close">
+      <summary>Schließt und gibt alle Ressourcen frei, die von dieser StorePackageLicense verwendet werden.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.ReleaseLicense">
+      <summary>Gibt die Lizenz für das herunterladbare Inhaltsvorlage (DLC)- Paket frei.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdate">
+      <summary>Stellt Informationen zu einem Paket für die aktuelle Anwendung bereit, für die ein Update im Microsoft Store zum Herunterladen verfügbar ist.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Mandatory">
+      <summary>Ruft einen Wert ab, der angibt, ob das Paket, für das ein Update zum Download im Microsoft Store bereitsteht, ein obligatorisches Paket ist, wie vom Entwickler im Partner Center angegeben.</summary>
+      <returns>True, wenn das Paket ein erforderliches Paket ist; andernfalls False.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Package">
+      <summary>Ruft das Paket ab, das ein Update enthält, das im Microsoft Store zum Herunterladen verfügbar ist.</summary>
+      <returns>Ein Objekt, das das Paket repräsentiert, das ein Update zur Verfügung hat.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateResult">
+      <summary>Enthält die Antwortdaten für eine Anforderung zum Herunterladen und Installieren eines Pakets für die aktuelle App.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.OverallState">
+      <summary>Ruft den Zustand der abgeschlossenen Paketaktualisierungsanfrage ab.</summary>
+      <returns>Ein Wert, der den Zustand der abgeschlossenen Paketaktualisierungsanfrage anzeigt.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StorePackageUpdateStatuses">
+      <summary>Ruft Informationen über den Status der einzelnen Paketupdates ab, die mit der abgeschlossenen Anforderung verbunden sind.</summary>
+      <returns>Eine Auflistung von StorePackageUpdateStatus-Objekten, die Informationen zum Status jedes Paketupdates bereitstellen, das mit der abgeschlossenen Anforderung verbunden ist.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StoreQueueItems">
+      <summary>Ruft Informationen zur Installationswarteschlange für jedes der Paketupdates ab, die mit der abgeschlossenen Anforderung verbunden sind.</summary>
+      <returns>Eine Sammlung von StoreQueueItem-Objekten, die Informationen zur Installationswarteschlange für jedes Paketupdate enthalten, das mit der abgeschlossenen Anforderung verbunden ist.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateState">
+      <summary>Definiert die Werte, die den Paket Download- bzw. Installationsstatus der Anforderung darstellen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Canceled">
+      <summary>Der Download oder die Installation der Paketupdates wurde abgebrochen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Completed">
+      <summary>Die Paketupdates haben das Herunterladen oder die Installation abgeschlossen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Deploying">
+      <summary>Die Paketupdates werden dem Gerät bereitgestellt.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Downloading">
+      <summary>Die Paketupdates werden heruntergeladen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorLowBattery">
+      <summary>Der Download oder die Installation der Paketupdates war nicht erfolgreich, da das Gerät nicht über ausreichend Batterieleistung verfügt.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRecommended">
+      <summary>Der Download war nicht erfolgreich, da für den Download des Paketupdates eine WLAN-Verbindung empfohlen wird.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRequired">
+      <summary>Der Download war nicht erfolgreich, da für den Download des Paketupdates eine WLAN-Verbindung erforderlich ist.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.OtherError">
+      <summary>Es ist ein unbekannter Fehler aufgetreten.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Pending">
+      <summary>Der Download der Paketupdates hat nicht begonnen.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateStatus">
+      <summary>Enthält Statusinformationen für ein Paket, das einer Download- bzw. Installationsanforderung zugeordnet ist.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageBytesDownloaded">
+      <summary>Die Anzahl der Bytes die heruntergeladen wurden.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadProgress">
+      <summary>Den Status des Herunterladens (oder Herunterladens und Installierns) des aktuellen Pakets, durch einem Wert von 0.0 bis 1.0 dargestellt. Wenn Sie RequestDownloadStorePackageUpdatesAsync verwenden, um Pakete herunterzuladen, erhöht sich dieser Wert von 0.0 bis 1.0 während des Downloads der einzelnen Pakete.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadSizeInBytes">
+      <summary>Die Größe des Pakets, das heruntergeladen wird, in Bytes. Hierbei handelt es sich um einen Schätzwert, und er kann sich während des Downloads ändern.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageFamilyName">
+      <summary>Der Familienname des Pakets, das heruntergeladen oder installiert wird.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageUpdateState">
+      <summary>Ein StorePackageUpdateState-Wert, der den Zustand des Pakets anzeigt, das heruntergeladen oder installiert wird.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.TotalDownloadProgress">
+      <summary>Den aktuellen Status aller Paket-Downloads in der Anforderung, durch einem Wert von 0.0 bis 1.0 dargestellt.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePrice">
+      <summary>Enthält Preisinformationen für Produktauflistungen im Microsoft Store.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.CurrencyCode">
+      <summary>Ruft den ISO 4217-Währungscode für den Markt des aktuellen Benutzers ab.</summary>
+      <returns>Der ISO 4217-Währungscode für den Markt des aktuellen Benutzers.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedBasePrice">
+      <summary>Ruft den Grundpreis für das In-App-Produkt mit der entsprechenden Formatierung für den Markt des aktuellen Benutzers ab.</summary>
+      <returns>Der Grundpreis für das In-App-Produkt mit der entsprechenden Formatierung für den Markt des aktuellen Benutzers.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedPrice">
+      <summary>Ruft den Kaufpreis für das In-App-Produkt mit der entsprechenden Formatierung für den Markt des aktuellen Benutzers ab.</summary>
+      <returns>Der Kaufpreis für das In-App-Produkt mit der entsprechenden Formatierung für den Markt des aktuellen Benutzers ab.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedRecurrencePrice">
+      <summary>Ruft den wiederkehrenden Preis für das Produkt mit der richtigen Formatierung für den Markt des aktuellen Benutzers ab, wenn für dieses Produkt die wiederkehrende Rechnungsstellung konfiguriert wird.</summary>
+      <returns>Der wiederkehrende Preis für das In-App-Produkt mit der entsprechenden Formatierung für den Markt des aktuellen Benutzers ab.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.IsOnSale">
+      <summary>Ruft einen Wert ab, der angibt, ob das Produkt zum Kauf verfügbar ist.</summary>
+      <returns>True, wenn das Produkt zum Kauf verfügbar ist, andernfalls False.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.SaleEndDate">
+      <summary>Ruft das Enddatum des Verkaufszeitraums für das Produkt ab, wenn es zum Kauf verfügbar ist.</summary>
+      <returns>Das Enddatum des Verkaufszeitraums für das Produkt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProduct">
+      <summary>Steht für ein Produkt, das in Microsoft Store verfügbar ist.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Description">
+      <summary>Ruft die Beschreibung des Produkts aus dem Microsoft Store-Eintrag ab.</summary>
+      <returns>Die Produktbeschreibung.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ExtendedJsonData">
+      <summary>Ruft vollständige Windows Store-Listendaten für das Produkt aus dem im JSON-Format ab.</summary>
+      <returns>Eine Zeichenfolge, die vollständige JSON-formatierte Daten für das Produkt aus dem Store im JSON-Format enthält.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.HasDigitalDownload">
+      <summary>Ruft einen Wert ab, der angibt, ob das Produkt über optionale herunterladbare Inhalte (DLC) verfügt.</summary>
+      <returns>True, wenn das Produkt optionale Onlineinhalte hat, andernfalls wird false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Images">
+      <summary>Ruft die Bilder aus dem Windows Store-Eintrag für das Produkt ab.</summary>
+      <returns>Eine Auflistung von StoreImage-Objekten, die Bilder aus dem Windows Store-Eintrag für das Produkt darstellen.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.InAppOfferToken">
+      <summary>Ruft die Produkt-ID für dieses Produkt ab, die, wenn die aktuelle StoreProduct ein Add-On darstellt.</summary>
+      <returns>Die Produkt-ID für dieses Produkt, die, wenn die aktuelle StoreProduct ein Add-On darstellt.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.IsInUserCollection">
+      <summary>Ruft einen Wert ab, der angibt, ob der aktuelle Benutzer eine Berechtigung zur Verwendung der Standard-SKU des Produkts hat.</summary>
+      <returns>True, wenn der aktuelle Benutzer eine Berechtigung zur Verwendung der Standard-SKU des Produkts hat, andernfalls false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Keywords">
+      <summary>Ruft die Schlüsselwörter ab, die dem Produkt im Partner Center zugeordnet sind. Diese Eigenschaft gilt nur für ** StoreProduct ** Objekte, die Add-Ons darstellen. Diese Zeichenfolgen entsprechen dem Wert des Felds **Schlüsselwort** in der Eigenschaftenseite für das Add-On im Partner Center.</summary>
+      <returns>Eine Sammlung mit Zeichenfolgen, die die Schlüsselwörter enthalten, die dem Produkt im Partner Center zugeordnet sind.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Language">
+      <summary>Ruft die Sprache für die Daten ab, die in der Microsoft Store für das Produkt aufgelistet werden.</summary>
+      <returns>Die Sprache für die Daten, die in der Microsoft Store für das Produkt aufgelistet werden.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.LinkUri">
+      <summary>Ruft die URI zur Microsoft Store-Auflistung für das Produkt ab.</summary>
+      <returns>Die URI zur Microsoft Store-Auflistung für das Produkt.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Price">
+      <summary>Ruft den Preis für die Standard-SKU und die Verfügbarkeit für das Produkt ab.</summary>
+      <returns>Der Preis für die Standard-SKU und die Verfügbarkeit für das Produkt.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ProductKind">
+      <summary>Ruft den Produkttyp ab. Diese Werte werden derzeit nicht unterstützt: **Application**, **Game**, **Consumable**, **UnmanagedConsumable**, and **Durable**.</summary>
+      <returns>Die Art des Produkts.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Skus">
+      <summary>Ruft die Liste der verfügbaren SKUs für das Produkt ab.</summary>
+      <returns>Eine Auflistung von StoreSku-Objekten, die die verfügbaren SKUs für das Produkt darstellen.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.StoreId">
+      <summary>Ruft die Store-ID für dieses Produkt ab.</summary>
+      <returns>Die Store-ID für dieses Produkt.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Title">
+      <summary>Ruft den Titel des Produkts aus dem Microsoft Store-Eintrag ab.</summary>
+      <returns>Der Titel des Produkts aus dem Microsoft Store-Eintrag.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Videos">
+      <summary>Ruft die Videos aus dem Windows Store-Eintrag für das Produkt ab.</summary>
+      <returns>Eine Auflistung von StoreVideo-Objekten, die Videos aus dem Windows Store-Eintrag für das Produkt darstellen.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.GetIsAnySkuInstalledAsync">
+      <summary>Gibt an, ob eine beliebige SKU dieses Produkts auf dem aktuellen Gerät installiert ist. Diese Methode soll für Produkte verwendet werden, die über herunterladbare Inhalte (DLC) verfügen.</summary>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss true zurückgibt, wenn eine SKU dieses Produkts auf dem aktuellen Gerät installiert ist, andernfalls "false".</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync">
+      <summary>Fordert den Kauf der Standard-SKU und Verfügbarkeit für das Produkt an und zeigt die UI an, die zum Abschluss der Transaktion über den MicrosoftStore verwendet wird.</summary>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StorePurchaseResult-Objekt zurückgibt, das Informationen zur Status und Fehlern der Bestellanforderung bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>Fordert den Kauf der Standard-SKU und Verfügbarkeit für das Produkt an und zeigt die UI an, die zum Abschluss der Transaktion über den MicrosoftStore verwendet wird. Diese Methode bietet die Möglichkeit, weitere Details für ein bestimmtes Angebot in einem umfangreichen Katalog von Produkten anzugeben, die durch eine einzelne Auflistung in der Microsoft Store, z. B. den Namen des Produkts für den Benutzer während des Einkaufs angezeigt dargestellt werden.</summary>
+      <param name="storePurchaseProperties">Ein Objekt, das weitere Informationen für die Bestellanforderung angibt, einschließlich des dem Benutzer während des Kaufvorgangs anzuzeigenden Produktnamens.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StorePurchaseResult-Objekt zurückgibt, das Informationen zur Status und Fehlern der Bestellanforderung bereitstellt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductOptions">
+      <summary>Enthält eine Sammlung von Filterzeichenfolgen, die Sie zusammen mit der Methode GetStoreProductsAsync verwenden können, um Informationen zu angegebenen Produkten abzurufen, die zu der aktuellen App gehören.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductOptions.#ctor">
+      <summary>Erstellt eine neue Instanz der StoreProductOptions-Klasse.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductOptions.ActionFilters">
+      <summary>Ruft eine Sammlung von Filterzeichenfolgen ab, die Sie zusammen mit der Methode GetStoreProductsAsync verwenden können, um Informationen zu angegebenen Produkten abzurufen, die zu der aktuellen App gehören. Derzeit unterstützt diese Sammlung nur eine Filterzeichenfolge, ```Purchase```.</summary>
+      <returns>Eine Sammlung von Filterzeichenfolgen, die Sie zusammen mit der Methode GetStoreProductsAsync verwenden können, um Informationen zu angegebenen Produkten abzurufen, die zu der aktuellen App gehören.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductPagedQueryResult">
+      <summary>Stellt Daten für eine ausgelagerten Anforderung zum Abrufen von Informationen zu Produkten bereit, die von der aktuellen App erworben werden können.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Anforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Anfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.HasMoreResults">
+      <summary>Ruft einen Wert ab, der angibt, ob weitere Ergebnisseiten vorhanden sind. Verwenden Sie die GetNextAsync-Methode, um die nächste Seite der Ergebnisse zu erhalten.</summary>
+      <returns>True, wenn weitere der Ergebnisseiten vorhanden sind, andernfalls false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.Products">
+      <summary>Ruft die Auflistung der von der Anforderung zurückgegebenen Produkte ab.</summary>
+      <returns>Ein Wörterbuch von Schlüssel-Wert-Paaren, wobei jeder Schlüssel eine Store-ID für das Produkt und der Wert ein StoreProduct-Objekt, das das Add-On darstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductPagedQueryResult.GetNextAsync">
+      <summary>Gibt die nächste Seite der Ergebnisse zurück. Um festzustellen, ob mehrere Seiten der Ergebnisse vorhanden sind, verwenden Sie die HasMoreResults-Eigenschaft.</summary>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss ein StoreProductPagedQueryResult-Objekt zurückgibt, das die nächste Seite der Ergebnisse bereitstellt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductQueryResult">
+      <summary>Stellt Daten für eine Anforderung zum Abrufen von Informationen zu Produkten bereit, die von der aktuellen App erworben werden können.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Anforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Anfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.Products">
+      <summary>Ruft die Auflistung der von der Anforderung zurückgegebenen Produkte ab.</summary>
+      <returns>Ein Wörterbuch von Schlüssel-Wert-Paaren, wobei jeder Schlüssel eine Store-ID für das Add-on und der Wert ein StoreProduct-Objekt, das das Add-On darstellt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductResult">
+      <summary>Stellt Daten für eine Anforderung zum Abrufen von Informationen über die aktuelle App bereit.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Anforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Anfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.Product">
+      <summary>Ruft Informationen über die aktuelle App ab.</summary>
+      <returns>Ein Objekt, das Informationen über die aktuelle App enthält.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseProperties">
+      <summary>Enthält zusätzliche Informationen, die Sie an eine Kaufanforderung für ein Produkt übergeben können, z. B. den Namen des Produkts, der den Benutzern während des Einkaufs angezeigt wird.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor">
+      <summary>Initialisiert eine neue Instanz der StorePurchaseProperties-Klasse.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor(System.String)">
+      <summary>Initialisiert eine neue Instanz der StorePurchaseProperties-Klasse. Diese Überladung bietet die Möglichkeit, den Produktnamen anzugeben, anzugeben, der dem Benutzer während des Kaufs angezeigt wird.</summary>
+      <param name="name">Den Name des Produkts, der dem Benutzer während des Einkaufs angezeigt wird.</param>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.ExtendedJsonData">
+      <summary>Ruft ab oder legt fest eine JSON-formatierte Zeichenfolge mit erweiterten Daten, die mit der Kaufanforderung an den Microsoft Store übergeben werden.</summary>
+      <returns>Eine JSON-formatierte Zeichenfolge mit erweiterten Daten, die mit der Kaufanforderung an den Microsoft Store übergeben werden.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.Name">
+      <summary>Wird verwendet, um den Produktnamen abzurufen oder festzulegen, der dem Benutzer während des Kaufs angezeigt wird. Der angegebene Name wird in der Titelleiste der Kaufs-UI angezeigt.</summary>
+      <returns>Den Name des Produkts, der dem Benutzer während des Einkaufs angezeigt wird.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseResult">
+      <summary>Stellt Daten für eine Anforderung zum Kauf einer App oder eines Produkts dar, das von der App angeboten wird.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Kaufanforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Kaufanfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.Status">
+      <summary>Ruft den Status der Kaufanforderung ab.</summary>
+      <returns>Der Status der Kaufanforderung.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseStatus">
+      <summary>Definiert die Werte, die den Status einer Anforderung, eine Anwendung oder ein Add-On zu erwerben, darstellen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.AlreadyPurchased">
+      <summary>Der aktuelle Benutzer hat bereits die angegebene App oder ein Add-On erworben.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NetworkError">
+      <summary>Die Kaufanforderung war nicht erfolgreich aufgrund eines Netzwerkverbindungsfehlers.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NotPurchased">
+      <summary>Die Kaufanforderung war nicht erfolgreich.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.ServerError">
+      <summary>Die Kaufanforderung war nicht erfolgreich aufgrund eines Serverfehlers, der durch den Microsoft Store zurückgegeben wurde.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.Succeeded">
+      <summary>Die Kaufanforderung war erfolgreich.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItem">
+      <summary>Repräsentiert Informationen zu einem neuen oder aktualisierten Paket, das sich in der Download- und Installationswarteschlange für die aktuelle App befindet.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.InstallKind">
+      <summary>Ruft einen Wert ab, der den Vorgang für das aktuelle Paket in der Download- und Installationswarteschlange beschreibt.</summary>
+      <returns>Ein Wert, der den Vorgang für das aktuelle Paket in der Download- und Installationswarteschlange beschreibt.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.PackageFamilyName">
+      <summary>Ruft den Paketfamiliennamen des aktuellen Pakets in der Warteschlange ab.</summary>
+      <returns>Der Paketfamilienname des aktuellen Pakets in der Warteschlange.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.ProductId">
+      <summary>Ruft die Add-On-Produkt-ID des aktuellen Pakets in der Warteschlange ab, wenn das Paket einem Add-On entspricht.</summary>
+      <returns>Die Add-On-Produkt-ID des aktuellen Pakets in der Warteschlange.</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.Completed">
+      <summary>Wird ausgelöst, wenn Download und Installation des aktuellen Pakets in der Warteschlange abgeschlossen sind.</summary>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.StatusChanged">
+      <summary>Wird ausgelöst, wenn sich der Status des aktuellen Pakets in der Warteschlange ändert.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.CancelInstallAsync">
+      <summary>Bricht die Installierung für das aktuelle Paket in der Warteschlange ab.</summary>
+      <returns>Das Objekt, dass zum Steuern des asynchronen Vorgangs verwendet wird.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.GetCurrentStatus">
+      <summary>Gibt den Status des aktuellen Pakets in der Warteschlange zurück.</summary>
+      <returns>Ein Objekt, das den Status des aktuellen Pakets in der Warteschlange darstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.PauseInstallAsync">
+      <summary>Unterbicht die Installierung für das aktuelle Paket in der Warteschlange.</summary>
+      <returns>Das Objekt, dass zum Steuern des asynchronen Vorgangs verwendet wird.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.ResumeInstallAsync">
+      <summary>Nimmt die Installierung für das aktuelle Paket in der Warteschlange wieder auf.</summary>
+      <returns>Das Objekt, dass zum Steuern des asynchronen Vorgangs verwendet wird.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemCompletedEventArgs">
+      <summary>Stellt Daten für das Completed-Ereignis für die StoreQueueItem-Klasse bereit.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemCompletedEventArgs.Status">
+      <summary>Ruft den Status des abgeschlossenen Elements in der Download- und Installationswarteschlange ab.</summary>
+      <returns>Der Status des abgeschlossenen Elements in der Warteschlange.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemExtendedState">
+      <summary>Definiert Werte, die erweiterte Statusinformationen für ein neues oder aktualisiertes Paket repräsentieren, das sich in der Download- und Installationswarteschlange für die aktuelle App befindet.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveAcquiringLicense">
+      <summary>Das Paket erwirbt eine Lizenz.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveDownloading">
+      <summary>Das Paket wird heruntergeladen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveInstalling">
+      <summary>Das Paket wird installiert.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActivePending">
+      <summary>Download und Installation des Pakets stehen an.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveRestoringData">
+      <summary>Das Paket stellt Daten wieder her.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveStarting">
+      <summary>Download und Installation des Pakets werden gestartet.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Canceled">
+      <summary>Der Download oder die Installation des Pakets wurde abgebrochen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Completed">
+      <summary>Download und Installation des Pakets sind abgeschlossen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Error">
+      <summary>Beim Download oder der Installation des Pakets ist ein Fehler aufgetreten.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Paused">
+      <summary>Der Download oder die Installation des Pakets wurde unterbrochen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedLowBattery">
+      <summary>Der Download oder die Installation des Pakets wurde wegen nicht ausreichender Akkuladung unterbrochen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedPackagesInUse">
+      <summary>Die Installation des Pakets wurde unterbrochen, da die App bereits verwandte Pakete verwendet.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedReadyToInstall">
+      <summary>Das Paket wurde unterbrochen, ist aber zur Installation bereit.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRecommended">
+      <summary>Der Download des Pakets wurde unterbrochen, da eine WLAN-Verbindung empfohlen wird.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRequired">
+      <summary>Der Download des Pakets wurde unterbrochen, da eine WLAN-Verbindung erforderlich ist.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemKind">
+      <summary>Definiert Werte, die den Vorgang für das aktuelle Paket in der Download- und Installationswarteschlange beschreiben.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Install">
+      <summary>Das Element wird zum ersten Mal installiert.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Repair">
+      <summary>Das Element wird repariert.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Update">
+      <summary>Das Element wird aktualisiert.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemState">
+      <summary>Definiert Werte, die den Zustand eines neuen oder aktualisierten Pakets repräsentieren, das sich in der Download- und Installationswarteschlange für die aktuelle App befindet.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Active">
+      <summary>Der Download oder die Installation des Pakets wird ausgeführt.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Canceled">
+      <summary>Der Download oder die Installation des Pakets wurde abgebrochen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Completed">
+      <summary>Download und Installation des Pakets sind abgeschlossen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Error">
+      <summary>Beim Download oder der Installation des Pakets ist ein Fehler aufgetreten.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Paused">
+      <summary>Der Download oder die Installation des Pakets wurde unterbrochen.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemStatus">
+      <summary>Bietet Statusinformationen für ein neues oder aktualisiertes Paket, das sich in der Download- und Installationswarteschlange für die aktuelle App befindet.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.ExtendedError">
+      <summary>Ruft den Fehlercode für die Download- und Installationsanforderung ab, wenn bei dem Vorgang ein Fehler auftrat.</summary>
+      <returns>Der Fehlercode für die Anfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallExtendedState">
+      <summary>Ruft einen Wert ab, der zusätzliche Informationen zu dem Status eines Pakets enthält, das sich in der Download- und Installationswarteschlange für die aktuelle App befindet.</summary>
+      <returns>Ein Wert, der zusätzliche Informationen zu dem Status eines Pakets enthält, das sich in der Warteschlange befindet.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallState">
+      <summary>Ruft einen Wert ab, der den allgemeinen Status eines Pakets angibt, das sich in der Warteschlange für die aktuelle App befindet.</summary>
+      <returns>Ein Wert, der den allgemeinen Status eines Pakets angibt, das sich in der Warteschlange befindet.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.UpdateStatus">
+      <summary>Ruft einen Wert ab, der den Aktualisierungsstatus eines Pakets angibt, das sich in der Warteschlange für die aktuelle App befindet.</summary>
+      <returns>Ein Wert, der den Aktualisierungsstatus eines Pakets angibt, das sich in der Warteschlange befindet.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewResult">
+      <summary>Stellt die Antwortdaten für die Bewertung und das Kritikschreiben des Produkts bereit.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Anforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Anfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedJsonData">
+      <summary>Ruft die vollständigen Ergebnisdaten für eine Anfrage zum Bewerten und Kritik schreiben im JSON-Format ab. Hierzu gehören Informationen, um festzustellen, ob ein Benutzer das Dialogfeld abgebrochen hat, und Fehlerdetails, wenn der Aufruf nicht erfolgreich war.</summary>
+      <returns>Eine JSON-formatierte Zeichenfolge mit dem Ergebnis aus einer Anforderung zum Bewerten und Kritik schreiben.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.Status">
+      <summary>Ruft den Status für die Anforderung zum Bewerten und Kritik schreiben für das Produkt ab.</summary>
+      <returns>der Status für die Anforderung zum Bewerten und Kritik schreiben für das Produkt.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.WasUpdated">
+      <summary>Ruft einen Wert ab, der angibt, ob die Anforderung zum Bewerten und Kritik schreiben erfolgreich aktualisiert wurde.</summary>
+      <returns>True wenn die Anforderung ein erfolgreiches Update auf das Bewerten und Kritik schreiben des Produkts machte, andernfalls "alse.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewStatus">
+      <summary>Ruft den Ergebnisstatus für die Anforderung zum Bewerten und Kritik schreiben für das Produkt ab.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.CanceledByUser">
+      <summary>Die Anforderung wurde vom Benutzer abgebrochen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Error">
+      <summary>Bei der Anfrage ist ein Fehler aufgetreten.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.NetworkError">
+      <summary>Bei der Anfrage ist ein Netzwerkfehler aufgetreten.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Succeeded">
+      <summary>Die Anforderung war erfolgreich.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRequestHelper">
+      <summary>Bietet eine Hilfsmethode, die zum Senden von Anfragen an den Microsoft Store für Vorgänge, die noch nicht über eine entsprechende API in der Windows SDK verfügen, verwendet werden kann.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreRequestHelper.SendRequestAsync(Windows.Services.Store.StoreContext,System.UInt32,System.String)">
+      <summary>Sendet die angegebene Anforderung an den Windows Store mit dem bereitgestellten Kontext und Parametern.</summary>
+      <param name="context">Ein Objekt, das den Benutzer angibt, für den der Vorgangs ausgeführt werden soll. Wenn Ihre App eine App für einen einzigen Benutzer ist (d. h. es wird nur im Kontext des Benutzers ausgeführt, der die App gestartet hat), verwenden Sie die Store.StoreContext.GetDefault-Methode zum Abrufen eines StoreContext-Objekts, das Sie zum Senden einer Anforderung, die ausgeführt wird im Kontext des Benutzers, verwenden können.</param>
+      <param name="requestKind">Ein Wert, der die Anforderung identifiziert, die Sie an den Windows Store senden möchten.</param>
+      <param name="parametersAsJson">Eine JSON-formatierte Zeichenfolge mit den Argumenten, die an die Anforderung übergeben werden.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StoreSendRequestResult-Objekt zurückgibt, das Informationen zur Status und Fehler zu der Anforderung bereitstellt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSendRequestResult">
+      <summary>Stellt Daten für eine Anforderung bereit, die an den Microsoft Store gesendet wird.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Anforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Anforderung, wenn im Vorgang ein Fehler auftritt.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.HttpStatusCode">
+      <summary>Ruft den HTTP-Statuscode für die Anforderung ab.</summary>
+      <returns>Der HTTP-Statuscode für die Anforderung.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.Response">
+      <summary>Ruft die Daten für die Anforderung ab.</summary>
+      <returns>Die Antwortdaten für die Anforderung.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSku">
+      <summary>Stellt Informationen für eine SKU (Stock Keeping Unit) eines Produkts im Microsoft Store bereit.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Availabilities">
+      <summary>Ruft die Verfügbarkeiten für die aktuelle Produkt-SKU ab. Jede Produkt-SKU kann einen oder mehrere Verfügbarkeiten haben, die unterschiedliche Preise haben.</summary>
+      <returns>Eine Auflistung von StoreAvailability-Objekten, die die Verfügbarkeiten für die aktuelle Produkt-SKU darstellen.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.BundledSkus">
+      <summary>Ruft die Liste der Store-IDs für die Apps oder Add-Ons ab, die mit dieser Produkt-SKU zusammengefasst sind.</summary>
+      <returns>Die Liste der Store-IDs für die Apps oder Add-Ons, die mit dieser Produkt-SKU zusammengefasst sind.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CollectionData">
+      <summary>Ruft zusätzliche Daten für die aktuelle Produkt-SKU ab, wenn der Benutzer eine Berechtigung hat, die SKU zu verwenden.</summary>
+      <returns>Ein Objekt, das zusätzliche Daten für den aktuellen Produkt-SKU bereitstellt, wenn der Benutzer eine Berechtigung zum Verwendet der SKU hat.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CustomDeveloperData">
+      <summary>Ruft die benutzerdefinierten Entwicklerdaten-Zeichenfolge (auch als Tag bezeichnet) ab, die benutzerdefinierte Informationen über ein Add-On (auch als In-App-Produkt oder SKU bezeichnet) enthält. Diese Zeichenfolge entspricht dem Wert des Felds **Benutzerdefinierte Entwicklerdaten** in der Eigenschaftenseite für das Add-On im Partner Center.</summary>
+      <returns>Die benutzerdefinierten Daten für das Add-On.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Description">
+      <summary>Ruft die SKU-Beschreibung des Produkts aus dem Microsoft Store-Eintrag ab.</summary>
+      <returns>Die Beschreibung der Produkt-SKU aus dem Microsoft Store-Eintrag.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.ExtendedJsonData">
+      <summary>Ruft vollständige Daten für die Verfügbarkeit der aktuellen SKU aus dem Store im JSON-Format ab.</summary>
+      <returns>Eine Zeichenfolge, die vollständige JSON-formatierte Daten für die Verfügbarkeit des aktuellen SKU Produkts aus dem Store enthält.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Images">
+      <summary>Ruft die Bilder aus dem Microsoft Store-Eintrag für die Produkt-SKU ab.</summary>
+      <returns>Eine Auflistung von StoreImage-Objekten, die Bilder aus dem Microsoft Store-Eintrag für die Produkt-SKU darstellen.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsInUserCollection">
+      <summary>Ruft einen Wert ab, der angibt, ob der aktuelle Benutzer eine Berechtigung zur Verwendung der aktuellen Produkt-SKU hat.</summary>
+      <returns>True, wenn der aktuelle Benutzer eine Berechtigung zur Verwendung der aktuellen Produkt-SKU hat, andernfalls false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsSubscription">
+      <summary>Ruft einen Wert, der angibt, ob die aktuelle Produkt-SKU ein Abonnement mit wiederkehrender Abrechnung ist. Weitere Informationen über das Abonnement finden Sie in der SubscriptionInfo-Eigenschaft.</summary>
+      <returns>True, wenn die aktuelle Produkt-SKU ein sich wiederholendes Abrechnung Abonnement ist. Andernfalls wird "false".</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsTrial">
+      <summary>Ruft einen Wert ab, der angibt, ob die aktuelle Produkt-SKU eine Test-SKU ist.</summary>
+      <returns>True, wenn die aktuelle Produkt-SKU eine Test-SKU ist. Andernfalls "false".</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Language">
+      <summary>Ruft die Sprache für die Daten ab, die in der Microsoft Store für das Produkt-SKU aufgelistet werden.</summary>
+      <returns>Die Daten in der Microsoft Store-Auflistung für die Produkt-SKU.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Price">
+      <summary>Ruft den Preis für die Standard-Verfügbarkeit für diese Produkt-SKU ab.</summary>
+      <returns>Der Preis für die Standard-Verfügbarkeit für diese Produkt-SKU.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.StoreId">
+      <summary>Ruft die Store-ID dieserProdukt-SKU ab.</summary>
+      <returns>Die Store-ID dieser Produkt-SKU.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.SubscriptionInfo">
+      <summary>Ruft Abonnement-Informationen für diese Produkt-SKU ab, wenn diese Produkt-SKU ein Abonnement mit wiederkehrender Abrechnung ist. Um festzustellen, ob diese Produkt-SKU ein Abonnement ist, verwenden Sie die IsSubscription-Eigenschaft.</summary>
+      <returns>Ein Objekt, das Abonnement-Informationen für diese Produkt-SKU enthält. Wenn diese Produkt-SKU kein Abonnement mit sich wiederholender Abrechnung ist, gibt diese Eigenschaft **null** zurück.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Title">
+      <summary>Ruft den Titel des Produkt-SKU aus dem Microsoft Store-Eintrag ab.</summary>
+      <returns>Der Titel des Produkt-SKU aus dem Microsoft Store-Eintrag.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Videos">
+      <summary>Ruft die Videos aus dem Microsoft Store-Eintrag für die Produkt-SKU ab.</summary>
+      <returns>Eine Auflistung von StoreVideo-Objekten, die Videos aus dem Microsoft Store-Eintrag für die Produkt-SKU darstellen.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.GetIsInstalledAsync">
+      <summary>Gibt an, ob diese Produkt-SKU auf dem aktuellen Gerät installiert ist.</summary>
+      <returns>Ein asynchroner Vorgang, der bei erfolgreichem Abschluss true zurückgibt, wenn diese Produkt-SKU auf dem aktuellen Gerät installiert ist, andernfalls "false".</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync">
+      <summary>Fordert den Kauf der Produkt-SKU an und zeigt die UI an, die zum Abschluss der Transaktion über den Windows Store verwendet wird.</summary>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StorePurchaseResult-Objekt zurückgibt, das Informationen zur Status und Fehlern der Bestellanforderung bereitstellt.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>Fordert den Kauf der Produkt-SKU an und zeigt die UI an, die zum Abschluss der Transaktion über den Microsoft Store verwendet wird. Diese Methode bietet die Möglichkeit, weitere Details für ein bestimmtes Angebot in einem umfangreichen Katalog von Produkten anzugeben, die durch eine einzelne Auflistung in der Microsoft Store, z. B. den Namen des Produkts für den Benutzer während des Einkaufs angezeigt dargestellt werden.</summary>
+      <param name="storePurchaseProperties">Ein Objekt, das weitere Informationen für die Bestellanforderung angibt, einschließlich des dem Benutzer während des Kaufvorgangs anzuzeigenden Produktnamens.</param>
+      <returns>Ein asynchroner Vorgang, der, bei erfolgreichem Abschluss, ein StorePurchaseResult-Objekt zurückgibt, das Informationen zur Status und Fehlern der Bestellanforderung bereitstellt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSubscriptionInfo">
+      <summary>Bietet Abonnementinformationen für eine Produkt-SKU, die ein Abonnement mit wiederkehrenden Abrechnung darstellt.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriod">
+      <summary>Ruft die Dauer des Abrechnungszeitraums für ein Abonnement ab, in den von der BillingPeriodUnit-Eigenschaft angegebenen Einheiten.</summary>
+      <returns>Die Dauer des Abrechnungszeitraums in den von der BillingPeriodUnit-Eigenschaft angegebenen Einheiten.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriodUnit">
+      <summary>Ruft die Einheiten des Abrechnungszeitraums für ein Abonnement ab.</summary>
+      <returns>Ein Wert, der die Einheiten des Abonnements-Abrechnungszeitraums angibt.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.HasTrialPeriod">
+      <summary>Ruft einen Wert ab, der angibt, ob das Abonnement eine Testperiode enthält.</summary>
+      <returns>True, wenn das Abonnement einen Testzeitraums enthält. Andernfalls false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriod">
+      <summary>Ruft die Dauer des Testzeitraums für das Abonnement ab, in den von der TrialPeriodUnit-Eigenschaft angegebenen Einheiten. Um zu ermitteln, ob das Abonnement über einen Testzeitraum verfügt, verwenden Sie die HasTrialPeriod-Eigenschaft.</summary>
+      <returns>Die Dauer des Testszeitraums in den von der TrialPeriodUnit-Eigenschaft angegebenen Einheiten.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriodUnit">
+      <summary>Ruft die Einheiten des Testzeitraums für das Abonnement ab.</summary>
+      <returns>Ein Wert, der die Einheiten des Abonnements-Testzeitraums angibt.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageResult">
+      <summary>Enthält die Antwortdaten für eine Anforderung zum Deinstallieren eines Pakets für die aktuelle App.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.ExtendedError">
+      <summary>Ruft den Fehlercode für die Anforderung ab, wenn im Vorgang ein Fehler auftritt.</summary>
+      <returns>Der Fehlercode für die Anfrage.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.Status">
+      <summary>Ruft den Status der Deinstallationsanforderung für das Paket ab.</summary>
+      <returns>Der Status der Deinstallationsanforderung für das Paket.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageStatus">
+      <summary>Definiert Werte, die den Status der Deinstallationsanforderung für das Paket darstellen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.CanceledByUser">
+      <summary>Der Deinstallationsvorgang wurde vom Benutzer abgebrochen.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Error">
+      <summary>Der Deinstallationsvorgang schlug aufgrund eines unbekannten Fehlers fehl.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.NetworkError">
+      <summary>Der Deinstallationsvorgang schlug aufgrund eines Netzwerkverbindungsfehlers fehl.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Succeeded">
+      <summary>Der Deinstallationsvorgang war erfolgreich.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.UninstallNotApplicable">
+      <summary>Der Deinstallationsvorgang gilt nicht für das angegebene Paket.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreVideo">
+      <summary>Repräsentiert ein Video, das mit einer Produktauflistung im Microsoft Store verbunden ist.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Caption">
+      <summary>Ruft die Beschriftung für das Video ab.</summary>
+      <returns>Die Beschriftung für das Video.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Height">
+      <summary>Ruft die Höhe des Videobilds in Pixel ab.</summary>
+      <returns>Die Höhe des Videos.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.PreviewImage">
+      <summary>Ruft das Vorschaubild ab, das für das Video angezeigt wird.</summary>
+      <returns>Das Vorschaubild, das für das Video angezeigt wird.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Uri">
+      <summary>Ruft die URI des Videos ab.</summary>
+      <returns>Die URI des Videos.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.VideoPurposeTag">
+      <summary>Ruft das Tag für das Video ab.</summary>
+      <returns>Das Tag für das Video.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Width">
+      <summary>Ruft die Breite des Videobilds in Pixel ab.</summary>
+      <returns>Die Breite des Videos in Pixel.</returns>
+    </member>
+  </members>
+</doc>

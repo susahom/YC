@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.XboxLive.XboxLiveSecureSocketsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveDeviceAddress">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsLocal">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsValid">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.MaxSnapshotBytesSize">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.NetworkAccessKind">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveDeviceAddress.SnapshotChanged">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.Compare(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="otherDeviceAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBase64(System.String)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="base64">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBuffer(Windows.Storage.Streams.IBuffer)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="buffer">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBytes(System.Byte[])">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="buffer">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetLocal">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBase64">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBuffer">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBytes(System.Byte[],System.UInt32@)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="buffer">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="bytesWritten">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPair">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalHostName">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalPort">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteDeviceAddress">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteHostName">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemotePort">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.State">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.Template">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPair.StateChanged">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.DeleteAsync">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairByHostNamesAndPorts(Windows.Networking.HostName,System.String,Windows.Networking.HostName,System.String)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="localHostName">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="localPort">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="remoteHostName">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="remotePort">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairBySocketAddressBytes(System.Byte[],System.Byte[])">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="localSocketAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="remoteSocketAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetLocalSocketAddressBytes(System.Byte[])">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="socketAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetRemoteSocketAddressBytes(System.Byte[])">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="socketAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.None">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.ReevaluatePath">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.DeviceAddress">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.EndpointPair">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.IsExistingPathEvaluation">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.Status">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Canceled">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.LocalSystemNotAuthorized">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoCompatibleNetworkPaths">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoLocalNetworks">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RefusedDueToConfiguration">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RemoteSystemNotAuthorized">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Succeeded">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.TimedOut">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.UnexpectedInternalError">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairState">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingInbound">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingOutbound">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Deleted">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.DeletingLocally">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Invalid">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Ready">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.RemoteEndpointTerminating">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.NewState">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.OldState">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeLower">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeUpper">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.EndpointPairs">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeLower">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeUpper">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Name">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.SocketKind">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Templates">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InboundEndpointPairCreated">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="deviceAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="deviceAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="behaviors">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="deviceAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="initiatorPort">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="acceptorPort">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="deviceAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="initiatorPort">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="acceptorPort">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="behaviors">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.GetTemplateByName(System.String)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="name">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs.EndpointPair">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Moderate">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Open">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Strict">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.#ctor">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.DeviceAddresses">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemInboundBandwidthConstrained">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemOutboundBandwidthConstrained">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxPrivatePayloadSize">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxSimultaneousProbeConnections">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MetricResults">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.Metrics">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfProbesToAttempt">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfResultsPending">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PrivatePayloadResults">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishedPrivatePayload">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ShouldRequestPrivatePayloads">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.TimeoutInMilliseconds">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ClearPrivatePayload">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="deviceAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <param name="metric">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForDevice(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="deviceAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForMetric(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="metric">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetPrivatePayloadResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="deviceAddress">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MeasureAsync">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishPrivatePayloadBytes(System.Byte[])">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <param name="payload">Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Canceled">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgress">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgressWithProvisionalResults">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.LocalSystemNotAuthorized">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoCompatibleNetworkPaths">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoLocalNetworks">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NotStarted">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RefusedDueToConfiguration">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RemoteSystemNotAuthorized">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Succeeded">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.TimedOut">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.UnexpectedInternalError">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageInboundBitsPerSecond">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageLatencyInMilliseconds">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageOutboundBitsPerSecond">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxInboundBitsPerSecond">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxLatencyInMilliseconds">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxOutboundBitsPerSecond">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinInboundBitsPerSecond">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinLatencyInMilliseconds">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinOutboundBitsPerSecond">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.DeviceAddress">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Metric">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Status">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Value">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.DeviceAddress">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Status">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Value">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+      <returns>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSecureSocketsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSocketKind">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Datagram">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.None">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Stream">
+      <summary>Esta API no está disponible para todas las aplicaciones. A menos que Microsoft le haya aprovisionado especialmente su cuenta de desarrollador, se producirá un error en tiempo de ejecución en las llamadas a estas API.</summary>
+    </member>
+  </members>
+</doc>

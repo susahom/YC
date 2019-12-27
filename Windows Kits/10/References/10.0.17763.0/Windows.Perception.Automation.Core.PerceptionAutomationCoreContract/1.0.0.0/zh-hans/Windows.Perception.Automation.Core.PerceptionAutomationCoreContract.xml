@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Perception.Automation.Core.PerceptionAutomationCoreContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Perception.Automation.Core.CorePerceptionAutomation">
+      <summary>为 Perception API 提供自动化服务。</summary>
+    </member>
+    <member name="M:Windows.Perception.Automation.Core.CorePerceptionAutomation.SetActivationFactoryProvider(Windows.Foundation.IGetActivationFactory)">
+      <summary>重写 Windows Perception API 并提供自定义类提供程序以实现 API。</summary>
+      <param name="provider">自动化提供程序。</param>
+    </member>
+    <member name="T:Windows.Perception.Automation.Core.PerceptionAutomationCoreContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

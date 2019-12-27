@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.ViewManagement.ViewManagementViewScalingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.ViewManagement.ApplicationViewScaling">
+      <summary>レイアウト スケーリングを制御するためのメソッドとプロパティを提供します。</summary>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.ApplicationViewScaling.DisableLayoutScaling">
+      <summary>レイアウト スケーリングが無効かどうかを示す値を取得します。</summary>
+      <returns>レイアウト スケーリングが無効な場合は **true**。それ以外の場合は **false**。</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.ApplicationViewScaling.TrySetDisableLayoutScaling(System.Boolean)">
+      <summary>指定された値に DisableLayoutScaling プロパティを設定します。</summary>
+      <param name="disableLayoutScaling">レイアウト スケーリングを無効にするには **true**。有効にするには **false**。</param>
+      <returns>プロパティが正常に設定された場合は **true**、それ以外の場合は **false**。</returns>
+    </member>
+    <member name="T:Windows.UI.ViewManagement.ViewManagementViewScalingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

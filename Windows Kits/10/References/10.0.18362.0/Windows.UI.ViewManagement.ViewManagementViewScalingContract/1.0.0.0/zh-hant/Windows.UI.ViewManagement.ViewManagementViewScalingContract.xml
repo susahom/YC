@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.ViewManagement.ViewManagementViewScalingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.ViewManagement.ApplicationViewScaling">
+      <summary>提供控制配置縮放的方法和屬性。</summary>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.ApplicationViewScaling.DisableLayoutScaling">
+      <summary>取得值，表示是否停用配置縮放。</summary>
+      <returns>如果配置縮放已停用，則為 **true**，否則為 **false**。</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.ApplicationViewScaling.TrySetDisableLayoutScaling(System.Boolean)">
+      <summary>嘗試將 DisableLayoutScaling 屬性設為指定值。</summary>
+      <param name="disableLayoutScaling">**true** 表示停用配置縮放；**false** 表示啟用。</param>
+      <returns>如果成功設定屬性則為 **true**，否則為 **false**。</returns>
+    </member>
+    <member name="T:Windows.UI.ViewManagement.ViewManagementViewScalingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.XboxLive.XboxLiveSecureSocketsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveDeviceAddress">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsLocal">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsValid">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.MaxSnapshotBytesSize">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.NetworkAccessKind">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveDeviceAddress.SnapshotChanged">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.Compare(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="otherDeviceAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBase64(System.String)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="base64">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBuffer(Windows.Storage.Streams.IBuffer)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="buffer">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBytes(System.Byte[])">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="buffer">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetLocal">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBase64">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBuffer">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBytes(System.Byte[],System.UInt32@)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="buffer">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="bytesWritten">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPair">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalHostName">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalPort">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteDeviceAddress">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteHostName">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemotePort">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.State">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.Template">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPair.StateChanged">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.DeleteAsync">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairByHostNamesAndPorts(Windows.Networking.HostName,System.String,Windows.Networking.HostName,System.String)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="localHostName">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="localPort">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="remoteHostName">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="remotePort">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairBySocketAddressBytes(System.Byte[],System.Byte[])">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="localSocketAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="remoteSocketAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetLocalSocketAddressBytes(System.Byte[])">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="socketAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetRemoteSocketAddressBytes(System.Byte[])">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="socketAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.None">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.ReevaluatePath">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.DeviceAddress">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.EndpointPair">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.IsExistingPathEvaluation">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.Status">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Canceled">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.LocalSystemNotAuthorized">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoCompatibleNetworkPaths">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoLocalNetworks">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RefusedDueToConfiguration">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RemoteSystemNotAuthorized">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Succeeded">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.TimedOut">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.UnexpectedInternalError">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairState">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingInbound">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingOutbound">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Deleted">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.DeletingLocally">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Invalid">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Ready">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.RemoteEndpointTerminating">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.NewState">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.OldState">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeLower">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeUpper">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.EndpointPairs">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeLower">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeUpper">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Name">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.SocketKind">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Templates">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InboundEndpointPairCreated">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="deviceAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="deviceAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="behaviors">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="deviceAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="initiatorPort">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="acceptorPort">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="deviceAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="initiatorPort">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="acceptorPort">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="behaviors">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.GetTemplateByName(System.String)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="name">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs.EndpointPair">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Moderate">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Open">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Strict">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.#ctor">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.DeviceAddresses">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemInboundBandwidthConstrained">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemOutboundBandwidthConstrained">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxPrivatePayloadSize">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxSimultaneousProbeConnections">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MetricResults">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.Metrics">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfProbesToAttempt">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfResultsPending">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PrivatePayloadResults">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishedPrivatePayload">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ShouldRequestPrivatePayloads">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.TimeoutInMilliseconds">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ClearPrivatePayload">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="deviceAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <param name="metric">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForDevice(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="deviceAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForMetric(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="metric">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetPrivatePayloadResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="deviceAddress">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MeasureAsync">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishPrivatePayloadBytes(System.Byte[])">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <param name="payload">Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Canceled">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgress">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgressWithProvisionalResults">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.LocalSystemNotAuthorized">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoCompatibleNetworkPaths">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoLocalNetworks">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NotStarted">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RefusedDueToConfiguration">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RemoteSystemNotAuthorized">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Succeeded">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.TimedOut">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.UnexpectedInternalError">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageInboundBitsPerSecond">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageLatencyInMilliseconds">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageOutboundBitsPerSecond">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxInboundBitsPerSecond">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxLatencyInMilliseconds">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxOutboundBitsPerSecond">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinInboundBitsPerSecond">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinLatencyInMilliseconds">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinOutboundBitsPerSecond">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.DeviceAddress">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Metric">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Status">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Value">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.DeviceAddress">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Status">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Value">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+      <returns>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSecureSocketsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSocketKind">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Datagram">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.None">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Stream">
+      <summary>Cette API n'est pas disponible pour toutes les applications Windows. À moins que votre compte développeur ne soit spécialement configuré par Microsoft, les appels à ces API échouent au moment de l'exécution.</summary>
+    </member>
+  </members>
+</doc>

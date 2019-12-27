@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.XboxLive.StorageApiContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.XboxLive.StorageApiContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult">
+      <summary>名前付きゲーム セーブ blobs のコレクションは、GameSaveContainer から取得されます。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Status">
+      <summary>非同期のゲーム セーブ blob 要求のステータス結果。</summary>
+      <returns>タイプ: GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Value">
+      <summary>名前付きゲーム セーブ blobs のコレクション。</summary>
+      <returns>タイプ: **IMapView\&lt;;String, IBuffer&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyDictionary\&lt;;String, IBuffer&gt;; \[.NET\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo">
+      <summary>ゲーム セーブ blob に関する情報を格納します。 GameSaveBlobInfoQuery.GetBlobInfoAsync を呼び出して、 **GameSaveBlobInfo** インスタンスを取得します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Name">
+      <summary>blob の名前。</summary>
+      <returns>タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Size">
+      <summary>blob のサイズ (バイト単位)。</summary>
+      <returns>タイプ: **数値** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult">
+      <summary>GameSaveBlobInfoQuery.GetBlobInfoAsync 操作の結果。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Status">
+      <summary>非同期のゲーム セーブ blob 情報要求のステータス結果。</summary>
+      <returns>タイプ: GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Value">
+      <summary>GameSaveBlobInfoQuery によって返された blob に関する情報。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery">
+      <summary>GameSaveContainer 内の blobs を列挙します。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync">
+      <summary>このクエリに一致するすべての blobs の情報を非同期に取得します。</summary>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveBlobInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync(System.UInt32,System.UInt32)">
+      <summary>このクエリに一致する blob の指定されたサブセット情報を非同期に取得します。</summary>
+      <param name="startIndex">タイプ: **数値** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <param name="maxNumberOfItems">タイプ: **数値** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveBlobInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetItemCountAsync">
+      <summary>この GameSaveBlobInfoQuery を作成したクエリに一致する blobs の数を取得します。</summary>
+      <returns>タイプ: **IAsyncOperation\&lt;;UInt32&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainer">
+      <summary>保存された単一のゲームを示すデータ blobs のコレクションが含まれています。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Name">
+      <summary>この GameSaveContainer の名前。</summary>
+      <returns>タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Provider">
+      <summary>このコンテナーが格納されているプロバイダー。</summary>
+      <returns>タイプ: GameSaveProvider</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.CreateBlobInfoQuery(System.String)">
+      <summary>指定されたプレフィックスで始まる名前を持つこのコンテナ内の、ゲーム セーブ blobs を取得する GameSaveBlobInfoQuery インスタンスを作成します。</summary>
+      <param name="blobNamePrefix">タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>タイプ: GameSaveBlobInfoQuery</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.GetAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>非同期にコンテナーから blobs を取得します。</summary>
+      <param name="blobsToRead">タイプ: **IIterable\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IEnumerable\&lt;;String&gt;; \[.NET\]</param>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveBlobGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.ReadAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer})">
+      <summary>*blobsToRead* で指定されているように、このコンテナーから blobs を読み込みます。 *blobsToRead* で渡されるバッファーは、blob データを格納するのに十分な大きさである必要があります。</summary>
+      <param name="blobsToRead">タイプ: **IMapView\&lt;;String, IBuffer&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyDictionary\&lt;;String, IBuffer&gt;; \[.NET\]</param>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync(Windows.Foundation.Collections.IPropertySet,Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>このメソッドはマップ ビュー (または C\# のディクショナリ) ではなく、**PropertySet** で動作する点を除き、SubmitUpdatesAsync と同様です。</summary>
+      <param name="blobsToWrite">タイプ: IPropertySet</param>
+      <param name="blobsToDelete">タイプ: **IIterable\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IEnumerable\&lt;;String&gt;; \[.NET\]</param>
+      <param name="displayName">タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitUpdatesAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer},Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>このコンテナー内のゲーム セーブ blobs に一連の変更を送信します。 変更は、blobs への書き込みまたは既存の blobs の削除になります。 コンテナーが存在しない場合は、新しいコンテナーが作成されます。 すべての書き込みと更新プログラムはアトミックに適用されます。 同じ blob に書き込みおよび削除しようとすると、エラーが発生します。 呼び出しごとに 16 MB のデータしか書き込めません。</summary>
+      <param name="blobsToWrite">タイプ: **IMapView\&lt;;String, IBuffer&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyDictionary\&lt;;String, IBuffer&gt;; \[.NET\]</param>
+      <param name="blobsToDelete">タイプ: **IIterable\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IEnumerable\&lt;;String&gt;; \[.NET\]</param>
+      <param name="displayName">タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo">
+      <summary>ゲーム セーブ コンテナー に関する情報。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.DisplayName">
+      <summary>このゲーム セーブのためにユーザーに表示される名前。</summary>
+      <returns>タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime">
+      <summary>このゲーム セーブ コンテナーが最後に変更された日付および時刻。</summary>
+      <returns>タイプ: **Date** \[JavaScript\] | System.DateTimeOffset \[.NET\] | Windows::Foundation::DateTime \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.Name">
+      <summary>このゲーム セーブ コンテナーの名前。</summary>
+      <returns>タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.NeedsSync">
+      <summary>SubmitUpdatesAsync または SubmitPropertySetUpdatesAsync を使用して、更新プログラムを送信する前にコンテナーを同期する必要があるかどうかを示します。</summary>
+      <returns>タイプ: **ブール** \[JavaScript\] | System.Boolean \[.NET\] | Platform::Boolean \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize">
+      <summary>ゲーム セーブ コンテナーとその blobs の合計サイズ (バイト単位)。</summary>
+      <returns>タイプ: **数値** \[JavaScript\] | System.UInt64 \[.NET\] | **uint64** \[C++\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult">
+      <summary>GameSaveContainerInfoQuery 操作の結果。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Status">
+      <summary>非同期のゲーム セーブ コンテナー情報要求のステータス結果。</summary>
+      <returns>タイプ: GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Value">
+      <summary>GameSaveContainerInfoQuery によって返されたコンテナー情報のコレクション。</summary>
+      <returns>タイプ: **IVectorView\&lt;;GameSaveContainerInfo&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyList\&lt;;GameSaveContainerInfo&gt;; \[.NET\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery">
+      <summary>ゲーム セーブ プロバイダー内のゲーム セーブ コンテナーを列挙します。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync">
+      <summary>このクエリに一致するすべてのゲーム セーブ コンテナーの情報を非同期に取得します。 コンテナーは、最も最近変更された順に列挙されます。</summary>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveContainerInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync(System.UInt32,System.UInt32)">
+      <summary>このクエリに一致するゲーム セーブ コンテナーの指定されたサブセット情報を非同期に取得します。 コンテナーは、最も最近変更された順に列挙されます。</summary>
+      <param name="startIndex">タイプ: **数値** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <param name="maxNumberOfItems">タイプ: **数値** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveContainerInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetItemCountAsync">
+      <summary>この GameSaveContainerInfoQuery オブジェクトを作成したクエリに一致するコンテナーの数を取得します。</summary>
+      <returns>タイプ: **IAsyncOperation\&lt;;UInt32&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus">
+      <summary>ゲーム セーブ操作によって返される成功と失敗のコード。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Abort">
+      <summary>| **Abort** | **abort**                                   | 0x80004004 | 操作が中止されました。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.BlobNotFound">
+      <summary>| **BlobNotFound** | **blobNotFound**                     | 0x80830008 | 指定された名前の blob がコンテナー内に見つからなかったため、操作に失敗しました。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerNotInSync">
+      <summary>| **ContainerNotInSync** | **containerNotInSync**         | 0x8083000A | コンテナーがローカルに存在しないため、操作は失敗しました。 このエラーは、同期が必要なコンテナーに更新プログラムを送信し、コンテナーに対して読み取り、削除、または blob クエリが発行されていない場合に発生します。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerSyncFailed">
+      <summary>| **ContainerSyncFailed** | **containerSyncFailed**       | 0x8083000B | コンテナーを同期できなかったため、操作に失敗しました。 これは、待機したくないため、またはネットワーク エラーのために、ユーザーがコンテナーの同期をキャンセルし、再試行しなかったことを示します。 このエラーは、DeleteContainerAsync, ReadAsync、GetAsync、または GameSaveBlobInfoQuery 操作によって返されます。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.InvalidContainerName">
+      <summary>| **InvalidContainerName** | **invalidContainerName**     | 0x80830001 | 指定されたコンテナー名が空であるか、無効な文字が含まれているか、長すぎます。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoAccess">
+      <summary>| **NoAccess** | **noAccess**                             | 0x80830002 | タイトルにコンテナー記憶域への書き込みアクセス権がないため、操作に失敗しました。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoXboxLiveInfo">
+      <summary>| **NoXboxLiveInfo** | **noXboxLiveInfo**                 | 0x80830009 | タイトルに適切なタイトル ID またはサービス構成 ID がないため、操作に失敗しました。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ObjectExpired">
+      <summary>| **ObjectExpired** | **objectExpired**                   | 0x8083000D | アプリケーションが中断され、オブジェクトがもはや有効ではないため、操作に失敗しました。 再開後にゲーム セーブ操作を実行するには、GetForUserAsync または GetSyncOnDemandForUserAsync 付きの新しい GameSaveProvider をアプリが要求する必要があります。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Ok">
+      <summary>| **Ok** | **ok**                                         | 0          | 操作は正常に完了しました。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.OutOfLocalStorage">
+      <summary>| **OutOfLocalStorage** | **outOfLocalStorage**           | 0x80830003 | 十分な使用可能ローカル記憶域がないため、操作に失敗しました。 ユーザーにはローカル記憶域を解放する機会が与えられましたが、そうしないことを選択しました。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ProvidedBufferTooSmall">
+      <summary>| **ProvidedBufferTooSmall** | **providedBufferTooSmall** | 0x80830007 | blob を読み取るために提供されたバッファーが blob を受け取るには小さすぎたため、操作に失敗しました。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.QuotaExceeded">
+      <summary>| **QuotaExceeded** | **quotaExceeded**                   | 0x80830006 | 更新により記憶域がそのクォータを超えてしまうため、操作に失敗しました。 IGameSaveProvider.GetRemainingBytesInQuotaAsync を使用して、残りのクォータの領域を照会します。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UpdateTooBig">
+      <summary>| **UpdateTooBig** | **updateTooBig**                     | 0x80830005 | 更新プログラムが 16 MB 以上のデータを含んでいたため、操作に失敗しました。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserCanceled">
+      <summary>| **UserCanceled** | **userCanceled**                     | 0x80830004 | ユーザーがキャンセルしたために、操作に失敗しました。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserHasNoXboxLiveInfo">
+      <summary>| **UserHasNoXboxLiveInfo** | **userHasNoXboxLiveInfo**   | 0x8083000C | ユーザー アカウントに関連付けられている Xbox Live 情報がないため、操作に失敗しました。 このエラーは、GetForUserAsync もしくは GetSyncOnDemandForUserAsync によって返されます。 |</summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult">
+      <summary>非同期のゲーム セーブ操作の結果。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult.Status">
+      <summary>非同期のゲーム セーブ操作のステータス結果。</summary>
+      <returns>タイプ: GameSaveErrorStatus</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProvider">
+      <summary>**GameSaveProvider** は、Xbox Live ゲーム セーブの作成、保存、列挙、および読み込みに使用されます。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.ContainersChangedSinceLastSync">
+      <summary>新しい GameSaveProvider インスタンスで呼び出され、アプリケーションが最後に実行されてから変更されたコンテナーの名前を返します。</summary>
+      <returns>タイプ: **IVectorView\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyList\&lt;;String&gt;; \[.NET\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.User">
+      <summary>このゲーム セーブ プロバイダーおよびゲーム セーブ コンテナーに関連付けられたユーザー。</summary>
+      <returns>タイプ: **ユーザー**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainer(System.String)">
+      <summary>ゲーム セーブを格納する新しい GameSaveContainer を作成します。</summary>
+      <param name="name">タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>タイプ: GameSaveContainer</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery">
+      <summary>このゲーム セーブ プロバイダー内のすべてのコンテナーを列挙する GameSaveContainerInfoQuery インスタンスを作成します。</summary>
+      <returns>タイプ: GameSaveContainerInfoQuery</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery(System.String)">
+      <summary>指定されたプレフィックスで始まる名前を持つこのゲーム セーブ プロバイダー内のコンテナーを列挙する GameSaveContainerInfoQuery インスタンスを作成します。</summary>
+      <param name="containerNamePrefix">タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>タイプ: GameSaveContainerInfoQuery</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.DeleteContainerAsync(System.String)">
+      <summary>指定されたゲーム セーブ コンテナーを非同期的に削除します。</summary>
+      <param name="name">タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync(Windows.System.User,System.String)">
+      <summary>指定されたユーザーのゲーム セーブ プロバイダーを取得します。</summary>
+      <param name="user">タイプ: ユーザー</param>
+      <param name="serviceConfigId">タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveProviderGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetRemainingBytesInQuotaAsync">
+      <summary>このゲーム セーブ プロバイダーのユーザーのクォータに残っているバイト数を取得します。</summary>
+      <returns>タイプ: **IAsyncOperation\&lt;;Int64&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetSyncOnDemandForUserAsync(Windows.System.User,System.String)">
+      <summary>コンテナーをオンデマンドで同期させる、部分的に同期されたゲーム セーブ プロバイダーを取得します。</summary>
+      <param name="user">タイプ: ユーザー</param>
+      <param name="serviceConfigId">タイプ: **文字列** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>タイプ: **IAsyncOperation\&lt;;GameSaveProviderGetResult&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult">
+      <summary>GetForUserAsync または GetSyncOnDemandForUserAsync の結果。 操作。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Status">
+      <summary>非同期のゲーム セーブ プロバイダー要求のステータス結果。</summary>
+      <returns>タイプ: GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Value">
+      <summary>成功したゲーム セーブ プロバイダー要求によって返される GameSaveProvider インスタンス。</summary>
+      <returns>
+      </returns>
+    </member>
+  </members>
+</doc>

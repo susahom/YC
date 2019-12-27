@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.ViewManagement.ViewManagementViewScalingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.ViewManagement.ApplicationViewScaling">
+      <summary>레이아웃 크기 조정 제어를 위한 메서드와 속성을 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.ApplicationViewScaling.DisableLayoutScaling">
+      <summary>레이아웃 크기 조정을 사용할 수 없는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>레이아웃 크기 조정을 사용할 수 없는 경우 **true**이고, 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.ApplicationViewScaling.TrySetDisableLayoutScaling(System.Boolean)">
+      <summary>지정한 값에 DisableLayoutScaling 속성을 설정하려고 시도합니다.</summary>
+      <param name="disableLayoutScaling">레이아웃 크기 조정을 사용할 수 없도록 하려면 **true**이고, 사용할 수 있도록 하려는 경우 **false**입니다.</param>
+      <returns>속성이 성공적으로 설정되었으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
+    </member>
+    <member name="T:Windows.UI.ViewManagement.ViewManagementViewScalingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

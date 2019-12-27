@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Calls.CallsPhoneContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Calls.CallsPhoneContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.CellularDtmfMode">
+      <summary>指示移动电话使用的双音多频 (DTMF) 的类型。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.CellularDtmfMode.Burst">
+      <summary>语音以突发脉冲的形式发送。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.CellularDtmfMode.Continuous">
+      <summary>语音将以连续的形式发送，这意味着语音只应在释放按钮时停止。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint">
+      <summary>可用于拨打电话的可用音频终结点。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Bluetooth">
+      <summary>蓝牙连接。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Default">
+      <summary>电话的默认音频终结点。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Speakerphone">
+      <summary>免提电话。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallBlocking">
+      <summary>控制在收到电话号码时是否阻止这些号码。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallBlocking.BlockPrivateNumbers">
+      <summary>获取或设置 PhoneCallBlocking 实例是否应阻止私人号码。</summary>
+      <returns>如果 PhoneCallBlocking 实例应阻止私人号码，则为 **true**；否则为 **false**。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallBlocking.BlockUnknownNumbers">
+      <summary>获取或设置 PhoneCallBlocking 是否应阻止未知号码。</summary>
+      <returns>如果 PhoneCallBlocking 实例应阻止未知号码，则为 **true**；否则为 **false**。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallBlocking.SetCallBlockingListAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>设置应阻止的号码的列表。</summary>
+      <param name="phoneNumberList">应阻止的号码的列表。</param>
+      <returns>如果操作成功，则为 **true**；否则为 **false**。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallManager">
+      <summary>提供查询呼叫状态和启动电话呼叫的能力。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallManager.IsCallActive">
+      <summary>获取一个值，该值指示设备上的活动呼叫是否正在进行中。</summary>
+      <returns>如果设备上的活动呼叫正在进行中，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallManager.IsCallIncoming">
+      <summary>获取一个值，该值指示设备上是否正在传入呼叫。</summary>
+      <returns>如果设备上正在传入呼叫，则为 true；否则为 false。</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneCallManager.CallStateChanged">
+      <summary>在设备的基本呼叫状态更改时发生。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.RequestStoreAsync">
+      <summary>检索 PhoneCallStore。</summary>
+      <returns>包含有关设备上可用的电话线路的信息的 PhoneCallStore 对象。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallSettingsUI">
+      <summary>启动呼叫设置 UI。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallUI(System.String,System.String)">
+      <summary>生成使用指定电话号码和显示名称的内置电话通话 UI。</summary>
+      <param name="phoneNumber">电话号码。</param>
+      <param name="displayName">显示名称。</param>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallMedia">
+      <summary>电话呼叫中可用的媒体类型。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.Audio">
+      <summary>电话呼叫仅支持音频。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.AudioAndRealTimeText">
+      <summary>电话呼叫支持音频和实时文本。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.AudioAndVideo">
+      <summary>电话呼叫支持音频和视频。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallStore">
+      <summary>表示有关设备上可用的电话线路的信息的集合。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.GetDefaultLineAsync">
+      <summary>获取当前默认电话线路的线路 ID。</summary>
+      <returns>一个异步操作，在成功完成时返回线路 ID。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.IsEmergencyPhoneNumberAsync(System.String)">
+      <summary>检查电话号码是否连接到已知紧急服务提供商。</summary>
+      <param name="number">要检查是否为已知紧急号码的电话号码。</param>
+      <returns>一个异步操作，在成功完成时返回布尔值。 True 表示电话号码连接到已知紧急服务提供商。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.RequestLineWatcher">
+      <summary>检索设备的 PhoneLineWatcher 类的实例。</summary>
+      <returns>设备的 PhoneLineWatcher 类的实例。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilities">
+      <summary>提供对 PhoneLine 实例的视频呼叫功能的访问权。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilities.IsVideoCallingCapable">
+      <summary>获取此 PhoneLine 实例是否支持视频呼叫。</summary>
+      <returns>如果 PhoneLine 实例支持视频通话，则为 **true**；否则为 **false**。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilitiesManager">
+      <summary>使应用程序能够获取 PhoneLine 实例的 PhoneCallVideoCapabilities。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilitiesManager.GetCapabilitiesAsync(System.String)">
+      <summary>异步获取 PhoneLine 实例的视频功能。</summary>
+      <param name="phoneNumber">要查询的 PhoneLine 实例。</param>
+      <returns>所查询 PhoneLine 实例的 PhoneCallVideoCapabilities。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneDialOptions">
+      <summary>表示用于拨出呼叫的选项。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneDialOptions.#ctor">
+      <summary>创建类的新实例</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.AudioEndpoint">
+      <summary>获取或设置为拨号请求的音频终结点。</summary>
+      <returns>为拨号请求的音频终结点。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Contact">
+      <summary>获取或设置与拨号请求关联的通讯簿联系人。</summary>
+      <returns>与拨号请求关联的通讯簿联系人。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.ContactPhone">
+      <summary>获取或设置与拨号请求关联的通讯簿联系人的电话号码属性。</summary>
+      <returns>与拨号请求关联的通讯簿联系人的电话号码属性。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.DisplayName">
+      <summary>获取或设置被叫方的名称。 如果拨打的号码在用户通讯簿中没有带匹配号码的被叫方名称，则显示此值。</summary>
+      <returns>被叫方的名称。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Media">
+      <summary>获取或设置为拨号请求的媒体的类型。</summary>
+      <returns>为拨号请求的媒体的类型。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Number">
+      <summary>获取或设置要拨打的电话号码。</summary>
+      <returns>要拨打的电话号码。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLine">
+      <summary>表示电话线路。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.CanDial">
+      <summary>获取一个布尔值，该值指示电话线路是否可用于拨出传出呼叫。</summary>
+      <returns>如果电话线路可用于拨出传出呼叫，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.CellularDetails">
+      <summary>获取有关 PhoneLine 实例的移动电话组件特定组件的详细信息。 对于 VoIP 电话线路，此属性为 NULL。</summary>
+      <returns>PhoneLine 实例的详细信息。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.DisplayColor">
+      <summary>获取电话线路的首选显示颜色。</summary>
+      <returns>电话线路的首选显示颜色。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.DisplayName">
+      <summary>获取电话线路的用户分配的友好名称。</summary>
+      <returns>电话线路的用户分配的友好名称。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Id">
+      <summary>获取电话线路的 ID。 此 ID 在各个设备上和重新启动后都是持续存在的。</summary>
+      <returns>电话线路的 ID。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.LineConfiguration">
+      <summary>获取有关此 PhoneLine 实例的额外配置信息。</summary>
+      <returns>此电话线路的额外信息。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.NetworkName">
+      <summary>获取正在由电话线路使用的当前网络的名称。</summary>
+      <returns>正在由电话线路使用的当前网络的名称。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.NetworkState">
+      <summary>获取电话线路的当前网络状态。</summary>
+      <returns>电话线路的当前网络状态。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.SupportsTile">
+      <summary>获取一个值，该值指示电话线路是否支持固定为动态磁贴。</summary>
+      <returns>如果电话线路支持固定为动态磁贴，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Transport">
+      <summary>获取电话线路的传输。</summary>
+      <returns>电话线路的传输。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.TransportDeviceId">
+      <summary>与此 PhoneLine 关联的 PhoneLineTransportDevice 的设备 ID。 如果无传输设备，则为 null。</summary>
+      <returns>表示设备 ID 的字符串。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.VideoCallingCapabilities">
+      <summary>获取此电话线路是否支持视频呼叫。</summary>
+      <returns>如果支持视频通话，则为 **true**；否则为 **false**。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Voicemail">
+      <summary>获取与 PhoneLine 实例关联的语音邮件数据。</summary>
+      <returns>语音邮件数据。</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLine.LineChanged">
+      <summary>当关联 PhoneLine 实例的属性更改时发生。 这可能在元数据（如语音邮件计数、网络状态或移动电话详细信息）更改时发生。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.Dial(System.String,System.String)">
+      <summary>通过电话线路拨出电话呼叫。 呼叫方必须位于前台。</summary>
+      <param name="number">要拨打的号码。</param>
+      <param name="displayName">电话呼叫接收方的显示名称。 该参数为可选参数。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.DialWithOptions(Windows.ApplicationModel.Calls.PhoneDialOptions)">
+      <summary>通过电话线路拨出电话呼叫，从而允许呼叫方指定其他拨号选项。 呼叫方必须位于前台。</summary>
+      <param name="options">用于电话呼叫的其他拨号选项。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.EnableTextReply(System.Boolean)">
+      <summary>通知平台此线路支持短信回复功能。</summary>
+      <param name="value">如果启用短信回复功能，则为 true；否则为 false。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.FromIdAsync(System.Guid)">
+      <summary>此静态方法异步检索 PhoneLine 对象，该对象基于线路 ID 表示设备上的特定电话线路。</summary>
+      <param name="lineId">要检索的电话线路的线路 ID。</param>
+      <returns>一个返回 PhoneLine 对象的异步操作，该对象基于线路 ID 表示设备上的特定电话线路。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.IsImmediateDialNumberAsync(System.String)">
+      <summary>检查是否应直接从拨号器中拨出号码，而无需用户按呼叫按钮。</summary>
+      <param name="number">要检查是否直接拨出的电话号码。</param>
+      <returns>一个异步布尔值响应。 True 表示应直接拨出该号码。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineCellularDetails">
+      <summary>提供与电话线路的移动电话组件的详细交互。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.IsModemOn">
+      <summary>指示此电话线路的调制解调器是否已开启。</summary>
+      <returns>如果调制解调器开启，则为 true；否则为 false。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.RegistrationRejectCode">
+      <summary>获取电话线路的注册拒绝代码。</summary>
+      <returns>电话线路的注册拒绝代码。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.SimSlotIndex">
+      <summary>获取与手机线路关联的 SIM 卡的插槽索引。</summary>
+      <returns>与手机线路关联的 SIM 卡的插槽索引。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.SimState">
+      <summary>获取与手机线路关联的 SIM 卡的状态。</summary>
+      <returns>与手机线路关联的 SIM 卡的状态。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.GetNetworkOperatorDisplayText(Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation)">
+      <summary>检索要为用户显示的相应的连接字符串。</summary>
+      <param name="location">需要文本字符串的位置。 这将影响返回的字符串的格式。</param>
+      <returns>要在给定位置显示的文本字符串。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineConfiguration">
+      <summary>提供电话线路相关信息的属性的集合。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineConfiguration.ExtendedProperties">
+      <summary>获取此电话线路的扩展属性。</summary>
+      <returns>键值对的一个映射，该键值对包含此电话线路的扩展属性。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineConfiguration.IsVideoCallingEnabled">
+      <summary>获取此电话线路是否支持视频呼叫。</summary>
+      <returns>如果支持视频通话，则为 **true**；否则为 **false**。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation">
+      <summary>可能用于向用户显示网络运营商信息的位置。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Default">
+      <summary>默认值。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Dialer">
+      <summary>拨号器 UI。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.InCallUI">
+      <summary>用户主动呼叫时的 UI。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Tile">
+      <summary>电话磁贴。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineTransport">
+      <summary>由特定电话线路使用的传输。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.Bluetooth">
+      <summary>电话线路使用蓝牙传输。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.Cellular">
+      <summary>电话线路使用移动电话传输。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.VoipApp">
+      <summary>电话线路使用 Voice over IP 传输。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineTransportDevice">
+      <summary>表示与 PhoneLine 关联的硬件设备。 当前仅支持与蓝牙设备的使用。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.DeviceId">
+      <summary>获取与 PhoneLineTransportDevice 关联的硬件设备的 DeviceID。</summary>
+      <returns>表示 DeviceID 的字符串。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.Transport">
+      <summary>获取 PhoneLineTransportDevice 的 PhoneLineTransport。</summary>
+      <returns>PhoneLineTransport。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.Connect">
+      <summary>尝试与设备建立连接。</summary>
+      <returns>操作的完成时的连接状态。 如果已连接则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.ConnectAsync">
+      <summary>尝试与设备建立异步连接。</summary>
+      <returns> IAsyncOperation 表示操作完成后的连接状态。 如果已连接则包含 true；否则为 false。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.FromId(System.String)">
+      <summary>从给定的 DeviceId 获取 PhoneLineTransportDevice。</summary>
+      <param name="id">DeviceId。</param>
+      <returns>如果 DeviceId 与现有设备不符则为 PhoneLineTransportDevice 或 null。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.GetDeviceSelector">
+      <summary>获取高级查询语法 (AQS) 字符串，应用程序可将该字符串传递给 DeviceInformation.FindAllAsync 以便查找 PhoneLineTransportDevices。</summary>
+      <returns>设置为 AQS 查询格式的字符串。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.GetDeviceSelector(Windows.ApplicationModel.Calls.PhoneLineTransport)">
+      <summary>获取一个高级查询语法 (AQS) 字符串，应用程序可将该字符串传递给 DeviceInformation.FindAllAsync 以便查找指定类型的 PhoneLineTransportDevices。</summary>
+      <param name="transport">指定所需类型的 PhoneLineTransportDevice 的 PhoneLineTransport。</param>
+      <returns>设置为 AQS 查询格式的字符串。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.IsRegistered">
+      <summary>返回活动用户的应用的注册状态。</summary>
+      <returns>如果已注册则为 true；否则为 false。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RegisterApp">
+      <summary>在 Windows 中为相关的 PhoneLineTransportDevice 注册应用。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RegisterAppForUser(Windows.System.User)">
+      <summary>在 Windows 中为相关的 PhoneLineTransportDevice 注册应用。</summary>
+      <param name="user">正在注册用户。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RequestAccessAsync">
+      <summary>用于请求对 PhoneLineTransportDevice 的显式访问权限。</summary>
+      <returns>异步操作完成后，返回 DeviceAccessStatus 枚举值。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.UnregisterApp">
+      <summary>在 Windows 中为相关的 PhoneLineTransportDevice 取消应用注册。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.UnregisterAppForUser(Windows.System.User)">
+      <summary>在 Windows 中为相关的 PhoneLineTransportDevice 取消应用注册。</summary>
+      <param name="user">将取消注册的 User。</param>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcher">
+      <summary>表示一个类，该类监视设备上新建/已删除/已更新的电话线路并告知侦听器任何更改。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineWatcher.Status">
+      <summary>获取 PhoneLineWatcher 实例的当前状态。</summary>
+      <returns>PhoneLineWatcher 的当前状态。</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.EnumerationCompleted">
+      <summary>当 PhoneLineWatcher 实例完成设备上的所有电话线路的枚举时发生。</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineAdded">
+      <summary>当 PhoneLineWatcher 实例检测到设备上新增电话线路时发生。</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineRemoved">
+      <summary>当 PhoneLineWatcher 实例检测到已从设备中删除某个电话线路时发生。</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineUpdated">
+      <summary>当 PhoneLineWatcher 实例检测到已在设备上更新某个电话线路时发生。</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.Stopped">
+      <summary>当 PhoneLineWatcher 实例停止监视设备上的电话线路更改时发生。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineWatcher.Start">
+      <summary>开始侦听设备上电话线路的更改。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineWatcher.Stop">
+      <summary>停止侦听设备上电话线路的更改。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcherEventArgs">
+      <summary>表示一个类，该类包含有关已添加、删除或更新的电话线路的信息。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineWatcherEventArgs.LineId">
+      <summary>获取已触发 LineAdded、LineRemoved 或 LineUpdated 事件的电话线路的 ID。</summary>
+      <returns>已触发 LineAdded、LineRemoved 或 LineUpdated 事件的电话线路的 ID。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus">
+      <summary>PhoneLineWatcher 的当前状态。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Created">
+      <summary>电话线路观察程序类已创建。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.EnumerationCompleted">
+      <summary>电话线路观察程序类刚刚完成了对设备上的电话线路的枚举。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Started">
+      <summary>电话线路观察程序类已启动。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Stopped">
+      <summary>电话线路观察程序已停止。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneNetworkState">
+      <summary>描述电话线路的网络注册状态。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Denied">
+      <summary>无法使用任何可用网络注册电话线路。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Deregistered">
+      <summary>电话线路已取消注册。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Home">
+      <summary>电话线路已注册并位于运营商本地网络上。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.NoSignal">
+      <summary>无法检测到电话线路上的信号，或者电话线路仅限于紧急呼叫。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.RoamingDomestic">
+      <summary>电话线路已注册并在其他运营商的网络上进行国内漫游。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.RoamingInternational">
+      <summary>电话线路已注册并在其他运营商网络上进行国际漫游。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Searching">
+      <summary>搜索网络中的电话线路。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Unknown">
+      <summary>电话线路的注册状态未知。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneSimState">
+      <summary>移动电话线路的 SIM 卡的当前状态。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Disabled">
+      <summary>SIM 卡已禁用。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Invalid">
+      <summary>SIM 卡无效。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.NotInserted">
+      <summary>电话中未插入任何 SIM 卡。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinLocked">
+      <summary>SIM 卡已锁定并需要 PIN 码进行解锁。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinNotRequired">
+      <summary>SIM 卡不需要 PIN 码。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinUnlocked">
+      <summary>SIM 卡已解锁，但需要 PIN 码以便在锁定时再次解锁。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PukLocked">
+      <summary>SIM 卡因不正确的 PIN 条目太多而被锁定，并需要个人解锁密钥 (PUK) 进行解锁。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Unknown">
+      <summary>SIM 卡状态未知。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneVoicemail">
+      <summary>表示与 PhoneLine 实例关联的语音邮件数据。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.MessageCount">
+      <summary>获取与 PhoneLine 实例关联的语音邮件消息的当前计数。 值 -1 表示消息数量“不确定”。</summary>
+      <returns>语音邮件的当前计数。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.Number">
+      <summary>获取与 PhoneLine 实例关联的语音邮件的访问号码。 电话用户可拨打访问号码来访问语音邮件帐户。</summary>
+      <returns>访问号码。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.Type">
+      <summary>获取与 PhoneLine 实例关联的语音邮件的类型。</summary>
+      <returns>语音邮件帐户的类型。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneVoicemail.DialVoicemailAsync">
+      <summary>呼叫语音邮件访问号码。</summary>
+      <returns>一个异步拨号操作。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneVoicemailType">
+      <summary>与 PhoneLine 实例关联的语音邮件的类型。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.None">
+      <summary>电话线路没有语音邮件。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.Traditional">
+      <summary>电话线路没有传统语音邮件。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.Visual">
+      <summary>电话线路没有可视语音邮件。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin">
+      <summary>有关电话呼叫来源的信息的集合。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.#ctor">
+      <summary>创建新的 PhoneCallOrigin 对象。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.Category">
+      <summary>获取或设置呼叫方的类别。</summary>
+      <returns>呼叫方的类别。 几个示例包括“房产中介”或“金融服务”。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.CategoryDescription">
+      <summary>获取或设置呼叫方的 Category 的说明。</summary>
+      <returns>呼叫方的特定 Category 的说明。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.DisplayName">
+      <summary>获取或设置 PhoneCallOriginManager 对象的显示名称。</summary>
+      <returns>呼叫来源管理器的显示名称。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.DisplayPicture">
+      <summary>获取或设置 PhoneCallOriginManager 对象的显示图片。</summary>
+      <returns>呼叫方来源的显示图片。 此图片显示在传入呼叫 UI 上。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.Location">
+      <summary>获取或设置呼叫方的位置。</summary>
+      <returns>呼叫方的位置。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager">
+      <summary>控制负责确定传入呼叫来源的应用程序并设置 PhoneCallOrigin 信息。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.IsCurrentAppActiveCallOriginApp">
+      <summary>检查以了解当前应用程序是否设置为默认呼叫来源应用程序。</summary>
+      <returns>如果当前应用程序是默认呼叫来源应用程序，则为 **true**；否则为 **false**。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.IsSupported">
+      <summary>如果 PhoneCallOriginManager API 受支持则返回 true，如果不受支持则返回 false。</summary>
+      <returns>bool 表示是否 PhoneCallOriginManager API 是否受支持。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.RequestSetAsActiveCallOriginAppAsync">
+      <summary>调用对话框以将当前应用程序设置为默认电话来源应用程序。</summary>
+      <returns>指示应用程序是否设置为默认电话来源应用程序。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.SetCallOrigin(System.Guid,Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin)">
+      <summary>在电话呼叫传入时设置呼叫来源。</summary>
+      <param name="requestId">此电话呼叫的唯一标识符。 这是从 PhoneCallOriginDataRequestTriggerDetails 的 *targetId* 中检索的</param>
+      <param name="callOrigin">传入呼叫的呼叫信息。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.ShowPhoneCallOriginSettingsUI">
+      <summary>打开支持用户选择呼叫来源应用程序的接口。</summary>
+    </member>
+  </members>
+</doc>

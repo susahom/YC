@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.Profile.SystemManufacturers.SystemManufacturersContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.Profile.SystemManufacturers.OemSupportInfo">
+      <summary>Предоставляет информацию поддержки о производителе устройства. Включает в себя наименование изготовителя, адрес веб-сайта и другие сведения о поддержке.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportAppLink">
+      <summary>Получает ссылку обработчика протокола, созданную приложением OEM-поддержки, которое будет запущено вместо URL-адреса.</summary>
+      <returns>Ссылка обработчика протокола приложения OEM-поддержки.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportLink">
+      <summary>Получает универсальный код ресурса (URI) для веб-сайт поддержки изготовителя оборудования (OEM).</summary>
+      <returns>URI для веб-сайт поддержки изготовителя OEM.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportProvider">
+      <summary>Получает наименование поставщика поддержки для устройства.</summary>
+      <returns>Наименование поставщика поддержки для устройства.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SmbiosInformation">
+      <summary>Разрешает доступ к свойствам системы из SMBIOS.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SmbiosInformation.SerialNumber">
+      <summary>Получает серийный номер из SMBIOS для системы.</summary>
+      <returns>серийный номер;</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemManufacturersContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo">
+      <summary>Предоставляет приложению возможность извлечь информацию об устройстве с локального устройства.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.FriendlyName">
+      <summary>Получает понятное имя локального устройства. Это значение может быть получено из имени компьютера NetBIOS.</summary>
+      <returns>Понятное имя локального устройства. Значение содержит менее 1024 символов.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.OperatingSystem">
+      <summary>Получает имя операционной системы локального устройства.</summary>
+      <returns>Строка, содержащая операционную систему локального устройства.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemFirmwareVersion">
+      <summary>Получает версию встроенного ПО системы локального устройства.</summary>
+      <returns>Строка, содержащая версию встроенного ПО системы локального устройства.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemHardwareVersion">
+      <summary>Получает версию оборудования системы локального устройства.</summary>
+      <returns>Строка, содержащая версию оборудования системы локального устройства.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemManufacturer">
+      <summary>Получает производителя системы локального устройства. Используйте **SystemManufacturer** только в том случае, если значение SystemSku пусто.</summary>
+      <returns>Строка, содержащая производителя системы локального устройства. Значение содержит менее 1024 символов.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemProductName">
+      <summary>Получает имя продукта системы локального устройства. Используйте **SystemProductName** только в том случае, если значение SystemSku пусто.</summary>
+      <returns>Строка, содержащая имя продукта системы локального устройства. Значение содержит менее 1024 символов.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemSku">
+      <summary>Получает номер SKU системы локального устройства.</summary>
+      <returns>Строка, содержащая номер SKU системы локального устройства.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportInfo">
+      <summary>Предоставляет сведения поддержки для устройства. Сюда входят локальная версия системы, сведения о поддержке OEM-изготовителем.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalDeviceInfo">
+      <summary>Получает локальное устройство.</summary>
+      <returns>Значение SystemSupportDeviceInfo, представляющее локальное устройство.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalSystemEdition">
+      <summary>Получает локальную версию системы устройства.</summary>
+      <returns>Строка, содержащая локальную версию системы устройства.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.OemSupportInfo">
+      <summary>Получает сведения о поддержке OEM-изготовителем для системы.</summary>
+      <returns>Сведения о поддержке OEM-изготовителем для системы.</returns>
+    </member>
+  </members>
+</doc>

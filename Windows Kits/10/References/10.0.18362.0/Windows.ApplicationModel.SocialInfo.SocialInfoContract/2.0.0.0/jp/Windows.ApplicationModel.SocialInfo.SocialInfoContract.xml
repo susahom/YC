@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.SocialInfo.SocialInfoContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem">
+      <summary>SocialFeedItem の子項目を表します。</summary>
+      <deprecated type="deprecate">SocialFeedChildItem が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.#ctor">
+      <summary>SocialFeedChildItem クラスの新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Author">
+      <summary>子項目の作成者を取得します。</summary>
+      <returns>子項目の作成者。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.PrimaryContent">
+      <summary>子項目に関連付けられているプライマリ SocialFeedContent オブジェクトを取得します。</summary>
+      <returns>子項目に関連付けられているプライマリ SocialFeedContent オブジェクト。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SecondaryContent">
+      <summary>子項目に関連付けられているセカンダリ SocialFeedContent オブジェクトを取得します。</summary>
+      <returns>子項目に関連付けられているセカンダリ SocialFeedContent オブジェクト。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.SharedItem">
+      <summary>サービスの他のユーザーによってユーザーと共有されたソーシャル メディア項目を取得します。</summary>
+      <returns>ユーザーと共有されたソーシャル メディア項目。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.TargetUri">
+      <summary>この子項目に関連付けられているターゲット項目への URI (Uniform Resource Identifier) を取得または設定します。</summary>
+      <returns>子項目に関連付けられる Uniform Resource Identifier (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Thumbnails">
+      <summary>子項目に関連付けられているサムネイル イメージの一覧を取得します。</summary>
+      <returns>子項目に関連付けられているサムネイル イメージの一覧。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedChildItem.Timestamp">
+      <summary>子項目のタイムスタンプを取得または設定します。</summary>
+      <returns>子項目のタイムスタンプ。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedContent">
+      <summary>ソーシャル メディア メッセージを表します。</summary>
+      <deprecated type="deprecate">SocialFeedContent が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Message">
+      <summary>ソーシャル メディア メッセージを取得または設定します。</summary>
+      <returns>ソーシャル メディア メッセージ。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.TargetUri">
+      <summary>コンテンツのターゲットへの URI (Uniform Resource Identifier) を取得または設定します。</summary>
+      <returns>コンテンツの URI (Uniform Resource Identifier)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedContent.Title">
+      <summary>コンテンツのタイトルを取得または設定します。</summary>
+      <returns>コンテンツのタイトル。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItem">
+      <summary>ソーシャル メディア フィード項目を表します。</summary>
+      <deprecated type="deprecate">SocialFeedItem が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedItem.#ctor">
+      <summary>SocialFeedItem クラスの新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Author">
+      <summary>ソーシャル メディア フィード項目の作成者を取得します。</summary>
+      <returns>ソーシャル メディア フィード項目の作成者。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeCountValue">
+      <summary>アプリのバッジに表示される未確認項目の数を取得または設定します。</summary>
+      <returns>アプリのバッジに表示される未確認項目の数。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.BadgeStyle">
+      <summary>アプリのバッジ スタイルを取得または設定します。</summary>
+      <returns>アプリのバッジ スタイル。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.ChildItem">
+      <summary>このソーシャル フィード項目に関連付けられている子項目を取得または設定します。</summary>
+      <returns>このソーシャル フィード項目に関連付けられている子項目。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.PrimaryContent">
+      <summary>項目に関連付けられているプライマリ SocialFeedContent オブジェクトを取得します。</summary>
+      <returns>項目に関連付けられているプライマリ SocialFeedContent オブジェクト。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.RemoteId">
+      <summary>プロバイダーのシステムでこの項目の識別に使用される値を取得または設定します。</summary>
+      <returns>プロバイダーのシステムでこの項目の識別に使用される値。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SecondaryContent">
+      <summary>この項目に関連付けられているセカンダリ SocialFeedContent オブジェクトを取得します。</summary>
+      <returns>この項目に関連付けられているセカンダリ SocialFeedContent オブジェクト。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.SharedItem">
+      <summary>サービスの他のユーザーによってユーザーと共有されたソーシャル メディア項目を取得します。</summary>
+      <returns>サービスの他のユーザーによってユーザーと共有されたソーシャル メディア項目。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Style">
+      <summary>フォトや既定などの、この項目のスタイルを取得または設定します。</summary>
+      <returns>この項目のスタイル。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.TargetUri">
+      <summary>この項目に関連付けられているターゲット項目への URI (Uniform Resource Identifier) を取得または設定します。</summary>
+      <returns>この項目に関連付けられる Uniform Resource Identifier (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Thumbnails">
+      <summary>この項目に関連付けられているサムネイル イメージの一覧を取得します。</summary>
+      <returns>この項目に関連付けられているサムネイル イメージの一覧。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedItem.Timestamp">
+      <summary>この項目のタイムスタンプを取得または設定します。</summary>
+      <returns>この項目のタイムスタンプ。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle">
+      <summary>ソーシャル メディア フィード項目の種類を定義します。</summary>
+      <deprecated type="deprecate">SocialFeedItemStyle が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Default">
+      <summary>既定値</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedItemStyle.Photo">
+      <summary>フォト項目。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedKind">
+      <summary>ソーシャル メディア フィードの種類を定義します。</summary>
+      <deprecated type="deprecate">SocialFeedKind が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.ContactFeed">
+      <summary>連絡先フィード</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.Dashboard">
+      <summary>ダッシュボード フィード</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedKind.HomeFeed">
+      <summary>ホーム フィード</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem">
+      <summary>サービスの他のユーザーによってユーザーと共有されたソーシャル メディア項目を表します。</summary>
+      <deprecated type="deprecate">SocialFeedSharedItem が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.#ctor">
+      <summary>SocialFeedSharedItem クラスの新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Content">
+      <summary>共有項目に関連付けられている SocialFeedContent オブジェクトを取得します。</summary>
+      <returns>共有項目に関連付けられている SocialFeedContent オブジェクト。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.OriginalSource">
+      <summary>共有項目の元の URI (Uniform Resource Identifier) を取得または設定します。</summary>
+      <returns>共有項目の元の URI (Uniform Resource Identifier)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.TargetUri">
+      <summary>この共有項目に関連付けられているターゲット項目への URI (Uniform Resource Identifier) を取得または設定します。</summary>
+      <returns>共有項目に関連付けられる Uniform Resource Identifier (URI)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Thumbnail">
+      <summary>この共有項目に関連付けられているサムネイル イメージを取得または設定します。</summary>
+      <returns>この共有項目に関連付けられているサムネイル イメージ。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem.Timestamp">
+      <summary>この共有項目のタイムスタンプを取得または設定します。</summary>
+      <returns>この共有項目のタイムスタンプ。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode">
+      <summary>ソーシャル メディア フィードの更新用のモードを定義します。</summary>
+      <deprecated type="deprecate">SocialFeedUpdateMode が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Append">
+      <summary>追加モード</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode.Replace">
+      <summary>置換モード</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialInfoContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle">
+      <summary>アプリのバッジの種類を定義します。</summary>
+      <deprecated type="deprecate">SocialItemBadgeStyle が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Hidden">
+      <summary>非表示バッジ</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.Visible">
+      <summary>可視バッジ</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.SocialInfo.SocialItemBadgeStyle.VisibleWithCount">
+      <summary>未確認項目のカウントが表示された可視バッジ</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail">
+      <summary>ソーシャル メディア フィード項目に関連付けられているサムネイル イメージを表します。</summary>
+      <deprecated type="deprecate">SocialItemThumbnail が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.#ctor">
+      <summary>SocialItemThumbnail クラスの新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.BitmapSize">
+      <summary>サムネイル ビットマップ イメージのサイズを取得または設定します。</summary>
+      <returns>サムネイル ビットマップ イメージのサイズ。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.ImageUri">
+      <summary>このサムネイルのイメージ ファイルへの URI (Uniform Resource Identifier) を取得または設定します。</summary>
+      <returns>このサムネイルのイメージ ファイルへの URI (Uniform Resource Identifier)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.TargetUri">
+      <summary>このサムネイルに関連付けられているターゲット項目への URI (Uniform Resource Identifier) を取得または設定します。</summary>
+      <returns>このサムネイルに関連付けられているターゲット項目への URI (Uniform Resource Identifier)。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.SocialItemThumbnail.SetImageAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>ローカル ストリームからこのサムネイルのイメージを非同期に設定します。</summary>
+      <deprecated type="deprecate">ISocialItemThumbnail が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+      <param name="image">イメージ ストリーム。</param>
+      <returns>操作が完了したことを示す非同期アクション。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.SocialUserInfo">
+      <summary>ソーシャル メディア プロバイダー サービスのユーザーを表します。</summary>
+      <deprecated type="deprecate">SocialUserInfo が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.DisplayName">
+      <summary>表示に適したソーシャル メディア ユーザーの名前を取得または設定します。</summary>
+      <returns>表示に適したソーシャル メディア ユーザーの名前。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.RemoteId">
+      <summary>ソーシャル メディア サービスのユーザーを識別する値を取得または設定します。</summary>
+      <returns>ソーシャル メディア サービスのユーザーを識別する値。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.TargetUri">
+      <summary>ソーシャル メディア システムのユーザーへの URI (Uniform Resource Identifier) を取得または設定します。</summary>
+      <returns>ソーシャル メディア システムのユーザーへの URI (Uniform Resource Identifier)。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.SocialUserInfo.UserName">
+      <summary>ソーシャル メディア サービスのユーザーのユーザー名を取得または設定します。</summary>
+      <returns>ソーシャル メディア サービスのユーザーのユーザー名。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater">
+      <summary>ダッシュボード項目を更新できるタスクを表します。</summary>
+      <deprecated type="deprecate">SocialDashboardItemUpdater が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Content">
+      <summary>更新できる SocialFeedContent オブジェクトを取得します。</summary>
+      <returns>更新できる SocialFeedContent オブジェクト。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.OwnerRemoteId">
+      <summary>プロバイダーのシステムのユーザーを識別する ID を取得します。</summary>
+      <returns>プロバイダーのシステムのユーザーを識別する ID。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.TargetUri">
+      <summary>ユーザーが項目をタップしたときの移動先の URI (Uniform Resource Identifier) を取得または設定します。</summary>
+      <returns>ユーザーが項目をタップしたときの移動先の URI。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Thumbnail">
+      <summary>ダッシュボード項目のサムネイル イメージを取得または設定します。</summary>
+      <returns>ダッシュボード項目のサムネイル イメージ。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.Timestamp">
+      <summary>更新のタイムスタンプを取得または設定します。</summary>
+      <returns>更新のタイムスタンプ。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater.CommitAsync">
+      <summary>すべてのプロパティが設定された後、更新を非同期に送信します。</summary>
+      <deprecated type="deprecate">ISocialDashboardItemUpdater が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+      <returns>操作が完了したことを示す非同期アクション。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater">
+      <summary>ソーシャル メディア フィードの更新に使用できるタスクを表します。</summary>
+      <deprecated type="deprecate">SocialFeedUpdater が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Items">
+      <summary>ソーシャル メディア フィード項目の一覧を取得します。</summary>
+      <returns>ソーシャル メディア フィード項目の一覧。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.Kind">
+      <summary>ソーシャル メディア フィードの種類を取得します。</summary>
+      <returns>ソーシャル メディア フィードの種類。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.OwnerRemoteId">
+      <summary>プロバイダーのシステムのユーザーを識別する ID を取得します。</summary>
+      <returns>プロバイダーのシステムのユーザーを識別する ID。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater.CommitAsync">
+      <summary>すべてのプロパティが設定された後、更新を非同期に送信します。</summary>
+      <deprecated type="deprecate">ISocialFeedUpdater が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+      <returns>操作が完了したことを示す非同期アクション。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager">
+      <summary>アプリがソーシャル メディア拡張機能を使用するための機能を提供します。</summary>
+      <deprecated type="deprecate">SocialInfoProviderManager が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateDashboardItemUpdaterAsync(System.String)">
+      <summary>タスクとして使用できる新しい SocialDashboardItemUpdater オブジェクトを作成します。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+      <param name="ownerRemoteId">プロバイダーのシステムのユーザーを識別する ID。</param>
+      <returns>新しく作成された、SocialDashboardItemUpdater オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.CreateSocialFeedUpdaterAsync(Windows.ApplicationModel.SocialInfo.SocialFeedKind,Windows.ApplicationModel.SocialInfo.SocialFeedUpdateMode,System.String)">
+      <summary>タスクとして使用できる新しい SocialFeedUpdater オブジェクトを作成します。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+      <param name="kind">作成するソーシャル メディア フィードの種類。</param>
+      <param name="mode">追加モードまたは置換モードを指定します。</param>
+      <param name="ownerRemoteId">プロバイダーのシステムのユーザーを識別する ID。</param>
+      <returns>新しく作成された SocialFeedUpdater オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.DeprovisionAsync">
+      <summary>アプリのソーシャル メディア拡張機能の使用をプロビジョニング解除します。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+      <returns>操作が完了したことを示す非同期アクション。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ProvisionAsync">
+      <summary>ソーシャル メディア拡張機能を使用するようにアプリをプロビジョニングします。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+      <returns>操作が正常に終了したかどうかを示すブール値。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.ReportNewContentAvailable(System.String,Windows.ApplicationModel.SocialInfo.SocialFeedKind)">
+      <summary>このアプリから新しいソーシャル メディア コンテンツが利用できることをシステムに通知します。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+      <param name="contactRemoteId">プロバイダーのシステムのユーザーを識別する ID。</param>
+      <param name="kind">ソーシャル メディア フィードの種類。</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager.UpdateBadgeCountValue(System.String,System.Int32)">
+      <summary>ロック画面のバッジ上のカウント値を更新します。</summary>
+      <deprecated type="deprecate">ISocialInfoProviderManagerStatics が使用されなくなり、すべてのプラットフォームで動作しない可能性があります。 詳しくは、MSDN をご覧ください。</deprecated>
+      <param name="itemRemoteId">プロバイダーのシステム上の連絡先を識別します。</param>
+      <param name="newCount">バッジに表示する新しいカウント値。</param>
+    </member>
+  </members>
+</doc>

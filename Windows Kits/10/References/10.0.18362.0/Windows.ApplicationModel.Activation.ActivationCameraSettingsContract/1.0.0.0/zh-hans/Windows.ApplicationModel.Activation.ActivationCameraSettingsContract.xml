@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Activation.ActivationCameraSettingsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Activation.ActivationCameraSettingsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs">
+      <summary>使照相机设置应用程序能够处理该应用程序的激活参数。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.Kind">
+      <summary>获取激活类型。</summary>
+      <returns>枚举值之一。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.PreviousExecutionState">
+      <summary>在应用程序激活前获取该应用程序的执行状态。</summary>
+      <returns>枚举值之一。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.SplashScreen">
+      <summary>获取提供有关从初始屏幕转换到激活的应用程序的信息的初始屏幕对象。</summary>
+      <returns>提供初始屏幕信息的对象。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.VideoDeviceController">
+      <summary>获取控制照相机设备的设置的对象。</summary>
+      <returns>控制照相机设备设置的对象。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs.VideoDeviceExtension">
+      <summary>获取实现照相机的其他扩展设置的对象。</summary>
+      <returns>照相机的对象实现扩展设置。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Activation.ICameraSettingsActivatedEventArgs">
+      <summary>使照相机设置应用程序能够处理该应用程序的激活参数。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.ICameraSettingsActivatedEventArgs.VideoDeviceController">
+      <summary>获取控制照相机设备的设置的对象。</summary>
+      <returns>控制照相机设备设置的对象。</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Activation.ICameraSettingsActivatedEventArgs.VideoDeviceExtension">
+      <summary>获取实现照相机的其他扩展设置的对象。</summary>
+      <returns>照相机的对象实现扩展设置。</returns>
+    </member>
+    <member name="T:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs">
+      <summary>使照相机设置应用程序能够处理该应用程序的激活参数。</summary>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.ActivatedOperation">
+      <summary>获取应用程序激活的操作。</summary>
+      <returns>激活操作。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.Kind">
+      <summary>获取激活类型。</summary>
+      <returns>枚举值之一。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.PreviousExecutionState">
+      <summary>在应用程序激活前获取该应用程序的执行状态。</summary>
+      <returns>枚举值之一。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.SplashScreen">
+      <summary>获取提供有关从初始屏幕转换到激活的应用程序的信息的初始屏幕对象。</summary>
+      <returns>提供初始屏幕信息的对象。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.VideoDeviceController">
+      <summary>获取控制照相机设备的设置的对象。</summary>
+      <returns>控制照相机设备设置的对象。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs.VideoDeviceExtension">
+      <summary>获取实现照相机的其他扩展设置的对象。</summary>
+      <returns>照相机的对象实现扩展设置。</returns>
+    </member>
+  </members>
+</doc>

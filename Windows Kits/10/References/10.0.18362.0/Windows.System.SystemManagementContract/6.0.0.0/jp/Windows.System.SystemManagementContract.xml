@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.SystemManagementContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Cortana.CortanaSettings">
+      <summary>Cortana の設定にアクセスできるようにします。</summary>
+    </member>
+    <member name="P:Windows.Services.Cortana.CortanaSettings.HasUserConsentToVoiceActivation">
+      <summary>ユーザーが音声アクティブ化に同意したかどうかを取得します。</summary>
+      <returns>ユーザーが同意している場合は **true**。 それ以外の場合は **false**。</returns>
+    </member>
+    <member name="P:Windows.Services.Cortana.CortanaSettings.IsVoiceActivationEnabled">
+      <summary>音声アクティブ化が有効になっているかどうかを取得または設定します。</summary>
+      <returns>音声アクティブ化が有効な場合は **true**。 それ以外の場合は **false**。</returns>
+    </member>
+    <member name="M:Windows.Services.Cortana.CortanaSettings.GetDefault">
+      <summary>現在のユーザーの Cortana の設定を取得します。</summary>
+      <returns>CortanaSettings オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.Services.Cortana.CortanaSettings.IsSupported">
+      <summary>Cortana の設定がサポートされているかどうかを取得します。</summary>
+      <returns>Cortana の設定がサポートされている場合は **true**。 それ以外の場合は **false**。</returns>
+    </member>
+    <member name="T:Windows.System.AutoUpdateTimeZoneStatus">
+      <summary>自動タイム ゾーン要求の状態。</summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.Attempted">
+      <summary>タイム ゾーン検出に失敗。 </summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.Failed">
+      <summary>ハードウェアのサポート不足または重大な障害があるため、タイム ゾーンの検出が出来ませんでした。</summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.TimedOut">
+      <summary>要求がタイムアウトになりました。 </summary>
+    </member>
+    <member name="T:Windows.System.DateTimeSettings">
+      <summary>システムの日付と時刻を設定します。</summary>
+    </member>
+    <member name="M:Windows.System.DateTimeSettings.SetSystemDateTime(Windows.Foundation.DateTime)">
+      <summary>システムの日付と時刻を設定します。</summary>
+      <param name="utcDateTime">システム ロックの設定に使用する日付と時刻の値 (協定世界時 (UTC)) です。</param>
+    </member>
+    <member name="T:Windows.System.PowerState">
+      <summary>固定目的のデバイスの電源状態を表します。</summary>
+    </member>
+    <member name="F:Windows.System.PowerState.ConnectedStandby">
+      <summary>コネクト スタンバイ状態を表します。</summary>
+    </member>
+    <member name="F:Windows.System.PowerState.SleepS3">
+      <summary>Sleep S3 状態を表します。</summary>
+    </member>
+    <member name="T:Windows.System.ProcessLauncher">
+      <summary>関連する引数 (ある場合) を使用して指定されたプロセスを起動します。</summary>
+    </member>
+    <member name="M:Windows.System.ProcessLauncher.RunToCompletionAsync(System.String,System.String)">
+      <summary>新しいプロセスを起動します。 起動されたプロセスが終了すると、この非同期関数が完了します。</summary>
+      <param name="fileName">起動するプロセスの名前。</param>
+      <param name="args">プロセスを実行するための引数。</param>
+      <returns>非同期操作が完了すると、起動されたプロセスの終了コードが含まれます。</returns>
+    </member>
+    <member name="M:Windows.System.ProcessLauncher.RunToCompletionAsync(System.String,System.String,Windows.System.ProcessLauncherOptions)">
+      <summary>指定したオプションを含む、新しいプロセスを起動します。 起動されたプロセスが終了すると、この非同期関数が完了します。</summary>
+      <param name="fileName">起動するプロセスのファイル名。</param>
+      <param name="args">指定されたプロセスの引数。</param>
+      <param name="options">プロセスを実行するための関連オプション。</param>
+      <returns>非同期操作が完了すると、起動されたプロセスの終了コードが含まれます。</returns>
+    </member>
+    <member name="T:Windows.System.ProcessLauncherOptions">
+      <summary>指定されたプロセスの起動に使用されるオプションを指定します。</summary>
+    </member>
+    <member name="M:Windows.System.ProcessLauncherOptions.#ctor">
+      <summary>プロセス起動ツール オプション オブジェクトの新しいインスタンスを作成して初期化します。</summary>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardError">
+      <summary>標準エラーがダイレクトされる場所を指定します。</summary>
+      <returns>標準エラーのダイレクト先ストリーム。</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardInput">
+      <summary>標準入力の生成元を指定します。</summary>
+      <returns>標準入力の入力ストリーム。</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardOutput">
+      <summary>標準出力がダイレクトされる場所を指定します。</summary>
+      <returns>標準出力のダイレクト先ストリーム。</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.WorkingDirectory">
+      <summary>プロセス起動ツールが動作するディレクトリを取得または設定します。</summary>
+      <returns>作業ディレクトリ。</returns>
+    </member>
+    <member name="T:Windows.System.ProcessLauncherResult">
+      <summary>起動したプロセスの戻り値を表します。</summary>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherResult.ExitCode">
+      <summary>ProcessLauncher から実行されたプロセスの終了コードを表します。</summary>
+      <returns>終了コード。</returns>
+    </member>
+    <member name="T:Windows.System.ShutdownKind">
+      <summary>固定目的モードで動作するデバイスに対して実行できるシャットダウンの種類を記述します。</summary>
+    </member>
+    <member name="F:Windows.System.ShutdownKind.Restart">
+      <summary>固定目的のデバイスをシャットダウンしてからデバイスを再起動します。</summary>
+    </member>
+    <member name="F:Windows.System.ShutdownKind.Shutdown">
+      <summary>デバイスを再起動しないで固定目的のデバイスをシャットダウンします。</summary>
+    </member>
+    <member name="T:Windows.System.ShutdownManager">
+      <summary>固定目的モードで動作するデバイスのシャットダウンを管理します。</summary>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.BeginShutdown(Windows.System.ShutdownKind,Windows.Foundation.TimeSpan)">
+      <summary>固定目的モードで動作されるデバイスをシャットダウンし、必要に応じて、指定された秒数の経過後にデバイスを再起動します。</summary>
+      <param name="shutdownKind">実行するシャットダウンの種類 (デバイスを再起動するかどうか)。</param>
+      <param name="timeout">*shutdownKind* が **ShutdownKind.Restart** である場合にデバイスを再起動するまで待機する時間 (秒単位)。</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.CancelShutdown">
+      <summary>既に進行中である固定目的のデバイスのシャットダウンを取り消します。</summary>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.EnterPowerState(Windows.System.PowerState)">
+      <summary>固定目的のデバイスに特定の電源状態に入るように指示します。</summary>
+      <param name="powerState">入る電源状態。</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.EnterPowerState(Windows.System.PowerState,Windows.Foundation.TimeSpan)">
+      <summary>固定目的のデバイスに特定の電力状態に入った後、指定した時間の後スリープを解除するように指示します。</summary>
+      <param name="powerState">入る電源状態。</param>
+      <param name="wakeUpAfter">指定された電源状態を維持する期間です。 この時間が経過した後、デバイスはウェイク アップします。</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.IsPowerStateSupported(Windows.System.PowerState)">
+      <summary>固定目的のデバイスで特定の電力状態がサポートされているかどうかを取得します。</summary>
+      <param name="powerState">電力状態の調査。</param>
+      <returns>このメソッドは、指定されたデバイスで電力状態がサポートされている場合は TRUE を、それ以外の場合は FALSE を返します。</returns>
+    </member>
+    <member name="T:Windows.System.SystemManagementContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.TimeZoneSettings">
+      <summary>タイムゾーンを操作するためのメソッドとプロパティが含まれています。</summary>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.CanChangeTimeZone">
+      <summary>タイムゾーンを変更できるかどうかを取得します。</summary>
+      <returns>タイムゾーンを変更できる場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.CurrentTimeZoneDisplayName">
+      <summary>現在のタイムゾーンの表示名を取得します。</summary>
+      <returns>現在のタイムゾーンの表示名。</returns>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.SupportedTimeZoneDisplayNames">
+      <summary>サポートされるすべてのタイムゾーンの表示名を取得します。</summary>
+      <returns>サポートされるすべてのタイムゾーンの表示名。</returns>
+    </member>
+    <member name="M:Windows.System.TimeZoneSettings.AutoUpdateTimeZoneAsync(Windows.Foundation.TimeSpan)">
+      <summary>自動的に決定し、埋め込みモードのデバイスにタイム ゾーンを設定します。</summary>
+      <param name="timeout">タイムアウト期間を超えた場合、この方法で AutoUpdateTimeZoneStatus に対し **TimedOut** 値を戻します。</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.TimeZoneSettings.ChangeTimeZoneByDisplayName(System.String)">
+      <summary>表示名を使用してタイムゾーンを変更します。</summary>
+      <param name="timeZoneDisplayName">タイムゾーンの変更後の表示名。</param>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateAttentionRequiredReason">
+      <summary>ユーザーの注意が必要な理由。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.InsufficientBattery">
+      <summary>システムの更新を開始するためのバッテリ電力が不足しています。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.InsufficientDiskSpace">
+      <summary>更新プログラムをダウンロードするためのディスク容量が不足しています。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.NetworkRequired">
+      <summary>ネットワーク接続には注意が必要です。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.None">
+      <summary>注意は必要はありません。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.UpdateBlocked">
+      <summary>更新プログラムを続行できません。</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateItem">
+      <summary>更新プログラムのバンドルのプロパティと状態について説明します。</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Description">
+      <summary>SystemUpdateItem の内容について説明します。</summary>
+      <returns>システム更新パッケージの内容の説明。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.DownloadProgress">
+      <summary>ダウンロードの進行状況。</summary>
+      <returns>ダウンロードの進行状況。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.ExtendedError">
+      <summary>利用できる場合、エラーの詳細情報。</summary>
+      <returns>利用できる場合、エラーの詳細情報。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Id">
+      <summary>この更新プログラムの項目を識別する一意の識別子。</summary>
+      <returns>この更新プログラムの項目を識別する一意の識別子。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.InstallProgress">
+      <summary>インストールの進行状況。</summary>
+      <returns>インストールの進行状況。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Revision">
+      <summary>更新プログラムのバンドルのリビジョン番号。  1 から始まり、元の更新プログラムのバンドルにリビジョンが加えられた場合に増加します。</summary>
+      <returns>更新プログラムのバンドルのリビジョン番号。  1 から始まり、元の更新プログラムのバンドルにリビジョンが加えられた場合に増加します。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.State">
+      <summary>現在の更新プログラム項目の状態。</summary>
+      <returns>現在の更新プログラム項目の状態。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Title">
+      <summary>更新プログラム項目のタイトル。</summary>
+      <returns>更新プログラム項目のタイトル。</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateItemState">
+      <summary>SystemUpdateItem の状態。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Calculating">
+      <summary>更新プログラム項目の操作の計算。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Completed">
+      <summary>更新が完了しました。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Downloading">
+      <summary>更新プログラムの項目をダウンロード中です。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Error">
+      <summary>更新しようとしたときにエラーが発生しました。ExtendedError を参照してください。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Initializing">
+      <summary>更新プログラムの項目を初期化中です。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Installing">
+      <summary>更新プログラムの項目をインストール中です。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.NotStarted">
+      <summary>更新プログラムは開始されていません。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Preparing">
+      <summary>更新プログラムの項目を準備しています。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.RebootRequired">
+      <summary>再起動が必要です。</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateLastErrorInfo">
+      <summary>最後に失敗したシステム更新プログラムに関する情報。</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.ExtendedError">
+      <summary>エラー詳細の説明。</summary>
+      <returns>エラー詳細の説明。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.IsInteractive">
+      <summary>インタラクティブな更新中に最後の更新エラーが発生したかどうかを指定します。</summary>
+      <returns>インタラクティブな更新中にエラーが発生した場合は **true**。 更新プログラムが自動更新の場合は **false**。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.State">
+      <summary>最後のエラーが発生したときの、**SystemUpdateManager** の状態。</summary>
+      <returns>最後のエラーが発生したときの、**SystemUpdateManager** の状態。</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateManager">
+      <summary>**SystemUpdateManager** はシステム更新プログラムの対話的なコントロールを許可します。</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.AttentionRequiredReason">
+      <summary>ユーザーの注意が必要な理由。</summary>
+      <returns>最後のエラーが発生したときの、**SystemUpdateManager** の状態。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.DownloadProgress">
+      <summary>ダウンロードの進行状況。</summary>
+      <returns>ダウンロードの進行状況。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.ExtendedError">
+      <summary>利用できる場合、エラーの詳細情報。</summary>
+      <returns>利用できる場合、エラーの詳細情報。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.InstallProgress">
+      <summary>インストールの進行状況。</summary>
+      <returns>インストールの進行状況。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastErrorInfo">
+      <summary>最後に失敗したシステム更新プログラムに関する情報。</summary>
+      <returns>最後に失敗したシステム更新プログラムに関する情報。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastUpdateCheckTime">
+      <summary>更新プログラムの最終確認日時。</summary>
+      <returns>更新プログラムの最終確認日時。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastUpdateInstallTime">
+      <summary>最後の更新プログラム インストールの日時。</summary>
+      <returns>最後の更新プログラム インストールの日時。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.State">
+      <summary>**SystemUpdateManager** の現在の状態。</summary>
+      <returns>**SystemUpdateManager** の現在の状態。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursEnd">
+      <summary>ユーザーのアクティブ時間の終了時刻の値を取得します。</summary>
+      <returns>ユーザーのアクティブ時間の終了時刻の値を取得します。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursMax">
+      <summary>**UserActiveHoursStart** と **UserActiveHoursEnd** の間の最大間隔を時間単位で取得します。</summary>
+      <returns>**UserActiveHoursStart** と **UserActiveHoursEnd** の間の最大間隔を時間単位で取得します。</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursStart">
+      <summary>ユーザーのアクティブ時間の開始時刻の値を取得します。</summary>
+      <returns>ユーザーのアクティブ時間の開始時刻の値を取得します。</returns>
+    </member>
+    <member name="E:Windows.System.Update.SystemUpdateManager.StateChanged">
+      <summary>State プロパティの変更通知のイベント。</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.BlockAutomaticRebootAsync(System.String)">
+      <summary>UnblockAutomaticRebootAsync が呼び出されるまで、またはシステム ポリシーによって再起動が強制されるまで、更新プログラムの自動再起動をブロックします。</summary>
+      <param name="lockId">A-Z、a-z、0-9 から成る識別子。  Guid.NewGuid.ToString() を使用して、新しいランダムな ID を生成します。</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetAutomaticRebootBlockIds">
+      <summary>自動再起動ブロック要求の ID を取得します。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetFlightRing">
+      <summary>フライト リングを取得します。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetUpdateItems">
+      <summary>保留中の更新項目の一覧を取得します。</summary>
+      <returns>SystemUpdateItem の一覧</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.IsSupported">
+      <summary>この API がこのデバイスでサポートされているかどうかを示します。</summary>
+      <returns>API がサポートされる場合は **true**、それ以外の場合は **false**。</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.RebootToCompleteInstall">
+      <summary>再起動が必要な場合、デバイスを再起動してインストールを完了します。</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.SetFlightRing(System.String)">
+      <summary>フライト リングを設定します。</summary>
+      <param name="flightRing">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.StartCancelUpdates">
+      <summary>更新プログラムが進行中の場合、更新プログラムのキャンセルを開始します。</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.StartInstall(Windows.System.Update.SystemUpdateStartInstallAction)">
+      <summary>保留中の更新プログラムの検出、ダウンロード、およびインストールを開始します。</summary>
+      <param name="action">SystemUpdateStartInstallAction を参照してください。</param>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.TrySetUserActiveHours(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)">
+      <summary>更新プログラムのための自動再起動が許可されないユーザー定義アクティブ時間を設定してください。</summary>
+      <param name="start">アクティブ時間の開始時刻。</param>
+      <param name="end">アクティブ時間の終了時刻。</param>
+      <returns>アクティブ時間を設定した場合には true を返します。 それ以外の場合は false を返します。</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.UnblockAutomaticRebootAsync(System.String)">
+      <summary>ブロックされている場合は、更新プログラムの自動再起動のブロックを解除します。</summary>
+      <param name="lockId">A-Z、a-z、0-9 から成る識別子。  Guid.NewGuid.ToString() を使用して、新しいランダムな ID を生成します。 BlockAutomaticRebootAsync に渡された値と一致しなければなりません。</param>
+      <returns>自動再起動にブロックが残っていない場合は true を返します。</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateManagerState">
+      <summary>システム更新プログラムの現在の状態を示す列挙値。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.AttentionRequired">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Completed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Detecting">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Downloading">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Error">
+      <summary>エラーが発生しました。 ExtendedError を確認してください。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Finalizing">
+      <summary>システム更新プログラムは最終段階です。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Idle">
+      <summary>SystemUpdateManager はアイドル状態です。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Installing">
+      <summary>システム更新プログラムはインストール中です。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToDownload">
+      <summary>システム更新プログラムはダウンロードする準備が整いました。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToFinalize">
+      <summary>システム更新プログラムは完了する準備が整いました。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToInstall">
+      <summary>システム更新プログラムはインストールする準備が整いました。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.RebootRequired">
+      <summary>インストールを完了するには、再起動が必要です。</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateStartInstallAction">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateStartInstallAction.AllowReboot">
+      <summary>ダウンロードとインストール。  再起動が必要な場合は、必要に応じて自動的に再起動します。</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateStartInstallAction.UpToReboot">
+      <summary>ダウンロードとインストール。  再起動が必要な場合は、対話型の再起動がインストールされるか、自動再起動ウィンドウまで待機します。</summary>
+    </member>
+  </members>
+</doc>

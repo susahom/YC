@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.ViewManagement.ViewManagementViewScalingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.ViewManagement.ApplicationViewScaling">
+      <summary>Предоставляет методы и свойства для управления масштабированием макета.</summary>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.ApplicationViewScaling.DisableLayoutScaling">
+      <summary>Получает значение, определяющее, включено ли масштабирование макета.</summary>
+      <returns>Значение **true**, если масштабирование макета выключено; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.ApplicationViewScaling.TrySetDisableLayoutScaling(System.Boolean)">
+      <summary>Пытается присвоить свойству DisableLayoutScaling указанное значение.</summary>
+      <param name="disableLayoutScaling">Значение **true**, чтобы отключить масштабирование макета; значение **false**, чтобы включить его.</param>
+      <returns>Значение **true**, если свойство успешно установлено, в противном случае — значение **false**.</returns>
+    </member>
+    <member name="T:Windows.UI.ViewManagement.ViewManagementViewScalingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

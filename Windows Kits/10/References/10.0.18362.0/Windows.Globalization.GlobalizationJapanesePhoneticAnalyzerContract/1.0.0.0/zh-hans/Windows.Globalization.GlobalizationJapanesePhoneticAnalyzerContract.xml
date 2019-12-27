@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Globalization.JapanesePhoneme">
+      <summary>表示一个日语单词（“读取”），该单词是由 JapanesePhoneticAnalyzer 从一个日语字符串提取而来的。</summary>
+    </member>
+    <member name="P:Windows.Globalization.JapanesePhoneme.DisplayText">
+      <summary>获取要为此日语字显示的文本。</summary>
+      <returns>此日语单词的显示文本。 它是最初由 JapanesePhoneticAnalyzer 分析的日语字符串的子字符串。</returns>
+    </member>
+    <member name="P:Windows.Globalization.JapanesePhoneme.IsPhraseStart">
+      <summary>获取一个 Boolean，用以指示此日语字是否是词组的开头。</summary>
+      <returns>如果此日语单词是词组的开头，则为 **true**；否则为 **false**。</returns>
+    </member>
+    <member name="P:Windows.Globalization.JapanesePhoneme.YomiText">
+      <summary>获取此日语字的“读音”（DisplayText 的发音）。</summary>
+      <returns>“读取”（DisplayText 的发音，由一系列平假名字符表示）。</returns>
+    </member>
+    <member name="T:Windows.Globalization.JapanesePhoneticAnalyzer">
+      <summary>读取同时包含汉字字符和平假名字符的日语字符串，并使用断字返回从字符串中正确读取的内容的集合。</summary>
+    </member>
+    <member name="M:Windows.Globalization.JapanesePhoneticAnalyzer.GetWords(System.String)">
+      <summary>读取同时包含汉字字符和平假名字符的日语字符串，并使用断字返回从字符串中正确读取的内容的集合。</summary>
+      <param name="input">一个日文字符串，是汉字字符和平假名字符的组合。</param>
+      <returns>表示使用断字从字符串正确读取的 JapanesePhoneme 对象的集合。</returns>
+    </member>
+    <member name="M:Windows.Globalization.JapanesePhoneticAnalyzer.GetWords(System.String,System.Boolean)">
+      <summary>读取同时包含汉字字符和平假名字符的日语字符串，并使用断字返回从字符串中正确读取的内容的集合。 （可选）使用“Mono Ruby”策略将多日文汉字单词分解为多个日文汉字单词。</summary>
+      <param name="input">一个日文字符串，是汉字字符和平假名字符的组合。</param>
+      <param name="monoRuby">指定使用断字策略“Mono Ruby”。 如果为 **true**，则会使用断字策略“Mono Ruby”。 “Mono Ruby”更积极尝试将多日文汉字分解成多个日文汉字单词。</param>
+      <returns>表示使用断字从字符串正确读取的 JapanesePhoneme 对象的集合。</returns>
+    </member>
+  </members>
+</doc>

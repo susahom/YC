@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.ViewManagement.ViewManagementViewScalingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.ViewManagement.ApplicationViewScaling">
+      <summary>Proporciona métodos y propiedades para controlar el ajuste de escala del diseño.</summary>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.ApplicationViewScaling.DisableLayoutScaling">
+      <summary>Obtiene un valor que indica si el ajuste de escala del diseño está deshabilitado.</summary>
+      <returns>**true** si se deshabilita el ajuste de escala del diseño; de lo contrario, **false**.</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.ApplicationViewScaling.TrySetDisableLayoutScaling(System.Boolean)">
+      <summary>Intenta establecer la propiedad DisableLayoutScaling en el valor especificado.</summary>
+      <param name="disableLayoutScaling">**true** para deshabilitar el ajuste de escala del diseño; **false** para habilitarlo.</param>
+      <returns>**true** si la propiedad se ha establecido con éxito; de lo contrario, **false**.</returns>
+    </member>
+    <member name="T:Windows.UI.ViewManagement.ViewManagementViewScalingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

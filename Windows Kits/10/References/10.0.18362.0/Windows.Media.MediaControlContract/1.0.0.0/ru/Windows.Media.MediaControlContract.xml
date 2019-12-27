@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Media.MediaControlContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Media.MediaControl">
+      <summary>Описывает объект, с которым регистрируется приложение, чтобы получать фокус мультимедиа и уведомления управления транспортом.</summary>
+      <deprecated type="deprecate">Объект MediaControl может быть изменен или недоступен для выпусков после Windows 8.1. Взамен используйте SystemMediaTransportControls.</deprecated>
+    </member>
+    <member name="P:Windows.Media.MediaControl.AlbumArt">
+      <summary>Получает или задает путь к изображению для обложки альбома.</summary>
+      <returns>Путь к изображению для обложки альбома.</returns>
+    </member>
+    <member name="P:Windows.Media.MediaControl.ArtistName">
+      <summary>Получает или задает имя артиста.</summary>
+      <returns>Имя исполнителя.</returns>
+    </member>
+    <member name="P:Windows.Media.MediaControl.IsPlaying">
+      <summary>Получает или задает состояние кнопки воспроизведения.</summary>
+      <returns>Состояние кнопки воспроизведения.</returns>
+    </member>
+    <member name="P:Windows.Media.MediaControl.SoundLevel">
+      <summary>Получает текущий уровень звука.</summary>
+      <returns>Текущий уровень звука.</returns>
+    </member>
+    <member name="P:Windows.Media.MediaControl.TrackName">
+      <summary>Получает или задает название дорожки.</summary>
+      <returns>Название композиции.</returns>
+    </member>
+    <member name="E:Windows.Media.MediaControl.ChannelDownPressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **ChannelDown**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.ChannelUpPressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **ChannelUp**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.FastForwardPressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **FastForward**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.NextTrackPressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **NextTrack**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.PausePressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **Pause**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.PlayPauseTogglePressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **PlayPauseToggle**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.PlayPressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **Play**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.PreviousTrackPressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **PreviousTrack**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.RecordPressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **Record**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.RewindPressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **Rewind**.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.SoundLevelChanged">
+      <summary>Событие, вызываемое при изменении уровня звука.</summary>
+    </member>
+    <member name="E:Windows.Media.MediaControl.StopPressed">
+      <summary>Событие, возникающее при выдаче для приложения команды **Stop**.</summary>
+    </member>
+    <member name="T:Windows.Media.MediaControlContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

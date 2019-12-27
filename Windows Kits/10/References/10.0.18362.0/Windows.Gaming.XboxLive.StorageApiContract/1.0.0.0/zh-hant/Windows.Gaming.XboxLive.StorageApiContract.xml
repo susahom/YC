@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.XboxLive.StorageApiContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.XboxLive.StorageApiContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult">
+      <summary>從 GameSaveContainer 擷取的具名遊戲存檔 blob 集合。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Status">
+      <summary>非同步遊戲存檔 blob 要求的狀態結果。</summary>
+      <returns>類型：GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Value">
+      <summary>具名遊戲存檔 blob 的集合。</summary>
+      <returns>類型：**IMapView\&lt;;String, IBuffer&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyDictionary\&lt;;String, IBuffer&gt;; \[.NET\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo">
+      <summary>包含遊戲存檔 blob 的相關資訊。 呼叫 GameSaveBlobInfoQuery.GetBlobInfoAsync 以取得 **GameSaveBlobInfo** 執行個體。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Name">
+      <summary>blob 的名稱。</summary>
+      <returns>類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Size">
+      <summary>blob 的大小，以位元組為單位。</summary>
+      <returns>類型：**Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult">
+      <summary>GameSaveBlobInfoQuery.GetBlobInfoAsync 作業的結果。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Status">
+      <summary>非同步遊戲存檔 blob 資訊要求的狀態結果。</summary>
+      <returns>類型：GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Value">
+      <summary>GameSaveBlobInfoQuery 傳回的 blob 相關資訊。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery">
+      <summary>列舉 GameSaveContainer 中的 blob。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync">
+      <summary>非同步擷取符合此查詢的所有 blob 資訊。</summary>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveBlobInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync(System.UInt32,System.UInt32)">
+      <summary>非同步擷取符合此查詢的所指定 blob 子集資訊。</summary>
+      <param name="startIndex">類型：**Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <param name="maxNumberOfItems">類型：**Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveBlobInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetItemCountAsync">
+      <summary>擷取符合建立此 GameSaveBlobInfoQuery 物件之查詢的 blob 數。</summary>
+      <returns>類型：**IAsyncOperation\&lt;;UInt32&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainer">
+      <summary>包含資料 blob 集合，代表單一已儲存遊戲。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Name">
+      <summary>此 GameSaveContainer 的名稱。</summary>
+      <returns>類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Provider">
+      <summary>儲存此容器的提供者。</summary>
+      <returns>類型：GameSaveProvider</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.CreateBlobInfoQuery(System.String)">
+      <summary>建立 GameSaveBlobInfoQuery 執行個體，以使用開頭為指定首碼的名稱來擷取此容器中的遊戲存檔 blob。</summary>
+      <param name="blobNamePrefix">類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>類型：GameSaveBlobInfoQuery</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.GetAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>以非同步方式從容器擷取 blob。</summary>
+      <param name="blobsToRead">類型：**IIterable\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IEnumerable\&lt;;String&gt;; \[.NET\]</param>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveBlobGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.ReadAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer})">
+      <summary>從這個容器讀取 blob，如 *blobsToRead* 所指定。 傳入 *blobsToRead* 的緩衝區必須夠大，足以儲存 blob 資料。</summary>
+      <param name="blobsToRead">類型：**IMapView\&lt;;String, IBuffer&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyDictionary\&lt;;String, IBuffer&gt;; \[.NET\]</param>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync(Windows.Foundation.Collections.IPropertySet,Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>類似於 SubmitUpdatesAsync，但此方法是在 **PropertySet** 上作業，而非對應檢視 (或 C\# 中的字典)。</summary>
+      <param name="blobsToWrite">類型：IPropertySet</param>
+      <param name="blobsToDelete">類型：**IIterable\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IEnumerable\&lt;;String&gt;; \[.NET\]</param>
+      <param name="displayName">類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitUpdatesAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer},Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>提交一組變更至此容器中的遊戲存檔 blob。 變更可寫入 blob 或刪除現有 blob。 如果容器不存在，會建立新的。 會自動套用所有寫入和更新。 嘗試寫入和刪除相同 blob 會導致錯誤。 每個呼叫只能寫入 16MB 的資料。</summary>
+      <param name="blobsToWrite">類型：**IMapView\&lt;;String, IBuffer&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyDictionary\&lt;;String, IBuffer&gt;; \[.NET\]</param>
+      <param name="blobsToDelete">類型：**IIterable\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IEnumerable\&lt;;String&gt;; \[.NET\]</param>
+      <param name="displayName">類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo">
+      <summary>遊戲存檔容器的相關資訊。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.DisplayName">
+      <summary>此遊戲存檔顯示給使用者的名稱。</summary>
+      <returns>類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime">
+      <summary>上次修改遊戲存檔容器的日期和時間。</summary>
+      <returns>類型：**Date** \[JavaScript\] | System.DateTimeOffset \[.NET\] | Windows::Foundation::DateTime \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.Name">
+      <summary>此遊戲存檔容器的名稱。</summary>
+      <returns>類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.NeedsSync">
+      <summary>表示容器是否需要先同步，然後才能使用 SubmitUpdatesAsync 或 SubmitPropertySetUpdatesAsync 提交更新。</summary>
+      <returns>類型：**Boolean** \[JavaScript\] | System.Boolean \[.NET\] | Platform::Boolean \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize">
+      <summary>遊戲存檔容器及其 blob 的總大小，以位元組為單位。</summary>
+      <returns>類型：**Number** \[JavaScript\] | System.UInt64 \[.NET\] | **uint64** \[C++\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult">
+      <summary>GameSaveContainerInfoQuery 作業的結果。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Status">
+      <summary>非同步遊戲存檔容器資訊要求的狀態結果。</summary>
+      <returns>類型：GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Value">
+      <summary>由 GameSaveContainerInfoQuery 傳回的容器資訊集合。</summary>
+      <returns>類型：**IVectorView\&lt;;GameSaveContainerInfo&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyList\&lt;;GameSaveContainerInfo&gt;; \[.NET\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery">
+      <summary>列舉遊戲存檔提供者中的遊戲存檔容器。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync">
+      <summary>非同步擷取符合此查詢的所有遊戲存檔容器資訊。 將依最近修改的順序列舉容器。</summary>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveContainerInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync(System.UInt32,System.UInt32)">
+      <summary>非同步擷取符合此查詢的所指定遊戲存檔容器子集資訊。 將依最近修改的順序列舉容器。</summary>
+      <param name="startIndex">類型：**Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <param name="maxNumberOfItems">類型：**Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveContainerInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetItemCountAsync">
+      <summary>擷取符合建立此 GameSaveContainerInfoQuery 物件之查詢的容器數。</summary>
+      <returns>類型：**IAsyncOperation\&lt;;UInt32&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus">
+      <summary>遊戲存檔作業傳回的成功與失敗代碼。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Abort">
+      <summary>| **Abort** | **abort**                                   | 0x80004004 | 作業已中止。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.BlobNotFound">
+      <summary>| **BlobNotFound** | **blobNotFound**                     | 0x80830008 | 作業失敗，因為在容器中找不到指定名稱的 blob。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerNotInSync">
+      <summary>| **ContainerNotInSync** | **containerNotInSync**         | 0x8083000A | 作業失敗，因為容器不在本機上。 如果在提交更新至需要同步的容器，而尚未在容器上發出讀取、刪除或 blob 查詢時，便可能發生這個錯誤。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerSyncFailed">
+      <summary>| **ContainerSyncFailed** | **containerSyncFailed**       | 0x8083000B | 作業失敗，因為容器無法同步。 這表示使用者由於不想等待，或因為網路失敗而使用者不想再試一次，因而取消容器同步。 這個錯誤可能由 DeleteContainerAsync、ReadAsync、GetAsync 或 GameSaveBlobInfoQuery 作業傳回。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.InvalidContainerName">
+      <summary>| **InvalidContainerName** | **invalidContainerName**     | 0x80830001 | 指定的容器名稱是空的、包含不正確的字元或太長。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoAccess">
+      <summary>| **NoAccess** | **noAccess**                             | 0x80830002 | 作業失敗，因為遊戲對容器儲存空間沒有寫入存取權。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoXboxLiveInfo">
+      <summary>| **NoXboxLiveInfo** | **noXboxLiveInfo**                 | 0x80830009 | 作業失敗，因為遊戲沒有有正確的標題識別碼或服務設定識別碼。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ObjectExpired">
+      <summary>| **ObjectExpired** | **objectExpired**                   | 0x8083000D | 作業失敗，因為應用程式已停用且物件不再有效。 若要在繼續之後執行遊戲存檔作業，應用程式必須使用 GetForUserAsync 或 GetSyncOnDemandForUserAsync 要求新的 GameSaveProvider。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Ok">
+      <summary>| **Ok** | **ok**                                         | 0          | 已順利完成作業。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.OutOfLocalStorage">
+      <summary>| **OutOfLocalStorage** | **outOfLocalStorage**           | 0x80830003 | 作業失敗，因為本機儲存空間不足。 雖然使用者可以釋放一些本機儲存空間，但他們選擇不要執行這項操作。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ProvidedBufferTooSmall">
+      <summary>| **ProvidedBufferTooSmall** | **providedBufferTooSmall** | 0x80830007 | 作業失敗，因為提供來讀取 blob 的緩衝區太小，無法接收 blob。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.QuotaExceeded">
+      <summary>| **QuotaExceeded** | **quotaExceeded**                   | 0x80830006 | 作業失敗，因為更新會造成儲存空間超過配額。 請使用 IGameSaveProvider.GetRemainingBytesInQuotaAsync 查詢剩餘的配額空間。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UpdateTooBig">
+      <summary>| **UpdateTooBig** | **updateTooBig**                     | 0x80830005 | 作業失敗，因為更新包含超過 16MB 的資料。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserCanceled">
+      <summary>| **UserCanceled** | **userCanceled**                     | 0x80830004 | 作業失敗，因為使用者取消作業。 |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserHasNoXboxLiveInfo">
+      <summary>| **UserHasNoXboxLiveInfo** | **userHasNoXboxLiveInfo**   | 0x8083000C | 作業失敗，因為使用者帳戶沒有關聯的 Xbox Live 資訊。 這個錯誤可能由 GetForUserAsync 或 GetSyncOnDemandForUserAsync 傳回。 |</summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult">
+      <summary>非同步遊戲存檔作業的結果。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult.Status">
+      <summary>非同步遊戲存檔作業的狀態結果。</summary>
+      <returns>類型：GameSaveErrorStatus</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProvider">
+      <summary>**GameSaveProvider** 用來建立、儲存、列舉和載入 Xbox Live 遊戲存檔。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.ContainersChangedSinceLastSync">
+      <summary>在新的 GameSaveProvider 執行個體上呼叫，傳回上次執行應用程式後有所變更的容器名稱。</summary>
+      <returns>類型：**IVectorView\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyList\&lt;;String&gt;; \[.NET\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.User">
+      <summary>關聯至此遊戲存檔提供者及其遊戲存檔容器的使用者。</summary>
+      <returns>類型：**User**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainer(System.String)">
+      <summary>建立新的 GameSaveContainer 來儲存遊戲存檔。</summary>
+      <param name="name">類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>類型：GameSaveContainer</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery">
+      <summary>建立 GameSaveContainerInfoQuery 執行個體來列舉此遊戲存檔提供者中的所有容器。</summary>
+      <returns>類型：GameSaveContainerInfoQuery</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery(System.String)">
+      <summary>建立 GameSaveContainerInfoQuery 執行個體，來列舉此遊戲存檔提供者中，名稱開頭為指定首碼的容器。</summary>
+      <param name="containerNamePrefix">類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>類型：GameSaveContainerInfoQuery</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.DeleteContainerAsync(System.String)">
+      <summary>以非同步方式刪除指定的遊戲存檔容器。</summary>
+      <param name="name">類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync(Windows.System.User,System.String)">
+      <summary>取得所指定使用者的遊戲存檔提供者。</summary>
+      <param name="user">類型：User</param>
+      <param name="serviceConfigId">類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveProviderGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetRemainingBytesInQuotaAsync">
+      <summary>取得此遊戲存檔提供者之使用者配額中剩餘的位元組。</summary>
+      <returns>類型：**IAsyncOperation\&lt;;Int64&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetSyncOnDemandForUserAsync(Windows.System.User,System.String)">
+      <summary>取得隨選同步容器的部分同步遊戲存檔提供者。</summary>
+      <param name="user">類型：User</param>
+      <param name="serviceConfigId">類型：**String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>類型：**IAsyncOperation\&lt;;GameSaveProviderGetResult&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult">
+      <summary>GetForUserAsync 或 GetSyncOnDemandForUserAsync 的結果。 作業。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Status">
+      <summary>非同步遊戲存檔提供者要求的狀態結果。</summary>
+      <returns>類型：GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Value">
+      <summary>成功遊戲存檔提供者要求傳回的 GameSaveProvider 執行個體。</summary>
+      <returns>
+      </returns>
+    </member>
+  </members>
+</doc>

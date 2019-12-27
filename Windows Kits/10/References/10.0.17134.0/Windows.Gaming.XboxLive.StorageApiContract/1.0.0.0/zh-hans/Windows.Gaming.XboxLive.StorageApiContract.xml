@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.XboxLive.StorageApiContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.XboxLive.StorageApiContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Status">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Value">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Name">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Size">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Status">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Value">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync(System.UInt32,System.UInt32)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="startIndex">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="maxNumberOfItems">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetItemCountAsync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainer">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Name">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Provider">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.CreateBlobInfoQuery(System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="blobNamePrefix">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.GetAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="blobsToRead">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.ReadAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer})">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="blobsToRead">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync(Windows.Foundation.Collections.IPropertySet,Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="blobsToWrite">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="blobsToDelete">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="displayName">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitUpdatesAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer},Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="blobsToWrite">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="blobsToDelete">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="displayName">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.DisplayName">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.Name">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.NeedsSync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Status">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Value">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync(System.UInt32,System.UInt32)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="startIndex">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="maxNumberOfItems">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetItemCountAsync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Abort">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.BlobNotFound">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerNotInSync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerSyncFailed">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.InvalidContainerName">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoAccess">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoXboxLiveInfo">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ObjectExpired">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Ok">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.OutOfLocalStorage">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ProvidedBufferTooSmall">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.QuotaExceeded">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UpdateTooBig">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserCanceled">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserHasNoXboxLiveInfo">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult.Status">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProvider">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.ContainersChangedSinceLastSync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.User">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainer(System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="name">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery(System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="containerNamePrefix">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.DeleteContainerAsync(System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="name">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync(Windows.System.User,System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="user">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="serviceConfigId">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetRemainingBytesInQuotaAsync">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetSyncOnDemandForUserAsync(Windows.System.User,System.String)">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <param name="user">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <param name="serviceConfigId">此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</param>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Status">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Value">
+      <summary>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</summary>
+      <returns>此 API 并非对所有应用可用。 运行时调用这些 API 将失败，除非您的开发人员帐户专门由 Microsoft 配置。</returns>
+    </member>
+  </members>
+</doc>

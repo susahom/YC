@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger">
+      <summary>表示觸發，在應用程式被選為偏好的封鎖應用程式時啟動通訊封鎖應用程式。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger.#ctor">
+      <summary>初始化 CommunicationBlockingAppSetAsActiveTrigger 類別的新執行個體</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager">
+      <summary>負責追蹤已封鎖的號碼和顯示適當的封鎖使用者介面之管理員。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockingActive">
+      <summary>取得封鎖目前是否啟用。</summary>
+      <returns>判斷封鎖是否已啟用。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockedNumberAsync(System.String)">
+      <summary>會傳回數字是否在封鎖清單上的非同步作業。</summary>
+      <param name="number">要檢查的數字。</param>
+      <returns>以非同步方式傳回數字是否遭到封鎖。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedCallsUI">
+      <summary>顯示已封鎖之通話的清單。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedMessagesUI">
+      <summary>顯示已封鎖訊息的清單。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>若有使用中的封鎖應用程式，啟動 UI 封鎖號碼。</summary>
+      <param name="phoneNumbers">要加入封鎖清單的號碼清單。</param>
+      <returns>如果已啟動使用中的封鎖應用程式，傳回 **true**，否則傳回 **false**。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowUnblockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>若有使用中的封鎖應用程式，啟動應用程式解除鎖定號碼。</summary>
+      <param name="phoneNumbers">要從封鎖清單中移除的號碼清單。</param>
+      <returns>如果已啟動使用中的封鎖應用程式，傳回 **true**，否則傳回 **false**。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager">
+      <summary>判斷應用程式做為封鎖應用程式。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.IsCurrentAppActiveBlockingApp">
+      <summary>指示目前的應用程式是否為使用中的封鎖應用程式。</summary>
+      <returns>告知目前的應用程式是否為使用中的封鎖應用程式之值。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.RequestSetAsActiveBlockingAppAsync">
+      <summary>呼叫對話方塊將目前的應用程式設定為預設手機通訊封鎖應用程式。</summary>
+      <returns>指出應用程式是否設定為預設通話來源應用程式。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.ShowCommunicationBlockingSettingsUI">
+      <summary>顯示要選取目前使用中封鎖應用程式的 UI。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

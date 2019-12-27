@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.Sockets.ControlChannelTriggerContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTrigger">
+      <summary>Abilita le notifiche in tempo reale da ricevere in background per gli oggetti che stabiliscono una connessione TCP e intendono ricevere notifiche sul traffico in ingresso.</summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.#ctor(System.String,System.UInt32)">
+      <summary>Crea un nuovo oggetto ControlChannelTrigger con un ID del trigger del canale di controllo e un valore per l'intervallo keep-alive del server. </summary>
+      <param name="channelId">Una stringa utilizzata per distinguere i vari trigger dei canali di controllo nel computer locale. La lunghezza massima consentita per questa stringa è di 64 caratteri.</param>
+      <param name="serverKeepAliveIntervalInMinutes">Intervallo keep-alive, in minuti, registrato con il sistema per indicare quando devono essere attivate l'app e le connessioni di rete utilizzate.</param>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.#ctor(System.String,System.UInt32,Windows.Networking.Sockets.ControlChannelTriggerResourceType)">
+      <summary>Crea un nuovo oggetto ControlChannelTrigger con un ID del trigger del canale di controllo, un valore per l'intervallo keep-alive del server e il tipo di risorsa richiesto per il trigger del canale di controllo. </summary>
+      <param name="channelId">Una stringa utilizzata per distinguere i vari trigger dei canali di controllo nel computer locale. La lunghezza massima consentita per questa stringa è di 64 caratteri.</param>
+      <param name="serverKeepAliveIntervalInMinutes">Intervallo keep-alive, in minuti, registrato con il sistema per indicare quando devono essere attivate l'app e le connessioni di rete utilizzate.</param>
+      <param name="resourceRequestType">Tipo di risorsa richiesto per il trigger del canale di controllo.</param>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.ControlChannelTriggerId">
+      <summary>Ottiene una stringa che può essere utilizzata per distinguere i vari trigger dei canali di controllo nel computer locale. </summary>
+      <returns>Una stringa che può essere utilizzata per distinguere i vari trigger dei canali di controllo.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.CurrentKeepAliveIntervalInMinutes">
+      <summary>Ottiene l'intervallo di keep-alive di rete, in minuti, gestito da componenti di rete a basso livello nello stack TCP basato sulle condizioni di rete correnti. </summary>
+      <returns>Intervallo di keep-alive di rete, in minuti, gestito da componenti di rete a basso livello nello stack TCP in base alle condizioni di rete correnti.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.IsWakeFromLowPowerSupported">
+      <summary>Ottiene un valore che indica se la riattivazione dallo stato di risparmio energetico è supportata.</summary>
+      <returns>Se **true**, la riattivazione dallo stato di risparmio energetico è supportata.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.KeepAliveTrigger">
+      <summary>Ottiene un oggetto che rappresenta il trigger keep-alive associato all'oggetto ControlChannelTrigger che un'applicazione deve utilizzare per associare la classe di attivazione all'infrastruttura del broker in background. </summary>
+      <returns>Una stringa che rappresenta l'ID della classe di attivazione dell'attività in background keep-alive.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.PushNotificationTrigger">
+      <summary>Ottiene un oggetto che rappresenta la notifica Push associata all'oggetto ControlChannelTrigger che un'applicazione deve utilizzare per associare la classe di attivazione all'infrastruttura del broker in background. </summary>
+      <returns>Una stringa che rappresenta l'ID della classe di attivazione per l'attività in background notifica Push.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.ServerKeepAliveIntervalInMinutes">
+      <summary>Ottiene o imposta l'intervallo keep-alive del server, in minuti, registrato con il sistema per indicare quando è necessario riattivare l'app e le connessioni di rete associate utilizzate. </summary>
+      <returns>Intervallo keep-alive del server, in minuti, registrato con il sistema per indicare quando devono essere riattivate l'app e le connessioni di rete associate utilizzate.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.TransportObject">
+      <summary>Ottiene l'oggetto di trasporto utilizzato dal sistema per la connessione di trasporto associata all'oggetto ControlChannelTrigger. </summary>
+      <returns>Oggetto di trasporto utilizzato dal sistema per la connessione di trasporto.</returns>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.Close">
+      <summary>Chiude l'oggetto ControlChannelTrigger. </summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.DecreaseNetworkKeepAliveInterval">
+      <summary>Fornisce a un'app un modo per indicare che l'intervallo keep-alive della rete mantenuto dal sistema con intermediari di rete per la riattivazione era troppo lungo ed è stato ridotto. Questo metodo viene applicato agli elementi della classe in Windows.Networking.Sockets e negli spazi dei nomi correlati. </summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.FlushTransport">
+      <summary>Elimina tutti i dati di rete utilizzati dalla connessione di trasporto associata al ControlChannelTrigger per lo stack di rete. </summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.UsingTransport(System.Object)">
+      <summary>Imposta la connessione di trasporto che deve essere utilizzata da un trigger del canale di controllo mediante gli elementi di classe in Windows.Networking.Sockets e negli spazi dei nomi relativi. </summary>
+      <param name="transport">L'istanza della classe di rete che rappresenta il trasporto di rete.</param>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.WaitForPushEnabled">
+      <summary>Consente a un'app di notificare al sistema che una connessione è stata stabilita e che è necessario completare la configurazione interna del trigger del canale di controllo. </summary>
+      <returns>Un valore che indica se il sistema è stato in grado di completare la configurazione di un oggetto ControlChannelTrigger.</returns>
+    </member>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTriggerContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTriggerResetReason">
+      <summary>Il motivo per cui un ControlChannelTrigger è stato reimpostato. </summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.ApplicationRestart">
+      <summary>ControlChannelTrigger è stato reimpostato come risultato di un riavvio dell'applicazione.</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.FastUserSwitched">
+      <summary>ControlChannelTrigger è stato reimpostato a seguito di un cambio rapido di utente.</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.LowPowerExit">
+      <summary>ControlChannelTrigger è stato reimpostato a seguito dell'uscita a basso consumo (uscita standby connessa).</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.QuietHoursExit">
+      <summary>ControlChannelTrigger è stato reimpostato alla fine delle ore di inattività impostate sul dispositivo.</summary>
+    </member>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTriggerResourceType">
+      <summary>Tipo di risorsa utilizzato da un trigger del canale di controllo. </summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResourceType.RequestHardwareSlot">
+      <summary>Richiede uno slot hardware dal sistema.</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResourceType.RequestSoftwareSlot">
+      <summary>Richiede uno slot software dal sistema.</summary>
+    </member>
+    <member name="T:Windows.Networking.Sockets.IControlChannelTriggerEventDetails">
+      <summary>Un oggetto, di cui è stata creata un'istanza dall'infrastruttura del broker in background, che viene utilizzato per distinguere i trigger dei canali di controllo. </summary>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerEventDetails.ControlChannelTrigger">
+      <summary>Ottiene l'oggetto ControlChannelTrigger associato a un oggetto IControlChannelTriggerEventDetails. </summary>
+      <returns>Oggetto ControlChannelTrigger.</returns>
+    </member>
+    <member name="T:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails">
+      <summary>Oggetto, di cui è stata creata un'istanza dall'infrastruttura del broker in background, per un evento **ControlChannelReset** per indicare la reimpostazione di ControlChannelTrigger. </summary>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails.HardwareSlotReset">
+      <summary>Valore che indica se uno slot hardware è stato interessato da un evento di reimpostazione ControlChannelTrigger. </summary>
+      <returns>Valore che indica se uno slot hardware è stato interessato da un evento di reimpostazione ControlChannelTrigger.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails.ResetReason">
+      <summary>Valore che indica il motivo per cui ControlChannelTrigger è stato reimpostato. </summary>
+      <returns>Valore che indica il motivo per cui ControlChannelTrigger è stato reimpostato.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails.SoftwareSlotReset">
+      <summary>Valore che indica se uno slot software è stato interessato da un evento di reimpostazione ControlChannelTrigger. </summary>
+      <returns>Valore che indica se uno slot software è stato interessato da un evento di reimpostazione ControlChannelTrigger.</returns>
+    </member>
+  </members>
+</doc>

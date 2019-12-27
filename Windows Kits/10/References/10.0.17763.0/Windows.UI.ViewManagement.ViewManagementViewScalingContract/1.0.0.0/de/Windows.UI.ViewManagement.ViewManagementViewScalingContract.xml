@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.ViewManagement.ViewManagementViewScalingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.ViewManagement.ApplicationViewScaling">
+      <summary>Stellt Methoden und Eigenschaften zum Kontrollieren der Layoutskalierung bereit.</summary>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.ApplicationViewScaling.DisableLayoutScaling">
+      <summary>Ruft einen Wert ab, der angibt, ob die Layoutskalierung deaktiviert ist.</summary>
+      <returns>**True**, wenn die Layoutskalierung deaktiviert ist; andernfalls **False**.</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.ApplicationViewScaling.TrySetDisableLayoutScaling(System.Boolean)">
+      <summary>Versucht, die DisableLayoutScaling-Eigenschaft auf den angegebenen Wert festzulegen.</summary>
+      <param name="disableLayoutScaling">**True** zur Deaktivierung der Layoutskalierung, **False**, um sie zu aktivieren.</param>
+      <returns>**true**, wenn die Eigenschaft erfolgreich festgelegt wurde, andernfalls **false**.</returns>
+    </member>
+    <member name="T:Windows.UI.ViewManagement.ViewManagementViewScalingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

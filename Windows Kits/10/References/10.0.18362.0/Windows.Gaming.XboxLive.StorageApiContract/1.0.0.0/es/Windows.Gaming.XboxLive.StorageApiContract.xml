@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.XboxLive.StorageApiContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.XboxLive.StorageApiContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult">
+      <summary>Una colección de blobs de partidas guardadas con nombre recuperadas de un GameSaveContainer.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Status">
+      <summary>El resultado del estado de la solicitud de blob de partidas guardadas asíncrona.</summary>
+      <returns>Tipo: GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Value">
+      <summary>Colección de blobs de partidas guardadas con nombre.</summary>
+      <returns>Tipo: **IMapView\&lt;;String, IBuffer&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyDictionary\&lt;;String, IBuffer&gt;; \[.NET\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo">
+      <summary>Contiene información sobre un blob de partidas guardadas. Llama a GameSaveBlobInfoQuery.GetBlobInfoAsync para obtener una instancia de ** GameSaveBlobInfo **.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Name">
+      <summary>Nombre del blob.</summary>
+      <returns>Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Size">
+      <summary>Tamaño, en bytes, del blob.</summary>
+      <returns>Tipo: **Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult">
+      <summary>Resultado de una operación GameSaveBlobInfoQuery.GetBlobInfoAsync.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Status">
+      <summary>El resultado del estado de la solicitud de información de blob de partidas guardadas asíncrono.</summary>
+      <returns>Tipo: GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Value">
+      <summary>Información sobre un blob devuelto por GameSaveBlobInfoQuery.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery">
+      <summary>Enumera los blobs de un GameSaveContainer.</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync">
+      <summary>Recupera de forma asíncrona la información de todos los blobs que coincidan con esta consulta.</summary>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveBlobInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync(System.UInt32,System.UInt32)">
+      <summary>Recupera de forma asíncrona la información del subconjunto especificado de blobs que coincidan con esta consulta.</summary>
+      <param name="startIndex">Tipo: **Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <param name="maxNumberOfItems">Tipo: **Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveBlobInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetItemCountAsync">
+      <summary>Recupera el número de blobs que coinciden con la consulta que creó este objeto GameSaveBlobInfoQuery.</summary>
+      <returns>Tipo: **IAsyncOperation\&lt;;UInt32&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainer">
+      <summary>Contiene una colección de blobs de datos que representan un único juego guardado.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Name">
+      <summary>El nombre de este GameSaveContainer.</summary>
+      <returns>Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Provider">
+      <summary>El proveedor en el que se almacena este contenedor.</summary>
+      <returns>Tipo: GameSaveProvider</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.CreateBlobInfoQuery(System.String)">
+      <summary>Crea una instancia de GameSaveBlobInfoQuery que recupera los blobs de partidas guardadas dentro de este contenedor con nombres que comienzan con el prefijo especificado.</summary>
+      <param name="blobNamePrefix">Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>Tipo: GameSaveBlobInfoQuery</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.GetAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Recupera de forma asincrónica blobs del contenedor.</summary>
+      <param name="blobsToRead">Tipo: **IIterable\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IEnumerable\&lt;;String&gt;; \[.NET\]</param>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveBlobGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.ReadAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer})">
+      <summary>Lee los blobs de este contenedor, como se especifica en * blobsToRead *. Los búferes pasados en "blobsToRead" deben ser lo suficientemente grandes como para almacenar los datos del blob.</summary>
+      <param name="blobsToRead">Tipo: **IMapView\&lt;;String, IBuffer&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyDictionary\&lt;;String, IBuffer&gt;; \[.NET\]</param>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync(Windows.Foundation.Collections.IPropertySet,Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>Similar a SubmitUpdatesAsync, salvo que este método funciona en un ** PropertySet ** en lugar de una vista asignada (o el diccionario en C\ #).</summary>
+      <param name="blobsToWrite">Tipo: IPropertySet</param>
+      <param name="blobsToDelete">Tipo: **IIterable\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IEnumerable\&lt;;String&gt;; \[.NET\]</param>
+      <param name="displayName">Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitUpdatesAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer},Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>Envía un conjunto de cambios a los blobs de partidas guardadas de este contenedor. Los cambios pueden ser escrituras en blobs o la eliminación de blobs existentes. Si no existe el contenedor, se crea uno nuevo. Todas las escrituras y las actualizaciones se aplican de forma atómica. Intentar escribir o eliminar el mismo blob genera un error. Solo pueden escribirse 16 MB de datos por llamada.</summary>
+      <param name="blobsToWrite">Tipo: **IMapView\&lt;;String, IBuffer&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyDictionary\&lt;;String, IBuffer&gt;; \[.NET\]</param>
+      <param name="blobsToDelete">Tipo: **IIterable\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IEnumerable\&lt;;String&gt;; \[.NET\]</param>
+      <param name="displayName">Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo">
+      <summary>Información sobre un contenedor de partidas guardadas.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.DisplayName">
+      <summary>El nombre que se muestra al usuario para esta partida guardada.</summary>
+      <returns>Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime">
+      <summary>Fecha y hora de la última modificación del contenedor de partidas guardadas.</summary>
+      <returns>Tipo: **Date** \[JavaScript\] | System.DateTimeOffset \[.NET\] | Windows::Foundation::DateTime \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.Name">
+      <summary>El nombre de este contenedor de partidas guardadas.</summary>
+      <returns>Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.NeedsSync">
+      <summary>Indica si el contenedor tiene que sincronizarse antes de que se pueden enviar actualizaciones con SubmitUpdatesAsync o SubmitPropertySetUpdatesAsync.</summary>
+      <returns>Tipo: **Boolean** \[JavaScript\] | System.Boolean \[.NET\] | Platform::Boolean \[C++\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize">
+      <summary>El tamaño total, en bytes, del contenedor de partidas guardadas y sus blobs.</summary>
+      <returns>Tipo: **Number** \[JavaScript\] | System.UInt64 \[.NET\] | **uint64** \[C++\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult">
+      <summary>Resultado de una operación GameSaveContainerInfoQuery.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Status">
+      <summary>El resultado del estado de la solicitud de información de contenedor de partidas guardadas asíncrono.</summary>
+      <returns>Tipo: GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Value">
+      <summary>Una colección de información de contenedor devuelta por GameSaveContainerInfoQuery.</summary>
+      <returns>Tipo: **IVectorView\&lt;;GameSaveContainerInfo&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyList\&lt;;GameSaveContainerInfo&gt;; \[.NET\]</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery">
+      <summary>Enumera los contenedores de partidas guardadas dentro de un proveedor de almacenamiento de juegos.</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync">
+      <summary>Recupera de forma asíncrona la información de todos los contenedores de partidas guardadas que coincidan con esta consulta. Los contenedores se aparecen mostrando primero los modificados más recientemente.</summary>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveContainerInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync(System.UInt32,System.UInt32)">
+      <summary>Recupera de forma asíncrona la información del subconjunto especificado de contenedores de partidas guardadas que coincidan con esta consulta. Los contenedores se aparecen mostrando primero los modificados más recientemente.</summary>
+      <param name="startIndex">Tipo: **Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <param name="maxNumberOfItems">Tipo: **Number** \[JavaScript\] | System.UInt32 \[.NET\] | **uint32** \[C++\]</param>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveContainerInfoGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetItemCountAsync">
+      <summary>Recupera el número de contenedores que coinciden con la consulta que creó este objeto GameSaveContainerInfoQuery.</summary>
+      <returns>Tipo: **IAsyncOperation\&lt;;UInt32&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus">
+      <summary>Códigos de aciertos y errores devueltos por las operaciones de partidas guardadas.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Abort">
+      <summary>| **Abort** | **abort**                                   | 0x80004004 | Se ha cancelado la operación. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.BlobNotFound">
+      <summary>| **BlobNotFound** | **blobNotFound**                     | 0x80830008 | Error en la operación porque no se ha encontrado el nombre proporcionado en el contenedor. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerNotInSync">
+      <summary>| **ContainerNotInSync** | **containerNotInSync**         | 0x8083000A | Error en la operación porque el contenedor no existe localmente. Este error puede aparecer al enviar actualizaciones a un contenedor que tiene que sincronizarse y no se ha enviado una consulta de lectura, eliminación o blob en el contenedor. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerSyncFailed">
+      <summary>| **ContainerSyncFailed** | **containerSyncFailed**       | 0x8083000B | Error en la operación porque no se ha podido sincronizar el contenedor. Esto indica que el usuario cancela una sincronización del contenedor debido a que no desean esperar, o debido a un fallo de red y el usuario no lo volvió a intentar. Este error puede devolverse mediante una operación DeleteContainerAsync, ReadAsync, GetAsync o GameSaveBlobInfoQuery. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.InvalidContainerName">
+      <summary>| **InvalidContainerName** | **invalidContainerName**     | 0x80830001 | El nombre del contenedor especificado está vacío, contiene caracteres no válidos o es demasiado largo. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoAccess">
+      <summary>| **NoAccess** | **noAccess**                             | 0x80830002 | Error en la operación porque el título no tiene acceso de escritura al espacio de almacenamiento del contenedor. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoXboxLiveInfo">
+      <summary>| **NoXboxLiveInfo** | **noXboxLiveInfo**                 | 0x80830009 | Error en la operación porque el título no tiene un identificador de título o un Id. de configuración de servicio correcto. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ObjectExpired">
+      <summary>| **ObjectExpired** | **objectExpired**                   | 0x8083000D | Error en la operación porque la aplicación se ha suspendido y el objeto ya no es válido. Para realizar operaciones de partidas guardadas tras reanudar, la aplicación debe solicitar un nuevo GameSaveProvider con GetForUserAsync o GetSyncOnDemandForUserAsync. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Ok">
+      <summary>| **Ok** | **ok**                                         | 0          | La operación se ha completado correctamente. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.OutOfLocalStorage">
+      <summary>| **OutOfLocalStorage** | **outOfLocalStorage**           | 0x80830003 | Error en la operación porque no hay suficiente espacio de almacenamiento local disponible. Aunque se dio al usuario la oportunidad de liberar espacio almacenamiento local, decidió no hacerlo. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ProvidedBufferTooSmall">
+      <summary>| **ProvidedBufferTooSmall** | **providedBufferTooSmall** | 0x80830007 | Error en la operación porque un búfer proporcionado para leer un blob era demasiado pequeño para recibir el blob. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.QuotaExceeded">
+      <summary>| **QuotaExceeded** | **quotaExceeded**                   | 0x80830006 | Error en la operación porque la actualización haría que el espacio de almacenamiento supere su cuota. Utiliza IGameSaveProvider.GetRemainingBytesInQuotaAsync para consultar el espacio de cuota restante. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UpdateTooBig">
+      <summary>| **UpdateTooBig** | **updateTooBig**                     | 0x80830005 | Error en la operación porque la actualización contenía más de 16 MB de datos. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserCanceled">
+      <summary>| **UserCanceled** | **userCanceled**                     | 0x80830004 | Error en la operación porque el usuario la canceló. |</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserHasNoXboxLiveInfo">
+      <summary>| **UserHasNoXboxLiveInfo** | **userHasNoXboxLiveInfo**   | 0x8083000C | Error en la operación porque no hay ninguna información de Xbox Live asociada con la cuenta de usuario. Este error lo puede devolver GetForUserAsync o GetSyncOnDemandForUserAsync. |</summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult">
+      <summary>Resultado de una operación de partidas guardadas.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult.Status">
+      <summary>Resultado de estado de una operación de partidas guardadas asíncrona.</summary>
+      <returns>Tipo: GameSaveErrorStatus</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProvider">
+      <summary>** GameSaveProvider ** se usa para crear, guardar, enumerar y cargar partidas guardadas de Xbox Live.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.ContainersChangedSinceLastSync">
+      <summary>Se llama en una nueva instancia de GameSaveProvider, devuelve los nombres de contenedores que han cambiado desde la última ejecución de la aplicación.</summary>
+      <returns>Tipo: **IVectorView\&lt;;String&gt;;** \[JavaScript/C++\] | System.Collections.Generic.IReadOnlyList\&lt;;String&gt;; \[.NET\]</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.User">
+      <summary>Usuario asociado con este proveedor de partidas guardadas y sus contenedores de partidas guardadas.</summary>
+      <returns>Tipo: **User**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainer(System.String)">
+      <summary>Crea un nuevo GameSaveContainer para guardar una partida guardada.</summary>
+      <param name="name">Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>Tipo: GameSaveContainer</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery">
+      <summary>Crea una instancia de GameSaveContainerInfoQuery que enumera todos los contenedores de este proveedor de partidas guardadas.</summary>
+      <returns>Tipo: GameSaveContainerInfoQuery</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery(System.String)">
+      <summary>Crea una instancia de GameSaveContainerInfoQuery que enumera los contenedores de este contenedor de partidas guardadas que tienen nombres que comienzan con el prefijo especificado.</summary>
+      <param name="containerNamePrefix">Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>Tipo: GameSaveContainerInfoQuery</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.DeleteContainerAsync(System.String)">
+      <summary>De forma asincrónica elimina el contenedor de partidas guardadas especificado.</summary>
+      <param name="name">Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveOperationResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync(Windows.System.User,System.String)">
+      <summary>Obtiene un proveedor de partidas guardadas para el usuario especificado.</summary>
+      <param name="user">Tipo: User</param>
+      <param name="serviceConfigId">Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveProviderGetResult&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetRemainingBytesInQuotaAsync">
+      <summary>Obtiene los bytes restantes en la cuota del usuario para este proveedor de partidas guardadas.</summary>
+      <returns>Tipo: **IAsyncOperation\&lt;;Int64&gt;;**</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetSyncOnDemandForUserAsync(Windows.System.User,System.String)">
+      <summary>Obtiene un proveedor de partidas guardadas parcialmente sincronizado que sincroniza contenedores a petición.</summary>
+      <param name="user">Tipo: User</param>
+      <param name="serviceConfigId">Tipo: **String** \[JavaScript\] | System.String \[.NET\] | Platform::String \[C++\]</param>
+      <returns>Tipo: **IAsyncOperation\&lt;;GameSaveProviderGetResult&gt;;**</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult">
+      <summary>Resultado de una operación GetForUserAsync o GetSyncOnDemandForUserAsync .</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Status">
+      <summary>Resultado del estado de la solicitud de proveedor de partidas guardadas asíncrona.</summary>
+      <returns>Tipo: GameSaveErrorStatus</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Value">
+      <summary>Instancia GameSaveProvider devuelta por una solicitud de proveedor de partidas guardadas efectuada correctamente.</summary>
+      <returns>
+      </returns>
+    </member>
+  </members>
+</doc>

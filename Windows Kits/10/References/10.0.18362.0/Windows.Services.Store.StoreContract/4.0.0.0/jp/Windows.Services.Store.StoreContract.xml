@@ -1,0 +1,1130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.Store.StoreContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Store.StoreAcquireLicenseResult">
+      <summary>現在のアプリ用のダウンロード可能コンテンツ (DLC) アドオン パッケージのライセンス取得要求に対する応答データを提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、要求のエラー コードを取得します。</summary>
+      <returns>要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.StorePackageLicense">
+      <summary>現在のアプリのダウンロード可能コンテンツ (DLC) アドオン パッケージのライセンスを表すオブジェクトを取得します。</summary>
+      <returns>ダウンロード可能コンテンツ (DLC) パッケージ ライセンスを表すオブジェクト。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAppLicense">
+      <summary>アプリにより提供されている製品のライセンスを含む、現在のアプリのライセンス情報を提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.AddOnLicenses">
+      <summary>ユーザーが使用するための資格を持つ永続的なアドオン ライセンスのコレクションを取得します。 このプロパティには、コンシューマブルなアドオンのライセンスは含まれません。</summary>
+      <returns>キーと値ペアのマップ。各キーは、Microsoft Store カタログから取得されたアドオン SKU の Store ID であり、各値はアドオンのライセンス情報を含む StoreLicense オブジェクトです。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExpirationDate">
+      <summary>アプリ ライセンスの有効期限の日時を取得します。</summary>
+      <returns>システム クロックを基準にしたアプリ ライセンスの有効期限の日時。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExtendedJsonData">
+      <summary>JSON 形式のフル ライセンス データを取得します。</summary>
+      <returns>フル ライセンス データを含む JSON 形式の文字列。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsActive">
+      <summary>ライセンスが有効かどうかを示す値を取得し、現在のユーザーにアプリを使用する権利を与えます。</summary>
+      <returns>ライセンスが有効で現在のユーザーにアプリを使用する権利がある場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsDiscLicense">
+      <summary>現在のライセンスが、ディスク ベースのインストールから取得されたかどうかを示す値を取得します。</summary>
+      <returns>現在のライセンスがディスク ベースのインストールから取得された場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrial">
+      <summary>ライセンスが評価版ライセンスであるかどうかを示す値を取得します。</summary>
+      <returns>評価版ライセンスがアクティブな場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrialOwnedByThisUser">
+      <summary>現在のユーザーがアプリのライセンスに関連付けられている使用制限の付いた試用版の権利を持っているかどうかを示す値を取得します。</summary>
+      <returns>現在のユーザーが評価版の資格を持っている場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.SkuStoreId">
+      <summary>Microsoft Store カタログからライセンスのあるアプリ SKU の Store ID を取得します。</summary>
+      <returns>Microsoft Store カタログから取得されたライセンスのあるアプリ SKU の Store ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialTimeRemaining">
+      <summary>このアプリのライセンスに関連付けられている使用制限の付いた試用版の残り時間を取得します。</summary>
+      <returns>このアプリのライセンスに関連付けられている使用制限の付いた試用版の残り時間。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialUniqueId">
+      <summary>現在のユーザーと、このアプリのこのライセンスに関連付けられている使用制限の付いた試用版の組み合わせを識別する一意の ID を取得します。</summary>
+      <returns>現在のユーザーと、このアプリのこのライセンスに関連付けられている使用制限の付いた試用版の組み合わせを識別する一意の ID。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAvailability">
+      <summary>購入できる製品 SKU の特定のインスタンスを表します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.EndDate">
+      <summary>現在の SKU の利用終了日を取得します。</summary>
+      <returns>現在の SKU の利用終了日。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.ExtendedJsonData">
+      <summary>現在利用可能な SKU に関する詳細なデータを JSON 形式で Store から取得します。</summary>
+      <returns>Store から現在利用可能な SKU に関する詳細なデータを含む JSON 形式の文字列。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.Price">
+      <summary>基本価格、現在の価格、販売情報など現在利用可能な SKU の価格情報を取得します。</summary>
+      <returns>現在利用可能な SKU の価格情報を含むオブジェクト。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.StoreId">
+      <summary>Microsoft Store カタログから現在利用可能な SKU の Store ID を取得します。</summary>
+      <returns>Microsoft Store カタログから取得した現在利用可能な SKU の Store ID。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync">
+      <summary>現在利用可能な SKU の購入を要求し、Microsoft Store 経由でトランザクションを実行するのに使用される UI を表示します。</summary>
+      <returns>正常に終了した場合、購入についての状態やエラー情報を提供する StorePurchaseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>現在利用可能な SKU の購入を要求し、Microsoft Store 経由でトランザクションを実行するのに使用される UI を表示します。 このメソッドは、購入時にユーザーに表示される製品名など、Microsoft Store 内の単一の登録情報によって表される製品の大きいカタログ内の特定のオファーに関する追加の詳細を指定するオプションを提供します。</summary>
+      <param name="storePurchaseProperties">購入のときにユーザー表示する製品名を含む、購入要求の追加情報を指定するためのオブジェクト。</param>
+      <returns>正常に終了した場合、購入についての状態やエラー情報を提供する StorePurchaseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanAcquireLicenseResult">
+      <summary>ダウンロード可能コンテンツ (DLC) アドオン パッケージのライセンスを取得できるかどうかを決定する要求に対する応答データを示します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、要求のエラー コードを取得します。</summary>
+      <returns>要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.LicensableSku">
+      <summary>現在のユーザーのアドオンのライセンスを取得できる場合は、ダウンロード可能コンテンツ (DLC) のアドオンの SKU Store ID を取得します。</summary>
+      <returns>現在のユーザーのアドオンのライセンスを取得できる場合は、ダウンロード可能コンテンツ (DLC) のアドオンの SKU Store ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.Status">
+      <summary>ダウンロード可能コンテンツ (DLC) アドオン パッケージのライセンスの状態を取得します。</summary>
+      <returns>ダウンロード可能コンテンツ (DLC) アドオン パッケージのライセンスの状態。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanLicenseStatus">
+      <summary>ダウンロード可能コンテンツ (DLC) アドオン パッケージに対するライセンスの状態を表す値を定義します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.Licensable">
+      <summary>製品は、現在のユーザーにライセンスすることができます。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.LicenseActionNotApplicableToProduct">
+      <summary>製品は、個々にはライセンス対象ではありません。 たとえば、DLC 以外のアドオン (つまり、パッケージなしのアドオン) の CanAcquireStoreLicenseAsync(String) メソッドに Store ID を渡す場合に、この問題が発生することがあります。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NetworkError">
+      <summary>ライセンス要求は、ネットワーク接続エラーのため成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NotLicensableToUser">
+      <summary>ユーザーは、製品に対するライセンスを取得する権限を持っていません。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.ServerError">
+      <summary>ライセンス要求は、Microsoft Store によって返されるサーバー エラーのため成功しませんでした。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCollectionData">
+      <summary>ユーザーが使用する権利を持っている製品 SKU の追加データを提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.AcquiredDate">
+      <summary>製品 SKU が取得された日付を取得します。</summary>
+      <returns>製品 SKU が取得された日付。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.CampaignId">
+      <summary>製品 SKU に関連付けられたプロモーション キャンペーン ID を取得します。</summary>
+      <returns>製品 SKU に関連付けられたプロモーション キャンペーン ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.DeveloperOfferId">
+      <summary>製品 SKU に関連付けられた開発者オファー ID を取得します。</summary>
+      <returns>製品 SKU に関連付けられた開発者オファー ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.EndDate">
+      <summary>SKU が設定された期間の後に期限が切れる試用版または永続的なアドオンである場合は、製品 SKU の試用版の終了日を取得します。</summary>
+      <returns>SKU が設定された期間の後に期限が切れる試用版または永続的なアドオンである場合は、製品 SKU の試用版の終了日。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.ExtendedJsonData">
+      <summary>製品 SKU に関する詳細なコレクション データを JSON 形式で取得します。</summary>
+      <returns>製品 SKU に関する詳細なコレクション データを含む JSON 形式の文字列。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.IsTrial">
+      <summary>製品 SKU が評価版であるかどうかを示す値を取得します。</summary>
+      <returns>製品 SKU の評価版がアクティブな場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.StartDate">
+      <summary>SKU が設定された期間の後に期限が切れる試用版または永続的なアドオンである場合は、製品 SKU の試用版の開始日を取得します。</summary>
+      <returns>SKU が設定された期間の後に期限が切れる試用版または永続的なアドオンである場合は、製品 SKU の試用版の開始日。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.TrialTimeRemaining">
+      <summary>この製品 SKU に関連付けられている使用制限の付いた試用版の残りの試用時間を取得します。</summary>
+      <returns>この製品 SKU に関連付けられている使用制限の付いた試用版の残りの試用時間。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableResult">
+      <summary>現在のアプリのコンシューマブル アドオンを必要とする要求の応答データを示します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.BalanceRemaining">
+      <summary>コンシューマブル アドオンの残りのバランスを取得します。</summary>
+      <returns>コンシューマブル アドオンの残りのバランス。 Microsoft ではなく開発者がバランスを追跡するアンマネージ コンシューマブルの場合、このプロパティは 1 (ユーザーがアドオンの権利を持っている) または 0 (ユーザーがアドオンの権利を持っていない) を返します。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、要求のエラー コードを取得します。</summary>
+      <returns>要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.Status">
+      <summary>要求の状態を取得します。</summary>
+      <returns>要求の状態。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.TrackingId">
+      <summary>ReportConsumableFulfillmentAsync 要求で送信された追跡 ID を取得します。</summary>
+      <returns>ReportConsumableFulfillmentAsync 要求で送信された追跡 ID。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableStatus">
+      <summary>コンシューマブル アドオンに関連する要求の状態を表す値を定義します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.InsufficentQuantity">
+      <summary>要求は、コンシューマブル アドオンの残りのバランスが非常に少ないため成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.NetworkError">
+      <summary>要求は、ネットワーク接続エラーのため成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.ServerError">
+      <summary>要求は、Microsoft Store によって返されるサーバー エラーのため成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.Succeeded">
+      <summary>要求が成功しました。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContext">
+      <summary>現在のアプリケーションの Microsoft Store 関連のデータにアクセスし、管理するのに使用できるメンバーを提供します。 たとえば、現在のアプリの Microsoft Store の登録情報とライセンス情報を取得するため、現在のアプリまたはアプリにより提供される製品を購入するため、またはアプリのパッケージ更新プログラムをダウンロードしてインストールするために、このクラスのメンバーを使用できます。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.CanSilentlyDownloadStorePackageUpdates">
+      <summary>ユーザーに通知 UI を表示せずに、現在のアプリのパッケージ更新をダウンロードできるかどうかを示す値を取得します。</summary>
+      <returns>ユーザーに通知 UI を表示せずに、現在のアプリのパッケージ更新をダウンロードできる場合は true、それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.User">
+      <summary>マルチ ユーザー アプリで現在の StoreContext オブジェクトに関連付けられているユーザーの情報を取得します。</summary>
+      <returns>マルチ ユーザー アプリで現在の StoreContext オブジェクトに関連付けられているユーザー情報を提供するオブジェクトです。</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreContext.OfflineLicensesChanged">
+      <summary>アプリケーションのライセンスの状態が変更されたときに発生します (たとえば、試用期間の有効期限が切れている、またはユーザーがアプリの通常版を購入した)。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.AcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>現在のアプリケーションの指定されたダウンロード可能コンテンツ (DLC) アドオン パッケージのライセンスを取得します。</summary>
+      <param name="optionalPackage">ライセンスを取得する DLC アドオン パッケージ。</param>
+      <returns>正常に完了した場合、ライセンスを含む StoreAcquireLicenseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseAsync(System.String)">
+      <summary>現在のユーザーが現在のアプリの指定したダウンロード可能コンテンツ (DLC) アドオンに対してライセンスを取得できるかどうかを示す値を取得します。</summary>
+      <param name="productStoreId">確認する DLC アドオンの Store ID。</param>
+      <returns>正常に完了した場合、ライセンスが取得できるかどうかを示す StoreCanAcquireLicenseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>現在のユーザーが現在のアプリの指定したダウンロード可能コンテンツ (DLC) アドオンパッケージに対してライセンスを取得できるかどうかを示す値を取得します。</summary>
+      <param name="optionalPackage">確認する DLC パッケージ。</param>
+      <returns>正常に完了した場合、ライセンスが取得できるかどうかを示す StoreCanAcquireLicenseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.DownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>現在のアプリの指定されたダウンロード可能コンテンツ (DLC) パッケージを、ユーザーへの通知 UI ダイアログの表示なしで Microsoft Store からダウンロードし、インストールします。</summary>
+      <param name="storeIds">現在のアプリに対してインストールする DLC パッケージに対応するアドオンの Store ID。</param>
+      <returns>操作の進行状況と完了の追跡を呼び出し元で確認できるオブジェクト。 正常に完了すると、結果はパッケージの更新プログラムに関する情報を提供する StorePackageUpdateResult オブジェクトです。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.FindStoreProductForPackageAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.ApplicationModel.Package)">
+      <summary>指定されたパッケージに関連付けられているアプリまたはアドオンの Store 製品の詳細を取得します。</summary>
+      <param name="productKinds">パッケージに関連付けられている可能性のある Store 製品の種類を指定する文字列の配列。 サポートされている文字列値の一覧については「ProductKind プロパティ」をご覧ください。</param>
+      <param name="package">対応する Store 製品の詳細を取得するパッケージを表す Package。</param>
+      <returns>正常な完了時に StoreProductResult オブジェクトを返す非同期操作です。 このオブジェクトの Product プロパティを使って、指定されたパッケージのストア製品の詳細を含む StoreProduct にアクセスします。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppAndOptionalStorePackageUpdatesAsync">
+      <summary>現在のアプリ用パッケージのコレクションを取得します。Microsoft Store からダウンロード可能な更新プログラムが含まれています (アプリのオプション パッケージも含む)。</summary>
+      <returns>正常に完了した場合、利用可能な更新プログラムのあるパッケージを表す StorePackageUpdate オブジェクトのコレクションを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppLicenseAsync">
+      <summary>現在のアプリのアドオン ライセンスを含む、現在のアプリケーションのライセンス情報を取得します。</summary>
+      <returns>正常に完了した場合、アドオン ライセンスなど、現在のアプリのライセンス情報を含む StoreAppLicense オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>現在のアプリ内から購入可能な製品の Microsoft Store 登録情報を取得します。</summary>
+      <param name="productKinds">取得する製品の種類を指定する文字列の配列。 サポートされている文字列値の一覧については「ProductKind プロパティ」をご覧ください。</param>
+      <returns>正常に完了した場合、関連する製品と関連するエラー情報へのアクセスを提供する StoreProductQueryResult を返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>現在のアプリ内から購入可能な製品の Microsoft Store 登録情報を取得します。 このメソッドは、結果を返すためのページングをサポートします。</summary>
+      <param name="productKinds">取得する製品の種類を指定する文字列の配列。 サポートされている文字列値の一覧については「ProductKind プロパティ」をご覧ください。</param>
+      <param name="maxItemsToRetrievePerPage">結果の各ページで返す製品の最大数。</param>
+      <returns>正常に完了した場合、関連する製品、関連するエラー情報、結果の次のページへのアクセスを提供する StoreProductPagedQueryResult を返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreQueueItemsAsync">
+      <summary>現在のアプリのダウンロードおよびインストール キューに入っている、すべての新規または更新されたパッケージに関する情報を取得します。</summary>
+      <returns>正常に完了した場合、キューにあるアプリ パッケージについての情報を提供する StoreQueueItem オブジェクトのコレクションを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetConsumableBalanceRemainingAsync(System.String)">
+      <summary>現在のアプリケーションの指定されたコンシューマブル アドオンの残りのバランスを取得します。</summary>
+      <param name="productStoreId">アドオンの Store ID (アドオンを表す StoreProduct の StoreId プロパティによって提供されます)。</param>
+      <returns>正常に完了した場合、残りのバランスと他の情報を提供する StoreConsumableResult を返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerCollectionsIdAsync(System.String,System.String)">
+      <summary>製品の資格賦与を照会する場合、または現在のユーザーが所有する製品の資格賦与を利用するのに使用できる Microsoft Store ID キーを取得します。</summary>
+      <param name="serviceTicket">現在のアプリケーションの発行元を識別する Azure の Active Directory アクセス トークン。 このトークンの生成について詳しくは、「Manage product entitlements from a service (サービスから製品の権利を管理する)」をご覧ください。</param>
+      <param name="publisherUserId">現在のアプリの発行者として管理しているサービスのコンテキストで現在のユーザーを識別する匿名 ID。 サービスのコンテキストでユーザー ID を維持している場合、このパラメーターを使用して、現在のユーザーの ID を新しい Microsoft Store ID キー (ユーザー ID はキーに埋め込まれます) に関連付けることができます。 それ以外の場合で、ユーザー ID を Microsoft Store ID キーに関連付ける必要がない時は、任意の文字列値を渡すことができます。</param>
+      <returns>正常に完了した場合、現在のユーザーのコレクション ID キーを返す非同期操作。 このキーは 90 日間使用できます。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerPurchaseIdAsync(System.String,System.String)">
+      <summary>現在のユーザーの代わりに自由な製品の資格賦与を許可するために使用できる Microsoft Store ID のキーを取得します。</summary>
+      <param name="serviceTicket">現在のアプリケーションの発行元を識別する Azure の Active Directory アクセス トークン。 このトークンの生成について詳しくは、「Manage product entitlements from a service (サービスから製品の権利を管理する)」をご覧ください。</param>
+      <param name="publisherUserId">現在のアプリの発行者として管理しているサービスのコンテキストで現在のユーザーを識別する匿名 ID。 サービスのコンテキストでユーザー ID を維持している場合、このパラメーターを使用して、現在のユーザーの ID を新しい Microsoft Store ID キー (ユーザー ID はキーに埋め込まれます) に関連付けることができます。 それ以外の場合で、ユーザー ID を Microsoft Store ID キーに関連付ける必要がない時は、任意の文字列値を渡すことができます。</param>
+      <returns>正常に完了した場合、現在のユーザーの購入 ID キーを返す非同期操作。 このキーは 90 日間使用できます。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetDefault">
+      <summary>現在のアプリケーションのコンテキストにおける現在のユーザーの Microsoft Store 関連のデータにアクセスし、管理するのに使用できる StoreContext オブジェクトを取得します。</summary>
+      <returns>現在のユーザーの Microsoft Store 関連のデータにアクセスし、管理するのに使用できるオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetForUser(Windows.System.User)">
+      <summary>現在のアプリケーションのコンテキストにおける指定されたユーザーの Microsoft Store 関連のデータにアクセスし、管理するのに使用できる StoreContext オブジェクトを取得します。</summary>
+      <param name="user">アクセスおよび管理する Microsoft Store 関連のデータを持つユーザーを識別するオブジェクト。</param>
+      <returns>指定されたユーザーの Microsoft Store 関連のデータにアクセスし、管理するのに使用できるオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductForCurrentAppAsync">
+      <summary>現在のアプリケーションの Microsoft Store の一覧情報を取得し、現在のユーザーに対してアプリケーションを購入するのに使用できるメソッドへのアクセスを提供します。</summary>
+      <returns>正常に完了すると、非同期動作は現在のアプリの Microsoft Store 登録情報と関連するエラー情報を含む StoreProductResult オブジェクトを返します。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>現在のアプリに関連づけられている指定された製品の Microsoft Store 登録情報を取得します。</summary>
+      <param name="productKinds">登録情報を取得する製品の種類を指定する文字列の配列。 サポートされている文字列値の一覧については「ProductKind プロパティ」をご覧ください。</param>
+      <param name="storeIds">登録情報を取得する製品の Store ID 文字列の配列。</param>
+      <returns>正常に完了すると、非同期動作は指定された製品の登録情報と関連するエラー情報を含む StoreProductQueryResult オブジェクトを返します。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StoreProductOptions)">
+      <summary>クエリのフィルターを使用するオプションと共に、現在のアプリに関連づけられている指定された製品の Microsoft Store 登録情報を取得します。</summary>
+      <param name="productKinds">登録情報を取得する製品の種類を指定する文字列の配列。 サポートされている文字列値の一覧については「ProductKind プロパティ」をご覧ください。</param>
+      <param name="storeIds">登録情報を取得する製品の Store ID 文字列の配列。</param>
+      <param name="storeProductOptions">クエリに使用するフィルターを含むオブジェクト。</param>
+      <returns>正常に完了すると、非同期動作は指定された製品の登録情報と関連するエラー情報を含む StoreProductQueryResult オブジェクトを返します。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>現在のアプリのダウンロードおよびインストール キューに入っている、指定された新規または更新されたパッケージに関する情報を取得します。</summary>
+      <param name="storeIds">ダウンロードおよびインストール キューの情報を取得するパッケージに対応する、Store ID 文字列の配列。</param>
+      <returns>正常に完了した場合、キューで指定されたパッケージについての情報を提供する StoreQueueItem オブジェクトのコレクションを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>ユーザーが購入した現在のアプリのアドオンに関する Microsoft Store 情報を取得します。</summary>
+      <param name="productKinds">情報を取得するアドオンの種類を指定する文字列の配列。 サポートされている文字列値の一覧については「ProductKind プロパティ」をご覧ください。</param>
+      <returns>正常に完了した場合に、ユーザーが購入した現在のアプリのアドオンに関する Microsoft Store 登録情報と関連するエラー情報を含む StoreProductQueryResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>ユーザーが購入した現在のアプリのアドオンに関する Microsoft Store 情報を取得します。 このメソッドは、結果を返すためのページングをサポートします。</summary>
+      <param name="productKinds">情報を取得するアドオンの種類を指定する文字列の配列。 サポートされている文字列値の一覧については「ProductKind プロパティ」をご覧ください。</param>
+      <param name="maxItemsToRetrievePerPage">結果の各ページで返すアドオンの最大数。</param>
+      <returns>正常に完了した場合に、ユーザーが購入した現在のアプリのアドオンに関する Microsoft Store 登録情報と、関連するエラー情報、および結果の次ページへのアクセスを提供する StoreProductPagedQueryResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.ReportConsumableFulfillmentAsync(System.String,System.UInt32,System.Guid)">
+      <summary>Microsoft Store でフィルフィルメントが完了する現在のアプリのコンシューマブル アドオンを報告します。</summary>
+      <param name="productStoreId">フルフィルメント完了として報告するコンシューマブル アドオンの Store ID。</param>
+      <param name="quantity">フルフィルメント完了と報告するコンシューマブル アドオンのユニット数。 Store で管理されるコンシューマブル (つまり、Microsoft がバランスを追跡する) の場合、消費された単位の実際の数を指定します。 開発者により管理されるコンシューマブル (つまり、開発者がバランスを追跡するコンシューマブル) の場合、1 を指定します。</param>
+      <param name="trackingId">追跡目的でフルフィルメント操作が関連付けられている特定のトランザクションを識別する、開発者が指定する GUID。 詳しくは、解説をご覧ください。</param>
+      <returns>正常に完了した場合、アドオン ユニットの残りのバランスなど、フィルフィルメント操作に関する情報を含む StoreConsumableResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>現在のアプリの指定されたダウンロード可能コンテンツ (DLC) パッケージを Microsoft Store からダウンロードし、インストールすることを試みます。 このメソッドは、操作のためのアクセス許可を要求する UI ダイアログも表示します。</summary>
+      <param name="storeIds">インストールする DLC アドオン パッケージの Store ID。</param>
+      <returns>操作の進行状況と完了の追跡を呼び出し元で確認できるオブジェクト。 正常に完了すると、結果はパッケージの更新プログラムに関する情報を提供する StorePackageUpdateResult オブジェクトです。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StorePackageInstallOptions)">
+      <summary>特定のインストール オプションと共に、現在のアプリの指定されたダウンロード可能コンテンツ (DLC) パッケージを Microsoft Store からダウンロードし、インストールすることを試みます。 このメソッドは、操作のためのアクセス許可を要求する UI ダイアログも表示します。</summary>
+      <param name="storeIds">インストールする DLC アドオン パッケージの Store ID。</param>
+      <param name="storePackageInstallOptions">操作のインストール オプションを指定しているオブジェクト。</param>
+      <returns>操作の進行状況と完了の追跡を呼び出し元で確認できるオブジェクト。 正常に完了すると、結果はパッケージの更新プログラムに関する情報を提供する StorePackageUpdateResult オブジェクトです。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>現在のアプリの指定されたパッケージの更新プログラムを Microsoft Store からダウンロードし、インストールすることを試みます。 このメソッドは、操作のためのアクセス許可を要求する UI ダイアログも表示します。</summary>
+      <param name="storePackageUpdates">ダウンロードおよびインストールする更新されたパッケージを表す StorePackageUpdate オブジェクトのセット。</param>
+      <returns>操作の進行状況と完了の追跡を呼び出し元で確認できるオブジェクト。 正常に完了すると、結果はパッケージの更新プログラムに関する情報を提供する StorePackageUpdateResult オブジェクトです。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>現在のアプリの指定されたパッケージの更新プログラムを Microsoft Store からダウンロードし、インストールすることを試みます。 このメソッドは、操作のためのアクセス許可を要求する UI ダイアログも表示します。</summary>
+      <param name="storePackageUpdates">ダウンロードする更新されたパッケージを表す StorePackageUpdate オブジェクトのセット。</param>
+      <returns>操作の進行状況と完了の追跡を呼び出し元で確認できるオブジェクト。 正常に完了すると、結果はパッケージの更新プログラムに関する情報を提供する StorePackageUpdateResult オブジェクトです。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String)">
+      <summary>指定されたアプリまたはアオドンの購入を要求し、Microsoft Store 経由でトランザクションを実行するのに使用される UI を表示します。</summary>
+      <param name="storeId">現在のユーザーに対して購入するアプリまたはアドオンの Store ID。</param>
+      <returns>正常に終了した場合、購入についての状態やエラー情報を提供する StorePurchaseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String,Windows.Services.Store.StorePurchaseProperties)">
+      <summary>指定されたアプリまたはアオドンの購入を要求し、Microsoft Store 経由でトランザクションを実行するのに使用される UI を表示します。 このメソッドは、購入時にユーザーに表示される製品名など、Microsoft Store 内の単一の登録情報によって表される製品の大きいカタログ内の特定のオファーに関する追加の詳細を指定するオプションを提供します。</summary>
+      <param name="storeId">現在のユーザーに対して購入するアプリまたはアドオンの Store ID。</param>
+      <param name="storePurchaseProperties">購入のときにユーザー表示する製品名を含む、購入要求の追加情報を指定するためのオブジェクト。</param>
+      <returns>正常に終了した場合、購入についての状態やエラー情報を提供する StorePurchaseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestRateAndReviewAppAsync">
+      <summary>ユーザーにアプリの評価とレビューを要求します。 このメソッドは、ユーザーが Microsoft Store の評価を選択し、製品に対する Microsoft Store のレビューをオプションで追加する UI を表示します。</summary>
+      <returns>正常に終了した場合、状態やエラー情報を提供する StoreRateAndReviewResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>現在のアプリの指定されたオプション パッケージをアンインストールすることを試みます。 このメソッドは、操作のためのアクセス許可を要求する UI ダイアログも表示します。</summary>
+      <param name="package">現在のアプリをアンインストールするオプション パッケージ。</param>
+      <returns>正常に終了した場合、アンインストール操作についての情報を提供する StoreUninstallStorePackageResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>現在のアプリの指定されたダウンロード可能なコンテンツ (DLC) パッケージをアンインストールすることを試みます。 このメソッドは、操作のためのアクセス許可を要求する UI ダイアログも表示します。</summary>
+      <param name="storeId">現在のアプリに対してアンインストールするダウンロード可能なコンテンツ (DLC) パッケージに対応するアドオンの Store ID。</param>
+      <returns>正常に終了した場合、アンインストール操作についての情報を提供する StoreUninstallStorePackageResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.SetInstallOrderForAssociatedStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StoreQueueItem})">
+      <summary>現在のアプリのダウンロードおよびインストール キューに入っている、指定されたパッケージをインストールする順序を設定します。</summary>
+      <param name="items">パッケージをインストールする順序で、インストール キューに含まれるパッケージを表す StoreQueueItem オブジェクトの一覧。</param>
+      <returns>正常に完了した場合、キューに含まれる対応するパッケージがインストールされた順序で StoreQueueItem オブジェクトの一覧を返す、非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>現在のアプリの指定されたパッケージ更新を、ユーザーへの通知 UI の表示なしで Microsoft Store からダウンロードし、インストールすることを試みます。</summary>
+      <param name="storePackageUpdates">ダウンロードおよびインストールする更新されたパッケージを表す StorePackageUpdate オブジェクトのセット。</param>
+      <returns>操作の進行状況と完了の追跡を呼び出し元で確認できるオブジェクト。 正常に完了すると、結果はパッケージの更新プログラムに関する情報を提供する StorePackageUpdateResult オブジェクトです。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>現在のアプリの指定されたパッケージ更新を、ユーザーへの通知 UI の表示なしで Microsoft Store からダウンロードすることを試みます。</summary>
+      <param name="storePackageUpdates">ダウンロードする更新されたパッケージを表す StorePackageUpdate オブジェクトのセット。</param>
+      <returns>操作の進行状況と完了の追跡を呼び出し元で確認できるオブジェクト。 正常に完了すると、結果はパッケージの更新プログラムに関する情報を提供する StorePackageUpdateResult オブジェクトです。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>ユーザーへの通知 UI ダイアログを表示することなく、現在のアプリの指定されたオプション パッケージをアンインストールします。</summary>
+      <param name="package">現在のアプリをアンインストールするオプション パッケージ。</param>
+      <returns>正常に終了した場合、アンインストール操作についての情報を提供する StoreUninstallStorePackageResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>ユーザーへの通知 UI ダイアログを表示することなく、現在のアプリの指定されたダウンロード可能なコンテンツ (DLC) パッケージをアンインストールします。</summary>
+      <param name="storeId">現在のアプリに対してアンインストールする DLC パッケージに対応するアドオンの Store ID。</param>
+      <returns>正常に終了した場合、アンインストール操作についての情報を提供する StoreUninstallStorePackageResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreDurationUnit">
+      <summary>サブスクリプションの試用期間または請求期間の単位を表す値を定義します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Day">
+      <summary>期間は日単位で定義されます。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Hour">
+      <summary>期間は時間単位で定義されます。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Minute">
+      <summary>期間は分単位で定義されます。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Month">
+      <summary>期間は月単位で定義されます。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Week">
+      <summary>期間は週単位で定義されます。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Year">
+      <summary>期間は年単位で定義されます。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreImage">
+      <summary>Windows ストアの製品のリストに関連付けられるイメージを表します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Caption">
+      <summary>イメージのキャプションを取得します。</summary>
+      <returns>イメージのキャプション。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Height">
+      <summary>イメージの高さを取得します (ピクセル単位)。</summary>
+      <returns>イメージの高さ。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.ImagePurposeTag">
+      <summary>イメージのタグを取得します。</summary>
+      <returns>イメージのタグ。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Uri">
+      <summary>イメージの URI を取得します。</summary>
+      <returns>イメージの URI。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Width">
+      <summary>イメージの幅を取得します (ピクセル単位)。</summary>
+      <returns>イメージの幅。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreLicense">
+      <summary>現在のアプリケーションに関連付けられる永続的なアドオンのライセンス情報を提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExpirationDate">
+      <summary>アドオン ライセンスの有効期限の日時を取得します。</summary>
+      <returns>アドオン ライセンスの有効期限の日時。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExtendedJsonData">
+      <summary>JSON 形式のフル ライセンス データを取得します。</summary>
+      <returns>JSON 形式のフル ライセンス データ。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.InAppOfferToken">
+      <summary>アドオンの製品 ID を取得します。</summary>
+      <returns>トークンがある場合、アドオンのアプリ内トークン。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.IsActive">
+      <summary>このプロパティは将来使用するために予約されています。現在のリリースで使用するためのものではありません。 現時点では、常に true を返します。</summary>
+      <returns>常に True。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.SkuStoreId">
+      <summary>Microsoft Store カタログからライセンスのあるアドオン SKU の Store ID を取得します。</summary>
+      <returns>Microsoft Store カタログからライセンスのあるアドオン SKU の Store ID。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageInstallOptions">
+      <summary>RequestDownloadAndInstallStorePackagesAsync メソッドを使用して、現在のアプリ用のダウンロード可能コンテンツ (DLC) パッケージをダウンロードしてインストールするときに指定できるオプションを表します。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageInstallOptions.#ctor">
+      <summary>StorePackageInstallOptions クラスの新しいインスタンスを作成します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageInstallOptions.AllowForcedAppRestart">
+      <summary>RequestDownloadAndInstallStorePackagesAsync メソッドを使用して、OS が現在のアプリでダウンロード可能コンテンツ (DLC) パッケージをインストールした後に、アプリを強制再起動できるかどうかを示す値を取得または設定します。</summary>
+      <returns>DLC パッケージのインストール後に、OS がアプリを強制再起動できる場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageLicense">
+      <summary>現在のアプリケーションのダウンロード可能コンテンツ (DLC) パッケージのライセンス情報を提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.IsValid">
+      <summary>ライセンスが有効であるかどうかを示す値を取得します。</summary>
+      <returns>ライセンスが有効な場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.Package">
+      <summary>ライセンスに関連付けられているダウンロード可能コンテンツ (DLC) パッケージを取得します。</summary>
+      <returns>ライセンスに関連付けられる DLC パッケージを表すオブジェクト。</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StorePackageLicense.LicenseLost">
+      <summary>ユーザーに現在のデバイスのライセンスに対する権利がなくなった場合に発生します (たとえば、ユーザーが別のデバイスのライセンスを取得した場合など)。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.Close">
+      <summary>この StorePackageLicense で使用されているリソースを閉じて解放します。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.ReleaseLicense">
+      <summary>ダウンロード可能コンテンツ (DLC) パッケージのライセンスを解放します。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdate">
+      <summary>Microsoft Store からダウンロード可能な更新がある現在のアプリのパッケージに関する情報を提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Mandatory">
+      <summary>Microsoft Store からダウンロード可能な更新プログラムがあるパッケージが必須パッケージかどうかを示す値を取得します。パートナー センターで開発者が指定します。</summary>
+      <returns>パッケージが必須パッケージの場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Package">
+      <summary>Microsoft Store からダウンロード可能な更新があるパッケージを取得します。</summary>
+      <returns>利用可能な更新があるパッケージを表すオブジェクト。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateResult">
+      <summary>現在のアプリでパッケージをダウンロードおよびインストールする要求の応答データを提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.OverallState">
+      <summary>完成版パッケージの更新要求のステータスを取得します。</summary>
+      <returns>完成版パッケージの更新要求のステータスを示す値。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StorePackageUpdateStatuses">
+      <summary>完了した要求に関連付けられるパッケージ更新の状態に関する情報を取得します。</summary>
+      <returns>完了した要求に関連付けられた各パッケージのステータスの更新に関する情報を提供する StorePackageUpdateStatus オブジェクトのコレクション。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StoreQueueItems">
+      <summary>完了した要求に関連付けられる各パッケージ更新に関するインストール キュー情報を取得します。</summary>
+      <returns>完了した要求に関連付けられた各パッケージ更新に関するインストール キュー情報を提供する StoreQueueItem オブジェクトのコレクション。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateState">
+      <summary>パッケージのダウンロードやインストールの要求の状態を表す値を定義します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Canceled">
+      <summary>パッケージの更新プログラムのダウンロードまたはインストールは取り消されました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Completed">
+      <summary>パッケージの更新プログラムがダウンロードまたはインストールして終了しました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Deploying">
+      <summary>パッケージ更新プログラムがデバイスに展開されています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Downloading">
+      <summary>パッケージ更新プログラムがダウンロードされています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorLowBattery">
+      <summary>デバイスのバッテリーが十分に充電われていないため、パッケージ更新プログラムのダウンロードまたはインストールに成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRecommended">
+      <summary>パッケージ更新プログラムをダウンロードするのには Wi-Fi 接続が推奨されるため、ダウンロードに成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRequired">
+      <summary>パッケージ更新プログラムをダウンロードするのには Wi-Fi 接続が必須のため、ダウンロードに成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.OtherError">
+      <summary>不明なエラーが発生しました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Pending">
+      <summary>パッケージ更新プログラムのダウンロードが開始されていません。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateStatus">
+      <summary>ダウンロードやインストールの要求に関連付けられているパッケージの状態情報を提供します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageBytesDownloaded">
+      <summary>ダウンロードされたバイト数。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadProgress">
+      <summary>現在のパッケージのダウンロード (またはダウンロードおよびインストール) の進行状況。0.0 ～ 1.0 の値で表されます。 RequestDownloadStorePackageUpdatesAsync を使用してパッケージをダウンロードすると、各パッケージのダウンロード中にこの値は 0.0 から 1.0 に増加します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadSizeInBytes">
+      <summary>ダウンロードするパッケージのサイズ (バイト単位)。 これは推定のため、ダウンロード処理中に変わる可能性があります。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageFamilyName">
+      <summary>ダウンロードまたはインストールされるパッケージのファミリ名。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageUpdateState">
+      <summary>ダウンロードまたはインストールされるパッケージの状態を示す StorePackageUpdateState 値。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.TotalDownloadProgress">
+      <summary>要求されているすべてのパッケージ ダウンロードの現在の進行状況。0.0 ～ 1.0 の値で表されます。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePrice">
+      <summary>Microsoft Store の製品一覧の価格情報が含まれます。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.CurrencyCode">
+      <summary>現在のユーザーの市場の ISO 4217 通貨コードを取得します。</summary>
+      <returns>現在のユーザーの市場の ISO 4217 通貨コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedBasePrice">
+      <summary>現在のユーザーの市場用の適切な形式の製品の基本価格を取得します。</summary>
+      <returns>現在のユーザーの市場用の適切な形式の製品の基本価格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedPrice">
+      <summary>現在のユーザーの市場用の適切な形式の製品の購入価格を取得します。</summary>
+      <returns>現在のユーザーの市場用の適切な形式の製品の購入価格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedRecurrencePrice">
+      <summary>繰り返し請求がこの製品に対して有効である場合、現在のユーザーの市場の適切な形式で製品の再購入価格を取得します。</summary>
+      <returns>現在のユーザーの市場用の適切な形式の製品の再購入価格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.IsOnSale">
+      <summary>製品が特売かどうかを示す値を取得します。</summary>
+      <returns>製品が特売の場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.SaleEndDate">
+      <summary>製品が特売の場合、製品の販売期間の終了日を取得します。</summary>
+      <returns>製品の特売期間の終了日。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProduct">
+      <summary>Microsoft Store で入手可能な製品を表します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Description">
+      <summary>Microsoft Store 登録情報から製品の説明を取得します。</summary>
+      <returns>製品の説明。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ExtendedJsonData">
+      <summary>Store から製品の詳しいデータ (JSON 形式) を取得します。</summary>
+      <returns>Store から製品に関する詳細なデータ (JSON 形式) を含む JSON 形式の文字列。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.HasDigitalDownload">
+      <summary>製品にオプションのダウンロード可能コンテンツ (DLC) があるかどうかを示す値を取得します。</summary>
+      <returns>製品のオプションのダウンロード可能コンテンツがある場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Images">
+      <summary>製品の Windows ストア登録情報の画像を取得します。</summary>
+      <returns>製品の Windows ストア登録情報の画像を表す StoreImage オブジェクトのコレクション。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.InAppOfferToken">
+      <summary>現在の StoreProduct がアドオンを表す場合、この製品の製品 ID を取得します。</summary>
+      <returns>現在の StoreProduct がアドオンを表す場合、この製品の製品 ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.IsInUserCollection">
+      <summary>現在のユーザーが製品の既定の SKU を使用する権利を持っているかどうかを示す値を取得します。</summary>
+      <returns>現在のユーザーに製品の既定の SKU を使用する権利がある場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Keywords">
+      <summary>パートナー センターで製品に関連付けられているキーワードを取得します。 このプロパティはアドオンを表す **StoreProduct** オブジェクトのみに適用されます。 これらの文字列は、パートナー センターでのアドオンのプロパティ ページの **キーワード** フィールドの値に対応します。</summary>
+      <returns>パートナー センターで製品に関連付けられているキーワードを含む文字列のコレクション。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Language">
+      <summary>製品の Microsoft Store 登録情報に含まれているデータの言語を取得します。</summary>
+      <returns>製品の Microsoft Store 登録情報に含まれているデータの言語。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.LinkUri">
+      <summary>製品の Microsoft Store 登録情報の URI を取得します。</summary>
+      <returns>製品の Microsoft Store 登録情報の URI。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Price">
+      <summary>製品の既定の SKU の価格と使用可能状況を取得します。</summary>
+      <returns>製品の既定の SKU の価格と使用可能状況。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ProductKind">
+      <summary>製品の種類を取得します。 現在サポートされている値は、**Application**、**Game**、**Consumable**、**UnmanagedConsumable**、**Durable** です。</summary>
+      <returns>製品の種類。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Skus">
+      <summary>製品の利用可能な SKU の一覧を取得します。</summary>
+      <returns>製品の利用可能な SKU を表す StoreSku オブジェクトのコレクション。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.StoreId">
+      <summary>この製品の Store ID。</summary>
+      <returns>この製品の Store ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Title">
+      <summary>Microsoft Store 登録情報から製品のタイトルを取得します。</summary>
+      <returns>Microsoft Store 登録情報からの製品のタイトル。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Videos">
+      <summary>製品の Windows ストア登録情報の動画を取得します。</summary>
+      <returns>製品の Windows ストア登録情報の動画を表す StoreVideo オブジェクトのコレクション。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.GetIsAnySkuInstalledAsync">
+      <summary>現在のデバイスにこの製品の SKU がインストールされているかどうかを示します。 このメソッドは、ダウンロード可能コンテンツ (DLC) を持つ製品に使うためのものです。</summary>
+      <returns>正常に完了した場合、この製品の SKU が現在のデバイスにインストールされている場合は true、それ以外の場合は false を返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync">
+      <summary>既定の SKU の購入と製品の使用可能状況を要求し、Microsoft Store 経由でトランザクションを実行するのに使用される UI を表示します。</summary>
+      <returns>正常に終了した場合、購入についての状態やエラー情報を提供する StorePurchaseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>既定の SKU の購入と製品の使用可能状況を要求し、Microsoft Store 経由でトランザクションを実行するのに使用される UI を表示します。 このメソッドは、購入時にユーザーに表示される製品名など、Microsoft Store 内の単一の登録情報によって表される製品の大きいカタログ内の特定のオファーに関する追加の詳細を指定するオプションを提供します。</summary>
+      <param name="storePurchaseProperties">購入のときにユーザー表示する製品名を含む、購入要求の追加情報を指定するためのオブジェクト。</param>
+      <returns>正常に終了した場合、購入についての状態やエラー情報を提供する StorePurchaseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductOptions">
+      <summary>現在のアプリに関連付けられている指定された製品の情報を取得するために、GetStoreProductsAsync メソッドと共に使用できる、フィルター文字列のコレクションを含みます。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductOptions.#ctor">
+      <summary>StoreProductOptions クラスの新しいインスタンスを作成します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductOptions.ActionFilters">
+      <summary>現在のアプリに関連付けられている指定された製品の情報を取得するために、GetStoreProductsAsync メソッドと共に使用できる、フィルター文字列のコレクションを取得します。 現時点では、このコレクションは 1 つのフィルタ文字列 ```購入``` のみをサポートします。</summary>
+      <returns>現在のアプリに関連付けられている指定された製品の情報を取得するために、GetStoreProductsAsync メソッドと共に使用できる、フィルター文字列のコレクション。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductPagedQueryResult">
+      <summary>ページ要求の応答データを提供し、現在のアプリ内で購入可能な製品に関する詳細を取得します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、要求のエラー コードを取得します。</summary>
+      <returns>要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.HasMoreResults">
+      <summary>結果の追加ページがあるかどうかを示す値を取得します。 結果の次のページにアクセスするには、GetNextAsync メソッドを使います。</summary>
+      <returns>結果の追加ページがある場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.Products">
+      <summary>要求によって返された製品のコレクションを取得します。</summary>
+      <returns>キーおよび値ペアのディクショナリ。各キーは製品のストア ID、値はアドオンを表す StoreProduct オブジェクトです。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductPagedQueryResult.GetNextAsync">
+      <summary>結果の次のページを返します。 結果のページがさらにあるかどうかを調べるには、HasMoreResults プロパティを使います。</summary>
+      <returns>正常に完了した場合、結果の次のページを提供する StoreProductPagedQueryResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductQueryResult">
+      <summary>要求の応答データを提供し、現在のアプリ内で購入可能な製品に関する詳細を取得します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、要求のエラー コードを取得します。</summary>
+      <returns>要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.Products">
+      <summary>要求によって返された製品のコレクションを取得します。</summary>
+      <returns>キーおよび値ペアのディクショナリ。各キーはアドオンのストア ID、値はアドオンを表す StoreProduct オブジェクトです。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductResult">
+      <summary>現在のアプリに関する詳細を取得する要求の応答データを提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、要求のエラー コードを取得します。</summary>
+      <returns>要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.Product">
+      <summary>現在のアプリに関する情報を取得します。</summary>
+      <returns>現在のアプリに関する情報を提供するオブジェクト。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseProperties">
+      <summary>購入時にユーザーに表示する製品名など、製品の購入要求に渡すことができる追加の詳細が含まれます。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor">
+      <summary>StorePurchaseProperties クラスの新しいインスタンスを初期化します。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor(System.String)">
+      <summary>StorePurchaseProperties クラスの新しいインスタンスを初期化します。 このオーバーロードは、購入のときにユーザーに表示される製品名を指定するオプションを提供します。</summary>
+      <param name="name">購入時にユーザーに表示される製品名。</param>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.ExtendedJsonData">
+      <summary>Microsoft Store への購入要求と共に渡す拡張データが含まれる JSON 形式の文字列を取得または設定します。</summary>
+      <returns>Microsoft Store への購入要求と共に渡す拡張データが含まれる JSON 形式の文字列。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.Name">
+      <summary>購入時にユーザーに表示する製品名を取得または設定します。 指定された名前は、購入 UI のタイトル バーに表示されます。</summary>
+      <returns>購入時にユーザーに表示される製品名。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseResult">
+      <summary>アプリにより提供されるアプリまたは製品を購入する要求の応答データを提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、購入要求のエラー コードを取得します。</summary>
+      <returns>購入要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.Status">
+      <summary>購入要求の状態を取得します。</summary>
+      <returns>購入要求のステータス。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseStatus">
+      <summary>アプリまたはアドオンを購入する要求の状態を表す値を定義します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.AlreadyPurchased">
+      <summary>現在のユーザーは、指定したアプリまたはアドオンを既に購入済みです。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NetworkError">
+      <summary>購入要求は、ネットワーク接続エラーのため成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NotPurchased">
+      <summary>購入要求が成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.ServerError">
+      <summary>購入要求は、Microsoft Store によって返されるサーバー エラーのため成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.Succeeded">
+      <summary>購入要求が成功しました。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItem">
+      <summary>現在のアプリのダウンロードおよびインストール キューに入っている、新規または更新されたパッケージに関する情報を表します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.InstallKind">
+      <summary>ダウンロードおよびインストール キューの現在のパッケージに対して実行中の操作を説明する値を取得します。</summary>
+      <returns>ダウンロードおよびインストール キューの現在のパッケージに対して実行中の操作を説明する値。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.PackageFamilyName">
+      <summary>キューで現在のパッケージのパッケージ ファミリ名を取得します。</summary>
+      <returns>キューでの現在のパッケージのパッケージ ファミリ名。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.ProductId">
+      <summary>パッケージがアドオンに対応している場合、キューでの現在のパッケージのアドオン製品 ID を取得します。</summary>
+      <returns>キューでの現在のパッケージのパッケージ ファミリ名。</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.Completed">
+      <summary>キューでの現在のパッケージのダウンロードおよびインストールが完了したときに発生します。</summary>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.StatusChanged">
+      <summary>キューで現在のパッケージの状態が変化したときに発生します。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.CancelInstallAsync">
+      <summary>キューでの現在のパッケージへのインストールをキャンセルします。</summary>
+      <returns>非同期操作を制御するために使用されるオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.GetCurrentStatus">
+      <summary>キューでの現在のパッケージの状態を返します。</summary>
+      <returns>キューでの現在のパッケージの状態を表すオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.PauseInstallAsync">
+      <summary>キューでの現在のパッケージへのインストールを一時停止します。</summary>
+      <returns>非同期操作を制御するために使用されるオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.ResumeInstallAsync">
+      <summary>キューでの現在のパッケージへのインストールを再開します。</summary>
+      <returns>非同期操作を制御するために使用されるオブジェクト。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemCompletedEventArgs">
+      <summary>StoreQueueItem クラスの Completed イベントのデータを提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemCompletedEventArgs.Status">
+      <summary>ダウンロードおよびインストール キューで完了した項目の状態を取得します。</summary>
+      <returns>キューでの完了した項目の状態。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemExtendedState">
+      <summary>現在のアプリのダウンロードおよびインストール キューに入っている、新規または更新されたパッケージの拡張された状態の情報を表す値を定義します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveAcquiringLicense">
+      <summary>パッケージは、ライセンスを取得しています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveDownloading">
+      <summary>パッケージがダウンロードされます。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveInstalling">
+      <summary>パッケージがインストールされています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActivePending">
+      <summary>パッケージのダウンロードおよびインストールが保留になっています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveRestoringData">
+      <summary>パッケージがデータを復元しています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveStarting">
+      <summary>パッケージのダウンロードおよびインストールが始まっています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Canceled">
+      <summary>パッケージのダウンロードまたはインストールは取り消されました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Completed">
+      <summary>パッケージのダウンロードおよびインストールが完了しました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Error">
+      <summary>パッケージのダウンロードまたはインストールでエラーが発生しました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Paused">
+      <summary>パッケージのダウンロードまたはインストールは一時停止されました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedLowBattery">
+      <summary>バッテリ電力が不足しているため、ダウンロードまたはパッケージのインストールが一時停止されました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedPackagesInUse">
+      <summary>アプリが既に関連パッケージを使用しているために、パッケージのインストールが一時停止されました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedReadyToInstall">
+      <summary>パッケージは一時停止されましたが、インストールの準備をしています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRecommended">
+      <summary>Wi-Fi 接続が推奨されるため、パッケージのダウンロードが一時停止されました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRequired">
+      <summary>Wi-Fi 接続が必要なため、パッケージのダウンロードが一時停止されました。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemKind">
+      <summary>ダウンロードおよびインストール キューの現在のパッケージに対して実行中の操作を説明する値を定義します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Install">
+      <summary>項目が初めてインストールされています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Repair">
+      <summary>項目は修復されています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Update">
+      <summary>項目が更新されます。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemState">
+      <summary>現在のアプリのダウンロードおよびインストール キューに入っている、新規または更新されたパッケージの状態を指定する値を定義します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Active">
+      <summary>パッケージのダウンロードまたはインストールが進行中です。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Canceled">
+      <summary>パッケージのダウンロードまたはインストールは取り消されました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Completed">
+      <summary>パッケージのダウンロードおよびインストールが完了しました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Error">
+      <summary>パッケージのダウンロードまたはインストールでエラーが発生しました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Paused">
+      <summary>パッケージのダウンロードまたはインストールが一時停止されました。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemStatus">
+      <summary>現在のアプリのダウンロードおよびインストール キューに入っている、新規または更新されたパッケージの状態の情報を提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.ExtendedError">
+      <summary>操作がエラーを検出した場合は、ダウンロードまたはインストール要求のエラー コードを取得します。</summary>
+      <returns>要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallExtendedState">
+      <summary>現在のアプリのダウンロードおよびインストール キューに入っている、パッケージの状態に関する追加の情報を指定する値を取得します。</summary>
+      <returns>キューにあるパッケージの状態に関する追加の情報を指定する値。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallState">
+      <summary>現在のアプリのキューに入っている、パッケージの状態の概要を指定する値を取得します。</summary>
+      <returns>キューにあるパッケージの状態の概要を指定する値。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.UpdateStatus">
+      <summary>現在のアプリのキューに入っている、パッケージの更新の状態を指定する値を取得します。</summary>
+      <returns>キューにあるパッケージの更新の状態を指定する値。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewResult">
+      <summary>製品の評価とレビューをする要求の応答データを提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、要求のエラー コードを取得します。</summary>
+      <returns>要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedJsonData">
+      <summary>JSON 形式で示された、評価とレビューの完全な結果データを取得します。 これには、呼び出しが成功しなかった場合、ユーザーがダイアログとエラーの詳細を中止したかどうかを判断する情報が含まれます。</summary>
+      <returns>評価とレビューの要求に対する結果を含む JSON 形式の文字列です。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.Status">
+      <summary>製品の評価とレビューの要求に対する状態を取得します。</summary>
+      <returns>製品の評価とレビューの要求に対する状態。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.WasUpdated">
+      <summary>評価とレビューの要求に、成功した更新プログラムがあるかどうかを示す値を取得します。</summary>
+      <returns>要求が製品の評価とレビューに対して正常に更新を行った場合は true、それ以外の場合は false。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewStatus">
+      <summary>製品の評価とレビューの要求に対する結果の状態を取得します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.CanceledByUser">
+      <summary>要求はユーザーによって取り消されました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Error">
+      <summary>要求でエラーが発生しています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.NetworkError">
+      <summary>要求でネットワーク エラーが発生しています。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Succeeded">
+      <summary>要求は成功しました。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRequestHelper">
+      <summary>Windows SDK に対応する API がまだない操作向けに、Microsoft Store に要求を送信するために使うヘルパー メソッドを提供します。</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreRequestHelper.SendRequestAsync(Windows.Services.Store.StoreContext,System.UInt32,System.String)">
+      <summary>提供されたコンテキストとパラメーターを使って、Windows ストアに指定された要求を送信します。</summary>
+      <param name="context">操作を実行するためユーザーを指定するオブジェクト。 アプリがシングル ユーザー アプリ (つまり、アプリを起動したユーザーのコンテキストでのみ実行される) の場合、StoreContext.GetDefault メソッドを使って、そのユーザーのコンテクストで動作する要求を送信するために使うことができる StoreContext オブジェクトを取得します。</param>
+      <param name="requestKind">Windows ストアに送信する要求を識別する値。</param>
+      <param name="parametersAsJson">要求に渡す引数を含む JSON 形式の文字列。</param>
+      <returns>正常に終了した場合、要求についての状態やエラーを提供する StoreSendRequestResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSendRequestResult">
+      <summary>Microsoft Store に送信される要求の応答データを提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、要求のエラー コードを取得します。</summary>
+      <returns>操作がエラーを検出した場合は、要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.HttpStatusCode">
+      <summary>要求の HTTP 状態コードを取得します。</summary>
+      <returns>要求の HTTP 状態コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.Response">
+      <summary>要求の応答データを取得します。</summary>
+      <returns>要求の応答データ。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSku">
+      <summary>Microsoft Store で製品の Stock Keeping Unit (SKU) の情報を提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Availabilities">
+      <summary>現在の製品 SKU の使用可能状況を取得します。 製品 SKU ごとに、価格が異なる 1 つまたは複数の使用可能状況が存在する可能性があります。</summary>
+      <returns>現在の製品 SKU の使用可能状況を表す StoreAvailability オブジェクトのコレクション。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.BundledSkus">
+      <summary>この製品 SKU にバンドルされているアプリまたはアドオンの Store ID の一覧を取得します。</summary>
+      <returns>この製品 SKU にバンドルされているアプリまたはアドオンの Store ID の一覧。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CollectionData">
+      <summary>ユーザーが SKU を使用する権利を持っている場合、現在の製品 SKU の追加データを取得します。</summary>
+      <returns>ユーザーが SKU を使用する権利を持っている場合、現在の製品 SKU の追加データを提供するオブジェクト。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CustomDeveloperData">
+      <summary>この製品 SKU が表すアドオンに関する、カスタム情報を含むカスタム開発者データ文字列 (タグとも呼ばれます) を取得します。 この文字列は、パートナー センターでのアドオンのプロパティ ページの **カスタム開発者データ** フィールドの値に対応します。</summary>
+      <returns>アドオンのカスタム開発者データ。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Description">
+      <summary>Microsoft Store 登録情報から製品 SKU の説明を取得します。</summary>
+      <returns>Microsoft Store 登録情報からの製品 SKU の説明。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.ExtendedJsonData">
+      <summary>現在の製品 SKU に関する詳細なデータを JSON 形式で Store から取得します。</summary>
+      <returns>Store から現在の製品 SKU に関する詳細なデータを含む JSON 形式の文字列。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Images">
+      <summary>製品 SKU の Microsoft Store 登録情報の画像を取得します。</summary>
+      <returns>製品 SKU の Microsoft Store 登録情報の画像を表す StoreImage オブジェクトのコレクション。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsInUserCollection">
+      <summary>現在のユーザーが製品の現在の製品 SKU を使用する権利を持っているかどうかを示す値を取得します。</summary>
+      <returns>現在のユーザーに現在の製品 SKU を使用する権利がある場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsSubscription">
+      <summary>現在の製品 SKU が繰り返し請求のあるサブスクリプションであるかどうかを示す値を取得します。 サブスクリプションに関する詳細については、「SubscriptionInfo プロパティ」を参照してください。</summary>
+      <returns>現在の製品 SKU が繰り返し請求サブスクリプションである場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsTrial">
+      <summary>現在の製品 SKU が評価版 SKU であるかどうかを示す値を取得します。</summary>
+      <returns>現在の製品 SKU が試用版 SKU の場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Language">
+      <summary>製品 SKU の Microsoft Store 登録情報に含まれているデータの言語を取得します。</summary>
+      <returns>製品 SKU の Microsoft Store 登録情報のデータ。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Price">
+      <summary>この製品 SKU の既定の使用可能状況の価格を取得します。</summary>
+      <returns>この製品 SKU の既定の使用可能状況の価格。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.StoreId">
+      <summary>この製品 SKU の Store ID を取得します。</summary>
+      <returns>この製品 SKU の Store ID。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.SubscriptionInfo">
+      <summary>この製品 SKU が繰り返し請求のあるサブスクリプションの場合、この製品 SKU のサブスクリプション情報を取得します。 この製品 SKU がサブスクリプションかどうかを調べるには、IsSubscription プロパティを使います。</summary>
+      <returns>この製品 SKU のサブスクリプション情報が含まれるオブジェクト。 この製品 SKU が繰り返し請求サブスクリプションでない場合、このプロパティは **null** を返します。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Title">
+      <summary>Microsoft Store 登録情報から製品 SKU のタイトルを取得します。</summary>
+      <returns>Microsoft Store 登録情報から製品 SKU のタイトル。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Videos">
+      <summary>製品 SKU の Microsoft Store 登録情報の動画を取得します。</summary>
+      <returns>製品 SKU の Microsoft Store 登録情報の動画を表す StoreVideo オブジェクトのコレクション。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.GetIsInstalledAsync">
+      <summary>現在のデバイスにこの製品 SKU がインストールされているかどうかを示します。</summary>
+      <returns>正常に完了した場合、この製品 SKU が現在のデバイスにインストールされている場合は true、それ以外の場合は false を返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync">
+      <summary>製品 SKU の購入を要求し、Windows ストア経由でトランザクションを実行するのに使用される UI を表示します。</summary>
+      <returns>正常に終了した場合、購入についての状態やエラー情報を提供する StorePurchaseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>製品 SKU の購入を要求し、Microsoft Store 経由でトランザクションを実行するのに使用される UI を表示します。 このメソッドは、購入時にユーザーに表示される製品名など、Microsoft Store 内の単一の登録情報によって表される製品の大きいカタログ内の特定のオファーに関する追加の詳細を指定するオプションを提供します。</summary>
+      <param name="storePurchaseProperties">購入のときにユーザー表示する製品名を含む、購入要求の追加情報を指定するためのオブジェクト。</param>
+      <returns>正常に終了した場合、購入についての状態やエラー情報を提供する StorePurchaseResult オブジェクトを返す非同期操作。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSubscriptionInfo">
+      <summary>繰り返し請求を持つサブスクリプションを表す製品 SKU のサブスクリプション情報を提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriod">
+      <summary>BillingPeriodUnit プロパティにより指定されたサブスクリプションの請求期間を取得します。</summary>
+      <returns>BillingPeriodUnit プロパティにより指定された単位の請求期間。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriodUnit">
+      <summary>サブスクリプションの請求期間の単位を取得します。</summary>
+      <returns>サブスクリプションの請求期間の単位を指定する値。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.HasTrialPeriod">
+      <summary>サブスクリプションに評価期間が含まれるかどうかを示す値を取得します。</summary>
+      <returns>このサブスクリプションに試用期間が含まれている場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriod">
+      <summary>TrialPeriodUnit プロパティにより指定されたサブスクリプションの試用期間を取得します。 サブスクリプションが試用期間かどうかを調べるには、HasTrialPeriod プロパティを使います。</summary>
+      <returns>TrialPeriodUnit プロパティにより指定された単位の試用期間。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriodUnit">
+      <summary>サブスクリプションの試用期間の単位を取得します。</summary>
+      <returns>月額プラン試用版の期間の単位を指定する値。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageResult">
+      <summary>現在のアプリでパッケージをアンインストールする要求の応答データを提供します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.ExtendedError">
+      <summary>操作がエラーを検出した場合は、要求のエラー コードを取得します。</summary>
+      <returns>要求のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.Status">
+      <summary>パッケージのアンインストール要求の状態を取得します。</summary>
+      <returns>パッケージのアンインストール要求の状態。</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageStatus">
+      <summary>パッケージのアンインストール要求の状態を表す値を定義します。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.CanceledByUser">
+      <summary>アンインストール操作はユーザーによって取り消されました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Error">
+      <summary>不明なエラーのため、アンインストール操作は成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.NetworkError">
+      <summary>ネットワーク接続エラーのため、アンインストール操作は成功しませんでした。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Succeeded">
+      <summary>アンインストール操作が成功しました。</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.UninstallNotApplicable">
+      <summary>アンインストール操作は、指定したパッケージには適用されません。</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreVideo">
+      <summary>Microsoft Store の製品のリストに関連付けられるビデオを表します。</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Caption">
+      <summary>動画のキャプションを取得します。</summary>
+      <returns>動画のキャプション。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Height">
+      <summary>動画の高さを取得します (ピクセル単位)。</summary>
+      <returns>動画の高さ。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.PreviewImage">
+      <summary>動画に表示されるプレビュー画像を取得します。</summary>
+      <returns>動画に表示されるプレビュー画像。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Uri">
+      <summary>動画の URI を取得します。</summary>
+      <returns>動画の URI。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.VideoPurposeTag">
+      <summary>動画のタグを取得します。</summary>
+      <returns>動画のタグ。</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Width">
+      <summary>動画の幅を取得します (ピクセル単位)。</summary>
+      <returns>ビデオの幅 (ピクセル単位)。</returns>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger">
+      <summary>Représente un déclencheur qui active une application de blocage de communication lorsqu'elle est sélectionnée comme application de blocage préférée.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger.#ctor">
+      <summary>Initialise une nouvelle instance de CommunicationBlockingAppSetAsActiveTrigger.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager">
+      <summary>Gestionnaire chargé d'effectuer le suivi des numéros bloqués et d'afficher les interfaces utilisateur bloquantes appropriées.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockingActive">
+      <summary>Obtient une valeur indiquant si le blocage est actuellement activé.</summary>
+      <returns>Détermine si le blocage est activé.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockedNumberAsync(System.String)">
+      <summary>Opération asynchrone qui retourne si un numéro figure ou non sur la liste rouge.</summary>
+      <param name="number">Numéro à vérifier.</param>
+      <returns>Retourne de façon asynchrone si un numéro est bloqué ou non.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedCallsUI">
+      <summary>Affiche la liste des appels bloqués.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedMessagesUI">
+      <summary>Affiche la liste des messages bloqués.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Lance une interface utilisateur pour bloquer les numéros s'il y a une application bloquante active.</summary>
+      <param name="phoneNumbers">Liste de numéros à ajouter à la liste rouge.</param>
+      <returns>Retourne **true** si l'application de blocage active est lancée , sinon, retourne **false**.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowUnblockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Lance l'application pour débloquer les numéros s'il y a une application bloquante active.</summary>
+      <param name="phoneNumbers">Liste des numéros à supprimer de la liste rouge.</param>
+      <returns>Retourne **true** si l'application de blocage active est lancée , sinon, retourne **false**.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager">
+      <summary>Détermine l'application à utiliser comme application bloquante.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.IsCurrentAppActiveBlockingApp">
+      <summary>Indique si l'application actuelle est l'application bloquante active.</summary>
+      <returns>Valeur qui indique si l'application actuelle est l'application bloquante active.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.RequestSetAsActiveBlockingAppAsync">
+      <summary>Appelle une boîte de dialogue pour définir l'application actuelle en tant qu'application de blocage de la communication téléphonique par défaut.</summary>
+      <returns>Indique si l'application a été définie par l'application par défaut d'origine du téléphone.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.ShowCommunicationBlockingSettingsUI">
+      <summary>Affiche l'interface utilisateur permettant de sélectionner l'application bloquante active actuelle.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

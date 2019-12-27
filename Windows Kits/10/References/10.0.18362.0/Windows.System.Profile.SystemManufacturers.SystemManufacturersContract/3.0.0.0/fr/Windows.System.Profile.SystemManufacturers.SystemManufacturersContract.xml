@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.Profile.SystemManufacturers.SystemManufacturersContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.Profile.SystemManufacturers.OemSupportInfo">
+      <summary>Fournit des informations de support sur le fabricant de l'appareil. Cela inclut le nom de l’OEM, l'adresse du site Web et d’autres informations de support.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportAppLink">
+      <summary>Obtient le lien du gestionnaire de protocole vers l’application de support créée par OEM qui sera lancée à la place de l’URL Web.</summary>
+      <returns>Lien du gestionnaire de protocole vers l’application de support créée par OEM.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportLink">
+      <summary>Obtient l’URI du site Web de support du fabricant OEM (Original Equipment Manufacturer).</summary>
+      <returns>URI du site Web de support OEM.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportProvider">
+      <summary>Obtient le nom du fournisseur de support pour l’appareil.</summary>
+      <returns>Nom du fournisseur de support pour l’appareil.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SmbiosInformation">
+      <summary>Autorise l'accès aux propriétés du SMBIOS pour le système.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SmbiosInformation.SerialNumber">
+      <summary>Obtient le numéro de série du SMBIOS pour le système.</summary>
+      <returns>Le numéro de série.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemManufacturersContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo">
+      <summary>Fournit à l'application la possibilité d'extraire des informations liées aux périphériques à partir du périphérique local.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.FriendlyName">
+      <summary>Obtient le nom convivial du périphérique local. Cette valeur peut provenir d'un nom d'ordinateur NetBIOS.</summary>
+      <returns>Nom convivial du périphérique local. La valeur est moins de 1024 caractères.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.OperatingSystem">
+      <summary>Obtient le nom du système d’exploitation du périphérique local.</summary>
+      <returns>Chaîne contenant le système d'exploitaton du périphérique local.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemFirmwareVersion">
+      <summary>Obtient la version du microprogramme système du périphérique local.</summary>
+      <returns>Chaîne contenant la version du microprogramme système du périphérique local.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemHardwareVersion">
+      <summary>Obtient la version matérielle du système du périphérique local.</summary>
+      <returns>Chaîne contenant la version matérielle du système du périphérique local.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemManufacturer">
+      <summary>Obtient le fabricant du système du périphérique local. Utilisez **SystemManufacturer** uniquement si la valeur SystemSku est vide.</summary>
+      <returns>Chaîne contenant le fabricant du système du périphérique local. La valeur est moins de 1024 caractères.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemProductName">
+      <summary>Obtient le nom de produit du système du périphérique local. Utilisez **SystemProductName** uniquement si la valeur SystemSku est vide.</summary>
+      <returns>Chaîne contenant le nom de produit du système du périphérique local. La valeur est moins de 1024 caractères.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemSku">
+      <summary>Obtient le SKU du système du périphérique local.</summary>
+      <returns>Chaîne contenant le SKU du système du périphérique local.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportInfo">
+      <summary>Fournit des informations de support sur l'appareil. Cela inclut l’édition du système local et les informations de support OEM.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalDeviceInfo">
+      <summary>Obtient le périphérique local.</summary>
+      <returns>Valeur SystemSupportDeviceInfo représentant le périphérique local.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalSystemEdition">
+      <summary>Obtient l'édition du système local de l'appareil.</summary>
+      <returns>Chaîne contenant l’édition du système local de l’appareil.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.OemSupportInfo">
+      <summary>Obtient les informations de support OEM pour le système.</summary>
+      <returns>Informations de support OEM pour le système.</returns>
+    </member>
+  </members>
+</doc>

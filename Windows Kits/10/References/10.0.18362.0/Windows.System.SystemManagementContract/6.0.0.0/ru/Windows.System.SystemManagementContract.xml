@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.SystemManagementContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Cortana.CortanaSettings">
+      <summary>Предоставляет доступ к параметрам Кортаны.</summary>
+    </member>
+    <member name="P:Windows.Services.Cortana.CortanaSettings.HasUserConsentToVoiceActivation">
+      <summary>Возвращает значение, указывающее, согласился ли пользователь на активацию функции речи.</summary>
+      <returns>Значение **true**, если пользователь согласился. В противном случае — значение **false**.</returns>
+    </member>
+    <member name="P:Windows.Services.Cortana.CortanaSettings.IsVoiceActivationEnabled">
+      <summary>Получает или задает значение, указывающее, включена ли активация функции речи.</summary>
+      <returns>Значение **true**, если активация функции речи включена. В противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.Services.Cortana.CortanaSettings.GetDefault">
+      <summary>Возвращает параметры Кортаны для текущего пользователя.</summary>
+      <returns>Объект CortanaSettings.</returns>
+    </member>
+    <member name="M:Windows.Services.Cortana.CortanaSettings.IsSupported">
+      <summary>Возвращает значение, указывающее, поддерживаются ли параметры Кортаны.</summary>
+      <returns>Значение **true**, если параметры Кортаны поддерживаются. В противном случае — значение **false**.</returns>
+    </member>
+    <member name="T:Windows.System.AutoUpdateTimeZoneStatus">
+      <summary>Состояние запроса автоматического часового пояса.</summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.Attempted">
+      <summary>Произведена попытка определения часового пояса. </summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.Failed">
+      <summary>Не удалось определить часовой пояс из-за недостатка аппаратной поддержки или разрушительного сбоя.</summary>
+    </member>
+    <member name="F:Windows.System.AutoUpdateTimeZoneStatus.TimedOut">
+      <summary>Время ожидания запроса истекло. </summary>
+    </member>
+    <member name="T:Windows.System.DateTimeSettings">
+      <summary>Задает системные дату и время.</summary>
+    </member>
+    <member name="M:Windows.System.DateTimeSettings.SetSystemDateTime(Windows.Foundation.DateTime)">
+      <summary>Задайте системные дату и время.</summary>
+      <param name="utcDateTime">Значение даты и времени (в формате UTC), которое требуется задать в системных часах.</param>
+    </member>
+    <member name="T:Windows.System.PowerState">
+      <summary>Представляет состояния питания для устройств с фиксированным предназначением.</summary>
+    </member>
+    <member name="F:Windows.System.PowerState.ConnectedStandby">
+      <summary>Представляет состояние ожидания с подключением.</summary>
+    </member>
+    <member name="F:Windows.System.PowerState.SleepS3">
+      <summary>Представляет состояние сна S3.</summary>
+    </member>
+    <member name="T:Windows.System.ProcessLauncher">
+      <summary>Запускает указанный процесс с соответствующими аргументами, если таковые имеются.</summary>
+    </member>
+    <member name="M:Windows.System.ProcessLauncher.RunToCompletionAsync(System.String,System.String)">
+      <summary>Запуск нового процесса. Эта асинхронная функция завершается при завершении запущенного процесса.</summary>
+      <param name="fileName">Имя запускаемого процесса.</param>
+      <param name="args">Аргументы для запуска процесса.</param>
+      <returns>После завершения асинхронной операции он содержит кода выхода из запущенного процесса.</returns>
+    </member>
+    <member name="M:Windows.System.ProcessLauncher.RunToCompletionAsync(System.String,System.String,Windows.System.ProcessLauncherOptions)">
+      <summary>Запуск нового процесса с указанными параметрами. Эта асинхронная функция завершается при завершении запущенного процесса.</summary>
+      <param name="fileName">Имя файла процесса, который нужно запустить.</param>
+      <param name="args">Аргументы указанного процесса.</param>
+      <param name="options">Связанные параметры для запуска процесса.</param>
+      <returns>После завершения асинхронной операции он содержит кода выхода из запущенного процесса.</returns>
+    </member>
+    <member name="T:Windows.System.ProcessLauncherOptions">
+      <summary>Задает параметры, используемые для запуска указанного процесса.</summary>
+    </member>
+    <member name="M:Windows.System.ProcessLauncherOptions.#ctor">
+      <summary>Создает и инициализирует новый экземпляр объекта параметров средства запуска процессов.</summary>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardError">
+      <summary>Определяет, куда направляется стандартная ошибка.</summary>
+      <returns>Поток, куда направляются стандартные ошибки.</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardInput">
+      <summary>Определяет, откуда поступают стандартные входные данные.</summary>
+      <returns>Входной поток для стандартных входных данных.</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.StandardOutput">
+      <summary>Определяет, куда направляются стандартные выходные данные.</summary>
+      <returns>Поток, в который направляются стандартные выходные данные.</returns>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherOptions.WorkingDirectory">
+      <summary>Получает или задает каталог, в котором будет работать средство запуска процесса.</summary>
+      <returns>Рабочая папка.</returns>
+    </member>
+    <member name="T:Windows.System.ProcessLauncherResult">
+      <summary>Представляет возврат запущенного процесса.</summary>
+    </member>
+    <member name="P:Windows.System.ProcessLauncherResult.ExitCode">
+      <summary>Представляет код завершения процесса, который был запущен в ProcessLauncher.</summary>
+      <returns>Код завершения.</returns>
+    </member>
+    <member name="T:Windows.System.ShutdownKind">
+      <summary>Описывает типы завершения работы, которые можно выполнить для устройства, работающего в режиме фиксированного предназначения.</summary>
+    </member>
+    <member name="F:Windows.System.ShutdownKind.Restart">
+      <summary>Завершает работу устройства, работающего в режиме фиксированного предназначения, затем перезапускает устройство.</summary>
+    </member>
+    <member name="F:Windows.System.ShutdownKind.Shutdown">
+      <summary>Завершает работу устройства, работающего в режиме фиксированного предназначения, без перезапуска устройства.</summary>
+    </member>
+    <member name="T:Windows.System.ShutdownManager">
+      <summary>Управляет завершением работы устройств, работающих в режиме фиксированного предназначения.</summary>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.BeginShutdown(Windows.System.ShutdownKind,Windows.Foundation.TimeSpan)">
+      <summary>Завершает работу устройства, работающего в режиме фиксированного предназначения, и при необходимости перезапускает устройство через указанное число секунд.</summary>
+      <param name="shutdownKind">Тип завершения работы, которое необходимо выполнить, с перезапуском или без перезапуска устройства.</param>
+      <param name="timeout">Период ожидания в секундах перед перезагрузкой устройства, если для параметра *shutdownKind* задано значение **ShutdownKind.Restart**.</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.CancelShutdown">
+      <summary>Отменяет уже начатое завершение работы устройства, работающего в режиме фиксированного предназначения.</summary>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.EnterPowerState(Windows.System.PowerState)">
+      <summary>Указывает устройству с фиксированным предназначением перейти в определенное состояние электропитания.</summary>
+      <param name="powerState">Нужное состояние электропитания.</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.EnterPowerState(Windows.System.PowerState,Windows.Foundation.TimeSpan)">
+      <summary>Указывает устройству с фиксированным предназначением перейти в определенное состояние электропитания, а затем вернуться в исходный режим по истечении определенного времени.</summary>
+      <param name="powerState">Нужное состояние электропитания.</param>
+      <param name="wakeUpAfter">Период времени, в течение которого требуется оставаться в указанном состоянии электропитания. После истечения этого времени устройство выйдет из спящего режима.</param>
+    </member>
+    <member name="M:Windows.System.ShutdownManager.IsPowerStateSupported(Windows.System.PowerState)">
+      <summary>Возвращает значение, указывающее, поддерживается ли определенное состояние питания на устройстве с фиксированным предназначением.</summary>
+      <param name="powerState">Состояние питания, которое требуется проверить.</param>
+      <returns>Этот метод возвращает значение TRUE, если состояние питания поддерживается указанным устройством, и значение FALSE в противном случае.</returns>
+    </member>
+    <member name="T:Windows.System.SystemManagementContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.TimeZoneSettings">
+      <summary>Содержит методы и свойства для взаимодействия с часовыми поясами.</summary>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.CanChangeTimeZone">
+      <summary>Проверяет, можно ли изменить часовой пояс.</summary>
+      <returns>Значение true, если часовой пояс можно изменить; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.CurrentTimeZoneDisplayName">
+      <summary>Получает отображаемое имя текущего часового пояса.</summary>
+      <returns>Отображаемое имя текущего часового пояса.</returns>
+    </member>
+    <member name="P:Windows.System.TimeZoneSettings.SupportedTimeZoneDisplayNames">
+      <summary>Получает отображаемые имена всех поддерживаемых часовых поясов.</summary>
+      <returns>Отображаемые имена всех поддерживаемых часовых поясов.</returns>
+    </member>
+    <member name="M:Windows.System.TimeZoneSettings.AutoUpdateTimeZoneAsync(Windows.Foundation.TimeSpan)">
+      <summary>Пытается автоматически определить и задать часовой пояс для устройства встроенного режима.</summary>
+      <param name="timeout">Если время ожидания превышено, этот метод возвращает значение **TimedOut** для параметра AutoUpdateTimeZoneStatus.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.TimeZoneSettings.ChangeTimeZoneByDisplayName(System.String)">
+      <summary>Изменяет часовой пояс, используя отображаемое имя.</summary>
+      <param name="timeZoneDisplayName">Отображаемое имя часового пояса для изменения.</param>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateAttentionRequiredReason">
+      <summary>Причина, почему требуется вмешательство пользователя.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.InsufficientBattery">
+      <summary>Недостаточный заряд аккумулятора, чтобы начать обновление системы.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.InsufficientDiskSpace">
+      <summary>Недостаточно места на диске для загрузки обновлений.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.NetworkRequired">
+      <summary>Сетевое подключение требует внимания.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.None">
+      <summary>Внимание не требуются.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateAttentionRequiredReason.UpdateBlocked">
+      <summary>Невозможно продолжить обновление.</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateItem">
+      <summary>Описывает свойства и состояние пакета обновления.</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Description">
+      <summary>Описывает содержимое SystemUpdateItem.</summary>
+      <returns>Описания содержимого пакета обновления системы.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.DownloadProgress">
+      <summary>Ход выполнения загрузки в процентах.</summary>
+      <returns>Ход выполнения загрузки в процентах.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.ExtendedError">
+      <summary>Расширенные сведения об ошибке, если они доступны.</summary>
+      <returns>Расширенные сведения об ошибке, если они доступны.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Id">
+      <summary>Уникальный идентификатор, который определяет этот элемент обновления.</summary>
+      <returns>Уникальный идентификатор, который определяет этот элемент обновления.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.InstallProgress">
+      <summary>Ход установки в процентах.</summary>
+      <returns>Ход установки в процентах.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Revision">
+      <summary>Номер версии пакета обновления.  Начинается с 1 и увеличивается, если изменения были внесены в исходный пакет обновления.</summary>
+      <returns>Номер версии пакета обновления.  Начинается с 1 и увеличивается, если изменения были внесены в исходный пакет обновления.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.State">
+      <summary>Состояние текущего элемента обновления.</summary>
+      <returns>Состояние текущего элемента обновления.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateItem.Title">
+      <summary>Плитка элемента обновления.</summary>
+      <returns>Плитка элемента обновления.</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateItemState">
+      <summary>Состояние SystemUpdateItem.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Calculating">
+      <summary>Вычисление действий элемента обновления.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Completed">
+      <summary>Обновление завершено.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Downloading">
+      <summary>Обновление загрузки элемента.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Error">
+      <summary>Обнаружена ошибка при попытке обновления — см. ExtendedError</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Initializing">
+      <summary>Обновление инициализации элемента.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Installing">
+      <summary>Обновление установки элемента.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.NotStarted">
+      <summary>Обновление не начато.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.Preparing">
+      <summary>Подготовка элемента обновления.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateItemState.RebootRequired">
+      <summary>Требуется перезагрузка.</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateLastErrorInfo">
+      <summary>Сведения о последнем сбойном обновлении системы.</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.ExtendedError">
+      <summary>Расширенное описание ошибки.</summary>
+      <returns>Расширенное описание ошибки.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.IsInteractive">
+      <summary>Указывает, произошла ли последняя ошибка обновления во время интерактивного обновления.</summary>
+      <returns>Значение **true**, если ошибка произошла во время интерактивного обновления. Значение **false**, если обновление было автоматическим обновлением.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateLastErrorInfo.State">
+      <summary>Состояние **SystemUpdateManager** при последней ошибке.</summary>
+      <returns>Состояние **SystemUpdateManager** при последней ошибке.</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateManager">
+      <summary>**SystemUpdateManager** обеспечивает интерактивное управление обновлениями системы.</summary>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.AttentionRequiredReason">
+      <summary>Причина, почему требуется вмешательство пользователя.</summary>
+      <returns>Состояние **SystemUpdateManager** при последней ошибке.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.DownloadProgress">
+      <summary>Ход выполнения загрузки в процентах.</summary>
+      <returns>Ход выполнения загрузки в процентах.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.ExtendedError">
+      <summary>Расширенные сведения об ошибке, если они доступны.</summary>
+      <returns>Расширенные сведения об ошибке, если они доступны.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.InstallProgress">
+      <summary>Ход установки в процентах.</summary>
+      <returns>Ход установки в процентах.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastErrorInfo">
+      <summary>Сведения о последнем сбойном обновлении системы.</summary>
+      <returns>Сведения о последнем сбойном обновлении системы.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastUpdateCheckTime">
+      <summary>Время последней проверки наличия обновлений.</summary>
+      <returns>Время последней проверки наличия обновлений.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.LastUpdateInstallTime">
+      <summary>Время последней установки обновлений.</summary>
+      <returns>Время последней установки обновлений.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.State">
+      <summary>Текущее состояние **SystemUpdateManager**.</summary>
+      <returns>Текущее состояние **SystemUpdateManager**.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursEnd">
+      <summary>Получает значение времени окончания периода активности пользователя.</summary>
+      <returns>Получает значение времени окончания периода активности пользователя.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursMax">
+      <summary>Получает максимальный разрешенный интервал между **UserActiveHoursStart** и **UserActiveHoursEnd** в часах.</summary>
+      <returns>Получает максимальный разрешенный интервал между **UserActiveHoursStart** и **UserActiveHoursEnd** в часах.</returns>
+    </member>
+    <member name="P:Windows.System.Update.SystemUpdateManager.UserActiveHoursStart">
+      <summary>Получает значение времени начала периода активности пользователя.</summary>
+      <returns>Получает значение времени начала периода активности пользователя.</returns>
+    </member>
+    <member name="E:Windows.System.Update.SystemUpdateManager.StateChanged">
+      <summary>Событие уведомления об изменении свойства State.</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.BlockAutomaticRebootAsync(System.String)">
+      <summary>Блокировка автоматических перезагрузок для обновления до вызова UnblockAutomaticRebootAsync или до принудительной перезагрузки системной политикой.</summary>
+      <param name="lockId">Идентификатор, состоящий из A-Z, a-z, 0-9.  Используйте Guid.NewGuid.ToString() для создания нового случайного идентификатора.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetAutomaticRebootBlockIds">
+      <summary>Получает идентификаторы запросов блокировки автоматической перезагрузки.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetFlightRing">
+      <summary>Получение кольца тестируемой возможности.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.GetUpdateItems">
+      <summary>Получите список ожидающих обновления элементов.</summary>
+      <returns>Список SystemUpdateItem</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.IsSupported">
+      <summary>Указывает, поддерживается ли этот интерфейс API на этом устройстве.</summary>
+      <returns>Значение **true**, если API поддерживается; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.RebootToCompleteInstall">
+      <summary>Перезагружает устройство для завершения установки, если требуется переустановка.</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.SetFlightRing(System.String)">
+      <summary>Устанавливает кольцо тестируемой возможности.</summary>
+      <param name="flightRing">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.StartCancelUpdates">
+      <summary>Запустите отмену обновлений, если выполняются какие-либо обновления.</summary>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.StartInstall(Windows.System.Update.SystemUpdateStartInstallAction)">
+      <summary>Запустите обнаружение, загрузку и установку ожидающих обновлений.</summary>
+      <param name="action">См. SystemUpdateStartInstallAction</param>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.TrySetUserActiveHours(Windows.Foundation.TimeSpan,Windows.Foundation.TimeSpan)">
+      <summary>Попробуйте установить определенный пользователем период активности, во время которого автоматические перезагрузки для обновления не будут разрешены.</summary>
+      <param name="start">Время начала периода активности.</param>
+      <param name="end">Время окончания периода активности.</param>
+      <returns>Возвращает значение true, если был установлен период активности. В противном случае возвращает значение false.</returns>
+    </member>
+    <member name="M:Windows.System.Update.SystemUpdateManager.UnblockAutomaticRebootAsync(System.String)">
+      <summary>Обмена блокировки автоматической перезагрузки для обновления, если она заблокирована.</summary>
+      <param name="lockId">Идентификатор, состоящий из A-Z, a-z, 0-9.  Используйте Guid.NewGuid.ToString() для создания нового случайного идентификатора. Должно соответствовать значению, переданному в BlockAutomaticRebootAsync.</param>
+      <returns>Возвращает значение true, если нет блокировок, оставшихся для автоматической перезагрузки.</returns>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateManagerState">
+      <summary>Перечисление, которое описывает текущее состояние обновлений системы.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.AttentionRequired">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Completed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Detecting">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Downloading">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Error">
+      <summary>Произошла ошибка. Проверьте ExtendedError.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Finalizing">
+      <summary>Обновления системы завершены.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Idle">
+      <summary>SystemUpdateManager неактивен.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.Installing">
+      <summary>Обновления системы устанавливаются.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToDownload">
+      <summary>Обновления системы готовы для загрузки.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToFinalize">
+      <summary>Обновления системы готовы для завершения.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.ReadyToInstall">
+      <summary>Обновления системы готовы для установки.</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateManagerState.RebootRequired">
+      <summary>Для завершения установки требуется перезагрузка.</summary>
+    </member>
+    <member name="T:Windows.System.Update.SystemUpdateStartInstallAction">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateStartInstallAction.AllowReboot">
+      <summary>Скачайте и установите.  Если перезагрузки требуются, перезагружать автоматически сразу же при возникновении необходимости</summary>
+    </member>
+    <member name="F:Windows.System.Update.SystemUpdateStartInstallAction.UpToReboot">
+      <summary>Скачайте и установите.  Ожидание интерактивной перезагрузки для установки или окно автоматической перезагрузки, если требуются перезагрузки.</summary>
+    </member>
+  </members>
+</doc>

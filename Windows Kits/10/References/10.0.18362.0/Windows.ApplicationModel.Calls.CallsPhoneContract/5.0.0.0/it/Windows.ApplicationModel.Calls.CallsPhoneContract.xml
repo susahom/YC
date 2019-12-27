@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Calls.CallsPhoneContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Calls.CallsPhoneContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.CellularDtmfMode">
+      <summary>Indica il tipo di dual tone multi-frequency (DTMF) utilizzata da un telefono cellulare.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.CellularDtmfMode.Burst">
+      <summary>I toni vengono inviati in un modo a picchi.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.CellularDtmfMode.Continuous">
+      <summary>I toni vengono inviati in modo continuo, ovvero il tono deve arrestarsi solo quando il pulsante viene rilasciato.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint">
+      <summary>Endpoint audio disponibili che puoi utilizzare per la composizione di una telefonata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Bluetooth">
+      <summary>Connessione Bluetooth.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Default">
+      <summary>Endpoint audio predefinito per il telefono.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneAudioRoutingEndpoint.Speakerphone">
+      <summary>Telefono viva voce.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallBlocking">
+      <summary>Controlla il blocco dei numeri di telefono quando vengono ricevuti.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallBlocking.BlockPrivateNumbers">
+      <summary>Ottiene o imposta se l'istanza di PhoneCallBlocking deve bloccare i numeri privati.</summary>
+      <returns>**True** se l'istanza di PhoneCallBlocking deve bloccare i numeri privati, **false** in caso contrario.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallBlocking.BlockUnknownNumbers">
+      <summary>Ottiene o imposta se l'istanza di PhoneCallBlocking deve bloccare i numeri sconosciuti.</summary>
+      <returns>**True** se l'istanza di PhoneCallBlocking deve bloccare i numeri sconosciuti, **false** in caso contrario.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallBlocking.SetCallBlockingListAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Imposta l'elenco di numeri che devono essere bloccati.</summary>
+      <param name="phoneNumberList">Un elenco di numeri che devono essere bloccati.</param>
+      <returns>**True** se l'operazione è riuscita; in caso contrario, **false**.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallManager">
+      <summary>Consente di eseguire una query sullo stato della chiamata e di avviare le telefonate.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallManager.IsCallActive">
+      <summary>Ottiene un valore che indica se è in corso una chiamata attiva sul dispositivo.</summary>
+      <returns>True se una chiamata attiva è in corso sul dispositivo; in caso contrario, false.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallManager.IsCallIncoming">
+      <summary>Ottiene un valore che indica se una chiamata è in ingresso sul dispositivo.</summary>
+      <returns>True se una chiamata è in ingresso sul dispositivo; in caso contrario, false.</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneCallManager.CallStateChanged">
+      <summary>Si verifica quando cambia lo stato di base della chiamata del dispositivo.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.RequestStoreAsync">
+      <summary>Recupera una classe PhoneCallStore.</summary>
+      <returns>Oggetto PhoneCallStore che contiene informazioni sulle linee telefoniche disponibili sul dispositivo.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallSettingsUI">
+      <summary>Avvia l'interfaccia utente delle impostazioni di chiamata.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallUI(System.String,System.String)">
+      <summary>Avvia l'interfaccia utente incorporata della telefonata con il numero di telefono e il nome visualizzato specificati.</summary>
+      <param name="phoneNumber">Un numero di telefono.</param>
+      <param name="displayName">Un nome visualizzato.</param>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallMedia">
+      <summary>Tipi di supporto disponibili in una telefonata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.Audio">
+      <summary>La telefonata supporta solo audio.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.AudioAndRealTimeText">
+      <summary>La telefonata supporta audio e SMS in tempo reale.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneCallMedia.AudioAndVideo">
+      <summary>La telefonata supporta audio e video.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallStore">
+      <summary>Rappresenta una raccolta di informazioni sulle linee telefoniche disponibili in un dispositivo.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.GetDefaultLineAsync">
+      <summary>Ottiene l'ID della linea telefonica predefinita corrente.</summary>
+      <returns>Operazione asincrona che restituisce l'ID linea al completamento.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.IsEmergencyPhoneNumberAsync(System.String)">
+      <summary>Verifica se un numero di telefono si connette a un provider di servizi di emergenza noto.</summary>
+      <param name="number">Numero di telefono da controllare per verificare se corrisponde un numero di emergenza noto.</param>
+      <returns>Operazione asincrona che restituisce un booleano al completamento. True indica che il numero di telefono si connette a un provider di servizi di emergenza noto.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallStore.RequestLineWatcher">
+      <summary>Recupera un'istanza della classe PhoneLineWatcher per il dispositivo.</summary>
+      <returns>Un'istanza della classe PhoneLineWatcher per il dispositivo.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilities">
+      <summary>Fornisce l'accesso alle funzionalità di videochiamata per un'istanza PhoneLine.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilities.IsVideoCallingCapable">
+      <summary>Indica se questa istanza PhoneLine supporta le videochiamate.</summary>
+      <returns>**True** se l'istanza PhoneLine supporta le videochiamate; in caso contrario, **false**.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilitiesManager">
+      <summary>Consente a un'applicazione di ottenere PhoneCallVideoCapabilities per un'istanza PhoneLine.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneCallVideoCapabilitiesManager.GetCapabilitiesAsync(System.String)">
+      <summary>Ottiene in modo asincrono le funzionalità video per un'istanza PhoneLine.</summary>
+      <param name="phoneNumber">L'istanza per un'istanza PhoneLine per l'esecuzione della query.</param>
+      <returns>PhoneCallVideoCapabilities per l'istanza PhoneLine della query.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneDialOptions">
+      <summary>Rappresenta le opzioni per la composizione di una chiamata.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneDialOptions.#ctor">
+      <summary>Crea una nuova istanza della classe</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.AudioEndpoint">
+      <summary>Ottiene o imposta l'endpoint audio richiesto per una chiamata.</summary>
+      <returns>Endpoint richiesto per una chiamata.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Contact">
+      <summary>Ottiene o imposta il contatto della rubrica associato a una richiesta di chiamata.</summary>
+      <returns>Contatto della rubrica associato a una richiesta di chiamata.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.ContactPhone">
+      <summary>Ottiene o imposta la proprietà del numero di telefono del contatto della rubrica associato alla richiesta di chiamata.</summary>
+      <returns>Proprietà del numero di telefono del contatto della rubrica associato alla richiesta di chiamata.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.DisplayName">
+      <summary>Ottiene o imposta il nome della parte chiamata. Questo valore viene visualizzato se al numero composto non corrisponde un nome di parte con un numero nella rubrica dell'utente.</summary>
+      <returns>Nome della parte chiamata.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Media">
+      <summary>Ottiene o imposta il tipo o i tipi di supporto richiesti per una chiamata.</summary>
+      <returns>Tipo o tipi di supporto richiesti per una chiamata.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneDialOptions.Number">
+      <summary>Ottiene o imposta il numero di telefono da chiamare.</summary>
+      <returns>Numero di telefono da chiamare.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLine">
+      <summary>Rappresenta una linea telefonica.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.CanDial">
+      <summary>Ottiene un valore booleano che indica se la linea telefonica può essere utilizzata per effettuare chiamate in uscita.</summary>
+      <returns>True se la linea telefonica può effettuare chiamate in uscita; in caso contrario, false.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.CellularDetails">
+      <summary>Ottiene i dettagli per specifici componenti del componente cellulare per l'istanza PhoneLine. Questa proprietà è NULL per le linee telefoniche VoIP.</summary>
+      <returns>Dettagli per l'istanza PhoneLine.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.DisplayColor">
+      <summary>Ottiene il colore di visualizzazione preferito della linea telefonica.</summary>
+      <returns>Colore di visualizzazione preferito della linea telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.DisplayName">
+      <summary>Ottiene il nome descrittivo assegnato all'utente per la linea telefonica.</summary>
+      <returns>Nome descrittivo assegnato all'utente per la linea telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Id">
+      <summary>Ottiene l'ID della linea telefonica. L'ID è persistente tra dispositivi e riavvii.</summary>
+      <returns>ID della linea telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.LineConfiguration">
+      <summary>Ottiene informazioni di configurazione aggiuntive su questa istanza PhoneLine.</summary>
+      <returns>Informazioni aggiuntive per questa linea telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.NetworkName">
+      <summary>Ottiene il nome della rete corrente utilizzata dalla linea telefonica.</summary>
+      <returns>Nome della rete corrente utilizzata dalla linea telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.NetworkState">
+      <summary>Ottiene lo stato di rete corrente della linea telefonica.</summary>
+      <returns>Stato di rete corrente della linea telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.SupportsTile">
+      <summary>Ottiene un valore che indica se la linea telefonica supporta l'aggiunta come riquadro attivo.</summary>
+      <returns>True se la linea telefonica supporta l'aggiunta come riquadro attivo; in caso contrario, false.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Transport">
+      <summary>Ottiene il trasporto per la linea telefonica.</summary>
+      <returns>Trasporto per la linea telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.TransportDeviceId">
+      <summary>ID dispositivo per PhoneLineTransportDevice associato a questo PhoneLine. Null se non è presente alcun dispositivo di trasporto.</summary>
+      <returns>Stringa che rappresenta l'ID dispositivo.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.VideoCallingCapabilities">
+      <summary>Indica se la videochiamata è supportata su questa linea telefonica.</summary>
+      <returns>**True** se la videochiamata è supportata; in caso contrario, **false**.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLine.Voicemail">
+      <summary>Ottiene l'account della segreteria telefonica associato all'istanza PhoneLine.</summary>
+      <returns>Dati dei messaggi della segreteria telefonica.</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLine.LineChanged">
+      <summary>Si verifica quando vengono modificate le proprietà associate all'istanza PhoneLine. Questa situazione può verificarsi quando vengono modificati i metadati, ad esempio il conteggio dei messaggi di segreteria telefonica, lo stato della rete o i dettagli cellulari.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.Dial(System.String,System.String)">
+      <summary>Effettua una telefonata con la linea telefonica. Il chiamante deve essere in primo piano.</summary>
+      <param name="number">Numero da chiamare.</param>
+      <param name="displayName">Nome visualizzato della parte che riceve la telefonata. Questo parametro è facoltativo.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.DialWithOptions(Windows.ApplicationModel.Calls.PhoneDialOptions)">
+      <summary>Effettua una telefonata con la linea telefonica, consentendo al chiamante di specificare opzioni di composizione aggiuntive. Il chiamante deve essere in primo piano.</summary>
+      <param name="options">Opzioni di composizione aggiuntive per la telefonata.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.EnableTextReply(System.Boolean)">
+      <summary>Informa la piattaforma che per questa riga è supportata la funzionalità di risposta con SMS.</summary>
+      <param name="value">True per per abilitare le funzionalità di risposta con SMS, in caso contrario, False.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.FromIdAsync(System.Guid)">
+      <summary>Questo metodo statico recupera in modalità asincrona un oggetto PhoneLine che rappresenta una linea telefonica specifica del dispositivo sulla base dell'ID linea.</summary>
+      <param name="lineId">ID della linea telefonica da recuperare.</param>
+      <returns>Operazione asincrona che restituisce un oggetto PhoneLine che rappresenta una linea telefonica specifica del dispositivo sulla base dell'ID linea.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLine.IsImmediateDialNumberAsync(System.String)">
+      <summary>Verifica se un numero deve essere composto immediatamente dal chiamante senza richiedere all'utente di premere il pulsante di chiamata.</summary>
+      <param name="number">Numero di telefono da verificare per la composizione immediata.</param>
+      <returns>Risposta booleana asincrona. True indica che il numero deve essere composto immediatamente.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineCellularDetails">
+      <summary>Fornisce l'interazione dettagliata con i componenti cellulari di una linea telefonica.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.IsModemOn">
+      <summary>Indica se il modem per questa linea telefonica è attivato.</summary>
+      <returns>True se il modem è attivato; in caso contrario, false.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.RegistrationRejectCode">
+      <summary>Ottiene il codice di rifiuto registrazione per la linea telefonica.</summary>
+      <returns>Codice di rifiuto registrazione per la linea telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.SimSlotIndex">
+      <summary>Ottiene l'indice dello slot della scheda SIM associata a una linea telefonica cellulare.</summary>
+      <returns>Indice dello slot della scheda SIM associata a una linea telefonica cellulare.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.SimState">
+      <summary>Ottiene lo stato della scheda SIM associata a una linea telefonica cellulare.</summary>
+      <returns>Stato della scheda SIM associata a una linea telefonica cellulare.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineCellularDetails.GetNetworkOperatorDisplayText(Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation)">
+      <summary>Recupera la stringa di connessione appropriata da mostrare all'utente.</summary>
+      <param name="location">Posizione in cui è necessaria la stringa di testo. Influisce sul formato della stringa restituita.</param>
+      <returns>Stringa di testo da visualizzare nella posizione specificata.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineConfiguration">
+      <summary>Raccolta di proprietà che forniscono informazioni su una linea telefonica.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineConfiguration.ExtendedProperties">
+      <summary>Ottiene le proprietà estese per questa linea telefonica.</summary>
+      <returns>Una mappa di coppie chiave-valore che contiene le proprietà estese della linea telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineConfiguration.IsVideoCallingEnabled">
+      <summary>Indica se le videochiamate sono abilitate su questa linea telefonica.</summary>
+      <returns>**True** se i profili video sono supportati; in caso contrario, **false**.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation">
+      <summary>Le possibili posizioni per la visualizzazione delle informazioni sull'operatore di rete all'utente.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Default">
+      <summary>Valore predefinito.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Dialer">
+      <summary>Interfaccia utente del chiamante.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.InCallUI">
+      <summary>Interfaccia utente quando l'utente è parte attiva in una chiamata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineNetworkOperatorDisplayTextLocation.Tile">
+      <summary>Riquadro del telefono.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineTransport">
+      <summary>Trasporto utilizzato da una linea telefonica particolare.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.Bluetooth">
+      <summary>La linea telefonica utilizza un trasporto Bluetooth.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.Cellular">
+      <summary>La linea telefonica utilizza un trasporto cellulare.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineTransport.VoipApp">
+      <summary>La linea telefonica utilizza un trasporto Voice over IP.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineTransportDevice">
+      <summary>Rappresenta il dispositivo hardware associato a PhoneLine. Attualmente, supportato solo per l'utilizzo con i dispositivi bluetooth.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.DeviceId">
+      <summary>Ottiene il DeviceID del dispositivo hardware associato a PhoneLineTransportDevice.</summary>
+      <returns>Stringa che rappresenta il DeviceID.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.Transport">
+      <summary>Ottiene PhoneLineTransport per PhoneLineTransportDevice.</summary>
+      <returns>L'istanza PhoneLineTransport.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.Connect">
+      <summary>Tenta di stabilire una connessione con il dispositivo.</summary>
+      <returns>Stato di connessione una volta completata l'operazione. True se connesso, in caso contrario, false.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.ConnectAsync">
+      <summary>Tenta di stabilire in maniera asincrona una connessione con il dispositivo.</summary>
+      <returns>IAsyncOperation che rappresenta lo stato della connessione dopo il completamento dell'operazione. Contiene True se connesso, in caso contrario, false.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.FromId(System.String)">
+      <summary>Ottiene PhoneLineTransportDevice dal DeviceId specifico.</summary>
+      <param name="id">Un DeviceId.</param>
+      <returns>PhoneLineTransportDevice o Null se DeviceId non corrisponde a un dispositivo esistente.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.GetDeviceSelector">
+      <summary>Ottiene una stringa di Sintassi di ricerca avanzata che l'app può passare all'oggetto DeviceInformation.FindAllAsync per cercare PhoneLineTransportDevices.</summary>
+      <returns>Stringa formattata come query AQS.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.GetDeviceSelector(Windows.ApplicationModel.Calls.PhoneLineTransport)">
+      <summary>Ottiene una stringa di Sintassi di ricerca avanzata che l'app può passare a DeviceInformation.FindAllAsync per cercare istanze PhoneLineTransportDevices del tipo specificato.</summary>
+      <param name="transport">Un PhoneLineTransport che specifica il tipo di PhoneLineTransportDevice desiderato.</param>
+      <returns>Stringa formattata come query AQS.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.IsRegistered">
+      <summary>Restituisce lo stato di registrazione dell'app per l'utente attivo.</summary>
+      <returns>True se registrato; in caso contrario, false.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RegisterApp">
+      <summary>Registra l'app con Windows per il PhoneLineTransportDevice associato.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RegisterAppForUser(Windows.System.User)">
+      <summary>Registra l'app con Windows per il PhoneLineTransportDevice associato.</summary>
+      <param name="user">Utente in fase di registrazione.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.RequestAccessAsync">
+      <summary>Utilizzato per richiedere accesso esplicito al PhoneLineTransportDevice.</summary>
+      <returns>Al termine dell'operazione asincrona, restituisce un valore di enumerazione DeviceAccessStatus.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.UnregisterApp">
+      <summary>Annulla la registrazione dell'app con Windows per il PhoneLineTransportDevice associato.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineTransportDevice.UnregisterAppForUser(Windows.System.User)">
+      <summary>Annulla la registrazione dell'app con Windows per il PhoneLineTransportDevice associato.</summary>
+      <param name="user">Utente per cui annullare la registrazione.</param>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcher">
+      <summary>Rappresenta una classe che monitora le linee telefoniche nuove, rimosse o aggiornate sul dispositivo e notifica le modifiche ai listener.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineWatcher.Status">
+      <summary>Ottiene lo stato corrente dell'istanza PhoneLineWatcher.</summary>
+      <returns>Stato corrente di PhoneLineWatcher.</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.EnumerationCompleted">
+      <summary>Si verifica quando l'istanza PhoneLineWatcher completa un'enumerazione di tutte le linee telefoniche sul dispositivo.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineAdded">
+      <summary>Si verifica quando l'istanza PhoneLineWatcher rileva che una nuova linea telefonica sul dispositivo.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineRemoved">
+      <summary>Si verifica quando l'istanza PhoneLineWatcher rileva che una linea telefonica è stata rimossa dal dispositivo.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.LineUpdated">
+      <summary>Si verifica quando l'istanza PhoneLineWatcher rileva che una linea telefonica è stata aggiornata sul dispositivo.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.PhoneLineWatcher.Stopped">
+      <summary>Si verifica quando l'istanza PhoneLineWatcher arresta il monitoraggio del dispositivo per le modifiche alle linee telefoniche.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineWatcher.Start">
+      <summary>Avvia l'ascolto per le modifiche alle linee telefoniche sul dispositivo.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneLineWatcher.Stop">
+      <summary>Interrompe l'ascolto per le modifiche alle linee telefoniche sul dispositivo.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcherEventArgs">
+      <summary>Rappresenta una classe che contiene le informazioni sulla linea telefonica aggiunta, rimossa o aggiornata.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneLineWatcherEventArgs.LineId">
+      <summary>Ottiene l'ID della linea telefonica che ha attivato l'evento LineAdded, LineRemoved o LineUpdated,</summary>
+      <returns>ID della linea telefonica che ha attivato l'evento LineAdded, LineRemoved o LineUpdated,</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus">
+      <summary>Stato corrente di PhoneLineWatcher.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Created">
+      <summary>La classe del controllo linea telefonica viene creata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.EnumerationCompleted">
+      <summary>La classe del controllo linea telefonica ha appena completato un'enumerazione delle linee telefoniche sul dispositivo.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Started">
+      <summary>La classe del controllo linea telefonica viene avviata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneLineWatcherStatus.Stopped">
+      <summary>La classe del controllo linea telefonica viene arrestata.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneNetworkState">
+      <summary>Descrive lo stato di registrazione della rete di una linea telefonica.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Denied">
+      <summary>Impossibile registrare la linea telefonica con una rete disponibile.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Deregistered">
+      <summary>La registrazione della linea telefonica è stata annullata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Home">
+      <summary>La linea telefonica è registrata ed è nella rete domestica del gestore.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.NoSignal">
+      <summary>Impossibile rilevare un segnale sulla linea telefonica o la linea telefonica è limitata alle sole chiamate di emergenza.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.RoamingDomestic">
+      <summary>La linea telefonica è registrata ed è in roaming nazionale nella rete di un altro gestore.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.RoamingInternational">
+      <summary>La linea telefonica è registrata ed è in roaming internazionale nella rete di un altro gestore.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Searching">
+      <summary>Ricerca di una rete per la linea telefonica.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneNetworkState.Unknown">
+      <summary>Lo stato di registrazione della linea telefonica è sconosciuto.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneSimState">
+      <summary>Stato corrente della scheda SIM per una linea telefonica cellulare.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Disabled">
+      <summary>La scheda SIM è disabilitata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Invalid">
+      <summary>La scheda SIM non è valida.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.NotInserted">
+      <summary>Nessuna scheda SIM è inserita nel telefono.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinLocked">
+      <summary>La scheda SIM è bloccata e richiede un codice PIN per sbloccarla.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinNotRequired">
+      <summary>La scheda SIM non richiede un codice PIN.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PinUnlocked">
+      <summary>La scheda SIM è sbloccata, ma richiede un codice PIN per sbloccarla nuovamente se viene bloccata.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.PukLocked">
+      <summary>La scheda SIM è bloccata a causa di troppi tentativi non corretti di immissione del PIN e richiede il codice PUK (Personal Unlocking Key) per sbloccarla.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneSimState.Unknown">
+      <summary>Lo stato della scheda SIM è sconosciuto.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneVoicemail">
+      <summary>Rappresenta i dati della segreteria telefonica associati all'istanza PhoneLine.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.MessageCount">
+      <summary>Ottiene il conteggio corrente dei messaggi della segreteria telefonica associati a un'istanza PhoneLine. Un valore pari a -1 indica un numero "illimitato" di messaggi.</summary>
+      <returns>Numero corrente di messaggi della segreteria telefonica.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.Number">
+      <summary>Ottiene il numero di accesso per la segreteria telefonica associato all'istanza PhoneLine. L'utente del telefono può chiamare il numero di accesso per accedere all'account della segreteria telefonica.</summary>
+      <returns>Il numero di accesso.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.PhoneVoicemail.Type">
+      <summary>Ottiene il tipo della segreteria telefonica associato all'istanza PhoneLine.</summary>
+      <returns>Tipo di account della segreteria telefonica.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.PhoneVoicemail.DialVoicemailAsync">
+      <summary>Effettua una chiamata al numero di accesso della segreteria telefonica.</summary>
+      <returns>Un'operazione di composizione asincrona.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.PhoneVoicemailType">
+      <summary>Tipo di servizio di segreteria telefonica associato a un'istanza PhoneLine.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.None">
+      <summary>La linea telefonica non dispone di segreteria telefonica.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.Traditional">
+      <summary>La linea telefonica dispone di segreteria telefonica tradizionale.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.PhoneVoicemailType.Visual">
+      <summary>La linea telefonica dispone di segreteria telefonica visiva.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin">
+      <summary>Raccolta di informazioni sull'origine di una telefonata.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.#ctor">
+      <summary>Crea un nuovo oggetto PhoneCallOrigin.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.Category">
+      <summary>Ottiene o imposta la categoria del chiamante.</summary>
+      <returns>Categoria del chiamante. Alcuni esempi sono "l'agente immobiliare" o "il servizio finanziario".</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.CategoryDescription">
+      <summary>Ottiene o imposta la descrizione dell'oggetto Category del chiamante.</summary>
+      <returns>Descrizione dell'oggetto Category specifico del chiamante.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.DisplayName">
+      <summary>Ottiene o imposta il nome visualizzato per l'oggetto PhoneCallOriginManager.</summary>
+      <returns>Nome visualizzato per il gestore dell'origine della telefonata.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.DisplayPicture">
+      <summary>Ottiene o imposta l'immagine visualizzata per l'oggetto PhoneCallOriginManager.</summary>
+      <returns>Immagine visualizzata per l'origine del chiamante. Questa immagine viene visualizzata nell'interfaccia utente della chiamata in ingresso.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin.Location">
+      <summary>Ottiene o imposta la posizione del chiamante.</summary>
+      <returns>Posizione del chiamante.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager">
+      <summary>Controlla quale applicazione è responsabile per la determinazione dell'origine delle chiamate in ingresso e imposta le informazioni PhoneCallOrigin.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.IsCurrentAppActiveCallOriginApp">
+      <summary>Verifica per vedere se l'applicazione corrente è impostata come applicazione predefinita di origine della chiamata.</summary>
+      <returns>**True** se l'applicazione corrente è l'applicazione predefinita di origine della chiamata; in caso contrario, **false**.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.IsSupported">
+      <summary>Restituisce True se le API PhoneCallOriginManager sono supportate e False se non sono supportate.</summary>
+      <returns>Il valore booleano che indica se le API PhoneCallOriginManager sono supportate o meno.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.RequestSetAsActiveCallOriginAppAsync">
+      <summary>Chiama una finestra di dialogo per impostare l'applicazione come applicazione predefinita di origine.</summary>
+      <returns>Indica se l'applicazione è stata impostata come applicazione di origine predefinita.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.SetCallOrigin(System.Guid,Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin)">
+      <summary>Imposta l'origine della chiamata quando arriva una telefonata.</summary>
+      <param name="requestId">Identificatore univoco di questa telefonata. Questo valore viene recuperato dal *targetId* di PhoneCallOriginDataRequestTriggerDetails</param>
+      <param name="callOrigin">Informazioni sulla chiamata in arrivo.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.Provider.PhoneCallOriginManager.ShowPhoneCallOriginSettingsUI">
+      <summary>Apre l'interfaccia che consente all'utente di selezionare l'applicazione di origine della chiamata.</summary>
+    </member>
+  </members>
+</doc>

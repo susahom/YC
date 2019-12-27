@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Calls.CallsVoipContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Calls.CallAnswerEventArgs">
+      <summary>Поддерживает событие AnswerRequested класса VoipPhoneCall.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.CallAnswerEventArgs.AcceptedMedia">
+      <summary>Получает типы мультимедиа, выбранные пользователем при ответе на вызов.</summary>
+      <returns>Типы мультимедиа, выбранные пользователем при ответе на вызов.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.CallRejectEventArgs">
+      <summary>Поддерживает событие RejectRequested класса VoipPhoneCall.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.CallRejectEventArgs.RejectReason">
+      <summary>Получает причину отклонения входящего вызова.</summary>
+      <returns>Причина отклонения входящего вызова.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.CallStateChangeEventArgs">
+      <summary>Поддерживает события EndRequested, HoldRequested и ResumeRequested класса VoipPhoneCall.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.CallStateChangeEventArgs.State">
+      <summary>Получает текущее состояние вызова VoIP.</summary>
+      <returns>Текущее состояние вызова VoIP.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.CallsVoipContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.MuteChangeEventArgs">
+      <summary>Поддерживает события NotifyMuted и NotifyUnmuted.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.MuteChangeEventArgs.Muted">
+      <summary>Получает значение, которое указывает, отключен ли звук вызова в данный момент.</summary>
+      <returns>Указывает, отключен ли звук вызова в данный момент.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.VoipCallCoordinator">
+      <summary>Позволяет приложению управлять вызовами VoIP.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.VoipCallCoordinator.MuteStateChanged">
+      <summary>Вызывает при изменении состояния отключения звука для телефонного вызова.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.CancelUpgrade(System.Guid)">
+      <summary>Отменяет обновление до VoIP-вызова.</summary>
+      <param name="callUpgradeGuid">GUID вызова VoIP.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.GetDefault">
+      <summary>Извлекает экземпляр по умолчанию класса VoipCallCoordinator.</summary>
+      <returns>Координатор вызова по умолчанию.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.NotifyMuted">
+      <summary>Информирует систему, что пользователь отключил звук вызова с помощью пользовательского интерфейса приложения VoIP.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.NotifyUnmuted">
+      <summary>Информирует систему, что пользователь снова включил звук вызова с помощью пользовательского интерфейса приложения VoIP.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.RequestIncomingUpgradeToVideoCall(System.String,System.String,System.String,Windows.Foundation.Uri,System.String,Windows.Foundation.Uri,System.String,Windows.Foundation.Uri,Windows.Foundation.TimeSpan)">
+      <summary>Отправляет системе запрос о новом входящем видеовызове, который заменит существующий вызов.</summary>
+      <param name="context">Строка, которая передается связанному приложению переднего плана как прямая ссылка. Это может быть имя контакта или другие данные, которые можно использовать, чтобы быстрее заполнить пользовательский интерфейс приложения. Максимальная длина равна 128 символам. Этот параметр должен иметь значение, отличное от NULL, и должен ссылаться на задачу, определенную в файле манифеста приложения.</param>
+      <param name="contactName">Имя контакта вызывающего абонента для отображения в пользовательском интерфейсе входящего вызова. Максимальная длина равна 128 символам.</param>
+      <param name="contactNumber">Номер телефона вызывающего абонента для отображения в пользовательском интерфейсе входящего вызова. Максимальная длина равна 128 символам.</param>
+      <param name="contactImage">URI файла изображения, связанного с вызывающим абонентом, для отображения в пользовательском интерфейсе входящего вызова. Файл должен иметь тип PNG или JPG. Максимальный размер файла равен 1 МБ.</param>
+      <param name="serviceName">Имя службы или приложения VoIP. Максимальная длина равна 128 символам.</param>
+      <param name="brandingImage">URI файла изображения, представляющего собой логотип или значок службы либо приложения VoIP для отображения в пользовательском интерфейсе входящего вызова. Файл должен иметь тип PNG или JPG. Максимальный размер файла равен 128 КБ.</param>
+      <param name="callDetails">Строка, указывающая, от чьего имени выполняется вызов. Максимальная длина равна 128 символам.</param>
+      <param name="ringtone">URI звукового файла, содержащего мелодию вызова для этого вызова. Файл должен иметь тип WMA или MP3. Максимальный размер файла равен 1 МБ.</param>
+      <param name="ringTimeout">Время в секундах, в течение которого система должна ожидать ответа или пропуска вызова пользователем, прежде чем отклонить вызов. Допустимый диапазон — от 5 до 120 секунд. Значение по умолчанию — 30 секунд.</param>
+      <returns>Объект, представляющий новый входящий вызов.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.RequestNewAppInitiatedCall(System.String,System.String,System.String,System.String,Windows.ApplicationModel.Calls.VoipPhoneCallMedia)">
+      <summary>Запрашивает объект нового вызова в системе. Вызовите этот метод из приложения по протоколу VoIP, чтобы сообщить системе о наличии нового входящий вызов и что вы хотите разместить уведомления о входящего вызова для новых вызова.</summary>
+      <param name="context">Строка, которая передается связанному приложению переднего плана как прямая ссылка. Максимальная длина равна 128 символам. Этот параметр не должен иметь значение null.</param>
+      <param name="contactName">Имя контакта вызывающего абонента для отображения в пользовательском интерфейсе входящего вызова. Максимальная длина равна 128 символам.</param>
+      <param name="contactNumber">Номер телефона вызывающего абонента для отображения в пользовательском интерфейсе входящего вызова. Максимальная длина равна 128 символам.</param>
+      <param name="serviceName">Имя службы или приложения VoIP. Максимальная длина равна 128 символам.</param>
+      <param name="media">Типы мультимедиа нового входящего вызова (аудио и видео или только аудио). Передайте **Audio|Video** если пользователь должен иметь возможность отвечать на вызов с исходящим видео. Это предполагает, что устройство пользователя содержит камеры, доступные для приложения для использования во время поступления вызова. Если это не так, или пользователю следует использовать только звук, передайте **Audio**.</param>
+      <returns>Объект, представляющий новый инициированный вызов.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.RequestNewIncomingCall(System.String,System.String,System.String,Windows.Foundation.Uri,System.String,Windows.Foundation.Uri,System.String,Windows.Foundation.Uri,Windows.ApplicationModel.Calls.VoipPhoneCallMedia,Windows.Foundation.TimeSpan)">
+      <summary>Отправляет системе запрос о новом входящем вызове.</summary>
+      <param name="context">Строка, которая передается связанному приложению переднего плана как прямая ссылка. Максимальная длина равна 128 символам. Этот параметр не должен иметь значение null.</param>
+      <param name="contactName">Имя контакта вызывающего абонента для отображения в пользовательском интерфейсе входящего вызова. Максимальная длина равна 128 символам.</param>
+      <param name="contactNumber">Номер телефона вызывающего абонента для отображения в пользовательском интерфейсе входящего вызова. Максимальная длина равна 128 символам.</param>
+      <param name="contactImage">URI файла изображения, связанного с вызывающим абонентом, для отображения в пользовательском интерфейсе входящего вызова. Файл должен иметь тип PNG или JPG. Максимальный размер файла равен 1 МБ.</param>
+      <param name="serviceName">Имя службы или приложения VoIP. Максимальная длина равна 128 символам.</param>
+      <param name="brandingImage">URI файла изображения, представляющего собой логотип или значок службы либо приложения VoIP для отображения в пользовательском интерфейсе входящего вызова. Файл должен иметь тип PNG или JPG. Максимальный размер файла равен 128 КБ.</param>
+      <param name="callDetails">Строка, указывающая, от чьего имени выполняется вызов. Максимальная длина равна 128 символам.</param>
+      <param name="ringtone">URI звукового файла, содержащего мелодию вызова для этого вызова. Файл должен иметь тип WMA или MP3. Максимальный размер файла равен 1 МБ.</param>
+      <param name="media">Типы мультимедиа нового входящего вызова (аудио и видео или только аудио). Передайте **Audio|Video** если пользователь должен иметь возможность отвечать на вызов с исходящим видео. Это предполагает, что устройство пользователя содержит камеры, доступные для приложения для использования во время поступления вызова. Если это не так, или пользователю следует использовать только звук, передайте **Audio**.</param>
+      <param name="ringTimeout">Время в секундах, в течение которого система должна ожидать ответа или пропуска вызова пользователем, прежде чем отклонить вызов. Допустимый диапазон — от 5 до 120 секунд. Значение по умолчанию — 30 секунд.</param>
+      <returns>Объект, представляющий новый входящий вызов.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.RequestNewIncomingCall(System.String,System.String,System.String,Windows.Foundation.Uri,System.String,Windows.Foundation.Uri,System.String,Windows.Foundation.Uri,Windows.ApplicationModel.Calls.VoipPhoneCallMedia,Windows.Foundation.TimeSpan,System.String)">
+      <summary>Отправляет системе запрос о новом входящем вызове.</summary>
+      <param name="context">Строка, которая передается связанному приложению переднего плана как прямая ссылка. Максимальная длина равна 128 символам. Этот параметр не должен иметь значение null.</param>
+      <param name="contactName">Имя контакта вызывающего абонента для отображения в пользовательском интерфейсе входящего вызова. Максимальная длина равна 128 символам.</param>
+      <param name="contactNumber">Номер телефона вызывающего абонента для отображения в пользовательском интерфейсе входящего вызова. Максимальная длина равна 128 символам.</param>
+      <param name="contactImage">URI файла изображения, связанного с вызывающим абонентом, для отображения в пользовательском интерфейсе входящего вызова. Файл должен иметь тип PNG или JPG. Максимальный размер файла равен 1 МБ.</param>
+      <param name="serviceName">Имя службы или приложения VoIP. Максимальная длина равна 128 символам.</param>
+      <param name="brandingImage">URI файла изображения, представляющего собой логотип или значок службы либо приложения VoIP для отображения в пользовательском интерфейсе входящего вызова. Файл должен иметь тип PNG или JPG. Максимальный размер файла равен 128 КБ.</param>
+      <param name="callDetails">Строка, указывающая, от чьего имени выполняется вызов. Максимальная длина равна 128 символам.</param>
+      <param name="ringtone">URI звукового файла, содержащего мелодию вызова для этого вызова. Файл должен иметь тип WMA или MP3. Максимальный размер файла равен 1 МБ.</param>
+      <param name="media">Типы мультимедиа нового входящего вызова (аудио и видео или только аудио). Передайте **Audio|Video** если пользователь должен иметь возможность отвечать на вызов с исходящим видео. Это предполагает, что устройство пользователя содержит камеры, доступные для приложения для использования во время поступления вызова. Если это не так, или пользователю следует использовать только звук, передайте **Audio**.</param>
+      <param name="ringTimeout">Время в секундах, в течение которого система должна ожидать ответа или пропуска вызова пользователем, прежде чем отклонить вызов. Допустимый диапазон — от 5 до 120 секунд. Значение по умолчанию — 30 секунд.</param>
+      <param name="contactRemoteId">Удаленный идентификатор контакта для вызывающего абонента. Максимальная длина равна 256 символам.</param>
+      <returns>Объект, представляющий новый входящий вызов.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.RequestNewOutgoingCall(System.String,System.String,System.String,Windows.ApplicationModel.Calls.VoipPhoneCallMedia)">
+      <summary>Отправляет системе запрос о новом исходящем вызове.</summary>
+      <param name="context">Строка, которая передается связанному приложению переднего плана как прямая ссылка. Максимальная длина равна 128 символам. Этот параметр не должен иметь значение null.</param>
+      <param name="contactName">Имя или идентификатор вызывающего абонента, отображаемые в свернутом пользовательском интерфейсе вызова телефона. Максимальная длина равна 128 символам.</param>
+      <param name="serviceName">Имя службы VoIP, отображаемое в свернутом пользовательском интерфейсе вызова телефона. Максимальная длина равна 128 символам.</param>
+      <param name="media">Типы мультимедиа нового исходящего вызова (аудио и видео или только аудио). Передайте **Audio|Video** если пользователь решает начать вызов с исходящим видео. Это предполагает, что устройство пользователя содержит камеры, доступные для приложения для использования во время вызова. Если это не так, или пользователю следует использовать только звук, передайте **Audio**.</param>
+      <returns>Объект, представляющий новый исходящий вызов.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.RequestOutgoingUpgradeToVideoCall(System.Guid,System.String,System.String,System.String)">
+      <summary>Отправляет системе запрос для создания исходящего видеовызова, который заменит существующий вызов по сотовой сети.</summary>
+      <param name="callUpgradeGuid">GUID вызова.</param>
+      <param name="context">Строка, которая передается связанному приложению переднего плана как прямая ссылка. Это может быть имя контакта или другие данные, которые можно использовать, чтобы быстрее заполнить пользовательский интерфейс приложения. Максимальная длина равна 128 символам. Этот параметр должен иметь значение, отличное от NULL, и должен ссылаться на задачу, определенную в файле манифеста приложения.</param>
+      <param name="contactName">Имя или идентификатор вызывающего абонента, отображаемые в свернутом пользовательском интерфейсе вызова телефона. Максимальная длина равна 128 символам.</param>
+      <param name="serviceName">Имя службы VoIP, отображаемое в свернутом пользовательском интерфейсе вызова телефона. Максимальная длина равна 128 символам.</param>
+      <returns>Объект, представляющий новый исходящий вызов.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.ReserveCallResourcesAsync">
+      <summary>Резервирует ресурсы процессора и памяти, необходимые для VoIP-вызова. Этот метод следует использовать только в модели приложения с одним процессом.</summary>
+      <returns>Результат резервирования.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.ReserveCallResourcesAsync(System.String)">
+      <summary>Резервирует ресурсы процессора и памяти, необходимые для VoIP-вызова. Этот метод следует использовать только в модели приложения с двумя процессами.</summary>
+      <param name="taskEntryPoint">Имя определенного приложением класса, выполняющего работу фоновой задачи. Дополнительную информацию см. в описании TaskEntryPoint.</param>
+      <returns>Результат резервирования.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.SetupNewAcceptedCall(System.String,System.String,System.String,System.String,Windows.ApplicationModel.Calls.VoipPhoneCallMedia)">
+      <summary>Настройте новый принятый вызов.</summary>
+      <param name="context">Информация, которая передается в основной процесс пользовательского интерфейса приложения VoIP. Это может быть имя контакта или другие данные, которые помогают быстрее отображать пользовательский интерфейс.</param>
+      <param name="contactName">Имя или идентификатор вызывающей стороны.</param>
+      <param name="contactNumber">Номер телефона (если применимо) вызывающей стороны.</param>
+      <param name="serviceName">Имя службы или приложения.</param>
+      <param name="media">Типы мультимедиа нового входящего вызова (аудио и видео или только аудио). Передайте **Audio|Video**если следует ответить на вызов с исходящим видео. Это предполагает, что устройство пользователя содержит камеры, доступные для приложения для использования во время ответа на вызов. Если это не так, или пользователю следует использовать только звук, передайте **Audio**.</param>
+      <returns>Возвращает вызов как объект VoipPhoneCall.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipCallCoordinator.TerminateCellularCall(System.Guid)">
+      <summary>Завершает вызов по сотовой сети для обновления до VoIP-вызова.</summary>
+      <param name="callUpgradeGuid">GUID вызова VoIP.</param>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.VoipPhoneCall">
+      <summary>Представляет телефонный вызов VoIP.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.VoipPhoneCall.CallMedia">
+      <summary>Получает типы мультимедиа, используемые вызовом.</summary>
+      <returns>Типы мультимедиа, используемые вызовом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.VoipPhoneCall.ContactName">
+      <summary>Получает или задает имя контакта, связанного с VoIP-вызовом.</summary>
+      <returns>Имя контакта, связанного с VoIP-вызовом.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Calls.VoipPhoneCall.StartTime">
+      <summary>Получает или задает время начала, связанное с VoIP-вызовом.</summary>
+      <returns>Время начала, связанное с вызовом.</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.VoipPhoneCall.AnswerRequested">
+      <summary>Вызывается, когда пользователь принимает входящий вызов.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.VoipPhoneCall.EndRequested">
+      <summary>Вызывается, чтобы оповестить приложение VoIP, что вызов должен быть завершен.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.VoipPhoneCall.HoldRequested">
+      <summary>Вызывается, чтобы оповестить приложение VoIP, что вызов необходимо поместить на удержание.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.VoipPhoneCall.RejectRequested">
+      <summary>Возникает, когда вызов был отклонен.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Calls.VoipPhoneCall.ResumeRequested">
+      <summary>Возникает, чтобы указать, что удерживаемый вызов VoIP можно снова сделать активным.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipPhoneCall.NotifyCallAccepted(Windows.ApplicationModel.Calls.VoipPhoneCallMedia)">
+      <summary>Информирует систему, что вызов VoIP принят.</summary>
+      <param name="media">Типы мультимедиа нового входящего вызова (аудио и видео или только аудио). Передайте **Audio|Video** если пользователь решает ответить на звонок с исходящих видео, или **Audio** если ответ производится только с аудио.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipPhoneCall.NotifyCallActive">
+      <summary>Информирует систему, что имеется активный вызов VoIP.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipPhoneCall.NotifyCallEnded">
+      <summary>Информирует систему, что вызов закончен.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipPhoneCall.NotifyCallHeld">
+      <summary>Информирует систему, что вызов удерживается.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipPhoneCall.NotifyCallReady">
+      <summary>При переходе от сотового вызова к видеовызову уведомляет систему о том, что приложение завершило настройку аудио- и видеопотоков для видеовызова, чтобы система могла завершить существующий сотовый вызов.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Calls.VoipPhoneCall.TryShowAppUI">
+      <summary>Выводит пользовательский интерфейс приложения VOIP на передний план после принятия вызова.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.VoipPhoneCallMedia">
+      <summary>Определяет типы мультимедиа, используемые VoIP-вызовом.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallMedia.Audio">
+      <summary>В вызове используется аудио.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallMedia.None">
+      <summary>В вызове не используется мультимедиа.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallMedia.Video">
+      <summary>В вызове используется видео.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.VoipPhoneCallRejectReason">
+      <summary>Указывает причину, по которой входящий вызов был отклонен.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallRejectReason.EmergencyCallExists">
+      <summary>Выполняется экстренный вызов.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallRejectReason.InvalidCallState">
+      <summary>Недопустимое состояние вызова.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallRejectReason.OtherIncomingCall">
+      <summary>Другой входящий вызов был принят.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallRejectReason.TimedOut">
+      <summary>Время ожидания входящего вызова истекло.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallRejectReason.UserIgnored">
+      <summary>Пользователь нажал кнопку, чтобы пропустить вызов.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.VoipPhoneCallResourceReservationStatus">
+      <summary>Отображает результат попытки зарезервировать ресурсы VoIP.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallResourceReservationStatus.ResourcesNotAvailable">
+      <summary>Ресурсы, не были зарезервированы, поскольку они недоступны.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallResourceReservationStatus.Success">
+      <summary>Ресурсы были зарезервированы.</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Calls.VoipPhoneCallState">
+      <summary>Задает состояние VoIP-вызова.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallState.Active">
+      <summary>Вызов активен.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallState.Ended">
+      <summary>Вызов завершен.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallState.Held">
+      <summary>Вызов на удержании.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallState.Incoming">
+      <summary>Вызов поступил, но еще не активен.</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Calls.VoipPhoneCallState.Outgoing">
+      <summary>Вызов исходит, но еще не активен.</summary>
+    </member>
+  </members>
+</doc>

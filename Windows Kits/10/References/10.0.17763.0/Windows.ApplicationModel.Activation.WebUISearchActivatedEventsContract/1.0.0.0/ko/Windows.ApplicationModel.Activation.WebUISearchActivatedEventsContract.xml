@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.UI.WebUI.WebUISearchActivatedEventArgs">
+      <summary>사용자가 검색 참에서 앱을 검색하고 앱이 화면의 기본 앱이 아닐 때 발생하는 활성화된 이벤트에 대한 정보를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.ActivatedOperation">
+      <summary>응용 프로그램에서 활성화한 작업을 가져옵니다.</summary>
+      <returns>활성화 작업입니다.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.CurrentlyShownApplicationViewId">
+      <summary>현재 표시된 앱 뷰의 식별자를 가져옵니다.</summary>
+      <returns>현재 표시된 앱 뷰의 식별자입니다.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Kind">
+      <summary>활성화 유형을 가져옵니다.</summary>
+      <returns>activationKind.search 열거형 값입니다.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Language">
+      <summary>현재 사용자의 텍스트 입력 장치에 연결된 언어를 식별하는 IETF(Internet Engineering Task Force) 언어 태그(BCP 47 표준)를 가져옵니다.</summary>
+      <returns>IETF(Internet Engineering Task Force) BCP 47 표준 언어 태그입니다.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.LinguisticDetails">
+      <summary>사용자가 IME(입력기)를 통해 입력하는 쿼리 텍스트에 대한 정보를 제공하는 SearchPaneQueryLinguisticDetails 개체를 가져옵니다.</summary>
+      <returns>쿼리 텍스트에 대한 정보를 제공하는 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.PreviousExecutionState">
+      <summary>응용 프로그램을 활성화하기 전 응용 프로그램의 실행 상태를 가져옵니다.</summary>
+      <returns>열거형 값 중 하나입니다.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.QueryText">
+      <summary>사용자가 앱을 검색하는 데 필요한 텍스트를 가져옵니다. 사용자가 검색 창의 검색 상자에 입력한 텍스트입니다.</summary>
+      <returns>검색할 텍스트입니다.</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.SplashScreen">
+      <summary>시작 화면에서 활성화된 응용 프로그램으로 전환에 대한 정보를 제공하는 시작 화면 개체를 가져옵니다.</summary>
+      <returns>시작 화면 정보를 제공하는 개체입니다.</returns>
+    </member>
+  </members>
+</doc>

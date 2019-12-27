@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Activation.WebUISearchActivatedEventsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.UI.WebUI.WebUISearchActivatedEventArgs">
+      <summary>提供已啟動事件的相關資訊，該事件會在使用者從 [搜尋] 快速鍵搜尋應用程式，而應用程式不是畫面上的主應用程式時引發。</summary>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.ActivatedOperation">
+      <summary>取得應用程式啟動作業。</summary>
+      <returns>啟用作業。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.CurrentlyShownApplicationViewId">
+      <summary>取得目前顯示的應用程式檢視之識別項。</summary>
+      <returns>目前顯示的應用程式檢視之識別項。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Kind">
+      <summary>取得啟用類型。</summary>
+      <returns>activationKind.search 列舉值。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.Language">
+      <summary>取得網際網路工程任務推動小組 (IETF) 語言標記 (BCP 47 標準)，可識別目前與使用者文字輸入裝置相關聯的語言。</summary>
+      <returns>網際網路工程任務推動小組 (IETF) BCP 47 標準語言標記。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.LinguisticDetails">
+      <summary>取得 SearchPaneQueryLinguisticDetails 物件，該物件會提供使用者透過輸入法 (IME) 所輸入之查詢文字的相關資訊。</summary>
+      <returns>提供查詢文字相關資訊的物件。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.PreviousExecutionState">
+      <summary>取得應用程式在啟動之前的執行狀態。</summary>
+      <returns>其中一個列舉值。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.QueryText">
+      <summary>取得使用者想要應用程式搜尋的文字。 使用者已將這段文字輸入到搜尋窗格的搜尋方塊中。</summary>
+      <returns>要搜尋的文字。</returns>
+    </member>
+    <member name="P:Windows.UI.WebUI.WebUISearchActivatedEventArgs.SplashScreen">
+      <summary>取得啟動顯示畫面物件，這個物件會提供從啟動顯示畫面轉換為已啟動應用程式的相關資訊。</summary>
+      <returns>提供啟動顯示畫面資訊的物件。</returns>
+    </member>
+  </members>
+</doc>

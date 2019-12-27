@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.XboxLive.XboxLiveSecureSocketsContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveDeviceAddress">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsLocal">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.IsValid">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.MaxSnapshotBytesSize">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveDeviceAddress.NetworkAccessKind">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveDeviceAddress.SnapshotChanged">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.Compare(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="otherDeviceAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBase64(System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="base64">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBuffer(Windows.Storage.Streams.IBuffer)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="buffer">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.CreateFromSnapshotBytes(System.Byte[])">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="buffer">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetLocal">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBase64">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBuffer">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveDeviceAddress.GetSnapshotAsBytes(System.Byte[],System.UInt32@)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="buffer">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="bytesWritten">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPair">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalHostName">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.LocalPort">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteDeviceAddress">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemoteHostName">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.RemotePort">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.State">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPair.Template">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPair.StateChanged">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.DeleteAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairByHostNamesAndPorts(Windows.Networking.HostName,System.String,Windows.Networking.HostName,System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="localHostName">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="localPort">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="remoteHostName">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="remotePort">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.FindEndpointPairBySocketAddressBytes(System.Byte[],System.Byte[])">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="localSocketAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="remoteSocketAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetLocalSocketAddressBytes(System.Byte[])">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="socketAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPair.GetRemoteSocketAddressBytes(System.Byte[])">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="socketAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.None">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.ReevaluatePath">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.DeviceAddress">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.EndpointPair">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.IsExistingPathEvaluation">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult.Status">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Canceled">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.LocalSystemNotAuthorized">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoCompatibleNetworkPaths">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.NoLocalNetworks">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RefusedDueToConfiguration">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.RemoteSystemNotAuthorized">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.Succeeded">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.TimedOut">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus.UnexpectedInternalError">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairState">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingInbound">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.CreatingOutbound">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Deleted">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.DeletingLocally">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Invalid">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.Ready">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveEndpointPairState.RemoteEndpointTerminating">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.NewState">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs.OldState">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeLower">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.AcceptorBoundPortRangeUpper">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.EndpointPairs">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeLower">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InitiatorBoundPortRangeUpper">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Name">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.SocketKind">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.Templates">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="E:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.InboundEndpointPairCreated">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="deviceAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="deviceAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="behaviors">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="deviceAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="initiatorPort">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="acceptorPort">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.CreateEndpointPairForPortsAsync(Windows.Networking.XboxLive.XboxLiveDeviceAddress,System.String,System.String,Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="deviceAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="initiatorPort">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="acceptorPort">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="behaviors">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.GetTemplateByName(System.String)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="name">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs.EndpointPair">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Moderate">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Open">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.Strict">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.#ctor">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.DeviceAddresses">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemInboundBandwidthConstrained">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.IsSystemOutboundBandwidthConstrained">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxPrivatePayloadSize">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MaxSimultaneousProbeConnections">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MetricResults">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.Metrics">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfProbesToAttempt">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.NumberOfResultsPending">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PrivatePayloadResults">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishedPrivatePayload">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ShouldRequestPrivatePayloads">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.TimeoutInMilliseconds">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.ClearPrivatePayload">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress,Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="deviceAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <param name="metric">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForDevice(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="deviceAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetMetricResultsForMetric(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="metric">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.GetPrivatePayloadResult(Windows.Networking.XboxLive.XboxLiveDeviceAddress)">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="deviceAddress">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.MeasureAsync">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="M:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.PublishPrivatePayloadBytes(System.Byte[])">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <param name="payload">Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</param>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Canceled">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgress">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.InProgressWithProvisionalResults">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.LocalSystemNotAuthorized">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoCompatibleNetworkPaths">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NoLocalNetworks">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.NotStarted">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RefusedDueToConfiguration">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.RemoteSystemNotAuthorized">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.Succeeded">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.TimedOut">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus.UnexpectedInternalError">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageInboundBitsPerSecond">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageLatencyInMilliseconds">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.AverageOutboundBitsPerSecond">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxInboundBitsPerSecond">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxLatencyInMilliseconds">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MaxOutboundBitsPerSecond">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinInboundBitsPerSecond">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinLatencyInMilliseconds">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.MinOutboundBitsPerSecond">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.DeviceAddress">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Metric">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Status">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult.Value">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.DeviceAddress">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Status">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="P:Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult.Value">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+      <returns>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</returns>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSecureSocketsContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.XboxLive.XboxLiveSocketKind">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Datagram">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.None">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+    <member name="F:Windows.Networking.XboxLive.XboxLiveSocketKind.Stream">
+      <summary>Этот API доступен не во всех приложениях. Если ваша учетная запись разработчика специально не создана Microsoft, вызовы этих API будут отклонены во время выполнения.</summary>
+    </member>
+  </members>
+</doc>

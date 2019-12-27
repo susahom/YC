@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.Profile.SystemManufacturers.SystemManufacturersContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.Profile.SystemManufacturers.OemSupportInfo">
+      <summary>提供设备制造商的支持信息。 这包括 OEM 名称、网站地址和其他详细支持信息。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportAppLink">
+      <summary>获取将启用的 OEM 内置支持应用（而不是 Web URL）的协议处理程序链接。</summary>
+      <returns>OEM 内置支持应用的协议处理程序链接。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportLink">
+      <summary>获取原始设备制造商 (OEM) 支持网站的统一资源标识符 (URI)。</summary>
+      <returns>OEM 支持网站的 URI。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportProvider">
+      <summary>获取设备的支持提供商的名称。</summary>
+      <returns>设备的支持提供商的名称。</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SmbiosInformation">
+      <summary>允许访问系统的 SMBIOS 中的属性。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SmbiosInformation.SerialNumber">
+      <summary>从系统的 SMBIOS 中获取序列号。</summary>
+      <returns>序列号。</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemManufacturersContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo">
+      <summary>为应用提供从本地设备检索设备信息的功能。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.FriendlyName">
+      <summary>获取本地设备的易记名称。 此值可能来自 NetBIOS 计算机名称。</summary>
+      <returns>本地设备的友好名称。 该值长度少于 1024 个字符。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.OperatingSystem">
+      <summary>获取本地设备的操作系统名称。</summary>
+      <returns>包含本地设备操作系统的字符串。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemFirmwareVersion">
+      <summary>获取本地设备的系统固件版本。</summary>
+      <returns>包含本地设备的系统固件版本的字符串。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemHardwareVersion">
+      <summary>获取本地设备的系统硬件版本。</summary>
+      <returns>包含本地设备的系统硬件版本的字符串。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemManufacturer">
+      <summary>获取本地设备的系统制造商。 仅当 SystemSku 的值为空时才使用 **SystemManufacturer**。</summary>
+      <returns>包含本地设备的系统制造商的字符串。 该值长度少于 1024 个字符。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemProductName">
+      <summary>获取本地设备的系统产品名。 仅当 SystemSku 的值为空时才使用 **SystemProductName**。</summary>
+      <returns>包含本地设备的系统产品名称的字符串。 该值长度少于 1024 个字符。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemSku">
+      <summary>获取本地设备的系统 SKU。</summary>
+      <returns>包含本地设备的系统 SKU 的字符串。</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportInfo">
+      <summary>提供有关设备的支持信息。 这包括本地系统版本和 OEM 支持信息。</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalDeviceInfo">
+      <summary>获取本地设备。</summary>
+      <returns>一个表示本地设备的 SystemSupportDeviceInfo 值。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalSystemEdition">
+      <summary>获取设备的本地系统版本。</summary>
+      <returns>包含设备本地系统版本的字符串。</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.OemSupportInfo">
+      <summary>获取系统的 OEM 支持信息。</summary>
+      <returns>系统的 OEM 支持信息。</returns>
+    </member>
+  </members>
+</doc>

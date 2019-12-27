@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.XboxLive.StorageApiContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.XboxLive.StorageApiContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Status">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Value">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Name">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Size">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Status">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Value">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync(System.UInt32,System.UInt32)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="startIndex">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="maxNumberOfItems">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetItemCountAsync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainer">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Name">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Provider">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.CreateBlobInfoQuery(System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="blobNamePrefix">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.GetAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="blobsToRead">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.ReadAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer})">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="blobsToRead">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync(Windows.Foundation.Collections.IPropertySet,Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="blobsToWrite">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="blobsToDelete">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="displayName">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitUpdatesAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer},Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="blobsToWrite">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="blobsToDelete">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="displayName">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.DisplayName">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.Name">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.NeedsSync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Status">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Value">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync(System.UInt32,System.UInt32)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="startIndex">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="maxNumberOfItems">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetItemCountAsync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Abort">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.BlobNotFound">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerNotInSync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerSyncFailed">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.InvalidContainerName">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoAccess">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoXboxLiveInfo">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ObjectExpired">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Ok">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.OutOfLocalStorage">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ProvidedBufferTooSmall">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.QuotaExceeded">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UpdateTooBig">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserCanceled">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserHasNoXboxLiveInfo">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult.Status">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProvider">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.ContainersChangedSinceLastSync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.User">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainer(System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="name">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery(System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="containerNamePrefix">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.DeleteContainerAsync(System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="name">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync(Windows.System.User,System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="user">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="serviceConfigId">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetRemainingBytesInQuotaAsync">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetSyncOnDemandForUserAsync(Windows.System.User,System.String)">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <param name="user">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <param name="serviceConfigId">一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</param>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Status">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Value">
+      <summary>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</summary>
+      <returns>一部のアプリケーションでは、この API を使用できません。 開発者用アカウントが Microsoft によって特にプロビジョニングされない限り、実行時にこれらの API の呼び出しは失敗します。</returns>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.AlarmAccessStatus">
+      <summary>アプリがアラームを設定することをユーザーが許可しているかどうかを示します。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithoutWakeupCapability">
+      <summary>ユーザーはアプリがアラームを設定することを許可していますが、アラームによってコンピューターをスタンバイから復帰させることはできません。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.AllowedWithWakeupCapability">
+      <summary>ユーザーはアプリがアラームを設定することを許可しており、アラームによってコンピューターをスタンバイから復帰させることができます。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Denied">
+      <summary>ユーザーはアプリがアラームを設定することを拒否しました。</summary>
+    </member>
+    <member name="F:Windows.ApplicationModel.Background.AlarmAccessStatus.Unspecified">
+      <summary>ユーザーはアプリによるアラーム設定の許可リクエストに回答していません。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.AlarmApplicationManager">
+      <summary>アクセス許可をユーザーから要求してアラームを設定し、アラームを設定するアプリのユーザー アクセス許可のステータスを取得します。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.GetAccessStatus">
+      <summary>アプリがアラームを設定するためのユーザー アクセス許可のステータスを取得します。</summary>
+      <returns>ユーザーがアラームの設定を許可しているかどうかを示します。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.AlarmApplicationManager.RequestAccessAsync">
+      <summary>ユーザーからアクセス許可を要求して、アラームを設定します。</summary>
+      <returns>この設定が完了すると、このメソッドは AlarmAccessStatus 値を返します。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Background.BackgroundAlarmApplicationContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

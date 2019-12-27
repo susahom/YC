@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.XboxLive.StorageApiContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.XboxLive.StorageApiContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Status">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Value">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Name">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Size">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Status">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Value">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync(System.UInt32,System.UInt32)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="startIndex">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="maxNumberOfItems">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetItemCountAsync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainer">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Name">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Provider">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.CreateBlobInfoQuery(System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="blobNamePrefix">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.GetAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="blobsToRead">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.ReadAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer})">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="blobsToRead">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync(Windows.Foundation.Collections.IPropertySet,Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="blobsToWrite">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="blobsToDelete">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="displayName">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitUpdatesAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer},Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="blobsToWrite">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="blobsToDelete">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="displayName">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.DisplayName">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.Name">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.NeedsSync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Status">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Value">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync(System.UInt32,System.UInt32)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="startIndex">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="maxNumberOfItems">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetItemCountAsync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Abort">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.BlobNotFound">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerNotInSync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerSyncFailed">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.InvalidContainerName">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoAccess">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoXboxLiveInfo">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ObjectExpired">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Ok">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.OutOfLocalStorage">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ProvidedBufferTooSmall">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.QuotaExceeded">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UpdateTooBig">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserCanceled">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserHasNoXboxLiveInfo">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult.Status">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProvider">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.ContainersChangedSinceLastSync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.User">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainer(System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="name">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery(System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="containerNamePrefix">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.DeleteContainerAsync(System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="name">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync(Windows.System.User,System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="user">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="serviceConfigId">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetRemainingBytesInQuotaAsync">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetSyncOnDemandForUserAsync(Windows.System.User,System.String)">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <param name="user">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <param name="serviceConfigId">이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</param>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Status">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Value">
+      <summary>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</summary>
+      <returns>이 API는 일부 앱에서 사용할 수 없습니다. Microsoft에서 개발자 계정을 특별히 프로비전하지 않은 한, 런타임 시 이러한 API를 호출하면 실패합니다.</returns>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.System.Profile.SystemManufacturers.SystemManufacturersContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.System.Profile.SystemManufacturers.OemSupportInfo">
+      <summary>장치의 제조업체에 대한 지원 정보를 제공합니다. 여기에는 OEM의 이름, 웹 사이트 주소 및 기타 지원 세부 정보가 포함됩니다.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportAppLink">
+      <summary>웹 URL 대신 시작되는 OEM 기본 제공 지원 앱에 대한 프로토콜 처리기 링크를 가져옵니다.</summary>
+      <returns>OEM 기본 제공 지원 앱에 대한 프로토콜 처리기 링크입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportLink">
+      <summary>OEM(Original Equipment Manufacturer) 지원 웹 사이트의 URI(Uniform Resource Identifier)를 가져옵니다.</summary>
+      <returns>OEM 지원 웹 사이트의 URI입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.OemSupportInfo.SupportProvider">
+      <summary>장치에 대한 지원 공급자의 이름을 가져옵니다.</summary>
+      <returns>장치에 대한 지원 공급자의 이름입니다.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SmbiosInformation">
+      <summary>시스템의 SMBIOS에서 속성에 액세스할 수 있습니다.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SmbiosInformation.SerialNumber">
+      <summary>시스템의 SMBIOS에서 일련 번호를 가져옵니다.</summary>
+      <returns>일련 번호</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemManufacturersContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo">
+      <summary>로컬 장치에서 장치 정보를 검색할 수 있는 기능을 앱에 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.FriendlyName">
+      <summary>로컬 장치의 식별 이름을 가져옵니다. 이 값은 NetBIOS 컴퓨터 이름에서 가져올 수 있습니다.</summary>
+      <returns>로컬 장치의 이름입니다. 값은 1024자 미만입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.OperatingSystem">
+      <summary>로컬 장치의 운영 체제 이름을 가져옵니다.</summary>
+      <returns>로컬 장치의 운영 체제 이름을 포함하는 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemFirmwareVersion">
+      <summary>로컬 장치의 시스템 펌웨어 버전을 가져옵니다.</summary>
+      <returns>로컬 장치의 펌웨어 버전을 포함하는 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemHardwareVersion">
+      <summary>로컬 장치의 시스템 하드웨어 버전을 가져옵니다.</summary>
+      <returns>로컬 장치의 하드웨어 버전을 포함하는 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemManufacturer">
+      <summary>로컬 장치의 시스템 제조업체를 가져옵니다. SystemSku의 값이 비어 있는 경우에만 **SystemManufacturer**를 사용합니다.</summary>
+      <returns>로컬 장치의 시스템 제조업체를 포함하는 문자열입니다. 값은 1024자 미만입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemProductName">
+      <summary>로컬 장치의 시스템 제품 이름을 가져옵니다. SystemSku의 값이 비어 있는 경우에만 **SystemProductName**을 사용합니다.</summary>
+      <returns>로컬 장치의 시스템 제품 이름을 포함하는 문자열입니다. 값은 1024자 미만입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo.SystemSku">
+      <summary>로컬 장치의 시스템 SKU를 가져옵니다.</summary>
+      <returns>로컬 장치의 시스템 SKU를 포함하는 문자열입니다.</returns>
+    </member>
+    <member name="T:Windows.System.Profile.SystemManufacturers.SystemSupportInfo">
+      <summary>장치에 대한 지원 정보를 제공합니다. 여기에는 로컬 시스템 버전과 OEM 지원 정보가 포함됩니다.</summary>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalDeviceInfo">
+      <summary>로컬 장치를 가져옵니다.</summary>
+      <returns>로컬 장치를 나타내는 SystemSupportDeviceInfo 값입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.LocalSystemEdition">
+      <summary>장치의 로컬 시스템 버전을 가져옵니다.</summary>
+      <returns>장치의 로컬 시스템 버전을 포함하는 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.System.Profile.SystemManufacturers.SystemSupportInfo.OemSupportInfo">
+      <summary>시스템에 대한 OEM 지원 정보를 가져옵니다.</summary>
+      <returns>시스템에 대한 OEM 지원 정보입니다.</returns>
+    </member>
+  </members>
+</doc>

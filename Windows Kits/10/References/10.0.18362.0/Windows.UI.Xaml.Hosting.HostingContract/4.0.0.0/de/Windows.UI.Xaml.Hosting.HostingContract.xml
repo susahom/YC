@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.UI.Xaml.Hosting.HostingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppExitedEventArgs">
+      <summary>Stellt Ereignisdaten für das DesignerAppManager.DesignerAppExited-Ereignis bereit.</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppExitedEventArgs.ExitCode">
+      <summary>Ruft den Exitcode ab, mit denen die App beendet wird.</summary>
+      <returns>Der Exitcode, mit denen die App beendet wird.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppManager">
+      <summary>Dient zum Verwalten einer Anwendung in einer XAML-Entwurfsoberfläche, die in einem regulären UWP-Kontext ausgeführt wird, im Vergleich zu dem Legacy-Designer, der die XamlUIPresenter verwendet und in einem Win32-Prozess ausgeführt wird. Der Prozess ist erforderlich, um die NoUIEntryPoints DesignModeV2 DisplayName-Eigenschaft in der. APPX anzugeben, um erfolgreich in diesem Modus aktiviert zu werden. Die gestartete Anwendung wird nicht in der Taskleiste oder Vorgangsansicht Schnellzugriff angezeigt.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.#ctor(System.String)">
+      <summary>Initialisiert eine neue Instanz der DesignerAppManager-Klasse.</summary>
+      <param name="appUserModelId">Der Bezeichner für das App-Benutzermodell.</param>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppManager.AppUserModelId">
+      <summary>Ruft den Bezeichner für das App-Benutzermodell ab.</summary>
+      <returns>Der Bezeichner für das App-Benutzermodell.</returns>
+    </member>
+    <member name="E:Windows.UI.Xaml.Hosting.DesignerAppManager.DesignerAppExited">
+      <summary>Tritt auf, wenn die App im Designer beendet wurde.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.Close">
+      <summary>Schließt den App-Manager,. Dies schließt den Prozess, der durch den DesignerAppManager aktiviert wurde wartet, bis der Prozess beendet ist. Es ist möglich, dass diese Methode für eine unbestimmte Zeit blockiert werden kann, wenn der Prozess hängenbleibt. Das Ereignis DesignerAppExited **wird nicht** ausgelöst, wenn manuell geschlossen wird.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.CreateNewViewAsync(Windows.UI.Xaml.Hosting.DesignerAppViewState,Windows.Foundation.Size)">
+      <summary>Erstellt eine neue DesignerAppView.</summary>
+      <param name="initialViewState">Der Anfangszustand der Ansicht.</param>
+      <param name="initialViewSize">Die anfängliche Größe der Ansicht.</param>
+      <returns>Die erstellte DesignerAppView.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppManager.LoadObjectIntoAppAsync(System.String,System.Guid,System.String)">
+      <summary>Lädt das angegebene Objekt in die App.</summary>
+      <param name="dllName">Der Name der DLL.</param>
+      <param name="classId">Der Bezeichner für die Klasse.</param>
+      <param name="initializationData">Daten für die Initialisierung des Objekts.</param>
+      <returns>Die asynchronen Ergebnisse des Vorgangs. Verwenden Sie diese, um zu bestimmen, wann der asynchrone Aufruf abgeschlossen ist.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppView">
+      <summary>Repräsentiert eine App-Ansicht in einer XAML-Designoberfläche.</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.ApplicationViewId">
+      <summary>Ruft den Bezeichner für die App-Ansicht ab.</summary>
+      <returns>Der Bezeichner für die App-Ansicht.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.AppUserModelId">
+      <summary>Ruft den Bezeichner für das App-Benutzermodell ab.</summary>
+      <returns>Der Bezeichner für das App-Benutzermodell.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.ViewSize">
+      <summary>Ruft die Größe der App-Ansicht im Designer ab.</summary>
+      <returns>Die Größe der App-Ansicht im Designer.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesignerAppView.ViewState">
+      <summary>Ruft einen Wert ab, der angibt, ob die Ansicht sichtbar oder ausgeblendet ist.</summary>
+      <returns>Ein Wert, der angibt, ob die Ansicht **Sichtbar** oder **Ausgeblendet** ist.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppView.Close">
+      <summary>Schließt die App-Ansicht im Designer.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesignerAppView.UpdateViewAsync(Windows.UI.Xaml.Hosting.DesignerAppViewState,Windows.Foundation.Size)">
+      <summary>Aktualisiert die App-Ansicht im Designer.</summary>
+      <param name="viewState">Der Zustand der App-Ansicht.</param>
+      <param name="viewSize">Die Größe der App-Ansicht.</param>
+      <returns>Die asynchronen Ergebnisse des Vorgangs. Verwenden Sie diese, um zu bestimmen, wann der asynchrone Aufruf abgeschlossen ist.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesignerAppViewState">
+      <summary>Definiert die Konstanten, die angeben, ob die App-Ansicht sichtbar oder ausgeblendet ist.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.DesignerAppViewState.Hidden">
+      <summary>Die App-Ansicht ist ausgeblendet.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.DesignerAppViewState.Visible">
+      <summary>Die App-Ansicht ist sichtbar.</summary>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource">
+      <summary>Ermöglicht es einer Nicht-UWP-Desktopanwendung (z. B. einer WPF- oder Windows Forms-Anwendung), UWP-Steuerelemente in einem beliebigen Benutzeroberflächenelement zu hosten, das einem Fensterhandle (HWND) zugeordnet ist.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.#ctor">
+      <summary>Initialisiert eine neue Instanz der DesktopWindowXamlSource-Klasse.</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.Content">
+      <summary>Ruft das Windows.UI.Xaml.UIElement-Objekt ab, das Sie in der Desktop-Anwendung hosten möchten, oder legt es fest.</summary>
+      <returns>Das Objekt, das Sie in der Desktop-Anwendung hosten möchten.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.HasFocus">
+      <summary>Ruft einen Wert ab, der angibt, ob DesktopWindowXamlSource zurzeit den Fokus in der Desktopanwendung hat.</summary>
+      <returns>True, wenn die **DesktopWindowXamlSource** zurzeit den Fokus in der Desktop-Anwendung hat, andernfalls false.</returns>
+    </member>
+    <member name="E:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.GotFocus">
+      <summary>Tritt auf, wenn DesktopWindowXamlSource den Fokus in der Desktopanwendung erhält (der Benutzer z. B. die **TAB**-TASTE drückt, während sich der Fokus auf dem Element direkt vor **DesktopWindowXamlSource** befindet).</summary>
+    </member>
+    <member name="E:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.TakeFocusRequested">
+      <summary>Tritt auf, wenn die Desktop-Anwendung einen Anforderungszurücknahmefokus vom DesktopWindowXamlSource-Objekt erhält (z. B. der Benutzer ist bei dem letzten fokussierbanren Element in der **DesktopWindowXamlSource** und drückt **Tab**).</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.Close">
+      <summary>Schließt und gibt alle Ressourcen frei, die von dieser DesktopWindowXamlSource verwendet werden.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource.NavigateFocus(Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest)">
+      <summary>Versucht, programmgesteuert den Fokus auf DesktopWindowXamlSource in der Desktopanwendung zu bewegen.</summary>
+      <param name="request">Ein Objekt, das den Grund und andere optionale Informationen für die Fokusnavigation angibt.</param>
+      <returns>Ein Objekt, das Daten für die Anforderung zur Fokus-Navigation bereitstellt.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesktopWindowXamlSourceGotFocusEventArgs">
+      <summary>Stellt Ereignisdaten für das GotFocus-Ereignis bereit.</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesktopWindowXamlSourceGotFocusEventArgs.Request">
+      <summary>Ruft ein XamlSourceFocusNavigationRequest-Objekt ab, das den Grund und andere Informationen für die Fokusnavigation angibt.</summary>
+      <returns>Ein Objekt, das den Grund und andere Informationen für die Fokusnavigation angibt.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.DesktopWindowXamlSourceTakeFocusRequestedEventArgs">
+      <summary>Stellt Ereignisdaten für das TakeFocusRequested-Ereignis bereit.</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.DesktopWindowXamlSourceTakeFocusRequestedEventArgs.Request">
+      <summary>Ruft ein XamlSourceFocusNavigationRequest-Objekt ab, das den Grund und andere Informationen für die Fokusnavigation angibt.</summary>
+      <returns>Ein Objekt, das den Grund und andere Informationen für die Fokusnavigation angibt.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.HostingContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost">
+      <summary>Stellt einen Dienst dar, der Ressourcen einer Anwendung auflöst. Diese Schnittstelle wird für den Entwurfstool-Hostingszenarien verwendet und ist nicht zur allgemeinen Verwendung bestimmt.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost.ResolveFileResource(System.String)">
+      <summary>Löst eine Ressource auf, die durch einen Pfad angegeben wird, und gibt den Dateinamen als Zeichenfolge zurück.</summary>
+      <param name="path">Der aufzulösende lokale Pfad.</param>
+      <returns>Der aufgelöste Dateiname.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost2">
+      <summary>Erweitert IXamlUIPresenterHost, um GetGenericXamlFilePath hinzuzufügen.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost2.GetGenericXamlFilePath">
+      <summary>Lädt eine alternative generic.xaml-Datei zur Entwurfszeit in den Darstellungshost.</summary>
+      <returns>Ein lokaler Pfad zum Speicherort der alternativen generic.xaml-Datei.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost3">
+      <summary>Erweitert IXamlUIPresenterHost, um ResolveDictionaryResource hinzuzufügen.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.IXamlUIPresenterHost3.ResolveDictionaryResource(Windows.UI.Xaml.ResourceDictionary,System.Object,System.Object)">
+      <summary>Löst eine Ressource auf, die durch ein Wörterbuch und einen Schlüssel angegeben wird.</summary>
+      <param name="dictionary">Das Wörterbuch, das die Ressource enthält.</param>
+      <param name="dictionaryKey">Der Ressourcenschlüssel.</param>
+      <param name="suggestedValue">Der vorgeschlagene Wert.</param>
+      <returns>Das Ressourcenobjekt.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.WindowsXamlManager">
+      <summary>Stellt das UWP-XAML-Framework in einer Nicht-UWP-Desktopanwendung (z. B. einer WPF- oder Windows Forms-Anwendung) dar, die UWP-Steuerelemente hostet.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.WindowsXamlManager.Close">
+      <summary>Schließt und gibt alle Ressourcen frei, die von dieser WindowsXamlManager verwendet werden.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.WindowsXamlManager.InitializeForCurrentThread">
+      <summary>Initialisiert das UWP-XAML-Framework in einer Nicht-UWP-Desktopanwendung (z. B. einer WPF- oder Windows Forms-Anwendung) für den aktuellen Thread.</summary>
+      <returns>Ein Objekt, das einen Verweis auf das UWP-XAML-Framework enthält.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason">
+      <summary>Definiert die Werte, die die Gründe darstellen, weshalb das Windows.UI.Xaml.UIElement den Fokus in einer Desktop-Anwendung erhielt, die ein DesktopWindowXamlSource-Objekt für XAML-basierte UI verwendet. Die XamlSourceFocusNavigationRequest.Reason-Eigenschaft gibt einen dieser Werte zurück.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Down">
+      <summary>Der Fokus wurde als Antwort auf die Navigation des Benutzers nach unten durch eine 4-Richtungs-Navigationsfunktionalität (z. B. mit Pfeiltasten) festgelegt.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.First">
+      <summary>Der Fokus wurde als Antwort auf die Navigation des Benutzers zum nächsten Elementdurch eine bidirektionale Navigationsfunktionalität (z. B. durch Drücken von **Tab**) festgelegt.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Last">
+      <summary>Der Fokus wurde als Antwort auf die Navigation des Benutzers zum vorigen Elementdurch eine bidirektionale Navigationsfunktionalität (z. B. durch Drücken von **Shift-Tab**) festgelegt.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Left">
+      <summary>Der Fokus wurde als Antwort auf die Navigation des Benutzers nach links durch eine 4-Richtungs-Navigationsfunktionalität (z. B. mit Pfeiltasten) festgelegt.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Programmatic">
+      <summary>Der Fokus wurde programmgesteuert gesetzt.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Restore">
+      <summary>Der Fokus wurde nach einem Aufgabenwechsel wiederhergestellt, z. B. **Alt** +**Registerkarte**.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Right">
+      <summary>Der Fokus wurde als Antwort auf die Navigation des Benutzers nach rechts durch eine 4-Richtungs-Navigationsfunktionalität (z. B. mit Pfeiltasten) festgelegt.</summary>
+    </member>
+    <member name="F:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason.Up">
+      <summary>Der Fokus wurde als Antwort auf die Navigation des Benutzers nach oben durch eine 4-Richtungs-Navigationsfunktionalität (z. B. mit Pfeiltasten) festgelegt.</summary>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest">
+      <summary>Enthält Informationen zu der Anforderung, den Fokus auf ein Objekt DesktopWindowXamlSource zu legen.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.#ctor(Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason)">
+      <summary>Initialisiert eine neue Instanz der XamlSourceFocusNavigationRequest-Klasse mit dem Grund für die Navigationsanforderung.</summary>
+      <param name="reason">Ein Wert, der die Ursache für die Navigationsanforderung angibt.</param>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.#ctor(Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason,Windows.Foundation.Rect)">
+      <summary>Initialisiert eine neue Instanz der Klasse XamlSourceFocusNavigationRequest mit dem Grund für die Navigationsanforderung und das umgebende Rechteck, das den Navigationsfokus erhält.</summary>
+      <param name="reason">Ein Wert, der die Ursache für die Navigationsanforderung angibt.</param>
+      <param name="hintRect">Das umgebende Rechteck des Elements in der Desktop-Anwendung, das den Fokus verliert (d. h. das Element, das Fokus hatte, bevor die DesktopWindowXamlSource den Fokus erhielt). Dieser Parameter wird verwendet, um einen Kontext für das UWP-XAML-Framework bereitzustellen, bei der Eingabe der **DesktopWindowXamlSource** mithilfe einer 4-Richtungs-Navigationsfunktionalität (z. B. mithilfe der Pfeiltasten-Tastatur). Weitere Informationen finden Sie in den Hinweisen.</param>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.#ctor(Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationReason,Windows.Foundation.Rect,System.Guid)">
+      <summary>Initialisiert eine neue Instanz der Klasse XamlSourceFocusNavigationRequest mit dem Grund für die Navigationsanforderung, das umgebende Rechteck erhält den Navigationsfokus erhält und die eindeutige Korrelations-ID für die Anforderung.</summary>
+      <param name="reason">Ein Wert, der die Ursache für die Navigationsanforderung angibt.</param>
+      <param name="hintRect">Das umgebende Rechteck des Elements in der Desktop-Anwendung, das den Fokus verliert (d. h. das Element, das Fokus hatte, bevor die DesktopWindowXamlSource den Fokus erhielt). Dieser Parameter wird verwendet, um einen Kontext für das UWP-XAML-Framework bereitzustellen, bei der Eingabe der **DesktopWindowXamlSource** mithilfe einer 4-Richtungs-Navigationsfunktionalität (z. B. mithilfe der Pfeiltasten-Tastatur). Weitere Informationen finden Sie in den Hinweisen.</param>
+      <param name="correlationId">Der eindeutige Bezeichner für die Navigationsanforderung. Verwenden Sie diesen Parameter für die Protokollierung oder wenn Sie eine vorhandene Korrelations-ID aus einer laufende Fokus Bewegung bereits haben, und Sie diese Fokusbewegung Fokus mit der aktuellen Navigationsanforderung verbinden möchten.</param>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.CorrelationId">
+      <summary>Ruft den eindeutigen Bezeichner für die Navigationsanforderung ab. Verwenden Sie diesen Wert für die Protokollierung oder wenn Sie eine vorhandene Korrelations-ID aus einer laufende Fokus Bewegung bereits haben, und Sie diese Fokusbewegung Fokus mit der Navigationsanforderung verbinden möchten.</summary>
+      <returns>Der eindeutige Bezeichner für die Navigationsanforderung.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.HintRect">
+      <summary>Ruft das umgebende Rechteck des Elements in der Desktop-Anwendung ab, das den Fokus verliert (d. h. das Element, das Fokus hatte, bevor die DesktopWindowXamlSource den Fokus erhielt).</summary>
+      <returns>Das umgebende Rechteck, das Fokus verliert.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest.Reason">
+      <summary>Ruft einen XamlSourceFocusNavigationReason-Wert ab, der den Grund für die Navigationsanforderung angibt.</summary>
+      <returns>Ein Wert, der die Ursache für die Navigationsanforderung angibt.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationResult">
+      <summary>Stellt Daten für eine Anforderung zum Navigieren des Fokus auf ein Objekt DesktopWindowXamlSource bereit, indem die Methode NavigateFocus verwendet wird.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationResult.#ctor(System.Boolean)">
+      <summary>Initialisiert eine neue Instanz der XamlSourceFocusNavigationResult-Klasse.</summary>
+      <param name="focusMoved">True, wenn der Fokus erfolgreich zum DesktopWindowXamlSource-Objelt wechselte, andernfalls false.</param>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationResult.WasFocusMoved">
+      <summary>Ruft einen Wert ab, der angibt, ob der Fokus erfolgreich auf das Objekt DesktopWindowXamlSource verschoben wurde.</summary>
+      <returns>True, wenn der Fokus erfolgreich zum DesktopWindowXamlSource-Objelt wechselte, andernfalls false.</returns>
+    </member>
+    <member name="T:Windows.UI.Xaml.Hosting.XamlUIPresenter">
+      <summary>Ermöglicht eine visuelle Struktur auf einer Microsoft Direct3D-Oberfläche. Dieser Typ wird für Designtool-Hostingszenarien verwendet und ist nicht zur allgemeinen Verwendung bestimmt.</summary>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.CompleteTimelinesAutomatically">
+      <summary>Ruft einen Wert ab (oder legt ihn fest), der bestimmt, ob der Host möchte, dass Zeitachsen immer beendet werden.</summary>
+      <returns>**True**, um Zeitachsen immer zu beenden. Andernfalls **false**.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.RootElement">
+      <summary>Ruft das visuelle Stammelement ab, das zur Oberfläche gezogen werden soll, oder legt dieses fest.</summary>
+      <returns>Das zu zeichnende Element.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.ThemeKey">
+      <summary>Ruft den Zeichenfolgenschlüssel ab, der die Designeinstellungen festlegt, die von ThemeResourcesXaml verwendet werden sollen, oder legt diesen fest.</summary>
+      <returns>Ein Zeichenfolgenschlüssel.</returns>
+    </member>
+    <member name="P:Windows.UI.Xaml.Hosting.XamlUIPresenter.ThemeResourcesXaml">
+      <summary>Ruft das XAML ab, das ein Ressourcenwörterbuch spezifiziert bzw. legt dieses fest. Das Ressourcenwörterbuch enthält Designs, die der Host auflösen soll und die auf den Inhalt angewendet werden sollen.</summary>
+      <returns>Ein Wörterbuch für XAML-Ressourcen, die im Zeichenfolgenformat angegeben sind.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.GetFlyoutPlacement(Windows.Foundation.Rect,Windows.Foundation.Size,Windows.Foundation.Size,Windows.Foundation.Rect,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode,System.Boolean,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode@)">
+      <summary>Ruft die FlyoutBase-Platzierungslogik mithilfe einer vorgeschlagenen Größe eines Steuerelements auf, das ein Platzierungsziel und das zugehörige Flyout anzeigt. Gibt die Grenzen zurück, die das Ergebnis der Ausführung der Platzierungslogik sind.</summary>
+      <param name="placementTargetBounds">Die Grenzen des Platzierungszielelements, die an die FlyoutBase-Darstellungslogik übergeben werden.</param>
+      <param name="controlSize">Die gewünschte Größe des Steuerelements, das das Flyout anzeigen sollte.</param>
+      <param name="minControlSize">Die Minimalgröße des Steuerelements, das das Flyout anzeigen sollte.</param>
+      <param name="containerRect">Die Grenzen des Bereichs, der das Platzierungsziel und das Flyout enthalten soll.</param>
+      <param name="targetPreferredPlacement">Der gewünschte Platzierungsmodus, der für die FlyoutBase-Platzierungslogik verwendet werden soll.</param>
+      <param name="allowFallbacks">**True**, wenn Fallbacks für den Platzierungsmodus verwendet werden können. **false**, wenn Fallbacks nicht verwendet werden können.</param>
+      <param name="chosenPlacement">Der tatsächliche Platzierungsmodus, der von der aufgerufenen FlyoutBase-Platzierungslogik verwendet wird.</param>
+      <returns>Die durch die FlyoutBase-Platzierungslogik berechneten Grenzen.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.GetFlyoutPlacementTargetInfo(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode,Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode@,System.Boolean@)">
+      <summary>Gibt berechnete Grenzen eines Platzierungsziels zurück, das vorgesehen ist, um auch ein Flyout im Host anzuzeigen. Zusätzliche **Out**-Parameter bieten weitere Informationen darüber, wie die Grenzen berechnet wurden.</summary>
+      <param name="placementTarget">Das Platzierungszielelement, in Bezug auf das das Flyout-Objekt positioniert werden soll.</param>
+      <param name="preferredPlacement">Ein Wert der Enumeration, der die vom Host bevorzugte Platzierung von Flyout relativ zum Ziel deklariert. </param>
+      <param name="targetPreferredPlacement">Ein Wert der Enumeration, der die bevorzugte Platzierung des Flyout deklariert.</param>
+      <param name="allowFallbacks">**true**, wenn Fallbackplatzierungen für die Flyout-Platzierungslogik zulässig sind. **false**, wenn nur der *targetPreferredPlacement*-Wert berücksichtigt werden soll.</param>
+      <returns>Die berechneten Platzierungszielgrenzen.</returns>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.NotifyWindowSizeChanged">
+      <summary>Ruft das SizeChanged-Ereignis auf Window.Current auf. Wird von Hosts verwendet, um Größenänderungen von Hosteinstellungen an Benutzercode zu verteilen, damit eine Entwurfsmodusinteraktion von einer Laufzeitinteraktion unterschieden werden kann.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.Present">
+      <summary>Präsentiert die Oberfläche, als synchroner Aufruf für den Host.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.Render">
+      <summary>Rendert die Oberfläche. Vorgesehen für asynchrone Aufrufe über einen Zeitgeber.</summary>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.SetHost(Windows.UI.Xaml.Hosting.IXamlUIPresenterHost)">
+      <summary>Gibt die IXamlUIPresenterHost-Service-Implementierung an, die für die Anwendungsressourcenauflösung verwendet wird.</summary>
+      <param name="host">Eine Dienstimplementierung.</param>
+    </member>
+    <member name="M:Windows.UI.Xaml.Hosting.XamlUIPresenter.SetSize(System.Int32,System.Int32)">
+      <summary>Gibt die Breite und Höhe der Oberfläche an.</summary>
+      <param name="width">Eine Breite in Pixel.</param>
+      <param name="height">Eine Höhe in Pixel.</param>
+    </member>
+  </members>
+</doc>

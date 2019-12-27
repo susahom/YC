@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.Preview.Notes.PreviewNotesContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.NotePlacementChangedPreviewEventArgs">
+      <summary>Représente les informations sur l'événement NotePlacementChanged.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NotePlacementChangedPreviewEventArgs.ViewId">
+      <summary>ID unique de la note pour laquelle l'événement NotePlacementChanged a été déclenché.</summary>
+      <returns>L'identificateur de note.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview">
+      <summary>Cette classe possède une grande partie des fonctionnalités du composant d'application de **notes d'aperçu** (consultez les remarques).</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.IsScreenLocked">
+      <summary>Obtient une valeur indiquant si l'écran du périphérique est actuellement verrouillé.</summary>
+      <returns>**true** si l'écran est verrouillé ; **false** si déverrouillé.</returns>
+    </member>
+    <member name="E:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.NotePlacementChanged">
+      <summary>Indique qu'un positionnement de note (dimensions et emplacement) a changé.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.NoteVisibilityChanged">
+      <summary>Indique que l'état de visibilité d'une note a changé.</summary>
+    </member>
+    <member name="E:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SystemLockStateChanged">
+      <summary>Indique que l'état de verrouillage de l'écran du périphérique a changé.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.GetForCurrentApp">
+      <summary>Renvoie une instance de NotesWindowManagerPreview, à utiliser pour la plupart des opérations de Notes de version d’évaluation qu'une application peut exécuter.</summary>
+      <returns>Instance désignée de l'application de NotesWindowManagerPreview.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.GetNotePlacement(System.Int32)">
+      <summary>Obtient le positionnement de la vue d'une note donnée, pour le stockage dans la mémoire programme ou sur le disque et pour la restauration ultérieure par l'application.</summary>
+      <param name="noteViewId">ID unique de la note dont le positionnement doit être récupéré.</param>
+      <returns>Un tableau d'octets contenant des données de positionnement de note.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.HideNote(System.Int32)">
+      <summary>Définit l'état d’affichage d’une note sur invisible et déplace le focus sur l’affichage Note visible (fenêtre) ou sur l’espace de travail Windows Ink (voir Remarques). Les vues sont sélectionnées dans un ordre cyclique et déterminé par le système.</summary>
+      <param name="noteViewId">Identificateur unique de la note à masquer.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SetFocusToNextView">
+      <summary>Bascule le focus sur la vue Note visible (fenêtre) suivante ou sur l’espace de travail Windows Ink (voir Remarques). Les vues sont sélectionnées dans un ordre cyclique et déterminé par le système.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SetFocusToPreviousView">
+      <summary>Bascule le focus sur la vue Note visible (fenêtre) précédente ou sur l’espace de travail Windows Ink (voir Remarques). Les vues sont sélectionnées dans un ordre cyclique et déterminé par le système.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SetNotesThumbnailAsync(Windows.Storage.Streams.IBuffer)">
+      <summary>Définit l'image miniature pour cette application telle qu'elle apparaît dans l'Espace de travail Windows Ink, dans le sélecteur de tâche Alt+TAB, ou en pointant dans la barre des tâches.</summary>
+      <param name="thumbnail">Un tableau d'octets décrivant l'image miniature et l'utilisation (consultez les remarques).</param>
+      <returns>Cette méthode ne retourne pas de valeur.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.SetThumbnailImageForTaskSwitcherAsync(Windows.Graphics.Imaging.SoftwareBitmap)">
+      <summary>En mode asynchrone définit l’image miniature de l’application au fur et à mesure qu’elle apparaît dans le sélecteur de tâches Alt+TAB.</summary>
+      <param name="bitmap">Image bitmap de l’image miniature.</param>
+      <returns>Renvoie **IAsyncAction** qui indique la fin de l'action.</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNote(System.Int32)">
+      <summary>Rend une note visible sur l'écran du périphérique.</summary>
+      <param name="noteViewId">Identificateur unique de la note à afficher.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNoteRelativeTo(System.Int32,System.Int32)">
+      <summary>Rend une note visible et la place en regard d'une vue d'« ancrage » spécifiée.</summary>
+      <param name="noteViewId">Identificateur unique de la note à afficher.</param>
+      <param name="anchorNoteViewId">L'ID de la vue d'« ancrage ». Si cette valeur est 0 (non affectée à une vue), la note s’affiche dans le centre de l’écran.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNoteRelativeTo(System.Int32,System.Int32,Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions)">
+      <summary>Rend une note visible et la place en regard d'une vue d'« ancrage » spécifiée.</summary>
+      <param name="noteViewId">Identificateur unique de la note à afficher.</param>
+      <param name="anchorNoteViewId">L'ID de la vue d'« ancrage ». Si cette valeur est 0 (non affectée à une vue), la note s’affiche dans le centre de l’écran.</param>
+      <param name="options">Options permettant d’afficher la note spécifiée par le paramètre *noteViewId*. Par exemple, afficher la note ayant le focus.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNoteWithPlacement(System.Int32,Windows.Storage.Streams.IBuffer)">
+      <summary>Rend une note visible et définit ses données de positionnement (dimensions et emplacement) comme spécifié.</summary>
+      <param name="noteViewId">Identificateur unique de la note à afficher.</param>
+      <param name="data">Un tableau d'octets contenant des données de positionnement de note.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.ShowNoteWithPlacement(System.Int32,Windows.Storage.Streams.IBuffer,Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions)">
+      <summary>Rend une note visible et définit ses données de positionnement (dimensions et emplacement) comme spécifié.</summary>
+      <param name="noteViewId">Identificateur unique de la note à afficher.</param>
+      <param name="data">Un tableau d'octets contenant des données de positionnement de note.</param>
+      <param name="options">Options permettant d’afficher la note spécifiée par le paramètre *noteViewId*. Par exemple, afficher la note ayant le focus.</param>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview.TrySetNoteSize(System.Int32,Windows.Foundation.Size)">
+      <summary>Redimensionne la note spécifiée aux dimensions souhaitées. Si la taille donnée n'est pas recommandée en raison de problèmes de taille de l'écran/espace, la taille de la note n'est pas modifiée.</summary>
+      <param name="noteViewId">Identificateur unique de la note à redimensionner.</param>
+      <param name="size">Dimensions souhaitées de la note (utiliser des pixels bruts lors de la construction).</param>
+      <returns>**true** si la note est redimensionnée, **false** si elle n'est pas redimensionnée en raison de restrictions d'écran.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions">
+      <summary>Fournit des options pour savoir comment afficher une note.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions.#ctor">
+      <summary>Crée une instance de la classe NotesWindowManagerPreviewShowNoteOptions.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions.ShowWithFocus">
+      <summary>Obtient ou définit une valeur booléenne qui indique si la note doit s’afficher avec le focus.</summary>
+      <returns>Si **true** , la note est affichée avec le focus, sinon **false**.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.NoteVisibilityChangedPreviewEventArgs">
+      <summary>Représente les informations sur l'événement NoteVisibilityChanged.</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NoteVisibilityChangedPreviewEventArgs.IsVisible">
+      <summary>Indique si la note (spécifiée par la propriété ViewId) est visible sur l'écran de périphérique.</summary>
+      <returns>**true** si la note est visible, **false** si la note est masquée.</returns>
+    </member>
+    <member name="P:Windows.ApplicationModel.Preview.Notes.NoteVisibilityChangedPreviewEventArgs.ViewId">
+      <summary>ID unique de la note pour laquelle l'événement NoteVisibilityChanged a été déclenché.</summary>
+      <returns>L'identificateur de note.</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.Preview.Notes.PreviewNotesContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

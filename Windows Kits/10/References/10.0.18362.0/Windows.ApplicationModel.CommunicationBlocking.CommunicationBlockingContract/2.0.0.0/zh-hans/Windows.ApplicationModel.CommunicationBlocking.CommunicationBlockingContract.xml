@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger">
+      <summary>表示一个触发器，当某个通信阻止应用程序被选为首选阻止应用时，该触发器将激活它。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger.#ctor">
+      <summary>初始化 CommunicationBlockingAppSetAsActiveTrigger 的新实例。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager">
+      <summary>负责跟踪被阻止的号码和显示相应的阻止用户界面的管理员。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockingActive">
+      <summary>获取当前是否启用了阻止。</summary>
+      <returns>确定是否启用了阻止。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.IsBlockedNumberAsync(System.String)">
+      <summary>一个异步操作，该操作返回号码是否在阻止列表上。</summary>
+      <param name="number">要检查的号码。</param>
+      <returns>异步返回号码是否受阻。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedCallsUI">
+      <summary>显示已阻止呼叫的列表。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockedMessagesUI">
+      <summary>显示已阻止消息的列表。</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowBlockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>启动在存在有效的阻止应用时用于阻止号码的 UI。</summary>
+      <param name="phoneNumbers">要添加到阻止列表的号码的列表。</param>
+      <returns>如果启动了有效的阻止应用，则返回 **true**；否则返回 **false**。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAccessManager.ShowUnblockNumbersUI(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>启动在存在有效的阻止应用时用于取消阻止号码的应用。</summary>
+      <param name="phoneNumbers">要从阻止列表中删除的号码的列表。</param>
+      <returns>如果启动了有效的阻止应用，则返回 **true**；否则返回 **false**。</returns>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager">
+      <summary>确定用作阻止应用程序的应用程序。</summary>
+    </member>
+    <member name="P:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.IsCurrentAppActiveBlockingApp">
+      <summary>指示当前应用程序是否为有效的阻止应用程序。</summary>
+      <returns>告知当前应用程序是否为有效的阻止应用的值。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.RequestSetAsActiveBlockingAppAsync">
+      <summary>调用对话框以将当前应用程序设置为默认电话通信阻止应用程序。</summary>
+      <returns>指示应用程序是否设置为默认电话来源应用程序。</returns>
+    </member>
+    <member name="M:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingAppManager.ShowCommunicationBlockingSettingsUI">
+      <summary>显示用于选择当前活动的阻止应用程序的 UI。</summary>
+    </member>
+    <member name="T:Windows.ApplicationModel.CommunicationBlocking.CommunicationBlockingContract">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

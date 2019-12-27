@@ -1,0 +1,1130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.Store.StoreContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Store.StoreAcquireLicenseResult">
+      <summary>Предоставляет данные отклика на запрос для получения лицензии на пакет надстройки загружаемого контента (DLC) для текущего приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.ExtendedError">
+      <summary>Получает код ошибки для запроса, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.StorePackageLicense">
+      <summary>Получает объект, представляющий лицензию для пакета надстройки загружаемого контента (DLC) для текущего приложения.</summary>
+      <returns>Объект, представляющий лицензию на пакет скачиваемого контента (DLC).</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAppLicense">
+      <summary>Предоставляет данные лицензии для текущего приложения, в том числе лицензии на продукты, предлагаемые приложением.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.AddOnLicenses">
+      <summary>Получает коллекцию лицензий для надстроек длительного пользования, для которых у пользователя есть права. Это свойство не включает лицензии на потребительские надстройки.</summary>
+      <returns>Карта пар "ключ-значение", где каждый ключ — это код продукта в Store для SKU надстройки из каталога Microsoft Store, а каждое значение — это объект StoreLicense, содержащий информацию о лицензии для надстройки.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExpirationDate">
+      <summary>Получает дату и время окончания действия лицензии приложения.</summary>
+      <returns>Дата и время истечения срока действия лицензии приложения по системным часам.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExtendedJsonData">
+      <summary>Получает полные сведения о лицензии в формате JSON.</summary>
+      <returns>Строка в формате JSON, содержащая полные сведения о лицензии.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsActive">
+      <summary>Получает значение, указывающее, действительна ли лицензия и предоставляет ли она текущему пользователю право на использование приложения.</summary>
+      <returns>Значение True, если лицензия действительна и предоставляет текущему пользователю право на использование приложения. В противном случае — значение False.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsDiscLicense">
+      <summary>Получает значение, указывающее, получена ли текущая лицензия из установки на основе диска.</summary>
+      <returns>Значение true, если текущая лицензия был получена из установки на основе диска; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrial">
+      <summary>Получает значение, указывающее, является ли лицензия пробной лицензией.</summary>
+      <returns>Значение true, если лицензия является пробной; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrialOwnedByThisUser">
+      <summary>Получает значение, указывающее, есть ли у текущего пользователя право на пробный период ограниченного использования, связанный с этой лицензией на приложение.</summary>
+      <returns>Значение true, если у текущего пользователя права на пробную версию; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.SkuStoreId">
+      <summary>Получает код продукта в Store для SKU лицензируемого приложения из каталога Microsoft Store.</summary>
+      <returns>Код продукта в Store для SKU лицензируемого приложения из каталога Microsoft Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialTimeRemaining">
+      <summary>Получает оставшееся время пробного периода, связанного с этой лицензией на приложение.</summary>
+      <returns>Оставшееся время пробного периода, связанного с этой лицензией на приложение.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialUniqueId">
+      <summary>Получает уникальный идентификатор, определяющий сочетание текущего пользователя и пробного периода ограниченного использования, связанного с этой лицензией на приложение.</summary>
+      <returns>Уникальный идентификатор, определяющий сочетание текущего пользователя и пробного периода ограниченного использования, связанного с этой лицензией на приложение.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAvailability">
+      <summary>Представляет определенный экземпляр SKU продукта, который можно купить.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.EndDate">
+      <summary>Получает конечную дату для текущей доступности SKU.</summary>
+      <returns>Конечная дата для текущей доступности SKU.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.ExtendedJsonData">
+      <summary>Получает полные данные для текущей доступности SKU из Store в формате JSON.</summary>
+      <returns>Строка в формате JSON, содержащая полные данные для текущей доступности SKU из Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.Price">
+      <summary>Получает сведения о ценах для текущей доступности SKU, включая базовую и текущую цену, а также данные о продажах.</summary>
+      <returns>Объект, содержащий информацию о ценах для текущей доступности SKU.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.StoreId">
+      <summary>Получает код продукта в Store для текущей доступности SKU из каталога Microsoft Store.</summary>
+      <returns>Код продукта в Store для текущей доступности SKU из каталога Microsoft Store.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync">
+      <summary>Запрашивает приобретение текущей доступности SKU и отображает пользовательский интерфейс, используемый для совершения транзакции в Microsoft Store.</summary>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StorePurchaseResult, предоставляющий сведения о состоянии и ошибках для покупки.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>Запрашивает приобретение текущей доступности SKU и отображает пользовательский интерфейс, используемый для совершения транзакции в Microsoft Store. Этот метод позволяет указать дополнительные сведения об определенном предложении в рамках большого каталога продукции, представленной одним описанием в Microsoft Store, включая название продукта, которое видит пользователь во время покупки.</summary>
+      <param name="storePurchaseProperties">Объект, указывающий дополнительные сведения о запросе покупки, включая имя продукта, которое видит пользователь во время покупки.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StorePurchaseResult, предоставляющий сведения о состоянии и ошибках для покупки.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanAcquireLicenseResult">
+      <summary>Предоставляет данные отклика на запрос для определения, может ли быть получена лицензия на пакет надстройки загружаемого контента (DLC).</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.ExtendedError">
+      <summary>Получает код ошибки для запроса, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.LicensableSku">
+      <summary>Получает номер SKU для кода продукта в Store для надстройки загружаемого контента (DLC), если лицензию можно приобрести для надстройки для текущего пользователя.</summary>
+      <returns>Номер SKU для кода продукта в Store для надстройки загружаемого контента (DLC), если лицензию можно приобрести для надстройки для текущего пользователя.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.Status">
+      <summary>Получает состояние лицензии для пакета надстройки скачиваемого контента (DLC).</summary>
+      <returns>Состояние лицензии для пакета надстройки скачиваемого контента (DLC).</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanLicenseStatus">
+      <summary>Определяет значения, представляющие состояние лицензии для пакета надстройки скачиваемого контента (DLC).</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.Licensable">
+      <summary>Продукт может быть лицензирован для текущего пользователя.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.LicenseActionNotApplicableToProduct">
+      <summary>Индивидуальные пользователи не могут получить лицензию на продукт. Например, это может произойти, если передать код продукта в Store в метод CanAcquireStoreLicenseAsync(String) для надстройки, не являющейся DLC (то есть, надстройки без пакета).</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NetworkError">
+      <summary>Запрос на лицензию не выполнен из-за ошибки сетевого подключения.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NotLicensableToUser">
+      <summary>Пользователь не имеет право на получение лицензии для продукта.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.ServerError">
+      <summary>Запрос на лицензию не выполнен, так как Microsoft Store возвратил ошибку сервера.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCollectionData">
+      <summary>Предоставляет дополнительные данные для SKU продукта, на использование которого у пользователя есть право.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.AcquiredDate">
+      <summary>Получает дату приобретения SKU продукта.</summary>
+      <returns>Дата приобретения SKU продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.CampaignId">
+      <summary>Получает идентификатор рекламной кампании, связанной с номером SKU продукта.</summary>
+      <returns>Идентификатор рекламной кампании, связанной с SKU продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.DeveloperOfferId">
+      <summary>Получает идентификатор предложения разработчика, связанный с номером SKU продукта.</summary>
+      <returns>Идентификатор предложения разработчика, связанный с номером SKU продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.EndDate">
+      <summary>Получает конечную дату пробного периода для SKU продукта, если он является пробной версий или устойчивой надстройкой с ограниченным сроком действия.</summary>
+      <returns>Конечная дата пробного периода для SKU продукта, если он является пробной версий или устойчивой надстройкой с ограниченным сроком действия.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.ExtendedJsonData">
+      <summary>Получает полные данные коллекции для SKU продукта в формате JSON.</summary>
+      <returns>Строка в формате JSON, содержащая полные данные коллекции для SKU продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.IsTrial">
+      <summary>Получает значение, указывающее, является ли SKU продукта пробной версией.</summary>
+      <returns>Значение true, если SKU продукта является пробной версией; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.StartDate">
+      <summary>Получает дату начала пробного периода для SKU продукта, если он является пробной версий или устойчивой надстройкой с ограниченным сроком действия.</summary>
+      <returns>Дата начала пробного периода для SKU продукта, если он является пробной версий или устойчивой надстройкой с ограниченным сроком действия.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.TrialTimeRemaining">
+      <summary>Получает оставшееся пробное время ограниченного пробного периода, связанного с этим номером SKU продукта.</summary>
+      <returns>Оставшееся пробное время ограниченного пробного периода, связанного с этим номером SKU продукта.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableResult">
+      <summary>Предоставляет данные отклика на запрос, связанный с управляемой надстройкой для текущего приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.BalanceRemaining">
+      <summary>Возвращает остаток на счету для потребительской надстройки.</summary>
+      <returns>Остаток на счету для потребительной надстройки. Для неуправляемой потребительной надстройки, в которой разработчик (а не корпорация Майкрософт) отслеживает остаток на счету, это свойство возвращает либо 1 (у пользователя есть право на надстройку), либо 0 (у пользователя нет прав на надстройку).</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.ExtendedError">
+      <summary>Получает код ошибки для запроса, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.Status">
+      <summary>Получает состояние запроса.</summary>
+      <returns>Состояние запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.TrackingId">
+      <summary>Получает идентификатор отслеживания, отправленный с запросом ReportConsumableFulfillmentAsync.</summary>
+      <returns>Идентификатор отслеживания, отправленный с запросом ReportConsumableFulfillmentAsync.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableStatus">
+      <summary>Определяет значения, представляющие состояние запроса, связанного с потребительской надстройкой.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.InsufficentQuantity">
+      <summary>Запрос не был выполнен успешно, поскольку остаток на счету для потребительской надстройки слишком мал.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.NetworkError">
+      <summary>Запрос не завершился успешно из-за ошибки сетевого подключения.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.ServerError">
+      <summary>Запрос не завершился успешно, так как Microsoft Store возвратил ошибку сервера.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.Succeeded">
+      <summary>Запрос успешно выполнен.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContext">
+      <summary>Предоставляет члены, которые можно использовать для доступа к данным, связанным с Microsoft Store для текущего приложения, и управления ими. Например, с помощью членов этого класса можно получать описание и информацию о лицензии текущего приложения в Microsoft Store, приобрести приложение или предлагаемые в нем продукты, а также скачивать и устанавливать обновления пакета для приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.CanSilentlyDownloadStorePackageUpdates">
+      <summary>Получает значение, указывающее, можно ли загрузить обновления пакета для текущего приложения без отображения пользовательского интерфейса уведомления для пользователя.</summary>
+      <returns>Значение true, если можно загрузить обновления пакета для текущего приложения без отображения пользовательского интерфейса уведомления для пользователя; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.User">
+      <summary>Получает сведения о пользователе, который связан с текущим объектом StoreContext в многопользовательском приложении.</summary>
+      <returns>Объект, предоставляющий сведения о пользователе, который связан с текущим объектом StoreContext в многопользовательском приложении.</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreContext.OfflineLicensesChanged">
+      <summary>Возникает при изменении состояния лицензии приложения (например, при истечении срока действия пробной версии, или если пользователь приобрел полную версию приложения).</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.AcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>Получает лицензию для указанного пакета надстройки скачиваемого контента (DLC) для текущего приложения.</summary>
+      <param name="optionalPackage">Пакет надстройки DLC, для которого требуется получить лицензию.</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreAcquireLicenseResult, содержащий лицензию.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseAsync(System.String)">
+      <summary>Получает значение, указывающее, можно ли приобрести лицензию для указанной надстройки загружаемого содержимого (DLC) для текущего приложения для текущего пользователя.</summary>
+      <param name="productStoreId">Код продукта в Store для надстройки DLC, которую требуется проверить.</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreCanAcquireLicenseResult, который указывает, можно ли приобрести лицензию.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>Получает значение, указывающее, можно ли приобрести лицензию для указанного пакета загружаемого содержимого (DLC) для текущего приложения для текущего пользователя.</summary>
+      <param name="optionalPackage">Пакета DLC, который требуется проверить.</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreCanAcquireLicenseResult, который указывает, можно ли приобрести лицензию.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.DownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Скачивает и устанавливает указанные пакеты загружаемого контента (DLC) для текущего приложения из Microsoft Store без отображения пользовательского интерфейса уведомления для пользователя.</summary>
+      <param name="storeIds">Коды продуктов в Store для надстроек, соответствующее пакетам DLC, которые требуется установить для текущего приложения.</param>
+      <returns>Объект, который может наблюдать вызывающая сторона, чтобы отслеживать ход и завершение операции. При успешном выполнении возвращается объект StorePackageUpdateResult, предоставляющий сведения об обновлениях пакетов.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.FindStoreProductForPackageAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.ApplicationModel.Package)">
+      <summary>Получает сведения о продукте в Store для приложения или надстройки, связанных с указанным пакетом.</summary>
+      <param name="productKinds">Массив строк, указывающих типы продуктов в Store, которые могут быть связаны с пакетом. Список поддерживаемых строковых значений см. в описании свойства ProductKind.</param>
+      <param name="package">Объект Package, представляющий пакет, для которого требуется получить сведения о продукте в Store.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StoreProductResult. С помощью свойства Product этого объекта можно получить доступ к объекту StoreProduct, который содержит сведения о продукте в Store для указанного пакета.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppAndOptionalStorePackageUpdatesAsync">
+      <summary>Получает коллекцию пакетов для текущего приложения, для которых в Microsoft Store доступны для скачивания обновления, включая необязательные пакеты для приложения.</summary>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает коллекцию объектов StorePackageUpdate, представляющих пакеты, для которых доступны обновления.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppLicenseAsync">
+      <summary>Получает сведения о лицензии для текущего приложения, включая лицензии надстроек для него.</summary>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreAppLicense, содержащий сведения о лицензии для текущего приложения, включая лицензии надстроек.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Получает описания в Microsoft Store продуктов, которые можно приобрести из текущего приложения.</summary>
+      <param name="productKinds">Массив строк, указывающих интересующие вас типы продуктов. Список поддерживаемых строковых значений см. в описании свойства ProductKind.</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreProductQueryResult, предоставляющий доступ к связанным продуктам и соответствующим сведениям об ошибках.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>Получает описания в Microsoft Store продуктов, которые можно приобрести из текущего приложения. Этот метод поддерживает разбивку результатов на страницы.</summary>
+      <param name="productKinds">Массив строк, указывающих интересующие вас типы продуктов. Список поддерживаемых строковых значений см. в описании свойства ProductKind.</param>
+      <param name="maxItemsToRetrievePerPage">Максимальное количество продуктов на каждой странице результатов.</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreProductPagedQueryResult, предоставляющий доступ к связанным продуктам, соответствующим сведениям об ошибках и следующей странице результатов.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreQueueItemsAsync">
+      <summary>Получает сведения о всех новых или обновленных пакетах, содержащихся в очереди загрузки и установки для текущего приложения.</summary>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает коллекцию объектов StoreQueueItem, представляющих информацию о пакетах приложения, которые находятся в очереди.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetConsumableBalanceRemainingAsync(System.String)">
+      <summary>Возвращает остаток на счету для указанной потребительской надстройки текущего приложения.</summary>
+      <param name="productStoreId">Код продукта в Store для надстройки (предоставленный свойством StoreId объекта StoreProduct, представляющего надстройку).</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreConsumableResult, предоставляющий остаток на счете и другие сведения.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerCollectionsIdAsync(System.String,System.String)">
+      <summary>Извлекает ключ кода продукта в Microsoft Store, который может использоваться для запроса или потребления прав на продукт, принадлежащих текущему пользователю.</summary>
+      <param name="serviceTicket">Маркер доступа Azure Active Directory, который идентифицирует издателя текущего приложения. Подробные сведения о создании данного маркера см. в разделе "Управление правами на продукты из службы".</param>
+      <param name="publisherUserId">Анонимный идентификатор, который определяет текущего пользователя в контексте служб, которыми вы управляете в качестве издателя текущего приложения. Если вы поддерживаете идентификаторы пользователей в контексте служб, можно использовать этот параметр, чтобы связать ваш идентификатор для текущего пользователя с новым ключом кода продукта в Microsoft Store (идентификатор пользователя будет внедрен в этот ключ). В противном случае, если не нужно связать идентификатор пользователя с ключом кода продукта в Microsoft Store, можно передать любое строковое значение.</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает ключ идентификаторов коллекций для текущего пользователя. Этот ключ действителен в течение 90 дней.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerPurchaseIdAsync(System.String,System.String)">
+      <summary>Извлекает ключ кода продукта в Microsoft Store, который может использоваться для предоставления прав на бесплатные продукты от имени текущего пользователя.</summary>
+      <param name="serviceTicket">Маркер доступа Azure Active Directory, который идентифицирует издателя текущего приложения. Подробные сведения о создании данного маркера см. в разделе "Управление правами на продукты из службы".</param>
+      <param name="publisherUserId">Анонимный идентификатор, который определяет текущего пользователя в контексте служб, которыми вы управляете в качестве издателя текущего приложения. Если вы поддерживаете идентификаторы пользователей в контексте служб, можно использовать этот параметр, чтобы связать ваш идентификатор для текущего пользователя с новым ключом кода продукта в Microsoft Store (идентификатор пользователя будет внедрен в этот ключ). В противном случае, если не нужно связать идентификатор пользователя с ключом кода продукта в Microsoft Store, можно передать любое строковое значение.</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает ключ идентификатора покупки для текущего пользователя. Этот ключ действителен в течение 90 дней.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetDefault">
+      <summary>Получает объект StoreContext, который можно использовать для доступа к данным, связанным с Microsoft Store для текущего пользователя в контексте текущего приложения, и управления ими.</summary>
+      <returns>Объект, который можно использовать для доступа к данным, связанным с Microsoft Store для текущего пользователя.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetForUser(Windows.System.User)">
+      <summary>Получает объект StoreContext, который можно использовать для доступа к данным, связанным с Microsoft Store для указанного пользователя в контексте текущего приложения, и управления ими.</summary>
+      <param name="user">Объект, который определяет пользователя, к связанным с Microsoft Store данным которого вы хотите получить доступ и управлять ими.</param>
+      <returns>Объект, который можно использовать для доступа к связанным с Microsoft Store данным для указанного пользователя.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductForCurrentAppAsync">
+      <summary>Получает описание в Microsoft Store для текущего приложения и предоставляет доступ к методу, с помощью которого можно приобрести приложение для текущего пользователя.</summary>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreProductResult, содержащий описание в Microsoft Store для текущего приложения и соответствующую информацию об ошибках.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Получает описания в Microsoft Store для указанных продуктов, связанных с текущим приложением.</summary>
+      <param name="productKinds">Массив строк, указывающих типы продуктов, описания которых требуется получить. Список поддерживаемых строковых значений см. в описании свойства ProductKind.</param>
+      <param name="storeIds">Массив строк с кодами продуктов в Store, описания которых требуется получить.</param>
+      <returns>Асинхронная операция, которая в случае успешного выполнения\) возвращает объект StoreProductQueryResult, содержащий описания для указанных продуктов и соответствующую информацию об ошибках.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StoreProductOptions)">
+      <summary>Получает описания в Microsoft Store для указанных продуктов, связанных с текущим приложением, с возможностью использовать фильтр для запроса.</summary>
+      <param name="productKinds">Массив строк, указывающих типы продуктов, описания которых требуется получить. Список поддерживаемых строковых значений см. в описании свойства ProductKind.</param>
+      <param name="storeIds">Массив строк с кодами продуктов в Store, описания которых требуется получить.</param>
+      <param name="storeProductOptions">Объект, содержащий фильтр, который будет использоваться для запроса.</param>
+      <returns>Асинхронная операция, которая в случае успешного выполнения\) возвращает объект StoreProductQueryResult, содержащий описания для указанных продуктов и соответствующую информацию об ошибках.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Получает сведения об указанных новых или обновленных пакетах, содержащихся в очереди загрузки и установки для текущего приложения.</summary>
+      <param name="storeIds">Массив строк кодов продукта в Store, соответствующий пакетам, для которых требуется получить сведения об очереди загрузки и установки.</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает коллекцию объектов StoreQueueItem, представляющих информацию об указанных пакетах приложения, которые находятся в очереди.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Получает информацию из Microsoft Store о надстройках текущего приложения, для которых пользователь произвел покупку.</summary>
+      <param name="productKinds">Массив строк, указывающих типы надстроек, для которых требуется получить сведения. Список поддерживаемых строковых значений см. в описании свойства ProductKind.</param>
+      <returns>Асинхронная операция, которая в случае успешного выполнения возвращает объект StoreProductQueryResult, содержащий сведения Microsoft Store для надстроек текущего приложения, для которых пользователь произвел покупку и соответствующие сведения об ошибке.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>Получает информацию из Microsoft Store о надстройках текущего приложения, для которых пользователь произвел покупку. Этот метод поддерживает разбивку результатов на страницы.</summary>
+      <param name="productKinds">Массив строк, указывающих типы надстроек, для которых требуется получить сведения. Список поддерживаемых строковых значений см. в описании свойства ProductKind.</param>
+      <param name="maxItemsToRetrievePerPage">Максимальное количество надстроек на каждой странице результатов.</param>
+      <returns>Асинхронная операция, которая в случае успешного выполнения возвращает объект StoreProductPagedQueryResult, предоставляющий доступ к сведениям Microsoft Store для надстроек текущего приложения, для которых пользователь произвел покупку и соответствующие сведения об ошибке, а также к следующей странице результатов.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.ReportConsumableFulfillmentAsync(System.String,System.UInt32,System.Guid)">
+      <summary>Сообщает об израсходовании потребляемой надстройки для текущего приложения в Microsoft Store.</summary>
+      <param name="productStoreId">Код продукта в Store для потребительской надстройки, об израсходовании которой требуется сообщить.</param>
+      <param name="quantity">Количество единиц потребительской надстройки, об израсходовании которой требуется сообщить. Для управляемых Store (то есть таких, где остаток на счете отслеживает корпорация Майкрософт) потребительских надстроек укажите количество израсходованных единиц. Для управляемых разработчиком (то есть таких, где остаток на счете отслеживает разработчик) потребительских надстроек, укажите значение 1.</param>
+      <param name="trackingId">Предоставляемый разработчиком идентификатор GUID, который определяет конкретную транзакцию, с которой связана операция расхода в целях отслеживания. Дополнительные сведения см. в разделе "Примечания".</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreConsumableResult, содержащий сведения об операции расхода, например остаток на счете для единиц надстройки.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Производит попытку скачивания и установки указанных пакетов загружаемого контента (DLC) для текущего приложения из Microsoft Store. Этот метод также отображает диалоговое окно пользовательского интерфейса, которое запрашивает разрешение для операции.</summary>
+      <param name="storeIds">Коды продуктов в Store для устанавливаемых пакетов надстроек DLC.</param>
+      <returns>Объект, который может наблюдать вызывающая сторона, чтобы отслеживать ход и завершение операции. При успешном выполнении возвращается объект StorePackageUpdateResult, предоставляющий сведения об обновлениях пакетов.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StorePackageInstallOptions)">
+      <summary>Производит попытку скачивания и установки указанных пакетов загружаемого контента (DLC) для текущего приложения из Microsoft Store с указанными параметрами установки. Этот метод также отображает диалоговое окно пользовательского интерфейса, которое запрашивает разрешение для операции.</summary>
+      <param name="storeIds">Коды продуктов в Store для устанавливаемых пакетов надстроек DLC.</param>
+      <param name="storePackageInstallOptions">Объект, который указывает параметры установки для операции.</param>
+      <returns>Объект, который может наблюдать вызывающая сторона, чтобы отслеживать ход и завершение операции. При успешном выполнении возвращается объект StorePackageUpdateResult, предоставляющий сведения об обновлениях пакетов.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Производить попытку скачать и установить указанные обновления пакетов для текущего приложения из Microsoft Store. Этот метод также отображает диалоговое окно пользовательского интерфейса, которое запрашивает разрешение для операции.</summary>
+      <param name="storePackageUpdates">Набор объектов StorePackageUpdate, представляющих обновленные пакеты для скачивания и установки.</param>
+      <returns>Объект, который может наблюдать вызывающая сторона, чтобы отслеживать ход и завершение операции. При успешном выполнении возвращается объект StorePackageUpdateResult, предоставляющий сведения об обновлениях пакетов.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Производить попытку скачать указанные обновления пакетов для текущего приложения из Microsoft Store. Этот метод также отображает диалоговое окно пользовательского интерфейса, которое запрашивает разрешение для операции.</summary>
+      <param name="storePackageUpdates">Набор объектов StorePackageUpdate, представляющих обновленные пакеты для скачивания.</param>
+      <returns>Объект, который может наблюдать вызывающая сторона, чтобы отслеживать ход и завершение операции. При успешном выполнении возвращается объект StorePackageUpdateResult, предоставляющий сведения об обновлениях пакетов.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String)">
+      <summary>Запрашивает покупку указанного приложения или надстройки и отображает пользовательский интерфейс для совершения транзакции в Microsoft Store.</summary>
+      <param name="storeId">Код продукта в Store для приложения или надстройки, который вы хотите приобрести для текущего пользователя.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StorePurchaseResult, предоставляющий сведения о состоянии и ошибках для покупки.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String,Windows.Services.Store.StorePurchaseProperties)">
+      <summary>Запрашивает покупку указанного приложения или надстройки и отображает пользовательский интерфейс для совершения транзакции в Microsoft Store. Этот метод позволяет указать дополнительные сведения об определенном предложении в рамках большого каталога продукции, представленной одним описанием в Microsoft Store, включая название продукта, которое видит пользователь во время покупки.</summary>
+      <param name="storeId">Код продукта в Store для приложения или надстройки, который вы хотите приобрести для текущего пользователя.</param>
+      <param name="storePurchaseProperties">Объект, указывающий дополнительные сведения о запросе покупки, включая имя продукта, которое видит пользователь во время покупки.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StorePurchaseResult, предоставляющий сведения о состоянии и ошибках для покупки.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestRateAndReviewAppAsync">
+      <summary>Запрашивает у пользователя оценку и отзыв о приложении. Этот метод отображает пользователю пользовательский интерфейс для выбора оценки Store и добавления необязательного обзора Store для продукта.</summary>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StoreRateAndReviewResult, предоставляющий сведения о состоянии и ошибках.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>Производить попытку удаления указанного необязательного пакета для текущего приложения. Этот метод также отображает диалоговое окно пользовательского интерфейса, которое запрашивает разрешение для операции.</summary>
+      <param name="package">Удаляемый необязательный пакет для текущего приложения.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StoreUninstallStorePackageResult, предоставляющий сведения об операции удаления.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>Производит попытку удаления указанного пакета скачиваемого контента (DLC) для текущего приложения. Этот метод также отображает диалоговое окно пользовательского интерфейса, которое запрашивает разрешение для операции.</summary>
+      <param name="storeId">Код продукта в Store для надстройки, соответствующей пакету скачиваемого контента (DLC), который требуется удалить для текущего приложения.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StoreUninstallStorePackageResult, предоставляющий сведения об операции удаления.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.SetInstallOrderForAssociatedStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StoreQueueItem})">
+      <summary>Задает порядок, в котором требуется устанавливать указанные пакеты в очереди загрузки и установки для текущего приложения.</summary>
+      <param name="items">Список объектов StoreQueueItem, представляющий пакеты в очереди установки, в том порядке, в котором требуется установить пакеты.</param>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает список объектов StoreQueueItem в порядке, в котором соответствующие пакеты в очереди заданы для установки.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Производит попытку скачать и установить указанные обновления пакетов для текущего приложения из Microsoft Store без отображения пользовательского интерфейса уведомления для пользователя.</summary>
+      <param name="storePackageUpdates">Набор объектов StorePackageUpdate, представляющих обновленные пакеты для скачивания и установки.</param>
+      <returns>Объект, который может наблюдать вызывающая сторона, чтобы отслеживать ход и завершение операции. При успешном выполнении возвращается объект StorePackageUpdateResult, предоставляющий сведения об обновлениях пакетов.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Производит попытку скачать указанные обновления пакетов для текущего приложения из Microsoft Store без отображения пользовательского интерфейса уведомления для пользователя.</summary>
+      <param name="storePackageUpdates">Набор объектов StorePackageUpdate, представляющих обновленные пакеты для скачивания.</param>
+      <returns>Объект, который может наблюдать вызывающая сторона, чтобы отслеживать ход и завершение операции. При успешном выполнении возвращается объект StorePackageUpdateResult, предоставляющий сведения об обновлениях пакетов.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>Удаляет указанный необязательный пакет для текущего приложения без отображения диалогового окна пользовательского интерфейса с уведомлением для пользователя.</summary>
+      <param name="package">Удаляемый необязательный пакет для текущего приложения.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StoreUninstallStorePackageResult, предоставляющий сведения об операции удаления.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>Удаляет указанный пакет скачиваемого контента (DLC) для текущего приложения без отображения диалогового окна пользовательского интерфейса с уведомлением для пользователя.</summary>
+      <param name="storeId">Код продукта в Store для надстройки, соответствующей пакету DLC, который требуется удалить для текущего приложения.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StoreUninstallStorePackageResult, предоставляющий сведения об операции удаления.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreDurationUnit">
+      <summary>Определяет значения, представляющие единицы пробного периода или периода выписывания счетов для подписки.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Day">
+      <summary>Период указывается в днях.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Hour">
+      <summary>Период указывается в часах.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Minute">
+      <summary>Период указывается в минутах.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Month">
+      <summary>Период указывается в месяцах.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Week">
+      <summary>Период указывается в неделях.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Year">
+      <summary>Период указывается в годах.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreImage">
+      <summary>Представляет изображение, связанное с описанием продукта в Магазине Windows.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Caption">
+      <summary>Получает заголовок изображения.</summary>
+      <returns>Заголовок изображения.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Height">
+      <summary>Получает высоту изображения в пикселях.</summary>
+      <returns>Высота изображения.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.ImagePurposeTag">
+      <summary>Получает тег изображения.</summary>
+      <returns>Тег изображения.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Uri">
+      <summary>Получает URI изображения.</summary>
+      <returns>URI изображения.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Width">
+      <summary>Получает ширину изображения в пикселях.</summary>
+      <returns>Ширина изображения.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreLicense">
+      <summary>Предоставляет сведения о лицензии для надстройки длительного пользования, связанной с текущим приложением.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExpirationDate">
+      <summary>Получает дату и время окончания действия лицензии дополнения.</summary>
+      <returns>Дата и время окончания действия лицензии дополнения.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExtendedJsonData">
+      <summary>Получает полные сведения о лицензии в формате JSON.</summary>
+      <returns>Полные сведения о лицензии в формате JSON.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.InAppOfferToken">
+      <summary>Получает код продукта для надстройки.</summary>
+      <returns>Маркер предложения из приложения для дополнительного компонента, если он существует.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.IsActive">
+      <summary>Это свойство зарезервировано для использования в будущем и не предназначено для использования в текущем выпуске. В данный момент всегда возвращает значение True.</summary>
+      <returns>Значение True во всех случаях.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.SkuStoreId">
+      <summary>Получает код продукта в Store для SKU лицензируемой надстройки из каталога Microsoft Store.</summary>
+      <returns>Код продукта в Store для SKU лицензируемой надстройки из каталога Microsoft Store.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageInstallOptions">
+      <summary>Представляет параметры, которые можно задать при использовании метода RequestDownloadAndInstallStorePackagesAsync для скачивания и установки пакетов скачиваемого контента (DLC) для текущего приложения.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageInstallOptions.#ctor">
+      <summary>Создает новый экземпляр класса StorePackageInstallOptions.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageInstallOptions.AllowForcedAppRestart">
+      <summary>Получает или задает значение, которое указывает, может ли операционная система принудительно перезапустить приложение после установки пакетов загружаемого контента (DLC) для текущего приложения с помощью метода RequestDownloadAndInstallStorePackagesAsync.</summary>
+      <returns>Значение true, если ОС может принудительно перезапустить приложение после установки пакетов DLC; в противном случае — значение false.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageLicense">
+      <summary>Предоставляет сведения о лицензии для скачиваемого пакета контента (DLC) для текущего приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.IsValid">
+      <summary>Получает значение, указывающее, действительна ли лицензия.</summary>
+      <returns>Значение true, если лицензия действительна; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.Package">
+      <summary>Возвращает пакет скачиваемого контента (DLC), связанный с этой лицензией</summary>
+      <returns>Объект, представляющий пакет DLC, связанный с лицензией.</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StorePackageLicense.LicenseLost">
+      <summary>Создается, когда пользователь теряет права на лицензию для текущего устройства (например, пользователь приобрел лицензию на другом устройстве).</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.Close">
+      <summary>Закрывает и освобождает любые ресурсы, используемые этим объектом StorePackageLicense.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.ReleaseLicense">
+      <summary>Освобождает лицензию для пакета скачиваемого контента (DLC).</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdate">
+      <summary>Предоставляет информацию о пакете для текущего приложения, для которого доступно обновление для скачивания из Microsoft Store.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Mandatory">
+      <summary>Получает значение, указывающее, является ли пакет, для которого доступно обновление в Microsoft Store, обязательным пакетом, как указано разработчиком в Центре партнеров.</summary>
+      <returns>Значение true, если пакет обязательный; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Package">
+      <summary>Получает пакет, для которого доступно обновление для скачивания из Microsoft Store.</summary>
+      <returns>Объект, представляющий пакет, для которого доступно обновление.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateResult">
+      <summary>Предоставляет данные отклика на запрос скачивания и установки пакета для текущего приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.OverallState">
+      <summary>Получает состояние выполненного запроса обновления пакета.</summary>
+      <returns>Значение, указывающее состояние выполненного запроса обновления пакета.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StorePackageUpdateStatuses">
+      <summary>Получает сведения о состоянии каждого из обновлений пакета, которые связаны с выполненным запросом.</summary>
+      <returns>Коллекция объектов StorePackageUpdateStatus, предоставляющая сведения о состоянии каждого обновления пакета, связанного с запросом.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StoreQueueItems">
+      <summary>Получает сведения об очереди установки для каждого из обновлений пакета, которые связаны с выполненным запросом.</summary>
+      <returns>Коллекция объектов StoreQueueItem, предоставляющая сведения об очереди установки для каждого из обновлений пакета, связанных с выполненным запросом.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateState">
+      <summary>Определяет значения, представляющие состояние скачивания пакета или запроса на установку.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Canceled">
+      <summary>Скачивание или установка обновлений пакета были отменены.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Completed">
+      <summary>Скачивание или установка обновлений пакета завершены.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Deploying">
+      <summary>Обновления пакета развертываются на устройстве.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Downloading">
+      <summary>Обновления пакета скачиваются.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorLowBattery">
+      <summary>Скачивание или установка обновлений пакета не были завершены, поскольку уровень заряда аккумулятора был слишком низким.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRecommended">
+      <summary>Скачивание не было завершено, поскольку рекомендуется использовать подключение Wi-Fi для скачивания обновлений пакета.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRequired">
+      <summary>Скачивание не было завершено, поскольку необходимо использовать подключение Wi-Fi для скачивания обновлений пакета.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.OtherError">
+      <summary>Произошла неизвестная ошибка.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Pending">
+      <summary>Скачивание обновлений пакета не началось.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateStatus">
+      <summary>Предоставляет сведения о состоянии пакета, связанного с запросом на скачивание или установку.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageBytesDownloaded">
+      <summary>Число байтов, которое было скачано.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadProgress">
+      <summary>Ход скачивания (или скачивания и установки) текущего пакета, представленный значением от 0,0 до 1,0. При использовании RequestDownloadStorePackageUpdatesAsync для скачивания пакетов, это значение увеличивается от 0,0 до 1,0 во время скачивания каждого пакета.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadSizeInBytes">
+      <summary>Размер скачиваемого пакета в байтах. Это приблизительное значение, которое может меняться в ходе скачивания.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageFamilyName">
+      <summary>Семейство скачиваемого или устанавливаемого пакета.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageUpdateState">
+      <summary>Значение StorePackageUpdateState, которое указывает состояние скачиваемого или устанавливаемого пакета.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.TotalDownloadProgress">
+      <summary>Текущий ход скачивания всех пакетов в запросе, представленный значением от 0,0 до 1,0.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePrice">
+      <summary>Содержит информацию о ценах для описания продукта в Microsoft Store.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.CurrencyCode">
+      <summary>Получает код валюты согласно стандарту ISO 4217 для рынка текущего пользователя.</summary>
+      <returns>Код валюты согласно стандарту ISO 4217 для рынка текущего пользователя.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedBasePrice">
+      <summary>Получает базовую цену продукта с форматированием, соответствующим рынку текущего пользователя.</summary>
+      <returns>Базовая цена продукта с форматированием, соответствующим рынку текущего пользователя.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedPrice">
+      <summary>Получает цену покупки продукта с форматированием, соответствующим рынку текущего пользователя.</summary>
+      <returns>Цена покупки продукта с форматированием, соответствующим рынку текущего пользователя.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedRecurrencePrice">
+      <summary>Получает повторяющуюся цену для продукта с соответствующим форматированием для рынка текущего пользователя, если повторяющееся выставление счетов включено для данного продукта.</summary>
+      <returns>Повторяющаяся цена продукта с форматированием, соответствующим рынку текущего пользователя.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.IsOnSale">
+      <summary>Получает значение, указывающее, активна ли для продукта распродажа.</summary>
+      <returns>Значение true, если для продукта активна распродажа; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.SaleEndDate">
+      <summary>Получает конечную дату периода распродажи для продукта, если для него активна распродажа.</summary>
+      <returns>Дата окончания периода распродажи продукта.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProduct">
+      <summary>Представляет продукт, доступный в Microsoft Store.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Description">
+      <summary>Получает текст из описания продукта из Microsoft Store.</summary>
+      <returns>Описание продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ExtendedJsonData">
+      <summary>Получает полные данные продукта из Store в формате JSON.</summary>
+      <returns>Строка в формате JSON, содержащая полные данные о продукте из Store в формате JSON.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.HasDigitalDownload">
+      <summary>Возвращает значение, указывающее, является ли продукт необязательным загружаемым контентом (DLC).</summary>
+      <returns>Значение true, если продукт является необязательным загружаемым контентом; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Images">
+      <summary>Получает изображения из описания продукта в Магазине Windows.</summary>
+      <returns>Коллекция объектов StoreImage, представляющих изображения из описания продукта в Магазине Windows.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.InAppOfferToken">
+      <summary>Получает код данного продукта, если текущий объект StoreProduct представляет надстройку.</summary>
+      <returns>Код данного продукта, если текущий объект StoreProduct представляет надстройку.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.IsInUserCollection">
+      <summary>Получает значение, указывающее, есть ли у текущего пользователя право на использование SKU продукта по умолчанию.</summary>
+      <returns>Значение true, если у текущего пользователя есть право на использование SKU продукта по умолчанию; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Keywords">
+      <summary>Возвращает ключевые слова, связанные с продуктом в Центре партнеров. Это свойство применяется только к объектам **StoreProduct**, представляющим надстройки. Эти строки соответствуют значению поля **Ключевые слова** на странице свойств для надстройки в Центре партнеров.</summary>
+      <returns>Коллекция строк, содержащая ключевые слова, связанные с продуктом в Центре партнеров.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Language">
+      <summary>Получает язык данных в описании продукта в Microsoft Store.</summary>
+      <returns>Язык данных в описании продукта в Microsoft Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.LinkUri">
+      <summary>Получает URI описания продукта в Microsoft Store.</summary>
+      <returns>URI описания продукта в Microsoft Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Price">
+      <summary>Возвращает цену SKU по умолчанию и уровень доступности продукта.</summary>
+      <returns>Цена SKU по умолчанию и уровень доступности продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ProductKind">
+      <summary>Возвращает тип продукта. В настоящее время поддерживаются следующие значения: **Application**, **Game**, **Consumable**, **UnmanagedConsumable** и **Durable**.</summary>
+      <returns>Тип продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Skus">
+      <summary>Возвращает список доступных SKU для продукта.</summary>
+      <returns>Коллекция объектов StoreSku, представляющих доступные SKU для продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.StoreId">
+      <summary>Получает код данного продукта в Store.</summary>
+      <returns>Код данного продукта в Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Title">
+      <summary>Получает название продукта из описания в Microsoft Store.</summary>
+      <returns>Название продукта из описания в Microsoft Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Videos">
+      <summary>Получает видео из описания продукта в Магазине Windows.</summary>
+      <returns>Коллекция объектов StoreVideo, представляющих видео из описания продукта в Магазине Windows.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.GetIsAnySkuInstalledAsync">
+      <summary>Указывает, установлен ли на текущем устройстве какой-либо SKU данного продукта. Этот метод предназначен для продуктов с загружаемым контентом (DLC).</summary>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает значение true, если SKU данного продукта установлен на текущем устройстве, а в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync">
+      <summary>Запрашивает покупку SKU по умолчанию и доступность для продукта, а также отображает пользовательский интерфейс, используемый для совершения транзакции в Microsoft Store.</summary>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StorePurchaseResult, предоставляющий сведения о состоянии и ошибках для покупки.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>Запрашивает покупку SKU по умолчанию и доступность для продукта, а также отображает пользовательский интерфейс, используемый для совершения транзакции в Microsoft Store. Этот метод позволяет указать дополнительные сведения об определенном предложении в рамках большого каталога продукции, представленной одним описанием в Microsoft Store, включая название продукта, которое видит пользователь во время покупки.</summary>
+      <param name="storePurchaseProperties">Объект, указывающий дополнительные сведения о запросе покупки, включая имя продукта, которое видит пользователь во время покупки.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StorePurchaseResult, предоставляющий сведения о состоянии и ошибках для покупки.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductOptions">
+      <summary>Содержит коллекцию строк фильтра, которые можно использовать с методом GetStoreProductsAsync для получения сведений об указанных продуктах, связанных с текущим приложением.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductOptions.#ctor">
+      <summary>Создает новый экземпляр класса StoreProductOptions.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductOptions.ActionFilters">
+      <summary>Получает коллекцию строк фильтра, которые можно использовать с методом GetStoreProductsAsync для получения сведений об указанных продуктах, связанных с текущим приложением. В настоящее время эта коллекция поддерживает только одну строку фильтра "Покупка".</summary>
+      <returns>Коллекция строк фильтра, которые можно использовать с методом GetStoreProductsAsync для получения сведений об указанных продуктах, связанных с текущим приложением.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductPagedQueryResult">
+      <summary>Предоставляет данные отклика для разделенного на страницы запроса на получение сведений о продуктах, которые можно приобрести из текущего приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.ExtendedError">
+      <summary>Получает код ошибки для запроса, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.HasMoreResults">
+      <summary>Возвращает значение, указывающее, есть ли в результатах дополнительные страницы. Чтобы получить следующую страницу результатов, используйте метод GetNextAsync.</summary>
+      <returns>Значение true, если в результатах есть дополнительные страницы; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.Products">
+      <summary>Получает коллекцию продуктов, возвращенных запросом.</summary>
+      <returns>Словарь пар "ключ-значение", где каждый ключ представляет собой код продукта в Store, а значение — объект StoreProduct, представляющий надстройку.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductPagedQueryResult.GetNextAsync">
+      <summary>Возвращает следующую страницу результатов. Чтобы определить, есть ли еще страницы в результатах, используйте свойство HasMoreResults.</summary>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает объект StoreProductPagedQueryResult, предоставляющий следующую страницу результатов.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductQueryResult">
+      <summary>Предоставляет данные отклика для запроса на получение сведений о продуктах, которые можно приобрести из текущего приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.ExtendedError">
+      <summary>Получает код ошибки для запроса, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.Products">
+      <summary>Получает коллекцию продуктов, возвращенных запросом.</summary>
+      <returns>Словарь пар "ключ-значение", где каждый ключ представляет собой код надстройки в Store, а значение — объект StoreProduct, представляющий надстройку.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductResult">
+      <summary>Предоставляет данные отклика для запроса на получение сведений о текущем приложении.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.ExtendedError">
+      <summary>Получает код ошибки для запроса, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.Product">
+      <summary>Возвращает сведения о текущем приложении.</summary>
+      <returns>Объект, предоставляющий сведения о текущем приложении.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseProperties">
+      <summary>Содержит дополнительные сведения, которые можно передать в запрос на покупку продукта, включая имя продукта, которое пользователь видит во время покупки.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor">
+      <summary>Инициализирует новый экземпляр класса StorePurchaseProperties.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса StorePurchaseProperties. Эта перегрузка позволяет определить имя продукта, которое пользователь видит во время покупки.</summary>
+      <param name="name">Имя продукта, которое пользователь видит во время покупки.</param>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.ExtendedJsonData">
+      <summary>Получает или задает строку в формате JSON, содержащую расширенные данные, которые передаются вместе с запросом на покупку в Microsoft Store.</summary>
+      <returns>Строка в формате JSON, содержащая расширенные данные, которые передаются вместе с запросом на покупку в Microsoft Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.Name">
+      <summary>Получает или задает имя продукта, которое пользователь видит во время покупки. Указанное имя отображается в строке заголовка пользовательского интерфейса покупки.</summary>
+      <returns>Имя продукта, которое пользователь видит во время покупки.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseResult">
+      <summary>Предоставляет данные отклика для запроса на покупку приложения или продукта, предлагаемого в приложении.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.ExtendedError">
+      <summary>Получает код ошибки для запроса на покупку, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса на покупку.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.Status">
+      <summary>Получает состояние запроса на покупку.</summary>
+      <returns>Состояние запроса на покупку.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseStatus">
+      <summary>Определяет значения, представляющие состояние запроса на покупку приложения или надстройки.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.AlreadyPurchased">
+      <summary>Текущий пользователь уже приобрел указанное приложение или надстройку.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NetworkError">
+      <summary>Запрос на покупку не выполнен из-за ошибки сетевого подключения.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NotPurchased">
+      <summary>Запрос на покупку не выполнен.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.ServerError">
+      <summary>Запрос на покупку не выполнен, так как Microsoft Store возвратил ошибку сервера.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.Succeeded">
+      <summary>Запрос на покупку успешно выполнен.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItem">
+      <summary>Представляет сведения о новом или обновленном пакете, содержащемся в очереди загрузки и установки для текущего приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.InstallKind">
+      <summary>Получает значение, которое описывает операцию, выполняемую для текущего пакета в очереди загрузки и установки.</summary>
+      <returns>Значение, которое описывает операцию, выполняемую для текущего пакета в очереди загрузки и установки.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.PackageFamilyName">
+      <summary>Получает имя семейства пакетов текущего пакета в очереди.</summary>
+      <returns>Имя семейства пакетов текущего пакета в очереди.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.ProductId">
+      <summary>Получает код продукта надстройки для текущего пакета в очереди, если пакет соответствует надстройке.</summary>
+      <returns>Код продукта надстройки для текущего пакета в очереди.</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.Completed">
+      <summary>Возникает при завершении скачивания и установки текущего пакета в очереди.</summary>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.StatusChanged">
+      <summary>Возникает при изменении состояния текущего пакета в очереди.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.CancelInstallAsync">
+      <summary>Отменяет установку для текущего пакета в очереди.</summary>
+      <returns>Объект, используемый для управления асинхронной операцией.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.GetCurrentStatus">
+      <summary>Возвращает состояние текущего пакета в очереди.</summary>
+      <returns>Объект, представляющий состояние текущего пакета в очереди.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.PauseInstallAsync">
+      <summary>Приостанавливает установку для текущего пакета в очереди.</summary>
+      <returns>Объект, используемый для управления асинхронной операцией.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.ResumeInstallAsync">
+      <summary>Возобновляет установку для текущего пакета в очереди.</summary>
+      <returns>Объект, используемый для управления асинхронной операцией.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemCompletedEventArgs">
+      <summary>Предоставляет данные для события Completed класса StoreQueueItem.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemCompletedEventArgs.Status">
+      <summary>Получает состояние завершенного элемента в очереди скачивания и установки.</summary>
+      <returns>Состояние завершенного элемента в очереди.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemExtendedState">
+      <summary>Определяет значения, которые представляют расширенные сведения о состоянии для нового или обновленного пакета, содержащегося в очереди скачивания и установки для текущего приложения.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveAcquiringLicense">
+      <summary>Пакет получает лицензию.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveDownloading">
+      <summary>Пакет скачивается.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveInstalling">
+      <summary>Пакет устанавливается.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActivePending">
+      <summary>Скачивание и установка пакета находятся в состоянии ожидания.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveRestoringData">
+      <summary>Пакет восстанавливает данные.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveStarting">
+      <summary>Начинаются скачивание и установка пакета.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Canceled">
+      <summary>Скачивание или установка пакета были отменены.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Completed">
+      <summary>Скачивание и установка пакета завершены.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Error">
+      <summary>При скачивании или установке пакета возникла ошибка.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Paused">
+      <summary>Скачивание или установка пакета были приостановлены.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedLowBattery">
+      <summary>Скачивание или установка пакета были приостановлены из-за недостатка заряда аккумулятора.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedPackagesInUse">
+      <summary>Установка пакета была приостановлена, поскольку приложение уже использует связанные пакеты.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedReadyToInstall">
+      <summary>Пакет приостановлен, но готов к установке.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRecommended">
+      <summary>Скачивание пакета было приостановлено, поскольку рекомендуется использовать подключение Wi-Fi.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRequired">
+      <summary>Скачивание пакета было приостановлено, поскольку требуется использовать подключение Wi-Fi.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemKind">
+      <summary>Определяет значения, которые описывают операцию, выполняемую для текущего пакета в очереди загрузки и установки.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Install">
+      <summary>Элемент устанавливается в первый раз.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Repair">
+      <summary>Выполняется восстановление элемента.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Update">
+      <summary>Элемент обновляется.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemState">
+      <summary>Определяет значения, которые указывают состояние нового или обновленного пакета, содержащегося в очереди скачивания и установки для текущего приложения.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Active">
+      <summary>Выполняется скачивание или установка пакета.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Canceled">
+      <summary>Скачивание или установка пакета были отменены.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Completed">
+      <summary>Скачивание и установка пакета завершены.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Error">
+      <summary>При скачивании или установке пакета возникла ошибка.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Paused">
+      <summary>Скачивание или установка пакета были приостановлены.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemStatus">
+      <summary>Представляет сведения о состоянии для нового или обновленного пакета, содержащегося в очереди загрузки и установки для текущего приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.ExtendedError">
+      <summary>Получает код ошибки для запроса на скачивание и установку, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallExtendedState">
+      <summary>Получает значение, которое указывает дополнительные сведения о состоянии для пакета, содержащегося в очереди скачивания и установки для текущего приложения.</summary>
+      <returns>Значение, указывающее дополнительные сведения о состоянии для пакета, который находится в очереди.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallState">
+      <summary>Получает значение, которое указывает общее состояние для пакета, содержащегося в очереди для текущего приложения.</summary>
+      <returns>Значение, указывающее общее состояние для пакета, который находится в очереди.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.UpdateStatus">
+      <summary>Получает значение, которое указывает состояние обновления для пакета, содержащегося в очереди для текущего приложения.</summary>
+      <returns>Значение, указывающее состояние обновления для пакета, который находится в очереди.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewResult">
+      <summary>Предоставляет данные отклика для запроса на оценку и отзыв по продукту.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedError">
+      <summary>Получает код ошибки для запроса, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedJsonData">
+      <summary>Получает полные результирующие данные для запроса оценки и отзыва в формате JSON. Эти сведения включают данные, позволяющие определить, если пользователь прервал диалоговое окно, и сведения об ошибке, если вызов не был успешным.</summary>
+      <returns>Строка в формате JSON, содержащая результат из запроса оценки и отзыва.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.Status">
+      <summary>Получает состояние для запроса оценки и отзыва для продукта.</summary>
+      <returns>Состояние для запроса оценки и отзыва для продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.WasUpdated">
+      <summary>Получает значение, указывающее, был ли запрос оценки и отзыва успешно обновлен.</summary>
+      <returns>Значение true, если запрос выполнил успешное обновление для оценки и отзыва по продукту; в противном случае — значение false.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewStatus">
+      <summary>Получает состояние результата для запроса оценки и отзыва для продукта.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.CanceledByUser">
+      <summary>Запрос был отменен пользователем.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Error">
+      <summary>При запросе возникла ошибка.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.NetworkError">
+      <summary>При запросе возникла ошибка сети.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Succeeded">
+      <summary>Запрос успешно выполнен.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRequestHelper">
+      <summary>Предоставляет вспомогательный метод, с помощью которого можно отправлять в Microsoft Store запросы на операции, для которых в пакете Windows SDK еще нет соответствующего API.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreRequestHelper.SendRequestAsync(Windows.Services.Store.StoreContext,System.UInt32,System.String)">
+      <summary>Отправляет указанный запрос в Магазин Windows с предоставленными контекстом и параметрами.</summary>
+      <param name="context">Объект, указывающий пользователя, для которого выполняется операция. Если ваше приложение является однопользовательским (то есть работает только в контексте пользователя, запустившего приложение), используйте метод StoreContext.GetDefault, чтобы получить объект StoreContext, с помощью которого можно отправить запрос, работающий в контексте пользователя.</param>
+      <param name="requestKind">Значение, указывающее запрос, который требуется отправить в Магазин Windows.</param>
+      <param name="parametersAsJson">Строка в формате JSON, содержащая аргументы, передаваемые в запрос.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StoreSendRequestResult, предоставляющий сведения о состоянии и ошибках для запроса.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSendRequestResult">
+      <summary>Предоставляет данные отклика для запроса, отправленного в Microsoft Store.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.ExtendedError">
+      <summary>Получает код ошибки для запроса, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса, если при выполнении операции произошла ошибка.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.HttpStatusCode">
+      <summary>Возвращает код состояния HTTP для запроса.</summary>
+      <returns>Код состояния HTTP для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.Response">
+      <summary>Возвращает данные отклика на запрос.</summary>
+      <returns>Данные отклика на запрос.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSku">
+      <summary>Предоставляет сведения для номера SKU продукта в Microsoft Store.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Availabilities">
+      <summary>Получает данные о доступности текущего SKU продукта. Каждому SKU продукта может соответствовать несколько уровней доступности с разными ценами.</summary>
+      <returns>Коллекция объектов StoreAvailability, представляющих уровни доступности текущего SKU продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.BundledSkus">
+      <summary>Возвращает список кодов продуктов в Store для приложений или надстроек, входящих в состав пакета этого SKU продукта.</summary>
+      <returns>Список кодов продуктов в Store для приложений или надстроек, входящих в состав пакета этого SKU продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CollectionData">
+      <summary>Получает дополнительные данные для текущего SKU продукта, если у пользователя есть право на использование SKU.</summary>
+      <returns>Объект, предоставляющий дополнительные данные о текущем SKU продукта, если у пользователя есть право на использование этого SKU.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CustomDeveloperData">
+      <summary>Получает пользовательскую строку данных разработчика (также называемую тегом), которая содержит сведения о надстройке, представляемой этим SKU продукта. Эта строка соответствует значению поля **Пользовательские данные, определенные разработчиком** на странице свойств надстройки в Центре партнеров.</summary>
+      <returns>Пользовательские данные разработчика надстройки.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Description">
+      <summary>Получает текст из описания SKU продукта в Microsoft Store.</summary>
+      <returns>Текст из описания SKU продукта в Microsoft Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.ExtendedJsonData">
+      <summary>Получает полные данные для текущего SKU продукта из Store в формате JSON.</summary>
+      <returns>Строка в формате JSON, содержащая полные данные для текущего SKU продукта из Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Images">
+      <summary>Получает изображения из описания SKU продукта в Microsoft Store.</summary>
+      <returns>Коллекция объектов StoreImage, представляющих изображения из описания в Microsoft Store для SKU продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsInUserCollection">
+      <summary>Получает значение, указывающее, есть ли у текущего пользователя право на использование текущего SKU продукта.</summary>
+      <returns>Значение true, если у текущего пользователя есть право на использование текущего SKU продукта; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsSubscription">
+      <summary>Возвращает значение, указывающее, является ли текущий SKU продукта подпиской с регулярным выставлением счетов. Дополнительные сведения о подписке см. в свойстве SubscriptionInfo.</summary>
+      <returns>Значение true, если текущий SKU продукта является подпиской с регулярным выставлением счетов; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsTrial">
+      <summary>Получает значение, указывающее, является ли текущий SKU продукта пробной версией.</summary>
+      <returns>Значение true, если текущий SKU продукта является пробной версией; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Language">
+      <summary>Получает язык данных в описании продукта в Microsoft Store для SKU продукта.</summary>
+      <returns>Данные в описании в Microsoft Store для SKU продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Price">
+      <summary>Получает цену этого SKU продукта с уровнем доступности по умолчанию.</summary>
+      <returns>Цена этого SKU продукта с уровнем доступности по умолчанию.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.StoreId">
+      <summary>Получает код продукта в Store для этого SKU продукта.</summary>
+      <returns>Код продукта в Store для этого SKU продукта.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.SubscriptionInfo">
+      <summary>Возвращает сведения о подписке для этого SKU продукта, если это подписка с регулярным выставлением счетов. Чтобы определить, предоставляется ли этот SKU продукта по подписке, используйте свойство IsSubscription.</summary>
+      <returns>Объект, содержащий сведения о подписке для этого SKU продукта. Если этот SKU продукта не предоставляется по подписке с ежемесячным выставлением счетов, это свойство возвращает значение **null**.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Title">
+      <summary>Получает название SKU продукта из описания в Microsoft Store.</summary>
+      <returns>Название SKU продукта из описания в Microsoft Store.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Videos">
+      <summary>Получает видеоролики из описания SKU продукта в Microsoft Store.</summary>
+      <returns>Коллекция объектов StoreImage, представляющих видеоролики из описания в Microsoft Store для SKU продукта.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.GetIsInstalledAsync">
+      <summary>Указывает, установлен ли на текущем устройстве этот SKU продукта.</summary>
+      <returns>Асинхронная операция, которая (в случае успешного выполнения) возвращает значение true, если этот SKU продукта установлен на текущем устройстве, а в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync">
+      <summary>Запрашивает покупку SKU продукта и отображает пользовательский интерфейс для выполнения транзакции в Магазине Windows.</summary>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StorePurchaseResult, предоставляющий сведения о состоянии и ошибках для покупки.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>Запрашивает покупку SKU продукта и отображает пользовательский интерфейс, используемый для совершения транзакции в Microsoft Store. Этот метод позволяет указать дополнительные сведения об определенном предложении в рамках большого каталога продукции, представленной одним описанием в Microsoft Store, включая название продукта, которое видит пользователь во время покупки.</summary>
+      <param name="storePurchaseProperties">Объект, указывающий дополнительные сведения о запросе покупки, включая имя продукта, которое видит пользователь во время покупки.</param>
+      <returns>Асинхронная операция, которая при успешном завершении возвращает объект StorePurchaseResult, предоставляющий сведения о состоянии и ошибках для покупки.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSubscriptionInfo">
+      <summary>Предоставляет сведения о подписке на SKU продукта, представляющий подписку с регулярным выставлением счетов.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriod">
+      <summary>Получает продолжительность периода выставления счетов для подписки в единицах, указанных свойством BillingPeriodUnit.</summary>
+      <returns>Продолжительность периода выставления счетов в единицах, указанных свойством BillingPeriodUnit.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriodUnit">
+      <summary>Получает единицы периода выставления счетов для подписки.</summary>
+      <returns>Значение, указывающее единицы периода выставления счетов для подписки.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.HasTrialPeriod">
+      <summary>Получает значение, указывающее, включает ли подписка пробный период.</summary>
+      <returns>Значение true, если эта подписка включает пробный период; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriod">
+      <summary>Получает продолжительность пробного периода для подписки в единицах, указанных свойством TrialPeriodUnit. Чтобы определить, включает ли подписка пробный период, используйте свойство HasTrialPeriod.</summary>
+      <returns>Продолжительность пробного периода в единицах, указанных свойством TrialPeriodUnit.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriodUnit">
+      <summary>Получает единицы пробного периода для подписки.</summary>
+      <returns>Значение, указывающее единицы пробного периода для подписки.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageResult">
+      <summary>Предоставляет данные отклика на запрос удаления пакета для текущего приложения.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.ExtendedError">
+      <summary>Получает код ошибки для запроса, если при выполнении операции произошла ошибка.</summary>
+      <returns>Код ошибки для запроса.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.Status">
+      <summary>Получает состояние запроса удаления пакета.</summary>
+      <returns>Состояние запроса удаления пакета.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageStatus">
+      <summary>Определяет значения, представляющие состояние запроса удаления пакета.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.CanceledByUser">
+      <summary>Операция удаления была отменена пользователем.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Error">
+      <summary>Операция удаления не выполнена из-за неизвестной ошибки.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.NetworkError">
+      <summary>Операция удаления не завершилась успешно из-за ошибки сетевого подключения.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Succeeded">
+      <summary>Операция удаления выполнена успешно.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.UninstallNotApplicable">
+      <summary>Операция удаления не применима для указанного пакета.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreVideo">
+      <summary>Представляет видео, связанное с описанием продукта в Microsoft Store.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Caption">
+      <summary>Получает заголовок видео.</summary>
+      <returns>Заголовок видео.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Height">
+      <summary>Получает высоту видео в пикселях.</summary>
+      <returns>Высота видео.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.PreviewImage">
+      <summary>Получает эскиз видео.</summary>
+      <returns>Эскиз видео.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Uri">
+      <summary>Получает URI видео.</summary>
+      <returns>URI видео.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.VideoPurposeTag">
+      <summary>Получает тег видео.</summary>
+      <returns>Тег видео.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Width">
+      <summary>Получает ширину видео в пикселях.</summary>
+      <returns>Ширина видео, в пикселях.</returns>
+    </member>
+  </members>
+</doc>

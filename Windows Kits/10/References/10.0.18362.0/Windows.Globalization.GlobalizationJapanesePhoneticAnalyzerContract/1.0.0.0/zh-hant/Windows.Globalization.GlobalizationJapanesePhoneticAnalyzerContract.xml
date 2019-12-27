@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Globalization.GlobalizationJapanesePhoneticAnalyzerContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Globalization.JapanesePhoneme">
+      <summary>代表 JapanesePhoneticAnalyzer 從日文字串中擷取的單一日文字 (「讀音」)。</summary>
+    </member>
+    <member name="P:Windows.Globalization.JapanesePhoneme.DisplayText">
+      <summary>取得這個日文單字的顯示文字。</summary>
+      <returns>這個日文的顯示文字。 它是由 JapanesePhoneticAnalyzer 原先分析的日文字串的子字串。</returns>
+    </member>
+    <member name="P:Windows.Globalization.JapanesePhoneme.IsPhraseStart">
+      <summary>取得布林值，表示這個日文單字是否為片語開頭。</summary>
+      <returns>如果片語開頭是日文則為 **true**，否則為 **false**。</returns>
+    </member>
+    <member name="P:Windows.Globalization.JapanesePhoneme.YomiText">
+      <summary>取得這個日文單字的「讀音」(DisplayText 的發音)。</summary>
+      <returns>「讀音」(DisplayText 的發音，由平假名字元序列表示)。</returns>
+    </member>
+    <member name="T:Windows.Globalization.JapanesePhoneticAnalyzer">
+      <summary>讀取由漢字字元和平假名字元組合而成的日文字串，並從採用斷字之字串取得適當讀法的集合。</summary>
+    </member>
+    <member name="M:Windows.Globalization.JapanesePhoneticAnalyzer.GetWords(System.String)">
+      <summary>讀取由漢字字元和平假名字元組合而成的日文字串，並從採用斷字之字串取得適當讀法的集合。</summary>
+      <param name="input">由漢字字元和平假名字元組合而成的日文字串。</param>
+      <returns>JapanesePhoneme 物件集合，表示採用斷字之字串的適當讀法。</returns>
+    </member>
+    <member name="M:Windows.Globalization.JapanesePhoneticAnalyzer.GetWords(System.String,System.Boolean)">
+      <summary>讀取由漢字字元和平假名字元組合而成的日文字串，並從採用斷字之字串取得適當讀法的集合。 選擇性地使用「Mono Ruby」策略，將多漢字字詞分割為多個漢字。</summary>
+      <param name="input">由漢字字元和平假名字元組合而成的日文字串。</param>
+      <param name="monoRuby">指定使用「Mono Ruby」斷字策略。 如果為 **true**，則使用「Mono Ruby」斷字策略。 「Mono Ruby」更積極地嘗試將多漢字字詞分割為多個漢字。</param>
+      <returns>JapanesePhoneme 物件集合，表示採用斷字之字串的適當讀法。</returns>
+    </member>
+  </members>
+</doc>

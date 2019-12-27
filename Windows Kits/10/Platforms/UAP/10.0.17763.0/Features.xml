@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VersionedFeatures>
+  <Feature name="XAMLCompiler.xLoad" supportedVersion="10.0.15063.0"/>
+  <Feature name="XAMLCompiler.xBind" supportedVersion="10.0.14393.0"/>
+  <Feature name="XAMLCompiler.ConditionalXAML" supportedVersion="10.0.15063.0"/>
+  <Feature name="XAMLCompiler.CreateFromString" supportedVersion="10.0.14393.0"/>
+  <Feature name="XAMLCompiler.DefaultBindingMode" supportedVersion="10.0.14393.0"/>
+  <Feature name="XAMLCompiler.DeferLoadStrategy" supportedVersion="10.0.14393.0" deprecatedVersion="10.0.15063.0"/>
+  <Feature name="XAMLCompiler.UpdateSourceTrigger" supportedVersion="10.0.14393.0"/>
+  <Feature name="XAMLCompiler.VisualStateSetterTransitions" supportedVersion="10.0.14393.0"/>
+  <Feature name="XAMLCompiler.MarkupExtensionSupport" supportedVersion="10.0.16299.0"/>
+  <Feature name="XAMLCompiler.xBindInStyle" supportedVersion="10.0.17763.0"/>
+  <Feature name="XAMLCompiler.xBindInControlTemplate" supportedVersion="10.0.17763.0"/>
+</VersionedFeatures>

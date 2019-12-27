@@ -1,0 +1,1130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Services.Store.StoreContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Services.Store.StoreAcquireLicenseResult">
+      <summary>현재 앱의 다운로드 가능한 콘텐츠(DLC) 추가 기능에 대한 라이선스를 획득하기 위한 요청에 대해 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAcquireLicenseResult.StorePackageLicense">
+      <summary>현재 앱의 다운로드 가능한 콘텐츠(DLC) 추가 기능에 대한 라이선스를 나타내는 개체를 가져옵니다.</summary>
+      <returns>다운로드 가능한 콘텐츠(DLC) 패키지 라이선스를 나타내는 개체입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAppLicense">
+      <summary>앱에서 제공하는 제품에 대한 라이선스를 비롯해 현재 앱에 대한 라이선스 정보를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.AddOnLicenses">
+      <summary>사용자에게 사용할 권한이 있는 지속형 추가 기능에 대한 라이선스의 컬렉션을 가져옵니다. 이 속성에는 소모성 추가 기능 라이선스가 포함되지 않습니다.</summary>
+      <returns>키와 값 쌍의 맵입니다. 각 키는 Microsoft Store 카탈로그에서 추가 기능 SKU의 Store ID이며 각 값은 추가 기능에 대한 라이선스 정보가 포함된 StoreLicense 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExpirationDate">
+      <summary>앱 라이선스의 만료 날짜 및 시간을 가져옵니다.</summary>
+      <returns>시스템 시계와 관련된 앱 라이선스 만료 날짜 및 시간입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.ExtendedJsonData">
+      <summary>JSON 형식의 전체 라이선스 데이터를 가져옵니다.</summary>
+      <returns>전체 라이선스 데이터를 포함하는 JSON 형식 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsActive">
+      <summary>라이선스가 유효하고 현재 사용자에게 앱을 사용할 권한을 제공하는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>라이선스가 유효하고 현재 사용자에게 앱을 사용할 권한을 제공하면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsDiscLicense">
+      <summary>현재 라이선스가 디스크 기반 설치에서 획득한 것인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>현재 라이선스가 디스크 기반 설치에서 획득한 것이면 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrial">
+      <summary>라이선스가 평가판 라이선스인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>라이선스가 평가판 라이선스이면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.IsTrialOwnedByThisUser">
+      <summary>현재 사용자가 이 앱 라이선스에 연결된 사용량 제한 평가판을 사용할 권한이 있는지 나타내는 값을 가져옵니다.</summary>
+      <returns>현재 사용자에게 평가판에 대한 권한이 있으면 True, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.SkuStoreId">
+      <summary>Microsoft Store 카탈로그에서 라이선스가 있는 앱 SKU의 Store ID를 가져옵니다.</summary>
+      <returns>Microsoft Store 카탈로그에서 라이선스가 있는 앱 SKU의 Store ID입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialTimeRemaining">
+      <summary>이 앱 라이선스에 연결된 사용량 제한 평가판의 남은 시간을 가져옵니다.</summary>
+      <returns>이 앱 라이선스에 연결된 사용량 제한 평가판의 남은 시간입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAppLicense.TrialUniqueId">
+      <summary>이 앱 라이선스에 연결된 사용량 제한 평가판과 현재 사용자의 조합을 식별하는 고유 ID를 가져옵니다.</summary>
+      <returns>이 앱 라이선스에 연결된 사용량 제한 평가판과 현재 사용자의 조합을 식별하는 고유 ID입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreAvailability">
+      <summary>구입할 수 있는 제품 SKU의 특정 인스턴스를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.EndDate">
+      <summary>현재 SKU 가용성에 대한 종료 날짜를 가져옵니다.</summary>
+      <returns>현재 SKU 가용성에 대한 종료 날짜입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.ExtendedJsonData">
+      <summary>Store에서 현재 SKU 가용성에 대한 전체 데이터를 JSON 형식으로 가져옵니다.</summary>
+      <returns>Store에서 현재 SKU 가용성에 대한 전체 데이터를 포함하는 JSON 형식 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.Price">
+      <summary>기본 가격, 현재 가격 및 판매 정보를 포함하여 현재 SKU 가용성에 대한 가격 정보를 가져옵니다.</summary>
+      <returns>현재 SKU 가용성에 대한 가격 정보를 포함하는 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreAvailability.StoreId">
+      <summary>Microsoft Store 카탈로그에서 현재 SKU 가용성의 Store ID를 가져옵니다.</summary>
+      <returns>Microsoft Store 카탈로그에서 현재 SKU 가용성의 Store ID입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync">
+      <summary>현재 SKU 가용성이 구매를 요청하고 Microsoft Store를 통해 트랜잭션을 완료하는 데 사용되는 UI를 표시합니다.</summary>
+      <returns>성공적으로 완료되면, 구매에 대한 상태와 오류를 제공하는 StorePurchaseResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreAvailability.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>현재 SKU 가용성이 구매를 요청하고 Microsoft Store를 통해 트랜잭션을 완료하는 데 사용되는 UI를 표시합니다. 이 메서드는 구매 중에 사용자에게 표시되는 제품 이름을 비롯하여 Microsoft Store에서 단일 목록으로 표현되는 방대한 제품 카탈로그 내에 특정 제안에 대한 추가 세부 정보를 지정할 수 있는 옵션을 제공합니다.</summary>
+      <param name="storePurchaseProperties">구매하는 동안 사용자에게 표시할 제품 이름을 포함하여 구매 요청에 대한 추가 정보를 지정하는 개체입니다.</param>
+      <returns>성공적으로 완료되면, 구매에 대한 상태와 오류를 제공하는 StorePurchaseResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanAcquireLicenseResult">
+      <summary>다운로드 가능한 콘텐츠(DLC) 추가 기능 패키지에 대해 라이선스를 획득할 수 있는지 여부를 결정하기 위한 요청에 대해 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.LicensableSku">
+      <summary>현재 사용자가 추가 기능의 라이선스를 받을 수 있는 경우 다운로드 가능한 콘텐츠(DLC) 추가 기능의 SKU Store ID를 가져옵니다.</summary>
+      <returns>현재 사용자가 추가 기능의 라이선스를 받을 수 있는 경우 다운로드 가능한 콘텐츠(DLC) 추가 기능의 SKU Store ID입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCanAcquireLicenseResult.Status">
+      <summary>다운로드 가능한 콘텐츠(DLC) 추가 기능 패키지에 대한 라이선스 상태를 가져옵니다.</summary>
+      <returns>다운로드 가능한 콘텐츠(DLC) 추가 기능 패키지에 대한 라이선스 상태입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCanLicenseStatus">
+      <summary>다운로드 가능한 콘텐츠(DLC) 추가 기능 패키지에 대한 라이선스 상태를 나타내는 값을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.Licensable">
+      <summary>제품을 현재 사용자에게 사용 허가 할 수 있습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.LicenseActionNotApplicableToProduct">
+      <summary>제품을 개별적으로 사용 허가할 수 없습니다. 예를 들어 Store ID를 DLC가 아닌 추가 기능(패키지가 없는 추가 기능)의 CanAcquireStoreLicenseAsync(String) 메서드에 전달하면 발생할 수 있습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NetworkError">
+      <summary>네트워크 연결 오류 때문에 라이선스 요청에 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.NotLicensableToUser">
+      <summary>사용자에게 제품에 대한 라이선스를 획득할 수 있는 권한이 없습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreCanLicenseStatus.ServerError">
+      <summary>Microsoft Store에서 반환된 서버 오류로 인해 라이선스 요청에 실패했습니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreCollectionData">
+      <summary>사용자에게 사용 권한이 있는 제품 SKU에 대한 추가 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.AcquiredDate">
+      <summary>제품 SKU를 취득한 날짜를 가져옵니다.</summary>
+      <returns>제품 SKU를 취득한 날짜입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.CampaignId">
+      <summary>제품 SKU와 연결된 프로모션 캠페인 ID를 가져옵니다.</summary>
+      <returns>제품 SKU와 연결된 프로모션 캠페인 ID입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.DeveloperOfferId">
+      <summary>제품 SKU와 연결된 개발자 제안 ID를 가져옵니다.</summary>
+      <returns>제품 SKU와 연결된 개발자 제안 ID입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.EndDate">
+      <summary>SKU가 평가판이거나 정해진 기간 이후 만료되는 지속형 추가 기능인 경우 제품 SKU의 평가판 종료 날짜를 가져옵니다.</summary>
+      <returns>SKU가 평가판이거나 정해진 기간 이후 만료되는 지속형 추가 기능인 경우 제품 SKU의 평가판 종료 날짜입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.ExtendedJsonData">
+      <summary>제품 SKU에 대한 전체 컬렉션을 JSON 형식으로 가져옵니다.</summary>
+      <returns>제품 SKU에 대한 전체 컬렉션을 포함하는 JSON 형식 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.IsTrial">
+      <summary>제품 SKU가 평가판인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>제품 SKU에 대한 라이선스가 평가판이면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.StartDate">
+      <summary>SKU가 평가판이거나 정해진 기간 이후 만료되는 지속형 추가 기능인 경우 제품 SKU의 평가판 시작 날짜를 가져옵니다.</summary>
+      <returns>SKU가 평가판이거나 정해진 기간 이후 만료되는 지속형 추가 기능인 경우 제품 SKU의 평가판 시작 날짜입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreCollectionData.TrialTimeRemaining">
+      <summary>이 제품 SKU에 연결된 사용량 제한 평가판의 남은 평가 시간을 가져옵니다.</summary>
+      <returns>이 제품 SKU에 연결된 사용량 제한 평가판의 남은 평가 시간입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableResult">
+      <summary>현재 앱에 대한 소모성 추가 기능을 포함하는 요청에 대한 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.BalanceRemaining">
+      <summary>소모품 추가 기능에 대한 나머지 밸런스를 가져옵니다.</summary>
+      <returns>소모성 추가 기능에 대한 나머지 밸런스입니다. 개발자가 Microsoft 이외의 밸런스를 계속 추적하는, 관리되지 않은 소모품인 경우 이 속성은 1(사용자가 추가 기능에 대한 권한 보유) 또는 0(사용자가 추가 기능에 대한 권한을 보유하지 않음)을 반환합니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.Status">
+      <summary>요청의 상태를 가져옵니다.</summary>
+      <returns>요청의 상태입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreConsumableResult.TrackingId">
+      <summary>ReportConsumableFulfillmentAsync 요청으로 제출된 추적 ID를 가져옵니다.</summary>
+      <returns>ReportConsumableFulfillmentAsync 요청으로 제출된 추적 ID입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreConsumableStatus">
+      <summary>소모성 추가 기능에 관련된 요청 상태를 나타내는 값을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.InsufficentQuantity">
+      <summary>소모성 추가 기능의 남은 밸런스가 너무 낮기 때문에 요청이 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.NetworkError">
+      <summary>네트워크 연결 오류 때문에 요청에 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.ServerError">
+      <summary>Microsoft Store에서 반환된 서버 오류로 인해 요청에 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreConsumableStatus.Succeeded">
+      <summary>요청이 성공했습니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContext">
+      <summary>현재 앱에 대한 Microsoft Store 관련 데이터에 액세스하고 관리하는 데 사용할 수 있는 멤버를 제공합니다. 예를 들어, 이 클래스의 멤버를 사용하여 Microsoft Store 목록과 현재 앱에 대한 라이선스 정보를 가져오거나 앱에서 제공하는 현재 앱 또는 제품을 구입하거나 앱에 대한 패키지 업데이트를 다운로드하여 설치할 수 있습니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.CanSilentlyDownloadStorePackageUpdates">
+      <summary>사용자에게 알림 UI를 표시하지 않아도 현재 앱에 대한 패키지 업데이트를 다운로드할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>사용자에게 알림 UI를 표시하지 않아도 현재 앱에 대한 패키지 업데이트를 다운로드할 수 있으면 true이고 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreContext.User">
+      <summary>다중 사용자 앱에서 현재 StoreContext 개체에 연결된 사용자에 대한 정보를 가져옵니다.</summary>
+      <returns>다중 사용자 앱에서 현재 StoreContext 개체에 연결된 사용자에 대한 정보를 제공하는 개체입니다.</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreContext.OfflineLicensesChanged">
+      <summary>앱의 라이선스 상태가 변경될 때 발생합니다(예: 평가 기간 만료 또는 사용자가 앱의 처음 사용자용 버전을 구매한 경우).</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.AcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>현재 앱에 대한 지정된 다운로드 가능한 콘텐츠(DLC) 추가 기능 패키지에 대한 라이선스를 취득합니다.</summary>
+      <param name="optionalPackage">라이선스를 취득하는 DLC 추가 기능 패키지입니다.</param>
+      <returns>성공적으로 완료되면, 라이선스를 포함하는 Store.StoreAcquireLicenseResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseAsync(System.String)">
+      <summary>현재 사용자에 대한 현재 앱의 지정된 다운로드 가능한 콘텐츠(DLC) 추가 기능에 대해 라이선스를 획득할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <param name="productStoreId">검사할 DLC 추가 기능의 Store ID입니다.</param>
+      <returns>성공적으로 완료되었을 때, 라이선스를 획득할 수 있는지 여부를 나타내는 StoreCanAcquireLicenseResult 개체를 반환하는 비동기적 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.CanAcquireStoreLicenseForOptionalPackageAsync(Windows.ApplicationModel.Package)">
+      <summary>현재 사용자에 대한 현재 앱의 지정된 다운로드 가능한 콘텐츠(DLC) 패키지에 대해 라이선스를 획득할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <param name="optionalPackage">검사할 DLC 패키지입니다.</param>
+      <returns>성공적으로 완료되었을 때, 라이선스를 획득할 수 있는지 여부를 나타내는 StoreCanAcquireLicenseResult 개체를 반환하는 비동기적 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.DownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>사용자에게 알림 UI 대화 상자를 표시하지 않고 Microsoft Store에서 현재 앱에 대해 지정된 다운로드 가능한 콘텐츠(DLC) 패키지를 다운로드하고 설치합니다.</summary>
+      <param name="storeIds">현재 앱에 대해 설치할 DLC 패키지에 해당하는 추가 기능의 Store ID입니다.</param>
+      <returns>호출자가 작업에 대한 진행률과 완료를 추적하기 위해 확인할 수 있는 개체입니다. 성공적으로 완료될 경우 결과는 패키지 업데이트에 대한 정보를 제공하는 StorePackageUpdateResult 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.FindStoreProductForPackageAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.ApplicationModel.Package)">
+      <summary>지정된 패키지와 연결된 앱 또는 추가 기능에 대한 Store 제품 정보를 가져옵니다.</summary>
+      <param name="productKinds">패키지와 연결되었을 수 있는 Store 제품 유형을 지정하는 문자열의 배열입니다. 지원되는 문자열 값 목록은 ProductKind 속성을 참조하세요.</param>
+      <param name="package">해당하는 Store 제품 세부 정보를 가져오고자 하는 패키지를 나타내는 Package입니다.</param>
+      <returns>성공적으로 완료되면 StoreProductResult 개체를 반환하는 비동기 작업입니다. 이 개체의 Product 속성을 사용하여 지정된 패키지에 대한 Store 제품 세부 정보를 포함하는 StoreProduct에 액세스합니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppAndOptionalStorePackageUpdatesAsync">
+      <summary>앱에 대한 옵션 패키지를 비롯해 Microsoft Store에서 업데이트를 다운로드할 수 있는 현재 앱에 대한 패키지 컬렉션을 가져옵니다.</summary>
+      <returns>성공적으로 완료되면 업데이트가 있는 패키지를 나타내는 StorePackageUpdate 개체의 컬렉션을 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAppLicenseAsync">
+      <summary>현재 앱의 추가 기능에 대한 라이선스를 포함하여 현재 앱에 대한 라이선스 정보입니다.</summary>
+      <returns>성공적으로 완료되면 추가 기능 라이선스를 포함하여 현재 앱에 대한 라이선스 정보를 포함하는 StoreAppLicense 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>현재 앱 내에서 구입할 수 있는 제품에 대한 Microsoft Store 목록 정보를 가져옵니다.</summary>
+      <param name="productKinds">가져올 제품 유형을 지정하는 문자열의 배열입니다. 지원되는 문자열 값 목록은 ProductKind 속성을 참조하세요.</param>
+      <returns>성공적으로 완료되면 연결된 제품 및 관련 오류 정보에 대한 액세스 권한을 제공하는 StoreProductQueryResult를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreProductsWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>현재 앱 내에서 구입할 수 있는 제품에 대한 Microsoft Store 목록 정보를 가져옵니다. 이 메서드는 결과를 반환하기 위한 페이징을 지원합니다.</summary>
+      <param name="productKinds">가져올 제품 유형을 지정하는 문자열의 배열입니다. 지원되는 문자열 값 목록은 ProductKind 속성을 참조하세요.</param>
+      <param name="maxItemsToRetrievePerPage">결과 페이지 하나당 반환되는 최대 제품 수입니다.</param>
+      <returns>성공적으로 완료되면 연결된 제품 및 관련 오류 정보, 다음 결과 페이지에 대한 액세스 권한을 제공하는 StoreProductPagedQueryResult를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetAssociatedStoreQueueItemsAsync">
+      <summary>현재 앱에 대한 다운로드 및 설치 큐에 있는 모든 새로운 또는 업데이트된 패키지 정보를 가져옵니다.</summary>
+      <returns>성공적으로 완료되면 큐에 있는 앱 패키지에 대해 정보를 제공하는 StoreQueueItem 개체 컬렉션을 반환하는 비동기적 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetConsumableBalanceRemainingAsync(System.String)">
+      <summary>현재 앱에 대해 지정된 소모성 추가 기능에 대한 나머지 밸런스를 가져옵니다.</summary>
+      <param name="productStoreId">추가 기능의 Store ID입니다(추가 기능을 나타내는 StoreProduct의 StoreId 속성에서 제공).</param>
+      <returns>성공적으로 완료되면 나머지 밸런스와 기타 정보를 제공하는 StoreConsumableResult를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerCollectionsIdAsync(System.String,System.String)">
+      <summary>제품 권한에 대해 쿼리하거나 현재 사용자가 소유한 제품 권한을 소비하는 데 사용할 수 있는 Microsoft Store ID 키를 검색합니다.</summary>
+      <param name="serviceTicket">현재 응용 프로그램의 게시자를 식별하는 Azure Active Directory 액세스 토큰입니다. 이 토큰을 생성하는 방법에 대한 자세한 내용은 서비스에서 제품 권한 관리를 참조하십시오.</param>
+      <param name="publisherUserId">현재 응용 프로그램의 게시자로 관리하는 서비스의 컨텍스트에서 현재 사용자를 식별하는 익명 ID입니다. 서비스 컨텍스트에서 사용자 ID를 유지 관리할 경우, 이 매개 변수를 사용하여 현재 사용자의 ID를 새로운 Microsoft Store ID 키(키에 포함될 사용자 ID)에 연결할 수 있습니다. 그렇지 않고 사용자 ID를 Microsoft Store ID 키와 연결할 필요가 없다면, 아무 문자열 값이나 전달할 수 있습니다.</param>
+      <returns>성공적으로 완료되면 현재 사용자에 대한 컬렉션 ID 키를 반환하는 비동기 작업입니다. 이 키는 90일 동안 유효합니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetCustomerPurchaseIdAsync(System.String,System.String)">
+      <summary>현재 사용자를 대신하여 무료 제품에 대한 권한을 부여하는 데 사용할 수 있는 Microsoft Store ID 키를 검색합니다.</summary>
+      <param name="serviceTicket">현재 응용 프로그램의 게시자를 식별하는 Azure Active Directory 액세스 토큰입니다. 이 토큰을 생성하는 방법에 대한 자세한 내용은 서비스에서 제품 권한 관리를 참조하십시오.</param>
+      <param name="publisherUserId">현재 응용 프로그램의 게시자로 관리하는 서비스의 컨텍스트에서 현재 사용자를 식별하는 익명 ID입니다. 서비스 컨텍스트에서 사용자 ID를 유지 관리할 경우, 이 매개 변수를 사용하여 현재 사용자의 ID를 새로운 Microsoft Store ID 키(키에 포함될 사용자 ID)에 연결할 수 있습니다. 그렇지 않고 사용자 ID를 Microsoft Store ID 키와 연결할 필요가 없다면, 아무 문자열 값이나 전달할 수 있습니다.</param>
+      <returns>성공적으로 완료되면 현재 사용자에 대한 구매 ID 키를 반환하는 비동기 작업입니다. 이 키는 90일 동안 유효합니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetDefault">
+      <summary>현재 앱의 컨텍스트에서 현재 사용자에 대해 Microsoft Store 관련 데이터에 액세스하고 관리하는 데 사용할 수 있는 StoreContext 개체를 가져옵니다.</summary>
+      <returns>현재 사용자에 대한 Microsoft Store 관련 데이터에 액세스하고 관리하는 데 사용할 수 있는 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetForUser(Windows.System.User)">
+      <summary>현재 앱의 컨텍스트에서 지정된 사용자에 대해 Microsoft Store 관련 데이터에 액세스하고 관리하는 데 사용할 수 있는 StoreContext 개체를 가져옵니다.</summary>
+      <param name="user">Microsoft Store 관련 데이터를 액세스하고 관리하려는 사용자를 식별하는 개체입니다.</param>
+      <returns>지정된 사용자에 대한 Microsoft Store 관련 데이터에 액세스하고 관리하는 데 사용할 수 있는 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductForCurrentAppAsync">
+      <summary>현재 앱에 대한 Microsoft Store 목록 정보를 가져오고 현재 사용자를 위한 앱을 구입하는 데 사용할 수 있는 메서드에 대한 액세스를 제공합니다.</summary>
+      <returns>성공적으로 완료되면 현재 앱에 대한 Microsoft Store 목록 정보 및 모든 관련 오류 정보를 포함하는 StoreProductResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>현재 앱과 연결된 지정된 제품에 대한 Microsoft Store 목록 정보를 가져옵니다.</summary>
+      <param name="productKinds">목록 정보를 검색할 제품 유형을 지정하는 문자열 배열입니다. 지원되는 문자열 값 목록은 ProductKind 속성을 참조하세요.</param>
+      <param name="storeIds">목록 정보를 가져올 제품에 대한 Store ID 문자열의 배열입니다.</param>
+      <returns>성공적으로 완료되면 지정된 제품에 대한 목록 정보 및 모든 관련 오류 정보를 포함하는 StoreProductQueryResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreProductsAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StoreProductOptions)">
+      <summary>쿼리 필터 사용 옵션과 함께 현재 앱과 연결된 지정된 제품에 대한 Microsoft Store 목록 정보를 가져옵니다.</summary>
+      <param name="productKinds">목록 정보를 검색할 제품 유형을 지정하는 문자열 배열입니다. 지원되는 문자열 값 목록은 ProductKind 속성을 참조하세요.</param>
+      <param name="storeIds">목록 정보를 가져올 제품에 대한 Store ID 문자열의 배열입니다.</param>
+      <param name="storeProductOptions">쿼리에 사용할 필터가 포함된 개체입니다.</param>
+      <returns>성공적으로 완료되면 지정된 제품에 대한 목록 정보 및 모든 관련 오류 정보를 포함하는 StoreProductQueryResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>현재 앱에 대한 다운로드 및 설치 큐에 있는 지정된 새로운 또는 업데이트된 패키지 정보를 가져옵니다.</summary>
+      <param name="storeIds">다운로드 및 설치 큐 정보를 가져오려는 패키지에 해당하는 Store ID 문자열의 배열입니다.</param>
+      <returns>성공적으로 완료되면 큐에 있는 지정된 패키지에 대해 정보를 제공하는 StoreQueueItem 개체 컬렉션을 반환하는 비동기적 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>사용자가 구매한 현재 앱의 추가 기능에 대한 Microsoft Store 정보를 가져옵니다.</summary>
+      <param name="productKinds">정보를 검색할 추가 기능 유형을 지정하는 문자열 배열입니다. 지원되는 문자열 값 목록은 ProductKind 속성을 참조하세요.</param>
+      <returns>성공적으로 완료되면 사용자가 구매한 현재 앱의 추가 기능에 대한 Microsoft Store 정보와 관련 오류 정보를 포함하는 StoreProductQueryResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.GetUserCollectionWithPagingAsync(Windows.Foundation.Collections.IIterable{System.String},System.UInt32)">
+      <summary>사용자가 구매한 현재 앱의 추가 기능에 대한 Microsoft Store 정보를 가져옵니다. 이 메서드는 결과를 반환하기 위한 페이징을 지원합니다.</summary>
+      <param name="productKinds">정보를 검색할 추가 기능 유형을 지정하는 문자열 배열입니다. 지원되는 문자열 값 목록은 ProductKind 속성을 참조하세요.</param>
+      <param name="maxItemsToRetrievePerPage">결과 페이지 하나당 반환되는 최대 추가 기능 수입니다.</param>
+      <returns>성공적으로 완료되면 사용자가 구매한 현재 앱의 추가 기능에 대한 Microsoft Store 정보와 관련 오류 정보, 다음 결과 페이지에 대한 액세스 권한을 제공하는 StoreProductPagedQueryResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.ReportConsumableFulfillmentAsync(System.String,System.UInt32,System.Guid)">
+      <summary>Microsoft Store에서 수행한 현재 앱에 대한 소모성 추가 기능을 보고합니다.</summary>
+      <param name="productStoreId">처리된 것으로 보고할 소모성 추가 기능의 Store ID입니다.</param>
+      <param name="quantity">이행된 것으로 보고하려는 소모품 추가 기능의 단위 수입니다. Store 관리 소모품(즉 Microsoft가 밸런스를 추적하는 소모품)의 경우, 소모된 개수를 지정합니다. 개발자 관리 소모품(즉 개발자가 밸런스를 추적하는 소모품)의 경우, 1을 지정합니다.</param>
+      <param name="trackingId">처리 작업이 연결된 특정 트랜잭션을 추적용으로 식별하는 개발자 제공 GUID입니다. 자세한 내용은 설명을 참조하세요.</param>
+      <returns>성공적으로 완료되면 추가 기능 단위의 나머지 밸런스 등 이행 작업에 대한 정보를 포함한 StoreConsumableResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Microsoft Store에서 현재 앱에 대해 지정된 다운로드 가능한 콘텐츠(DLC) 패키지를 다운로드하고 설치하려고 시도합니다. 이 메서드는 또한 작업에 대한 권한을 요청하는 UI 대화 상자를 표시합니다.</summary>
+      <param name="storeIds">설치할 DLC 추가 기능 패키지의 Store ID입니다.</param>
+      <returns>호출자가 작업에 대한 진행률과 완료를 추적하기 위해 확인할 수 있는 개체입니다. 성공적으로 완료될 경우 결과는 패키지 업데이트에 대한 정보를 제공하는 StorePackageUpdateResult 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackagesAsync(Windows.Foundation.Collections.IIterable{System.String},Windows.Services.Store.StorePackageInstallOptions)">
+      <summary>지정된 설치 옵션과 함께 Microsoft Store에서 현재 앱에 대해 지정된 다운로드 가능한 콘텐츠(DLC) 패키지를 다운로드하고 설치하려고 시도합니다. 이 메서드는 또한 작업에 대한 권한을 요청하는 UI 대화 상자를 표시합니다.</summary>
+      <param name="storeIds">설치할 DLC 추가 기능 패키지의 Store ID입니다.</param>
+      <param name="storePackageInstallOptions">작업에 대한 설치 옵션을 지정하는 개체입니다.</param>
+      <returns>호출자가 작업에 대한 진행률과 완료를 추적하기 위해 확인할 수 있는 개체입니다. 성공적으로 완료될 경우 결과는 패키지 업데이트에 대한 정보를 제공하는 StorePackageUpdateResult 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Microsoft Store에서 현재 앱에 대해 지정된 패키지 업데이트를 다운로드하고 설치하려고 시도합니다. 이 메서드는 또한 작업에 대한 권한을 요청하는 UI 대화 상자를 표시합니다.</summary>
+      <param name="storePackageUpdates">다운로드하고 설치할 업데이트된 패키지를 나타내는 StorePackageUpdate 개체의 집합입니다.</param>
+      <returns>호출자가 작업에 대한 진행률과 완료를 추적하기 위해 확인할 수 있는 개체입니다. 성공적으로 완료될 경우 결과는 패키지 업데이트에 대한 정보를 제공하는 StorePackageUpdateResult 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>Microsoft Store에서 현재 앱에 대해 지정된 패키지 업데이트를 다운로드하려고 시도합니다. 이 메서드는 또한 작업에 대한 권한을 요청하는 UI 대화 상자를 표시합니다.</summary>
+      <param name="storePackageUpdates">다운로드할 업데이트된 패키지를 나타내는 StorePackageUpdate 개체의 집합입니다.</param>
+      <returns>호출자가 작업에 대한 진행률과 완료를 추적하기 위해 확인할 수 있는 개체입니다. 성공적으로 완료될 경우 결과는 패키지 업데이트에 대한 정보를 제공하는 StorePackageUpdateResult 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String)">
+      <summary>지정된 앱 또는 추가 기능 구매를 요청하고 Microsoft Store를 통해 트랜잭션을 완료하는 데 사용되는 UI를 표시합니다.</summary>
+      <param name="storeId">현재 사용자에 대해 구입하려는 앱 또는 추가 기능의 Store ID입니다.</param>
+      <returns>성공적으로 완료되면, 구매에 대한 상태와 오류를 제공하는 StorePurchaseResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestPurchaseAsync(System.String,Windows.Services.Store.StorePurchaseProperties)">
+      <summary>지정된 앱 또는 추가 기능 구매를 요청하고 Microsoft Store를 통해 트랜잭션을 완료하는 데 사용되는 UI를 표시합니다. 이 메서드는 구매 중에 사용자에게 표시되는 제품 이름을 비롯하여 Microsoft Store에서 단일 목록으로 표현되는 방대한 제품 카탈로그 내에 특정 제안에 대한 추가 세부 정보를 지정할 수 있는 옵션을 제공합니다.</summary>
+      <param name="storeId">현재 사용자에 대해 구입하려는 앱 또는 추가 기능의 Store ID입니다.</param>
+      <param name="storePurchaseProperties">구매하는 동안 사용자에게 표시할 제품 이름을 포함하여 구매 요청에 대한 추가 정보를 지정하는 개체입니다.</param>
+      <returns>성공적으로 완료되면, 구매에 대한 상태와 오류를 제공하는 StorePurchaseResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestRateAndReviewAppAsync">
+      <summary>사용자에게 앱을 평가 및 리뷰해 달라고 요청합니다. 이 방법은 사용자가 Microsoft Store 평점을 선택하고 제품에 대한 선택적 Microsoft Store 리뷰를 추가할 수 있는 UI를 표시합니다.</summary>
+      <returns>성공적으로 완료되면 상태 및 오류 정보를 제공하는 StoreRateAndReviewResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>현재 앱에 대해 지정된 옵션 패키지를 제거하려고 시도합니다. 이 메서드는 또한 작업에 대한 권한을 요청하는 UI 대화 상자를 표시합니다.</summary>
+      <param name="package">현재 앱에 대해 제거할 옵션 패키지입니다.</param>
+      <returns>성공적으로 완료되면, 제거 작업에 대한 정보를 제공하는 StoreUninstallStorePackageResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.RequestUninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>현재 앱에 대해 지정된 DLC(다운로드 가능한 콘텐츠) 패키지를 제거하려고 시도합니다. 이 메서드는 또한 작업에 대한 권한을 요청하는 UI 대화 상자를 표시합니다.</summary>
+      <param name="storeId">현재 앱에 대해 제거할 DLC(다운로드 가능한 콘텐츠) 패키지에 해당하는 추가 기능의 Store ID입니다.</param>
+      <returns>성공적으로 완료되면, 제거 작업에 대한 정보를 제공하는 StoreUninstallStorePackageResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.SetInstallOrderForAssociatedStoreQueueItemsAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StoreQueueItem})">
+      <summary>현재 앱에 대한 다운로드 및 설치 큐에 지정된 패키지를 설치하는 순서를 설정합니다.</summary>
+      <param name="items">설치 큐의 패키지를 설치하려는 순서에 따라 표시하는 StoreQueueItem 개체 목록입니다.</param>
+      <returns>성공적으로 완료되면 큐의 해당 패키지에 설정된 설치 순서대로 StoreQueueItem 개체 목록을 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadAndInstallStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>사용자에게 알림 UI를 표시하지 않고 Microsoft Store에서 현재 앱에 대해 지정된 패키지 업데이트를 다운로드하고 설치하려고 시도합니다.</summary>
+      <param name="storePackageUpdates">다운로드하고 설치할 업데이트된 패키지를 나타내는 StorePackageUpdate 개체의 집합입니다.</param>
+      <returns>호출자가 작업에 대한 진행률과 완료를 추적하기 위해 확인할 수 있는 개체입니다. 성공적으로 완료될 경우 결과는 패키지 업데이트에 대한 정보를 제공하는 StorePackageUpdateResult 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.TrySilentDownloadStorePackageUpdatesAsync(Windows.Foundation.Collections.IIterable{Windows.Services.Store.StorePackageUpdate})">
+      <summary>사용자에게 알림 UI를 표시하지 않고 Microsoft Store에서 현재 앱에 대해 지정된 패키지 업데이트를 다운로드하려고 시도합니다.</summary>
+      <param name="storePackageUpdates">다운로드할 업데이트된 패키지를 나타내는 StorePackageUpdate 개체의 집합입니다.</param>
+      <returns>호출자가 작업에 대한 진행률과 완료를 추적하기 위해 확인할 수 있는 개체입니다. 성공적으로 완료될 경우 결과는 패키지 업데이트에 대한 정보를 제공하는 StorePackageUpdateResult 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageAsync(Windows.ApplicationModel.Package)">
+      <summary>사용자에게 알림 UI 대화 상자를 표시하지 않고 현재 앱에 대해 지정된 옵션 패키지를 제거합니다.</summary>
+      <param name="package">현재 앱에 대해 제거할 옵션 패키지입니다.</param>
+      <returns>성공적으로 완료되면, 제거 작업에 대한 정보를 제공하는 StoreUninstallStorePackageResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreContext.UninstallStorePackageByStoreIdAsync(System.String)">
+      <summary>사용자에게 알림 UI 대화 상자를 표시하지 않고 현재 앱에 대해 지정된 DLC(다운로드 가능한 콘텐츠) 패키지를 제거합니다.</summary>
+      <param name="storeId">현재 앱에 대해 제거할 DLC 패키지에 해당하는 추가 기능의 Store ID입니다.</param>
+      <returns>성공적으로 완료되면, 제거 작업에 대한 정보를 제공하는 StoreUninstallStorePackageResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreDurationUnit">
+      <summary>평가판 기간 또는 구독 결제 기간 단위를 나타내는 값을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Day">
+      <summary>기간은 일 단위로 정의됩니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Hour">
+      <summary>기간은 시가 단위로 정의됩니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Minute">
+      <summary>기간은 분 단위로 정의됩니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Month">
+      <summary>기간은 월 단위로 정의됩니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Week">
+      <summary>기간은 주 단위로 정의됩니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreDurationUnit.Year">
+      <summary>기간은 년 단위로 정의됩니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreImage">
+      <summary>Windows Store에 나열되는 제품과 연결된 이미지를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Caption">
+      <summary>이미지의 캡션을 가져옵니다.</summary>
+      <returns>이미지의 캡션입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Height">
+      <summary>이미지의 높이를 픽셀 단위로 가져옵니다.</summary>
+      <returns>이미지의 높이입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.ImagePurposeTag">
+      <summary>이미지의 태그를 가져옵니다.</summary>
+      <returns>이미지의 태그입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Uri">
+      <summary>이미지의 URI를 가져옵니다.</summary>
+      <returns>이미지의 URI입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreImage.Width">
+      <summary>이미지의 너비를 픽셀 단위로 가져옵니다.</summary>
+      <returns>이미지의 너비입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreLicense">
+      <summary>현재 앱과 연결된 지속형 추가 기능에 대한 라이선스 정보를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExpirationDate">
+      <summary>추가 기능 라이선스의 만료 날짜 및 시간을 가져옵니다.</summary>
+      <returns>추가 기능 라이선스의 만료 날짜 및 시간입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.ExtendedJsonData">
+      <summary>JSON 형식의 전체 라이선스 데이터를 가져옵니다.</summary>
+      <returns>JSON 형식의 전체 라이선스 데이터입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.InAppOfferToken">
+      <summary>추가 기능의 제품 ID를 가져옵니다.</summary>
+      <returns>토큰이 있는 경우 추가 기능에 대해 앱 내 제안 토큰입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.IsActive">
+      <summary>이 속성은 나중에 사용하도록 예약되어 있으며 현재 릴리스에서 사용할 수 없습니다. 현재는 항상 true를 반환합니다.</summary>
+      <returns>모든 경우에 true입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreLicense.SkuStoreId">
+      <summary>Microsoft Store 카탈로그에서 라이선스가 있는 추가 기능 SKU의 Store ID를 가져옵니다.</summary>
+      <returns>Microsoft Store 카탈로그에서 라이선스가 있는 추가 기능 SKU의 Store ID입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageInstallOptions">
+      <summary>현재 앱의 다운로드 가능한 콘텐츠(DLC) 패키지를 다운로드하고 설치하는 RequestDownloadAndInstallStorePackagesAsync 메서드를 사용할 때 지정할 수 있는 옵션을 나타냅니다.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageInstallOptions.#ctor">
+      <summary>StorePackageInstallOptions 클래스의 새 인스턴스를 만듭니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageInstallOptions.AllowForcedAppRestart">
+      <summary>RequestDownloadAndInstallStorePackagesAsync 메서드를 사용하여 현재 앱에 대해 다운로드 가능한 콘텐츠(DLC) 패키지를 설치한 후 OS가 앱 을 강제 적용할 수 있는지 여부를 나타내는 값을 가져오거나 설정합니다.</summary>
+      <returns>DLC 패키지를 설치한 후 OS가 앱 을 강제 적용할 수 있는 경우 true이고 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageLicense">
+      <summary>현재 앱에 대한 다운로드 가능한 콘텐츠(DLC) 패키지에 대한 라이선스 정보를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.IsValid">
+      <summary>라이선스가 유효한지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>라이선스가 유효하면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageLicense.Package">
+      <summary>라이선스와 연결된 다운로드 가능한 콘텐츠(DLC) 패키지를 가져옵니다.</summary>
+      <returns>라이선스와 연결된 DLC 패키지를 나타내는 개체입니다.</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StorePackageLicense.LicenseLost">
+      <summary>사용자에게 더 이상 현재 장치의 라이선스에 대한 권한이 없을 경우(예를 들어 사용자가 여러 장치에 대한 라이선스를 획득) 생성됩니다.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.Close">
+      <summary>이 StorePackageLicense에서 사용하는 리소스를 닫고 해제합니다.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePackageLicense.ReleaseLicense">
+      <summary>다운로드 가능한 콘텐츠(DLC) 패키지에 대한 라이센스를 해제합니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdate">
+      <summary>Microsoft Store에서 업데이트를 다운로드할 수 있는 현재 앱에 대한 패키지 정보를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Mandatory">
+      <summary>파트너 센터에서 개발자가 지정한 대로, Microsoft Store에서 업데이트를 다운로드할 수 있는 패키지가 필수 패키지인지 나타내는 값을 가져옵니다.</summary>
+      <returns>패키지가 필수 패키지이면 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdate.Package">
+      <summary>Microsoft Store에서 다운로드할 수 있는 업데이트가 있는 패키지를 가져옵니다.</summary>
+      <returns>사용 가능한 업데이트가 있는 패키지를 나타내는 개체입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateResult">
+      <summary>현재 앱에 대해 패키지를 다운로드하고 설치하기 위한 요청에 대해 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.OverallState">
+      <summary>완성된 패키지 업데이트 요청의 상태를 가져옵니다.</summary>
+      <returns>완성된 패키지 업데이트 요청의 상태를 나타내는 값입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StorePackageUpdateStatuses">
+      <summary>완성된 요청과 관련된 각 패키지 업데이트의 상태에 대한 정보를 가져옵니다.</summary>
+      <returns>완성된 요청과 관련된 각 패키지 업데이트의 상태에 대한 정보를 제공하는 StorePackageUpdateStatus 개체의 컬렉션입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePackageUpdateResult.StoreQueueItems">
+      <summary>완성된 요청과 관련된 각 패키지 업데이트에 대한 설치 큐 정보를 가져옵니다.</summary>
+      <returns>완료된 요청과 연관된 각 패키지 업데이트에 대해 설치 큐 정보를 제공하는 StoreQueueItem 개체의 컬렉션입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateState">
+      <summary>패키지 다운로드 또는 설치 요청 상태를 나타내는 값을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Canceled">
+      <summary>패키지 다운로드 또는 설치가 취소되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Completed">
+      <summary>패키지 업데이트 다운로드 또는 설치가 완료되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Deploying">
+      <summary>패키지 업데이트가 장치에 배포되고 있습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Downloading">
+      <summary>패키지 업데이트를 다운로드 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorLowBattery">
+      <summary>장치에 배터리 전원이 충분하지 않기 때문에 패키지 업데이트의 다운로드 또는 설치가 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRecommended">
+      <summary>패키지 업데이트를 다운로드하려면 Wi-Fi 연결이 권장되므로 다운로드하지 못했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.ErrorWiFiRequired">
+      <summary>패키지 업데이트를 다운로드하려면 Wi-Fi 연결이 필요하므로 다운로드하지 못했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.OtherError">
+      <summary>알 수 없는 오류가 발생했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateState.Pending">
+      <summary>패키지 업데이트의 다운로드가 시작되지 않았습니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePackageUpdateStatus">
+      <summary>다운로드 또는 설치 요청과 연결된 패키지에 상태 정보를 제공합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageBytesDownloaded">
+      <summary>다운로드된 바이트 수입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadProgress">
+      <summary>현재 요청에서 0.0 ~ 1.0 값으로 표시되는 현재 패키지 다운로드(또는 다운로드 및 설치)의 진행률입니다. 패키지 다운로드에 RequestDownloadStorePackageUpdatesAsync를 사용할 경우, 이 값은 각 패키지의 다운로드 동안 0.0에서 1.0까지 증가합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageDownloadSizeInBytes">
+      <summary>바이트 단위로 표시된 다운로드 중인 패키지의 크기입니다. 이는 추정치이며 다운로드 프로세스 중에 변경될 수 있습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageFamilyName">
+      <summary>다운로드 중이거나 설치 중인 패키지의 패밀리 이름입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.PackageUpdateState">
+      <summary>다운로드 중이거나 설치 중인 패키지의 상태를 나타내는 StorePackageUpdateState 값입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePackageUpdateStatus.TotalDownloadProgress">
+      <summary>0.0 ~ 1.0 값으로 표시되는 요청의 모든 패키지 다운로드의 현재 진행률입니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StorePrice">
+      <summary>Microsoft Store에 있는 제품 목록에 대한 가격 정보를 포함합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.CurrencyCode">
+      <summary>현재 사용자의 시장에 대한 ISO 4217 통화 코드를 가져옵니다.</summary>
+      <returns>현재 사용자의 시장에 대한 ISO 4217 통화 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedBasePrice">
+      <summary>현재의 사용자의 시장에 맞게 적당한 서식이 지정된 제품의 기준 가격을 가져옵니다.</summary>
+      <returns>현재의 사용자의 시장에 맞게 적당한 서식이 지정된 제품의 기준 가격입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedPrice">
+      <summary>현재의 사용자의 시장에 맞게 적당한 서식이 지정된 제품의 구매 가격을 가져옵니다.</summary>
+      <returns>현재의 사용자의 시장에 맞게 적당한 서식이 지정된 제품의 구매 가격입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.FormattedRecurrencePrice">
+      <summary>이 제품에 대해 되풀이 청구가 활성화된 경우 현재 사용자의 시장에 맞게 적당한 서식이 지정된 제품에 대한 되풀이 가격을 가져옵니다.</summary>
+      <returns>현재의 사용자의 시장에 맞게 적당한 서식이 지정된 제품의 되풀이 가격입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.IsOnSale">
+      <summary>제품이 판매 중인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>제품이 판매 중이면 true이고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePrice.SaleEndDate">
+      <summary>제품을 판매 중인 경우 제품에 대한 판매 기간의 종료 날짜를 가져옵니다.</summary>
+      <returns>제품의 판매 기간에 대한 종료 날짜입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProduct">
+      <summary>Microsoft Store에서 사용할 수 있는 제품을 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Description">
+      <summary>Microsoft Store 목록에서 제품 설명을 가져옵니다.</summary>
+      <returns>제품 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ExtendedJsonData">
+      <summary>Store에서 제품에 대한 전체 데이터를 JSON 형식으로 가져옵니다.</summary>
+      <returns>Store에서 제품에 대한 JSON 형식의 전체 데이터를 포함하는 JSON 형식 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.HasDigitalDownload">
+      <summary>제품에 선택적으로 다운로드 가능한 콘텐츠(DLC)가 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>제품에 선택적으로 다운로드 가능한 콘텐츠가 있으면 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Images">
+      <summary>제품에 대한 Windows Store 목록에서 이미지를 가져옵니다.</summary>
+      <returns>제품에 대한 Windows Store 목록에서 가져온 이미지를 나타내는 StoreImage 개체의 컬렉션입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.InAppOfferToken">
+      <summary>현재 StoreProduct가 추가 기능을 나타내면 이 제품의 제품 ID를 가져옵니다.</summary>
+      <returns>현재 StoreProduct가 추가 기능을 나타내면 이 제품의 제품 ID입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.IsInUserCollection">
+      <summary>현재 사용자가 제품의 기본 SKU를 사용할 권한이 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>현재 사용자가 제품의 기본 SKU를 사용할 권한이 있으면 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Keywords">
+      <summary>파트너 센터의 제품와 연결된 키워드를 가져옵니다. 이 속성은 추가 기능을 나타내는 **StoreProduct** 개체에만 적용됩니다. 이러한 문자열은 파트너 센터의 추가 기능에 대한 속성 페이지에서 **Keywords** 필드의 값에 해당합니다.</summary>
+      <returns>파트너 센터에서 제품과 연결된 키워드를 포함하는 문자열의 컬렉션입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Language">
+      <summary>제품에 대한 Microsoft Store 목록에서 데이터의 언어를 가져옵니다.</summary>
+      <returns>제품에 대한 Microsoft Store 목록에 있는 데이터의 언어입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.LinkUri">
+      <summary>제품에 대한 Microsoft Store 목록의 URI를 가져옵니다.</summary>
+      <returns>제품에 대한 Microsoft Store 목록의 URI입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Price">
+      <summary>기본 SKU의 가격과 제품의 가용성 정보를 가져옵니다.</summary>
+      <returns>기본 SKU의 가격과 제품의 가용성 정보입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.ProductKind">
+      <summary>제품의 유형을 가져옵니다. 현재 지원되는 값은 **Application**, **Game**, **Consumable**, **UnmanagedConsumable**, **Durable**입니다.</summary>
+      <returns>제품 유형입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Skus">
+      <summary>제품에 대한 가용 SKU 목록을 가져옵니다.</summary>
+      <returns>제품에 대한 가용 SKU를 나타내는 StoreSku 개체의 컬렉션입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.StoreId">
+      <summary>이 제품의 Store ID를 가져옵니다.</summary>
+      <returns>이 제품의 Store ID입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Title">
+      <summary>Microsoft Store 목록에서 제품 제목을 가져옵니다.</summary>
+      <returns>Microsoft Store 목록에서 가져온 제품 제목입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProduct.Videos">
+      <summary>제품에 대한 Windows Store 목록에서 비디오를 가져옵니다.</summary>
+      <returns>제품에 대한 Windows Store 목록에서 가져온 비디오를 나타내는 StoreVideo 개체의 컬렉션입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.GetIsAnySkuInstalledAsync">
+      <summary>현재 장치에 이 제품의 SKU가 설치되어 있는지 나타냅니다. 이 메서드는 다운로드 가능한 콘텐츠(DLC)가 있는 제품에 사용하도록 구성되었습니다.</summary>
+      <returns>성공적으로 완료되면, 이 제품의 SKU가 현재 장치에 설치되어 있을 때 true, 그렇지 않을 때 false를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync">
+      <summary>기본 SKU 구매 및 제품 가용성 정보를 요청하고 Microsoft Store를 통해 트랜잭션을 완료하는 데 사용되는 UI를 표시합니다.</summary>
+      <returns>성공적으로 완료되면, 구매에 대한 상태와 오류를 제공하는 StorePurchaseResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProduct.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>기본 SKU 구매 및 제품 가용성 정보를 요청하고 Microsoft Store를 통해 트랜잭션을 완료하는 데 사용되는 UI를 표시합니다. 이 메서드는 구매 중에 사용자에게 표시되는 제품 이름을 비롯하여 Microsoft Store에서 단일 목록으로 표현되는 방대한 제품 카탈로그 내에 특정 제안에 대한 추가 세부 정보를 지정할 수 있는 옵션을 제공합니다.</summary>
+      <param name="storePurchaseProperties">구매하는 동안 사용자에게 표시할 제품 이름을 포함하여 구매 요청에 대한 추가 정보를 지정하는 개체입니다.</param>
+      <returns>성공적으로 완료되면, 구매에 대한 상태와 오류를 제공하는 StorePurchaseResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductOptions">
+      <summary>현재 앱과 연관된 지정된 제품에 대한 정보를 가져오기 위해 GetStoreProductsAsync 메서드와 함께 사용할 수 있는 필터 문자열의 컬렉션을 포함합니다.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductOptions.#ctor">
+      <summary>StoreProductOptions 클래스의 새 인스턴스를 만듭니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductOptions.ActionFilters">
+      <summary>현재 앱과 연관된 지정된 제품에 대한 정보를 가져오기 위해 GetStoreProductsAsync 메서드와 함께 사용할 수 있는 필터 문자열의 컬렉션을 가져옵니다. 현재까지 이 컬렉션은 필터 문자열로 ```Purchase``` 하나만 지원합니다.</summary>
+      <returns>현재 앱과 연관된 지정된 제품에 대한 정보를 가져오기 위해 GetStoreProductsAsync 메서드와 함께 사용할 수 있는 필터 문자열의 컬렉션입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductPagedQueryResult">
+      <summary>현재 앱 내에서 구입할 수 있는 제품에 대한 세부 정보를 검색하기 위해 페이징된 요청에 대한 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.HasMoreResults">
+      <summary>추가 결과 페이지가 있는지 여부를 나타내는 값을 가져옵니다. 결과의 다음 페이지를 가져오려면 GetNextAsync 메서드를 사용하세요.</summary>
+      <returns>추가 결과 페이지가 있으면 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductPagedQueryResult.Products">
+      <summary>요청에 의해 반환된 제품의 컬렉션을 가져옵니다.</summary>
+      <returns>키는 해당 제품의 Store ID이고 값은 추가 기능을 나타내는 StoreProduct 개체인 키와 값 쌍의 사전입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreProductPagedQueryResult.GetNextAsync">
+      <summary>다음 결과 페이지를 반환합니다. 결과 페이지가 더 있는지 확인하려면 HasMoreResults 속성을 사용합니다.</summary>
+      <returns>성공적으로 완료되면 다음 결과 페이지를 제공하는 StoreProductPagedQueryResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductQueryResult">
+      <summary>현재 앱 내에서 구입할 수 있는 제품에 대한 세부 정보를 검색하기 위해 요청에 대한 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductQueryResult.Products">
+      <summary>요청에 의해 반환된 제품의 컬렉션을 가져옵니다.</summary>
+      <returns>키는 해당 추가 기능의 Store ID이고 값은 추가 기능을 나타내는 StoreProduct 개체인 키와 값 쌍의 사전입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreProductResult">
+      <summary>현재 앱에 대한 세부 정보를 검색하기 위해 요청에 대한 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreProductResult.Product">
+      <summary>현재 앱에 대한 정보를 가져옵니다.</summary>
+      <returns>현재 앱에 대한 정보를 제공하는 개체입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseProperties">
+      <summary>구입하는 동안 사용자에게 표시할 제품 이름을 포함하여 제품에 대한 구매 요청에 전달할 수 있는 추가 세부 정보를 포함합니다.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor">
+      <summary>StorePurchaseProperties 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StorePurchaseProperties.#ctor(System.String)">
+      <summary>StorePurchaseProperties 클래스의 새 인스턴스를 초기화합니다. 이 오버로드는 구매하는 동안 사용자에게 표시할 제품 이름을 지정할 수 있는 옵션을 제공합니다.</summary>
+      <param name="name">구매하는 동안 사용자에게 표시되는 제품 이름입니다.</param>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.ExtendedJsonData">
+      <summary>Microsoft Store에 구매 요청과 함께 전달할 확장 데이터를 포함하는 JSON 형식의 문자열을 가져오거나 설정합니다.</summary>
+      <returns>Microsoft Store에 구매 요청과 함께 전달할 확장 데이터를 포함하는 JSON 형식의 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseProperties.Name">
+      <summary>구입하는 동안 사용자에게 표시되는 제품 이름을 가져오거나 설정합니다. 지정된 이름이 구매 UI의 제목 표시줄에 표시됩니다.</summary>
+      <returns>구매하는 동안 사용자에게 표시되는 제품 이름입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseResult">
+      <summary>앱 또는 앱에서 제공하는 제품을 구매하기 위한 요청에 대해 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 구매 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>구매 요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StorePurchaseResult.Status">
+      <summary>구매 요청의 상태를 가져옵니다.</summary>
+      <returns>구매 요청의 상태입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StorePurchaseStatus">
+      <summary>앱 또는 추가 기능을 구매하기 위한 요청의 상태를 나타내는 값을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.AlreadyPurchased">
+      <summary>현재 사용자가 지정된 앱 또는 추가 기능을 이미 구매했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NetworkError">
+      <summary>네트워크 연결 오류 때문에 구매 요청에 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.NotPurchased">
+      <summary>구매 요청에 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.ServerError">
+      <summary>Microsoft Store에서 반환된 서버 오류로 인해 구매 요청에 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StorePurchaseStatus.Succeeded">
+      <summary>구매 요청에 성공했습니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItem">
+      <summary>현재 앱에 대한 다운로드 및 설치 큐에 있는 새로운 또는 업데이트된 패키지에 대한 정보를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.InstallKind">
+      <summary>다운로드 및 설치 큐에 있는 현재 패키지에 대해 수행 중인 작업을 설명하는 값을 가져옵니다.</summary>
+      <returns>다운로드 및 설치 큐에 있는 현재 패키지에 대해 수행 중인 작업을 설명하는 값입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.PackageFamilyName">
+      <summary>큐에 있는 현재 패키지의 패키지 패밀리 이름을 가져옵니다.</summary>
+      <returns>큐에 있는 현재 패키지의 패키지 패밀리 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItem.ProductId">
+      <summary>패키지가 추가 기능에 해당하는 경우 큐에 있는 현재 패키지의 추가 기능 제품 ID를 가져옵니다.</summary>
+      <returns>큐에 있는 현재 패키지의 추가 기능 제품 ID입니다.</returns>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.Completed">
+      <summary>큐에 있는 현재 패키지의 다운로드 및 설치가 완료되었을 때 발생했습니다.</summary>
+    </member>
+    <member name="E:Windows.Services.Store.StoreQueueItem.StatusChanged">
+      <summary>큐에 있는 현재 패키지 상태가 변경될 때 발생했습니다.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.CancelInstallAsync">
+      <summary>큐에서 현재 패키지의 설치를 취소합니다.</summary>
+      <returns>비동기 작업을 제어하는 데 사용되는 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.GetCurrentStatus">
+      <summary>큐에 있는 현재 패키지의 상태를 반환합니다.</summary>
+      <returns>큐에 있는 현재 패키지의 상태를 나타내는 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.PauseInstallAsync">
+      <summary>큐에서 현재 패키지의 설치를 일시 중지합니다.</summary>
+      <returns>비동기 작업을 제어하는 데 사용되는 개체입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreQueueItem.ResumeInstallAsync">
+      <summary>큐에서 현재 패키지의 설치를 다시 시작합니다.</summary>
+      <returns>비동기 작업을 제어하는 데 사용되는 개체입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemCompletedEventArgs">
+      <summary>StoreQueueItem 클래스의 Completed 이벤트에 대한 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemCompletedEventArgs.Status">
+      <summary>다운로드 및 설치 큐에 있는 완료된 항목의 상태를 가져옵니다.</summary>
+      <returns>큐에 있는 완료된 항목의 상태입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemExtendedState">
+      <summary>현재 앱에 대한 다운로드 및 설치 큐에 있는 새로운 또는 업데이트된 패키지에 대한 확장 상태 정보를 나타내는 값을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveAcquiringLicense">
+      <summary>패키지가 라이선스를 획득하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveDownloading">
+      <summary>패키지를 다운로드하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveInstalling">
+      <summary>패키지를 설치하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActivePending">
+      <summary>패키지의 다운로드 및 설치가 보류 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveRestoringData">
+      <summary>패키지가 데이터를 복원하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.ActiveStarting">
+      <summary>패키지의 다운로드 및 설치를 시작하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Canceled">
+      <summary>패키지의 다운로드 또는 설치가 취소되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Completed">
+      <summary>패키지의 다운로드 및 설치가 완료되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Error">
+      <summary>패키지의 다운로드 또는 설치 중 오류가 발생했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.Paused">
+      <summary>패키지의 다운로드 또는 설치가 일시 중지되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedLowBattery">
+      <summary>배터리 전원 부족으로 인해 패키지의 다운로드 또는 설치가 일시 중지되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedPackagesInUse">
+      <summary>앱이 이미 관련 패키지를 사용 중이기 때문에 패키지 설치가 일시 중지되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedReadyToInstall">
+      <summary>패키지가 일시 중지되었지만 설치할 준비가 되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRecommended">
+      <summary>Wi-Fi 연결이 권장되기 때문에 패키지 다운로드가 일시 중지되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemExtendedState.PausedWiFiRequired">
+      <summary>Wi-Fi 연결이 필요하기 때문에 패키지 다운로드가 일시 중지되었습니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemKind">
+      <summary>다운로드 및 설치 큐에 있는 현재 패키지에 대해 수행 중인 작업을 설명하는 값을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Install">
+      <summary>항목을 처음으로 설치하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Repair">
+      <summary>항목을 복구하는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemKind.Update">
+      <summary>항목을 업데이트하는 중입니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemState">
+      <summary>현재 앱에 대한 다운로드 및 설치 큐에 있는 새로운 또는 업데이트된 패키지의 상태를 지정하는 값을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Active">
+      <summary>패키지 다운로드 또는 설치가 진행되는 중입니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Canceled">
+      <summary>패키지 다운로드 또는 설치가 취소되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Completed">
+      <summary>패키지의 다운로드 및 설치가 완료되었습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Error">
+      <summary>패키지의 다운로드 또는 설치 중 오류가 발생했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreQueueItemState.Paused">
+      <summary>패키지 다운로드 또는 설치가 일시 중지되었습니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreQueueItemStatus">
+      <summary>현재 앱에 대한 다운로드 및 설치 큐에 있는 새로운 또는 업데이트된 패키지에 대한 상태 정보를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 다운로드 및 설치 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallExtendedState">
+      <summary>현재 앱에 대한 다운로드 및 설치 큐에 있는 패키지의 상태에 대해 추가 정보를 지정하는 값을 가져옵니다.</summary>
+      <returns>큐에 있는 패키지의 상태에 대해 추가 정보를 지정하는 값입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.PackageInstallState">
+      <summary>현재 앱에 대해 큐에 있는 패키지의 전체 상태를 지정하는 값을 가져옵니다.</summary>
+      <returns>큐에 있는 패키지의 전체 상태를 지정하는 값입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreQueueItemStatus.UpdateStatus">
+      <summary>현재 앱에 대해 큐에 있는 패키지의 업데이트 상태를 지정하는 값을 가져옵니다.</summary>
+      <returns>큐에 있는 패키지의 업데이트 상태를 지정하는 값입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewResult">
+      <summary>제품을 평가하고 리뷰해 달라는 요청에 대한 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.ExtendedJsonData">
+      <summary>리뷰 남기기에 대한 완전한 결과 데이터를 JSON 형식으로 가져옵니다. 여기에는 사용자가 대화 상자를 중단했는지 확인하는 정보와 호출이 성공하지 못했는지 확인하는 오류 세부 정보가 포함됩니다.</summary>
+      <returns>리뷰 남기기의 결과가 포함되는 JSON 형식 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.Status">
+      <summary>제품에 대한 리뷰 남기기 요청의 상태를 가져옵니다.</summary>
+      <returns>제품에 대한 리뷰 남기기 요청의 상태입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreRateAndReviewResult.WasUpdated">
+      <summary>리뷰 남기기 요청이 성공적으로 업데이트되었는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>요청이 제품의 평점 또는 리뷰를 성공적으로 업데이트했으면 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRateAndReviewStatus">
+      <summary>제품에 대한 리뷰 남기기 요청의 결과 상태를 가져옵니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.CanceledByUser">
+      <summary>사용자가 요청을 취소했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Error">
+      <summary>요청에서 오류가 발생했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.NetworkError">
+      <summary>요청에서 네트워크 오류가 발생했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreRateAndReviewStatus.Succeeded">
+      <summary>요청이 성공했습니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreRequestHelper">
+      <summary>아직 Windows SDK에서 해당 API를 사용할 수 없는 작업에 대한 요청을 Microsoft Store에 보내는 데 사용할 수 있는 도우미 메서드를 제공합니다.</summary>
+    </member>
+    <member name="M:Windows.Services.Store.StoreRequestHelper.SendRequestAsync(Windows.Services.Store.StoreContext,System.UInt32,System.String)">
+      <summary>제공된 컨텍스트와 매개 변수로 Windows Store에 지정된 요청을 보냅니다.</summary>
+      <param name="context">작업을 수행할 대상 사용자를 지정하는 개체입니다. 앱이 단일 사용자 앱인 경우(즉 앱을 시작한 사용자의 컨텍스트에서만 실행), 사용자의 컨텍스트에서 작동하는 요청을 보내는 데 사용할 수 있는 StoreContext.GetDefault 메서드를 사용하여 StoreContext 개체를 가져옵니다.</param>
+      <param name="requestKind">Windows Store로 보낼 요청을 식별하는 값입니다.</param>
+      <param name="parametersAsJson">요청으로 전달할 인수를 포함한 JSON 형식 문자열입니다.</param>
+      <returns>성공적으로 완료되면, 요청에 대한 상태 및 오류 정보를 제공하는 StoreSendRequestResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSendRequestResult">
+      <summary>Microsoft Store로 보내는 요청에 대한 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>작업에 오류가 발생한 경우 요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.HttpStatusCode">
+      <summary>요청에 대한 HTTP 상태 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 HTTP 상태 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSendRequestResult.Response">
+      <summary>요청에 대한 응답 데이터를 가져옵니다.</summary>
+      <returns>요청에 대한 응답 데이터입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSku">
+      <summary>Microsoft Store에 있는 제품의 SKU(Stock Keeping Unit)에 대한 정보를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Availabilities">
+      <summary>현재 제품 SKU에 대한 가용성 정보를 가져옵니다. 각 제품 SKU에는 다양한 가격의 가용성 정보가 하나 이상 있을 수 있습니다.</summary>
+      <returns>현재 제품 SKU에 대한 가용성 정보를 나타내는 StoreAvailability 개체의 컬렉션입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.BundledSkus">
+      <summary>이 제품 SKU와 번들로 제공되는 앱 또는 추가 기능의 Store ID 목록을 가져옵니다.</summary>
+      <returns>이 제품 SKU와 번들로 제공되는 앱 또는 추가 기능의 Store ID 목록입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CollectionData">
+      <summary>사용자가 SKU를 사용할 권한이 있는 경우 현재 제품 SKU에 대한 추가 데이터를 가져옵니다.</summary>
+      <returns>사용자가 SKU를 사용할 권한이 있는 경우 현재 제품 SKU에 대한 추가 데이터를 제공하는 개체입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.CustomDeveloperData">
+      <summary>이 제품 SKU가 나타내는 추가 기능에 대한 사용자 지정 정보를 포함하는 사용자 지정 개발자 데이터 문자열(태그라고도 함)을 가져옵니다. 이 문자열은 파트너 센터의 추가 기능에 대한 속성 페이지에 있는 **Custom developer data** 필드의 값에 해당합니다.</summary>
+      <returns>추가 기능에 대한 사용자 지정 개발자 데이터입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Description">
+      <summary>Microsoft Store 목록에서 제품 SKU 설명을 가져옵니다.</summary>
+      <returns>Microsoft Store 목록에서 가져온 제품 SKU 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.ExtendedJsonData">
+      <summary>Store에서 현재 제품 SKU에 대한 전체 데이터를 JSON 형식으로 가져옵니다.</summary>
+      <returns>Store에서 현재 제품 SKU에 대한 전체 데이터를 포함하는 JSON 형식 문자열입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Images">
+      <summary>제품 SKU에 대한 Microsoft Store 목록에서 이미지를 가져옵니다.</summary>
+      <returns>제품 SKU에 대한 Microsoft Store 목록에서 가져온 이미지를 나타내는 StoreImage 개체의 컬렉션입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsInUserCollection">
+      <summary>현재 사용자가 현재 제품 SKU를 사용할 권한이 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>현재 사용자가 현재 제품 SKU를 사용할 권한이 있으면 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsSubscription">
+      <summary>현재 제품 SKU가 되풀이 청구되는 구독인지 여부를 나타내는 값을 가져옵니다. 구독에 대한 자세한 내용은 SubscriptionInfo 속성을 참조하세요.</summary>
+      <returns>현재 제품 SKU가 되풀이 청구 구독이면 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.IsTrial">
+      <summary>현재 제품 SKU가 평가판 SKU인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>현재 제품 SKU가 평가판 SKU인 경우 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Language">
+      <summary>제품 SKU에 대한 Microsoft Store 목록에서 데이터의 언어를 가져옵니다.</summary>
+      <returns>제품 SKU에 대한 Microsoft Store 목록의 데이터입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Price">
+      <summary>이 제품 SKU에 대한 기본 가용성의 가격을 가져옵니다.</summary>
+      <returns>이 제품 SKU에 대한 기본 가용성의 가격입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.StoreId">
+      <summary>이 제품 SKU의 Store ID를 가져옵니다.</summary>
+      <returns>이 제품 SKU의 Store ID입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.SubscriptionInfo">
+      <summary>이 제품 SKU가 되풀이 청구 구독인 경우 이 제품 SKU에 대한 구독 정보를 가져옵니다. 이 제품 SKU가 구독인지 확인하려면 IsSubscription 속성을 사용합니다.</summary>
+      <returns>이 제품 SKU에 대한 구독 정보를 포함하는 개체입니다. 이 제품 SKU가 되풀이 청구 구독이 아닌 경우 이 속성은 **null**을 반환합니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Title">
+      <summary>Microsoft Store 목록에서 제품 SKU 제목을 가져옵니다.</summary>
+      <returns>Microsoft Store 목록에서 가져온 제품 SKU 제목입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSku.Videos">
+      <summary>제품 SKU에 대한 Microsoft Store 목록에서 비디오를 가져옵니다.</summary>
+      <returns>제품 SKU에 대한 Microsoft Store 목록에서 가져온 비디오를 나타내는 StoreVideo 개체의 컬렉션입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.GetIsInstalledAsync">
+      <summary>현재 장치에 이 제품 SKU가 설치되어 있는지 나타냅니다.</summary>
+      <returns>성공적으로 완료되면, 이 제품 SKU가 현재 장치에 설치되어 있을 때 true, 그렇지 않을 때 false를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync">
+      <summary>제품 SKU의 구매를 요청하고 Windows Store를 통해 트랜잭션을 완료하는 데 사용되는 UI를 표시합니다.</summary>
+      <returns>성공적으로 완료되면, 구매에 대한 상태와 오류를 제공하는 StorePurchaseResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="M:Windows.Services.Store.StoreSku.RequestPurchaseAsync(Windows.Services.Store.StorePurchaseProperties)">
+      <summary>제품 SKU의 구매를 요청하고 Microsoft Store를 통해 트랜잭션을 완료하는 데 사용되는 UI를 표시합니다. 이 메서드는 구매 중에 사용자에게 표시되는 제품 이름을 비롯하여 Microsoft Store에서 단일 목록으로 표현되는 방대한 제품 카탈로그 내에 특정 제안에 대한 추가 세부 정보를 지정할 수 있는 옵션을 제공합니다.</summary>
+      <param name="storePurchaseProperties">구매하는 동안 사용자에게 표시할 제품 이름을 포함하여 구매 요청에 대한 추가 정보를 지정하는 개체입니다.</param>
+      <returns>성공적으로 완료되면, 구매에 대한 상태와 오류를 제공하는 StorePurchaseResult 개체를 반환하는 비동기 작업입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreSubscriptionInfo">
+      <summary>되풀이 청구 구독을 나타내는 제품 SKU에 대한 구독 정보를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriod">
+      <summary>BillingPeriodUnit 속성에서 지정한 단위로 구독의 청구 기간을 가져옵니다.</summary>
+      <returns>BillingPeriodUnit 속성에서 지정한 단위의 청구 기간입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.BillingPeriodUnit">
+      <summary>구독의 청구 기간 단위를 가져옵니다.</summary>
+      <returns>구독 청구 기간의 단위를 지정하는 값입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.HasTrialPeriod">
+      <summary>구독에 평가 기간이 포함되는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>이 구독에 평가 기간이 포함되면 true, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriod">
+      <summary>TrialPeriodUnit 속성에서 지정한 단위로 구독의 평가 기간을 가져옵니다. 구독에 평가 기간이 있는지 확인하려면 HasTrialPeriod 속성을 사용합니다.</summary>
+      <returns>TrialPeriodUnit 속성에서 지정한 단위의 평가 기간입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreSubscriptionInfo.TrialPeriodUnit">
+      <summary>구독에 대한 평가 기간의 단위를 가져옵니다.</summary>
+      <returns>구독 평가 기간의 단위를 지정하는 값입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageResult">
+      <summary>현재 앱에 대해 패키지를 제거하기 위한 요청에 대해 응답 데이터를 제공합니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.ExtendedError">
+      <summary>작업에 오류가 발생한 경우 요청에 대한 오류 코드를 가져옵니다.</summary>
+      <returns>요청에 대한 오류 코드입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreUninstallStorePackageResult.Status">
+      <summary>패키지 제거 요청의 상태를 가져옵니다.</summary>
+      <returns>패키지 제거 요청의 상태입니다.</returns>
+    </member>
+    <member name="T:Windows.Services.Store.StoreUninstallStorePackageStatus">
+      <summary>패키지 제거 요청의 상태를 나타내는 값을 정의합니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.CanceledByUser">
+      <summary>사용자가 제거 작업을 취소했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Error">
+      <summary>알 수 없는 오류로 인해 제거 작업을 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.NetworkError">
+      <summary>네트워크 연결 오류 때문에 제거 작업을 실패했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.Succeeded">
+      <summary>제거 작업이 성공했습니다.</summary>
+    </member>
+    <member name="F:Windows.Services.Store.StoreUninstallStorePackageStatus.UninstallNotApplicable">
+      <summary>제거 작업을 지정된 패키지에 적용할 수 없습니다.</summary>
+    </member>
+    <member name="T:Windows.Services.Store.StoreVideo">
+      <summary>Microsoft Store에 나열되는 제품과 연결된 비디오를 나타냅니다.</summary>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Caption">
+      <summary>비디오의 캡션을 가져옵니다.</summary>
+      <returns>비디오의 캡션입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Height">
+      <summary>비디오의 높이를 픽셀 단위로 가져옵니다.</summary>
+      <returns>비디오의 높이입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.PreviewImage">
+      <summary>비디오에 대해 표시되는 미리 보기 이미지를 가져옵니다.</summary>
+      <returns>비디오에 대해 표시되는 미리 보기 이미지입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Uri">
+      <summary>비디오의 URI를 가져옵니다.</summary>
+      <returns>비디오의 URI입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.VideoPurposeTag">
+      <summary>비디오의 태그를 가져옵니다.</summary>
+      <returns>비디오의 태그입니다.</returns>
+    </member>
+    <member name="P:Windows.Services.Store.StoreVideo.Width">
+      <summary>비디오의 너비를 픽셀 단위로 가져옵니다.</summary>
+      <returns>비디오의 너비(픽셀 단위)입니다.</returns>
+    </member>
+  </members>
+</doc>

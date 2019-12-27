@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Gaming.XboxLive.StorageApiContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Gaming.XboxLive.StorageApiContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Status">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult.Value">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Name">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo.Size">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Status">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult.Value">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetBlobInfoAsync(System.UInt32,System.UInt32)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="startIndex">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <param name="maxNumberOfItems">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery.GetItemCountAsync">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainer">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Name">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainer.Provider">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.CreateBlobInfoQuery(System.String)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="blobNamePrefix">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.GetAsync(Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="blobsToRead">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.ReadAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer})">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="blobsToRead">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitPropertySetUpdatesAsync(Windows.Foundation.Collections.IPropertySet,Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="blobsToWrite">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <param name="blobsToDelete">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <param name="displayName">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainer.SubmitUpdatesAsync(Windows.Foundation.Collections.IMapView{System.String,Windows.Storage.Streams.IBuffer},Windows.Foundation.Collections.IIterable{System.String},System.String)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="blobsToWrite">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <param name="blobsToDelete">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <param name="displayName">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.DisplayName">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.LastModifiedTime">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.Name">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.NeedsSync">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo.TotalSize">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Status">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult.Value">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetContainerInfoAsync(System.UInt32,System.UInt32)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="startIndex">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <param name="maxNumberOfItems">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery.GetItemCountAsync">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Abort">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.BlobNotFound">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerNotInSync">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ContainerSyncFailed">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.InvalidContainerName">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoAccess">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.NoXboxLiveInfo">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ObjectExpired">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.Ok">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.OutOfLocalStorage">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ProvidedBufferTooSmall">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.QuotaExceeded">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UpdateTooBig">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserCanceled">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="F:Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.UserHasNoXboxLiveInfo">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveOperationResult.Status">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProvider">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.ContainersChangedSinceLastSync">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProvider.User">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainer(System.String)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="name">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.CreateContainerInfoQuery(System.String)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="containerNamePrefix">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.DeleteContainerAsync(System.String)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="name">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetForUserAsync(Windows.System.User,System.String)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="user">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <param name="serviceConfigId">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetRemainingBytesInQuotaAsync">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="M:Windows.Gaming.XboxLive.Storage.GameSaveProvider.GetSyncOnDemandForUserAsync(Windows.System.User,System.String)">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <param name="user">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <param name="serviceConfigId">這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</param>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="T:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Status">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+    <member name="P:Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult.Value">
+      <summary>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</summary>
+      <returns>這個 API 並非適用於所有的應用程式。 除非您的開發人員帳戶是由 Microsoft 特別佈建，否則在執行階段呼叫這些 API 會失敗。</returns>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Networking.Sockets.ControlChannelTriggerContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTrigger">
+      <summary>Позволяет объектам, которые устанавливают подключение TCP и хотят получать сообщение о входящем трафике, получать уведомления в реальном времени в фоновом режиме.</summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.#ctor(System.String,System.UInt32)">
+      <summary>Создает новый объект ControlChannelTrigger, используя идентификатор триггера канала управления и значение интервала проверки активности сервера. </summary>
+      <param name="channelId">Строка, используемая для различения различных триггеров канала управления на локальном компьютере. Максимально допустимая длина этой строки — 64 символов.</param>
+      <param name="serverKeepAliveIntervalInMinutes">Интервал проверки активности сервера (в минутах), зарегистрированный в системе для указания, когда используемое приложение и сетевые подключения должны выходить из спящего режима.</param>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.#ctor(System.String,System.UInt32,Windows.Networking.Sockets.ControlChannelTriggerResourceType)">
+      <summary>Создает новый объект ControlChannelTrigger, используя идентификатор триггера канала управления, значение интервала проверки активности сервера и тип ресурса, запрошенный для триггера канала управления. </summary>
+      <param name="channelId">Строка, используемая для различения различных триггеров канала управления на локальном компьютере. Максимально допустимая длина этой строки — 64 символов.</param>
+      <param name="serverKeepAliveIntervalInMinutes">Интервал проверки активности сервера (в минутах), зарегистрированный в системе для указания, когда используемое приложение и сетевые подключения должны выходить из спящего режима.</param>
+      <param name="resourceRequestType">Тип ресурса, запрашиваемый для триггера канала управления.</param>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.ControlChannelTriggerId">
+      <summary>Получает строку, которая может использоваться для различения различных триггеров канала управления на локальном компьютере. </summary>
+      <returns>Строка, которую можно использовать для различения различных триггеров канала управления.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.CurrentKeepAliveIntervalInMinutes">
+      <summary>Получает интервал поддержания активности сети (в минутах), поддерживаемый сетевыми компонентами низкого уровня в стеке TCP на основе текущего состояния сети. </summary>
+      <returns>Интервал поддержания активности сети (в минутах), поддерживаемый сетевыми компонентами низкого уровня в стеке TCP на основе текущего состояния сети.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.IsWakeFromLowPowerSupported">
+      <summary>Получает значение, указывающее, поддерживается ли возобновление работы в режимах низкой мощности.</summary>
+      <returns>Если значение **true**, возобновление работы в режимах низкой мощности поддерживается.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.KeepAliveTrigger">
+      <summary>Получает объект, представляющий связанный с объектом ControlChannelTrigger триггер поддержания активности, который приложение должно использовать для привязки класса активации к инфраструктуре фонового брокера. </summary>
+      <returns>Строка, представляющая идентификатор класса активации для фоновой задачи поддержания активности.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.PushNotificationTrigger">
+      <summary>Получает объект, представляющий связанный с объектом ControlChannelTrigger триггер push-уведомлений, который приложение должно использовать для привязки класса активации к инфраструктуре фонового брокера. </summary>
+      <returns>Строка, представляющая идентификатор класса активации для фоновой задачи push-уведомления.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.ServerKeepAliveIntervalInMinutes">
+      <summary>Получает или задает интервал проверки активности сервера (в минутах), зарегистрированный в системе для указания, когда используемое приложение и связанные с ними сетевые подключения должны выходить из спящего режима. </summary>
+      <returns>Интервал проверки активности сервера (в минутах), зарегистрированный в системе для указания, когда используемое приложение и связанные с ними сетевые подключения должны выходить из спящего режима.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.ControlChannelTrigger.TransportObject">
+      <summary>Получает объект транспорта, используемый системой для транспортного соединения, связанного с объектом ControlChannelTrigger. </summary>
+      <returns>Объект транспорта, используемый системой для транспортного соединения.</returns>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.Close">
+      <summary>Закрывает объект ControlChannelTrigger. </summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.DecreaseNetworkKeepAliveInterval">
+      <summary>Предоставляет приложению способ указать, что интервал поддержания активности, поддерживаемый системой с посредниками сети для вывода из спящего режима, слишком велик и должен быть уменьшен. Этот метод применяется к элементам класса в Windows.Networking.Sockets и связанных пространствах имен. </summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.FlushTransport">
+      <summary>Очищает любые используемые транспортным соединением сетевые данные, связанные с объектом ControlChannelTrigger для сетевого стека. </summary>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.UsingTransport(System.Object)">
+      <summary>Задает транспортное подключение, которое будет использоваться триггером канала управления элементами класса в пространстве имен Windows.Networking.Sockets и в связанных пространствах имен. </summary>
+      <param name="transport">Экземпляр класса сети, который представляет сетевой транспорт.</param>
+    </member>
+    <member name="M:Windows.Networking.Sockets.ControlChannelTrigger.WaitForPushEnabled">
+      <summary>Позволяет приложению уведомлять систему о том, что соединение установлено и система должна завершить внутреннюю конфигурацию триггера канала управления. </summary>
+      <returns>Значение, указывающее, смогла ли система завершить настройку объекта ControlChannelTrigger.</returns>
+    </member>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTriggerContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTriggerResetReason">
+      <summary>Причина, по которой ControlChannelTrigger был сброшен. </summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.ApplicationRestart">
+      <summary>Объект ControlChannelTrigger был сброшен в результате перезапуска приложения.</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.FastUserSwitched">
+      <summary>ControlChannelTrigger был сброшен в результате быстрого переключения пользователей.</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.LowPowerExit">
+      <summary>ControlChannelTrigger был сброшен в результате выхода из режима низкого потребления (выход из подключенного режима ожидания).</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResetReason.QuietHoursExit">
+      <summary>Объект ControlChannelTrigger был сброшен, поскольку в устройстве был установлен период часов "не беспокоить" и этот период закончился.</summary>
+    </member>
+    <member name="T:Windows.Networking.Sockets.ControlChannelTriggerResourceType">
+      <summary>Тип ресурса, используемый триггером канала управления. </summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResourceType.RequestHardwareSlot">
+      <summary>Запрос на аппаратные ресурсы системы.</summary>
+    </member>
+    <member name="F:Windows.Networking.Sockets.ControlChannelTriggerResourceType.RequestSoftwareSlot">
+      <summary>Запрос на программные ресурсы системы.</summary>
+    </member>
+    <member name="T:Windows.Networking.Sockets.IControlChannelTriggerEventDetails">
+      <summary>Экземпляр объекта создается инфраструктурой фонового брокера, которая используется для различения триггеров канала управления. </summary>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerEventDetails.ControlChannelTrigger">
+      <summary>Получает объект ControlChannelTrigger, связанный с объектом IControlChannelTriggerEventDetails. </summary>
+      <returns>Объект ControlChannelTrigger.</returns>
+    </member>
+    <member name="T:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails">
+      <summary>Объект, экземпляр которого создан инфраструктурой фонового брокера для события **ControlChannelReset**, чтобы указать, что объект ControlChannelTrigger был сброшен. </summary>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails.HardwareSlotReset">
+      <summary>Значение, указывающее, повлияло ли на аппаратный ресурс событие сброса ControlChannelTrigger. </summary>
+      <returns>Значение, указывающее, повлияло ли на аппаратный ресурс событие сброса ControlChannelTrigger.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails.ResetReason">
+      <summary>Значение, указывающее причину, почему объект ControlChannelTrigger был сброшен. </summary>
+      <returns>Значение, указывающее причину, почему объект ControlChannelTrigger был сброшен.</returns>
+    </member>
+    <member name="P:Windows.Networking.Sockets.IControlChannelTriggerResetEventDetails.SoftwareSlotReset">
+      <summary>Значение, указывающее, повлияло ли на программный ресурс событие сброса ControlChannelTrigger. </summary>
+      <returns>Значение, указывающее, повлияло ли на программный ресурс событие сброса ControlChannelTrigger.</returns>
+    </member>
+  </members>
+</doc>
